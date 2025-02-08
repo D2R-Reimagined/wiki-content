@@ -2,7 +2,7 @@
 title: Quality Upgrading
 description: Quality Upgrading
 published: true
-date: 2025-02-07T23:39:14.202Z
+date: 2025-02-08T00:01:15.340Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:02:30.718Z
@@ -46,3 +46,21 @@ There are different websites you can visit, but the one I typically go to is her
 Since we are looking for a Boneweave, I will click on "Body Armor" on the website.
 https://www.purediablo.com/diablo-2/diablo-2-body-armor
 
+As seen in the picture, there are 15 different chest armors in each of the N, X & E categories.
+
+So we look for the "Boneweave" and realize it is an Elite [E] item.  The website shows it as 4.8 on the list.  If we click on the name we can see the picture of the base in-game.
+
+Now going back to the list instead of clicking on 4.8 we will click on 2.8 which is "Chain Mail".  This is the Normal [N] version of this exact armor.  So with this information, heading in-game to a gambling vendor you can simply gamble for a "Chain Mail" until you get a blue magic [E] version which you can HEL+EL to white, then force to rare with an Orb of Infusion.  Or you can gamble until you happen to find  any quality of a rare & then upgrade that to [X] or [E].
+
+To be clear, when gambling for a "Chain Mail" specifically you will always randomly be getting one of these three versions of quality of this item:
+[N] = Chain Mail
+[X] = Mesh Armor
+[E] = Boneweave
+
+The website shows there are only two unique Boneweave armors, however due to rarity weighting it is not a 50% chance at either chestpiece when using an Orb of Conversion.  While you could spend hours or days hunting for a specific item on the ground, forcing one by gambling for use with your orbs or crafting needs is the faster way to go about it.
+
+Weapons are the same way, three different versions of the same weapon.  Once you understand the system & how the in-game graphic is the same on all 3 versions, it makes getting the base you're looking for rather easy & fast.
+
+Upgrading your gear while leveling can make a huge difference
+Here are a few examples for a Barbarian and for an Act2 Mercenary while leveling.  This shows how the Enhanced Damage % on a weapon scales directly with the base.  So enormous changes in your damage output occurs when upgrading a physical damage weapon!
+(insert picture here)

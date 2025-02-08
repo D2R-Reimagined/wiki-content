@@ -2,7 +2,7 @@
 title: Quality Upgrading
 description: Quality Upgrading
 published: true
-date: 2025-02-08T00:07:10.090Z
+date: 2025-02-08T00:15:34.006Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:02:30.718Z
@@ -64,5 +64,15 @@ The website shows there are only two unique Boneweave armors, however due to rar
 Weapons are the same way, three different versions of the same weapon.  Once you understand the system & how the in-game graphic is the same on all 3 versions, it makes getting the base you're looking for rather easy & fast.
 
 # Upgrading your gear while leveling can make a huge difference
-Here are a few examples for a Barbarian and for an Act2 Mercenary while leveling.  This shows how the Enhanced Damage % on a weapon scales directly with the base.  So enormous changes in your damage output occurs when upgrading a physical damage weapon!
-(insert picture here)
+Here are a few examples for a Barbarian and for an Act2 Mercenary while leveling.  This shows how the Enhanced Damage % on a weapon scales directly with the base.  So enormous changes in your damage output occurs when upgrading a physical damage weapon!  But be very cautious as different items have different level requirements as well.
+
+One of the best times to increase the base quality of a weapon or chest armor while you are leveling is when you find two of the same uniques or set items.  So if you have two identical unique weapons, you could upgrade one of them from [N] to [X] and the level requirements might only increase by 3  where you're able to use it right away.  Or perhaps it increases the level requirements by +15 & it is unusable!  Not to worry as you have a second weapon & can keep this ready to use once you get to that level.  The pictures show how powerful the reimagination base upgrades are!
+
+When leveling the primary three items to upgrade are:
+Your 1H 2H or Bow!  Not only will you do significantly more damage, the [X] or [E] versions might allow for more sockets when you use an Orb of Socketing.
+
+Your Chest Armor!  Not only will your overall defense climb significantly higher, the [X] or [E] versions might allow for upto 4 sockets when you use an Orb of Socketing.
+
+Your Helmet!  The typical diablo2 websites show many helmets do not allow for 4 sockets, however in Reimagined most of the [E] Elite helmets have been changed to allow for upto 4 sockets.
+
+(insert more pictures here when I get access)

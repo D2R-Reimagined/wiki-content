@@ -2,7 +2,7 @@
 title: Quality Upgrading
 description: Quality Upgrading
 published: true
-date: 2025-02-08T00:15:34.006Z
+date: 2025-02-08T00:19:57.747Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:02:30.718Z
@@ -63,7 +63,7 @@ The website shows there are only two unique Boneweave armors, however due to rar
 
 Weapons are the same way, three different versions of the same weapon.  Once you understand the system & how the in-game graphic is the same on all 3 versions, it makes getting the base you're looking for rather easy & fast.
 
-# Upgrading your gear while leveling can make a huge difference
+# Upgrading your gear to [X] or [E] while leveling can make a huge difference
 Here are a few examples for a Barbarian and for an Act2 Mercenary while leveling.  This shows how the Enhanced Damage % on a weapon scales directly with the base.  So enormous changes in your damage output occurs when upgrading a physical damage weapon!  But be very cautious as different items have different level requirements as well.
 
 One of the best times to increase the base quality of a weapon or chest armor while you are leveling is when you find two of the same uniques or set items.  So if you have two identical unique weapons, you could upgrade one of them from [N] to [X] and the level requirements might only increase by 3  where you're able to use it right away.  Or perhaps it increases the level requirements by +15 & it is unusable!  Not to worry as you have a second weapon & can keep this ready to use once you get to that level.  The pictures show how powerful the reimagination base upgrades are!

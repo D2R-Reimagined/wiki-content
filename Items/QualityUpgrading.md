@@ -2,7 +2,7 @@
 title: Quality Upgrading
 description: Quality Upgrading
 published: true
-date: 2025-02-08T00:19:57.747Z
+date: 2025-02-08T00:25:19.712Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:02:30.718Z
@@ -13,20 +13,20 @@ dateCreated: 2025-02-07T23:02:30.718Z
 [X] = Exceptional
 [E] = Elite (*best*)
 
-These are the three different tiers with [N] having the lowest level requirements along with the lowest defense on armor & weakest damage on weapons.  With [E] having the highest level requirements along with the highest defense on armor & highest damage on weapons.
+These are the three different quality tiers with [N] having the lowest level requirements along with the lowest defense on armor & weakest damage on weapons.  With [E] having the highest level requirements along with the highest defense on armor & highest damage on weapons.
 
 It's important to note that even in the [E] Elite category, not all armor and weapons are equal.  If you are creating a runeword, it's important to take note of the str & dex requirements when picking a base.  While you can grab any random white chest piece you find to add sockets, a barbarian class should strive to find the highest Defense possible which is the Sacred Armor.
 
-There are specific 1H, 2H and ranged weapons that have higher damage then others that scale exceptionally well with the Enhanced Damage % modifier.  While Blizzard typically sets these as a slower attack speed base, there are addstats/charms/jewels/runes to assist with Increased Attack Speed.  Getting a significantly high Enhanced Damage % on a weaker base is fine while leveling, but for end game the goal should be using a runeword or crafting with the highest damage ranged base your class can equip.
+There are specific 1H, 2H and ranged weapons that have higher damage then others that scale exceptionally well with the Enhanced Damage % modifier.  While Blizzard typically sets these as a slower attack speed base, in the Reimagined mod there are addstats/charms/jewels/runes to assist with Increased Attack Speed breakpoints.  Finding a significantly high Enhanced Damage % on a weaker base is fine while you're leveling, but **for end game the goal should be using a runeword or end-game-crafting with the highest damage ranged base your class can equip.**
 
 ## When to pick a particular Armor or Weapon type
 The most important time to put some thought into a certain type of Armor or Weapon is either when you are using the very expensive crafting system or when you are about to make an end game runeword item.
 
-When you have a chest piece of armor where the base has 200 defense, if it has +200% Enhanced Defense from crafting or from a runeword then it would have 600 defense.  If you had a chest piece of armor where the base has 500 defense, then the +200% Enhanced Defense from crafting or from a runeword then it would have 1500 defense.  This becomes extremely important for physical damage classes when picking a weapon!
+When you have a chest piece of armor where the base has 200 defense, if it has +200% Enhanced Defense from crafting or from a runeword then it would have 600 defense.  If you had a chest piece of armor where the base has 500 defense, then the +200% Enhanced Defense from crafting or from a runeword then it would have 1500 defense!  This becomes extremely important for physical damage classes when picking a weapon as damage scales from the base too.
 
 ### Other times to pick a specific base
-A) When you have an Orb of Conversion & want a chance at getting a certain unique item.
-B) When you have an Orb of Assemblage & want a chance at getting a certain set item.
+A) When you have an Orb of Conversion & want a **chance at getting a certain unique item**.
+B) When you have an Orb of Assemblage & want a **chance at getting a certain set item**.
 C) When you have an Orb of Infusion & want the best rare, picking the best item is key.
 
 ## What is possible in Reimagined

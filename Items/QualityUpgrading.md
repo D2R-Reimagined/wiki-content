@@ -2,13 +2,13 @@
 title: Quality Upgrading
 description: Quality Upgrading
 published: true
-date: 2025-02-08T00:01:15.340Z
+date: 2025-02-08T00:07:10.090Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:02:30.718Z
 ---
 
-# Quality Upgrading	
+# Upgrading the Quality of your Armor or Weapon	
 [N] = Normal
 [X] = Exceptional
 [E] = Elite (*best*)
@@ -16,6 +16,8 @@ dateCreated: 2025-02-07T23:02:30.718Z
 These are the three different tiers with [N] having the lowest level requirements along with the lowest defense on armor & weakest damage on weapons.  With [E] having the highest level requirements along with the highest defense on armor & highest damage on weapons.
 
 It's important to note that even in the [E] Elite category, not all armor and weapons are equal.  If you are creating a runeword, it's important to take note of the str & dex requirements when picking a base.  While you can grab any random white chest piece you find to add sockets, a barbarian class should strive to find the highest Defense possible which is the Sacred Armor.
+
+There are specific 1H, 2H and ranged weapons that have higher damage then others that scale exceptionally well with the Enhanced Damage % modifier.  While Blizzard typically sets these as a slower attack speed base, there are addstats/charms/jewels/runes to assist with Increased Attack Speed.  Getting a significantly high Enhanced Damage % on a weaker base is fine while leveling, but for end game the goal should be using a runeword or crafting with the highest damage ranged base your class can equip.
 
 ## When to pick a particular Armor or Weapon type
 The most important time to put some thought into a certain type of Armor or Weapon is either when you are using the very expensive crafting system or when you are about to make an end game runeword item.
@@ -61,6 +63,6 @@ The website shows there are only two unique Boneweave armors, however due to rar
 
 Weapons are the same way, three different versions of the same weapon.  Once you understand the system & how the in-game graphic is the same on all 3 versions, it makes getting the base you're looking for rather easy & fast.
 
-Upgrading your gear while leveling can make a huge difference
+# Upgrading your gear while leveling can make a huge difference
 Here are a few examples for a Barbarian and for an Act2 Mercenary while leveling.  This shows how the Enhanced Damage % on a weapon scales directly with the base.  So enormous changes in your damage output occurs when upgrading a physical damage weapon!
 (insert picture here)

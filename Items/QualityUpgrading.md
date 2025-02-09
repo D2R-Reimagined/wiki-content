@@ -2,7 +2,7 @@
 title: Quality Upgrading
 description: Quality Upgrading
 published: true
-date: 2025-02-08T23:59:46.404Z
+date: 2025-02-09T00:20:50.830Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:02:30.718Z
@@ -77,11 +77,31 @@ Here are a few examples for a Barbarian and for an Act2 Mercenary while leveling
 
 One of the best times to increase the base quality of a weapon or chest armor while you are leveling is when you find two of the same uniques or set items.  So if you have two identical unique weapons, you could upgrade one of them from [N] to [X] and the level requirements might only increase by 3  where you're able to use it right away.  Or perhaps it increases the level requirements by +15 & it is unusable!  Not to worry as you have a second weapon & can keep this ready to use once you get to that level.  The pictures show how powerful the reimagination base upgrades are!
 
-When leveling the primary three items to upgrade are:
+![act2mercweaponcompare.jpg](/qualityupgrading/act2mercweaponcompare.jpg)
+Here is a low level 2H spear I upgraded while leveling, showing the Mercenary's character screen.  Note the large damage difference between the two quality versions.
+
+![slamweaponcompare.jpg](/qualityupgrading/slamweaponcompare.jpg)
+Here is the new 2.0 Barbarian "Techtonic Slam" on the character screen at level 25.  This unique drops at a [N] quality by default, however upgrading it to [X] happens to not increase the required level & delivers significantly more damage!  2H Mace bases are some of the highest damage bases, making this particular unique extra strong for early leveling.
+
+## While leveling the primary three items to upgrade are:
 Your 1H 2H or Bow!  Not only will you do significantly more damage, the [X] or [E] versions might allow for more sockets when you use an Orb of Socketing.
 
 Your Chest Armor!  Not only will your overall defense climb significantly higher, the [X] or [E] versions might allow for upto 4 sockets when you use an Orb of Socketing.
 
 Your Helmet!  The typical diablo2 websites show many helmets do not allow for 4 sockets, however in Reimagined most of the [E] Elite helmets have been changed to allow for upto 4 sockets.
 
-(insert more pictures here when I get access)
+![3wayhammer.jpg](/qualityupgrading/3wayhammer.jpg)
+
+## Examples with more pictures of weapons & armor
+Finally I wanted to include a few more pictures showing the [N] [X] [E] versions of various weapons and armor and how incredible taking advantage of the Reimagined upgrade recipes are.  Included an Ethereal weapon in a picture too.  
+
+Click on "Cube Recipes" on the left to access the Rare or set/unique recipes to change items to [X] or [E].
+
+Written by Slamina
+![3wayarmor.jpg](/qualityupgrading/3wayarmor.jpg)
+![3wayethspear.jpg](/qualityupgrading/3wayethspear.jpg)
+![3waygambled2h.jpg](/qualityupgrading/3waygambled2h.jpg)
+![3waymace.jpg](/qualityupgrading/3waymace.jpg)
+![3wayhammer2.jpg](/qualityupgrading/3wayhammer2.jpg)
+![3waymaul.jpg](/qualityupgrading/3waymaul.jpg)
+![3waysword.jpg](/qualityupgrading/3waysword.jpg)

@@ -2,7 +2,7 @@
 title: Quality Upgrading
 description: Quality Upgrading
 published: true
-date: 2025-02-09T00:20:50.830Z
+date: 2025-02-09T00:45:09.765Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:02:30.718Z
@@ -10,9 +10,9 @@ dateCreated: 2025-02-07T23:02:30.718Z
 
 # Upgrading the Quality of your Armor or Weapon	
 
-I would like to showcase the importance of the quality on items in this game, review some ways you can upgrade these with cube recipes and cover the main scenarios where upgrading armor or weapons can result in a significantly stronger player or mercenary.  Finally at the very bottom of this page I wanted to share some pictures of the upgrade results so you can see the difference with a few weapons along with a piece of armor.  
+I would like to showcase the importance of the quality of items in this game, review some ways you can upgrade these with reimagined cube recipes and cover the main scenarios where upgrading armor or weapons can result in a significantly stronger player or mercenary character.  Finally at the very bottom of this page I wanted to share some pictures of the upgrade results so you can see the difference with a few weapons along with a piece of armor.  If you've found an Orb of Conversion and want to try your luck getting a specific unique armor or weapon then you've come to the right place.
 
-**WARNING:** *Take special note of the level, strength & dexterity requirements as they will increase when you upgrade them!  Upgrading a weapon while you're leveling is a great idea if you have two identical weapons, so if the level requirements are too high you can continue with your non-upgraded weapon.*
+**WARNING:** *Be aware the level, strength & dexterity requirements of items often will increase when you upgrade them using the recipes to go from [N] to [X] OR [X] to [E]!  Upgrading a weapon while you're leveling is a fantastic idea if you have two identical weapons, so if the level requirements end up being too high you can continue with your non-upgraded weapon.*
 
 ## Quality types explained
 [N] = Normal
@@ -35,6 +35,23 @@ When you are crafting a weapon or armor using a unique jewel + high runes.
 
 Here is an example, let's say you have a chest piece of armor where the base has 200 defense, if it has +200% Enhanced Defense from a runeword then it would have 600 defense.  If you had a chest piece of armor where the base has 500 defense, then the +200% Enhanced Defense from a runeword then it would have 1500 defense!  This becomes extremely important for physical damage classes when picking a weapon as damage scales from the base too.  Forcing armor or weapons to become Ethereal using the orb or recipe gives a bonus to the base further making it important to pick a great base.
 
+### What is the highest damage 2H base weapon for a Barbarian?
+You look at the average damage, or "av" for short.  This is adding the minimum and maximum damage & dividing the number by two.  
+
+Let's compare the only two Elite quality 2H hammers against eachother:
+
+Ogre Maul 77 to 106 damage *(91.5av)*
+Thunder Maul 33 to 180 *(106.5av)*
+
+The highest 2H damage weapon for a Barbarian would be the Elite quality 2H Hammer called the Thunder Maul.  There are swords & other types of 2H but their average damage are weaker.  The resource below is useful as you can see the maximum sockets & weapon speed for each type of weapon.
+
+https://www.wowhead.com/diablo-2/guide/hammer-socketed-base-items-for-runewords
+
+### What is the highest damage 2H base weapon for an Act2 Mercenary?
+The Elite [E] quality 2H spear called the "War Pike" with its 105.5av is the absolute winner by far for the Act2 Mercenary!
+
+The 2nd & 3rd highest damage spears are at a weak 86.5av
+The best polearm base is only 91.5av
 
 ## What is possible in Reimagined
 You can upgrade a rare, set or unique from [N] to [X]

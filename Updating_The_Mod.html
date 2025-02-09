@@ -2,31 +2,39 @@
 title: Updating the Mod
 description: Learn about how to update the mod in D2R Reimagined
 published: true
-date: 2025-02-02T15:12:15.565Z
+date: 2025-02-09T17:38:07.352Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-02-02T15:12:02.445Z
 -->
 
+<p>Mod Install Location*: <code>&lt;drive&gt;\Program Files (x86)\Diablo II Resurrected\mods</code></p>
+<p>Character Save File Location*: <code>&lt;drive&gt;\Users\&lt;your user&gt;\Saved Games\Diablo II Resurrected\mods</code>&nbsp;</p>
+<p>*Your directory structure may differ depending on where you chose to install the game and your save files.</p>
 <p>&nbsp;</p>
-<h4><strong>Updating from the same major version (1.x -&gt; 1.y)</strong></h4>
-<p>When updating to the latest version of D2R Reimagined from a Previous Version here are the steps to follow.</p>
+<h4>Version Compatibility</h4>
+<p>Major patch versions (e.g. 1.X → 2.X) often have changes that may make character saves incompatible.&nbsp;</p>
+<p>The description on Nexus Mods and associated patch notes will tell you when save-breaking changes are introduced.</p>
+<p><mark class="pen-red">We strongly suggest making a backup of your Mod folder and Character Save folders before updating the mod, even between minor patches.</mark></p>
+<p>&nbsp;</p>
+<h4><strong>Updating from 1.x to 2.x</strong></h4>
 <ol>
-  <li>Download the Latest Version from Nexus Mods</li>
-  <li>Delete the `Merged` folder in your `mods` directory</li>
-  <li>Extract the new version in the root of your directory</li>
+  <li>Download the zip from Nexus Mods.</li>
+  <li>Extract the files into the <code>mods</code> directory of your D2R install. This should create a new folder called <code>Reimagined</code>.</li>
+  <li>Copy your 1.X shortcut - rename it appropriately so you know which shortcut is which.</li>
+  <li>Open the properties of your new shortcut. Change <code>-mod <strong>Merged</strong> -txt</code> → <code>-mod <strong>Reimagined</strong> -txt</code></li>
+  <li>Launch the game using the new shortcut.</li>
+</ol>
+<p>&nbsp;</p>
+<h4><strong>Updating within the same major version (1.x -&gt; 1.y)</strong></h4>
+<p>When updating to the latest version of D2R Reimagined from a previous version:</p>
+<ol>
+  <li>Download the Latest Version from Nexus Mods.</li>
+  <li>Make a backup of your <code>Merged</code> folder in your <code>mods</code> directory.</li>
+  <li>Delete the <code>Merged</code> folder in your <code>mods</code> directory.</li>
+  <li>Extract the new version into the <code>mods</code> directory.</li>
 </ol>
 <p><br><strong>Why do we delete the entire folder?</strong></p>
 <p>Sometimes the mod will delete files and if you simply extract over without deleting those files will still exist and could cause issues.</p>
 <p><strong>Will my saves be okay?</strong></p>
-<p>Unless explicitly expressed in the patch notes that a new save is required your saves are completely safe. They are stored in "My Saved Games" and not in your D2R Install directory.</p>
-<p><br>&nbsp;</p>
-<p><br>&nbsp;</p>
-<h4><strong>Updating from 1.x to 2.x</strong></h4>
-<ol>
-  <li>Download the file where available</li>
-  <li>Extract the files in the root directory of your d2r install</li>
-  <li>Copy your shortcut you have created to launch the modded game</li>
-  <li>Open the properties of your copied shortcut. Change the section that has `-mod Merged -txt` to `-mod Reimagined -txt`</li>
-</ol>
-<p>Now launch the game using your copied shortcut.</p>
+<p>Unless explicitly expressed in the patch notes that a new save is required your saves are safe.</p>

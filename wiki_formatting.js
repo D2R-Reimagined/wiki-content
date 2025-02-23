@@ -88,16 +88,29 @@ function highlightOrbs(bodyText) {
     return newText;
 }
 
-// Function to update the HTML page with highlighted keywords
+// Function to traverse the DOM and apply highlighting to text nodes within specified elements
+function traverseAndHighlight(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+        let newText = node.nodeValue;
+        newText = highlightItems(newText);
+        newText = highlightRunes(newText);
+        newText = highlightGems(newText);
+        newText = highlightOrbs(newText);
+
+        if (newText !== node.nodeValue) {
+            const span = document.createElement('span');
+            span.innerHTML = newText;
+            node.parentNode.replaceChild(span, node);
+        }
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+        node.childNodes.forEach(child => traverseAndHighlight(child));
+    }
+}
+
+// Function to update the HTML page with highlighted keywords within specified elements
 function highlightKeywords() {
-    let bodyText = document.body.innerHTML;
-
-    bodyText = highlightItems(bodyText);
-    bodyText = highlightRunes(bodyText);
-    bodyText = highlightGems(bodyText);
-    bodyText = highlightOrbs(bodyText);
-
-    document.body.innerHTML = bodyText;
+    const elements = document.querySelectorAll('figure.table');
+    elements.forEach(element => traverseAndHighlight(element));
 }
 
 // Run the function to highlight keywords when the DOM is fully loaded

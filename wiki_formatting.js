@@ -1,6 +1,6 @@
 // Define the lists for rarities and items
 const rarities = ['Magic', 'Rare', 'Unique', 'Set', 'Crafted'];
-const items = ['Jewel', 'Jewels', 'Armor', 'Shield', 'Weapon', 'Amulet', 'Ring', 'Belt', 'Boots', 'Gloves', 'Helm'];
+const items = ['Jewel', 'Jewels', 'Armor', 'Shield', 'Weapon', 'Amulet', 'Amulets', 'Ring', 'Rings', 'Charm', 'Charms', 'Belt', 'Boots', 'Gloves', 'Helm'];
 
 // Define the list for runes
 const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL', 
@@ -41,6 +41,13 @@ function highlightItems(bodyText) {
             const regex = new RegExp(`\\b${rarity}\\s+${item}\\b`, 'gi');
             newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">${keywordPair}</span>`);
         });
+
+        // Handle separating characters like '/'
+        const combinedItems = items.join('|');
+        const combinedRegex = new RegExp(`\\b${rarity}\\s+(${combinedItems})(\\s*/\\s*(${combinedItems}))*\\b`, 'gi');
+        newText = newText.replace(combinedRegex, match => {
+            return `<span style="color: ${color}; font-weight: bold;">${match}</span>`;
+        });
     });
 
     return newText;
@@ -67,9 +74,15 @@ function highlightGems(bodyText) {
         newText = newText.replace(regex, `<span style="color: turquoise; font-weight: bold;">${gem}</span>`);
     });
 
-    // Highlight 'Gem (Any)'
+    // Highlight 'Gem (Any)', 'Gems (Any)', and 'Gem Bag (X Gems)'
     const gemAnyRegex = new RegExp(`Gem \\(Any\\)`, 'gi');
     newText = newText.replace(gemAnyRegex, `<span style="color: turquoise; font-weight: bold;">Gem (Any)</span>`);
+
+    const gemsAnyRegex = new RegExp(`Gems \\(Any\\)`, 'gi');
+    newText = newText.replace(gemsAnyRegex, `<span style="color: turquoise; font-weight: bold;">Gems (Any)</span>`);
+
+    const gemBagRegex = new RegExp(`Gem Bag \\(\\d+ Gems\\)`, 'gi');
+    newText = newText.replace(gemBagRegex, `<span style="color: turquoise; font-weight: bold;">$&</span>`);
 
     return newText;
 }

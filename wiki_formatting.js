@@ -23,11 +23,11 @@ const orbs = {
 
 // Define the colors for each rarity
 const rarityColors = {
-    'Magic': 'blue',
-    'Rare': 'yellow',
-    'Unique': 'brown',
-    'Set': 'green',
-    'Crafted': 'red'
+    'Magic': '#1770ff',
+    'Rare': '#ffee00',
+    'Unique': '#c48300',
+    'Set': '#009102',
+    'Crafted': '#c44500'
 };
 
 // Function to highlight rarity and item combinations

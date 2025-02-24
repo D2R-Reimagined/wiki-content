@@ -1,6 +1,8 @@
 // Define the lists for rarities and items
-const rarities = ['Magic', 'Rare', 'Unique', 'Set', 'Crafted'];
-const items = ['Jewel', 'Jewels', 'Armor', 'Shield', 'Weapon', 'Amulet', 'Amulets', 'Ring', 'Rings', 'Charm', 'Charms', 'Belt', 'Boots', 'Gloves', 'Helm'];
+const rarities = ['Magic', 'Rare', 'Unique', 'Set', 'Crafted', 'Ethereal'];
+const items = ['Jewel', 'Jewels', 'Amulet', 'Amulets', 'Ring', 'Rings', 'Charm', 'Charms',
+'Armor', 'Shield', 'Shields', 'Weapon', 'Weapons', 'Belt', "Belts", "Boot", 'Boots', "Glove", 'Gloves', 
+'Helm', 'Helms', 'Circlet'];
 
 // Define the list for runes
 const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL', 
@@ -27,7 +29,8 @@ const rarityColors = {
     'Rare': '#ffee00',
     'Unique': '#c48300',
     'Set': '#009102',
-    'Crafted': '#c44500'
+    'Crafted': '#c44500',
+    'Ethereal': '#9400ab',
 };
 
 // Function to highlight rarity and item combinations
@@ -42,12 +45,15 @@ function highlightItems(bodyText) {
             newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">${keywordPair}</span>`);
         });
 
-        // Handle separating characters like '/'
-        const combinedItems = items.join('|');
-        const combinedRegex = new RegExp(`\\b${rarity}\\s+(${combinedItems})(\\s*/\\s*(${combinedItems}))*\\b`, 'gi');
-        newText = newText.replace(combinedRegex, match => {
-            return `<span style="color: ${color}; font-weight: bold;">${match}</span>`;
-        });
+        // Highlight rarity words within brackets
+        const bracketRegex = new RegExp(`\\(${rarity}\\)`, 'gi');
+        newText = newText.replace(bracketRegex, `<span style="color: ${color}; font-weight: bold;">(${rarity})</span>`);
+
+        // Highlight the word 'Ethereal'
+        if (rarity === 'Ethereal') {
+            const etherealRegex = new RegExp(`\\b${rarity}\\b`, 'gi');
+            newText = newText.replace(etherealRegex, `<span style="color: ${color}; font-weight: bold;">${rarity}</span>`);
+        }
     });
 
     return newText;
@@ -81,7 +87,7 @@ function highlightGems(bodyText) {
     const gemsAnyRegex = new RegExp(`Gems \\(Any\\)`, 'gi');
     newText = newText.replace(gemsAnyRegex, `<span style="color: turquoise; font-weight: bold;">Gems (Any)</span>`);
 
-    const gemBagRegex = new RegExp(`Gem Bag \\(\\d+ Gems\\)`, 'gi');
+    const gemBagRegex = new RegExp(`Gem Bag \\(\\d+ (Gem|Gems)\\)`, 'gi');
     newText = newText.replace(gemBagRegex, `<span style="color: turquoise; font-weight: bold;">$&</span>`);
 
     return newText;

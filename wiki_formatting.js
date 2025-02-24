@@ -80,7 +80,7 @@ function highlightGems(bodyText) {
         newText = newText.replace(regex, `<span style="color: turquoise; font-weight: bold;">${gem}</span>`);
     });
 
-    // Highlight 'Gem (Any)', 'Gems (Any)', and 'Gem Bag (X Gems)'
+    // Highlight 'Gem (Any)', 'Gems (Any)', and 'Gem Bag (X Gem|Gems)'
     const gemAnyRegex = new RegExp(`Gem \\(Any\\)`, 'gi');
     newText = newText.replace(gemAnyRegex, `<span style="color: turquoise; font-weight: bold;">Gem (Any)</span>`);
 
@@ -97,9 +97,9 @@ function highlightGems(bodyText) {
 function highlightOrbs(bodyText) {
     let newText = bodyText;
 
-    Object.keys(orbs).forEach(orbType => {
-        const keyword = `Orb of ${orbType}`;
+    orbs.forEach(orbType => {
         const color = orbs[orbType];
+        const keyword = `Orb of ${orbType}`;
         const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
         newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">${keyword}</span>`);
     });

@@ -2,11 +2,12 @@
 title: Item Upgrades
 description: How to upgrade items to add additional stats
 published: true
-date: 2025-02-23T21:02:51.945Z
+date: 2025-02-24T00:11:15.678Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-02-07T13:46:35.085Z
 -->
+
 <h2>Item Upgrade System</h2>
 <p><mark class="pen-red"><strong>NOTE: Items still respect their data size limits (e.g. +skills cannot go past +7). If you want to know what the cap is for a particular stat, you'll need to cross reference the itemstatcost.txt entry with a stat calculator like </strong></mark><a href="https://docs.google.com/spreadsheets/d/1vOA1tJoTLBr3oIVIsJhZ0SW18GAvPTK3i24Ca6cJivQ/copy">https://docs.google.com/spreadsheets/d/1vOA1tJoTLBr3oIVIsJhZ0SW18GAvPTK3i24Ca6cJivQ/copy</a></p>
 <p>All weapons, armor and jewelry can be upgraded with various additional stats a certain number of times.</p>
@@ -29,6 +30,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
+        <th>&nbsp;</th>
         <th style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></th>
       </tr>
     </thead>
@@ -38,6 +40,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;" rowspan="6">&nbsp;</td>
         <td style="text-align:center;" rowspan="17">&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+12% Magic Find</p>
           <p>+25% Gold Find</p>
@@ -46,6 +49,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Ruby</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+25 Life</p>
           <p>+4 Life / Kill</p>
@@ -54,6 +58,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Sapphire</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+25 Mana</p>
           <p>+4 Mana / Kill</p>
@@ -62,6 +67,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Emerald</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+5 Dexterity</p>
           <p>+5 Vitality</p>
@@ -70,6 +76,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Skull</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp; +5 Energy</p>
           <p>+5 Vitality</p>
@@ -78,6 +85,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Amethyst</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+5 Strength</p>
           <p>+5 Vitality</p>
@@ -87,66 +95,77 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">TIR Rune</td>
+        <td>=</td>
         <td style="text-align:center;">+10 Fire Resistance</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">TIR Rune</td>
+        <td>=</td>
         <td style="text-align:center;">+10 Cold Resistance</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">TIR Rune</td>
+        <td>=</td>
         <td style="text-align:center;">+10 Lightning Resistance</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">TIR Rune</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+10 Poison Resistance</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+2 Random Assassin Skill</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+2 Random Barbarian Skill</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+2 Random Sorceress Skill</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+2 Random Druid Skill</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+2 Random Necromancer Skill</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Amethyst</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+2 Random Amazon Skill</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Amulet</strong></td>
         <td style="text-align:center;">Diamond</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+2 Random Paladin Skill</td>
       </tr>
       <tr>
@@ -154,6 +173,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">Orb of Infusion</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+25% Magic Find</p>
           <p>+50% Gold Find</p>
@@ -164,6 +184,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">Orb of Infusion</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+75 Life</p>
           <p>+8 Life / Kill</p>
@@ -174,6 +195,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">Orb of Infusion</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+75 Mana</p>
           <p>+8 Mana / Kill</p>
@@ -184,6 +206,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">Orb of Infusion</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+12 Dexterity</p>
           <p>+12 Vitality</p>
@@ -194,6 +217,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">Orb of Infusion</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+12 Energy&nbsp;</p>
           <p>+12 Vitality</p>
@@ -204,6 +228,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Amethyst</td>
         <td style="text-align:center;">Orb of Infusion</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+12 Strength</p>
           <p>+12 Vitality</p>
@@ -214,6 +239,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Diamond</td>
         <td style="text-align:center;">Orb of Infusion</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+12 All Resistances</td>
       </tr>
       <tr>
@@ -221,6 +247,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Orb of Infusion</td>
         <td style="text-align:center;">Unique Jewel</td>
         <td style="text-align:center;">&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">+1 to All Skills (Current Class) &nbsp;</td>
       </tr>
     </tbody>
@@ -238,6 +265,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
+        <th>&nbsp;</th>
         <th style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></th>
       </tr>
     </thead>
@@ -248,6 +276,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Magic Jewel</td>
         <td style="text-align:center;" rowspan="7">&nbsp;</td>
         <td style="text-align:center;" rowspan="7">&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+10% Magic Find</p>
           <p>+20% Gold Find</p>
@@ -257,6 +286,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Ring</strong></td>
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+20 HP</p>
           <p>+2 Life / Kill</p>
@@ -266,6 +296,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Ring</strong></td>
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+20 Mana</p>
           <p>+2 Mana / Kill</p>
@@ -275,24 +306,28 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Ring</strong></td>
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">TIR Rune</td>
+        <td>=</td>
         <td style="text-align:center;">+10 Fire Resistance</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Ring</strong></td>
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">TIR Rune</td>
+        <td>=</td>
         <td style="text-align:center;">+10 Cold Resistance</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Ring</strong></td>
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">TIR Rune</td>
+        <td>=</td>
         <td style="text-align:center;">+10 Lightning Resistance</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Ring</strong></td>
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">TIR Rune</td>
+        <td>=</td>
         <td style="text-align:center;">+10 Poison Resistance</td>
       </tr>
       <tr>
@@ -301,6 +336,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">ITH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+50 Mana</p>
           <p>+4 Mana / Kill</p>
@@ -312,6 +348,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">DOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+50 HP</p>
           <p>+5 Life / Kill</p>
@@ -323,6 +360,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">IO Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+5% Life Steal</td>
       </tr>
       <tr>
@@ -331,6 +369,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">LUM Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+5% Mana Steal</td>
       </tr>
       <tr>
@@ -339,6 +378,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Diamond</td>
         <td style="text-align:center;">UM Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+5 All Resistances</td>
       </tr>
       <tr>
@@ -347,6 +387,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">IST Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+20% Magic Find</p>
           <p>+30% Gold Find</p>
@@ -358,6 +399,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">VEX Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+6 All Attributes</td>
       </tr>
       <tr>
@@ -366,6 +408,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">OHM Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+4% Experience Gained</td>
       </tr>
       <tr>
@@ -374,6 +417,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp; &nbsp; Emerald</td>
         <td style="text-align:center;">GUL Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+8% Faster Attack Speed</td>
       </tr>
       <tr>
@@ -382,6 +426,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">LO Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+8% Faster Cast Rate</td>
       </tr>
       <tr>
@@ -390,6 +435,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">SUR Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+6% Max Mana</td>
       </tr>
       <tr>
@@ -398,6 +444,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Amethyst</td>
         <td style="text-align:center;">BER Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+4% Damage Reduction</td>
       </tr>
       <tr>
@@ -406,6 +453,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">JAH Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+6% Max HP</td>
       </tr>
     </tbody>
@@ -433,6 +481,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;">
           <p style="text-align:center;"><mark class="pen-green">Reagent</mark></p>
         </th>
+        <th>&nbsp;</th>
         <th style="text-align:center;">
           <p style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></p>
         </th>
@@ -455,6 +504,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;" rowspan="10">
           <p style="text-align:center;">&nbsp;</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+7% Magic Find</p>
           <p style="text-align:center;">+10% Gold Find</p>
@@ -470,6 +520,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+15 HP</p>
           <p style="text-align:center;">+2 Life / Kill</p>
@@ -485,6 +536,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+15 Mana</p>
           <p style="text-align:center;">+2 Mana / Kill</p>
@@ -500,6 +552,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+5 Dexterity</p>
           <p style="text-align:center;">+5 Vitality</p>
@@ -515,6 +568,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+5 Strength</p>
           <p style="text-align:center;">+5 Vitality</p>
@@ -530,6 +584,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+5 Energy</p>
           <p style="text-align:center;">+5 Vitality</p>
@@ -545,6 +600,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+2 All Resistances</p>
         </td>
@@ -559,6 +615,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+4% Mana Regen</p>
         </td>
@@ -573,6 +630,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+6% Damage Goes To Mana</p>
         </td>
@@ -587,6 +645,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">Physical Damage Reduced By 3</p>
         </td>
@@ -607,6 +666,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+50 Mana</p>
           <p style="text-align:center;">+4 Mana / Kill</p>
@@ -628,6 +688,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+7% Faster Hit Recovery</p>
         </td>
@@ -648,6 +709,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+50 HP</p>
           <p style="text-align:center;">+4 Life / Kill</p>
@@ -669,6 +731,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+8% Mana Regen</p>
         </td>
@@ -689,6 +752,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+10 Dexterity</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -710,6 +774,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+10 Strength</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -731,6 +796,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+10 Energy</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -752,6 +818,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+50% Enhanced Defense</p>
         </td>
@@ -772,6 +839,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+4 All Attributes</p>
         </td>
@@ -792,6 +860,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+4 All Resistances</p>
         </td>
@@ -812,6 +881,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Damage Reduced By 3</p>
         </td>
@@ -832,6 +902,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+20% Magic Find</p>
           <p style="text-align:center;">+30% Gold Find</p>
@@ -853,6 +924,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+5% Max Mana</p>
         </td>
@@ -873,6 +945,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+4% Damage Reduction</p>
         </td>
@@ -893,6 +966,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+5% Max HP</p>
         </td>
@@ -913,6 +987,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+6 All Attributes</p>
           <p style="text-align:center;">+6 All Resistances</p>
@@ -934,6 +1009,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+20% Magic Find</p>
           <p style="text-align:center;">+40% Gold Find</p>
@@ -956,6 +1032,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+150 HP</p>
           <p style="text-align:center;">+150 Mana</p>
@@ -977,6 +1054,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
+        <th>&nbsp;</th>
         <th style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></th>
       </tr>
     </thead>
@@ -987,6 +1065,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Magic Jewel</td>
         <td style="text-align:center;" rowspan="11">&nbsp;</td>
         <td style="text-align:center;" rowspan="11">&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+7% Magic Find</p>
           <p>+10% Gold Find</p>
@@ -996,6 +1075,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">Ruby&nbsp;</td>
         <td style="text-align:center;">&nbsp; Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+15 HP</p>
           <p>+2 Life / Kill</p>
@@ -1005,6 +1085,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">&nbsp; Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+15 Mana</p>
           <p>+2 Mana / Kill</p>
@@ -1014,6 +1095,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">&nbsp;Emerald</td>
         <td style="text-align:center;">&nbsp; Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+5 Dexterity</p>
           <p>+5 Vitality</p>
@@ -1023,6 +1105,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">&nbsp;Amethyst</td>
         <td style="text-align:center;">&nbsp; Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+5 Strength</p>
           <p>+5 Vitality</p>
@@ -1032,6 +1115,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">&nbsp;Skull</td>
         <td style="text-align:center;">&nbsp; Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+5 Energy</p>
           <p>+5 Vitality</p>
@@ -1041,30 +1125,35 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">&nbsp; Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+2 All Resistances</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">&nbsp;NEF Rune</td>
         <td style="text-align:center;">&nbsp; Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+5% Faster Run/Walk</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">&nbsp;ETH Rune</td>
         <td style="text-align:center;">&nbsp; Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+4% Mana Regen</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">ITH Rune</td>
         <td style="text-align:center;">&nbsp;Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+6% Damage Goes to Mana</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Boots</strong></td>
         <td style="text-align:center;">SOL Rune</td>
         <td style="text-align:center;">&nbsp;Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">Physical Damage Reduced By 3</td>
       </tr>
       <tr>
@@ -1073,6 +1162,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">ITH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+50 Mana</p>
           <p>+3 Mana / Kill</p>
@@ -1084,6 +1174,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">SOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+10% Faster Run/Walk</td>
       </tr>
       <tr>
@@ -1092,6 +1183,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Amethyst</td>
         <td style="text-align:center;">SHAEL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+7% Faster Hit Recovery</td>
       </tr>
       <tr>
@@ -1100,6 +1192,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">DOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+50 HP</p>
           <p>+4 Life / Kill</p>
@@ -1111,6 +1204,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">LUM Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+8% Mana Regen</td>
       </tr>
       <tr>
@@ -1119,6 +1213,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+10 Dexterity</p>
           <p>+10 Vitality</p>
@@ -1130,6 +1225,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Amethyst</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+10 Strength</p>
           <p>+10 Vitality</p>
@@ -1141,6 +1237,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+10 Energy</p>
           <p>+10 Vitality</p>
@@ -1152,6 +1249,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">LEM Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+50% Enhanced Defense</td>
       </tr>
       <tr>
@@ -1160,6 +1258,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Diamond</td>
         <td style="text-align:center;">PUL Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+4 All Attributes</td>
       </tr>
       <tr>
@@ -1168,6 +1267,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Diamond</td>
         <td style="text-align:center;">UM Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+4 All Resistances</td>
       </tr>
       <tr>
@@ -1176,6 +1276,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">MAL Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">Magic Damage Reduced By 3</td>
       </tr>
       <tr>
@@ -1184,6 +1285,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">IST Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+20% Magic Find</p>
           <p>+30% Gold Find</p>
@@ -1195,6 +1297,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">SUR Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+6% Max Mana</td>
       </tr>
       <tr>
@@ -1203,6 +1306,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">BER Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+4% Experience Gained</td>
       </tr>
       <tr>
@@ -1211,6 +1315,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">JAH Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+6% Max HP</td>
       </tr>
       <tr>
@@ -1219,6 +1324,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">CHAM Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+15% Faster Run/Walk</p>
           <p>+12% Magic Find</p>
@@ -1231,6 +1337,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Diamond</td>
         <td style="text-align:center;">CHAM Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+100% Enhanced Defense</p>
           <p>+100 Thorns</p>
@@ -1242,6 +1349,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Amethyst</td>
         <td style="text-align:center;">ZOD Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+8% Max Mana</p>
           <p>+8% Max HP</p>
@@ -1272,6 +1380,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;">
           <p style="text-align:center;"><mark class="pen-green">Reagent</mark></p>
         </th>
+        <th>&nbsp;</th>
         <th style="text-align:center;">
           <p style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></p>
         </th>
@@ -1294,6 +1403,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;" rowspan="10">
           <p style="text-align:center;">&nbsp;</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+7% Magic Find</p>
           <p style="text-align:center;">+10% Gold Find</p>
@@ -1307,6 +1417,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+15 HP</p>
           <p style="text-align:center;">+2 Life / Kill</p>
@@ -1320,6 +1431,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+15 Mana</p>
           <p style="text-align:center;">+2 Mana / Kill</p>
@@ -1333,6 +1445,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+5 Dexterity</p>
           <p style="text-align:center;">+5 Vitality</p>
@@ -1346,6 +1459,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+5 Strength</p>
           <p style="text-align:center;">+5 Vitality</p>
@@ -1359,6 +1473,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+5 Energy</p>
           <p style="text-align:center;">+5 Vitality</p>
@@ -1372,6 +1487,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+2 All Resistances</p>
         </td>
@@ -1384,6 +1500,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+4% Mana Regen</p>
         </td>
@@ -1396,6 +1513,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+6% Damage Goes to Mana</p>
         </td>
@@ -1408,6 +1526,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Physical Damage Reduced By 3</p>
         </td>
@@ -1426,6 +1545,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+50 Mana</p>
           <p style="text-align:center;">+4 Mana / Kill</p>
@@ -1445,6 +1565,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+75 Thorns</p>
         </td>
@@ -1463,6 +1584,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+7% Faster Attack Speed</p>
         </td>
@@ -1481,6 +1603,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+7% Faster Cast Rate</p>
         </td>
@@ -1499,6 +1622,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+50 HP</p>
           <p style="text-align:center;">+8 Life / Kill</p>
@@ -1518,6 +1642,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+8% Mana Regen</p>
         </td>
@@ -1536,6 +1661,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+10 Dexterity</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -1555,6 +1681,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+10 Strength</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -1574,6 +1701,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+10 Energy</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -1593,6 +1721,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+4 All Attributes</p>
         </td>
@@ -1611,6 +1740,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+4 All Resistances</p>
         </td>
@@ -1629,6 +1759,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Magic Damage Reduced By 3</p>
         </td>
@@ -1647,6 +1778,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+20% Magic Find</p>
           <p style="text-align:center;">+30% Gold Find</p>
@@ -1666,6 +1798,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+6% Max Mana</p>
         </td>
@@ -1684,6 +1817,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+6% Max HP</p>
         </td>
@@ -1702,6 +1836,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+6% Crushing Blow</p>
         </td>
@@ -1720,6 +1855,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+6% Deadly Strike</p>
         </td>
@@ -1738,6 +1874,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+6% Open Wounds</p>
         </td>
@@ -1754,6 +1891,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+6% Pierce</p>
         </td>
@@ -1770,6 +1908,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+10% Slows Target</p>
         </td>
@@ -1786,6 +1925,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+10% Hit Blinds Target</p>
         </td>
@@ -1805,6 +1945,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
+        <th>&nbsp;</th>
         <th style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></th>
       </tr>
     </thead>
@@ -1815,6 +1956,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Magic Jewel</td>
         <td style="text-align:center;" rowspan="10">&nbsp;</td>
         <td style="text-align:center;" rowspan="10">&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+7% Magic Find</p>
           <p>+10% Gold Find</p>
@@ -1824,6 +1966,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">Ruby&nbsp;</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+15 HP</p>
           <p>+2 Life / Kill</p>
@@ -1833,6 +1976,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+15 Mana</p>
           <p>+2 Mana / Kill</p>
@@ -1842,6 +1986,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">&nbsp;Emerald</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+5 Dexterity</p>
           <p>+5 Vitality</p>
@@ -1851,6 +1996,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">&nbsp;Amethyst</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+5 Strength</p>
           <p>+5 Vitality</p>
@@ -1860,6 +2006,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">&nbsp;Skull</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+5 Energy</p>
           <p>+5 Vitality</p>
@@ -1869,24 +2016,28 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+2 All Resistances</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">&nbsp;ETH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+4% Mana Regen</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">&nbsp;ITH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+6% Damage Goes to Mana</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Helm</strong></td>
         <td style="text-align:center;">SOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;Physical Damage Reduced By 3</td>
       </tr>
       <tr>
@@ -1895,6 +2046,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">ITH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+50 Mana</p>
           <p>+4 Mana / Kill</p>
@@ -1906,6 +2058,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">&nbsp;THUL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;Ignore Target's Defense</td>
       </tr>
       <tr>
@@ -1914,6 +2067,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">AMN Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+75 Thorns</td>
       </tr>
       <tr>
@@ -1922,6 +2076,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">DOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+50 HP</p>
           <p>+8 Life / Kill</p>
@@ -1933,6 +2088,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">LUM Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+8% Mana Regen</td>
       </tr>
       <tr>
@@ -1941,6 +2097,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+10 Dexterity&nbsp;</p>
           <p>+10 Vitality</p>
@@ -1952,6 +2109,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Amethyst</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+10 Strength</p>
           <p>+10 Vitality</p>
@@ -1963,6 +2121,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+10 Energy</p>
           <p>+10 Vitality</p>
@@ -1974,6 +2133,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Diamond</td>
         <td style="text-align:center;">PUL Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+4 All Attributes</td>
       </tr>
       <tr>
@@ -1982,6 +2142,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Diamond</td>
         <td style="text-align:center;">UM Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+4 All Resistances</td>
       </tr>
       <tr>
@@ -1990,6 +2151,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">MAL Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;Magic Damage Reduced By 3</td>
       </tr>
       <tr>
@@ -1998,6 +2160,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">IST Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+20% Magic Find</p>
           <p>+30% Gold Find</p>
@@ -2009,6 +2172,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">SUR Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+6% Max Mana</td>
       </tr>
       <tr>
@@ -2017,6 +2181,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Amethyst</td>
         <td style="text-align:center;">BER Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+4% Damage Reduction</td>
       </tr>
       <tr>
@@ -2025,6 +2190,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">JAH Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+6% Max HP</td>
       </tr>
       <tr>
@@ -2033,6 +2199,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">CHAM Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+2 Fire Skills</td>
       </tr>
       <tr>
@@ -2041,6 +2208,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">CHAM Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+2 Cold Skills</td>
       </tr>
       <tr>
@@ -2049,6 +2217,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Topaz</td>
         <td style="text-align:center;">CHAM Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+2 Lightning Skills</td>
       </tr>
       <tr>
@@ -2057,6 +2226,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">CHAM Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+2 Poison Skills</td>
       </tr>
       <tr>
@@ -2065,6 +2235,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">ZOD Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+1 All Skills</td>
       </tr>
     </tbody>
@@ -2082,6 +2253,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
+        <th>&nbsp;</th>
         <th style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></th>
       </tr>
     </thead>
@@ -2098,6 +2270,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
           <p>&nbsp;</p>
           <p>&nbsp;</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+7% Magic Find</p>
           <p>+10% Gold Find</p>
@@ -2107,6 +2280,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">Ruby&nbsp;</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+15 HP</p>
           <p>+4 Life / Kill</p>
@@ -2116,6 +2290,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+15 Mana</p>
           <p>+2 Mana / Kill</p>
@@ -2125,6 +2300,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">&nbsp;Emerald</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+7 Dexterity</p>
           <p>+7 Vitality</p>
@@ -2134,6 +2310,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">&nbsp;Amethyst</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+7 Strength</p>
           <p>+7 Vitality</p>
@@ -2143,6 +2320,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">&nbsp;Skull</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+7 Energy</p>
           <p>+7 Vitality</p>
@@ -2152,24 +2330,28 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+2 All Resistances</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">&nbsp;ETH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+4% Mana Regen</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">&nbsp;ITH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+6% Damage Goes to Mana</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Shield</strong></td>
         <td style="text-align:center;">SOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;Physical Damage Reduced By 3</td>
       </tr>
       <tr>
@@ -2178,6 +2360,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">ITH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+50 Mana</p>
           <p>+4 Mana / Kill</p>
@@ -2189,6 +2372,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Skull</td>
         <td style="text-align:center;">AMN Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+100 Thorns</td>
       </tr>
       <tr>
@@ -2197,6 +2381,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">SOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+50% Enhanced Defense</td>
       </tr>
       <tr>
@@ -2205,6 +2390,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Ruby</td>
         <td style="text-align:center;">SHAEL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+5% Faster Block Rate</td>
       </tr>
       <tr>
@@ -2213,6 +2399,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">SHAEL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+5% Increased Block Chance</td>
       </tr>
       <tr>
@@ -2221,6 +2408,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Emerald</td>
         <td style="text-align:center;">SHAEL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+7% Faster Hit Recovery</td>
       </tr>
       <tr>
@@ -2229,6 +2417,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Ruby</td>
         <td style="text-align:center;">DOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+75 HP</p>
           <p>+8 Life / Kill</p>
@@ -2240,6 +2429,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Skull</td>
         <td style="text-align:center;">LUM Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+10% Mana Regen</td>
       </tr>
       <tr>
@@ -2248,6 +2438,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Emerald</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+12 Dexterity</p>
           <p>+10 Vitality</p>
@@ -2259,6 +2450,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Amethyst</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+12 Strength</p>
           <p>+10 Vitality</p>
@@ -2270,6 +2462,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">FAL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+12 Energy</p>
           <p>+10 Vitality</p>
@@ -2281,6 +2474,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">PUL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+6 All Attributes</td>
       </tr>
       <tr>
@@ -2289,6 +2483,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">UM Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+6 All Resistances</td>
       </tr>
       <tr>
@@ -2297,6 +2492,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">MAL Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;Magic Damage Reduced By 4</td>
       </tr>
       <tr>
@@ -2305,6 +2501,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Topaz</td>
         <td style="text-align:center;">IST Rune</td>
         <td style="text-align:center;">Rare Jewel&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+30% Magic Find</p>
           <p>+50% Gold Find</p>
@@ -2316,6 +2513,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">SUR Rune</td>
         <td style="text-align:center;">Rare Jewel&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+10% Max Mana</td>
       </tr>
       <tr>
@@ -2324,6 +2522,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Ruby</td>
         <td style="text-align:center;">BER Rune</td>
         <td style="text-align:center;">Rare Jewel&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+6% Damage Reduction</td>
       </tr>
       <tr>
@@ -2332,6 +2531,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Ruby</td>
         <td style="text-align:center;">JAH Rune</td>
         <td style="text-align:center;">Rare Jewel&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+10% Max HP</td>
       </tr>
       <tr>
@@ -2340,6 +2540,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">ZOD Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+2 Max All Resistances</p>
           <p>+3 All Resistances</p>
@@ -2370,6 +2571,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;">
           <p style="text-align:center;"><mark class="pen-green">Reagent</mark></p>
         </th>
+        <th>&nbsp;</th>
         <th style="text-align:center;">
           <p style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></p>
         </th>
@@ -2394,6 +2596,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
           <p style="text-align:center;">&nbsp;</p>
           <p style="text-align:center;">&nbsp;</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+15% Magic Find</p>
           <p style="text-align:center;">+30% Gold Find</p>
@@ -2409,6 +2612,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+15 HP</p>
           <p style="text-align:center;">+4 Life / Kill</p>
@@ -2424,6 +2628,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+15 Mana</p>
           <p style="text-align:center;">+2 Mana / Kill</p>
@@ -2439,6 +2644,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+7 Dexterity</p>
           <p style="text-align:center;">+7 Vitality</p>
@@ -2454,6 +2660,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+7 Strength</p>
           <p style="text-align:center;">+7 Vitality</p>
@@ -2469,6 +2676,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+7 Energy</p>
           <p style="text-align:center;">+7 Vitality</p>
@@ -2484,6 +2692,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+3 All Resistances</p>
         </td>
@@ -2498,6 +2707,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+5% Mana Regen</p>
         </td>
@@ -2512,6 +2722,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;+10% Damage Goes to Mana</p>
         </td>
@@ -2526,6 +2737,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">&nbsp;Physical Damage Reduced By 5</p>
         </td>
@@ -2546,6 +2758,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+50 Mana</p>
           <p style="text-align:center;">+4 Mana / Kill</p>
@@ -2567,6 +2780,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+150 Thorns</p>
         </td>
@@ -2587,6 +2801,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+10% Faster Run/Walk</p>
         </td>
@@ -2607,6 +2822,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+75 HP</p>
           <p style="text-align:center;">+6 Life / Kill</p>
@@ -2628,6 +2844,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+10% Mana Regen</p>
         </td>
@@ -2648,6 +2865,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+15 Dexterity</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -2669,6 +2887,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+15 Strength</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -2690,6 +2909,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+15 Energy</p>
           <p style="text-align:center;">+10 Vitality</p>
@@ -2711,6 +2931,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+6 All Attributes</p>
         </td>
@@ -2731,6 +2952,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+6 All Resistances</p>
         </td>
@@ -2751,6 +2973,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">Magic Damage Reduced By 5</p>
         </td>
@@ -2771,6 +2994,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+30% Magic Find</p>
           <p style="text-align:center;">+50% Gold Find</p>
@@ -2792,6 +3016,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+12% Max Mana</p>
         </td>
@@ -2812,6 +3037,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+8% Damage Reduction</p>
         </td>
@@ -2832,6 +3058,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Rare Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+12% Max HP</p>
         </td>
@@ -2852,6 +3079,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">Absorb 4% Fire Damage</p>
         </td>
@@ -2872,6 +3100,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">Absorb 4% Cold Damage</p>
         </td>
@@ -2892,6 +3121,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">Absorb 4% Lightning Damage</p>
         </td>
@@ -2912,6 +3142,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">Absorb 4% Magic Damage</p>
         </td>
@@ -2932,6 +3163,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">
           <p style="text-align:center;">Unique Jewel</p>
         </td>
+        <td>=</td>
         <td style="text-align:center;">
           <p style="text-align:center;">+2 Max All Resistances</p>
           <p style="text-align:center;">+5 All Resistances</p>
@@ -2955,6 +3187,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
         <th style="text-align:center;"><mark class="pen-green">Reagent</mark></th>
+        <th>&nbsp;</th>
         <th style="text-align:center;"><mark class="pen-green">Added Stat(s)</mark></th>
       </tr>
     </thead>
@@ -2966,6 +3199,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;" rowspan="9">&nbsp;</td>
         <td style="text-align:center;" rowspan="9">&nbsp;</td>
         <td style="text-align:center;" rowspan="23">&nbsp;</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+15% Magic Find</p>
           <p>+30% Gold Find</p>
@@ -2975,24 +3209,28 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Weapon</strong></td>
         <td style="text-align:center;">Ruby</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+75 Attack Rating</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Weapon</strong></td>
         <td style="text-align:center;">Sapphire</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+10% Increased Cast Rate</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Weapon</strong></td>
         <td style="text-align:center;">Emerald</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+10% Increased Attack Speed</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Weapon</strong></td>
         <td style="text-align:center;">Skull</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+2% Mana Steal</p>
           <p>+2% Life Steal</p>
@@ -3002,24 +3240,28 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;"><strong>Weapon</strong></td>
         <td style="text-align:center;">&nbsp;Amethyst</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+3 Life / Kill</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Weapon</strong></td>
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+2 Mana / Kill</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Weapon</strong></td>
         <td style="text-align:center;">&nbsp;ETH Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">&nbsp;+6% Mana Regen</td>
       </tr>
       <tr>
         <td style="text-align:center;"><strong>Weapon</strong></td>
         <td style="text-align:center;">&nbsp;SOL Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>&nbsp;+6 Min Damage</p>
           <p>+10 Max Damage</p>
@@ -3031,6 +3273,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Topaz</td>
         <td style="text-align:center;">IO Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+100 Thorns</td>
       </tr>
       <tr>
@@ -3039,6 +3282,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Ruby</td>
         <td style="text-align:center;">LUM Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+50% Damage to Demons</td>
       </tr>
       <tr>
@@ -3047,6 +3291,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Skull</td>
         <td style="text-align:center;">LUM Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+50% Damage to Undead</td>
       </tr>
       <tr>
@@ -3055,6 +3300,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Emerald</td>
         <td style="text-align:center;">LEM Rune</td>
         <td style="text-align:center;">Magic Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+150 Attack Rating</td>
       </tr>
       <tr>
@@ -3063,6 +3309,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">MAL Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+15% Increased Cast Rate</td>
       </tr>
       <tr>
@@ -3071,6 +3318,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Amethyst</td>
         <td style="text-align:center;">MAL Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+15% Increased Attack Speed</td>
       </tr>
       <tr>
@@ -3079,6 +3327,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Topaz</td>
         <td style="text-align:center;">IST Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+30% Magic Find</p>
           <p>+50% Gold Find</p>
@@ -3090,6 +3339,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Skull</td>
         <td style="text-align:center;">VEX Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+5% Mana Steal</p>
           <p>+5% Life Steal</p>
@@ -3101,6 +3351,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Emerald</td>
         <td style="text-align:center;">OHM Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">+2 Freezes Target</td>
       </tr>
       <tr>
@@ -3109,6 +3360,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Diamond</td>
         <td style="text-align:center;">LO Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+63-511 Elemental Damage</p>
           <p><mark class="pen-red">Multiple Uses Do Not Stack</mark></p>
@@ -3120,6 +3372,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Sapphire</td>
         <td style="text-align:center;">SUR Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+10% Open Wounds</p>
           <p>+50 Attack Rating</p>
@@ -3131,6 +3384,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Ruby</td>
         <td style="text-align:center;">BER Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+10% Deadly Strike</p>
           <p>+50 Attack Rating</p>
@@ -3142,6 +3396,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Topaz</td>
         <td style="text-align:center;">JAH Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+10% Crushing Blow</p>
           <p>+50 Attack Rating</p>
@@ -3153,6 +3408,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">&nbsp;Amethyst</td>
         <td style="text-align:center;">CHAM Rune</td>
         <td style="text-align:center;">Rare Jewel</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+50% Enhanced Damage</p>
           <p>+75 Attack Rating</p>
@@ -3166,6 +3422,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">ZOD Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
         <td style="text-align:center;">Ruby</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+4% Fire Skill Damage</p>
           <p>-4% Enemy Fire Res</p>
@@ -3178,6 +3435,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">ZOD Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
         <td style="text-align:center;">Sapphire</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+4% Cold Skill Damage</p>
           <p>-4% Enemy Cold Res</p>
@@ -3190,6 +3448,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">ZOD Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
         <td style="text-align:center;">Topaz</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+4% Light Skill Damage</p>
           <p>-4% Enemy Light Res</p>
@@ -3202,6 +3461,7 @@ dateCreated: 2025-02-07T13:46:35.085Z
         <td style="text-align:center;">ZOD Rune</td>
         <td style="text-align:center;">Unique Jewel</td>
         <td style="text-align:center;">Emerald</td>
+        <td>=</td>
         <td style="text-align:center;">
           <p>+4% Poison Skill Damage</p>
           <p>-4% Enemy Poison Res</p>

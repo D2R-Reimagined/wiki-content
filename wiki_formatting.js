@@ -15,22 +15,22 @@ const gems = ['Amethyst', 'Sapphire', 'Ruby', 'Emerald', 'Topaz', 'Diamond', 'Sk
 
 // Define the list for orbs and their colors (using HEX codes)
 const orbs = {
-    'Conversion': '#e67e22',
-    'Assemblage': '#109001',
-    'Infusion': '#dadd00',
-    'Corruption': '#cd0000',
-    'Socketing': '#0025cd',
-    'Shadows': '#9200a1'
+    'Conversion': '#e67e22', // Orange
+    'Assemblage': '#109001', // Green
+    'Infusion': '#dadd00',   // Yellow
+    'Corruption': '#cd0000', // Red
+    'Socketing': '#0025cd',  // Blue
+    'Shadows': '#9200a1'     // Purple
 };
 
-// Define the colors for each rarity
+// Define the colors for each rarity and their colors (using HEX codes)
 const rarityColors = {
-    'Magic': '#1770ff',
-    'Rare': '#ffee00',
-    'Unique': '#c48300',
-    'Set': '#009102',
-    'Crafted': '#c44500',
-    'Ethereal': '#9400ab',
+    'Magic': '#1770ff',     // Blue
+    'Rare': '#ffee00',      // Yellow
+    'Unique': '#c48300',    // Tan
+    'Set': '#009102',       // Green
+    'Crafted': '#c44500',   // Orange
+    'Ethereal': '#9400ab',  // Purple
 };
 
 // Function to highlight rarity and item combinations
@@ -97,9 +97,9 @@ function highlightGems(bodyText) {
 function highlightOrbs(bodyText) {
     let newText = bodyText;
 
-    orbs.forEach(orbType => {
-        const color = orbs[orbType];
+    Object.keys(orbs).forEach(orbType => {
         const keyword = `Orb of ${orbType}`;
+        const color = orbs[orbType];
         const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
         newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">${keyword}</span>`);
     });

@@ -104,10 +104,9 @@ function highlightOrbs(bodyText) {
 
     Object.keys(orbs).forEach(orbType => {
         const keyword = `Orb of ${orbType}`;
-        const pluralKeyword = `Orbs of ${orbType}`;
         const color = orbs[orbType];
-        const regex = new RegExp(`\\b(${keyword}|${pluralKeyword})\\b`, 'gi');
-        newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">$1</span>`);
+        const regex = new RegExp(`\\b(${keyword})\\b`, 'gi');
+        newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">${keyword}</span>`);
     });
 
     return newText;

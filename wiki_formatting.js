@@ -1,8 +1,7 @@
 // Define the lists for rarities and items
 const rarities = ['Magic', 'Rare', 'Unique', 'Set', 'Crafted', 'Ethereal'];
-const items = ['Item', 'Items', 'Jewel', 'Jewels', 'Jewelry', 'Amulet', 'Amulets', 'Ring', 'Rings', 'Charm', 'Charms',
-'Armor', 'Shield', 'Shields', 'Weapon', 'Weapons', 'Belt', "Belts", "Boot", 'Boots', "Glove", 'Gloves', 
-'Helm', 'Helms', 'Circlet'];
+const items = ['Item', 'Jewel', 'Jewelry', 'Amulet', 'Ring', 'Charm',
+'Armor', 'Shield', 'Weapon', 'Belt', "Boot", "Glove",'Helm', 'Circlet'];
 
 // Define the list for runes
 const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL', 
@@ -41,8 +40,8 @@ function highlightItems(bodyText) {
         const color = rarityColors[rarity];
         items.forEach(item => {
             const keywordPair = `${rarity} ${item}`;
-            const regex = new RegExp(`\\b${rarity}\\s+${item}\\b`, 'gi');
-            newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">${keywordPair}</span>`);
+            const regex = new RegExp(`\\b${rarity}\\s+${item}s?\\b`, 'gi'); // Match singular and plural forms
+            newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">$&</span>`);
         });
 
         // Highlight rarity words within brackets

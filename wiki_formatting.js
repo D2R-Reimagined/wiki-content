@@ -121,7 +121,7 @@ function traverseAndHighlight(node) {
             span.innerHTML = newText;
             node.parentNode.replaceChild(span, node);
         }
-    } else if (node.nodeType === Node.ELEMENT_NODE) {
+    } else if (node.nodeType === Node.ELEMENT_NODE && node.nodeName !== 'IMG') {
         node.childNodes.forEach(child => traverseAndHighlight(child));
     }
 }

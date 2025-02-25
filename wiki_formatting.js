@@ -129,7 +129,7 @@ function traverseAndHighlight(node) {
 
 // Function to update the HTML page with highlighted keywords within specified elements
 function highlightKeywords() {
-    const elements = document.querySelectorAll('figure.table, p');
+    const elements = document.querySelectorAll('figure.table, p, h1');
     elements.forEach(element => traverseAndHighlight(element));
 }
 

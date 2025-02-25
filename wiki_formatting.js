@@ -1,6 +1,6 @@
 // Define the lists for rarities and items
 const rarities = ['Magic', 'Rare', 'Unique', 'Set', 'Crafted', 'Ethereal'];
-const items = ['Jewel', 'Jewels', 'Amulet', 'Amulets', 'Ring', 'Rings', 'Charm', 'Charms',
+const items = ['Item', 'Items', 'Jewel', 'Jewels', 'Amulet', 'Amulets', 'Ring', 'Rings', 'Charm', 'Charms',
 'Armor', 'Shield', 'Shields', 'Weapon', 'Weapons', 'Belt', "Belts", "Boot", 'Boots', "Glove", 'Gloves', 
 'Helm', 'Helms', 'Circlet'];
 

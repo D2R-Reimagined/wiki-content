@@ -39,8 +39,14 @@ function highlightItems(bodyText) {
     rarities.forEach(rarity => {
         const color = rarityColors[rarity];
         items.forEach(item => {
-            const keywordPair = `${rarity} ${item}`;
-            const regex = new RegExp(`\\b${rarity}\\s+${item}s?\\b`, 'gi'); // Match singular and plural forms
+            let regex;
+            if (item === 'Jewelry') {
+                // Special case for 'Jewelry' which doesn't follow the typical singular/plural pattern
+                regex = new RegExp(`\\b${rarity}\\s+${item}\\b`, 'gi');
+            } else {
+                const keywordPair = `${rarity} ${item}`;
+                regex = new RegExp(`\\b${rarity}\\s+${item}s?\\b`, 'gi'); // Match singular and plural forms
+            }
             newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">$&</span>`);
         });
 

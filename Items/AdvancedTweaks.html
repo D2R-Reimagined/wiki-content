@@ -2,7 +2,7 @@
 title: Advanced Tweaks
 description: Optional advanced tweaks for use with the mod Reimagined
 published: true
-date: 2025-02-28T08:00:34.268Z
+date: 2025-02-28T08:25:48.725Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-02-28T07:36:02.473Z
@@ -39,12 +39,31 @@ dateCreated: 2025-02-28T07:36:02.473Z
 <p>&nbsp;</p>
 <h1><u>Forced Terror Zones</u></h1>
 <p>This forces the following very popular zones to always be terrorized! &nbsp;While changing your computer system's clock can extend throne of destruction or cow level sessions, keeping the popular areas terrorized makes things easier.</p>
+<ol>
+  <li>Navigate to your game installation and find this file: \Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\hd\global\excel\desecratedzones.json</li>
+  <li>Backup this file somewhere else so that you can undo this tweak when you wish to run other Terrorized Zones not included in this list.</li>
+  <li>Download the modified file here and replace it in the location shown in the first step.</li>
+  <li><u>Now the following levels are permanently terrorized:</u> Countess, Summoner, Nilathak, Andy, Meph, CS, Throne of Destruction, Baal, Cows</li>
+</ol>
 <p>&nbsp;</p>
 <h1><u>Potion &amp; Scroll removal from most monster drops</u></h1>
 <p>With potions and scrolls mostly gone off the ground, missing important gear becomes less of an issue.</p>
-<p>&nbsp;</p>
+<p>This will remove health &amp; mana potions from most trash mobs, however certain boss/quest/champions may have forced potion drops still. &nbsp;After applying if you need potions, visit the vendor.</p>
+<ol>
+  <li>Navigate to the treasureclassex.txt and open it with notepad.</li>
+  <li>Press CTRL + F (or on the menu go to edit, find) and search for these two lines listed below. &nbsp;After deleting both lines, close notepad and click save &amp; both potion types should no longer be dropping. &nbsp;<u>Search for &amp; delete these two lines:</u></li>
+</ol>
+<p><i>hp1-5</i></p>
+<p><i>mp1-5</i></p>
 <h1><u>Remove the Splash Charm's dust graphic</u></h1>
 <p>When using the Splash Charm, a giant cloud of dust is present letting the gamer know how large the area for the effect is covering. &nbsp;You can turn off this graphic, while the damage will continue to hit mobs making it easier to see things while fighting &amp; is a little easier on your graphics card.</p>
+<ol>
+  <li>Navigate to your game installation and find this file: \Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\hd\missiles\missiles.json</li>
+  <li>Right click on “missiles.json”, choose “open with”. &nbsp;Click “More Apps” and click on “Notepad” &amp; click “Ok”.</li>
+  <li>Press CTRL + F (or on the menu go to edit, find) and search for these two lines listed below. &nbsp;After deleting both lines, close notepad and click save &amp; the splash damage cloud of dust will continue to damage mobs but the graphic will no longer show. &nbsp;<u>Search for &amp; delete these two lines:</u></li>
+</ol>
+<p><i>&nbsp; &nbsp; "proc_splashdamage_four": "warcry_shockwave",</i></p>
+<p><i>&nbsp; &nbsp;"proc_splashdamage_five": "warcry_shockwave",</i></p>
 <p>&nbsp;</p>
 <h1><u>Expanded Aspect Ratio limit</u> (19% zoomed out)</h1>
 <p>This increases the viewable area on-screen, where Blizzard has allowed upto 19:10 ratio to be used in the game. &nbsp;This allows players to teleport horizontally much faster then a typical 16:9 ratio. &nbsp;Currently the steps listed are for Nvidia video card users only, works on 1080p &amp; 4k monitors too.</p>

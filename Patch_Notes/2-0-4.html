@@ -1,0 +1,142 @@
+<!--
+title: Version 2.0.4 of D2R Reimagined
+description: 
+published: true
+date: 2025-02-28T14:24:31.078Z
+tags: 
+editor: ckeditor
+dateCreated: 2025-02-28T14:18:46.956Z
+-->
+
+<h1>General Changes</h1>
+<ul>
+  <li>Splash charm has been reworked to be a small nova centered on your target for more reliable AOE</li>
+  <li>Curse duration now cap at 20s (impacts both player and enemy curses)</li>
+</ul>
+<h1>User Interface</h1>
+<ul>
+  <li>Controller Stash background reworked to be consistent with inventory and look less out of place and clutter compared to other controller UI elements.</li>
+</ul>
+<h1>Horadric Cube</h1>
+<ul>
+  <li>Chest upgrades now properly apply % absorb instead of flat absorb</li>
+  <li>Repair recipes should now work on unique quivers. Note: There is a limitation that prevents repairing above 255 quantity</li>
+  <li>Fixed FCR Weapon crafts to correctly roll a range of 20-30 (was previously always rolling 30)</li>
+  <li>Added Amethyst as a required reagent for end-game IAS weapon crafts to bring it in-line with other, similar weapon crafts</li>
+  <li>Removed erroneous Item Craft recipes for weapons that were causing conflicts</li>
+  <li>New Item Upgrade recipe for Weapon: %ED + AR + Knockback</li>
+  <li>New Craft recipe for Glove: +1 to [Class Tab] skills, FCR</li>
+  <li>New Craft recipe for Glove: +1 to [Class Tab] skills, IAS</li>
+</ul>
+<h1>Monsters</h1>
+<ul>
+  <li>Hell Grotesque family changes:<ul>
+      <li>%PDR reduced from 66% to 55%</li>
+      <li>HP reduced slightly</li>
+      <li>Spawnling's HP reduced slightly</li>
+    </ul>
+  </li>
+  <li>Hell Regurgitator family changes:<ul>
+      <li>Max HP reduced by 17% to make their HP more consistent</li>
+    </ul>
+  </li>
+  <li>Doom Knight's max melee damage reduced by 20% to reduce variance</li>
+  <li>Abyss Knight and Oblivion Knight's melee damage reduced by 15%</li>
+  <li>Arsenal and Shenk LTs no longer always spawn with Extra Strong</li>
+  <li>Smith/Hephasto Swords, Tormented Sisters, and Shenk LT's can no longer spawn with auras</li>
+</ul>
+<h1>Class Changes</h1>
+<p>Melee Updates</p>
+<ul>
+  <li>Some physical damage skills now have a small amount of added flat damage/level to make +skills a bit more useful and smooth out the leveling process. Exact values will likely still need further adjustments<ul>
+      <li>Skills include: Jab, Impale, Fend, Sacrifice, Zeal, Charge, Bash, Double Swing, Double Throw, Frenzy, Tectonic Slam, Concentrate, Berserk, Whirlwind, Feral Rage, Maul, Fury</li>
+    </ul>
+  </li>
+</ul>
+<p><strong><u>Amazon</u></strong></p>
+<ul>
+  <li>Impale has been reworked and now thrusts beyond your target, dealing damage in a line<ul>
+      <li>No longer causes extra durability loss</li>
+      <li>No longer always hits</li>
+      <li>No longer uninterruptible</li>
+      <li>Max slow% reduced from 75% to 30%</li>
+      <li>ED% reduced from 300% and 25%/level to 70% and 15%/level</li>
+      <li>Attack speed massively increased (no longer uses the old attack sequence animation)</li>
+    </ul>
+  </li>
+  <li>Added synergies for Jab, Impale, and Fend</li>
+  <li>Jab's %ED increased from -15% and 3%/level to 0% and 8%/level</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong><u>Assassin</u></strong></p>
+<ul>
+  <li>Charge duration increased to 30s from 15s for QoL</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong><u>Barbarian</u></strong></p>
+<ul>
+  <li>Tectonic Slam:<ul>
+      <li>Spikes now deal 100% of source damage, up from 75%</li>
+      <li>Spikes are no longer effected by Slow Missiles</li>
+      <li>Number of spikes increased from 3 to 8 to make the area of effect more reliable</li>
+      <li>Now usable with polearms</li>
+    </ul>
+  </li>
+  <li>Battle Cry tooltip updated to reflect that it reduces enemies' Physical Damage Reduction</li>
+</ul>
+<p><strong><u>Druid</u></strong></p>
+<ul>
+  <li>Fire Claws reworked into an AOE on-hit Fire-based attack:<ul>
+      <li>Doesn't work with splash charm because AOE is built into the skill</li>
+      <li>Damage curve adjusted to fit the skill's new role.</li>
+      <li>Skill level 29+ has a substantial damage bonus</li>
+    </ul>
+  </li>
+  <li>Ravens mana cost adjusted from flat 6, to scale at higher levels:<ul>
+      <li>level 1, 3.2 mana</li>
+      <li>level 10, 5.5 mana</li>
+      <li>level 25, 9 mana</li>
+      <li>level 41, 13 mana</li>
+      <li>level 76, 21.7 mana</li>
+    </ul>
+  </li>
+  <li>Decreased Spirit of Barbs HP/lvl</li>
+  <li>Increased HP/lvl for Heart of the Wolverine, Oak Sage, and all Vines for Hell only</li>
+  <li>Fixed Carrion Vine aura giving an extraordinary amount of mana regen. It now provides an aura of 5% mana regen +5/lvl</li>
+  <li>Fixed carrion vine aura not giving hpregen. It now provides 5 replenish + 5/lvl</li>
+</ul>
+<p><strong><u>Necromancer</u></strong></p>
+<ul>
+  <li>Revive monster velocity decreased from +200% to +130%</li>
+  <li>Fire Golem aura adjusted to use Golem Mastery as a synergy instead of +aura skill level to prevent the skill from being capped earlier than intended</li>
+  <li>Golem tooltips updated to show the damage bonus from Golem Mastery</li>
+  <li>Raise Skeleton now properly shows the %dmg increase from Raise Skeletal Mage</li>
+  <li>Curse duration now cap at 20s (impacts both player and enemy curses)</li>
+</ul>
+<p><strong><u>Paladin</u></strong></p>
+<ul>
+  <li>Vengeance reworked to apply scaling tri elemental damage based on skill level and synergies.<ul>
+      <li>Now works with splash charm</li>
+      <li>No longer reliant on weapon damage for elemental damage</li>
+      <li>Skill lvl 29+ has a high damage curve</li>
+    </ul>
+  </li>
+</ul>
+<h1>Items</h1>
+<ul>
+  <li>Desecration Sigil (Unique Sparkling Ball):<ul>
+      <li>Granted oSkill Grim Ward changed to Decrepify</li>
+    </ul>
+  </li>
+  <li>Shapeshifter (Unique Silver-Edged Axe):<ul>
+      <li>Reduced Shape Shifting from 10-15 -&gt; 5-7 to be within bit size limits</li>
+    </ul>
+  </li>
+  <li>Mosaic "50% Chance not to consume charges" affix made available on magic, rare, and crafted Assassin weapons</li>
+  <li>Non-starter Wands/Javelins should no longer start at reqlvl 7</li>
+  <li>Disabled Magic Suffix 'Of Traveling' (FRW, Stamina Drain Reduction) as it became a duplicate of suffix 'Of Speed' when stamina drain was removed</li>
+</ul>
+<p>Unique Item Reworks</p>
+<p>&gt; <a href="https://github.com/D2R-Reimagined/d2r-reimagined-mod/pull/655">Details and thoughts #655</a></p>
+<p>&nbsp;</p>
+<p><br>&nbsp;</p>

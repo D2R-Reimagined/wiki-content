@@ -2,7 +2,7 @@
 title: Advanced
 description: Optional advanced tweaks for use with the mod Reimagined
 published: true
-date: 2025-03-01T06:28:47.569Z
+date: 2025-03-01T07:03:27.683Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-03-01T06:28:19.095Z
@@ -13,7 +13,13 @@ dateCreated: 2025-03-01T06:28:19.095Z
 <p>&nbsp;</p>
 <p><mark class="pen-red">NOTE: These are advanced game changes, where extra steps are required beyond the basic game &amp; mod installation. &nbsp;Some of these were made by players &amp; others made by the mod developers, so support is not guaranteed. &nbsp;Please follow the steps &amp; instructions &amp; read the warnings in red. &nbsp;Be ready &amp; willing to reinstall the game if you make a mistake before continuing. &nbsp;</mark></p>
 <p><mark class="pen-red"><u>It is recommended to first experience the mod as it is by default before attempting any of these advanced changes.</u></mark></p>
-<p><mark class="pen-green">Temporary notes for Vinge, Delegus, Bakeit to review in green at the very bottom of this page. &nbsp;Deleting all green text on final version!</mark></p>
+<p><mark class="pen-green">Advanced Tweaks 2.0. &nbsp;This includes very easy installers for all the tweaks. &nbsp;Created a 1.0 page yesterday where the gamer has to manually install and update all the tweaks themselves.</mark></p>
+<p><mark class="pen-green">Temporary notes for Vinge, Delegus, Bakeit to review in green at the very bottom of this page also. &nbsp;<u>Deleting all this temporary green text on final version!</u></mark></p>
+<p><mark class="pen-green">Bat files are simply a list of commands that Windows executes in order through a windows command prompt. &nbsp;This allows the gamer to simply run the file where it can do the work of replacing the needed files instead of the user. &nbsp;This is fully transparent and editable through notepad reflecting the open source nature of Reimagined. &nbsp;This is also flexible, in that gamers that have installed their saved games and/or resurrected into a non-default location are able to edit the .bat file for their own accelerated uses. &nbsp;The default as written below should serve most of the community since most gamers have their files in the default installation directory.</mark></p>
+<p><mark class="pen-green">Yellow text is a placeholder for the downloadable .bat file. &nbsp;Red text for warnings.</mark> &nbsp;<mark class="pen-green">Including uninstallers to revert back to default - assume this is a good thing. &nbsp;We could cleanup the process by removing uninstallers, forcing the gamer to reinstall the mod. &nbsp;Thoughts?</mark></p>
+<p><mark class="pen-green"><u>For all of this to work, the .bat file needs to know the source of all these tweak files to overwrite the default mod files. &nbsp;Therefore, they would need to be included inside of the full reimagined the gamer unzips inside a different folder. &nbsp;So expanded stash replacement files in a side folder, but NOT applied by default.</u> &nbsp;Goal is to keep this easy for a gamer to enable or disable any tweak below, removing obstacles or user errors.</mark></p>
+<p><mark class="pen-green">I am not familiar enough with these modified files to know how often or rarely they are changed in-between reimagined versions by the developers:</mark><br><mark class="pen-green">&nbsp;missiles.json</mark><br><mark class="pen-green">expanded stash files</mark><br><mark class="pen-green">desecratedzones.json</mark><br><mark class="pen-green">treasureclassex.txt</mark></p>
+<p><mark class="pen-green">So in this effort to keep Reimagined modifications easily accessible, the mods would have to be responsible to include an altered version and default version inside the new advanced folder within the full future versions of Reimagined.</mark></p>
 <p>Short description of each of the advanced tweaks. &nbsp;Click the the link on the left or scroll down for the instructions.</p>
 <p>MOST TWEAKS BELOW CAN BE INSTALLED OR UNINSTALLED BY SIMPLY RUNNING THE .BAT FILE.</p>
 <p><u>Expanded Stash</u></p>
@@ -41,43 +47,31 @@ dateCreated: 2025-03-01T06:28:19.095Z
 <p><mark class="pen-red">You can create new character mules to temporarily hold the items &amp; then move them back after the installation.</mark></p>
 <p><mark class="pen-red">Please backup your saved game folder too when first installing the Expanded Stash incase you make a mistake</mark></p>
 <p>THERE IS NO UNDO FILE FOR THIS EXPANDED STASH. &nbsp;Backup your saved games before applying.</p>
-<p>Expanded Stash Mod Directory Install.bat</p>
-<p>Run this everytime a new version of Reimagined has been installed. &nbsp;If you have installed the expanded stash before, then that is all and you are done!</p>
-<p>However if this is the very first time you're installing the Expanded Stash, you will need to install the second installer below which will remove/destroy items currently inside your shared stash tabs. &nbsp;Simply download that file and double click and you're done. &nbsp;NEVER INSTALL THIS SECOND INSTALLER AGAIN.</p>
-<p>&nbsp;</p>
+<p><mark class="marker-yellow">Expanded Stash Mod Directory Install.bat</mark></p>
+<p><mark class="marker-blue">Run the file above everytime a new version of Reimagined has been installed. &nbsp;If you have installed the expanded stash before, then you are done!&nbsp;</mark></p>
+<p>However if this is the very first time you're installing the Expanded Stash, you will need to install the second installer below which will remove/destroy items currently inside your shared stash tabs. &nbsp;Simply download that file and double click and you're done. &nbsp;NEVER INSTALL THIS SECOND INSTALLER BELOW AGAIN.</p>
+<hr>
 <p>First play Reimagined, confirm that your stash tabs are empty &amp; have no gear or items. &nbsp;If they do have items, create a level 1 character and move the gear temporarily onto them.</p>
-<p>Expanded Stash Saved Game Install.bat</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p><mark class="marker-yellow">Expanded Stash Saved Game Install.bat</mark></p>
 <h1><u>Forced Terror Zones</u></h1>
-<p><mark class="pen-red">Please backup your original desecratedzones.json file as reminded in step 2 so that you can undo this tweak later for the times you wish to do custom terror zone runs such as trav tz or a less popular area not covered by the forced zones. &nbsp;To undo this tweak, simply copy your original file back to that location for the default hourly tz rotations.</mark></p>
-<p>This forces the following very popular zones to always be terrorized! &nbsp;While changing your computer system's clock can extend throne of destruction or cow level sessions, keeping the popular areas permanently terrorized makes things easier.</p>
-<ol>
-  <li>Navigate to your game installation and find this file: \Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\hd\global\excel\desecratedzones.json</li>
-  <li>Backup this file somewhere else so that you can undo this tweak when you wish to run other Terrorized Zones not included in this list.</li>
-  <li>Download the modified file here and replace it in the location shown in the first step.</li>
-  <li><u>Now the following levels are permanently terrorized:</u> Countess, Summoner, Nilathak, Andy, Meph, CS, Throne of Destruction, Baal, Cows</li>
-</ol>
-<p>&nbsp;</p>
+<p><mark class="pen-red">Have the game closed before running the installer/uninstaller.</mark></p>
+<p><u>This forces the following levels to be permanently terrorized:</u> Countess, Summoner, Nilathak, Andy, Meph, CS, Throne of Destruction, Baal, Cows</p>
+<p><mark class="marker-yellow">Forced Terror Zones Installer.bat</mark></p>
+<p>You may want to undo this tweak later for the times you wish to do custom terror zone runs such as trav tz or a less popular area not covered by these forced zones. &nbsp;To undo this tweak, simply run the uninstaller below to replace the original file back for the default hourly tz rotations.</p>
+<p><mark class="marker-yellow">Forced Terror Zones Uninstaller.bat</mark></p>
 <h1><u>Potion &amp; Scroll removal from most monster drops</u></h1>
+<p><mark class="pen-red">Have the game closed before running the installer/uninstaller.</mark></p>
 <p>With potions and scrolls mostly gone off the ground, missing important gear becomes less of an issue.</p>
-<p>This will remove health &amp; mana potions along with scrolls from most trash mobs, however certain boss/quest/champions may have forced potion drops still. &nbsp;After applying if you need potions, visit the vendor.</p>
-<ol>
-  <li>Navigate to the treasureclassex.txt and open it with notepad.</li>
-  <li>Press CTRL + F (or on the menu go to edit, find) and search for these two lines listed below. &nbsp;After deleting both lines, close notepad and click save &amp; both potion types should no longer be dropping. &nbsp;<u>Search for &amp; delete these two lines:</u></li>
-</ol>
-<p><i>hp1-5</i></p>
-<p><i>mp1-5</i></p>
+<p>This will remove health &amp; mana potions along with scrolls from most trash mobs, however certain boss/quest/champions may have forced potion drops still. &nbsp;After applying if you need potions or scrolls then visit the vendor.</p>
+<p><mark class="marker-yellow">Potion and Scroll Drop Removal Installer.bat</mark></p>
+<p>To restore the potions &amp; scrolls back to default where they drop again run the uninstaller below.</p>
+<p><mark class="marker-yellow">Potion and Scroll Drop Removal Uninstaller.bat</mark></p>
 <h1><u>Remove the Splash Charm's dust graphic</u></h1>
+<p><mark class="pen-red">Have the game closed before running the installer/uninstaller.</mark></p>
 <p>When using the Splash Charm, a giant cloud of dust is present letting the gamer know how large the area for the effect is covering. &nbsp;You can turn off this graphic, while the damage will continue to hit mobs making it easier to see things while fighting &amp; is a little easier on your graphics card.</p>
-<ol>
-  <li>Navigate to your game installation and find this file: \Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\hd\missiles\missiles.json</li>
-  <li>Right click on “missiles.json”, choose “open with”. &nbsp;Click “More Apps” and click on “Notepad” &amp; click “Ok”.</li>
-  <li>Press CTRL + F (or on the menu go to edit, find) and search for these two lines listed below. &nbsp;After deleting both lines, close notepad and click save &amp; the splash damage cloud of dust will continue to damage mobs but the graphic will no longer show. &nbsp;<u>Search for &amp; delete these two lines:</u></li>
-</ol>
-<p><i>&nbsp; &nbsp; "proc_splashdamage_four": "warcry_shockwave",</i></p>
-<p><i>&nbsp; &nbsp;"proc_splashdamage_five": "warcry_shockwave",</i></p>
-<p>&nbsp;</p>
+<p><mark class="marker-yellow">Splash Charm Dust Graphic Removal Installer.bat</mark></p>
+<p>To restore the splash charm dust graphic back to default where it's visible again run the uninstaller below.</p>
+<p><mark class="marker-yellow">Splash Charm Dust Graphic Removal Uninstaller.bat</mark></p>
 <h1><u>Expanded Aspect Ratio limit</u> (xx% zoomed out)</h1>
 <p>This increases the viewable area on-screen, where Blizzard has allowed upto 19:10 ratio to be used in the game. &nbsp;This allows players to teleport horizontally much faster than a typical 16:9 ratio. &nbsp;Currently the steps listed are for Nvidia video card users only, works on 1080p &amp; 4k monitors too.</p>
 <p>When playing on a non 19:10 display, this will introduce black bars on the top and bottom of the screen resulting in a little less visible area. &nbsp;However, the game will be zooming out to compensate, allowing for more loot to be displayed on screen at once. &nbsp;Allows you to see monsters further on the edge of the screen &amp; extends how far left and right you are able to teleport making runs go even faster.</p>
@@ -87,7 +81,7 @@ dateCreated: 2025-03-01T06:28:19.095Z
 <p>This reduces the amount of time it takes for both the game's initial loading and also reduces the loading screens when changing in-between acts/zones. &nbsp;This has been reported to remove microstutters &amp; slightly reduce the minimum system requirements (except for the hard drive storage size).</p>
 <p>(writeup &amp; pictures coming soon)</p>
 <p>&nbsp;</p>
-<p><mark class="pen-green">Temporary notes to self, deleting this green section on final draft.</mark></p>
+<p><mark class="pen-green">Deleting this green section on final draft.</mark></p>
 <p><mark class="pen-green">confirm permission from Delegus to post his Expanded Stash. &nbsp;Does he want credit on this page?</mark></p>
 <p><mark class="pen-green">Have blue mods do a quick review over the code &amp; instructions for potion/scroll drop removal and the splash damage dust graphic removal.</mark></p>
 <p>&nbsp;</p>

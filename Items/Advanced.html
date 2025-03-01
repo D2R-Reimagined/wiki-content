@@ -2,7 +2,7 @@
 title: Advanced
 description: Optional advanced tweaks for use with the mod Reimagined
 published: true
-date: 2025-03-01T07:07:14.173Z
+date: 2025-03-01T07:58:58.744Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-03-01T06:28:19.095Z
@@ -24,6 +24,13 @@ dateCreated: 2025-03-01T06:28:19.095Z
 <p><mark class="pen-green"><u>For all of this to work, the .bat file needs to know the source of all these tweak files to overwrite the default mod files. &nbsp;Therefore, they would need to be included inside of the full reimagined the gamer unzips inside a different folder. &nbsp;So expanded stash replacement files in a side folder, but NOT applied by default.</u> &nbsp;Goal is to keep this easy for a gamer to enable or disable any tweak below, removing obstacles or user errors.</mark></p>
 <p><mark class="pen-green">I am not familiar enough with these modified files to know how often or rarely they are changed in-between reimagined versions by the developers:</mark><br><mark class="pen-green">&nbsp;missiles.json</mark><br><mark class="pen-green">expanded stash files</mark><br><mark class="pen-green">desecratedzones.json</mark><br><mark class="pen-green">treasureclassex.txt</mark></p>
 <p><mark class="pen-green">So in this effort to keep Reimagined modifications easily accessible, the mods would have to be responsible to include an altered version and default version inside the new advanced folder within the full future versions of Reimagined.</mark></p>
+<p><mark class="pen-green">CONCLUSION: Every optional tweak with a .bat installer below would have the actual files included in the final release builds of Reimagined for this page to function properly.</mark></p>
+<p><mark class="pen-green">For example in my other 1.0 manual version of this page requests the gamer to navigate to the file below for the forced terror zone modification:</mark></p>
+<p><mark class="pen-green">&nbsp;\Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\hd\global\excel\desecratedzones.json</mark></p>
+<p><mark class="pen-green">Instead if this file was included in the future versions of the reimagined mod in a seperate folder, the .bat does all the work. &nbsp;So in this case a future full Reimagined.7z full release could contain some type of new folder with all the tweaks inside:</mark></p>
+<p><mark class="pen-green">/mods/Reimagined/Reimagined.mpq/Advanced/ForcedTerrorZoneInstall/desecratedzones.json</mark></p>
+<p><mark class="pen-green">/mods/Reimagined/Reimagined.mpq/Advanced/ForcedTerrorZoneUninstall/desecratedzones.json</mark></p>
+<p><mark class="pen-green">The install bat file simply grabs the one file and replaces the file used inside the real final directory the game uses.</mark></p>
 <p>Short description of each of the advanced tweaks. &nbsp;Click the the link on the left or scroll down for the instructions.</p>
 <p>MOST TWEAKS BELOW CAN BE INSTALLED OR UNINSTALLED BY SIMPLY RUNNING THE .BAT FILE.</p>
 <p><u>Expanded Stash</u></p>

@@ -2,58 +2,30 @@
 title: Version 2.0.4 of D2R Reimagined
 description: 
 published: true
-date: 2025-02-28T14:24:31.078Z
+date: 2025-03-01T14:05:21.558Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-02-28T14:18:46.956Z
 -->
 
-<h1>General Changes</h1>
+<h2>General</h2>
 <ul>
   <li>Splash charm has been reworked to be a small nova centered on your target for more reliable AOE</li>
-  <li>Curse duration now cap at 20s (impacts both player and enemy curses)</li>
+  <li>Curse durations now cap at 20s (impacts both player and enemy curses)</li>
 </ul>
-<h1>User Interface</h1>
+<h2>User Interface</h2>
 <ul>
-  <li>Controller Stash background reworked to be consistent with inventory and look less out of place and clutter compared to other controller UI elements.</li>
+  <li>Controller Stash background reworked to be consistent with inventory and look less out of place and cluttery compared to other controller UI elements.</li>
 </ul>
-<h1>Horadric Cube</h1>
-<ul>
-  <li>Chest upgrades now properly apply % absorb instead of flat absorb</li>
-  <li>Repair recipes should now work on unique quivers. Note: There is a limitation that prevents repairing above 255 quantity</li>
-  <li>Fixed FCR Weapon crafts to correctly roll a range of 20-30 (was previously always rolling 30)</li>
-  <li>Added Amethyst as a required reagent for end-game IAS weapon crafts to bring it in-line with other, similar weapon crafts</li>
-  <li>Removed erroneous Item Craft recipes for weapons that were causing conflicts</li>
-  <li>New Item Upgrade recipe for Weapon: %ED + AR + Knockback</li>
-  <li>New Craft recipe for Glove: +1 to [Class Tab] skills, FCR</li>
-  <li>New Craft recipe for Glove: +1 to [Class Tab] skills, IAS</li>
-</ul>
-<h1>Monsters</h1>
-<ul>
-  <li>Hell Grotesque family changes:<ul>
-      <li>%PDR reduced from 66% to 55%</li>
-      <li>HP reduced slightly</li>
-      <li>Spawnling's HP reduced slightly</li>
-    </ul>
-  </li>
-  <li>Hell Regurgitator family changes:<ul>
-      <li>Max HP reduced by 17% to make their HP more consistent</li>
-    </ul>
-  </li>
-  <li>Doom Knight's max melee damage reduced by 20% to reduce variance</li>
-  <li>Abyss Knight and Oblivion Knight's melee damage reduced by 15%</li>
-  <li>Arsenal and Shenk LTs no longer always spawn with Extra Strong</li>
-  <li>Smith/Hephasto Swords, Tormented Sisters, and Shenk LT's can no longer spawn with auras</li>
-</ul>
-<h1>Class Changes</h1>
-<p>Melee Updates</p>
+<h2>Classes</h2>
+<h3>Melee Updates</h3>
 <ul>
   <li>Some physical damage skills now have a small amount of added flat damage/level to make +skills a bit more useful and smooth out the leveling process. Exact values will likely still need further adjustments<ul>
       <li>Skills include: Jab, Impale, Fend, Sacrifice, Zeal, Charge, Bash, Double Swing, Double Throw, Frenzy, Tectonic Slam, Concentrate, Berserk, Whirlwind, Feral Rage, Maul, Fury</li>
     </ul>
   </li>
 </ul>
-<p><strong><u>Amazon</u></strong></p>
+<h3>Amazon</h3>
 <ul>
   <li>Impale has been reworked and now thrusts beyond your target, dealing damage in a line<ul>
       <li>No longer causes extra durability loss</li>
@@ -67,15 +39,13 @@ dateCreated: 2025-02-28T14:18:46.956Z
   <li>Added synergies for Jab, Impale, and Fend</li>
   <li>Jab's %ED increased from -15% and 3%/level to 0% and 8%/level</li>
 </ul>
-<p>&nbsp;</p>
-<p><strong><u>Assassin</u></strong></p>
+<h3>Assassin</h3>
 <ul>
   <li>Charge duration increased to 30s from 15s for QoL</li>
 </ul>
-<p>&nbsp;</p>
-<p><strong><u>Barbarian</u></strong></p>
+<h3>Barbarian</h3>
 <ul>
-  <li>Tectonic Slam:<ul>
+  <li>Tectonic Slam has been slightly reworked:<ul>
       <li>Spikes now deal 100% of source damage, up from 75%</li>
       <li>Spikes are no longer effected by Slow Missiles</li>
       <li>Number of spikes increased from 3 to 8 to make the area of effect more reliable</li>
@@ -84,7 +54,7 @@ dateCreated: 2025-02-28T14:18:46.956Z
   </li>
   <li>Battle Cry tooltip updated to reflect that it reduces enemies' Physical Damage Reduction</li>
 </ul>
-<p><strong><u>Druid</u></strong></p>
+<h3>Druid</h3>
 <ul>
   <li>Fire Claws reworked into an AOE on-hit Fire-based attack:<ul>
       <li>Doesn't work with splash charm because AOE is built into the skill</li>
@@ -105,15 +75,14 @@ dateCreated: 2025-02-28T14:18:46.956Z
   <li>Fixed Carrion Vine aura giving an extraordinary amount of mana regen. It now provides an aura of 5% mana regen +5/lvl</li>
   <li>Fixed carrion vine aura not giving hpregen. It now provides 5 replenish + 5/lvl</li>
 </ul>
-<p><strong><u>Necromancer</u></strong></p>
+<h3>Necromancer</h3>
 <ul>
   <li>Revive monster velocity decreased from +200% to +130%</li>
   <li>Fire Golem aura adjusted to use Golem Mastery as a synergy instead of +aura skill level to prevent the skill from being capped earlier than intended</li>
   <li>Golem tooltips updated to show the damage bonus from Golem Mastery</li>
   <li>Raise Skeleton now properly shows the %dmg increase from Raise Skeletal Mage</li>
-  <li>Curse duration now cap at 20s (impacts both player and enemy curses)</li>
 </ul>
-<p><strong><u>Paladin</u></strong></p>
+<h3>Paladin</h3>
 <ul>
   <li>Vengeance reworked to apply scaling tri elemental damage based on skill level and synergies.<ul>
       <li>Now works with splash charm</li>
@@ -122,7 +91,24 @@ dateCreated: 2025-02-28T14:18:46.956Z
     </ul>
   </li>
 </ul>
-<h1>Items</h1>
+<h2>Monsters</h2>
+<ul>
+  <li>Hell Grotesque family changes:<ul>
+      <li>%PDR reduced from 66% to 55%</li>
+      <li>HP reduced slightly</li>
+      <li>Spawnling's HP reduced slightly</li>
+    </ul>
+  </li>
+  <li>Hell Regurgitator family changes:<ul>
+      <li>Max HP reduced by 17% to make their HP more consistent</li>
+    </ul>
+  </li>
+  <li>Doom Knight's max melee damage reduced by 20% to reduce variance</li>
+  <li>Abyss Knight and Oblivion Knight's melee damage reduced by 15%</li>
+  <li>Arsenal and Shenk LTs no longer always spawn with Extra Strong</li>
+  <li>Smith/Hephasto Swords, Tormented Sisters, and Shenk LT's can no longer spawn with auras</li>
+</ul>
+<h2>Items</h2>
 <ul>
   <li>Desecration Sigil (Unique Sparkling Ball):<ul>
       <li>Granted oSkill Grim Ward changed to Decrepify</li>
@@ -134,9 +120,170 @@ dateCreated: 2025-02-28T14:18:46.956Z
   </li>
   <li>Mosaic "50% Chance not to consume charges" affix made available on magic, rare, and crafted Assassin weapons</li>
   <li>Non-starter Wands/Javelins should no longer start at reqlvl 7</li>
+</ul>
+<h3>Unique Item Reworks</h3>
+<blockquote>
+  <p>Details and thoughts <a href="https://github.com/D2R-Reimagined/d2r-reimagined-mod/pull/655"><u>#655</u></a></p>
+</blockquote>
+<p><strong>Fortress of Morpheus</strong></p>
+<ul>
+  <li>Added +40% Increased Chance to Block</li>
+  <li>Added +25% Faster Block Rate</li>
+</ul>
+<p><strong>Owlbear's Attack</strong></p>
+<ul>
+  <li><i>Name Change:</i> Fury of the Owlbear</li>
+  <li>12% chance to cast level 8 Nova on striking -&gt; level 50 Nova</li>
+  <li>Added +40% Increased Attack Speed</li>
+  <li>Attacker Takes Damage of 75-128 -&gt; 15% Chance of Open Wounds</li>
+  <li>+200-300% Enhanced Damage -&gt; +275-325% Enhanced Damage</li>
+  <li>+15% Requirements -&gt; -15% Requirements</li>
+  <li>Socketed 1-2 -&gt; Socketed 1-3</li>
+</ul>
+<p><strong>Call of the Kindred</strong></p>
+<ul>
+  <li>+2 to Summong Skills (Druid)</li>
+  <li>+20% Faster Hit Recovery</li>
+  <li>+1.25 p/Clvl to Life</li>
+  <li>+1.25p/Clvl to Mana</li>
+  <li>+3-5 to Summon Spirit Wolf</li>
+  <li>+3-5 to Summon Fenris</li>
+  <li>+3-5 to Summon Grizzly</li>
+  <li>+200-240 Defense</li>
+</ul>
+<p><strong>Ravings of the Mad</strong></p>
+<ul>
+  <li>+2-4 to Poison and Bone Skills</li>
+  <li>+25% Faster Cast Rate</li>
+  <li>+25% Faster Hit Recovery</li>
+  <li>+3-5 to Poison Nova</li>
+  <li>+3-5 to Corpse Explosion</li>
+  <li>+3-5 to Poison Explosion</li>
+  <li>+150-225 Defense</li>
+  <li>+15 to All Resistances</li>
+</ul>
+<p><strong>Braced for Battle</strong></p>
+<ul>
+  <li>Added +35 to All Resistances</li>
+  <li>Added +40% Increased Chance to Block</li>
+</ul>
+<p><strong>Blindsight</strong></p>
+<ul>
+  <li>Added 18% Chance to cast Dim Vision on Striking</li>
+  <li>Added -13 to Light Radius</li>
+</ul>
+<p><strong>Pull of Darkness</strong></p>
+<ul>
+  <li>+25% Faster Block Rate -&gt; +25% Faster Cast Rate</li>
+  <li>+25% Increased Chance to Block -&gt; Removed</li>
+  <li>Added +5-7 to Bone Spear</li>
+  <li>Added +2-3 to Bone Prison</li>
+</ul>
+<p><strong>Prancing Pike</strong></p>
+<ul>
+  <li>Added +40% Faster Run/Walk</li>
+  <li>Added +5 to Vigor (oskill)</li>
+  <li>+150-200% Enhanced Damage -&gt; +250-350% Enhanced Damage</li>
+  <li>+35-50 Life after Each Kill -&gt; +15-20 Life after Each Kill</li>
+  <li>Socketed [1] -&gt; Removed</li>
+</ul>
+<p><strong>Enchanted Blades</strong></p>
+<ul>
+  <li><i>Name Change:</i> Skaadi's Claws</li>
+  <li>Added +50% Chance not to Consume Charges on Finishers</li>
+  <li>+1-2 to Shadow Disciplines -&gt; +2-3 to Martial Arts</li>
+  <li>+3 to Battle Command -&gt; +3 to Cold Mastery</li>
+  <li>Added +20% Increased Attack Speed</li>
+  <li>Adds 75-200 Magic Damage -&gt; 15-20% Cold Skill Damage</li>
+  <li>Added +3-5 to Blades of Ice (Assassin Only)</li>
+  <li>25% Magic Resistance -&gt; +3 to Cold Mastery (oskill)</li>
+  <li>Level 80 -&gt; 86 / Req 76 -&gt; 86</li>
+</ul>
+<p><strong>Everkeeper</strong></p>
+<ul>
+  <li>Ignore Target's Defense -&gt; 40% Chance of Crushing Blow</li>
+  <li>Replenish Life +20 -&gt; 9% Life Leech</li>
+</ul>
+<p><strong>Oracle's Riddle</strong></p>
+<ul>
+  <li>+1-3 to All Skills -&gt; +1-2 Sorceress Skills</li>
+  <li>+7 to Valkyrie -&gt; Removed</li>
+  <li>Added +2-4 to Zeal</li>
+  <li>+50% Faster Block Rate -&gt; +20% Bonus to Attack Rating</li>
+  <li>+25-35% Increased Chance of Blocking -&gt; +175-225% Enhanced Damage</li>
+  <li>+20 Mana Stolen per Hit -&gt; +9% Life Leech</li>
+</ul>
+<p><strong>Paladin's Quest</strong></p>
+<ul>
+  <li>+20% Increased Attack Speed</li>
+  <li>+20% Faster Hit Recovery</li>
+  <li>+2-3 to Holy Shield</li>
+  <li>+2-3 to Smite</li>
+  <li>+15 to All Attributes</li>
+</ul>
+<p><strong>Nameless Horror</strong></p>
+<ul>
+  <li>10% Chance to cast level 20 Howl when struck -&gt; 20% Chance</li>
+  <li>+8 to Blood Golem</li>
+  <li>+5 to Golem Mastery</li>
+  <li>Level 15 Bone Prison Charges -&gt; Added +40% Increased Attack Speed</li>
+</ul>
+<p><strong>Insight of the Ancients</strong></p>
+<ul>
+  <li>+2 to Barbarian Skill Levels -&gt; +2 to All Skills</li>
+  <li>+100-140% Enhanced Defense -&gt; +200-250% Enhanced Defense</li>
+  <li>+40 to Energy -&gt; +20 to All Attributes</li>
+  <li>Added +2-4 to Battle Orders</li>
+  <li>Added +2-4 to Battle Command</li>
+  <li>Added +20% Bonus to Attack Rating</li>
+  <li>Level 77 -&gt; 86 / Req 80 -&gt; 86</li>
+</ul>
+<p><strong>Call of the Wild</strong></p>
+<ul>
+  <li>+2 to All Skills -&gt; +2-4 to Shapeshifting Skills</li>
+  <li>+25-50% Enhanced Damage -&gt; Adds +30-60 Weapon Damage</li>
+  <li>+6 Life Stolen per Hit -&gt; 6% Life Leech</li>
+  <li>+7 to Spirit Wolf -&gt; +3-5 to Werewolf</li>
+  <li>+7 to Summon Fenris -&gt; +3-5 to Fury</li>
+  <li>+7 to Summon Grizzly -&gt; 3-5 to Feral Rage</li>
+  <li>Added +20% Faster Hit Recovery</li>
+</ul>
+<p><strong>Patron of Perversity</strong></p>
+<ul>
+  <li>+2 to Druid Skill Levels -&gt; +2 to All Skills</li>
+  <li>Prevent Monster Heal -&gt; 50% Pierce</li>
+  <li>+4-7 to Shapeshifting Skills (Druid Only) -&gt; +6 to Fanaticism (oskill)</li>
+</ul>
+<p><strong>Lich Dagger</strong></p>
+<ul>
+  <li><i>Name Changed:</i> Forbidden Rites</li>
+  <li>25% Faster Cast Rate -&gt; 30% Increased Attack Speed</li>
+  <li>Fire, Lightning and Cold Skill Damage (15%) -&gt; Fire, Lightning and Cold Skill Damage (15-20%)</li>
+  <li>Added 60 Weapon Lightning Damage</li>
+  <li>Added 120 Weapon Cold Damage</li>
+  <li>Added 200 Weapon Fire Damage</li>
+</ul>
+<h2>Affixes</h2>
+<ul>
   <li>Disabled Magic Suffix 'Of Traveling' (FRW, Stamina Drain Reduction) as it became a duplicate of suffix 'Of Speed' when stamina drain was removed</li>
 </ul>
-<p>Unique Item Reworks</p>
-<p>&gt; <a href="https://github.com/D2R-Reimagined/d2r-reimagined-mod/pull/655">Details and thoughts #655</a></p>
-<p>&nbsp;</p>
-<p><br>&nbsp;</p>
+<h2>Cube Recipes</h2>
+<ul>
+  <li>Chest upgrades now properly apply % absorb instead of flat absorb</li>
+  <li>Repair recipes should now work on unique quivers. Note: There is a limitation that prevents repairing above 255 quantity</li>
+  <li>Fixed FCR Weapon crafts to correctly roll a range of 20-30 (was previously always rolling 30)</li>
+  <li>Added Amethyst as a required reagent for end-game IAS weapon crafts to bring it in-line with other, similar weapon crafts</li>
+  <li>Removed erroneous Item Craft recipes for weapons that were causing conflicts</li>
+  <li>New Item Upgrade recipe for Weapon: %ED + AR + Knockback</li>
+  <li>New Craft recipe for Glove: +1 to [Class Tab] skills, FCR</li>
+  <li>New Craft recipe for Glove: +1 to [Class Tab] skills, IAS</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+  <li>Sanctuary Aura on Equip items will now properly work on the mercenary</li>
+  <li>Wicked Impulse capitalization corrected</li>
+  <li>Fixed a bug for controller when using the staff alter to open the path to Duriel</li>
+  <li>Tiger Eye unique jewel should now properly have unique colored text</li>
+  <li>Amazon Javelins should now spawn with replenish as intended</li>
+  <li>Fixed ExpRatio at level 77 to be in-line with other levels</li>
+</ul>

@@ -2,7 +2,7 @@
 title: Advanced
 description: Optional advanced tweaks for use with the mod Reimagined
 published: true
-date: 2025-03-01T13:21:49.471Z
+date: 2025-03-01T16:25:32.232Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-03-01T06:28:19.095Z
@@ -10,26 +10,21 @@ dateCreated: 2025-03-01T06:28:19.095Z
 
 <p><span class="text-big">Advanced tweaks like these are from the efforts of various gamers &amp; would not have been possible without the community on Discord. &nbsp;Please join the growing team of gamers &amp; let us reimagine the future together!</span></p>
 <p><mark class="pen-red">IMPORTANT: Because most of the options below either adjust a single file or alter many files, when a new version of Reimagined gets installed you will have to reapply every tweak afterwards. &nbsp;Keep this in mind when deciding which of these are of interest. &nbsp;You could use them all together if you wanted, they are all optional.</mark></p>
-<p>&nbsp;</p>
-<p><mark class="pen-red">NOTE: These are advanced game changes, where extra steps are required beyond the basic game &amp; mod installation. &nbsp;Some of these were made by players &amp; others made by the mod developers, so support is not guaranteed. &nbsp;Please follow the steps &amp; instructions &amp; read the warnings in red. &nbsp;Be ready &amp; willing to reinstall the game if you make a mistake before continuing. &nbsp;</mark></p>
 <p><mark class="pen-red"><u>It is recommended to first experience the mod as it is by default before attempting any of these advanced changes.</u></mark></p>
-<p><mark class="pen-green">This is Advanced Tweaks 2.0. &nbsp;This includes very easy installers for all the tweaks. &nbsp;This is probably better then the 1.0 page.</mark></p>
+<p><mark class="pen-green">This is Advanced Tweaks 2.0. &nbsp;This includes very easy installers for all the tweaks. &nbsp;This is probably better then my 1.0 beta page.</mark></p>
 <p><mark class="pen-green">Created a longer 1.0 page yesterday where the gamer has to manually download or edit to install and update all the same tweaks themselves here:</mark></p>
 <p><mark class="pen-green">https://wiki.d2r-reimagined.com/en/Items/AdvancedTweaks</mark></p>
-<p>&nbsp;</p>
+<figure class="image"><img src="/advancedtweaks/file_structure.jpg"></figure>
 <p><mark class="pen-green">Temporary notes for Vinge, Delegus, Bakeit to review in green at the very bottom of this page also. &nbsp;</mark></p>
-<p><mark class="pen-green"><u>Deleting all this temporary green text on final version!</u></mark></p>
-<p><mark class="pen-green">Bat files are simply a list of commands that Windows executes in order through a windows command prompt. &nbsp;This allows the gamer to simply run the file where it can do the work of replacing the needed files instead of the user. &nbsp;This is fully transparent and editable through notepad reflecting the open source nature of Reimagined. &nbsp;This is also flexible, in that gamers that have installed their saved games and/or resurrected into a non-default location are able to edit the .bat file for their own accelerated uses. &nbsp;The default as written below should serve most of the community since most gamers have their files in the default installation directory.</mark></p>
+<p><mark class="pen-green"><u>Deleting all this temporary green text on final version! &nbsp;Including the directory picture above.</u></mark></p>
+<p><mark class="pen-green">Bat files are simply a list of commands that Windows executes in order through a windows command prompt. &nbsp;This allows the gamer to simply run the file where it can do the work of replacing the needed files instead of the user. &nbsp;This is fully transparent and editable through notepad reflecting the open source nature of Reimagined. &nbsp;This is also flexible, in that gamers that have installed their saved games and/or resurrected into a non-default location are able to edit the .bat file for their own accelerated uses. &nbsp;The default install directory as included should serve most of the community.</mark></p>
 <p><mark class="pen-green">Yellow text is a placeholder for the downloadable .bat file. &nbsp;Red text for warnings.</mark> &nbsp;<mark class="pen-green">Including uninstallers to revert back to default - assume this is a good thing. &nbsp;We could cleanup the process by removing uninstallers, forcing the gamer to reinstall the mod. &nbsp;Thoughts?</mark></p>
-<p><mark class="pen-green"><u>For all of this to work, the .bat file needs to know the source of all these tweak files to overwrite the default mod files. &nbsp;Therefore, they would need to be included inside of the full reimagined the gamer unzips inside a different folder. &nbsp;So expanded stash replacement files in a side folder, but NOT applied by default.</u> &nbsp;Goal is to keep this easy for a gamer to enable or disable any tweak below, removing obstacles or user errors.</mark></p>
+<p><mark class="pen-green"><u>For all of this to work, the .bat file needs to know the source of all these tweak files to overwrite the default mod files. &nbsp;Therefore, this collection of optional modifications could be included in a seperate zip file OR could be included with every release in the full Reimagination but simply not activated. &nbsp;So expanded stash replacement files waiting in the advanced folder, but NOT applied by default.</u> &nbsp;Goal is to keep this easy for a gamer to enable or disable any tweak below, removing obstacles or user errors.</mark></p>
 <p><mark class="pen-green">I am not familiar enough with these modified files to know how often or rarely they are changed in-between reimagined versions by the developers:</mark><br><mark class="pen-green">&nbsp;missiles.json</mark><br><mark class="pen-green">expanded stash files</mark><br><mark class="pen-green">desecratedzones.json</mark><br><mark class="pen-green">treasureclassex.txt</mark></p>
-<p><mark class="pen-green">So in this effort to keep Reimagined modifications easily accessible, the mods would have to be responsible to include an altered version and default version inside the new advanced folder within the full future versions of Reimagined.</mark></p>
-<p><mark class="pen-green">CONCLUSION: Every optional tweak with a .bat installer below would have the actual files included in the final release builds of Reimagined for this page to function properly.</mark></p>
-<p><mark class="pen-green">For example in my other 1.0 manual version of this page requests the gamer to navigate to the file below for the forced terror zone modification:</mark></p>
-<p><mark class="pen-green">&nbsp;\Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\hd\global\excel\desecratedzones.json</mark></p>
-<p><mark class="pen-green">Instead if this file was included in the future versions of the reimagined mod in a seperate folder, the .bat does all the work. &nbsp;So in this case a future full Reimagined.7z full release could contain some type of new folder with all the tweaks inside:</mark></p>
-<p><mark class="pen-green">/mods/Reimagined/Reimagined.mpq/Advanced/ForcedTerrorZoneInstall/desecratedzones.json</mark></p>
-<p><mark class="pen-green">/mods/Reimagined/Reimagined.mpq/Advanced/ForcedTerrorZoneUninstall/desecratedzones.json</mark></p>
+<p><mark class="pen-green">So in this effort to keep Reimagined modifications easily accessible, the mods would have to be responsible to include an altered version and default version inside the new advanced folder within the future versions of Reimagined.</mark></p>
+<figure class="image"><img src="/advancedtweaks/keep_bat_install_uninstall_on_the_website_only.jpg"></figure>
+<p><mark class="pen-green">Will be best to keep the .bat files on this website only, as in the picture above. &nbsp;Force gamers to read disclaimers &amp; red font warnings, such as the initial install step for the first time the expanded stash is installed. &nbsp;Do not want excited gamers to blindly loose their gear without visiting the website.</mark></p>
+<p><mark class="pen-green">Typically until now the gamer has to either edit or merge multiple folders, opening the door for user errors. &nbsp;Allowing the computer to execute the overwrite should make turning on or off a modification extremely easy.</mark></p>
 <p><mark class="pen-green">The install bat file simply grabs the one file and replaces the file used inside the real final directory the game uses.</mark></p>
 <p>Short description of each of the advanced tweaks. &nbsp;Click the the link on the left or scroll down for the instructions.</p>
 <p>MOST TWEAKS BELOW CAN BE INSTALLED OR UNINSTALLED BY SIMPLY RUNNING THE .BAT FILE.</p>
@@ -68,23 +63,23 @@ dateCreated: 2025-03-01T06:28:19.095Z
 <figure class="image"><img src="/advancedtweaks/forced_tz.jpg"></figure>
 <p><mark class="pen-red">Have the game closed before running the installer/uninstaller.</mark></p>
 <p><u>This forces the following levels to be permanently terrorized:</u> Countess, Summoner, Nilathak, Andy, Meph, CS, Throne of Destruction, Baal, Cows</p>
-<p><mark class="marker-yellow">Forced Terror Zones Installer.bat</mark></p>
+<p><mark class="marker-yellow">Forced Terror Zones Install.bat</mark></p>
 <p>You may want to undo this tweak later for the times you wish to do custom terror zone runs such as trav tz or a less popular area not covered by these forced zones. &nbsp;To undo this tweak, simply run the uninstaller below to replace the original file back for the default hourly tz rotations.</p>
-<p><mark class="marker-yellow">Forced Terror Zones Uninstaller.bat</mark></p>
-<h1><u>Potion &amp; Scroll removal from most monster drops</u></h1>
+<p><mark class="marker-yellow">Forced Terror Zones Uninstall.bat</mark></p>
+<h1><u>Potion &amp; Scroll drop removal from most monster loot</u></h1>
 <figure class="image"><img src="/advancedtweaks/beforeafter.jpg"></figure>
 <p><mark class="pen-red">Have the game closed before running the installer/uninstaller.</mark></p>
-<p>With potions and scrolls mostly gone off the ground, missing important gear becomes less of an issue.</p>
-<p>This will remove health &amp; mana potions along with scrolls from most trash mobs, however certain boss/quest/champions may have forced potion drops still. &nbsp;After applying if you need potions or scrolls then visit the vendor.</p>
-<p><mark class="marker-yellow">Potion and Scroll Drop Removal Installer.bat</mark></p>
+<p>With potions and scrolls gone off the ground, missing important gear becomes less of an issue.</p>
+<p>This will remove health &amp; mana potions along with scrolls from trash mobs, however certain boss/quest/champions may have forced potion drop rarely. &nbsp;After applying if you want potions or scrolls then visit the vendor.</p>
+<p><mark class="marker-yellow">Potion Scroll Drop Removal Install.bat</mark></p>
 <p>To restore the potions &amp; scrolls back to default where they drop again run the uninstaller below.</p>
-<p><mark class="marker-yellow">Potion and Scroll Drop Removal Uninstaller.bat</mark></p>
-<h1><u>Remove the Splash Charm's dust graphic</u></h1>
+<p><mark class="marker-yellow">Potion Scroll Drop Removal Uninstall.bat</mark></p>
+<h1><u>Remove the Splash Charm's red effect graphic</u></h1>
 <p><mark class="pen-red">Have the game closed before running the installer/uninstaller.</mark></p>
-<p>When using the Splash Charm, a giant cloud of dust is present letting the gamer know how large the area for the effect is covering. &nbsp;You can turn off this graphic, while the damage will continue to hit mobs making it easier to see things while fighting &amp; is a little easier on your graphics card.</p>
-<p><mark class="marker-yellow">Splash Charm Dust Graphic Removal Installer.bat</mark></p>
-<p>To restore the splash charm dust graphic back to default where it's visible again run the uninstaller below.</p>
-<p><mark class="marker-yellow">Splash Charm Dust Graphic Removal Uninstaller.bat</mark></p>
+<p>When using the Splash Charm, a red swipe graphic is present letting the gamer know how large the area for the effect is covering. &nbsp;You can turn off this graphic, while the damage will continue to hit mobs making it easier to see things while fighting.</p>
+<p><mark class="marker-yellow">Splash Charm Effect Graphic Removal Install.bat</mark></p>
+<p>To restore the splash charm effect graphic back to default where it's visible again run the uninstaller below.</p>
+<p><mark class="marker-yellow">Splash Charm Effect Graphic Removal Uninstall.bat</mark></p>
 <h1><u>Expanded Aspect Ratio limit</u> (xx% zoomed out)</h1>
 <p>This increases the viewable area on-screen, where Blizzard has allowed upto 19:10 ratio to be used in the game. &nbsp;This allows players to teleport horizontally much faster than a typical 16:9 ratio. &nbsp;Currently the steps listed are for Nvidia video card users only, works on 1080p &amp; 4k monitors too.</p>
 <p>When playing on a non 19:10 display, this will introduce black bars on the top and bottom of the screen resulting in a little less visible area. &nbsp;However, the game will be zooming out to compensate, allowing for more loot to be displayed on screen at once. &nbsp;Allows you to see monsters further on the edge of the screen &amp; extends how far left and right you are able to teleport making runs go even faster.</p>
@@ -96,12 +91,21 @@ dateCreated: 2025-03-01T06:28:19.095Z
 <p>&nbsp;</p>
 <p><mark class="pen-green">Deleting this green section on final draft.</mark></p>
 <p><mark class="pen-green">Does Delegus want credit on this page for his Expanded Stash? &nbsp;Happy to give it, it's the best tweak!</mark></p>
-<p><mark class="pen-green">Have blue mods do a quick review over the code &amp; instructions for potion/scroll drop removal and the splash damage dust graphic removal.</mark></p>
-<p><mark class="pen-green">Because this is the 2.0 version of this website, no files other then .bat files are needed to be uploaded or sent to gamers as they're included in the full release mod, ready to be enabled or disabled by the .bat files.</mark></p>
 <p>&nbsp;</p>
-<p><mark class="pen-green">While I (Slamina) have tested the expanded stash &amp; forced terror zones with success for weeks, I have not yet tested the potion drop removal or splash charm dust graphic removal as I've only read about them recently.</mark></p>
-<p>&nbsp;</p>
+<p><mark class="pen-green">While I (Slamina) have tested the expanded stash &amp; forced terror zones with success for weeks, I have only tested the scroll &amp; potion drop removal + splash charm effect graphic removal for an hour.</mark></p>
+<p><mark class="pen-green">Will write-up the faster loading + aspect ratio tweaks soon as I'm confident they'll work. &nbsp;They have no .bat files so I wanted to get the other content written first.</mark></p>
 <p><mark class="pen-green">The much faster loading game tweak was something I had already published on the other wiki but figured moving it to this new wiki would be helpful. &nbsp;This is a modification of an unmodded tweak that has helped hundreds of people on reddit, I simply tweaked it to work specifically on the reimagined mod. &nbsp;It's worked great on 1.21.1, preview4 &amp; versions 2.01-2.03!</mark></p>
 <p>&nbsp;</p>
-<p><mark class="pen-green">The Expanded Aspect Ratio limit is a new tweak I recently made &amp; have been using it for over a month. &nbsp;This is not mod specific &amp; will work in any version of resurrected. &nbsp;So I'm confident this will make a great addition for gamers to try &amp; decide for themselves. &nbsp;My father will be visiting this entire summer &amp; with his AMD videocard I can expand these Nvidia only instructions to include steps for all the AMD graphic card users too and add those steps for them. &nbsp;The extra visibility for the Player vs Monster aspect is exceptional, allows for more loot to be shown on screen due to being zoomed out slightly. &nbsp;Blizzard scaled the aggro radius to max out at 19:10 so there's no unfair advantage, this is simply just another quality of life change. &nbsp;This ratio is the hard limit by Blizzard, any attempts to go past 19:10 just results in bars on all sides without zooming further. &nbsp;The 19:10 limit was put in place by Blizzard for pvp fairness reasons. &nbsp;I'll create a custom table showing the exact settings for the most popular resolutions so gamers can enjoy the new experience!</mark></p>
-<p><mark class="pen-green">Thoughts?</mark></p>
+<p><mark class="pen-green">The Expanded Aspect Ratio limit is a new tweak I recently made &amp; have been using it for over a month. &nbsp;This is not mod specific &amp; will work in any version of resurrected. &nbsp;So I'm confident this will make a great addition for gamers to try &amp; decide for themselves. &nbsp;This summer will have access to an AMD videocard &nbsp;so I can expand these Nvidia only instructions to include steps for all the AMD graphic card users too and add those steps for them. &nbsp;The extra visibility for the Player vs Monster aspect is exceptional, allows for more loot to be shown on screen due to being zoomed out slightly. &nbsp;Blizzard scaled the aggro radius to max out at 19:10 so there's no unfair advantage, this is simply just another quality of life change. &nbsp;This ratio is the hard limit set by Blizzard, any attempts to go past 19:10 just results in bars on all sides without zooming further. &nbsp;The 19:10 limit was put in place by Blizzard for pvp fairness reasons. &nbsp;I'll create a custom table showing the exact settings for the most popular resolutions so gamers can enjoy the new experience!</mark></p>
+<p><mark class="pen-green">Thoughts? Like or dislike? &nbsp;SHORTER explanation included in the README.txt included with the .zip at the moment.</mark></p>
+<hr>
+<p><mark class="pen-green">Have blue mods do a quick review over the code &amp; instructions for potion/scroll drop removal and the splash damage effect graphic removal. &nbsp;Make sure it was done properly:</mark></p>
+<p>For the splash damage graphic removal</p>
+<p>\Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\hd\missiles\missiles.json</p>
+<p>This was deleted:</p>
+<p>&nbsp; &nbsp; "proc_splash_explode": "warcry_shockwave",</p>
+<hr>
+<p>For the Scroll &amp; Potion drop removal</p>
+<p>\Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\global\Excel\treasureclassex.txt</p>
+<p>Do a CTRL+F: 99999</p>
+<p>Only changed a few dozen items to have a nodrop at 99999. &nbsp;Not sure if that is too much or not enough edits to be effective enough. &nbsp;Tried killing in a handful of locations for a while &amp; didn't see a single scroll or potion drop.</p>

@@ -2,7 +2,7 @@
 title: Quality Upgrading
 description: Quality Upgrading
 published: true
-date: 2025-02-28T14:51:00.610Z
+date: 2025-03-01T09:53:03.536Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:02:30.718Z
@@ -105,7 +105,7 @@ Notice both uniques are the same unique weapon, however one had its quality upgr
 ![act2mercweaponcompare.jpg](/qualityupgrading/act2mercweaponcompare.jpg)
 Above picture shows a low level 2H spear upgraded while leveling, showing the Mercenary's character screen while having it equipped.  Note his large damage difference between the [N] on the left & the upgraded [X] version on the right!
 
-![slamweaponcompare.jpg](/qualityupgrading/slamweaponcompare.jpg)
+![1.jpg](/qualityupgrading/1.jpg)
 Above picture shows the new 2.0 Barbarian "Techtonic Slam" on the character screen at level 25.  This unique drops at a [N] quality by default, however upgrading it to [X] happens to not increase the required level & delivers significantly more damage!  2H Mace bases are some of the highest damage bases, making this particular unique extra strong for early leveling.
 
 ## While leveling the primary three items to upgrade are:
@@ -117,7 +117,7 @@ Your Helmet!  The typical diablo2 websites show many helmets do not allow for 4 
 
 There are certain unique & set belts that are very incredible, however sadly only allow the player to hold 4 or 8 potions.  This is now fixed by upgrading the base to an [X] or [E] allowing a full 16 potions when equipped.
 
-![3wayhammer.jpg](/qualityupgrading/3wayhammer.jpg)
+![2.jpg](/qualityupgrading/2.jpg)
 
 ## Examples with more pictures of weapons & armor
 In conclusion below are a few more pictures showing the side-by-side [N] [X] [E] versions of various weapons and armor and how incredible taking advantage of the Reimagined upgrade recipes are.  Included an Ethereal weapon in a picture too.  
@@ -126,9 +126,9 @@ Click on "Cube Recipes" on the left side of the website to access the Rare or se
 
 
 ![3wayarmor.jpg](/qualityupgrading/3wayarmor.jpg)
-![3wayethspear.jpg](/qualityupgrading/3wayethspear.jpg)
-![3waygambled2h.jpg](/qualityupgrading/3waygambled2h.jpg)
-![3waymace.jpg](/qualityupgrading/3waymace.jpg)
-![3wayhammer2.jpg](/qualityupgrading/3wayhammer2.jpg)
-![3waymaul.jpg](/qualityupgrading/3waymaul.jpg)
-![3waysword.jpg](/qualityupgrading/3waysword.jpg)
+![3.jpg](/qualityupgrading/3.jpg)
+![4.jpg](/qualityupgrading/4.jpg)
+![5.jpg](/qualityupgrading/5.jpg)
+![6.jpg](/qualityupgrading/6.jpg)
+![7.jpg](/qualityupgrading/7.jpg)
+![8.jpg](/qualityupgrading/8.jpg)

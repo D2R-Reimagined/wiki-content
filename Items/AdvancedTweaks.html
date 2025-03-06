@@ -2,7 +2,7 @@
 title: Advanced Tweaks
 description: Optional advanced tweaks for use with the mod Reimagined
 published: true
-date: 2025-03-06T14:00:19.431Z
+date: 2025-03-06T16:47:00.727Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-02-28T07:36:02.473Z
@@ -17,6 +17,9 @@ dateCreated: 2025-02-28T07:36:02.473Z
 <p>The install bat file simply grabs one file and replaces the file used inside the real final directory the game uses. &nbsp;So double click the install to tryout the change, and double click uninstall to go back to the default.</p>
 <h2>Short description of each advanced tweak</h2>
 <p>MOST TWEAKS BELOW CAN BE INSTALLED OR UNINSTALLED BY SIMPLY RUNNING THE .BAT FILE.</p>
+<p><u>Automatic Saved Game Backup</u></p>
+<p>Running this both launches Reimagined &amp; also copies your Saved Game directory into a new zip file at the same time. &nbsp;So by playing the game, you've just created a backup.</p>
+<p>&nbsp;</p>
 <p><u>Expanded Stash</u></p>
 <figure class="image"><img src="/advancedtweaks/expandedstashpreview.jpg"></figure>
 <p>This increases the shared stash tabs from 3 to 7. &nbsp;Every additional tab is able to hold 2.5M gold as well allowing for an additional 10 million more gold to be stored. &nbsp;More freedom with more storage.</p>
@@ -60,6 +63,13 @@ dateCreated: 2025-02-28T07:36:02.473Z
 <p>To install open the zip &amp; drag this into the Diablo II Resurrected folder to be merged with the mods folder, identical to installing the reimagined mod itself.</p>
 <p>Advanced Tweaks Reimagined 2.04 PREVIEW5.zip <a href="/advancedtweaks/advanced_tweaks_reimagined_2.04_preview5.zip">Click HERE to download</a> <mark class="marker-pink">password protected during testing</mark></p>
 <p>&nbsp;</p>
+<h1><u>Automatic Saved Game Backup</u></h1>
+<p>The .zip backups will be stored in your \Saved Games\ directory. &nbsp;It is your responsibility to restore the contents of the zip if and when you choose to do so. &nbsp;Feel free to save them anywhere &amp; rename the .bat to anything you like. &nbsp;Right-click &amp; choosing “edit” will open this using notepad where you can add or remove more commands inside this custom shortcut such as -enablerespec</p>
+<p>When you double click to open two things will happen: (1) Your Diablo II Resurrected saved games folder will be copied to a zipfile with the filename including the date &amp; (2) Reimagined game will launch. There are two key differences between these first two options:</p>
+<p><mark class="marker-green">D2R and saved game backup.bat</mark> <a href="/advancedtweaks/d2r_and_saved_game_backup.bat">Click HERE to download</a> Overwrites the previous zip if saved within the same 1 minute. &nbsp;This one is good because if you played a dozen times then you'll have a dozen backups. &nbsp;The same is true about the disadvantage in that ten games is approximately 7MB in size when testing.</p>
+<p><mark class="marker-green">D2R and saved game backup daily.bat</mark> <a href="/advancedtweaks/d2r_and_saved_game_backup_daily.bat">Click HERE to download</a> Overwrites the previous zip if saved within the same day. &nbsp;This one is good because it's not overwhelming with how many saved games can get stored. &nbsp;However the disadvantage is it'll continue writing over that zip file until the next day. &nbsp;Just pick whichever appeals to you.</p>
+<p>&nbsp;</p>
+<p><mark class="marker-green">Reimagined.bat</mark> <a href="/advancedtweaks/reimagined.bat">Click HERE to download</a> This one simply launches the Reimagined mod. &nbsp;Unlike the two options above, there is no automatic saved game zip function when running this one. &nbsp;Convenient in that you don't have to edit a shortcut to begin playing Reimagined no matter where you installed it.</p>
 <h1><u>Expanded Stash</u></h1>
 <p>This increases the shared stash tabs from 3 to 7. &nbsp;Every additional tab is able to hold 2.5M gold, so this increases the total amount of gold that can be held too.</p>
 <figure class="image"><img src="/advancedtweaks/expandedstash.jpg"></figure>

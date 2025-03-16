@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2025-03-16T03:10:30.517Z
+date: 2025-03-16T12:17:45.585Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -55,10 +55,30 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <ul>
   <li><mark class="pen-red"><strong>Note: this performs a fresh install of Reimagined. Any changes you've made, whether manually or the Advanced Tweaks below, will be wiped and need&nbsp;to be remade.</strong></mark></li>
   <li>If you see a warning press ‘More Info’ and click ‘Run Anyway’.</li>
-  <li>You should see a black command window open - let the process finish.</li>
+  <li>You should see a black command window open - let the process finish.<ul>
+      <li>If you see an error, refer to the troubleshooting section below.</li>
+    </ul>
+  </li>
 </ul>
 <p>4. The mod is now installed/updated and ready to play!<br>&nbsp;</p>
-<h3>Play &amp; Backup</h3>
+<h4>Installation Troubleshooting</h4>
+<p><strong>Error: Windows cannot find 7zr.exe</strong></p>
+<figure class="image image_resized" style="width:37.43%;"><img src="/installerpathnotfound.png"></figure>
+<ul>
+  <li><mark class="pen-red"><strong>Problem</strong></mark>: You didn't extract to the desktop.</li>
+  <li><mark class="pen-green"><strong>Resolution</strong></mark>: Double-check where you extracted to, move the folder to your desktop if necessary.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><mark class="pen-red"><strong>Problem</strong></mark>: Your desktop is located on a virtual drive (e.g. OneDrive).</li>
+  <li><mark class="pen-green"><strong>Resolution</strong></mark>: Edit the Install file to correct the directory path.<ul>
+      <li>Right-click the file, select ‘Edit in Notepad’ (or a word processor of your choice)</li>
+      <li>Update the directory path to reflect your setup, like the below:</li>
+    </ul>
+  </li>
+</ul>
+<figure class="image image_resized" style="width:62.7%;"><img src="/installercorrectedpath.png"></figure>
+<h3><br>Play &amp; Backup</h3>
 <p>To play the mod, double-click either of the ‘Play Reimagined’ files.</p>
 <ul>
   <li>‘Play Reimagined (Daily Backup)’ - Launches the game and creates a backup of your Reimagined Saved Game files with today's date. If a backup exists from today, it will overwrite it.</li>

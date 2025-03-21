@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2025-03-21T01:52:50.169Z
+date: 2025-03-21T02:35:58.435Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -171,14 +171,90 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <h2><br>D2RMM</h2>
 <p><a href="https://www.nexusmods.com/diablo2resurrected/mods/169">D2RMM on Nexus Mods</a></p>
 <p>Using a Mod Manager allows you to easily install a variety of mods together (assuming they play nice) without having to know anything about modding.</p>
-<p>Your mod files will be now be located in <code><strong>D2RMM\mods\</strong></code><strong> </strong>instead of <code><strong>Diablo II Resurrected\mods\</strong></code>.</p>
+<p>Reimagined is packed full of expansive features and QOL updates, so installing extra mods isn't always necessary.&nbsp;</p>
+<p>Check the list of <a href="https://wiki.d2r-reimagined.com/en/Installs#reimagined-features">Reimagined features</a> below to see if a 3rd-party mod is still necessary.</p>
+<p>&nbsp;</p>
+<p>When using D2RMM your active mod files will be now be located under the <code><strong>D2RMM\mods\</strong></code><strong> </strong>folder instead of <code><strong>Diablo II Resurrected\mods\</strong></code>.</p>
 <p>Any changes you make to Reimagined files needs to be done in the D2RMM mods directory.</p>
-<p>If using the RDL (above), you will need to copy the file changes over from <code><strong>Diablo II Resurrected\mods\</strong></code> to <code><strong>D2RMM\mods\</strong></code>.</p>
+<p>If using the RDL (above), you will need to copy the file changes over from <code><strong>Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data</strong></code> to <code><strong>D2RMM\mods\Reimagined\data</strong></code>.<br>&nbsp;</p>
+<h4>File Steps</h4>
+<p>1. Find and open your new<code>D2RMM</code> folder - navigate to the <code>mods</code> directory.</p>
+<ul>
+  <li>You should see a text file called 'PUT YOUR MODS HERE' - leave this window open, we'll use it later.</li>
+</ul>
+<p>2. Open a new File Explorer window and navigate to your <code>Reimagined</code> mod folder under your D2R Install directory.</p>
+<p>3. Copy the <code>Reimagined.mpq</code> folder (this should contain a Data folder and ModInfo.json).</p>
+<p>4. Paste the <code>Reimagined.mpq</code> folder into the <code>D2RMM/mods</code> folder from step 2.</p>
+<ul>
+  <li>We recommend renaming the folder to <code>Reimagined</code></li>
+</ul>
+<h4>D2RMM Steps</h4>
+<p>5. Open D2RMM as Administrator.</p>
+<p>6. Once open, click the three dots in the bottom-right corner and select 'Refresh Mod List'.</p>
+<p>7. Reimagined should appear in the mod list.</p>
 <blockquote>
-  <p><mark class="pen-red"><strong>Reimagined must always be first in the list of mods. Click and drag the line to the top if it isn't.</strong></mark></p>
+  <p><mark class="pen-red"><strong>The Reimagined folder must always be first in the list of mods. Click and drag the line to the top if it isn't.</strong></mark></p>
 </blockquote>
-<h3><br>Reimagined Features:</h3>
-<p>Reimagined is packed full of expansive features and QOL updates, so installing extra mods isn't always necessary.</p>
+<p>8. Navigate to the Settings tab (at the top).</p>
+<ul>
+  <li>8a. Click on General.<ul>
+      <li>Change 'Output Mod Name' to 'Reimagined'.</li>
+      <li>Toggle 'Automatically install mods before running the game'.</li>
+    </ul>
+  </li>
+  <li>8b. Click on Game Launcher.<ul>
+      <li>Under 'Extra Game Args', paste the following: <code>-mod Reimagined -txt</code></li>
+      <li>Feel free to add any other args you want after everything else.</li>
+    </ul>
+  </li>
+</ul>
+<p>9. Navigate back to the Mods tab.</p>
+<p>10. Click Install Mods.</p>
+<h4><br>Save File Steps</h4>
+<p>11. In File Explorer, navigate to your <code>Saved Games</code> directory.</p>
+<p>12. Check the <code>Reimagined</code> folder - if you see your save files, you're good to go!</p>
+<ul>
+  <li>If the folder is empty, copy the contents from the backup folder you created earlier, and paste the contents in the empty Reimagined folder.<br>&nbsp;</li>
+</ul>
+<h4>Play time!</h4>
+<p>13. Hit 'Run D2R' in D2RMM to launch the game. Have fun!<br>&nbsp;</p>
+<h2>Loot Filters</h2>
+<blockquote>
+  <p><mark class="pen-red"><strong>This guide assumes you have already downloaded and installed D2RMM (see above)</strong></mark></p>
+</blockquote>
+<blockquote>
+  <p><mark class="pen-red"><strong>If you find Quilted Armor with no graphics, leave them on the ground. Do not attempt to identify or sell them.</strong></mark></p>
+</blockquote>
+<p>Reimagined doesn't yet include a built-in Loot Filter.</p>
+<p>Below we'll take you through a step-by-step guide on how to install and configure a loot filter. We recommend <a href="https://www.nexusmods.com/diablo2resurrected/mods/467">Pseudo Loot Filter</a>.<br>&nbsp;</p>
+<h4>File Steps</h4>
+<p>1. Download <a href="https://www.nexusmods.com/diablo2resurrected/mods/467?tab=files">Pseudo Loot Filter</a> from Nexus Mods.</p>
+<ul>
+  <li>Select ‘Mod manager download’ to automatically download and load the mod into D2RMM.</li>
+  <li>Select ‘Manual download’ to download the mod to your <code>Downloads</code> folder - extract the mod into your <code>D2RMM/mods</code> folder.<br>&nbsp;</li>
+</ul>
+<h4>D2RMM Steps</h4>
+<p>2. In D2RMM, click the 3 dots in the bottom-right, and select ‘Refresh Mod List’.</p>
+<p>3. You should now see Pseudo Loot Filter appear in the list of mods - click the box to the left to enable the mod.</p>
+<p>4. To configure the loot filter, click ‘settings’ to the right.</p>
+<p>5. All items are enabled by default (the slider is on the right-side) - clicking the slider DISABLES the item (this affects all rarities, white, magic, rare, set, unique).</p>
+<ul>
+  <li>Disabling an item simply means that when a disabled item would drop, the game chooses to drop nothing instead.</li>
+  <li>Disabling items does not affect drop chances of other items.</li>
+  <li>It may take a few runs to tweak this list to your liking.</li>
+</ul>
+<p>6. Once you've finished disabling undesirable items, click out of the menu.</p>
+<p>7. Click ‘Install Mods’ in the bottom-right.</p>
+<p>8. Hit ‘Run D2R’.</p>
+<h4><br>D2RMM FAQ:</h4>
+<p>My mod isn't showing up in the mod list on D2RMM?</p>
+<ul>
+  <li>You didn't put the mod in D2RMM/mods, you didn't unzip the file you downloaded, or it's in a folder that D2RMM doesn't understand</li>
+  <li>Run D2RMM as administrator</li>
+</ul>
+<p>DM on discord if you need further instructions/help</p>
+<p>&nbsp;</p>
+<h3>Reimagined Features:</h3>
 <p>If you have questions about whether something is included in Reimagined, or would like to see something added, DM one of the Devs, or post in the suggestions-and-feedback channel of our discord channel.</p>
 <p>A number of Mod Creators gave express permission to include their mod in Reimagined. Where this is the case credit is given on the <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=description">Reimagined Nexus Mods</a> page.</p>
 <p>The below (non-exhaustive) list of mods are already functionally covered in Reimagined in some form:</p>
@@ -229,66 +305,8 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <p><mark class="pen-green"><strong>Environment / UI</strong></mark></p>
 <ul>
   <li>Diablood</li>
-  <li>Skill Icons (all skills have been colorised and textured for each class, including Mercs)<br>&nbsp;</li>
+  <li>Skill Icons (all skills have been colorised and textured for each class, including Mercs)</li>
 </ul>
-<h2>Loot Filters</h2>
-<blockquote>
-  <p><mark class="pen-red"><strong>This guide assumes you have already downloaded and installed D2RMM (see above)</strong></mark></p>
-</blockquote>
-<blockquote>
-  <p><mark class="pen-red"><strong>If you find Quilted Armor with no graphics, leave them on the ground. Do not attempt to identify or sell them.</strong></mark></p>
-</blockquote>
-<p>Reimagined doesn't yet include a built-in Loot Filter.</p>
-<p>One of the most popular reasons to use a Mod Manager is to install a 3rd-party Loot Filter to help reduce clutter.</p>
-<p>Below we'll take you through a step-by-step guide on how to install and configure a loot filter. We recommend <a href="https://www.nexusmods.com/diablo2resurrected/mods/467">Pseudo Loot Filter</a>.<br>&nbsp;</p>
-<h4>File Steps</h4>
-<p>1. Open your <code>D2RMM</code> folder and navigate to the <code>mods</code> directory</p>
-<ul>
-  <li>You should see a text file called 'PUT YOUR MODS HERE' - leave this window open, we'll use it later</li>
-</ul>
-<p>2. Open a new File Explorer window and navigate to your <code>Reimagined</code> mod folder</p>
-<p>3. Copy the <code>Reimagined.mpq</code> folder (this should contain Data and ModInfo.json)</p>
-<p>4. Paste the <code>Reimagined.mpq</code> folder into the <code>D2RMM/mods</code> folder from step 2</p>
-<ul>
-  <li>Feel free to rename Reimagined.mpq to something that makes more sense to you (e.g. Reimagined)</li>
-</ul>
-<h4>D2RMM Steps</h4>
-<p>5. Open D2RMM as Administrator. Once open, click the three dots in the bottom-right corner and select 'Refresh Mod List'</p>
-<p>6. Reimagined.mpq should appear in the mod list (or whatever you renamed the folder to)</p>
-<blockquote>
-  <p><mark class="pen-red"><strong>The Reimagined folder must always be first in the list of mods. Click and drag the line to the top if it isn't.</strong></mark></p>
-</blockquote>
-<p>7. Navigate to the Settings tab (at the top)</p>
-<ul>
-  <li>7a. Click on General<ul>
-      <li>Change 'Output Mod Name' to 'Reimagined'</li>
-      <li>Toggle 'Automatically install mods before running the game'</li>
-    </ul>
-  </li>
-  <li>7b. Click on Game Launcher<ul>
-      <li>Under 'Extra Game Args', paste the following: -mod Reimagined -txt</li>
-      <li>Feel free to add any other args you want here</li>
-    </ul>
-  </li>
-</ul>
-<p>8. Navigate back to the Mods tab</p>
-<p>9. Click Install Mods</p>
-<h4><br>Save File Steps</h4>
-<p>10. In File Explorer, navigate to your <code>Saved Games</code> directory</p>
-<p>11. Check the <code>Reimagined</code> folder - if you see your save files, you're good to go!&nbsp;</p>
-<ul>
-  <li>If the folder is empty, copy the contents from the backup folder you created earlier, and paste the contents in the empty Reimagined folder.<br>&nbsp;</li>
-</ul>
-<h4>Final step</h4>
-<p>12. Hit 'Run D2R' in D2RMM and have fun!</p>
-<h4><br>FAQ:</h4>
-<p>My mod isn't showing up in the mod list on D2RMM?</p>
-<ol>
-  <li>Either you didn't put the Reimagined.mpq folder in D2RMM/mods or it's in a sub-folder called Reimagined</li>
-  <li>Run D2RMM as administrator</li>
-  <li>You may need to follow step 8 to update the Output Mod Name</li>
-</ol>
-<p>DM on discord if you need further instructions/help</p>
 <h2>Coming Soon</h2>
 <ol>
   <li>Expanded Aspect Ratio (NVIDIA Graphics Cards only)</li>

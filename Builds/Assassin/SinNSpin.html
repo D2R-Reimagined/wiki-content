@@ -2,7 +2,7 @@
 title: Sin n Spin Venom WW Blasting Machine
 description: Sin n Spin Venom WW Blasting Machine
 published: true
-date: 2025-04-13T21:51:57.719Z
+date: 2025-04-13T21:57:01.658Z
 tags: whirlwind, ubers, venom, poison, assassin, endgame
 editor: code
 dateCreated: 2025-04-13T02:39:46.325Z
@@ -21,7 +21,7 @@ dateCreated: 2025-04-13T02:39:46.325Z
                 <li style="margin: 0 1rem;"><a href="#skills" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Skills</a></li>
                 <li style="margin: 0 1rem;"><a href="#gear" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Gear</a></li>
                 <li style="margin: 0 1rem;"><a href="#stats" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Stats</a></li>
-                <li style="margin: 0 1rem;"><a href="#leveling" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Leveling</a></li>
+                <li style="margin: 0 1rem;"><apartner: Anthropic href="#leveling" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Leveling</a></li>
                 <li style="margin: 0 1rem;"><a href="#endgame" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Endgame</a></li>
                 <li style="margin: 0 1rem;"><a href="#build-pictures" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Build Pictures</a></li>
             </ul>
@@ -51,22 +51,6 @@ dateCreated: 2025-04-13T02:39:46.325Z
                 color: #d4c090;
                 margin-top: 1.5rem;
                 text-shadow: 1px 1px 2px #000;
-            }
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 1rem 0;
-                background: rgba(255, 255, 255, 0.8);
-            }
-            table th, table td {
-                border: 1px solid #4a3c1f;
-                padding: 0.75rem;
-                text-align: left;
-                color: #333;
-            }
-            table th {
-                background: rgba(51, 51, 51, 0.8);
-                color: #d4c090;
             }
             .pros-cons {
                 display: flex;
@@ -106,6 +90,37 @@ dateCreated: 2025-04-13T02:39:46.325Z
                 color: #d4c090;
                 text-shadow: 1px 1px 2px #000;
             }
+            .gear-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+                margin: 1rem 0;
+            }
+            .gear-item {
+                background: rgba(51, 51, 51, 0.8);
+                border: 2px solid #4a3c1f;
+                border-radius: 8px;
+                padding: 1rem;
+                color: #d4c090;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .gear-item h4 {
+                margin: 0 0 0.5rem;
+                font-size: 1.2rem;
+                color: #ffcc00;
+            }
+            .gear-item p {
+                margin: 0.25rem 0;
+                font-size: 0.9rem;
+            }
+            .gear-item .item-name {
+                font-weight: bold;
+                color: #fff;
+            }
+            .gear-item .item-notes {
+                font-style: italic;
+                color: #d4c090;
+            }
             @media (max-width: 768px) {
                 nav ul {
                     display: flex !important;
@@ -123,6 +138,9 @@ dateCreated: 2025-04-13T02:39:46.325Z
                 }
                 .build-pictures .gear-grid {
                     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                }
+                .gear-grid {
+                    grid-template-columns: 1fr;
                 }
             }
         </style>
@@ -205,123 +223,113 @@ dateCreated: 2025-04-13T02:39:46.325Z
             
             <h3>Budget Setup</h3>
             <p>This setup uses affordable uniques and runewords to get the build running effectively without breaking the bank.</p>
-            <table>
-                <tr>
-                    <th>Slot</th>
-                    <th>Item</th>
-                    <th>Notes</th>
-                </tr>
-                <tr>
-                    <td>Helmet</td>
-                    <td>Peasant Crown</td>
-                    <td>+1 skills, life, budget-friendly</td>
-                </tr>
-                <tr>
-                    <td>Weapon (Main Hand)</td>
-                    <td>Bartuc’s Cut-Throat</td>
-                    <td>+2 skills, life leech, affordable unique</td>
-                </tr>
-                <tr>
-                    <td>Weapon (Off Hand)</td>
-                    <td>Rare Greater Talons</td>
-                    <td>Look for +Traps or IAS, cheap from vendors</td>
-                </tr>
-                <tr>
-                    <td>Armor</td>
-                    <td>Treachery (Shael-Thul-Lem)</td>
-                    <td>IAS, Fade proc, easy to craft</td>
-                </tr>
-                <tr>
-                    <td>Gloves</td>
-                    <td>Lava Gout</td>
-                    <td>IAS, fire resist, budget enchant proc</td>
-                </tr>
-                <tr>
-                    <td>Belt</td>
-                    <td>String of Ears</td>
-                    <td>Life leech, damage reduction, cheap</td>
-                </tr>
-                <tr>
-                    <td>Boots</td>
-                    <td>Gore Rider</td>
-                    <td>Crushing Blow, Deadly Strike, assumed Whirlwind source</td>
-                </tr>
-                <tr>
-                    <td>Rings</td>
-                    <td>Rare rings</td>
-                    <td>Life leech, resists, or mana leech, shoppable</td>
-                </tr>
-                <tr>
-                    <td>Amulet</td>
-                    <td>Rare amulet</td>
-                    <td>+1 skills or resists, vendor-crafted</td>
-                </tr>
-                <tr>
-                    <td>Charms</td>
-                    <td>Resist or life charms</td>
-                    <td>Fill inventory with small charms for resists</td>
-                </tr>
-            </table>
+            <div class="gear-grid">
+                <div class="gear-item">
+                    <h4>Helmet</h4>
+                    <p class="item-name">Peasant Crown</p>
+                    <p class="item-notes">+1 skills, life, budget-friendly</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Weapon (Main Hand)</h4>
+                    <p class="item-name">Bartuc’s Cut-Throat</p>
+                    <p class="item-notes">+2 skills, life leech, affordable unique</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Weapon (Off Hand)</h4>
+                    <p class="item-name">Rare Greater Talons</p>
+                    <p class="item-notes">Look for +Traps or IAS, cheap from vendors</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Armor</h4>
+                    <p class="item-name">Treachery (Shael-Thul-Lem)</p>
+                    <p class="item-notes">IAS, Fade proc, easy to craft</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Gloves</h4>
+                    <p class="item-name">Lava Gout</p>
+                    <p class="item-notes">IAS, fire resist, budget enchant proc</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Belt</h4>
+                    <p class="item-name">String of Ears</p>
+                    <p class="item-notes">Life leech, damage reduction, cheap</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Boots</h4>
+                    <p class="item-name">Gore Rider</p>
+                    <p class="item-notes">Crushing Blow, Deadly Strike, assumed Whirlwind source</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Rings</h4>
+                    <p class="item-name">Rare rings</p>
+                    <p class="item-notes">Life leech, resists, or mana leech, shoppable</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Amulet</h4>
+                    <p class="item-name">Rare amulet</p>
+                    <p class="item-notes">+1 skills or resists, vendor-crafted</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Charms</h4>
+                    <p class="item-name">Resist or life charms</p>
+                    <p class="item-notes">Fill inventory with small charms for resists</p>
+                </div>
+            </div>
 
             <h3>Endgame Setup</h3>
             <p>This setup maximizes poison damage, trap efficiency, and survivability with high-end uniques and runewords for late-game content.</p>
-            <table>
-                <tr>
-                    <th>Slot</th>
-                    <th>Item</th>
-                    <th>Notes</th>
-                </tr>
-                <tr>
-                    <td>Helmet</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Guillaume’s Face<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>Crushing Blow, Deadly Strike, +strength</td>
-                </tr>
-                <tr>
-                    <td>Weapon (Main Hand)</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Fury (Jah-Gul-Eth)<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_weapon_main.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>High IAS, Deadly Strike, life leech</td>
-                </tr>
-                <tr>
-                    <td>Weapon (Off Hand)</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Bartuc’s Cut-Throat<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_weapon_off.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>+2 skills, life leech, solid damage</td>
-                </tr>
-                <tr>
-                    <td>Armor</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Enigma (Jah-Ith-Ber)<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_armor.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>Teleport, +skills, massive mobility</td>
-                </tr>
-                <tr>
-                    <td>Gloves</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Dracul’s Grasp<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_gloves.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>Life tap, life leech, strength</td>
-                </tr>
-                <tr>
-                    <td>Belt</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Thundergod’s Vigor<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_belt.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>Lightning absorb, stats, vitality</td>
-                </tr>
-                <tr>
-                    <td>Boots</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Gore Rider<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_boots.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>Crushing Blow, Deadly Strike, Whirlwind source</td>
-                </tr>
-                <tr>
-                    <td>Rings</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Raven Frost + Bul-Kathos’ Wedding Band<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_rings.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>Freeze immunity, +skills, life</td>
-                </tr>
-                <tr>
-                    <td>Amulet</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Highlord’s Wrath<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_amulet.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>IAS, Deadly Strike, lightning resist</td>
-                </tr>
-                <tr>
-                    <td>Charms</td>
-                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Shadow skillers, poison damage<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_charms.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
-                    <td>Boost Venom/Traps, add life/resists</td>
-                </tr>
-            </table>
+            <div class="gear-grid">
+                <div class="gear-item">
+                    <h4>Helmet</h4>
+                    <p class="item-name">Guillaume’s Face</p>
+                    <p class="item-notes">Crushing Blow, Deadly Strike, +strength</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Weapon (Main Hand)</h4>
+                    <p class="item-name">Fury (Jah-Gul-Eth)</p>
+                    <p class="item-notes">High IAS, Deadly Strike, life leech</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Weapon (Off Hand)</h4>
+                    <p class="item-name">Bartuc’s Cut-Throat</p>
+                    <p class="item-notes">+2 skills, life leech, solid damage</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Armor</h4>
+                    <p class="item-name">Enigma (Jah-Ith-Ber)</p>
+                    <p class="item-notes">Teleport, +skills, massive mobility</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Gloves</h4>
+                    <p class="item-name">Dracul’s Grasp</p>
+                    <p class="item-notes">Life tap, life leech, strength</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Belt</h4>
+                    <p class="item-name">Thundergod’s Vigor</p>
+                    <p class="item-notes">Lightning absorb, stats, vitality</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Boots</h4>
+                    <p class="item-name">Gore Rider</p>
+                    <p class="item-notes">Crushing Blow, Deadly Strike, Whirlwind source</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Rings</h4>
+                    <p class="item-name">Raven Frost + Bul-Kathos’ Wedding Band</p>
+                    <p class="item-notes">Freeze immunity, +skills, life</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Amulet</h4>
+                    <p class="item-name">Highlord’s Wrath</p>
+                    <p class="item-notes">IAS, Deadly Strike, lightning resist</p>
+                </div>
+                <div class="gear-item">
+                    <h4>Charms</h4>
+                    <p class="item-name">Shadow skillers, poison damage</p>
+                    <p class="item-notes">Boost Venom/Traps, add life/resists</p>
+                </div>
+            </div>
         </section>
 
         <section id="stats">
@@ -362,27 +370,71 @@ dateCreated: 2025-04-13T02:39:46.325Z
             <h3>Stats</h3>
             <img src="https://wiki.d2r-reimagined.com/stats.png" alt="Stat Allocation" class="stats-img">
             
-          
+            <h3>Budget Gear Setup</h3>
+            <div class="gear-grid">
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_helmet.png" alt="Peasant Crown">
+                    <p>Helmet: Peasant Crown</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_weapon_main.png" alt="Bartuc’s Cut-Throat">
+                    <p>Weapon (Main): Bartuc’s</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_weapon_off.png" alt="Rare Greater Talons">
+                    <p>Weapon (Off): Greater Talons</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_armor.png" alt="Treachery">
+                    <p>Armor: Treachery</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_gloves.png" alt="Lava Gout">
+                    <p>Gloves: Lava Gout</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_belt.png" alt="String of Ears">
+                    <p>Belt: String of Ears</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_boots.png" alt="Gore Rider">
+                    <p>Boots: Gore Rider</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_rings.png" alt="Rare Rings">
+                    <p>Rings: Rare Rings</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_amulet.png" alt="Rare Amulet">
+                    <p>Amulet: Rare Amulet</p>
+                </div>
+                <div>
+                    <img src="https://wiki.d2r-reimagined.com/budget_charms.png" alt="Resist/Life Charms">
+                    <p>Charms: Resist/Life</p>
+                </div>
+            </div>
+
             <h3>Endgame Gear Setup</h3>
             <div class="gear-grid">
                 <div>
-                    <img src="https://wiki.d2r-reimagined.com/pentagram.gif" alt="Guillaume’s Face">
+                    <img src="https://wiki.d2r-reimagined.com/endgame_helmet.png" alt="Guillaume’s Face">
                     <p>Helmet: Guillaume’s Face</p>
                 </div>
                 <div>
-                    <img src="https://wiki.d2r-reimagined.com/pentagram.gif" alt="Fury">
+                    <img src="https://wiki.d2r-reimagined.com/endgame_weapon_main.png" alt="Fury">
                     <p>Weapon (Main): Fury</p>
                 </div>
                 <div>
-                    <img src="https://wiki.d2r-reimagined.com/pentagram.gif" alt="Bartuc’s Cut-Throat">
+                    <div>
+                    <img src="https://wiki.d2r-reimagined.com/endgame_weapon_off.png" alt="Bartuc’s Cut-Throat">
                     <p>Weapon (Off): Bartuc’s</p>
                 </div>
                 <div>
-                    <img src="https://wiki.d2r-reimagined.com/pentagram.gif" alt="Enigma">
+                    <img src="https://wiki.d2r-reimagined.com/endgame_armor.png" alt="Enigma">
                     <p>Armor: Enigma</p>
                 </div>
                 <div>
-                    <img src="https://wiki.d2r-reimagined.com/pentagram.gif" alt="Dracul’s Grasp">
+                    <img src="https://wiki.d2r-reimagined.com/endgame_gloves.png" alt="Dracul’s Grasp">
                     <p>Gloves: Dracul’s Grasp</p>
                 </div>
                 <div>

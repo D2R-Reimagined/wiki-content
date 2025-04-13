@@ -2,339 +2,237 @@
 title: Sin n Spin Venom WW Blasting Machine
 description: Sin n Spin Venom WW Blasting Machine
 published: true
-date: 2025-04-13T17:01:24.575Z
+date: 2025-04-13T17:06:26.028Z
 tags: whirlwind, ubers, venom, poison, assassin, endgame
 editor: ckeditor
 dateCreated: 2025-04-13T02:39:46.325Z
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D2 Reimagined Venom Whirlwind Assassin Build Guide</title>
-    <style>
+<pre><code class="language-plaintext">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Diablo 2 Resurrected Build Guide&lt;/title&gt;
+    &lt;style&gt;
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
         }
         .container {
-            background: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .tab {
-            overflow: hidden;
-            border-bottom: 1px solid #ccc;
+        header {
+            background-color: #2a2a2a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #b8860b;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #b8860b;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #a0a0a0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav ul li a:hover {
+            color: #b8860b;
+        }
+        .section {
+            background-color: #2a2a2a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #b8860b;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .section ul li {
             margin-bottom: 10px;
         }
-        .tab button {
-            background-color: #f1f1f1;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 16px;
-        }
-        .tab button:hover {
-            background-color: #ddd;
-        }
-        .tab button.active {
-            background-color: #2c3e50;
-            color: white;
-        }
-        .tabcontent {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-top: none;
-            border-radius: 0 0 8px 8px;
-        }
-        .collapsible {
-            background-color: #2c3e50;
-            color: white;
-            cursor: pointer;
-            padding: 10px;
+        .table {
             width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 16px;
-            margin: 5px 0;
-            border-radius: 4px;
+            border-collapse: collapse;
+            margin-top: 10px;
         }
-        .collapsible:hover {
-            background-color: #34495e;
-        }
-        .content {
-            padding: 0 18px;
-            display: none;
-            overflow: hidden;
-            background-color: #f9f9f9;
-            border-radius: 4px;
-        }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            border-bottom: 1px dotted #333;
-            cursor: help;
-        }
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 200px;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -100px;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-        .skill-allocator {
-            margin: 20px 0;
+        .table th, .table td {
+            border: 1px solid #444;
             padding: 10px;
-            background: #e8ecef;
+            text-align: left;
+        }
+        .table th {
+            background-color: #333;
+            color: #b8860b;
+        }
+        .table td {
+            background-color: #222;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            max-width: 200px;
+            border: 2px solid #444;
             border-radius: 4px;
         }
-        .skill-allocator label {
-            margin-right: 10px;
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2a2a2a;
+            color: #a0a0a0;
+            margin-top: 20px;
         }
-        .skill-allocator input {
-            width: 50px;
-            padding: 5px;
-        }
-        .skill-allocator button {
-            padding: 5px 10px;
-            background: #2c3e50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .skill-allocator button:hover {
-            background: #34495e;
-        }
-        #remaining-points {
-            font-weight: bold;
-            color: #d63031;
-        }
-        @media (max-width: 600px) {
-            .tab button {
-                width: 100%;
-                margin-bottom: 5px;
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .container {
+                padding: 10px;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Venom Whirlwind Assassin Build Guide</h1>
-        <p>An interactive guide for the <span class="tooltip">Whirlwindsin<span class="tooltiptext">A hybrid Assassin build using Chaos Runeword for Whirlwind and Venom for poison damage.</span></span> in <em>Diablo II: Reimagined</em>. Updated for April 2025.</p>
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Diablo 2 Resurrected Build Guide: [Build Name]&lt;/h1&gt;
+        &lt;p&gt;Class: [Class Name] | Patch: [Patch Number] | Author: [Your Name]&lt;/p&gt;
+    &lt;/header&gt;
 
-        <!-- Tabs -->
-        <div class="tab">
-            <button class="tablinks active" onclick="openTab(event, 'Overview')">Overview</button>
-            <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
-            <button class="tablinks" onclick="openTab(event, 'Gear')">Gear</button>
-            <button class="tablinks" onclick="openTab(event, 'Playstyle')">Playstyle</button>
-            <button class="tablinks" onclick="openTab(event, 'Leveling')">Leveling</button>
-        </div>
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#overview"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#skills"&gt;Skills&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#stats"&gt;Stats&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#gear"&gt;Gear&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#gameplay"&gt;Gameplay&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#gallery"&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
 
-        <!-- Tab Content -->
-        <div id="Overview" class="tabcontent" style="display: block;">
-            <h2>Overview</h2>
-            <p>The Whirlwind Assassin uses the <span class="tooltip">Chaos Runeword<span class="tooltiptext">Fal + Ohm + Um in claws, granting +1 Whirlwind.</span></span> to access the Barbarian’s <strong>Whirlwind</strong> skill, combining it with <strong>Venom</strong> for poison damage and <strong>Death Sentry</strong> for AoE via Corpse Explosion. It’s gear-intensive but excels in high-density areas like Chaos Sanctuary.</p>
-            <button class="collapsible">Pros and Cons</button>
-            <div class="content">
-                <ul>
-                    <li><strong>Pros</strong>: Unique melee playstyle, versatile damage, decent AoE clear.</li>
-                    <li><strong>Cons</strong>: Gear-dependent, moderate survivability</li>
-                </ul>
-            </div>
-        </div>
+    &lt;div class="container"&gt;
+        &lt;div class="section" id="overview"&gt;
+            &lt;h2&gt;Build Overview&lt;/h2&gt;
+            &lt;p&gt;
+                Describe the build here. What makes it unique? Is it for PvE, PvP, or both?
+                Highlight strengths (e.g., high damage, survivability) and weaknesses (e.g., gear dependency).
+            &lt;/p&gt;
+        &lt;/div&gt;
 
-        <div id="Skills" class="tabcontent">
-            <h2>Skills</h2>
-            <p>Maximize skills in this order for optimal performance.</p>
-            <button class="collapsible">Core Skills</button>
-            <div class="content">
-                <ul>
-                    <li><strong>Claw Mastery (25)</strong>: Boosts claw damage and Attack Rating.</li>
-                    <li><strong>Venom (25)</strong>: Adds poison damage to Whirlwind (0.4s duration).</li>
-                    <li><strong>Fade (20)</strong>: Grants damage reduction and resists.</li>
-                    <li><strong>Death Sentry (10)</strong>: AoE via Corpse Explosion.</li>
-                </ul>
-            </div>
-            <button class="collapsible">Optional Skills</button>
-            <div class="content">
-                <ul>
-                    <li><strong>Fire Blast (1–18)</strong>: Synergy for Death Sentry.</li>
-                    <li><strong>Weapon Block (1–5)</strong>: Blocks attacks with claws.</li>
-                    <li><strong>Cloak of Shadows (1)</strong>: Blinds enemies.</li>
-                    <li><strong>Mind Blast (1)</strong>: Stuns and converts.</li>
-                </ul>
-            </div>
+        &lt;div class="section" id="skills"&gt;
+            &lt;h2&gt;Skill Allocation&lt;/h2&gt;
+            &lt;p&gt;Explain your skill choices and priorities.&lt;/p&gt;
+            &lt;table class="table"&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Skill&lt;/th&gt;
+                    &lt;th&gt;Level&lt;/th&gt;
+                    &lt;th&gt;Description&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;[Skill Name]&lt;/td&gt;
+                    &lt;td&gt;[Level]&lt;/td&gt;
+                    &lt;td&gt;[Why you chose this skill]&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;!-- Add more rows as needed --&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
 
+        &lt;div class="section" id="stats"&gt;
+            &lt;h2&gt;Stat Distribution&lt;/h2&gt;
+            &lt;p&gt;Detail how to allocate stat points (Strength, Dexterity, Vitality, Energy).&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;strong&gt;Strength:&lt;/strong&gt; [Amount] - [Reason, e.g., for gear requirements]&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Dexterity:&lt;/strong&gt; [Amount] - [Reason, e.g., for max block]&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Vitality:&lt;/strong&gt; [Amount] - [Reason, e.g., for survivability]&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Energy:&lt;/strong&gt; [Amount] - [Reason, e.g., for mana]&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
 
-        <div id="Gear" class="tabcontent">
-            <h2>Gear</h2>
-            <p>Prioritize <span class="tooltip">Chaos<span class="tooltiptext">Runeword claws are mandatory for Whirlwind.</span></span>, IAS, FHR, and resists.</p>
-            <button class="collapsible">Weapons</button>
-            <div class="content">
-                <ul>
-                    <li><strong>Chaos (Runic Talons)</strong>: +1 Whirlwind, +skills. Socket: Shael/IAS.</li>
-                    <li><strong>Fury or Bartuc’s</strong>: Fury for damage; Bartuc’s for budget.</li>
-                  <li><strong>3skill ele dmg crafted claws</strong>: 3 sockets, psn dmg upgrades, psn dmg facets, Could get +6 skills +3venom for a +9 venom per claw.(Super End Game)</li>
-                </ul>
-            </div>
-            <button class="collapsible">Armor and Accessories</button>
-            <div class="content">
-                <ul>
-                    <li><strong>Armor</strong>: Treachery (budget), Andariels Breastbone (set piece) with poison facets (end game)</li>
-                    <li><strong>Helm</strong>: Guillaume’s Face (CB, DS), +skills helm soccket with poison or skiller facets. (end game).</li>
-                    <li><strong>Gloves</strong>: Trang-Oul’s Claws (+25% poison).</li>
-                    <li><strong>Boots</strong>: Shadow Dancers or Gore Rider (budget) Whirling dervish with +10+ Whirlwind (End Game - Can do strong crafted weapon)</li>
-                    <li><strong>Belt</strong>: Lachdanans.or anything to fill in stats needed</li>
-                    <li><strong>Amulet</strong>: Highlord’s or Mara’s(budget) Corruption coils ring/ammy set(end game)</li>
-                    <li><strong>Rings</strong>: Raven Frost + rare with leech/resists(budget) Corruption coils ring/ammy set(end game)</li>
-                </ul>
-            </div>
-            <button class="collapsible">Mercenary</button>
-            <div class="content">
-                <p><strong>Act 2 Might Merc</strong>:</p>
-                <ul>
-                    <li><strong>Weapon</strong>: Reaper’s Toll (Decrepify).</li>
-                    <li><strong>Armor</strong>: Fortitude.</li>
-                    <li><strong>Helm</strong>: Andariel’s Visage.</li>
-                </ul>
-            </div>
-        </div>
+        &lt;div class="section" id="gear"&gt;
+            &lt;h2&gt;Gear Recommendations&lt;/h2&gt;
+            &lt;p&gt;List ideal gear and alternatives for different budgets.&lt;/p&gt;
+            &lt;table class="table"&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Slot&lt;/th&gt;
+                    &lt;th&gt;Item&lt;/th&gt;
+                    &lt;th&gt;Reason&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Weapon&lt;/td&gt;
+                    &lt;td&gt;[Item Name]&lt;/td&gt;
+                    &lt;td&gt;[Why it’s good]&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;!-- Add more rows as needed --&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
 
-        <div id="Playstyle" class="tabcontent">
-            <h2>Playstyle</h2>
-            <p>Combine Whirlwind with traps for efficient clears.</p>
-            <button class="collapsible">Core Mechanics</button>
-            <div class="content">
-                <ol>
-                    <li><strong>Pre-Buff</strong>: Cast Battle Orders, Fade, Venom.</li>
-                    <li><strong>Engage</strong>: Lay 3–5 Death Sentry traps, use Cloak of Shadows.</li>
-                    <li><strong>Whirlwind</strong>: Spin in short bursts (tri-ww) to avoid damage.</li>
-                    <li><strong>Mobility</strong>: Teleport (Enigma) or Burst of Speed.</li>
-                </ol>
-            </div>
-            <button class="collapsible">Farming Areas</button>
-            <div class="content">
-                <ul>
-                    <li><strong>Chaos Sanctuary</strong>: High density, great for AoE.</li>
-                    <li><strong>Pits</strong>: Elite packs, good drops.</li>
-                    <li><strong>Cows</strong>: Fast clears with traps.</li>
-                </ul>
-            </div>
-        </div>
+        &lt;div class="section" id="gameplay"&gt;
+            &lt;h2&gt;Gameplay Tips&lt;/h2&gt;
+            &lt;p&gt;
+                Share strategies for playing the build. Include tips for leveling, endgame content (e.g., Ubers, Chaos Sanctuary),
+                and how to handle tough situations.
+            &lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Tip 1: [Description]&lt;/li&gt;
+                &lt;li&gt;Tip 2: [Description]&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
 
-        <div id="Leveling" class="tabcontent">
-            <h2>Leveling</h2>
-            <p>Start as a Trapsin, respec at ~75 for Chaos.</p>
-            <button class="collapsible">Early Game (1–30)</button>
-            <div class="content">
-                <p>Use Fire Blast and Wake of Fire. Stats: Vitality focus.</p>
-            </div>
-            <button class="collapsible">Mid-Game (30-80)</button>
-            <div class="content">
-                <p>Transition to Lightning Sentry + Death Sentry. Farm Nightmare TZ.</p>
-            </div>
-            <button class="collapsible">Late Game (80-100)</button>
-            <div class="content">
-                <p>Farm nightmare TZ for Chaos runes. Respec to Whirlwindsin. focus poison skill dmg % upgrades and gear.</p>
-            </div>
-        </div>
-    </div>
+        &lt;div class="section" id="gallery"&gt;
+            &lt;h2&gt;Screenshots &amp; Videos&lt;/h2&gt;
+            &lt;p&gt;Showcase the build in action with images or embedded videos.&lt;/p&gt;
+            &lt;div class="gallery"&gt;
+                &lt;img src="placeholder.jpg" alt="Build screenshot"&gt;
+                &lt;!-- Add more images or iframe for videos --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
-    <script>
-        // Tab Functionality
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Collapsible Functionality
-        var coll = document.getElementsByClassName("collapsible");
-        for (var i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-
-        // Skill Point Allocator
-        let totalPoints = 104; // Level 80 + quests
-        function updatePoints() {
-            let clawMastery = parseInt(document.getElementById("claw-mastery").value) || 0;
-            let venom = parseInt(document.getElementById("venom").value) || 0;
-            let fade = parseInt(document.getElementById("fade").value) || 0;
-            let deathSentry = parseInt(document.getElementById("death-sentry").value) || 0;
-            let fireBlast = parseInt(document.getElementById("fire-blast").value) || 0;
-
-            // Clamp values
-            clawMastery = Math.min(clawMastery, 20);
-            venom = Math.min(venom, 20);
-            fade = Math.min(fade, 20);
-            deathSentry = Math.min(deathSentry, 20);
-            fireBlast = Math.min(fireBlast, 18);
-
-            let usedPoints = clawMastery + venom + fade + deathSentry + fireBlast + 5; // +5 for prereqs
-            let remaining = totalPoints - usedPoints;
-
-            document.getElementById("remaining-points").innerText = remaining;
-            if (remaining < 0) {
-                alert("You’ve exceeded the skill point limit!");
-                resetSkills();
-            }
-        }
-
-        function resetSkills() {
-            document.getElementById("claw-mastery").value = 0;
-            document.getElementById("venom").value = 0;
-            document.getElementById("fade").value = 0;
-            document.getElementById("death-sentry").value = 0;
-            document.getElementById("fire-blast").value = 0;
-            document.getElementById("remaining-points").innerText = totalPoints;
-        }
-    </script>
-</body>
-</html>
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025 [Your Name]. Diablo 2 Resurrected Build Guide. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>

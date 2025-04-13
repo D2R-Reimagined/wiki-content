@@ -2,7 +2,7 @@
 title: Sin n Spin Venom WW Blasting Machine
 description: Sin n Spin Venom WW Blasting Machine
 published: true
-date: 2025-04-13T19:33:40.557Z
+date: 2025-04-13T21:48:21.372Z
 tags: whirlwind, ubers, venom, poison, assassin, endgame
 editor: code
 dateCreated: 2025-04-13T02:39:46.325Z
@@ -26,11 +26,6 @@ dateCreated: 2025-04-13T02:39:46.325Z
                 <li style="margin: 0 1rem;"><a href="#build-pictures" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Build Pictures</a></li>
             </ul>
         </nav>
-
-        <!-- Tooltip div for hover images -->
-        <div id="item-tooltip" style="display: none; position: fixed; top: 20%; right: 20%; z-index: 1000; background: rgba(26, 26, 26, 0.9); border: 2px solid #4a3c1f; border-radius: 4px; padding: 0.5rem; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
-            <img id="tooltip-image" src="" alt="Item Image" style="max-width: 150px; height: 150px; object-fit: contain; border: 1px solid #4a3c1f;">
-        </div>
 
         <style>
             nav a:hover {
@@ -111,10 +106,6 @@ dateCreated: 2025-04-13T02:39:46.325Z
                 color: #d4c090;
                 text-shadow: 1px 1px 2px #000;
             }
-            .item-name:hover {
-                color: #ffcc00;
-                cursor: pointer;
-            }
             @media (max-width: 768px) {
                 nav ul {
                     display: flex !important;
@@ -133,26 +124,8 @@ dateCreated: 2025-04-13T02:39:46.325Z
                 .build-pictures .gear-grid {
                     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
                 }
-                #item-tooltip {
-                    top: 10% !important;
-                    right: 10% !important;
-                    max-width: 120px !important;
-                }
             }
         </style>
-
-        <script>
-            function showTooltip(imageUrl) {
-                var tooltip = document.getElementById('item-tooltip');
-                var tooltipImage = document.getElementById('tooltip-image');
-                tooltipImage.src = imageUrl;
-                tooltip.style.display = 'block';
-            }
-            function hideTooltip() {
-                var tooltip = document.getElementById('item-tooltip');
-                tooltip.style.display = 'none';
-            }
-        </script>
 
         <section id="overview">
             <h2>Build Overview</h2>
@@ -184,7 +157,7 @@ dateCreated: 2025-04-13T02:39:46.325Z
             <p>This build focuses on the Shadow Disciplines tree for Venom and utility, with points in Traps for Lightning Sentry synergy. Whirlwind is granted by boots, so no Claw Mastery investment is needed.</p>
             <table>
                 <tr>
-                    <th>Slot</th>
+                    <th>Skill</th>
                     <th>Level</th>
                     <th>Notes</th>
                 </tr>
@@ -300,52 +273,52 @@ dateCreated: 2025-04-13T02:39:46.325Z
                 </tr>
                 <tr>
                     <td>Helmet</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_helmet.png')" onmouseout="hideTooltip()">Guillaume’s Face</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Guillaume’s Face<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_helmet.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>Crushing Blow, Deadly Strike, +strength</td>
                 </tr>
                 <tr>
                     <td>Weapon (Main Hand)</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_weapon_main.png')" onmouseout="hideTooltip()">Fury (Jah-Gul-Eth)</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Fury (Jah-Gul-Eth)<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_weapon_main.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>High IAS, Deadly Strike, life leech</td>
                 </tr>
                 <tr>
                     <td>Weapon (Off Hand)</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_weapon_off.png')" onmouseout="hideTooltip()">Bartuc’s Cut-Throat</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Bartuc’s Cut-Throat<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_weapon_off.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>+2 skills, life leech, solid damage</td>
                 </tr>
                 <tr>
                     <td>Armor</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_armor.png')" onmouseout="hideTooltip()">Enigma (Jah-Ith-Ber)</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Enigma (Jah-Ith-Ber)<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_armor.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>Teleport, +skills, massive mobility</td>
                 </tr>
                 <tr>
                     <td>Gloves</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_gloves.png')" onmouseout="hideTooltip()">Dracul’s Grasp</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Dracul’s Grasp<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_gloves.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>Life tap, life leech, strength</td>
                 </tr>
                 <tr>
                     <td>Belt</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_belt.png')" onmouseout="hideTooltip()">Thundergod’s Vigor</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Thundergod’s Vigor<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_belt.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>Lightning absorb, stats, vitality</td>
                 </tr>
                 <tr>
                     <td>Boots</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_boots.png')" onmouseout="hideTooltip()">Gore Rider</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Gore Rider<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_boots.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>Crushing Blow, Deadly Strike, Whirlwind source</td>
                 </tr>
                 <tr>
                     <td>Rings</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_rings.png')" onmouseout="hideTooltip()">Raven Frost + Bul-Kathos’ Wedding Band</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Raven Frost + Bul-Kathos’ Wedding Band<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_rings.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>Freeze immunity, +skills, life</td>
                 </tr>
                 <tr>
                     <td>Amulet</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_amulet.png')" onmouseout="hideTooltip()">Highlord’s Wrath</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Highlord’s Wrath<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_amulet.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>IAS, Deadly Strike, lightning resist</td>
                 </tr>
                 <tr>
                     <td>Charms</td>
-                    <td><span class="item-name" onmouseover="showTooltip('https://wiki.d2r-reimagined.com/endgame_charms.png')" onmouseout="hideTooltip()">Shadow skillers, poison damage</span></td>
+                    <td><span style="position: relative; color: #333; cursor: pointer;" onmouseover="this.style.color='#ffcc00';" onmouseout="this.style.color='#333';">Shadow skillers, poison damage<span style="display: none; position: fixed; top: 20%; right: 20%; width: 150px; height: 150px; background: url('https://wiki.d2r-reimagined.com/endgame_charms.png') no-repeat center; background-size: contain; border: 2px solid #4a3c1f; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); z-index: 1000;"></span></span></td>
                     <td>Boost Venom/Traps, add life/resists</td>
                 </tr>
             </table>

@@ -2,7 +2,7 @@
 title: Venom whirlwind
 description: Venom whirlwind
 published: true
-date: 2025-04-13T17:27:36.184Z
+date: 2025-04-13T17:31:02.128Z
 tags: 
 editor: code
 dateCreated: 2025-04-13T17:26:43.059Z
@@ -13,226 +13,239 @@ dateCreated: 2025-04-13T17:26:43.059Z
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diablo 2 Resurrected Build Guide</title>
+    <title>Diablo 2 Resurrected - [Build Name] Guide</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #2a2a2a;
-            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
             text-align: center;
-            border-bottom: 2px solid #b8860b;
+            padding: 1rem;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            color: #b8860b;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #a0a0a0;
+            font-size: 2.5rem;
         }
         nav {
-            background-color: #333;
-            padding: 10px 0;
-            margin-bottom: 20px;
+            background: #333;
+            padding: 1rem;
         }
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
+            margin: 0;
         }
         nav ul li {
-            margin: 0 15px;
+            margin: 0 1rem;
         }
         nav ul li a {
-            color: #e0e0e0;
+            color: #fff;
             text-decoration: none;
-            font-size: 1.1em;
+            font-weight: bold;
         }
         nav ul li a:hover {
-            color: #b8860b;
+            color: #ffcc00;
         }
-        .section {
-            background-color: #2a2a2a;
-            padding: 20px;
-            margin-bottom: 20px;
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
             border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
-            color: #b8860b;
-            border-bottom: 1px solid #444;
-            padding-bottom: 10px;
-            margin-top: 0;
+        h2 {
+            color: #1a1a1a;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 0.5rem;
         }
-        .section ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .section ul li {
-            margin-bottom: 10px;
-        }
-        .table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
+            margin: 1rem 0;
         }
-        .table th, .table td {
-            border: 1px solid #444;
-            padding: 10px;
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
             text-align: left;
         }
-        .table th {
-            background-color: #333;
-            color: #b8860b;
+        table th {
+            background: #333;
+            color: #fff;
         }
-        .table td {
-            background-color: #222;
-        }
-        .gallery {
+        .pros-cons {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            justify-content: space-between;
         }
-        .gallery img {
-            max-width: 200px;
-            border: 2px solid #444;
-            border-radius: 4px;
+        .pros, .cons {
+            width: 48%;
+        }
+        .pros h3, .cons h3 {
+            color: #1a1a1a;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #2a2a2a;
-            color: #a0a0a0;
-            margin-top: 20px;
+            padding: 1rem;
+            background: #1a1a1a;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
             nav ul {
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
             nav ul li {
-                margin: 10px 0;
+                margin: 0.5rem 0;
             }
-            .container {
-                padding: 10px;
+            .pros-cons {
+                flex-direction: column;
+            }
+            .pros, .cons {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Diablo 2 Resurrected Build Guide: [Build Name]</h1>
-        <p>Class: [Class Name] | Patch: [Patch Number] | Author: [Your Name]</p>
+        <h1>Diablo 2 Resurrected - [Build Name] Guide</h1>
+        <p>A Comprehensive Guide for [Character Class] [Build Type]</p>
     </header>
 
     <nav>
         <ul>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#stats">Stats</a></li>
             <li><a href="#gear">Gear</a></li>
-            <li><a href="#gameplay">Gameplay</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#leveling">Leveling</a></li>
+            <li><a href="#endgame">Endgame</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <div class="section" id="overview">
+        <section id="overview">
             <h2>Build Overview</h2>
             <p>
-                Describe the build here. What makes it unique? Is it for PvE, PvP, or both?
-                Highlight strengths (e.g., high damage, survivability) and weaknesses (e.g., gear dependency).
+                [Describe the build, e.g., "The Blizzard Sorceress is a powerful magic-based build focusing on cold damage to freeze and shatter enemies." Include its playstyle, strengths, and ideal scenarios like PvE, PvP, or farming specific areas.]
             </p>
-        </div>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>[Pro 1, e.g., High area damage]</li>
+                        <li>[Pro 2, e.g., Safe playstyle]</li>
+                        <li>[Pro 3, e.g., Great for farming]</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>[Con 1, e.g., Struggles against cold immunes]</li>
+                        <li>[Con 2, e.g., Gear-dependent]</li>
+                        <li>[Con 3, e.g., Mana-intensive]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <div class="section" id="skills">
+        <section id="skills">
             <h2>Skill Allocation</h2>
-            <p>Explain your skill choices and priorities.</p>
-            <table class="table">
+            <p>[Explain the skill tree focus, e.g., "This build prioritizes the Cold Spells tree with points in Blizzard, Ice Blast, and Cold Mastery."]</p>
+            <table>
                 <tr>
                     <th>Skill</th>
                     <th>Level</th>
-                    <th>Description</th>
+                    <th>Notes</th>
                 </tr>
                 <tr>
-                    <td>[Skill Name]</td>
-                    <td>[Level]</td>
-                    <td>[Why you chose this skill]</td>
+                    <td>[Skill 1, e.g., Blizzard]</td>
+                    <td>20</td>
+                    <td>[Notes, e.g., Main damage skill]</td>
+                </tr>
+                <tr>
+                    <td>[Skill 2, e.g., Cold Mastery]</td>
+                    <td>17</td>
+                    <td>[Notes, e.g., Reduces enemy resistance]</td>
                 </tr>
                 <!-- Add more rows as needed -->
             </table>
-        </div>
+        </section>
 
-        <div class="section" id="stats">
-            <h2>Stat Distribution</h2>
-            <p>Detail how to allocate stat points (Strength, Dexterity, Vitality, Energy).</p>
-            <ul>
-                <li><strong>Strength:</strong> [Amount] - [Reason, e.g., for gear requirements]</li>
-                <li><strong>Dexterity:</strong> [Amount] - [Reason, e.g., for max block]</li>
-                <li><strong>Vitality:</strong> [Amount] - [Reason, e.g., for survivability]</li>
-                <li><strong>Energy:</strong> [Amount] - [Reason, e.g., for mana]</li>
-            </ul>
-        </div>
-
-        <div class="section" id="gear">
+        <section id="gear">
             <h2>Gear Recommendations</h2>
-            <p>List ideal gear and alternatives for different budgets.</p>
-            <table class="table">
+            <p>[Describe ideal gear, including budget and endgame options, e.g., "Tal Rasha’s set for MF or Shako + Oculus for budget."]</p>
+            <table>
                 <tr>
                     <th>Slot</th>
                     <th>Item</th>
-                    <th>Reason</th>
+                    <th>Alternatives</th>
+                </tr>
+                <tr>
+                    <td>Helmet</td>
+                    <td>[Item, e.g., Harlequin Crest]</td>
+                    <td>[Alternative, e.g., Rare circlet with +skills]</td>
                 </tr>
                 <tr>
                     <td>Weapon</td>
-                    <td>[Item Name]</td>
-                    <td>[Why it’s good]</td>
+                    <td>[Item, e.g., Oculus]</td>
+                    <td>[Alternative, e.g., Spirit sword]</td>
                 </tr>
                 <!-- Add more rows as needed -->
             </table>
-        </div>
+        </section>
 
-        <div class="section" id="gameplay">
-            <h2>Gameplay Tips</h2>
-            <p>
-                Share strategies for playing the build. Include tips for leveling, endgame content (e.g., Ubers, Chaos Sanctuary),
-                and how to handle tough situations.
-            </p>
+        <section id="stats">
+            <h2>Stat Allocation</h2>
+            <p>[Explain stat priorities, e.g., "Enough Strength for gear, enough Dexterity for max block (if applicable), and rest into Vitality."]</p>
             <ul>
-                <li>Tip 1: [Description]</li>
-                <li>Tip 2: [Description]</li>
+                <li><strong>Strength:</strong> [Amount, e.g., 156 for Monarch]</li>
+                <li><strong>Dexterity:</strong> [Amount, e.g., 100 for max block]</li>
+                <li><strong>Vitality:</strong> [Amount, e.g., Rest]</li>
+                <li><strong>Energy:</strong> [Amount, e.g., Base]</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section" id="gallery">
-            <h2>Screenshots & Videos</h2>
-            <p>Showcase the build in action with images or embedded videos.</p>
-            <div class="gallery">
-                <img src="placeholder.jpg" alt="Build screenshot">
-                <!-- Add more images or iframe for videos -->
-            </div>
-        </div>
+        <section id="leveling">
+            <h2>Leveling Guide</h2>
+            <p>[Provide a leveling roadmap, e.g., "From levels 1-24, use Fire Bolt and transition to Blizzard at 24."]</p>
+            <ul>
+                <li><strong>Levels 1-10:</strong> [Skills and areas, e.g., Blood Moor, Fire Bolt]</li>
+                <li><strong>Levels 11-20:</strong> [Skills and areas]</li>
+                <li><strong>Levels 21-30:</strong> [Skills and areas]</li>
+                <!-- Add more as needed -->
+            </ul>
+        </section>
+
+        <section id="endgame">
+            <h2>Endgame Strategy</h2>
+            <p>[Discuss endgame goals, e.g., "Farm Ancient Tunnels for high runes or run Baal for XP." Include mercenary setup and breakpoints like FCR/FHR.]</p>
+            <ul>
+                <li><strong>Farming Areas:</strong> [List areas, e.g., Ancient Tunnels, Chaos Sanctuary]</li>
+                <li><strong>Mercenary:</strong> [Type and gear, e.g., Act 2 Might with Insight]</li>
+                <li><strong>Breakpoints:</strong> [e.g., 105% FCR for Sorceress]</li>
+            </ul>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 [Your Name]. Diablo 2 Resurrected Build Guide. All rights reserved.</p>
+        <p>&copy; 2025 [Your Name/Website]. All Rights Reserved. Diablo 2 Resurrected is a trademark of Blizzard Entertainment.</p>
     </footer>
 </body>
 </html>

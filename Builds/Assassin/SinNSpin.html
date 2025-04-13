@@ -2,7 +2,7 @@
 title: Sin n Spin Venom WW Blasting Machine
 description: Sin n Spin Venom WW Blasting Machine
 published: true
-date: 2025-04-13T17:49:04.372Z
+date: 2025-04-13T17:53:12.108Z
 tags: whirlwind, ubers, venom, poison, assassin, endgame
 editor: code
 dateCreated: 2025-04-13T02:39:46.325Z
@@ -24,8 +24,8 @@ dateCreated: 2025-04-13T02:39:46.325Z
             color: #333;
         }
         header {
-            background: #1a1a1a;
-            color: #fff;
+            background: #1a1a1a !important;
+            color: #fff !important;
             text-align: center;
             padding: 1rem;
         }
@@ -33,27 +33,36 @@ dateCreated: 2025-04-13T02:39:46.325Z
             margin: 0;
             font-size: 2.5rem;
         }
-        nav {
-            background: #333;
+        nav.custom-nav {
+            background: #333 !important;
             padding: 1rem;
+            text-align: center;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin: 0;
+        nav.custom-nav ul {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            display: flex !important;
+            justify-content: center !important;
+            flex-wrap: wrap !important;
         }
-        nav ul li {
-            margin: 0 1rem;
+        nav.custom-nav ul li {
+            margin: 0 1rem !important;
+            display: inline-block !important;
         }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
+        nav.custom-nav ul li a {
+            color: #fff !important;
+            text-decoration: none !important;
+            font-weight: bold !important;
+            padding: 0.5rem 1rem !important;
+            background: #444 !important;
+            border-radius: 4px !important;
+            transition: background 0.3s ease, color 0.3s ease !important;
+            display: block !important;
         }
-        nav ul li a:hover {
-            color: #ffcc00;
+        nav.custom-nav ul li a:hover {
+            color: #ffcc00 !important;
+            background: #555 !important;
         }
         .container {
             max-width: 1200px;
@@ -110,12 +119,12 @@ dateCreated: 2025-04-13T02:39:46.325Z
             width: 100%;
         }
         @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                text-align: center;
+            nav.custom-nav ul {
+                flex-direction: column !important;
+                align-items: center !important;
             }
-            nav ul li {
-                margin: 0.5rem 0;
+            nav.custom-nav ul li {
+                margin: 0.5rem 0 !important;
             }
             .pros-cons {
                 flex-direction: column;
@@ -132,7 +141,7 @@ dateCreated: 2025-04-13T02:39:46.325Z
         <p>A Comprehensive Guide for Assassin Poison/Trap Hybrid Build</p>
     </header>
 
-    <nav>
+    <nav class="custom-nav">
         <ul>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#skills">Skills</a></li>

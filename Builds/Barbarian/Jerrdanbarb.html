@@ -1,0 +1,425 @@
+<!--
+title: Glory Slam - Starter build // End Game viable
+description: Slamming your way to richness. 
+published: true
+date: 2025-04-14T00:18:28.988Z
+tags: ubers, tectonic slam, barbarian, magic find, cheap
+editor: code
+dateCreated: 2025-04-14T00:18:28.988Z
+-->
+
+<div style="background: #000 url('https://wiki.d2r-reimagined.com/final.png') no-repeat center fixed; background-size: cover; min-height: 100vh; padding: 2rem; font-family: Georgia, 'Times New Roman', serif; color: #d4c090;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <header style="background: rgba(26, 26, 26, 0.8); border: 2px solid #4a3c1f; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); color: #d4c090; text-align: center; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+            <h1 style="margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px #000; font-family: 'Cinzel', Georgia, serif;">[Character Class] - [Build Name] Guide</h1>
+            <p style="text-shadow: 1px 1px 2px #000;"><a href="[YouTube URL]" style="color: #ffcc00; text-decoration: underline;">Watch the Guide on YouTube</a></p>
+        </header>
+
+        <nav style="background: rgba(51, 51, 51, 0.8); border: 2px solid #4a3c1f; padding: 1rem; text-align: center; border-radius: 8px; margin-bottom: 1rem;">
+            <ul style="list-style: none; padding: 0; margin: 0; display: inline-flex; flex-wrap: wrap; justify-content: center;">
+                <li style="margin: 0 1rem;"><a href="#overview" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Overview</a></li>
+                <li style="margin: 0 1rem;"><a href="#skills" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Skills</a></li>
+                <li style="margin: 0 1rem;"><a href="#gear" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Gear</a></li>
+                <li style="margin: 0 1rem;"><a href="#stats" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Stats</a></li>
+                <li style="margin: 0 1rem;"><a href="#leveling" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Leveling</a></li>
+                <li style="margin: 0 1rem;"><a href="#endgame" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Endgame</a></li>
+                <li style="margin: 0 1rem;"><a href="#build-pictures" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Build Pictures</a></li>
+            </ul>
+        </nav>
+
+        <style>
+            nav a:hover {
+                color: #ffcc00 !important;
+                background: rgba(0, 0, 0, 0.7) url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center !important;
+                background-size: cover !important;
+            }
+            section {
+                background: rgba(255, 255, 255, 0.9);
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border: 2px solid #4a3c1f;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            }
+            h2 {
+                color: #d4c090;
+                border-bottom: 2px solid #ffcc00;
+                padding-bottom: 0.5rem;
+                text-shadow: 1px 1px 2px #000;
+            }
+            h3 {
+                color: #d4c090;
+                margin-top: 1.5rem;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .pros-cons {
+                display: flex;
+                justify-content: space-between;
+            }
+            .pros, .cons {
+                width: 48%;
+            }
+            .pros h3, .cons h3 {
+                color: #d4c090;
+            }
+            .build-pictures img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #4a3c1f;
+                border-radius: 4px;
+            }
+            .build-pictures .stats-img {
+                max-width: 600px;
+                display: block;
+                margin: 0 auto 2rem;
+            }
+            .build-pictures .gear-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+            .build-pictures .gear-grid img {
+                max-width: 150px;
+                height: 150px;
+                object-fit: contain;
+            }
+            .build-pictures .gear-grid p {
+                text-align: center;
+                margin: 0.5rem 0 0;
+                color: #d4c090;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .gear-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 1rem 0;
+            }
+            .gear-row {
+                display: flex;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+            .gear-row h4 {
+                width: 100%;
+                text-align: center;
+                color: #ffcc00;
+                font-size: 1.2rem;
+                margin: 0 0 0.5rem;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .gear-item {
+                flex: 1;
+                max-width: 48%;
+                background: rgba(51, 51, 51, 0.8);
+                border: 2px solid #4a3c1f;
+                border-radius: 8px;
+                padding: 1rem;
+                color: #d4c090;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .gear-item p {
+                margin: 0.25rem 0;
+                font-size: 0.9rem;
+            }
+            .gear-item .item-type {
+                font-size: 0.8rem;
+                color: #ffcc00;
+                font-weight: bold;
+            }
+            .gear-item .item-name {
+                font-weight: bold;
+                color: #fff;
+            }
+            .gear-item .item-notes {
+                font-style: italic;
+                color: #d4c090;
+            }
+            @media (max-width: 768px) {
+                nav ul {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: center !important;
+                }
+                nav ul li {
+                    margin: 0.5rem 0 !important;
+                }
+                .pros-cons {
+                    flex-direction: column;
+                }
+                .pros, .cons {
+                    width: 100%;
+                }
+                .build-pictures .gear-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                }
+                .gear-row {
+                    flex-direction: column;
+                }
+                .gear-item {
+                    max-width: 100%;
+                }
+            }
+        </style>
+
+        <section id="overview">
+            <h2>Build Overview</h2>
+            <p>
+                [Describe the build here, including its playstyle, strengths, and ideal scenarios (e.g., PvE, PvP, farming areas). Mention the character class and core mechanics.]
+            </p>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>[Pro 1]</li>
+                        <li>[Pro 2]</li>
+                        <li>[Pro 3]</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>[Con 1]</li>
+                        <li>[Con 2]</li>
+                        <li>[Con 3]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skill Allocation</h2>
+            <p>[Explain the skill tree focus and why certain skills are prioritized. Mention synergies or key abilities.]</p>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>[Skill 1]</td>
+                    <td>[Level]</td>
+                    <td>[Notes on usage or importance]</td>
+                </tr>
+                <tr>
+                    <td>[Skill 2]</td>
+                    <td>[Level]</td>
+                    <td>[Notes on usage or importance]</td>
+                </tr>
+                <tr>
+                    <td>[Skill 3]</td>
+                    <td>[Level]</td>
+                    <td>[Notes on usage or importance]</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </section>
+
+        <section id="gear">
+            <h2>Gear Recommendations</h2>
+            <p>[Describe gear priorities, such as damage, survivability, or specific stats. Include budget and endgame options.]</p>
+            
+            <div class="gear-grid">
+                <div class="gear-row">
+                    <h4>Helmet</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Helmet]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Helmet]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Weapon</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Weapon]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Weapon]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Armor</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Armor]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Armor]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Gloves</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Gloves]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Gloves]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Belt</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Belt]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Belt]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Boots</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Boots]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Boots]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Rings</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Rings]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Rings]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Amulet</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Amulet]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Amulet]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Charms</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">[Budget Charms]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">[Endgame Charms]</p>
+                        <p class="item-notes">[Notes on stats or benefits]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats">
+            <h2>Stat Allocation</h2>
+            <p>[Explain how to distribute stats like Strength, Dexterity, Vitality, and Energy. Mention gear requirements or breakpoints.]</p>
+            <ul>
+                <li><strong>Strength:</strong> [Amount or range]</li>
+                <li><strong>Dexterity:</strong> [Amount or range]</li>
+                <li><strong>Vitality:</strong> [Amount or range]</li>
+                <li><strong>Energy:</strong> [Amount or range]</li>
+            </ul>
+        </section>
+
+        <section id="leveling">
+            <h2>Leveling Guide</h2>
+            <p>[Provide a leveling strategy, including skill progression, areas to farm, or gear swaps during early/mid-game.]</p>
+            <ul>
+                <li><strong>Level 1-20:</strong> [Tips or areas]</li>
+                <li><strong>Level 20-40:</strong> [Tips or areas]</li>
+                <li><strong>Level 40+:</strong> [Tips or areas]</li>
+            </ul>
+        </section>
+
+        <section id="endgame">
+            <h2>Endgame Strategy</h2>
+            <p>[Describe endgame goals, farming locations, or boss strategies. Mention mercenary choices or breakpoints.]</p>
+            <ul>
+                <li><strong>Farming Areas:</strong> [List areas]</li>
+                <li><strong>Mercenary:</strong> [Merc type and gear]</li>
+                <li><strong>Breakpoints:</strong> [IAS, FHR, etc.]</li>
+            </ul>
+        </section>
+
+        <section id="build-pictures" class="build-pictures">
+            <h2>Build Pictures</h2>
+            <h3>Stats</h3>
+            <img src="[Stat Image URL]" alt="Stat Allocation" class="stats-img">
+            
+            <h3>Endgame Gear Setup</h3>
+            <div class="gear-grid">
+                <div>
+                    <img src="[Helmet Image URL]" alt="[Helmet Name]">
+                    <p>Helmet: [Helmet Name]</p>
+                </div>
+                <div>
+                    <img src="[Weapon Image URL]" alt="[Weapon Name]">
+                    <p>Weapon: [Weapon Name]</p>
+                </div>
+                <div>
+                    <img src="[Armor Image URL]" alt="[Armor Name]">
+                    <p>Armor: [Armor Name]</p>
+                </div>
+                <div>
+                    <img src="[Gloves Image URL]" alt="[Gloves Name]">
+                    <p>Gloves: [Gloves Name]</p>
+                </div>
+                <div>
+                    <img src="[Belt Image URL]" alt="[Belt Name]">
+                    <p>Belt: [Belt Name]</p>
+                </div>
+                <div>
+                    <img src="[Boots Image URL]" alt="[Boots Name]">
+                    <p>Boots: [Boots Name]</p>
+                </div>
+                <div>
+                    <img src="[Rings Image URL]" alt="[Rings Name]">
+                    <p>Rings: [Rings Name]</p>
+                </div>
+                <div>
+                    <img src="[Amulet Image URL]" alt="[Amulet Name]">
+                    <p>Amulet: [Amulet Name]</p>
+                </div>
+                <div>
+                    <img src="[Charms Image URL]" alt="[Charms Name]">
+                    <p>Charms: [Charms Name]</p>
+                </div>
+            </div>
+        </section>
+
+        <footer style="background: rgba(26, 26, 26, 0.8); border: 2px solid #4a3c1f; color: #d4c090; border-radius: 8px; text-shadow: 1px 1px 2px #000; padding: 1rem; text-align: center;">
+            <p>© 2025 Diablo 2 Resurrected Community. All Rights Reserved. Diablo 2 Resurrected is a trademark of Blizzard Entertainment.</p>
+        </footer>
+    </div>
+</div>

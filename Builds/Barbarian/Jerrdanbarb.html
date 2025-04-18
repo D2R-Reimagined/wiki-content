@@ -2,158 +2,124 @@
 title: Glory Slam - Starter build // End Game viable
 description: Slamming your way to richness. 
 published: true
-date: 2025-04-18T04:24:42.340Z
+date: 2025-04-18T04:27:17.939Z
 tags: ubers, tectonic slam, barbarian, magic find, cheap
 editor: code
 dateCreated: 2025-04-14T00:18:28.988Z
 -->
 
-I'm thrilled you like the gear page for the SinNSpin Assassin build! Since you plan to insert the `gear.html` code into the D2R Reimagined wiki's HTML editor, we need to adapt it to bypass common MediaWiki restrictions. MediaWiki (the platform likely used by the D2R Reimagined wiki at https://wiki.d2r-reimagined.com) typically limits raw HTML for security reasons, allowing only specific tags and inline CSS, and often strips or modifies complex elements like external scripts, certain attributes, or external resources. To make the gear page compatible, I'll simplify the HTML, embed all styles inline, avoid external dependencies (like Google Fonts), and ensure the code adheres to MediaWiki's constraints while preserving the Diablo 2 inventory layout and aesthetic.
-
-### Approach:
-- **Simplify HTML**: Remove external font links (replace Cinzel with a fallback like Georgia or a generic serif font) and avoid unsupported tags or attributes.
-- **Inline CSS**: Move all styles into a `<style>` tag within the HTML to avoid external stylesheet issues.
-- **MediaWiki Compatibility**: Use safe HTML tags (e.g., `<div>`, `<span>`, `<a>`) and avoid JavaScript or complex attributes that MediaWiki might strip.
-- **Inventory Layout**: Retain the 4x10 inventory grid and 2x2 equipped gear grids, styled with inline CSS to mimic Diablo 2’s inventory.
-- **Content**: Keep the gear and charm placeholders from the original `gear.html`, with tooltips implemented via CSS `:hover`.
-- **Wiki Integration**: Format the code for pasting into the wiki’s HTML editor, ensuring it renders correctly on the SinNSpin build page (https://wiki.d2r-reimagined.com/en/Builds/Assassin/SinNSpin).
-
-Since this is an update to the gear page specifically for wiki integration, I’ll use a new `artifact_id` (as it’s a distinct artifact from the previous `index.html` and `gear.html`) and provide the modified HTML below. The code will be ready to copy and paste into the wiki’s HTML editor.
-
-```html
-<div style="max-width: 900px; margin: 20px auto; background: rgba(0, 0, 0, 0.8); padding: 20px; border: 2px solid #8b5a2b; color: #d4c0a1; font-family: Georgia, serif;">
-    <h1 style="color: #ffd700; text-align: center; font-family: Georgia, serif;">SinNSpin Assassin Gear</h1>
-    <a href="/en/Builds/Assassin/SinNSpin" style="display: inline-block; background: #8b5a2b; color: #ffd700; padding: 10px 20px; border: 1px solid #d4c0a1; font-family: Georgia, serif; text-align: center; margin: 10px 0; text-decoration: none;">Back to Build Guide</a>
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 10px; border: 1px solid #8b5a2b;">
-            <h2 style="color: #ff4500; font-family: Georgia, serif;">Equipped Gear</h2>
-            <div style="display: grid; grid-template-columns: repeat(2, 50px); grid-template-rows: repeat(2, 50px); gap: 2px;">
-                <div style="width: 50px; height: 50px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Main Weapon: Bartuc's Cut-Throat</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Greater Talons</span>
-                    <style>.slot:hover > span:last-child { visibility: visible; }</style>
-                </div>
-                <div style="width: 50px; height: 50px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Off-Hand: Jade Talon</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Wrist Blade</span>
-                </div>
-                <div style="width: 50px; height: 50px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Helm: Guillaume's Face</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Winged Helm</span>
-                </div>
-                <div style="width: 50px; height: 50px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Armor: Chains of Honor</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Dusk Shroud</span>
-                </div>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(2, 50px); grid-template-rows: repeat(2, 50px); gap: 2px;">
-                <div style="width: 50px; height: 50px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Gloves: Dracul's Grasp</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Vampirebone Gloves</span>
-                </div>
-                <div style="width: 50px; height: 50px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Boots: Gore Rider</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">War Boots</span>
-                </div>
-                <div style="width: 50px; height: 50px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Belt: Verdungo's Hearty Cord</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Mithril Coil</span>
-                </div>
-                <div style="width: 50px; height: 50px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
+<style>
+    .gear-container { max-width: 900px; margin: 20px auto; background: rgba(0, 0, 0, 0.8); padding: 20px; border: 2px solid #8b5a2b; color: #d4c0a1; font-family: Georgia, serif; }
+    .gear-container h1 { color: #ffd700; text-align: center; }
+    .gear-container h2 { color: #ff4500; }
+    .gear-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    .gear-slot { width: 50px; height: 50px; background: #2a2a2a; border: 1px solid #d4c0a1; text-align: center; font-size: 12px; vertical-align: middle; }
+    .gear-slot.filled { background: #4a2a2a; }
+    .gear-slot:hover { background: #3a3a3a; }
+    .tooltip { display: none; background: #000; color: #ffd700; padding: 5px; font-size: 12px; }
+    .gear-slot:hover .tooltip { display: block; }
+    .back-button { display: inline-block; background: #8b5a2b; color: #ffd700; padding: 10px 20px; border: 1px solid #d4c0a1; text-decoration: none; }
+    .back-button:hover { background: #a0522d; }
+</style>
+<div class="gear-container">
+    <h1>Jerrdanbarb Gear</h1>
+    <a href="/en/Builds/Barbarian/Jerrdanbarb" class="back-button">Back to Build Guide</a>
+    <div>
+        <h2>Equipped Gear</h2>
+        <table class="gear-table">
+            <tr>
+                <td class="gear-slot filled">
+                    <span>Weapon: Immortal King's Stone Crusher</span>
+                    <span class="tooltip">Ogre Maul</span>
+                </td>
+                <td class="gear-slot filled">
+                    <span>Helm: Immortal King's Will</span>
+                    <span class="tooltip">Avenger Guard</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="gear-slot filled">
+                    <span>Armor: Immortal King's Soul Cage</span>
+                    <span class="tooltip">Sacred Armor</span>
+                </td>
+                <td class="gear-slot filled">
+                    <span>Gloves: Immortal King's Forge</span>
+                    <span class="tooltip">War Gauntlets</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="gear-slot filled">
+                    <span>Boots: Immortal King's Pillar</span>
+                    <span class="tooltip">War Boots</span>
+                </td>
+                <td class="gear-slot filled">
+                    <span>Belt: Immortal King's Detail</span>
+                    <span class="tooltip">War Belt</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="gear-slot filled">
                     <span>Amulet: Highlord's Wrath</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Amulet</span>
-                </div>
-            </div>
-        </div>
-        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 10px; border: 1px solid #8b5a2b;">
-            <h2 style="color: #ff4500; font-family: Georgia, serif;">Inventory</h2>
-            <div style="display: grid; grid-template-columns: repeat(10, 40px); grid-template-rows: repeat(4, 40px); gap: 2px;">
-                <div style="width: 40px; height: 40px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Charm 1</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Annihilus</span>
-                </div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #4a2a2a; border: 1px solid #d4c0a1; display: flex; align-items: center; justify-content: center; font-size: 12px; text-align: center; position: relative; cursor: pointer;">
-                    <span>Charm 2</span>
-                    <span style="visibility: hidden; background: #000; color: #ffd700; padding: 5px; position: absolute; z-index: 1; bottom: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap;">Hellfire Torch</span>
-                </div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-                <div style="width: 40px; height: 40px; background: #2a2a2a; border: 1px solid #d4c0a1;"></div>
-            </div>
-        </div>
+                    <span class="tooltip">Amulet</span>
+                </td>
+                <td class="gear-slot filled">
+                    <span>Ring 1: Raven Frost</span>
+                    <span class="tooltip">Ring</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Inventory</h2>
+        <table class="gear-table">
+            <tr>
+                <td class="gear-slot filled"><span>Charm 1</span><span class="tooltip">Annihilus</span></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+            </tr>
+            <tr>
+                <td class="gear-slot filled"><span>Charm 2</span><span class="tooltip">Hellfire Torch</span></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+            </tr>
+            <tr>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+            </tr>
+            <tr>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+                <td class="gear-slot"></td>
+            </tr>
+        </table>
     </div>
 </div>
-```
-
-### How to Use:
-1. **Copy the Code**: Copy the entire HTML content within the ````` tag (from `<div style="max-width: 900px; ...` to the closing `</div>`).
-2. **Access the Wiki’s HTML Editor**:
-   - Navigate to the SinNSpin build page (https://wiki.d2r-reimagined.com/en/Builds/Assassin/SinNSpin) or the desired wiki page.
-   - Enter edit mode (likely via a "Source Editor" or "HTML Editor" option, depending on the wiki’s setup).
-   - Paste the code into the editor where you want the gear inventory to appear (e.g., under a "Gear" section).
-3. **Adjust the Back Link**: The `<a href="/en/Builds/Assassin/SinNSpin">` uses a relative wiki path. Confirm this matches the wiki’s URL structure. If the wiki uses a different path (e.g., `Assassin:SinNSpin`), update the `href` accordingly.
-4. **Customize Gear**: Replace placeholder gear (e.g., "Bartuc's Cut-Throat") with your specific items. If you have images for gear, you can add `<img>` tags, but you’ll need to upload them to the wiki first (see below).
-5. **Save and Preview**: Save the changes and preview the page to ensure the inventory grid renders correctly.
-
-### Key Changes for Wiki Compatibility:
-- **No External Resources**: Removed the Google Fonts link for Cinzel, using Georgia (a serif font available on most systems) as a fallback.
-- **Inline CSS**: All styles are embedded within the HTML to avoid external stylesheet issues.
-- **Simplified Structure**: Used basic `<div>`, `<span>`, and `<a>` tags, avoiding unsupported elements like `<meta>` or `<head>`.
-- **No Background Image**: Removed the `background-image: url('final.png')` since MediaWiki often restricts external images or file paths. If you want a background, upload an image to the wiki and reference it via a wiki-specific URL (e.g., `[[File:Background.png]]` in wikitext or an `<img>` tag).
-- **Tooltip Fix**: Moved the hover style (`.slot:hover > span:last-child`) into a `<style>` tag within each slot to ensure MediaWiki doesn’t strip it.
-- **Safe Colors and Layout**: Kept the dark theme (#1a1a1a, #d4c0a1) and grid layout (4x10 for inventory, 2x2 for equipped gear) to match the Diablo 2 aesthetic.
-
-### Adding Images (Optional):
-If you want to include gear images or a background:
-1. **Upload to Wiki**: Go to the wiki’s upload page (likely “Special:Upload”) and upload your images (e.g., `Bartucs.png` for Bartuc’s Cut-Throat).
-2. **Reference Images**: In the HTML, add `<img>` tags like `<img src="/w/images/Bartucs.png" style="width: 40px; height: 40px;">` (adjust the path based on the wiki’s file URL). Alternatively, use wikitext syntax (`[[File:Bartucs.png|40px]]`) outside the HTML section.
-3. **Test Rendering**: Ensure the images display correctly in the wiki’s preview.
-
-### Notes:
-- **Wiki Restrictions**: Some wikis disable inline `<style>` tags or limit CSS properties (e.g., `position: absolute` for tooltips). If tooltips or the grid don’t render, you may need to simplify further (e.g., use `<table>` instead of CSS grid). Let me know if you encounter issues, and I’ll provide a fallback.
-- **Gear Content**: The gear and charms (e.g., Bartuc’s, Annihilus) are placeholders. Update them to match your SinNSpin build’s recommendations.
-- **Main Page Button**: The previous `index.html` button links to `gear.html`. Since you’re embedding this in the wiki, you might not need a separate page. If you want to keep the button, add a wikitext link (`[[Gear|View Gear in Inventory]]`) on the main page pointing to a subpage (e.g., `/en/Builds/Assassin/SinNSpin/Gear`) where you paste this HTML.
-- **Memories Integration**: Based on our prior talks (e.g., your interest in wikitext for Wikipedia’s VisualEditor and Diablo 2 Reimagined projects), I tailored this for MediaWiki compatibility, similar to the wikitext templates we discussed for build guides.
-
-### Next Steps:
-- **Test the Code**: Paste it into the wiki’s HTML editor and let me know if it renders as expected or if you hit any MediaWiki errors (e.g., tags being stripped).
-- **Further Customization**: Want to add more gear slots, include images, or adjust the layout (e.g., larger slots)? I can tweak the code.
-- **Main Page Update**: Should I provide wikitext or HTML to add the “View Gear in Inventory” button to the main SinNSpin page?
-- **Other Builds**: Planning to add similar gear pages for other builds (like the Multi-Shot Amazon or Venom Whirlwind Assassin from our past chats)? I can create a reusable template.
-
-Let me know how it goes or what else you need to make this shine on the wiki! 😄

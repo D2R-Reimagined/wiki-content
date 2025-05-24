@@ -2,7 +2,7 @@
 title: Necromancer
 description: Summary of changes to the Necromancer in Reimagined
 published: true
-date: 2025-05-24T05:34:22.821Z
+date: 2025-05-24T06:02:53.872Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:01:47.535Z
@@ -11,6 +11,7 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <h2>General Changes</h2>
 <ul>
   <li>All curse durations normalized to a maximum of 5 seconds, Terrify and Charm, or 25 seconds, the rest.</li>
+  <li>All curses prerequisite skills removed</li>
   <li>Fire Golem aura adjusted to use Golem Mastery as a synergy instead of +aura skill level to prevent the skill from being capped earlier than intended</li>
   <li>Golem tooltips updated to show the damage bonus from Golem Mastery</li>
   <li>Raise Skeleton now properly shows the %dmg increase from Raise Skeletal Mage</li>
@@ -26,25 +27,48 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <ul>
   <li>Now deals 50% of damage as splash damage to enemies surrounding their targets</li>
   <li>Maximum count is now capped at 14</li>
+  <li>10% damage synergy with Skeleton Mastery added</li>
 </ul>
 <h3>Raise Skeleton Mage</h3>
 <ul>
   <li>Reworked and given new missiles. Cold &gt; Glacial Spike, Fire &gt; Fire Ball, Lightning &gt; Lightning, Poison &gt; Bone Spear (as physical damage)</li>
   <li>Synergy moved to missiles off of skill level to facilitate scaling into the end game properly</li>
-  <li>10% damage synergy with Skeleton Mastery added</li>
+  <li>10% damage synergy with Raise Skeleton added</li>
+  <li>5% damage synergy with Skeleton Mastery added</li>
+</ul>
+<h3>Clay Golem</h3>
+<ul>
+  <li>Reworked so that synergies are baked into the base skill for damage and attack rating</li>
+  <li>Can now summon 2 at skill level 20+</li>
+  <li>Now casts “Defiance” aura whose level is determined by hard points up to a max level of 13</li>
+  <li>Gains flat damage as a synergy with Golem Mastery</li>
+</ul>
+<h3>Blood Golem</h3>
+<ul>
+  <li>Reworked so that synergies are baked into the base skill for damage and attack rating</li>
+  <li>Can now summon 2 at skill level 20+</li>
+  <li>Now casts “Blood Magic” aura on the player causing spells to cost life instead of mana (this was removed from Succubi and Baal).</li>
+  <li>Now casts “Magic Mastery Aura” which benefits skills that deal magic damage 10 + 1% per level to maximum of 50% (Necromancer spells only for now.)</li>
+  <li>Gains flat damage as a synergy with Golem Mastery</li>
+</ul>
+<h3>Iron Golem</h3>
+<ul>
+  <li>Reworked so that synergies are baked into the base skill for damage and attack rating</li>
+  <li>Can now summon 2 at skill level 20+</li>
+  <li>Aura changes from flat damage return to percent damage returned with a base of 150 + 15% per soft level</li>
+  <li>Gains flat damage as a synergy with Golem Mastery</li>
+</ul>
+<h3>Fire Golem</h3>
+<ul>
+  <li>Reworked so that synergies are baked into the base skill for health, damage and attack rating</li>
+  <li>Can now summon 2 at skill level 20+</li>
+  <li>Now casts an aura that grants allies flat fire damage instead of Holy Fire aura</li>
 </ul>
 <h3>Revive</h3>
 <ul>
+  <li>Revives are no longer bound by a duration</li>
   <li>Revive monster velocity decreased from +200% to +130%</li>
 </ul>
-<h3>Clay Golem</h3>
-<p>---</p>
-<h3>Blood Golem</h3>
-<p>---</p>
-<h3>Iron Golem</h3>
-<p>---</p>
-<h3>Fire Golem</h3>
-<p>---</p>
 <h2>Poison and Bone Skills</h2>
 <h3>Teeth</h3>
 <ul>
@@ -53,9 +77,17 @@ dateCreated: 2025-04-14T02:01:47.535Z
   <li>Skill curve base damage increased by 110% by skill level 29+</li>
 </ul>
 <h3>Bone Spear</h3>
-<p>---</p>
+<ul>
+  <li>Synergy with Energy added at 1% damager per Energy</li>
+  <li>Skill synergies from 8% to 10%</li>
+  <li>Can gain an additional projectile from magic/rare/crafted Wands and/or Necromancer heads</li>
+  <li>Base damage increased by 40% by skill level 29+</li>
+</ul>
 <h3>Bone Spirit</h3>
-<p>---</p>
+<ul>
+  <li>Damage curve increased by 100%</li>
+  <li>Synergies increased from 8 to 10%</li>
+</ul>
 <h3>Corpse Explosion</h3>
 <p>---</p>
 <h3>Poison Dagger</h3>
@@ -64,18 +96,31 @@ dateCreated: 2025-04-14T02:01:47.535Z
   <li>Poison duration is static at 3 seconds</li>
   <li>Does a small radius splash of poison damage around the target struck</li>
 </ul>
-<h3>Poison Explosion</h3>
-<p>---</p>
+<h3>Poison Explosion → Poison Shot</h3>
+<ul>
+  <li>Reworked into a bow/crossbow/throwing knife/throwing axe skill</li>
+  <li>Uses attack speed</li>
+  <li>Fires 2 projectiles base and gains an additional projectile for every 3 hard points points in Poison Nova capping out at 5 total</li>
+  <li>Deals poison damage with a static length of 2 seconds</li>
+  <li>Synergies increased from 15 to 20% with Poison Dagger and Poison Nova</li>
+</ul>
 <h3>Poison Nova</h3>
-<p>---</p>
+<ul>
+  <li>Synergies increased from 10 to 15%</li>
+  <li>Damage curve adjusted to gain more up front and a little less at higher levels in order to make the skill useful on aquisition</li>
+</ul>
 <h3>Bone Armor</h3>
 <ul>
   <li>Grants 50 flat defense and 50 additional flat defense per level</li>
 </ul>
 <h3>Bone Wall</h3>
-<p>---</p>
+<ul>
+  <li>Initial duration reduced from 24 seconds to 10 seconds</li>
+</ul>
 <h3>Bone Prison</h3>
-<p>---</p>
+<ul>
+  <li>Initial duration reduced from 24 seconds to 10 seconds</li>
+</ul>
 <h2>Curses</h2>
 <h3>Amplify Damage</h3>
 <ul>
@@ -101,4 +146,6 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <h3>Terror</h3>
 <p>---</p>
 <h3>Decrepify</h3>
-<p>---</p>
+<ul>
+  <li>Effect reduced from 50% to 25% total slow, damage, and negative enemy physical resistance</li>
+</ul>

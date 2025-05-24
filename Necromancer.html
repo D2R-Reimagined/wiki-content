@@ -2,7 +2,7 @@
 title: Necromancer
 description: Summary of changes to the Necromancer in Reimagined
 published: true
-date: 2025-04-14T02:01:47.535Z
+date: 2025-05-24T05:34:22.821Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:01:47.535Z
@@ -10,6 +10,7 @@ dateCreated: 2025-04-14T02:01:47.535Z
 
 <h2>General Changes</h2>
 <ul>
+  <li>All curse durations normalized to a maximum of 5 seconds, Terrify and Charm, or 25 seconds, the rest.</li>
   <li>Fire Golem aura adjusted to use Golem Mastery as a synergy instead of +aura skill level to prevent the skill from being capped earlier than intended</li>
   <li>Golem tooltips updated to show the damage bonus from Golem Mastery</li>
   <li>Raise Skeleton now properly shows the %dmg increase from Raise Skeletal Mage</li>
@@ -22,9 +23,16 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <h3>Summon Resist</h3>
 <p>---</p>
 <h3>Raise Skeleton</h3>
-<p>---</p>
+<ul>
+  <li>Now deals 50% of damage as splash damage to enemies surrounding their targets</li>
+  <li>Maximum count is now capped at 14</li>
+</ul>
 <h3>Raise Skeleton Mage</h3>
-<p>---</p>
+<ul>
+  <li>Reworked and given new missiles. Cold &gt; Glacial Spike, Fire &gt; Fire Ball, Lightning &gt; Lightning, Poison &gt; Bone Spear (as physical damage)</li>
+  <li>Synergy moved to missiles off of skill level to facilitate scaling into the end game properly</li>
+  <li>10% damage synergy with Skeleton Mastery added</li>
+</ul>
 <h3>Revive</h3>
 <ul>
   <li>Revive monster velocity decreased from +200% to +130%</li>
@@ -39,7 +47,11 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <p>---</p>
 <h2>Poison and Bone Skills</h2>
 <h3>Teeth</h3>
-<p>---</p>
+<ul>
+  <li>Synergy with Energy added at 1% damager per Energy</li>
+  <li>Skill synergies reduced from 15 to 13%</li>
+  <li>Skill curve base damage increased by 110% by skill level 29+</li>
+</ul>
 <h3>Bone Spear</h3>
 <p>---</p>
 <h3>Bone Spirit</h3>
@@ -47,20 +59,28 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <h3>Corpse Explosion</h3>
 <p>---</p>
 <h3>Poison Dagger</h3>
-<p>---</p>
+<ul>
+  <li>Reworked into a single target high damage skill</li>
+  <li>Poison duration is static at 3 seconds</li>
+  <li>Does a small radius splash of poison damage around the target struck</li>
+</ul>
 <h3>Poison Explosion</h3>
 <p>---</p>
 <h3>Poison Nova</h3>
 <p>---</p>
 <h3>Bone Armor</h3>
-<p>---</p>
+<ul>
+  <li>Grants 50 flat defense and 50 additional flat defense per level</li>
+</ul>
 <h3>Bone Wall</h3>
 <p>---</p>
 <h3>Bone Prison</h3>
 <p>---</p>
 <h2>Curses</h2>
 <h3>Amplify Damage</h3>
-<p>---</p>
+<ul>
+  <li>Flat enemy physical resistance reduction changed from 100% flat to 25% + 2% per soft level with a maximum of 100%</li>
+</ul>
 <h3>Dim Vision</h3>
 <p>---</p>
 <h3>Confuse</h3>
@@ -74,7 +94,10 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <h3>Lower Resist</h3>
 <p>---</p>
 <h3>Weaken</h3>
-<p>---</p>
+<ul>
+  <li>Physical damage debuff reduced from -33 to -10% base still scaling by 1% per soft level</li>
+  <li>Now also applies - enemy magic resistances at 15 + 2% per soft level capped at 100%</li>
+</ul>
 <h3>Terror</h3>
 <p>---</p>
 <h3>Decrepify</h3>

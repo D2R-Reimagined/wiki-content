@@ -2,92 +2,193 @@
 title: Sorceress
 description: Summary of changes to the Sorceress in Reimagined
 published: true
-date: 2025-05-24T05:20:23.629Z
+date: 2025-06-06T00:52:07.594Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:01:16.821Z
 -->
 
 <h2>General Changes</h2>
-<p>Missile speeds for spells have been increased to ease positioning issues in the high density D2RR environment.</p>
+<ul>
+  <li>From <a href="https://github.com/D2R-Reimagined/d2r-reimagined-mod/pull/847">PR847:</a> Goal is to pull power out of the masteries and put them into the skills and synergies. Initially started because of various OSkills and Enchant, this initial pass is has expanded to feel things out and swing a nerf bat at some outlier skills, and buff up some underperforming or cumbersome ones. Please give each element a try as well as some hybridization, the masteries still provide some power as 1 points, and synergies were cut back to limit them to the skill itself and 2 others and power pushed into the skill level 29+ curve damage instead of bloating the synergies higher. Definitely want a focused elemental build to be stronger, but would like other builds to be viable to at least farm with and have fun doing it.</li>
+  <li>Missile speeds for multiple spells have been increased to ease positioning issues in the high density D2RR environment.</li>
+</ul>
 <h2>Skill Trees</h2>
-<h3>Cold Skills</h3>
+<h3><strong>Cold</strong></h3>
 <p>Ice Bolt</p>
 <ul>
   <li>Now gains 1 additional projectile per 5 hard points to a maximum of 5</li>
-  <li>Damage increased across all skill levels slightly</li>
-  <li>Synergies increased from 15 to 20%</li>
-</ul>
-<p>Ice Blast</p>
-<ul>
-  <li>Now gains 1 additional projectile per 5 hard points to a maximum of 5</li>
-  <li>Damage slightly increased across all skill levels</li>
-  <li>Synergies increased from 8 to 10%</li>
-</ul>
-<p>Glacial Spike</p>
-<ul>
-  <li>Now gains 1 additional projectile per 8 hard points to a maximum of 3</li>
-  <li>Synergies increased from 5 to 11%</li>
-  <li>Damage curve slightly increased across all levels</li>
-</ul>
-<p>Blizzard</p>
-<ul>
-  <li>Casting delay reduced to 1 second</li>
-</ul>
-<p>Frozen Orb</p>
-<ul>
-  <li>Delay reduced to 0.6 seconds</li>
-  <li>Synergy increased from 3 to 5%</li>
-  <li>Damage curves increased by 20% past skill level 29</li>
+  <li>29+ Curve substantially increased to maintain end game damage</li>
+  <li>Synergy reduced to 12% from 15%</li>
+  <li>Moved left on the Cold Tree</li>
+  <li>Now only has Frost Nova and Frozen Orb synergies</li>
 </ul>
 <p>Frozen Armor</p>
 <ul>
   <li>Now grants 1% physical damage reduction per hard point</li>
 </ul>
+<p>Frost Nova</p>
+<ul>
+  <li>Requires level up to 12 from 6</li>
+  <li>Now has Ice Bolt Prerequisite</li>
+  <li>Removed Blizzard Synergy</li>
+  <li>Added Ice Bolt Synergy</li>
+  <li>Increased 29+ damage</li>
+</ul>
+<p>Ice Blast</p>
+<ul>
+  <li>Now gains 1 additional projectile per 5 hard points to a maximum of 5</li>
+  <li>Damage Curve reduced 23+</li>
+  <li>Freeze length synergy removed</li>
+  <li>Now only has Glacial Spike and Blizzard synergies</li>
+</ul>
 <p>Shiver Armor</p>
 <ul>
   <li>Now grants 1% physical damage reduction per hard point</li>
+  <li>No longer has Ice Blast prerequisite</li>
+</ul>
+<p>Glacial Spike</p>
+<ul>
+  <li>Now gains 1 additional projectile per 8 hard points to a maximum of 3</li>
+  <li>Explosion radius increased slightly</li>
+  <li>29+ Damage curve increased</li>
+  <li>Damage Synergy increased to 10% from 5%</li>
+  <li>Removed Frozen Orb Synergy</li>
+  <li>Reduced Freeze Length Synergy</li>
+</ul>
+<p>Blizzard</p>
+<ul>
+  <li>Casting delay reduced to 1 second</li>
+  <li>Removed Frost Nova Requirement and moved it right 1 column in the cold tree</li>
+  <li>29+ damage curve increased</li>
+  <li>Synergy reduced to 4% from 5%</li>
+  <li>Removed Ice Bolt Synergy</li>
 </ul>
 <p>Chilling Armor</p>
 <ul>
   <li>Now grants 1% physical damage reduction per hard point</li>
+  <li>Damage synergy increased to 10% from 9%</li>
 </ul>
-<h3>Fire Skills</h3>
+<p>Frozen Orb</p>
+<ul>
+  <li>Fixed missile flag causing extra visual only explosions by the main orb.</li>
+  <li>Ice bolts cast by the orb and the explosion now explode like glacial spike but only chill</li>
+  <li>Casting delay reduced to 0.6 seconds</li>
+  <li>Damage Curve adjusted back to vanilla values</li>
+  <li>Damage Synergy increased to 4% from 3%</li>
+  <li>Added Frost Nova Synergy</li>
+</ul>
+<p>Cold Mastery</p>
+<ul>
+  <li>Now grants 150% Cold Skill Damage with 25 hard points</li>
+  <li>Now grants 150% Cold Skill Damage with 75 soft points</li>
+  <li>Now grants 25% -Enemy Cold Resistance with 25 hard points</li>
+  <li>Now grants 25% -Enemy Cold Resistance with 75 soft points points</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Lightning</h3>
+<p>Charged Bolt</p>
+<ul>
+  <li>23+ damage curve increased</li>
+  <li>Added Synergy with Chain Lightning</li>
+</ul>
+<p>Nova</p>
+<ul>
+  <li>29+ damage curve increased</li>
+  <li>Added Thunder Storm synergy</li>
+</ul>
+<p>Lightning</p>
+<ul>
+  <li>Missile Speed increased slightly</li>
+  <li>23+ minimum damage curve increased</li>
+  <li>9+ maximum damage curve increased</li>
+  <li>Synergy increased to 14% from 8%</li>
+  <li>Removed Nova Synergy</li>
+</ul>
+<p>Chain Lightning</p>
+<ul>
+  <li>Missile Speed increased slightly</li>
+  <li>23+ minimum damage curve increased</li>
+  <li>1+ maximum damage curve increased</li>
+  <li>Synergy increased to 8% from 4%</li>
+  <li>Removed Nova Synergy</li>
+</ul>
+<p>Thunder Storm</p>
+<ul>
+  <li>Strikes now cast a small Nova dealing damage based on Thunder Storm</li>
+  <li>Decreased minimum time between bolts by .2 seconds (now .8 seconds at around 20 down from 1s)</li>
+  <li>29+ damage curve increased</li>
+  <li>Synergy increased to 8% from 7%</li>
+  <li>Added Nova Synergy</li>
+</ul>
+<p>Energy Shield</p>
+<ul>
+  <li>Reduced maximum absorption cap to 90% from 95%</li>
+  <li>Fixed TK synergy to apply the -6% mana per health to 63% a 12% buff from 75%</li>
+</ul>
+<p>Lightning Mastery</p>
+<ul>
+  <li>Now grants 150% Lightning Skill Damage with 25 hard points</li>
+  <li>Now grants 150% Lightning Skill Damage with 75 soft points</li>
+  <li>Now grants 25% -Enemy Lightning Resistance with 25 hard points</li>
+  <li>Now grants 25% -Enemy Lightning Resistance with 75 soft points points</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Fire</h3>
 <p>Fire Bolt</p>
 <ul>
   <li>Now grants 1 additional projectile per 5 hard points up to a maximum of 5</li>
+  <li>Synergy reduced to 14% from 16%</li>
 </ul>
-<p>Fire Ball</p>
+<p>Warmth</p>
+<ul>
+  <li>Mana recovery changed to 15 base 15 per level from 30 base and 12 per level</li>
+  <li>Gains 1 life after each kill per hard point</li>
+</ul>
+<p>Inferno</p>
+<ul>
+  <li>Missile speed and range increased slightly</li>
+  <li>Now casts an additional stream of fire every 6 levels (soft points)</li>
+  <li>Fire Wall synergy added</li>
+  <li>Synergies reduced to 10% from 13%</li>
+  <li>Mana cost slightly increased</li>
+</ul>
+<p>Blaze</p>
+<ul>
+  <li>29+ damage curve increased</li>
+</ul>
+<p>Fireball</p>
 <ul>
   <li>Now gains 1 additional projectile per 10 hard points up to a maximum of 3</li>
+  <li>29+ damage curve increased</li>
+  <li>Synergy reduced to 12% from 14%</li>
 </ul>
-<p>Fire Wall</p>
+<p>Firewall</p>
 <ul>
   <li>Casting delay reduced to 0.6 seconds</li>
+  <li>Wall creation speed increased by 75% and now deals damage in a larger area within the fire visual</li>
+  <li>29+ damage curve increased</li>
+  <li>Synergy with Warmth reduced to 3% from 4%</li>
+</ul>
+<p>Enchant</p>
+<ul>
+  <li>Damage curve reduced by 5% total</li>
+  <li>Damage Synergy down to 4% from 9%</li>
 </ul>
 <p>Meteor</p>
 <ul>
   <li>Casting delay reduced to 1 second</li>
 </ul>
-<p>Warmth</p>
-<ul>
-  <li>Gains 1 life after each kill per hard point</li>
-</ul>
 <p>Hydra</p>
 <ul>
-  <li>Now shoots exploding projectiles</li>
+  <li>Now shoot explosive projectiles</li>
+  <li>29+ damage curve increased</li>
   <li>Synergies increased from 3 to 4%</li>
 </ul>
-<h3>Lightning Skills</h3>
-<p>Lightning</p>
+<p>Fire Mastery</p>
 <ul>
-  <li>Min damage increased to lessen the frequency of whiff shots that do almost nothing</li>
-</ul>
-<p>Chain Lightning</p>
-<ul>
-  <li>Min damage increased to lessen the frequency of whiff shots that do almost nothing</li>
-</ul>
-<p>Thunder Storm</p>
-<ul>
-  <li>Strikes now cast a small Nova dealing damage based on Thunder Storm</li>
+  <li>Now grants 150% Fire Skill Damage with 25 hard points</li>
+  <li>Now grants 150% Fire Skill Damage with 75 soft points</li>
+  <li>Now grants 25% -Enemy Fire Resistance with 25 hard points</li>
+  <li>Now grants 25% -Enemy Fire Resistance with 75 soft points points</li>
 </ul>

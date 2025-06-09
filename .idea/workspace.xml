@@ -7,19 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f18b8f-90d7-4e1c-9f2e-91624ef0ec10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Items/LootTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Charms.html" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Charms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Gems.html" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Gems.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Keys.html" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Keys.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Orbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Orbs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Potions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Potions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Runes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Runes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_player_guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/new_player_guide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes/Crafting.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/Crafting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes/CubeRecipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/CubeRecipes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes/ItemUpgrades.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/ItemUpgrades.html" afterDir="false" />
-    </list>
+    <list default="true" id="17f18b8f-90d7-4e1c-9f2e-91624ef0ec10" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749410408481</updated>
-      <workItem from="1749410409539" duration="11217000" />
+      <workItem from="1749410409539" duration="15412000" />
     </task>
     <servers />
   </component>

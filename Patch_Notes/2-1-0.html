@@ -1,0 +1,1008 @@
+<!--
+title: Version 2.1.0 of D2R Reimagined
+description: 
+published: true
+date: 2025-06-09T04:00:23.893Z
+tags: 
+editor: ckeditor
+dateCreated: 2025-06-09T04:00:23.893Z
+-->
+
+<p># Itemization Overhaul First Pass</p>
+<p>- Please see PR #802 for detailed information.</p>
+<p>&nbsp;</p>
+<p># Treasure Drops</p>
+<p>Vinge went to war with screen clutter</p>
+<p>### Miscellaneous</p>
+<p>- TP and ID Scrolls will now only drop in Act 1 Normal at half the rate as before.</p>
+<p>- Gold drops now have about 0.2% chance to spawn, roughly, not including probabilities (It's closers to like 0.02 overall but there are a lot of enemies)</p>
+<p>- Gem Cluster added and has about a 3.5% chance to drop when it can (See Below Table)</p>
+<p>&nbsp;- When cubed with bag adds 20-30 Gem credits to bag</p>
+<p>&nbsp; &nbsp;- Can cube up to 99 at once like gems</p>
+<p>- Sunder Charms increase total drop to about 1.5% when they can (See Below Table)</p>
+<p>&nbsp;</p>
+<p>### Potions</p>
+<p>- Following the recent potion efficacy rework, potions of each tier will drop for longer before finding the next tier up</p>
+<p>- Players will no longer see potions of previous tiers as they progress through each act and difficulty</p>
+<p>&nbsp;- HP/MP 1 &amp; 2 and Rejuv potions will drop in Normal Acts 1-3</p>
+<p>&nbsp;- HP/MP 2 &amp; 3 and Rejuv potions will drop in Normal Acts 4-5, and Nightmare Acts 1-2</p>
+<p>&nbsp;- HP/MP 3 &amp; 4, and Rejuv potions will drop in Nightmare Acts 3-5</p>
+<p>&nbsp;- HP/MP 5, and Full Rejuv potions will drop in Hell</p>
+<p>- Drop chances decreased significantly from all monsters</p>
+<p>&nbsp;- Players should see much fewer potions overall</p>
+<p>&nbsp;</p>
+<p>### Runes</p>
+<p>- Drop chances of runes 1 - 12 (EL - SOL) unchanged</p>
+<p>- Drop chances of runes 13 - 22 (SHAEL - UM) increased slightly</p>
+<p>- Drop chances of runes 23 &amp; 24 (MAL / IST) unchanged</p>
+<p>- Drop chances of runes 25 - 33 (GUL - ZOD) decreased slightly</p>
+<p>&nbsp;</p>
+<p>### Keys</p>
+<p>- Can drop as a random drop from unique and otherwise unoccuppied super unique mobs at about 2% chance (See Table Below)</p>
+<p>- Re-roll recipes have been made more expensive:</p>
+<p>&nbsp;- Pandemonium Key + Corruption Orb + TP Tome = Next Key (e.g. Terror -&gt; Hate -&gt; Destruction) (Tome returned full)</p>
+<p>&nbsp;- Pandemonium Key + Corruption Orb + ID Tome = Previous Key (e.g. Terror -&gt; Destruction -&gt; Hate) (Tome returned full)</p>
+<p>&nbsp;</p>
+<p>### Orbs</p>
+<p>- Orbs have been changed to prevent them from being force spawned when using the Find Item skill</p>
+<p>- Orbs dropped in Normal difficulty will be unstacked so players know what they do the first time they pick one up</p>
+<p>- Orb of Socketing and Orb of Corruption have about a 3.5% chance to drop when they can (See Below Table)</p>
+<p>- Orb of Shadows has a 0.5% chance to drop when it can (See Below Table)</p>
+<p>&nbsp;</p>
+<p>### Jewelry (Treasure Class: Jewelry, Jewels, Gems, Charms, Orbs)</p>
+<p>- Each difficulty now has its own Treasure Class, allowing for scaling drop chances per difficulty:</p>
+<p>&nbsp;- Normal: Jewel 10% chance, Infusion 2% chance, Conversion 1% chance, Assemblage 1% chance</p>
+<p>&nbsp;- Nightmare: Jewel 12% chance, Infusion 2.8% chance, Conversion 1.4% chance, Assemblage 1.4% chance</p>
+<p>&nbsp;- Hell: Jewel 14% chance, Infusion 3.5% chance, Conversion 1.75% chance, Assemblage 1.75% chance</p>
+<p>- Ring drop chance reduced by roughly 3.5% across all difficulties</p>
+<p>- Jewels have been separated from Diamonds and thus given light beams</p>
+<p>&nbsp;</p>
+<p>### Chests</p>
+<p>- NoDrop chance decreased from 60 -&gt; 20 (Down to 25% chance of nothing per pick from 55%. They randomly roll 4 times for an item on regular chests)</p>
+<p>- Chest item quality from the best outcomes increased by 1 level</p>
+<p>&nbsp;- Players can now potentially find items from the next Act/Difficulty</p>
+<p>&nbsp; &nbsp;- e.g.: Act 5 (Nightmare) chests now have a chance to drop Act 1 (Hell) items</p>
+<p>&nbsp;</p>
+<p>### Champions</p>
+<p>- Now drop Potions that are one tier higher than current Act/Difficulty allows</p>
+<p>&nbsp;</p>
+<p>### Cows</p>
+<p>- Drop chances have been reduced slightly across all difficulties</p>
+<p>- Cows will no longer drop Potions</p>
+<p>&nbsp;</p>
+<p>### Super Uniques</p>
+<p>- Griswold has updated rarity data and should drop more similar to other super uniques</p>
+<p>- White Council Members no longer drop TZ only loot</p>
+<p>&nbsp;</p>
+<p>### Act Bosses</p>
+<p>- All Act Bosses have had their drop chances normalized</p>
+<p>&nbsp;- Andariel: &nbsp;</p>
+<p>&nbsp; &nbsp;- More Equipment</p>
+<p>&nbsp; &nbsp;- Less Jewelry, Jewels, Charms, Gems and Orbs</p>
+<p>&nbsp; &nbsp;- Now also drops gold</p>
+<p>&nbsp;- Duriel, Mephisto, Diablo: &nbsp;</p>
+<p>&nbsp; &nbsp;- Less Equipment</p>
+<p>&nbsp; &nbsp;- More Jewelry, Jewels, Charms, Gems and Orbs</p>
+<p>&nbsp;- Baal:</p>
+<p>&nbsp; &nbsp;- Less Equipment</p>
+<p>&nbsp; &nbsp;- More Jewelry, Jewels, Charms, Gems and Orbs (higher than the others due to time investment)</p>
+<p>- Each Act Boss now drops an orb on kill with the quest active.</p>
+<p>&nbsp;</p>
+<p>## Drop Tables &nbsp;</p>
+<p>### Act Bosses</p>
+<p>&gt;Parenthesis Indicate Quest Kill Orb Drop</p>
+<p>- Andariel, Duriel (Infusion), Mephisto (Assemblage), Diablo (Conversion), Baal (Corruption)</p>
+<p>&nbsp;</p>
+<p>### Key Bosses</p>
+<p>&gt;Parenthesis Indicate Targetable Key Drop at about 3% (Vanilla is about 1%)</p>
+<p>- Countess (Terror), Summoner (Hate), Nihlathak (Destruction)</p>
+<p>&nbsp;</p>
+<p>### Rune Bosses</p>
+<p>&gt;Parenthesis Indicate Rune Boss Tier</p>
+<p>- Countess (L), Bloodwitch (L), Battlemaiden (L), Hephasto (H), Frozenstein (H)</p>
+<p>&nbsp;- Lower Players = More Runes</p>
+<p>&nbsp;</p>
+<p>```</p>
+<p>Socket Orb "S", Corruption Orb "C", Shadow Orb "E", Gem Cluster "R", All Keys Random "K", Sunder Charms "I"</p>
+<p>Act Bosses</p>
+<p>Normal &nbsp; X</p>
+<p>Nightmare &nbsp;S</p>
+<p>Hell &nbsp; S</p>
+<p>Normal TZ &nbsp;C</p>
+<p>Nightmare TZ &nbsp;SCI</p>
+<p>Hell TZ &nbsp; SCERI</p>
+<p>&nbsp;</p>
+<p>Key Bosses, Rune Bosses, Boss Lieutenants</p>
+<p>Normal &nbsp; X</p>
+<p>Nightmare &nbsp;X</p>
+<p>Hell &nbsp; X</p>
+<p>Normal TZ &nbsp;C</p>
+<p>Nightmare TZ &nbsp;SCI</p>
+<p>Hell TZ &nbsp; SCERI</p>
+<p>&nbsp;</p>
+<p>Super Uniques, Uniques (Minus Specials Below)</p>
+<p>Normal &nbsp; X</p>
+<p>Nightmare &nbsp;X</p>
+<p>Hell &nbsp; X</p>
+<p>Normal TZ &nbsp;X</p>
+<p>Nightmare TZ &nbsp;SCI</p>
+<p>Hell TZ &nbsp; SCERKI</p>
+<p>&nbsp;</p>
+<p>Champions</p>
+<p>Normal &nbsp; X</p>
+<p>Nightmare &nbsp;X</p>
+<p>Hell &nbsp; X</p>
+<p>Normal TZ &nbsp;X</p>
+<p>Nightmare TZ &nbsp;SCI</p>
+<p>Hell TZ &nbsp; SCI</p>
+<p>&nbsp;</p>
+<p>Blood Raven, Griswold, Smith, Radamant, Council (Gold Name Only), Izual, Cow King</p>
+<p>Normal &nbsp; X</p>
+<p>Nightmare &nbsp;X</p>
+<p>Hell &nbsp; X</p>
+<p>Normal TZ &nbsp;C</p>
+<p>Nightmare TZ &nbsp;SCI</p>
+<p>Hell TZ &nbsp; SCERKI</p>
+<p>```</p>
+<p>&gt;Countess is no longer the only rune pinata in TZs but she can also drop a key, so fair trade off.</p>
+<p>```</p>
+<p>Rune Bosses Max Rune Count TZ Count</p>
+<p>L Norm &nbsp;Thul &nbsp;2 2</p>
+<p>L NM &nbsp;Ko &nbsp;2 3</p>
+<p>L Hell &nbsp;Vex &nbsp;2 3</p>
+<p>H Norm &nbsp;Dol &nbsp;2 2</p>
+<p>H NM &nbsp;Um &nbsp;2 3</p>
+<p>H Hell &nbsp;Lo &nbsp;2 3</p>
+<p>```</p>
+<p>&nbsp;</p>
+<p># General Skills</p>
+<p>- Warp now has a custom icon.</p>
+<p>- Warp tooltip now displays mana cost and cooldown length</p>
+<p>- CtC Enabled across the board for every skill that it works for/makes sense for.</p>
+<p>&nbsp;</p>
+<p>## Amazon</p>
+<p>Poison Javelin</p>
+<p>&gt; Reworked into a stronger single target skill late game. &nbsp;Reduced the scaling duration, and adjusted the damage curve.</p>
+<p>- Casting delay removed</p>
+<p>- Duration set to 2 seconds at all levels</p>
+<p>- Synergy upped from 12% to 15%</p>
+<p>- Damage curves reworked at all levels</p>
+<p>&nbsp;- Heavily buffed damage curve past 29+</p>
+<p>- Poison trail velocity increased.</p>
+<p>&nbsp;- Trails moves much faster behind the thrown javelin</p>
+<p>- Poison Trail duration reduced &nbsp;</p>
+<p>&nbsp;</p>
+<p>Plague Javelin</p>
+<p>&gt; Removed the ability to pierce, as the pierced projectile would spawn a poison cloud that did no damage. Adjust the cloud spread rate and damage to compensate.</p>
+<p>- Removed the ability for Plague Javelin to pierce</p>
+<p>- Plague Cloud expand velocity increased</p>
+<p>- Duration starts at 3 and scales to a max of 6 seconds at level 16</p>
+<p>- Adjusted synergy from 15% to 10% to compensate for the lowered duration</p>
+<p>- Skill description updated to mention the javelin does not pierce</p>
+<p>&nbsp;</p>
+<p>Multiple Shot</p>
+<p>- Based weapon damage scaling to 100% from 75% due to missile scaling problems at high gear levels.</p>
+<p>- Synergy with GA reduced to keep the overall damage at the same value.</p>
+<p>&nbsp;</p>
+<p>## Assassin</p>
+<p>Charge Duration added to tooltips of skills with charges</p>
+<p>&nbsp;</p>
+<p>Fists of Fire</p>
+<p>- Removed elemental conversion for consistency with other elemental claw attacks.</p>
+<p>&nbsp;</p>
+<p>Blade Fury Reworked</p>
+<p>- Now throws a shuriken using attack speed that bounces to up to 2 nearby enemies (2 bounce limit doesn't scale)</p>
+<p>- Gains 1 projectile per 8 soft skill levels.</p>
+<p>- Carries weapon damage and modifiers</p>
+<p>&nbsp;</p>
+<p>Blade Sentinel</p>
+<p>- Now does 100% weapon damage</p>
+<p>- Damage curves slightly increased</p>
+<p>&nbsp;</p>
+<p>Blade Shield</p>
+<p>- Damage curves slightly increased</p>
+<p>&nbsp;</p>
+<p>Mind Blast</p>
+<p>- Tooltip updated to the correct duration</p>
+<p>&nbsp;</p>
+<p>Death Sentry</p>
+<p>- Tooltip updated to show the correct corpse explosion damage range</p>
+<p>&nbsp;</p>
+<p>## Barbarian</p>
+<p>Battle Cry</p>
+<p>- Removed curse tag so it stacks with curses</p>
+<p>- Tooltip updated to reflect range</p>
+<p>&nbsp;</p>
+<p>Concentrate reworked into new skill Carnage</p>
+<p>- Can be used with any melee weapon</p>
+<p>- On strike creates a tornado which explodes into small bone spikes</p>
+<p>- Bone spikes seek out nearby enemies</p>
+<p>- 10% Damage synergy with Bash and Berserk</p>
+<p>&nbsp;</p>
+<p>Deadly Treasures</p>
+<p>- Fixed the stats so the skill properly applies past 255/511 limits</p>
+<p>- Scaling adjusted to base 25 + 4% per level MF</p>
+<p>- Scaling adjusted to base 41.25 + 6.6% per level GF</p>
+<p>&nbsp;</p>
+<p>Howl</p>
+<p>- 29+ damage curve increased so late and end game damage is up to par with hell monster difficulty.</p>
+<p>- Synergy increased to 15 from 12 to smooth out early to mid game.</p>
+<p>&nbsp;</p>
+<p>Tectonic Slam</p>
+<p>- Spike Range slightly increased from 14 to 16</p>
+<p>- Damage buff fixed to apply for the duration of the missiles properly</p>
+<p>&nbsp;</p>
+<p>War Cry</p>
+<p>- 29+ damage curve increased so late and end game damage is up to par with hell monster difficulty.</p>
+<p>- Synergy increased 10 to 15 to smooth out early to mid game.</p>
+<p>&nbsp;</p>
+<p>Combat Masteries -&gt; Masteries and Throwing Skills</p>
+<p>&gt;Each skill requires a throwing weapon and doesn't use a second throwing weapon though they can be used while dual-wielding.</p>
+<p>&nbsp;</p>
+<p>- Unstoppable Force (Replaces Pole-Arm Mastery)</p>
+<p>&nbsp;- Level 1</p>
+<p>&nbsp;-High weapon damage, slow moving projectile that pierces enemies and always hits</p>
+<p>&nbsp;</p>
+<p>- Winters Gambit (Replaces Spear-Mastery)</p>
+<p>&nbsp;- Level 12</p>
+<p>&nbsp;- Throws multiple projectiles that travel for a short distance ignoring collision and then home in on random "nearby" enemies and zips to them to deal weapon damage and cold damage</p>
+<p>&nbsp;- Inspired by Storm Crows from Median by Brother Laz</p>
+<p>&gt;Skill that engages you and rewards positioning, don't hug the monster unless it is alone if you want to hit it.</p>
+<p>&nbsp;</p>
+<p>Chasm Break (Replaces Increased Stamina)</p>
+<p>&nbsp;- Level 24</p>
+<p>&nbsp;- Throw a weapon that appears to teleport into an enemy and causes of rocks to fall on them for a short period dealing periodic weapon damage to enemies nearby the target</p>
+<p>&nbsp;- Credit to ESR celestialray for the missiles.txt entry and Median by Brother Laz for the inspiration from Rock Shower</p>
+<p>&nbsp;</p>
+<p>Madawcs Fury (Replaces Grim Ward)</p>
+<p>&nbsp;- Level 30</p>
+<p>&nbsp;- Enhances player throwing damage</p>
+<p>&nbsp;- Adds flat cold damage to attacks</p>
+<p>&nbsp;- Enhances AR</p>
+<p>&nbsp;- Gives you a cool glow created for the skill.</p>
+<p>&nbsp;</p>
+<p>## Druid</p>
+<p>Raven</p>
+<p>- Damage curve lowered by 5 at low levels and increased by 5 at skill level 29+</p>
+<p>- No longer useable while in a shifted form</p>
+<p>&nbsp;</p>
+<p>Hunger Reworked into Toxic Fangs</p>
+<p>&gt;Goal: Hunger didn't really have a good purpose. Getting life and mana steal was already easy to obtain. lack of single target poison skill to pair with the incredible clear of rabies meant that you needed to go poison + physical hybrid instead of full investing in poison as an archetype.</p>
+<p>- 2 second duration poison skill with high damage curve after level 29+</p>
+<p>- 15% synergy with Rabies and Poison Creeper</p>
+<p>- Icon updated to reflect skill change</p>
+<p>- Shifted to level 30 requirement</p>
+<p>&nbsp;</p>
+<p>Rabies</p>
+<p>- Synergies changed to 15% from Poison Creeper and Toxic Fangs</p>
+<p>&nbsp;</p>
+<p>Poison Creeper</p>
+<p>- Synergies changed to 15% from Rabies and Toxic Fangs</p>
+<p>&nbsp;</p>
+<p>Fire Claws</p>
+<p>- Missile updated to be visually accurate with AoE</p>
+<p>- Changed the function of the skill to require a target for the AoE</p>
+<p>- Synergy reduced to 20% from 25%</p>
+<p>&nbsp;</p>
+<p>## Necromancer</p>
+<p>Bone Armor</p>
+<p>- Changed from PDR% to flat defense bonus because PDR% isn't calculated with hits to the armor.</p>
+<p>&nbsp;</p>
+<p>Bone Spear</p>
+<p>- Synergy reduced to 10 from 12 due to damage overflow at high gear levels.</p>
+<p>&nbsp;</p>
+<p>Bone Spirit</p>
+<p>- Synergy reduced to 10 from 12 due to damager overflow at high gear levels.</p>
+<p>- Damage curve reduced for the same reason</p>
+<p>&nbsp;</p>
+<p>Blood Golem</p>
+<p>- Magic Mastery aura now scales at 1% per level and caps at 50% down from 110% to prevent damage overflow.</p>
+<p>&nbsp;</p>
+<p>Poison Dagger</p>
+<p>- Useable with Daggers/Throwing Knives</p>
+<p>- Duration is now set at 3 seconds at all levels</p>
+<p>- Damage adjusted to fit the role of single target damage dealer</p>
+<p>- Available at level 1 down from 6</p>
+<p>- Has a small poison splash</p>
+<p>&nbsp;</p>
+<p>Curses</p>
+<p>- No longer have prerequisite skills/travel tax.</p>
+<p>&nbsp;</p>
+<p>Poison Nova</p>
+<p>- Damage curve adjusted so the skill is viable when received and still stays strong as an all around AoE spell end game.</p>
+<p>&nbsp;</p>
+<p>Poison Explosion is now Poison Volley</p>
+<p>- Useable with Bows, Crossbows, Throwing Knives, Throwing Axes</p>
+<p>- Poison based ranged spell with multiple projectiles and a flat poison duration of 2 seconds at all levels.</p>
+<p>- 2 projectiles starting, gains +1 projectile per 3 levels of Poison Nova hard point synergy, 5 projectile cap.</p>
+<p>- Corpse Explosion prerequisite removed. &nbsp;</p>
+<p>&nbsp;</p>
+<p>## Paladin</p>
+<p>Holy Bolt</p>
+<p>- Synergy up to 30% from 25%</p>
+<p>&nbsp;</p>
+<p>Fist of the Heavens</p>
+<p>- No longer requires Conversion</p>
+<p>- Delay changed to local only and reduced to 0.3 from 0.5s</p>
+<p>- Lightning damage starts at 50-100 down from 150-200</p>
+<p>- Lightning damage curve increased by 10 min and 20 max per level up from past values</p>
+<p>&nbsp;</p>
+<p>Holy Fire</p>
+<p>- No longer requires Might</p>
+<p>&nbsp;</p>
+<p>Sanctuary</p>
+<p>- No longer requires Holy Freeze</p>
+<p>&nbsp;</p>
+<p>Conviction</p>
+<p>- Now requires Holy Shock</p>
+<p>&nbsp;</p>
+<p>## Sorceress</p>
+<p>&gt;Goal is to pull power out of the masteries and put them into the skills and synergies. Initially started because of various OSkills and Enchant, this initial pass has expanded to feel things out and swing a nerf bat at some outlier skills, and buff up some underperforming or cumbersome ones. Please give each element a try as well as some hybridization, the masteries still provide some power as 1 points, and synergies were cut back to limit them to the skill itself and 2 others and power pushed into the skill level 29+ curve damage instead of bloating the synergies higher. Definitely want a focused elemental build to be stronger, but would like other builds to be viable to at least farm with and have fun doing it.</p>
+<p>&nbsp;</p>
+<p>### Cold</p>
+<p>Ice Bolt</p>
+<p>&gt;Same early game, better middle and end game</p>
+<p>- 29+ Curve substantially increased to maintain end game damage</p>
+<p>- Synergy reduced to 12% from 20%</p>
+<p>- Moved left on the Cold Tree</p>
+<p>- Now only has Frost Nova and Frozen Orb synergies</p>
+<p>&nbsp;</p>
+<p>Frost Nova</p>
+<p>&gt;1 point chill wonder is now a 2 point and can scale damage-wise for decent AoE clear</p>
+<p>- Requires level 12 from 6</p>
+<p>- Now has Ice Bolt Prerequisite</p>
+<p>- Removed Blizzard Synergy</p>
+<p>- Added Ice Bolt Synergy</p>
+<p>- Increased 29+ damage</p>
+<p>&nbsp;</p>
+<p>Ice Blast</p>
+<p>&gt;5 projectiles with a lengthy freeze, toned down the damage a bit due to mastery changes</p>
+<p>- Damage Curve reduced 23+</p>
+<p>- Damage Synergy reduced to 8% from 10%</p>
+<p>- Freeze length synergy removed</p>
+<p>- Now only has Glacial Spike and Blizzard synergies</p>
+<p>&nbsp;</p>
+<p>Shiver Armor</p>
+<p>- No longer has Ice Blast perquisite</p>
+<p>&nbsp;</p>
+<p>Glacial Spike</p>
+<p>&gt;3 projectile and explosive with a freeze, the length was excessive but I wanted it slightly bigger for overall skill feel.</p>
+<p>- Explosion radius increased slightly</p>
+<p>- 29+ Damage curve increased</p>
+<p>- Damage Synergy reduced to 10% from 11%</p>
+<p>- Removed Frozen Orb Synergy</p>
+<p>- Reduced Freeze Length Synergy</p>
+<p>&nbsp;</p>
+<p>Blizzard</p>
+<p>&gt;Damage compared to 2.0.5 is within 5% or so, with the mastery maxed opposed to Ice Bolt.</p>
+<p>- Removed Frost Nova Requirement and moved it right 1 column in the cold tree</p>
+<p>- 29+ damage curve increased</p>
+<p>- Synergy reduced to 4% from 5%</p>
+<p>- Removed Ice Bolt Synergy</p>
+<p>&nbsp;</p>
+<p>Chilling Armor</p>
+<p>- Damage synergy increased to 10% from 9%</p>
+<p>&nbsp;</p>
+<p>Frozen Orb</p>
+<p>- Fixed missile flag causing extra visual only explosions by the main orb.</p>
+<p>- Ice bolts cast by the orb and the explosion now explode like glacial spike but only chill</p>
+<p>- Damage Curve adjusted back to vanilla values</p>
+<p>- Damage Synergy reduced to 4% from 5%</p>
+<p>- Added Frost Nova Synergy</p>
+<p>&nbsp;</p>
+<p>Cold Mastery</p>
+<p>- Now grants 150% Cold Skill Damage with 25 hard points</p>
+<p>- Now grants 150% Cold Skill Damage with 75 soft points</p>
+<p>- Now grants 25% -Enemy Cold Resistance with 25 hard points</p>
+<p>- Now grants 25% -Enemy Cold Resistance with 75 soft points points</p>
+<p>&nbsp;</p>
+<p>### Lightning</p>
+<p>Charged Bolt</p>
+<p>&gt;Changes to keep it similar and competitive end game.</p>
+<p>- 23+ damage curve increased</p>
+<p>- Added Synergy with Chain Lightning</p>
+<p>&nbsp;</p>
+<p>Static Field</p>
+<p>&gt;Bit of an extreme amount of HP removal.</p>
+<p>- HP% removed reduced to 10% from 25%</p>
+<p>&nbsp;</p>
+<p>Nova</p>
+<p>- 29+ damage curve increased</p>
+<p>- Added Thunder Storm synergy</p>
+<p>&nbsp;</p>
+<p>Lightning</p>
+<p>&gt;Wanted this to keep a similar range of damage but feel more impactful</p>
+<p>- Missile Speed increased slightly</p>
+<p>- 23+ minimum damage curve increased</p>
+<p>- 9+ maximum damage curve increased</p>
+<p>- Synergy increased to 14% from 8%</p>
+<p>- Removed Nova Synergy</p>
+<p>&nbsp;</p>
+<p>Chain Lightning</p>
+<p>&gt;Wanted this to keep a similar range of damage but feel more impactful</p>
+<p>- Missile Speed increased slightly</p>
+<p>- 23+ minimum damage curve increased</p>
+<p>- 1+ maximum damage curve increased</p>
+<p>- Synergy increased to 8% from 4%</p>
+<p>- Removed Nova Synergy</p>
+<p>&nbsp;</p>
+<p>Thunder Storm</p>
+<p>- Decreased minimum time between bolts by .2 seconds (now .8 seconds at around 20 down from 1s)</p>
+<p>- 29+ damage curve increased</p>
+<p>- Synergy increased to 8% from 7%</p>
+<p>- Added Nova Synergy</p>
+<p>&nbsp;</p>
+<p>Energy Shield</p>
+<p>&gt;Immortal ES Sorc is exceptionally easy to obtain in this mod, so it's going to be a bit more of an investment/challenge</p>
+<p>- Reduced maximum absorption cap to 90% from 95%</p>
+<p>- Fixed TK synergy to apply the -6% mana per health to 63% a 12% buff from 75%</p>
+<p>&nbsp;</p>
+<p>Lightning Mastery</p>
+<p>- Now grants 150% Lightning Skill Damage with 25 hard points</p>
+<p>- Now grants 150% Lightning Skill Damage with 75 soft points</p>
+<p>- Now grants 25% -Enemy Lightning Resistance with 25 hard points</p>
+<p>- Now grants 25% -Enemy Lightning Resistance with 75 soft points points</p>
+<p>&nbsp;</p>
+<p>### Fire</p>
+<p>Fire Bolt</p>
+<p>&gt;This skill was reaching 120-130K and between this nerf and mastery change its in a more healthy spot middle and end game.</p>
+<p>- Synergy reduced to 14% from 16%</p>
+<p>&nbsp;</p>
+<p>Warmth</p>
+<p>&gt;Less impact as a 1 point early on, more impact later</p>
+<p>- Mana recovery changed to 15 base 15 per level from 30 base and 12 per level</p>
+<p>- Life per Kill visual bug fixed</p>
+<p>&nbsp;</p>
+<p>Inferno</p>
+<p>- Missile speed and range increased slightly</p>
+<p>- Now casts an additional stream of fire every 6 levels (soft points)</p>
+<p>- Fire Wall synergy added</p>
+<p>- Synergies reduced to 10% from 13%</p>
+<p>- Mana cost slightly increased</p>
+<p>&nbsp;</p>
+<p>Blaze</p>
+<p>- 29+ damage curve increased</p>
+<p>&nbsp;</p>
+<p>Fireball</p>
+<p>&gt;This skill was reaching 100-110K and is now sitting around 65-67K after synergy nerf and mastery change</p>
+<p>- 29+ damage curve increased</p>
+<p>- Synergy reduced to 12% from 14%</p>
+<p>&nbsp;</p>
+<p>Firewall</p>
+<p>&gt;With the AoE and speed increase, the damage doesn't need to be quite as high as it used to be with full investment</p>
+<p>- Wall creation speed increased by 75% and now deals damage in a larger area within the fire visual</p>
+<p>- 29+ damage curve increased</p>
+<p>- Synergy with Warmth reduced to 3% from 4%</p>
+<p>&nbsp;</p>
+<p>Enchant</p>
+<p>&gt;Over performance king got whacked hard with the nerf bat, between mastery changes and these changes I feel like it has finally been reigned into something we can live with.</p>
+<p>&gt;&gt; Example: A 150-164K Fully kitted out MS sorc is now doing 40-45K and pretty much still 1 shots things aside from bosses, I actually have to use other spells and even weapon swap to GA.</p>
+<p>- Damage curve reduced by 5% total</p>
+<p>- Damage Synergy down to 4% from 9%</p>
+<p>&nbsp;</p>
+<p>Hydra</p>
+<p>- 29+ damage curve increased</p>
+<p>&nbsp;</p>
+<p>Fire Mastery</p>
+<p>- Now grants 150% Fire Skill Damage with 25 hard points</p>
+<p>- Now grants 150% Fire Skill Damage with 75 soft points</p>
+<p>- Now grants 25% -Enemy Fire Resistance with 25 hard points</p>
+<p>- Now grants 25% -Enemy Fire Resistance with 75 soft points points</p>
+<p>&nbsp;</p>
+<p># General Items</p>
+<p>Added Extra Throwing DMG % Property and Group</p>
+<p>- Currently only used by Madawc's Fury</p>
+<p>&nbsp;</p>
+<p>Added "slam" tag to polearms</p>
+<p>&nbsp;</p>
+<p>Dagger Sockets Updated</p>
+<p>- Kriss to 2 from 3</p>
+<p>- Poignard, Rondel, Bone Knife, Mithril Point to 2 from 1</p>
+<p>- Stiletto and Legend Spike to 3 from 2</p>
+<p>&nbsp;</p>
+<p>Shields Updated</p>
+<p>- Hyperion now requires 156 strength and can gain 4 sockets</p>
+<p>- Toll's Nest now requires 156 strength and can gain 4 sockets</p>
+<p>- Cantor Trophy, Heirophant Trophy, Minion Skull, Hellspawn Skull, Oversee Skull to 3 sockets from 2</p>
+<p>- Succubus Skull and Bloodlord Skull to 4 sockets from 2</p>
+<p>&nbsp;</p>
+<p>## Unique Items</p>
+<p>Black Soulstone sprite updated</p>
+<p>Obsidian Beacon sprite updated</p>
+<p>&nbsp;</p>
+<p>Annihilus upgrade to Black Soulstone has been revised</p>
+<p>- Black Soulstone: 2 ASK, 20 Stats, 20 Res, 10 XP, 1 Teleport (down from 2 ASK, 25 Stats, 25 Res, 10 XP, 5 Teleport)</p>
+<p>- Annihilus upgrade path now has 6 levels. Each upgrade level adds stats, similar to torch. &nbsp;</p>
+<p>```</p>
+<p>First: JAH + ITH + BER &nbsp;= + Lvl 1 Warp OSkill</p>
+<p>Second: 3 Infusion Orbs &nbsp;= +1 XP, +2 All Stats, +2 All Res</p>
+<p>Third: 3 Assemblage Orbs = +1 XP, +2 All Stats, +2 All Res</p>
+<p>Fourth: 3 Corruption Orbs = +1 XP, +2 All Stats, +2 All Res</p>
+<p>Fifth: 3 Conversion Orbs = +1 XP, +2 All Stats, +2 All Res</p>
+<p>Final: 3 Shadow Orbs &nbsp;= Black Soulstone</p>
+<p>```</p>
+<p>&nbsp;</p>
+<p>Blackbog's Sharp</p>
+<p>- Base to Fanged Knife from Cinquedeas</p>
+<p>- Level Required is now 80</p>
+<p>- Flat Poison swapped to - 15 Enemy Poison Resistance</p>
+<p>- Defence swapped to +100 Attack Rating</p>
+<p>- Poison Explosion removed because it can no longer be cast wielding a dagger.</p>
+<p>&nbsp;</p>
+<p>Basilisk's Touch</p>
+<p>- Dim Vision oSkill is now 10% CtC level 5 Dim Vision on striking</p>
+<p>- Enhanced Damage swap to 15-20% Poison Skill Damage</p>
+<p>- Added +2 to poison skills</p>
+<p>- Added +15-20% Increased Attack Speed</p>
+<p>- Defence swapped to Attack Rating</p>
+<p>- Removed damage per level</p>
+<p>&nbsp;</p>
+<p>Spectral Slayer</p>
+<p>- Changed to Balanced Axe from Throwing Axe</p>
+<p>&nbsp;</p>
+<p>Spleen Feaster</p>
+<p>- Changed to Throwing Axe from Balanced Axe</p>
+<p>- Removed Flat Damage</p>
+<p>- Removed Extra Stack</p>
+<p>- Removed Flat Poison Damage</p>
+<p>- Removed Prevent Monster Heal</p>
+<p>- Added +1-2 to Necromancer Skill Levels</p>
+<p>- Added +15-20% Attack Speed</p>
+<p>- Added +15-20% Piercing Attack</p>
+<p>- Added +2-3 Life After Each Kill</p>
+<p>&nbsp;</p>
+<p>Deadly Needle is now Butcher's Paring Knives and Fully Reworked</p>
+<p>- +1 Necromancer Skill Levels</p>
+<p>- +1-2 Poison and Bone Skill Levels</p>
+<p>- +1 Throwing Mastery OSkill</p>
+<p>- +20-30% Poison Skill Damage</p>
+<p>- -15-20% Enemy Poison Resistance</p>
+<p>- +15-25% Increased Attack Speed</p>
+<p>&nbsp;</p>
+<p>Swarming Blades</p>
+<p>- Swapped to Flying Knife from Battle Dart</p>
+<p>- Now Required Level 80</p>
+<p>- 10% CtC Level 1 Burst of Speed on Striking</p>
+<p>- 15% CtC Level 50 Blade Sentinel on Striking</p>
+<p>- 8% CtC Level 1 Static Field on Striking</p>
+<p>- +20-30 Pierce</p>
+<p>- +1 Necromancer Skill Levels</p>
+<p>- +3 Poison Volley</p>
+<p>- -20-25% Enemy Poison Resistance</p>
+<p>- +50-100 Life</p>
+<p>&nbsp;</p>
+<p>Oathbow is now Radament's Bite</p>
+<p>- +200-250% Enhanced Damage</p>
+<p>- +1-2 Necromancer Skill Levels</p>
+<p>- +30-40% Increased Attack Speed</p>
+<p>- +2-3 to Poison Volley</p>
+<p>- +20-30% Poison Skill Damage</p>
+<p>- -10-20% Enemy Poison Resistance</p>
+<p>- +20-30 to All Resistances</p>
+<p>- 13% CtC Level 17 Corpse Explosion on Kill</p>
+<p>&nbsp;</p>
+<p>Wightslayer</p>
+<p>- +220-260% Enhanced Damage</p>
+<p>- +4-6 to Poison Volley</p>
+<p>- +20-30% Poison Skill Damage</p>
+<p>- -15-20% Enemy Poison Resistance</p>
+<p>- +30-40% Increased Attack Speed</p>
+<p>- +20-30% Pierce</p>
+<p>- +5% Chance to Reanimate As: Wight (2H Sword Skeleton W/ Charge)</p>
+<p>&nbsp;</p>
+<p>Pus Spitter</p>
+<p>- 9% CtC Level 6 Poison Nova on Striking</p>
+<p>- 8% CtC Level 3 Lower Resist on Striking</p>
+<p>- +1 to Necromancer Skill Levels swapped to +1 to All Skill Levels</p>
+<p>- Poison Damage and Duration Improved</p>
+<p>&nbsp;</p>
+<p>Archon's Ache</p>
+<p>- Open Wounds per level adjusted to .5 per level from 1.5 per level</p>
+<p>- Removed the .5 max damage per level</p>
+<p>&nbsp;</p>
+<p>## Runewords</p>
+<p>Duriel's Fang</p>
+<p>- Level 29</p>
+<p>- Runes: Shael + Tir</p>
+<p>- Required: Dagger, Sword, Claw</p>
+<p>- Rune Effects: 20% Increased Attack Speed + &nbsp;2 Mana After Each Kill</p>
+<p>- +1-2 to Poison Skill Levels</p>
+<p>- +10-15% Poison Skill Damage</p>
+<p>- -5-8% Enemy Poison Resistance</p>
+<p>- +50 Attack Rating</p>
+<p>&nbsp;</p>
+<p>Breath of the Dying</p>
+<p>- CTC Poison Nova Removed due to visual clutter</p>
+<p>&nbsp;</p>
+<p>Blood Moon</p>
+<p>- Renamed Searing Moon due to confusion with the unique of the same name.</p>
+<p>&nbsp;</p>
+<p>## Sets</p>
+<p>Cow King's Leathers</p>
+<p>- Now turns you into the Cow King with the full set (3 items) bonus.</p>
+<p>- Grants Tectonic Slam oSkill</p>
+<p>&nbsp;</p>
+<p>Panda's Polar Adventure</p>
+<p>- Introduces a new set that gives you the oSkill Artic Claws and Polar Bear which is a cold damage Fire Claws and a white Summon Grizzly Werebear equivalent respectively.</p>
+<p>&nbsp;- See PR #774 for detailed information.</p>
+<p>&nbsp;</p>
+<p>## Splash Charm</p>
+<p>- Revise splash missile to always carry 100% of weapon damage to remove bad feeling gameplay damage</p>
+<p>- Revise tiered damage penalty</p>
+<p>- Revise required levels to reflect the theme of having 9 stages of power acquisition</p>
+<p>```</p>
+<p>Lvl Tier Min Max</p>
+<p>3 T1 -40 -40</p>
+<p>10 T2 -35 -40</p>
+<p>20 T3 -30 -35</p>
+<p>30 T4 -25 -30</p>
+<p>40 T5 -20 -25</p>
+<p>50 T6 -15 -20</p>
+<p>60 T7 -10 -15</p>
+<p>75 T8 -5 -10</p>
+<p>90 T9 0 0</p>
+<p>```</p>
+<p>&nbsp;</p>
+<p># Cube Recipes</p>
+<p>## General</p>
+<p>Quiver/Bolt Case of Pestilence: Rare Jewel + Gul Rune + Quiver/Bolt Case of Slaying</p>
+<p>- Requires Level 85</p>
+<p>- +20% Increased Attack Speed</p>
+<p>- +25% Pierce</p>
+<p>- +10% Poison Skill Damage</p>
+<p>- -10% Enemy Poison Resistance</p>
+<p>- 5% CtC Level 10 Corpse Explosion on Striking</p>
+<p>&nbsp;</p>
+<p>Brilzar's Mazed Band: Tal Rune + Ral Rune + Ort Rune + Magic Ring</p>
+<p>- Requires Level 30</p>
+<p>- +1 to Warp OSkill</p>
+<p>- +5 to All Elemental Resistances</p>
+<p>- +5 to All Attributes</p>
+<p>&nbsp;</p>
+<p>Shadow Orb and Force Ethereal Recipes check for Indestructible</p>
+<p>- Force Eth also now checks for Eth like Shadow Orb does</p>
+<p>- Bow/Xbow disabled for both recipes so they'll stop eating orbs/mats</p>
+<p>&nbsp;</p>
+<p>Quiver Quantity Restoration Recipes</p>
+<p>- Fixed the recipe so it restores them to max quantity on use</p>
+<p>&nbsp;</p>
+<p>Uber Spirit Superior Recipe Changed:</p>
+<p>&gt;These no longer stack on the same item, the item is regenerated.</p>
+<p>&gt;&gt;These recipes now fit the niche of "Create Superior Runeword Base" and will accept any input and return as described, so anything from damaged to unique will be eaten and regenerated as a white elite base with max sockets a 15% ED (Damage or Defence depends on Weapon/Armor) and a chance to roll vanilla superior modifiers.</p>
+<p>- CRAFT ITEM - Any Non-Throwing Weapon &amp; Infusion Orb &amp; Mephisto's Animus &amp; Baal's Calamity &amp; Diablo's Ire = Return Weapon Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Damage</p>
+<p>- CRAFT ITEM - Any Helm &amp; Infusion Orb &amp; Mephisto's Animus &amp; Baal's Calamity &amp; Diablo's Ire = Return Helm Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense</p>
+<p>- CRAFT ITEM - Any Torso &amp; Infusion Orb &amp; Mephisto's Animus &amp; Baal's Calamity &amp; Diablo's Ire = Return Torso Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense</p>
+<p>- CRAFT ITEM - Any Shield &amp; Infusion Orb &amp; Mephisto's Animus &amp; Baal's Calamity &amp; Diablo's Ire = Return Shield Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense</p>
+<p>&nbsp;</p>
+<p>## Recycling</p>
+<p>&lt;details&gt;&lt;summary&gt;Added&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Added some additional recycling recipes so if people choose they can do something with all the unique and set items they don't pick up normally.</p>
+<p>- RECYCLE ITEM - 5 Set Boots + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Unique Boots + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Set Belts + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Unique Belts + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Set Gloves + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Unique Gloves + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Set Helms + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Unique Helms + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Set Shields + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Unique Shields + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Set Torsos + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Unique Torsos + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Set Weapons + ID Tome = Gem Cluster</p>
+<p>- RECYCLE ITEM - 5 Unique Weapons + ID Tome = Gem Cluster</p>
+<p>&lt;/details&gt;</p>
+<p>&nbsp;</p>
+<p>## Item Upgrades</p>
+<p>&lt;details&gt;&lt;summary&gt;Added&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;New recipes aimed to at mid grade physical weapon upgrades and adding a higher tier of flat damage upgrade</p>
+<p>- ITEM UPGRADE - Any Weapon &amp; Infusion Orb &amp; Amethyst &amp; Fal-Rune &amp; Magic Jewel = +25% Enhanced Damage &amp; +25 Attack Rating</p>
+<p>- ITEM UPGRADE - Any Weapon &amp; Infusion Orb &amp; Emerald &amp; Ohm-Rune &amp; Rare Jewel = +15 Min Damage &amp; +30 Max Damage</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Changed&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Overperforming very cheap FCR and IAS Recipes toned down slightly</p>
+<p>- ITEM UPGRADE - Weapon &amp; Sapphire &amp; Magic Jewel = +10 to +7% Increased Cast Rate</p>
+<p>- ITEM UPGRADE - Weapon &amp; Emerald &amp; Magic Jewel = +10 to +7% Increased Attack Speed</p>
+<p>&gt; Values on these reduced due to bit overflow issues with the stat.</p>
+<p>- ITEM UPGRADE - Shield &amp; Infusion Orb &amp; Sapphire &amp; Sur-Rune &amp; Rare Jewel = +6% Max Mana</p>
+<p>- ITEM UPGRADE - Shield &amp; Infusion Orb &amp; Sapphire &amp; Sur-Rune &amp; Rare Jewel = +6% Max HP</p>
+<p>- ITEM UPGRADE - Chest &amp; Infusion Orb &amp; Sapphire &amp; Sur-Rune &amp; Rare Jewel = +8% Max Mana</p>
+<p>- ITEM UPGRADE - Chest &amp; Infusion Orb &amp; Sapphire &amp; Sur-Rune &amp; Rare Jewel = +8% Max HP</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Removed&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt; Very expensive for a simple freeze affix</p>
+<p>- ITEM UPGRADE - Any Weapon &amp; Infusion Orb &amp; Emerald &amp; Ohm-Rune &amp; Rare Jewel = +2 Freezes Target removed</p>
+<p>&lt;/details&gt;</p>
+<p>&nbsp;</p>
+<p>## Crafting</p>
+<p>&lt;details&gt;&lt;summary&gt;Amulets&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Very low level options/early leveling options</p>
+<p>- CRAFT ITEM - Any Magic Amulet + ITH Rune + EL Rune = +100% CTC level 4 Battle Orders on level up Magic Amulet</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Amulet + Orb of Infusion + RAL Rune + Gem(Any) = +1 Random Class All Skills Rare Amulet</p>
+<p>&nbsp;</p>
+<p>&gt;Mid Level &nbsp;</p>
+<p>- CRAFT ITEM - Any Rare Amulet + Rare Jewel + PUL rune + EL Rune + Ruby = +1 All Skills &amp; +10-12% Faster Attack Speed Rare Amulet &nbsp;</p>
+<p>- CRAFT ITEM - Any Rare Amulet + Rare Jewel + PUL rune + EL Rune + Sapphire = &nbsp;+1 All Skills &amp; +10-12% Faster Cast Rate Rare Amulet</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any Rare Amulet + Unique Jewel + VEX Rune + LO Rune + Skull = +2 All Skills &amp; +25-35 Weapon Damage Crafted Amulet</p>
+<p>- CRAFT ITEM - Any Rare Amulet + Unique Jewel + VEX Rune + LO Rune + Sapphire = +2 All Skills &amp; +10-15% All Elemental Damage Crafted Amulet</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Rings&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Very low level options/early leveling options</p>
+<p>- CRAFT ITEM - Any Magic Ring + ITH Rune + EL Rune = +100% CTC level 1 Fade on level up Magic Ring</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Ring + Tal Rune + Ral Rune + Ort Rune = Barilzar's Mazed Band Unique Ring</p>
+<p>- CRAFT ITEM - Any Magic Ring + Orb of Infusion + AMN Rune + Gem(Any) = +20% Magic Find Rare Ring</p>
+<p>&nbsp;</p>
+<p>&gt;Mid Level &nbsp;</p>
+<p>- CRAFT ITEM - Any Rare Ring + Rare Jewel + UM Rune + HEL Rune + Gem(Any) = +8-10% All Res +8-10 all attributes Rare Ring</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any Rare Ring + Unique Jewel + SUR Rune + JAH Rune + Gem(Any) = +5-8% Max HP &amp; +5-8% Max Mana Crafted Ring</p>
+<p>- CRAFT ITEM - Any Rare Ring + Unique Jewel + ZOD rune + GUL Rune + Gem(Any) = +1 All Skills &amp; +10% Faster Attack Speed &amp; +10% Faster Cast Rate Crafted Ring</p>
+<p>- CRAFT ITEM - Any Rare Ring + Unique Jewel + ZOD rune + VEX Rune + Ruby = &nbsp;+1 All Skills &amp; +15-25 Weapon Damage Crafted Ring</p>
+<p>- CRAFT ITEM - Any Rare Ring + Unique Jewel + ZOD rune + VEX Rune + Sapphire = +1 All Skills &amp; +8-10% All Elemental Damage Crafted Ring</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Belts&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Belt + ITH Rune + EL Rune = +100% CTC level Level 1 Frozen Armor on level up Magic Belt</p>
+<p>- CRAFT ITEM - Any Magic Belt + Magic Jewel + RAL Rune = +1 Random Class All Skills Magic Belt</p>
+<p>&nbsp;</p>
+<p>&gt;Mid Level &nbsp;</p>
+<p>- CRAFT ITEM - Any Rare Belt + Rare Jewel + UM Rune + IST Rune + Gem (Any) = +20-25% All Res &amp; +30-40% Magic Find Rare Belt</p>
+<p>- CRAFT ITEM - Any Rare Belt + Rare Jewel + LEM Rune + MAL Rune + Gem (Any) = +10-15% Piercing Attack &amp; +10-15% Open wounds Rare Belt</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any Rare Belt + Unique Jewel + CHAM rune + JAH Rune + Gem (Any) = +Cannot Be Frozen + 10-15% Max HP Crafted Belt</p>
+<p>- CRAFT ITEM - Any Rare Belt + Unique Jewel + ZOD rune + VEX Rune + Ruby = +1 All Skills &amp; +20-30 Weapon Damage Crafted Belt</p>
+<p>- CRAFT ITEM - Any Rare Belt + Unique Jewel + ZOD rune + VEX Rune + Sapphire = +1 All Skills &amp; +8-10% All Elemental Damage Crafted Belt</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Boots&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Boots + ITH Rune + EL Rune = +100% CTC level 1 Burst of speed on level up Magic Boots</p>
+<p>- CRAFT ITEM - Any Magic Boots + Orb of Infusion + HEL Rune + Gem (Any) = +15% Faster Run/Walk &amp; +10 All Attributes Rare Boots</p>
+<p>&nbsp;</p>
+<p>&gt;Mid level</p>
+<p>- CRAFT ITEM - Any Rare Boots + Rare Jewel + UM Rune + IST Rune + Gem (Any) = +20-25% All Resists &amp; +30-40% Magic Find Rare Boots</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any Rare Boots + Unique Jewel + ZOD Rune + OHM Rune + Gem (Any) = +1 AllSkills &amp; +20-30% Faster Run/Walk &amp; +20-30 Weapon Damage Crafted Boots</p>
+<p>- CRAFT ITEM - Any Rare Boots + Unique Jewel + ZOD Rune + VEX Rune + Gem (Any) &nbsp;= +1 AllSkills &amp; +20-30% Faster Run/Walk &amp; +5-10% All Elemental Damage Crafted Boots</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Gloves&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Gloves + ITH Rune + EL Rune = +100% CTC level Level 4 Battle Commands on level up Magic Gloves</p>
+<p>- CRAFT ITEM - Any Magic Gloves + Magic Jewel + RAL Rune = +8% Faster Attack Speed &amp; +8% Faster Cast Rate Magic Gloves</p>
+<p>&nbsp;</p>
+<p>&gt;Mid Level &nbsp;</p>
+<p>- CRAFT ITEM - Any Rare Gloves + Rare Jewel + MAL Rune + SHAEL Rune +Gem (Any) = +1 Random Skill Tab (current class) &amp; +10-15% Increased Attack Speed Rare Gloves</p>
+<p>- CRAFT ITEM - Any Rare Gloves + Rare Jewel + MAL Rune + DOL Rune + Gem(Any) = +1 Random Skill Tab (current class) &amp; +10-15% Faster Cast Rate Rare Gloves</p>
+<p>- CRAFT ITEM - Any Rare Gloves + Rare Jewel + UM Rune + IST Rune + Gem (Any) = +20-25 All Res &amp; +30% Magic Find Rare Gloves</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any Rare Gloves + Unique Jewel + ZOD rune + VEX Rune + Ruby = +1 All Skills &amp; +20-40 Weapon Damage &amp; +0.375 Crushing blow/lvl Crafted Gloves</p>
+<p>- CRAFT ITEM - Any Rare Gloves + Unique Jewel + ZOD rune + VEX Rune + Sapphire = +1 All Skills &amp; +5-10% All Elemental Damage &amp; +10-20% Faster Cast Rate Crafted Gloves</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Helms&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Helm + ITH Rune + EL Rune = +100% CTC level Level 1 Shout on level up Magic Helm</p>
+<p>- CRAFT ITEM - Any Magic Helm + Orb of Infusion + RAL Rune + Gem (Any) = +15% Faster Hit Recovery Rare Helm</p>
+<p>&nbsp;</p>
+<p>&gt;Mid Level &nbsp;</p>
+<p>- CRAFT ITEM - Any Rare Helm + Rare Jewel + UM Rune + EL Rune + Gem (Any) = +20-25% All Resists &amp; +20-30% Faster Hit Recovery Rare Helm</p>
+<p>- CRAFT ITEM - Any Rare Helm + Rare Jewel + PUL Rune + EL Rune + &nbsp;Ruby = +1 Current Class Skills &amp; +10-15% Increased Attack Speed Rare Helm</p>
+<p>- CRAFT ITEM - Any Rare Helm + Rare Jewel + PUL Rune + EL Rune + Sapphire = +1 Current Class Skills &amp; +10-15% Faster Cast Rate Rare Helm</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any Rare Helm + Unique Jewel + ZOD rune + VEX Rune + Ruby = +1-2 All Skills &amp; +20-30% Enhanced Weapon Damage Crafted Helm</p>
+<p>- CRAFT ITEM - Any Rare Helm + Unique Jewel + ZOD rune + VEX Rune + Sapphire = +1-2 All Skills &amp; +5-10% All Elemental Damage Crafted Helm</p>
+<p>- CRAFT ITEM - Any Rare Helm + Unique Jewel + BER rune + JAH Rune + Gem(Any) = +2 All Skills &amp; +5-10% Physical Damage Reduction &amp; +5-10% Max HP Crafted Helm</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Body Armor&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Body Armor + ITH Rune + EL Rune = +100% CTC level Level 5 Oak Sage on level up Magic Body Armor</p>
+<p>- CRAFT ITEM - Any Magic Body Armor + Orb of Infusion + RAL Rune + Gem (Any) = +20% Faster Run/Walk &amp; +100 Defense Rare Body Armor</p>
+<p>&nbsp;</p>
+<p>&gt;Mid Level &nbsp;</p>
+<p>- CRAFT ITEM - Any Rare Body Armor + Rare Jewel + UM Rune + IST Rune + Gem (Any) = +20-25% All Res &amp; +20-40% Magic Find Rare Body Armor</p>
+<p>- CRAFT ITEM - Any Rare Body Armor + Rare Jewel + PUL Rune + SHAEL Rune + Gem (Any) = +1 Current Class Skills &amp; +30-50 HP &amp; +10-15% Increased Attack Speed Rare Body Armor</p>
+<p>- CRAFT ITEM - Any Rare Body Armor + Rare Jewel + PUL Rune + DOL Rune + Gem (Any) = +1 Current Class Skills &amp; +30-50 Mana &amp; +10-15% Faster Cast Rate Rare Body Armor</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any Rare Body Armor + Unique Jewel + ZOD Rune + BER Rune + UM RUNE = +2 All Skills &amp; +150-175% Enhanced Defense &amp; +20-30% All Resists +5-10% Physical Damage Reduction Crafted Body Armor</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Shields&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Shield + ITH Rune + EL Rune = +100% CTC level Level 4 Holy Shield on Level Up &amp; +5 All Attributes Magic Shield</p>
+<p>- CRAFT ITEM - Any Magic Shield + Orb of Infusion + AMN Rune + Gem (Any) = +1 Current Class Skills</p>
+<p>&nbsp;</p>
+<p>&gt;Mid Level</p>
+<p>- CRAFT ITEM - Any Rare Shield + Rare Jewel + UM Rune + IST Rune + Gem (Any) = +20-25 All Res &amp; +30-40% Magic Find Rare Shield</p>
+<p>- CRAFT ITEM - Any Rare Shield + Rare Jewel + UM Rune + SHAEL Rune + Gem (Any) = +20-25 All Res &amp; +20-30% Increase Block Chance &amp; +30% Faster Hit Recovery Rare Shield</p>
+<p>- CRAFT ITEM - Any Rare Shield + Rare Jewel + MAL Rune + SHAEL Rune + Gem (Any) = +1-2 Current Class Skills &amp; +20-30% Enhanced Weapon Damage Rare Shield</p>
+<p>- CRAFT ITEM - Any Rare Shield + Rare Jewel + MAL Rune + DOL Rune + Gem (Any) = +1-2 Current Class Skills &amp; +5-8 All Elemental Damage &amp; +(-5-8%) To All Enemy Resists &nbsp;Rare Shield</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any Rare Shield + Unique Jewel + BER Rune + UM Rune + Gem (Any) = +2 All Skills &amp; +30-40% All Res &amp; +5-10% Physical Damage Reduction Crafted Shield</p>
+<p>- CRAFT ITEM - Any Rare Shield + Unique Jewel + OHM Rune + CHAM Rune + Gem (Any) = +2 All Skills &amp; +50-80% Enhanced Weapon Damage Crafted Shield</p>
+<p>- CRAFT ITEM - Any Rare Shield + Unique Jewel + ZOD Rune + MAL Rune + Gem (Any) = +2 All SKills &amp; +10-15% All Elemental Damage &amp; +(-10-15%) To All Enemy Elemental Resist Crafted Shield</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Weapons&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Low level</p>
+<p>- CRAFT ITEM - Any Magic Weapon + Magic Jewel + RAL Rune + Ruby = +85% Enhanced Damage &amp; +20% Increased Attack Speed Magic Weapon</p>
+<p>- CRAFT ITEM - Any Magic Weapon + Magic Jewel + RAL Rune + Sapphire = +5% All Elemental Damage &amp; +15% Faster Cast Rate Magic Weapon</p>
+<p>- CRAFT ITEM - Any Magic Weapon + Orb of Infusion + SOL Rune + SHAEL Rune + Gem (Any) = +1Min/Max Flat DMG LVL +20% Increased Attack Speed Rare Weapon</p>
+<p>&nbsp;</p>
+<p>&gt;Mid Level</p>
+<p>- CRAFT ITEM - Any Rare Weapon + Rare Jewel + LEM Rune + EL Rune + Gem (Any) = +1 All Skills &amp; +125-150% Enhanced Weapon Damage &amp; +30% Increased Attack Speed Rare Weapon</p>
+<p>- CRAFT ITEM - Any Rare Weapon + Rare Jewel + PUL Rune + EL Rune + Gem (Any) = +1 All Skills &amp; -10% To All Enemy Elemental Resist &amp; 20% Faster Cast Speed Rare Weapon</p>
+<p>&nbsp;</p>
+<p>&gt;Endgame</p>
+<p>- CRAFT ITEM - Any 1 Hand Rare Weapon + Unique Jewel + BER Rune + OHM Rune + Gem (Any) = +2 All Skills &amp; 150-200% Enhanced Weapon Damage &amp; +30-60 Weapon Damage Crafted Weapon</p>
+<p>- CRAFT ITEM - Any 2 Hand Rare Weapon + Unique Jewel + BER Rune + OHM Rune + Gem (Any) = +2 All Skills &amp; 220-250% Enhanced Weapon Damage &amp; +60-100 Weapon Damage Crafted Weapon</p>
+<p>&nbsp;</p>
+<p>- CRAFT ITEM - Any 1 Hand Rare Weapon + Unique Jewel + BER Rune + CHAM Rune + Gem (Any) = +2 All Skills &amp; +10-15% All Elemental damage &amp; + -8-12% To all Enemy Elemental Resist Crafted Weapon</p>
+<p>- CRAFT ITEM - Any 2 Hand Rare Weapon + Unique Jewel + BER Rune + CHAM Rune + Gem (Any) = +2 All Skills &amp; +15-20% All Elemental damage &amp; + -12-16% To all Enemy Elemental Resist Crafted Weapon</p>
+<p>&lt;/details&gt;</p>
+<p>&lt;details&gt;&lt;summary&gt;Jewels&lt;/summary&gt;</p>
+<p>&nbsp;</p>
+<p>&gt;Added some recipes to target farm unique jewel variants as desired until the major jewel rework has been completed.</p>
+<p>- CRAFT ITEM - Sunder Charm Grand ( Cold ) &amp; Unique Jewel &amp; Gem Bag (100 Gems) = Winter Facet</p>
+<p>- CRAFT ITEM - Sunder Charm Grand ( Fire ) &amp; Unique Jewel &amp; Gem Bag (100 Gems) = Summer Facet</p>
+<p>- CRAFT ITEM - Sunder Charm Grand ( Light ) &amp; Unique Jewel &amp; Gem Bag (100 Gems) = Spring Facet</p>
+<p>- CRAFT ITEM - Sunder Charm Grand ( Poison ) &amp; Unique Jewel &amp; Gem Bag (100 Gems) = Autumn Facet</p>
+<p>- CRAFT ITEM - Sunder Charm Grand ( Physical ) &nbsp;&amp; Unique Jewel &amp; Gem Bag (100 Gems) = Star Facet</p>
+<p>- CRAFT ITEM - Sunder Charm Grand ( Magic ) &amp; 2 Unique Jewels &amp; Gem Bag (100 Gems) = Heaven Facet</p>
+<p>&lt;/details&gt;</p>
+<p>&nbsp;</p>
+<p># Hirelings (Mercenaries)</p>
+<p>Act 1 Rogue Scout</p>
+<p>- Can now equip quivers</p>
+<p>&nbsp;</p>
+<p>Act 5 Barbarian 2H</p>
+<p>- Double chance to cast Tectonic Slam</p>
+<p>- Can now use all 2H slam weapon types (Sword, Axe, Mace, Staff, Polearm)</p>
+<p>&nbsp;</p>
+<p>Act 5 Barbarian 1H</p>
+<p>- Can now use all 1H weapons except wands and sorceress orbs.</p>
+<p>&nbsp;</p>
+<p># Monsters</p>
+<p>Flying Scimitar</p>
+<p>- Particle effect adjusted to cover the entire sword</p>
+<p>&nbsp;</p>
+<p># Quality of Life</p>
+<p>- Website documentation generation overhauled</p>
+<p>- Party/Pet Frame added for assassin traps to display active trap count</p>
+<p>&nbsp;- This will show the number of active traps but will not distinguish between types due to how the game limits the number of active traps</p>
+<p>- Replenish Quantity added where missing to set and unique throwing weapons.</p>
+<p>- Physical Damage Reduction tooltips updated to reflect "Enemy Physical Damage Reduction: -#%"</p>
+<p>- Inferior Gem (base D2R) description updated to clearly state they are obsolete, cannot be used in recipes, and to cube with the gem bag for a gem credit.</p>
+<p>- Removed super flash from Thunderstorm strikes</p>
+<p>- 30 Day Login DRM message re-written to give instructions instead of a vague "go online"</p>
+<p>- XP, MF, and Sunder Potions are now stackable</p>
+<p>- Added a large number of localization translations for item names</p>
+<p>- Removed massive extra visuals for Ice Shatter effects</p>
+<p>- Rune sprites updated to make stacks stand out more visually</p>
+<p>- Orb Sprites updated too because I am easily distracted. - Delegus</p>
+<p>&nbsp;</p>
+<p># User Interface</p>
+<p>Translations added for almost every mod added/changed text in the game</p>
+<p>- &nbsp;If you find errors please report them so they can be updated as an AI was used for the initial pass since we do not have many multi-lingual active contributors.</p>
+<p>&nbsp;</p>
+<p>Mod Information</p>
+<p>- Added Power Orbs tab</p>
+<p>&nbsp;</p>
+<p>Character Select</p>
+<p>- Online/Offline changed to Disabled/Reimagined</p>
+<p>- Cog under play button fixed because it does let you toggle item placement and on/off Terror Zones</p>
+<p>- Version Text added to Controller UI</p>
+<p>&nbsp;</p>
+<p>Character Sheet</p>
+<p>- Panel updated to have a cubby for both advanced and breakpoint arrows.</p>
+<p>- Advanced stats are on top, breakpoints are on bottom.</p>
+<p>&nbsp;</p>
+<p>Breakpoints Panel</p>
+<p>- Rebuilt to match the other panels consistently in size and visuals</p>
+<p>&nbsp;</p>
+<p>Hireling Sheet</p>
+<p>- Panel updated to have a cubby for advanced stats arrow</p>
+<p>- Damage right aligned so it no longer overflows into the rest of the panel</p>
+<p>&nbsp;</p>
+<p>Inventory</p>
+<p>- Weapon swap relocated for both and fixed to be clickable</p>
+<p>- Misaligned inventory grid fixed</p>
+<p>- Added icon below close button with a tooltip about file size limits.</p>
+<p>&nbsp;</p>
+<p>Horadric Cube</p>
+<p>- Rebuilt to match the visual style of the other UI elements</p>
+<p>- Misaligned inventory grid fixed.</p>
+<p>- Added icon below close button with a tooltip about file size limits.</p>
+<p>&nbsp;</p>
+<p>Stash</p>
+<p>- All tabs active now in the base mod, though you still need the launcher first time install to change them from unavailable to useable on a fresh installation</p>
+<p>- Rebuilt to match the visual style of the other panels</p>
+<p>- Misaligned inventory grid fixed.</p>
+<p>- Added icon below close button with a tooltip about file size limits.</p>
+<p>&nbsp;</p>
+<p>Vendors</p>
+<p>- Returned to base game style</p>
+<p>- Removed extra bars from controller UI</p>
+<p>&nbsp;</p>
+<p>Waypoints</p>
+<p>- Returned to base game style</p>
+<p>- Controller layout is the same as MNK just on the right side for consistency with past behavior</p>
+<p>&nbsp;</p>
+<p>Quest Panel</p>
+<p>- Act buttons are actionable and hover able with controller</p>
+<p>- Dialogue no longer covers half the screen when replayed</p>
+<p>&nbsp;</p>
+<p>Skill Tree</p>
+<p>- Misaligned and extra overlapping tabs displaying while switching between them has been fixed for controller UI</p>
+<p>- Texture seams and alignment problems fixed for controller UI</p>
+<p>&nbsp;</p>
+<p>Pause Menu</p>
+<p>- Mod info moved to the top</p>
+<p>&nbsp;- File Size warning information added to general mod information tab</p>
+<p>- Save and Exit moved to the bottom with a space so that hitting it is a conscious choice</p>
+<p>&nbsp;</p>
+<p># Bug Fixes</p>
+<p>- Fix socketing orb helm armor and shield recipe to properly roll between 1 and 4 sockets instead of having a 4 socket bias.</p>
+<p>- 2 Handed weapons with 10 upgrades will no longer consume materials when used in an invalid cube recipe.</p>
+<p>- 2 Handed weapons with 10 upgrades will now properly work with socket punch recipes.</p>
+<p>- 2 Handed weapons with 10 upgrades will now properly work with Dye system.</p>
+<p>- Firewall tooltip internally updated for timing, skill unchanged.</p>
+<p>- Frozen Orb tooltip internally updated for timing, skill unchanged.</p>
+<p>- Fist of the Heavens tooltip and timing updated to properly reflect 0.6 seconds.</p>
+<p>- Vengeance Tooltip updated to properly display damage during point allocation.</p>
+<p>- Summon Grizzly Synergy typo for Shock Wave fixed so it now synergizes properly.</p>
+<p>- Summon Grizzly now gains physical sunder property properly.</p>
+<p>- Unused assets Treehead Woodfist Soul and Snapchip Shatter soul drops are now disabled.</p>
+<p>- Warp oSkill now properly casts at the same range as Teleport when used by a controller.</p>
+<p>- Glove Corruption outcome "All Elemental Pierce" typo fixed and now applies properly.</p>
+<p>- "Summon Armor" quilted armor with no sprite causing crashing/corruption has been removed as a base armor and further removed as a unique item.</p>
+<p>&nbsp;- This item was already disabled but some D2RMM mods were re-enabling it in error causing save file corruption</p>
+<p>- &nbsp;Tectonic Slam tooltip updated to properly display damage during point allocation.</p>
+<p>- Fixed ordering and IDs of monsters in monstats.txt and monstats2.txt to make future additions easier.</p>
+<p>- Fix skills.txt Skill ID comments being out of order.</p>
+<p>- Fixed Ancients being unable to spawn for a second attempt in the same game.</p>
+<p>- Fixed Holy Shield not having a visual for the other non-Paladin classes.</p>
+<p>- Fixed War Cry causing a crash in high density areas or when cast against multiple walls.</p>
+<p>- Fixed Vines causing FPS drops and crashing due vine remains lingering for up to 2 minutes without de-spawning.</p>
+<p>&nbsp;- May need to revisit this if Solar Creeper is still an issue.</p>
+<p>- Fixed Battle Cry visual AoE when spell is cast</p>
+<p>- STR% DEX% VIT% ENR% properties have been fixed to work properly.</p>
+<p>- Vow of Revenge fixed so the skill tabs properly roll a value instead of being empty.</p>
+<p>- Putrid Defiled fixed so the skill tabs properly roll a value instead of being empty.</p>
+<p>- Reason fixed to roll +4 random Sorceress skill properly.</p>
+<p>- Terror fixed to roll +4 random Necromancer skill properly.</p>
+<p>- Faith's Promise fixed to roll +5 random Paladin skill properly.</p>
+<p>- Foul Sigil text color codes removed so the ilvl no longer shows up blue</p>
+<p>- Fix of the Swordsman missing string</p>
+<p>- Fix Decoy leaving behind light beams when it dies</p>
+<p>- Fix Multiple Shot sound bug causing it to explode your ears on subsequent attacks</p>
+<p>- Fix Merc disappearing and being unrevivable/interactable/just poofing.</p>
+<p>&nbsp;- Obscure bug where having CTC Bone Wall or Bone Prison on the Merc causes them to completely be removed from the players save data if the game doesn't crash when the Wall/Prison timer expires or dies.</p>
+<p>- Fix visuals on Fireball and Hydra missile</p>
+<p>- Fixed All Maximum Resistances to group properly when the values are identical</p>
+<p>- Fixed Extra Weapon Damage % (splash charm only currently) to group properly when values are identical.</p>
+<p>- Fixed multiple items (Gemini Coat for example) that had throw min and max flat only to be flat min and max damage</p>
+<p>&nbsp;- They had no string, did not combine properly with strings, and just make more sense as overall flat damage for now.</p>
+<p>- Fixed Chest upgrade recipes for absorb and resistance working with any jewel type, now works only with uniques.</p>

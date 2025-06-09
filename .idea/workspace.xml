@@ -7,7 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f18b8f-90d7-4e1c-9f2e-91624ef0ec10" name="Changes" comment="" />
+    <list default="true" id="17f18b8f-90d7-4e1c-9f2e-91624ef0ec10" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Items/Orbs/orbofassemblage210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Orbs/orbofconversion210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Orbs/orbofconversion_stack210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Orbs/orbofcorruption210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Orbs/orbofinfusion210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Orbs/orbofshadows210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Orbs/orbofsocketing210.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749410408481</updated>
       <workItem from="1749410409539" duration="15412000" />
-      <workItem from="1749445522731" duration="320000" />
+      <workItem from="1749445522731" duration="678000" />
     </task>
     <servers />
   </component>

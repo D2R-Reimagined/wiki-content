@@ -2,7 +2,7 @@
 title: Foh Paladin
 description: By Jasper89c
 published: true
-date: 2025-06-13T19:33:41.991Z
+date: 2025-06-13T19:53:20.236Z
 tags: paladin, foh
 editor: markdown
 dateCreated: 2025-06-13T19:33:41.991Z
@@ -198,7 +198,8 @@ Try to roll 5 sockets if youve have gone for the crafted or hand of blessed ligh
 ![gccraft.jpg](/gccraft.jpg)
 6. 10x SC - fill in any missing resistances / life after each kill / mana after each kill 
 
-
+## Merc
+Check out [FoH_Hammerdin_Merc_Equip](/Builds/Paladin/FoH_Hammerdin_Merc_Equip)
 ## Example Character Sheet 
 currently has the following
 level 50 Convition

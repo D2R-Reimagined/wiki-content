@@ -2,7 +2,7 @@
 title: Foh Paladin
 description: By Jasper89c
 published: true
-date: 2025-06-19T17:23:58.820Z
+date: 2025-06-19T17:24:00.636Z
 tags: paladin, foh
 editor: markdown
 dateCreated: 2025-06-13T19:33:41.991Z

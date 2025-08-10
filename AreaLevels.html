@@ -2,184 +2,989 @@
 title: Reimagined Area Levels
 description: Each zone and the level that zone is during normal non-terrorized hours
 published: true
-date: 2025-08-10T05:22:42.097Z
+date: 2025-08-10T05:26:26.116Z
 tags: areas, area levels, alvl, arealvl, moblvl, monster level, level, mob level
 editor: ckeditor
 dateCreated: 2025-08-10T04:38:19.994Z
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Level Table</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  :root {
-    --bg: #0f1115; --fg: #e6e6e6; --muted: #9aa0a6; --border: #2a2f3a;
-  }
-  body { background: var(--bg); color: var(--fg); font: 14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 24px; }
-  h1 { font-size: 18px; margin: 0 0 12px; color: var(--fg); }
-  .wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
-  table { border-collapse: collapse; width: 100%; min-width: 640px; }
-  th, td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
-  thead th { position: sticky; top: 0; background: #131722; z-index: 1; }
-  tbody tr:nth-child(even) { background: #12161f; }
-  .muted { color: var(--muted); }
-</style>
-</head>
-<body>
-<h1>Levels (selected columns)</h1>
-<div class="wrap">
-<table>
-<thead>
-<tr><th>Name</th><th>*StringName</th><th>MonLvlEx</th><th>MonLvlEx(N)</th><th>MonLvlEx(H)</th></tr>
-</thead>
-<tbody>
-<tr><td>Null</td><td>Null</td><td></td><td></td><td></td></tr>
-<tr><td>Act 1 - Town</td><td>Rogue Encampment</td><td></td><td></td><td></td></tr>
-<tr><td>Act 1 - Wilderness 1</td><td>Blood Moor</td><td>1</td><td>36</td><td>80</td></tr>
-<tr><td>Act 1 - Wilderness 2</td><td>Cold Plains</td><td>2</td><td>36</td><td>81</td></tr>
-<tr><td>Act 1 - Wilderness 3</td><td>Stony Field</td><td>4</td><td>37</td><td>81</td></tr>
-<tr><td>Act 1 - Wilderness 4</td><td>Dark Wood</td><td>5</td><td>38</td><td>81</td></tr>
-<tr><td>Act 1 - Wilderness 5</td><td>Black Marsh</td><td>6</td><td>38</td><td>82</td></tr>
-<tr><td>Act 1 - Wilderness 6</td><td>Tamoe Highland</td><td>8</td><td>39</td><td>82</td></tr>
-<tr><td>Act 1 - Cave 1</td><td>Den of Evil</td><td>1</td><td>36</td><td>92</td></tr>
-<tr><td>Act 1 - Cave 2</td><td>Cave Level 1</td><td>2</td><td>36</td><td>90</td></tr>
-<tr><td>Act 1 - Cave 3</td><td>Underground Passage Level 1</td><td>4</td><td>37</td><td>82</td></tr>
-<tr><td>Act 1 - Cave 4</td><td>Hole Level 1</td><td>5</td><td>38</td><td>93</td></tr>
-<tr><td>Act 1 - Cave 5</td><td>Pit Level 1</td><td>7</td><td>39</td><td>98</td></tr>
-<tr><td>Act 1 - Cave 2 Treasure</td><td>Cave Level 2</td><td>2</td><td>37</td><td>91</td></tr>
-<tr><td>Act 1 - Cave 3 Treasure</td><td>Underground Passage Level 2</td><td>4</td><td>38</td><td>98</td></tr>
-<tr><td>Act 1 - Cave 4 Treasure</td><td>Hole Level 2</td><td>5</td><td>39</td><td>94</td></tr>
-<tr><td>Act 1 - Cave 5 Treasure</td><td>Pit Level 2</td><td>7</td><td>40</td><td>98</td></tr>
-<tr><td>Act 1 - Graveyard</td><td>Burial Grounds</td><td>3</td><td>36</td><td>93</td></tr>
-<tr><td>Act 1 - Crypt 1 A</td><td>Crypt</td><td>3</td><td>37</td><td>96</td></tr>
-<tr><td>Act 1 - Crypt 2 A</td><td>Mausoleum</td><td>3</td><td>37</td><td>98</td></tr>
-<tr><td>Act 1 - Tower 2</td><td>Forgotten Tower</td><td></td><td></td><td></td></tr>
-<tr><td>Act 1 - Crypt 3 A</td><td>Tower Cellar Level 1</td><td>7</td><td>38</td><td>88</td></tr>
-<tr><td>Act 1 - Crypt 3 B</td><td>Tower Cellar Level 2</td><td>7</td><td>39</td><td>89</td></tr>
-<tr><td>Act 1 - Crypt 3 C</td><td>Tower Cellar Level 3</td><td>7</td><td>40</td><td>90</td></tr>
-<tr><td>Act 1 - Crypt 3 D</td><td>Tower Cellar Level 4</td><td>7</td><td>41</td><td>91</td></tr>
-<tr><td>Act 1 - Crypt 3 E</td><td>Tower Cellar Level 5</td><td>7</td><td>42</td><td>92</td></tr>
-<tr><td>Act 1 - Monastery</td><td>Monastery Gate</td><td>8</td><td>40</td><td>83</td></tr>
-<tr><td>Act 1 - Courtyard 1</td><td>Outer Cloister</td><td>9</td><td>40</td><td>83</td></tr>
-<tr><td>Act 1 - Barracks</td><td>Barracks</td><td>9</td><td>40</td><td>83</td></tr>
-<tr><td>Act 1 - Jail 1</td><td>Jail Level 1</td><td>10</td><td>41</td><td>84</td></tr>
-<tr><td>Act 1 - Jail 2</td><td>Jail Level 2</td><td>10</td><td>41</td><td>84</td></tr>
-<tr><td>Act 1 - Jail 3</td><td>Jail Level 3</td><td>10</td><td>41</td><td>84</td></tr>
-<tr><td>Act 1 - Courtyard 2</td><td>Inner Cloister</td><td>10</td><td>41</td><td>85</td></tr>
-<tr><td>Act 1 - Cathedral</td><td>Cathedral</td><td>11</td><td>42</td><td>85</td></tr>
-<tr><td>Act 1 - Catacombs 1</td><td>Catacombs Level 1</td><td>11</td><td>42</td><td>85</td></tr>
-<tr><td>Act 1 - Catacombs 2</td><td>Catacombs Level 2</td><td>11</td><td>42</td><td>86</td></tr>
-<tr><td>Act 1 - Catacombs 3</td><td>Catacombs Level 3</td><td>12</td><td>43</td><td>86</td></tr>
-<tr><td>Act 1 - Catacombs 4</td><td>Catacombs Level 4</td><td>12</td><td>43</td><td>86</td></tr>
-<tr><td>Act 1 - Tristram</td><td>Tristram</td><td>6</td><td>39</td><td>89</td></tr>
-<tr><td>Act 1 - Moo Moo Farm</td><td>Moo Moo Farm</td><td>28</td><td>64</td><td>94</td></tr>
-<tr><td>Act 2 - Town</td><td>Lut Gholein</td><td></td><td></td><td></td></tr>
-<tr><td>Act 2 - Desert 1</td><td>Rocky Waste</td><td>14</td><td>45</td><td>88</td></tr>
-<tr><td>Act 2 - Desert 2</td><td>Dry Hills</td><td>15</td><td>46</td><td>89</td></tr>
-<tr><td>Act 2 - Desert 3</td><td>Far Oasis</td><td>16</td><td>47</td><td>89</td></tr>
-<tr><td>Act 2 - Desert 4</td><td>Lost City</td><td>17</td><td>48</td><td>90</td></tr>
-<tr><td>Act 2 - Desert 5</td><td>Valley of Snakes</td><td>18</td><td>48</td><td>90</td></tr>
-<tr><td>Act 2 - Valley of the Kings</td><td>Canyon of the Magi</td><td>16</td><td>50</td><td>92</td></tr>
-<tr><td>Act 2 - Sewer 1 A</td><td>Sewers Level 1</td><td>13</td><td>45</td><td>87</td></tr>
-<tr><td>Act 2 - Sewer 1 B</td><td>Sewers Level 2</td><td>13</td><td>45</td><td>87</td></tr>
-<tr><td>Act 2 - Sewer 1 C</td><td>Sewers Level 3</td><td>14</td><td>46</td><td>88</td></tr>
-<tr><td>Act 2 - Harem</td><td>Harem Level 1</td><td></td><td></td><td></td></tr>
-<tr><td>Act 2 - Corrupt Harem 1</td><td>Harem Level 2</td><td>13</td><td>49</td><td>91</td></tr>
-<tr><td>Act 2 - Basement 1</td><td>Palace Cellar Level 1</td><td>13</td><td>49</td><td>91</td></tr>
-<tr><td>Act 2 - Basement 2</td><td>Palace Cellar Level 2</td><td>13</td><td>49</td><td>91</td></tr>
-<tr><td>Act 2 - Basement 3</td><td>Palace Cellar Level 3</td><td>13</td><td>50</td><td>91</td></tr>
-<tr><td>Act 2 - Tomb 1 A</td><td>Stony Tomb Level 1</td><td>12</td><td>46</td><td>98</td></tr>
-<tr><td>Act 2 - Tomb 2 A</td><td>Halls of the Dead Level 1</td><td>12</td><td>46</td><td>92</td></tr>
-<tr><td>Act 2 - Tomb 2 B</td><td>Halls of the Dead Level 2</td><td>13</td><td>47</td><td>94</td></tr>
-<tr><td>Act 2 - Tomb 3 A</td><td>Claw Viper Temple Level 1</td><td>14</td><td>49</td><td>95</td></tr>
-<tr><td>Act 2 - Tomb 1 Treasure</td><td>Stony Tomb Level 2</td><td>12</td><td>46</td><td>98</td></tr>
-<tr><td>Act 2 - Tomb 2 Treasure</td><td>Halls of the Dead Level 3</td><td>13</td><td>47</td><td>95</td></tr>
-<tr><td>Act 2 - Tomb 3 Treasure</td><td>Claw Viper Temple Level 2</td><td>14</td><td>49</td><td>96</td></tr>
-<tr><td>Act 2 - Lair 1 A</td><td>Maggot Lair Level 1</td><td>17</td><td>47</td><td>97</td></tr>
-<tr><td>Act 2 - Lair 1 B</td><td>Maggot Lair Level 2</td><td>17</td><td>47</td><td>97</td></tr>
-<tr><td>Act 2 - Lair 1 Treasure</td><td>Maggot Lair Level 3</td><td>17</td><td>48</td><td>98</td></tr>
-<tr><td>Act 2 - Sewer 2 A</td><td>Ancient Tunnels</td><td>17</td><td>48</td><td>98</td></tr>
-<tr><td>Act 2 - Tomb Tal 1</td><td>Tal Rasha&#x27;s Tomb</td><td>17</td><td>51</td><td>93</td></tr>
-<tr><td>Act 2 - Tomb Tal 2</td><td>Tal Rasha&#x27;s Tomb</td><td>17</td><td>51</td><td>93</td></tr>
-<tr><td>Act 2 - Tomb Tal 3</td><td>Tal Rasha&#x27;s Tomb</td><td>17</td><td>51</td><td>93</td></tr>
-<tr><td>Act 2 - Tomb Tal 4</td><td>Tal Rasha&#x27;s Tomb</td><td>17</td><td>51</td><td>93</td></tr>
-<tr><td>Act 2 - Tomb Tal 5</td><td>Tal Rasha&#x27;s Tomb</td><td>17</td><td>51</td><td>93</td></tr>
-<tr><td>Act 2 - Tomb Tal 6</td><td>Tal Rasha&#x27;s Tomb</td><td>17</td><td>51</td><td>93</td></tr>
-<tr><td>Act 2 - Tomb Tal 7</td><td>Tal Rasha&#x27;s Tomb</td><td>17</td><td>51</td><td>93</td></tr>
-<tr><td>Act 2 - Duriel&#x27;s Lair</td><td>Duriel&#x27;s Lair</td><td>17</td><td>51</td><td>93</td></tr>
-<tr><td>Act 2 - Arcane</td><td>Arcane Sanctuary</td><td>14</td><td>50</td><td>92</td></tr>
-<tr><td>Act 3 - Town</td><td>Kurast Docktown</td><td></td><td></td><td></td></tr>
-<tr><td>Act 3 - Jungle 1</td><td>Spider Forest</td><td>21</td><td>53</td><td>92</td></tr>
-<tr><td>Act 3 - Jungle 2</td><td>Great Marsh</td><td>21</td><td>54</td><td>93</td></tr>
-<tr><td>Act 3 - Jungle 3</td><td>Flayer Jungle</td><td>22</td><td>54</td><td>93</td></tr>
-<tr><td>Act 3 - Kurast 1</td><td>Lower Kurast</td><td>22</td><td>56</td><td>93</td></tr>
-<tr><td>Act 3 - Kurast 2</td><td>Kurast Bazaar</td><td>22</td><td>56</td><td>94</td></tr>
-<tr><td>Act 3 - Kurast 3</td><td>Upper Kurast</td><td>23</td><td>56</td><td>94</td></tr>
-<tr><td>Act 3 - Kurast 4</td><td>Kurast Causeway</td><td>24</td><td>57</td><td>94</td></tr>
-<tr><td>Act 3 - Travincal</td><td>Travincal</td><td>24</td><td>58</td><td>95</td></tr>
-<tr><td>Act 3 - Spider 1</td><td>Arachnid Lair</td><td>21</td><td>54</td><td>98</td></tr>
-<tr><td>Act 3 - Spider 2</td><td>Spider Cavern</td><td>21</td><td>54</td><td>92</td></tr>
-<tr><td>Act 3 - Dungeon 1 A</td><td>Swampy Pit Level 1</td><td>21</td><td>55</td><td>98</td></tr>
-<tr><td>Act 3 - Dungeon 1 B</td><td>Swampy Pit Level 2</td><td>21</td><td>55</td><td>98</td></tr>
-<tr><td>Act 3 - Dungeon 2 A</td><td>Flayer Dungeon Level 1</td><td>22</td><td>55</td><td>94</td></tr>
-<tr><td>Act 3 - Dungeon 2 B</td><td>Flayer Dungeon Level 2</td><td>22</td><td>55</td><td>95</td></tr>
-<tr><td>Act 3 - Dungeon 1 Treasure</td><td>Swampy Pit Level 3</td><td>21</td><td>55</td><td>98</td></tr>
-<tr><td>Act 3 - Dungeon 2 Treasure</td><td>Flayer Dungeon Level 3</td><td>22</td><td>55</td><td>96</td></tr>
-<tr><td>Act 3 - Sewer 1</td><td>Sewers Level 1</td><td>23</td><td>56</td><td>98</td></tr>
-<tr><td>Act 3 - Sewer 2</td><td>Sewers Level 2</td><td>24</td><td>57</td><td>98</td></tr>
-<tr><td>Act 3 - Temple 1</td><td>Ruined Temple</td><td>23</td><td>57</td><td>98</td></tr>
-<tr><td>Act 3 - Temple 2</td><td>Disused Fane</td><td>23</td><td>57</td><td>98</td></tr>
-<tr><td>Act 3 - Temple 3</td><td>Forgotten Reliquary</td><td>23</td><td>57</td><td>98</td></tr>
-<tr><td>Act 3 - Temple 4</td><td>Forgotten Temple</td><td>24</td><td>58</td><td>98</td></tr>
-<tr><td>Act 3 - Temple 5</td><td>Ruined Fane</td><td>24</td><td>58</td><td>98</td></tr>
-<tr><td>Act 3 - Temple 6</td><td>Disused Reliquary</td><td>24</td><td>58</td><td>98</td></tr>
-<tr><td>Act 3 - Mephisto 1</td><td>Durance of Hate Level 1</td><td>25</td><td>59</td><td>96</td></tr>
-<tr><td>Act 3 - Mephisto 2</td><td>Durance of Hate Level 2</td><td>25</td><td>59</td><td>96</td></tr>
-<tr><td>Act 3 - Mephisto 3</td><td>Durance of Hate Level 3</td><td>25</td><td>59</td><td>96</td></tr>
-<tr><td>Act 4 - Town</td><td>The Pandemonium Fortress</td><td></td><td></td><td></td></tr>
-<tr><td>Act 4 - Mesa 1</td><td>Outer Steppes</td><td>26</td><td>62</td><td>95</td></tr>
-<tr><td>Act 4 - Mesa 2</td><td>Plains of Despair</td><td>26</td><td>62</td><td>96</td></tr>
-<tr><td>Act 4 - Mesa 3</td><td>City of the Damned</td><td>27</td><td>63</td><td>97</td></tr>
-<tr><td>Act 4 - Lava 1</td><td>River of Flame</td><td>27</td><td>63</td><td>98</td></tr>
-<tr><td>Act 4 - Diablo 1</td><td>The Chaos Sanctuary</td><td>28</td><td>64</td><td>98</td></tr>
-<tr><td>Expansion</td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Act 5 - Town</td><td>Harrogath</td><td></td><td></td><td></td></tr>
-<tr><td>Act 5 - Siege 1</td><td>Bloody Foothills</td><td>24</td><td>66</td><td>93</td></tr>
-<tr><td>Act 5 - Barricade 1</td><td>Frigid Highlands</td><td>25</td><td>67</td><td>94</td></tr>
-<tr><td>Act 5 - Barricade 2</td><td>Arreat Plateau</td><td>26</td><td>68</td><td>94</td></tr>
-<tr><td>Act 5 - Ice Cave 1</td><td>Crystalline Passage</td><td>29</td><td>69</td><td>95</td></tr>
-<tr><td>Act 5 - Ice Cave 1A</td><td>Frozen River</td><td>29</td><td>69</td><td>96</td></tr>
-<tr><td>Act 5 - Ice Cave 2</td><td>Glacial Trail</td><td>29</td><td>69</td><td>96</td></tr>
-<tr><td>Act 5 - Ice Cave 2A</td><td>Drifter Cavern</td><td>29</td><td>69</td><td>98</td></tr>
-<tr><td>Act 5 - Barricade Snow</td><td>Frozen Tundra</td><td>27</td><td>68</td><td>94</td></tr>
-<tr><td>Act 5 - Ice Cave 3</td><td>The Ancients&#x27; Way</td><td>29</td><td>70</td><td>95</td></tr>
-<tr><td>Act 5 - Ice Cave 3A</td><td>Icy Cellar</td><td>29</td><td>70</td><td>98</td></tr>
-<tr><td>Act 5 - Mountain Top</td><td>Arreat Summit</td><td>37</td><td>76</td><td>100</td></tr>
-<tr><td>Act 5 - Temple Entrance</td><td>Nihlathak&#x27;s Temple</td><td>32</td><td>71</td><td>96</td></tr>
-<tr><td>Act 5 - Temple 1</td><td>Halls of Anguish</td><td>33</td><td>71</td><td>96</td></tr>
-<tr><td>Act 5 - Temple 2</td><td>Halls of Pain</td><td>34</td><td>72</td><td>97</td></tr>
-<tr><td>Act 5 - Temple Boss</td><td>Halls of Vaught</td><td>36</td><td>72</td><td>97</td></tr>
-<tr><td>Act 5 - Hell 1</td><td>Abaddon</td><td>39</td><td>68</td><td>98</td></tr>
-<tr><td>Act 5 - Hell 2</td><td>Pit of Acheron</td><td>39</td><td>69</td><td>98</td></tr>
-<tr><td>Act 5 - Hell 3</td><td>Infernal Pit</td><td>39</td><td>70</td><td>98</td></tr>
-<tr><td>Act 5 - Baal Temple 1</td><td>The Worldstone Keep Level 1</td><td>39</td><td>73</td><td>98</td></tr>
-<tr><td>Act 5 - Baal Temple 2</td><td>The Worldstone Keep Level 2</td><td>40</td><td>73</td><td>98</td></tr>
-<tr><td>Act 5 - Baal Temple 3</td><td>The Worldstone Keep Level 3</td><td>42</td><td>74</td><td>98</td></tr>
-<tr><td>Act 5 - Throne Room</td><td>Throne of Destruction</td><td>43</td><td>74</td><td>98</td></tr>
-<tr><td>Act 5 - World Stone</td><td>The Worldstone Chamber</td><td>43</td><td>74</td><td>98</td></tr>
-<tr><td>Act 5 - Pandemonium 1</td><td>Matron&#x27;s Den</td><td>50</td><td>75</td><td>96</td></tr>
-<tr><td>Act 5 - Pandemonium 2</td><td>Forgotten Sands</td><td>50</td><td>75</td><td>96</td></tr>
-<tr><td>Act 5 - Pandemonium 3</td><td>Furnace of Pain</td><td>50</td><td>75</td><td>96</td></tr>
-<tr><td>Act 5 - Pandemonium Finale</td><td>Tristram</td><td>50</td><td>75</td><td>96</td></tr>
-<tr><td>Pitzilla 1</td><td>Pitzilla Cave</td><td>28</td><td>64</td><td>94</td></tr>
-<tr><td>Pitzilla Boss Room 1</td><td>Pitzilla Boss Room</td><td>28</td><td>64</td><td>94</td></tr>
-<tr><td>Pitzilla End</td><td>Pitzilla Treasure Room</td><td>28</td><td>64</td><td>94</td></tr>
-</tbody>
-</table>
-</div>
-<p class="muted">Generated from: Levels.txt</p>
-</body>
-</html>
+<h1>D2R Reimagined Areas and Monster Levels</h1>
+<p>These are the in game areas as well as the default monster spawn levels.</p>
+<p>Champions are area level +2</p>
+<p>Elite/Unique/Boss are area level +3</p>
+<p>&nbsp;</p>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th><mark class="pen-green">Name</mark></th>
+        <th><mark class="pen-green">In Game Name</mark></th>
+        <th><mark class="pen-green">Normal</mark></th>
+        <th><mark class="pen-green">Nightmare</mark></th>
+        <th><mark class="pen-green">Hell</mark></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Act 1 - Town</th>
+        <td>Rogue Encampment</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Wilderness 1</th>
+        <td>Blood Moor</td>
+        <td>1</td>
+        <td>36</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Wilderness 2</th>
+        <td>Cold Plains</td>
+        <td>2</td>
+        <td>36</td>
+        <td>81</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Wilderness 3</th>
+        <td>Stony Field</td>
+        <td>4</td>
+        <td>37</td>
+        <td>81</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Wilderness 4</th>
+        <td>Dark Wood</td>
+        <td>5</td>
+        <td>38</td>
+        <td>81</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Wilderness 5</th>
+        <td>Black Marsh</td>
+        <td>6</td>
+        <td>38</td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Wilderness 6</th>
+        <td>Tamoe Highland</td>
+        <td>8</td>
+        <td>39</td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 1</th>
+        <td>Den of Evil</td>
+        <td>1</td>
+        <td>36</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 2</th>
+        <td>Cave Level 1</td>
+        <td>2</td>
+        <td>36</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 3</th>
+        <td>Underground Passage Level 1</td>
+        <td>4</td>
+        <td>37</td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 4</th>
+        <td>Hole Level 1</td>
+        <td>5</td>
+        <td>38</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 5</th>
+        <td>Pit Level 1</td>
+        <td>7</td>
+        <td>39</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 2 Treasure</th>
+        <td>Cave Level 2</td>
+        <td>2</td>
+        <td>37</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 3 Treasure</th>
+        <td>Underground Passage Level 2</td>
+        <td>4</td>
+        <td>38</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 4 Treasure</th>
+        <td>Hole Level 2</td>
+        <td>5</td>
+        <td>39</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cave 5 Treasure</th>
+        <td>Pit Level 2</td>
+        <td>7</td>
+        <td>40</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Graveyard</th>
+        <td>Burial Grounds</td>
+        <td>3</td>
+        <td>36</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Crypt 1 A</th>
+        <td>Crypt</td>
+        <td>3</td>
+        <td>37</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Crypt 2 A</th>
+        <td>Mausoleum</td>
+        <td>3</td>
+        <td>37</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Tower 2</th>
+        <td>Forgotten Tower</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Crypt 3 A</th>
+        <td>Tower Cellar Level 1</td>
+        <td>7</td>
+        <td>38</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Crypt 3 B</th>
+        <td>Tower Cellar Level 2</td>
+        <td>7</td>
+        <td>39</td>
+        <td>89</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Crypt 3 C</th>
+        <td>Tower Cellar Level 3</td>
+        <td>7</td>
+        <td>40</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Crypt 3 D</th>
+        <td>Tower Cellar Level 4</td>
+        <td>7</td>
+        <td>41</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Crypt 3 E</th>
+        <td>Tower Cellar Level 5</td>
+        <td>7</td>
+        <td>42</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Monastery</th>
+        <td>Monastery Gate</td>
+        <td>8</td>
+        <td>40</td>
+        <td>83</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Courtyard 1</th>
+        <td>Outer Cloister</td>
+        <td>9</td>
+        <td>40</td>
+        <td>83</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Barracks</th>
+        <td>Barracks</td>
+        <td>9</td>
+        <td>40</td>
+        <td>83</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Jail 1</th>
+        <td>Jail Level 1</td>
+        <td>10</td>
+        <td>41</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Jail 2</th>
+        <td>Jail Level 2</td>
+        <td>10</td>
+        <td>41</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Jail 3</th>
+        <td>Jail Level 3</td>
+        <td>10</td>
+        <td>41</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Courtyard 2</th>
+        <td>Inner Cloister</td>
+        <td>10</td>
+        <td>41</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Cathedral</th>
+        <td>Cathedral</td>
+        <td>11</td>
+        <td>42</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Catacombs 1</th>
+        <td>Catacombs Level 1</td>
+        <td>11</td>
+        <td>42</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Catacombs 2</th>
+        <td>Catacombs Level 2</td>
+        <td>11</td>
+        <td>42</td>
+        <td>86</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Catacombs 3</th>
+        <td>Catacombs Level 3</td>
+        <td>12</td>
+        <td>43</td>
+        <td>86</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Catacombs 4</th>
+        <td>Catacombs Level 4</td>
+        <td>12</td>
+        <td>43</td>
+        <td>86</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Tristram</th>
+        <td>Tristram</td>
+        <td>6</td>
+        <td>39</td>
+        <td>89</td>
+      </tr>
+      <tr>
+        <th>Act 1 - Moo Moo Farm</th>
+        <td>Moo Moo Farm</td>
+        <td>28</td>
+        <td>64</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Town</th>
+        <td>Lut Gholein</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Desert 1</th>
+        <td>Rocky Waste</td>
+        <td>14</td>
+        <td>45</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Desert 2</th>
+        <td>Dry Hills</td>
+        <td>15</td>
+        <td>46</td>
+        <td>89</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Desert 3</th>
+        <td>Far Oasis</td>
+        <td>16</td>
+        <td>47</td>
+        <td>89</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Desert 4</th>
+        <td>Lost City</td>
+        <td>17</td>
+        <td>48</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Desert 5</th>
+        <td>Valley of Snakes</td>
+        <td>18</td>
+        <td>48</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Valley of the Kings</th>
+        <td>Canyon of the Magi</td>
+        <td>16</td>
+        <td>50</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Sewer 1 A</th>
+        <td>Sewers Level 1</td>
+        <td>13</td>
+        <td>45</td>
+        <td>87</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Sewer 1 B</th>
+        <td>Sewers Level 2</td>
+        <td>13</td>
+        <td>45</td>
+        <td>87</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Sewer 1 C</th>
+        <td>Sewers Level 3</td>
+        <td>14</td>
+        <td>46</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Harem</th>
+        <td>Harem Level 1</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Corrupt Harem 1</th>
+        <td>Harem Level 2</td>
+        <td>13</td>
+        <td>49</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Basement 1</th>
+        <td>Palace Cellar Level 1</td>
+        <td>13</td>
+        <td>49</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Basement 2</th>
+        <td>Palace Cellar Level 2</td>
+        <td>13</td>
+        <td>49</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Basement 3</th>
+        <td>Palace Cellar Level 3</td>
+        <td>13</td>
+        <td>50</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb 1 A</th>
+        <td>Stony Tomb Level 1</td>
+        <td>12</td>
+        <td>46</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb 2 A</th>
+        <td>Halls of the Dead Level 1</td>
+        <td>12</td>
+        <td>46</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb 2 B</th>
+        <td>Halls of the Dead Level 2</td>
+        <td>13</td>
+        <td>47</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb 3 A</th>
+        <td>Claw Viper Temple Level 1</td>
+        <td>14</td>
+        <td>49</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb 1 Treasure</th>
+        <td>Stony Tomb Level 2</td>
+        <td>12</td>
+        <td>46</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb 2 Treasure</th>
+        <td>Halls of the Dead Level 3</td>
+        <td>13</td>
+        <td>47</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb 3 Treasure</th>
+        <td>Claw Viper Temple Level 2</td>
+        <td>14</td>
+        <td>49</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Lair 1 A</th>
+        <td>Maggot Lair Level 1</td>
+        <td>17</td>
+        <td>47</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Lair 1 B</th>
+        <td>Maggot Lair Level 2</td>
+        <td>17</td>
+        <td>47</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Lair 1 Treasure</th>
+        <td>Maggot Lair Level 3</td>
+        <td>17</td>
+        <td>48</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Sewer 2 A</th>
+        <td>Ancient Tunnels</td>
+        <td>17</td>
+        <td>48</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb Tal 1</th>
+        <td>Tal Rasha's Tomb</td>
+        <td>17</td>
+        <td>51</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb Tal 2</th>
+        <td>Tal Rasha's Tomb</td>
+        <td>17</td>
+        <td>51</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb Tal 3</th>
+        <td>Tal Rasha's Tomb</td>
+        <td>17</td>
+        <td>51</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb Tal 4</th>
+        <td>Tal Rasha's Tomb</td>
+        <td>17</td>
+        <td>51</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb Tal 5</th>
+        <td>Tal Rasha's Tomb</td>
+        <td>17</td>
+        <td>51</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb Tal 6</th>
+        <td>Tal Rasha's Tomb</td>
+        <td>17</td>
+        <td>51</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Tomb Tal 7</th>
+        <td>Tal Rasha's Tomb</td>
+        <td>17</td>
+        <td>51</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Duriel's Lair</th>
+        <td>Duriel's Lair</td>
+        <td>17</td>
+        <td>51</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 2 - Arcane</th>
+        <td>Arcane Sanctuary</td>
+        <td>14</td>
+        <td>50</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Town</th>
+        <td>Kurast Docktown</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Jungle 1</th>
+        <td>Spider Forest</td>
+        <td>21</td>
+        <td>53</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Jungle 2</th>
+        <td>Great Marsh</td>
+        <td>21</td>
+        <td>54</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Jungle 3</th>
+        <td>Flayer Jungle</td>
+        <td>22</td>
+        <td>54</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Kurast 1</th>
+        <td>Lower Kurast</td>
+        <td>22</td>
+        <td>56</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Kurast 2</th>
+        <td>Kurast Bazaar</td>
+        <td>22</td>
+        <td>56</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Kurast 3</th>
+        <td>Upper Kurast</td>
+        <td>23</td>
+        <td>56</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Kurast 4</th>
+        <td>Kurast Causeway</td>
+        <td>24</td>
+        <td>57</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Travincal</th>
+        <td>Travincal</td>
+        <td>24</td>
+        <td>58</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Spider 1</th>
+        <td>Arachnid Lair</td>
+        <td>21</td>
+        <td>54</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Spider 2</th>
+        <td>Spider Cavern</td>
+        <td>21</td>
+        <td>54</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Dungeon 1 A</th>
+        <td>Swampy Pit Level 1</td>
+        <td>21</td>
+        <td>55</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Dungeon 1 B</th>
+        <td>Swampy Pit Level 2</td>
+        <td>21</td>
+        <td>55</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Dungeon 2 A</th>
+        <td>Flayer Dungeon Level 1</td>
+        <td>22</td>
+        <td>55</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Dungeon 2 B</th>
+        <td>Flayer Dungeon Level 2</td>
+        <td>22</td>
+        <td>55</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Dungeon 1 Treasure</th>
+        <td>Swampy Pit Level 3</td>
+        <td>21</td>
+        <td>55</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Dungeon 2 Treasure</th>
+        <td>Flayer Dungeon Level 3</td>
+        <td>22</td>
+        <td>55</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Sewer 1</th>
+        <td>Sewers Level 1</td>
+        <td>23</td>
+        <td>56</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Sewer 2</th>
+        <td>Sewers Level 2</td>
+        <td>24</td>
+        <td>57</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Temple 1</th>
+        <td>Ruined Temple</td>
+        <td>23</td>
+        <td>57</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Temple 2</th>
+        <td>Disused Fane</td>
+        <td>23</td>
+        <td>57</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Temple 3</th>
+        <td>Forgotten Reliquary</td>
+        <td>23</td>
+        <td>57</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Temple 4</th>
+        <td>Forgotten Temple</td>
+        <td>24</td>
+        <td>58</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Temple 5</th>
+        <td>Ruined Fane</td>
+        <td>24</td>
+        <td>58</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Temple 6</th>
+        <td>Disused Reliquary</td>
+        <td>24</td>
+        <td>58</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Mephisto 1</th>
+        <td>Durance of Hate Level 1</td>
+        <td>25</td>
+        <td>59</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Mephisto 2</th>
+        <td>Durance of Hate Level 2</td>
+        <td>25</td>
+        <td>59</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 3 - Mephisto 3</th>
+        <td>Durance of Hate Level 3</td>
+        <td>25</td>
+        <td>59</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 4 - Town</th>
+        <td>The Pandemonium Fortress</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Act 4 - Mesa 1</th>
+        <td>Outer Steppes</td>
+        <td>26</td>
+        <td>62</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <th>Act 4 - Mesa 2</th>
+        <td>Plains of Despair</td>
+        <td>26</td>
+        <td>62</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 4 - Mesa 3</th>
+        <td>City of the Damned</td>
+        <td>27</td>
+        <td>63</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <th>Act 4 - Lava 1</th>
+        <td>River of Flame</td>
+        <td>27</td>
+        <td>63</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 4 - Diablo 1</th>
+        <td>The Chaos Sanctuary</td>
+        <td>28</td>
+        <td>64</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Expansion</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Town</th>
+        <td>Harrogath</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Siege 1</th>
+        <td>Bloody Foothills</td>
+        <td>24</td>
+        <td>66</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Barricade 1</th>
+        <td>Frigid Highlands</td>
+        <td>25</td>
+        <td>67</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Barricade 2</th>
+        <td>Arreat Plateau</td>
+        <td>26</td>
+        <td>68</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Ice Cave 1</th>
+        <td>Crystalline Passage</td>
+        <td>29</td>
+        <td>69</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Ice Cave 1A</th>
+        <td>Frozen River</td>
+        <td>29</td>
+        <td>69</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Ice Cave 2</th>
+        <td>Glacial Trail</td>
+        <td>29</td>
+        <td>69</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Ice Cave 2A</th>
+        <td>Drifter Cavern</td>
+        <td>29</td>
+        <td>69</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Barricade Snow</th>
+        <td>Frozen Tundra</td>
+        <td>27</td>
+        <td>68</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Ice Cave 3</th>
+        <td>The Ancients' Way</td>
+        <td>29</td>
+        <td>70</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Ice Cave 3A</th>
+        <td>Icy Cellar</td>
+        <td>29</td>
+        <td>70</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Mountain Top</th>
+        <td>Arreat Summit</td>
+        <td>37</td>
+        <td>76</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Temple Entrance</th>
+        <td>Nihlathak's Temple</td>
+        <td>32</td>
+        <td>71</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Temple 1</th>
+        <td>Halls of Anguish</td>
+        <td>33</td>
+        <td>71</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Temple 2</th>
+        <td>Halls of Pain</td>
+        <td>34</td>
+        <td>72</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Temple Boss</th>
+        <td>Halls of Vaught</td>
+        <td>36</td>
+        <td>72</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Hell 1</th>
+        <td>Abaddon</td>
+        <td>39</td>
+        <td>68</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Hell 2</th>
+        <td>Pit of Acheron</td>
+        <td>39</td>
+        <td>69</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Hell 3</th>
+        <td>Infernal Pit</td>
+        <td>39</td>
+        <td>70</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Baal Temple 1</th>
+        <td>The Worldstone Keep Level 1</td>
+        <td>39</td>
+        <td>73</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Baal Temple 2</th>
+        <td>The Worldstone Keep Level 2</td>
+        <td>40</td>
+        <td>73</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Baal Temple 3</th>
+        <td>The Worldstone Keep Level 3</td>
+        <td>42</td>
+        <td>74</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Throne Room</th>
+        <td>Throne of Destruction</td>
+        <td>43</td>
+        <td>74</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - World Stone</th>
+        <td>The Worldstone Chamber</td>
+        <td>43</td>
+        <td>74</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Pandemonium 1</th>
+        <td>Matron's Den</td>
+        <td>50</td>
+        <td>75</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Pandemonium 2</th>
+        <td>Forgotten Sands</td>
+        <td>50</td>
+        <td>75</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Pandemonium 3</th>
+        <td>Furnace of Pain</td>
+        <td>50</td>
+        <td>75</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <th>Act 5 - Pandemonium Finale</th>
+        <td>Tristram</td>
+        <td>50</td>
+        <td>75</td>
+        <td>96</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Generated from: Levels.txt</p>

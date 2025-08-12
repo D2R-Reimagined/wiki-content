@@ -1,8 +1,8 @@
 ---
-title: Carnage build
+title: slamacek Carnage build
 description: Which item to pursue to succesfully farm TZ hell
 published: true
-date: 2025-08-12T10:34:57.303Z
+date: 2025-08-12T10:35:32.299Z
 tags: barbarian, carnage
 editor: markdown
 dateCreated: 2025-08-11T20:29:40.701Z

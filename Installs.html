@@ -2,34 +2,25 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2025-08-10T12:43:10.945Z
+date: 2025-08-12T10:32:48.849Z
 tags: d2rmm, install
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
 -->
 
 <h1>Installation Guides</h1>
-<p>Below is a compilation of useful information and guides.</p>
-<h3>File Locations</h3>
+<p>Below is a compilation of useful information and guides for installation of the mod and fixing problems you may encounter.</p>
+<h2>File Locations</h2>
 <blockquote>
   <p><i><mark class="pen-red"><strong>C: Drive is the most common install location. Yours may differ depending on your setup.</strong></mark></i></p>
   <p><mark class="pen-green"><strong>D2R Mod Files:</strong></mark> <code>C:\Program Files (x86)\Diablo II Resurrected\mods\Reimagined</code></p>
   <p><i><mark class="pen-green"><strong>Saved Game Files:</strong></mark> </i><code><i>C:\Users\</i>%USERPROFILE%<i>\Saved Games\Diablo II Resurrected\mods\Reimagined</i></code></p>
 </blockquote>
-<h3>Making Backups (Manual Steps)</h3>
+<p>&nbsp;</p>
+<h2>Making Backups (Manual Steps)</h2>
 <p>In File Explorer, navigate to your D2R install and Saved Games directories.</p>
 <p>Right click the <code>mod</code> folder and <code>Reimagined</code> folder, select ‘compress to…’ and choose ZIP file. Rename the ZIP file to something memorable, and move it somewhere easy to remember (e.g. your desktop).</p>
 <p>Remember to periodically create new ZIP folders so that you don't lose progress in case of crashes, exceeding your save file data limit, etc..<br>&nbsp;</p>
-<h3>Create a Desktop Shortcut</h3>
-<p>You can play the mod using a shortcut, if preferred.</p>
-<p>Navigate to your D2R Install directory</p>
-<p>Right-click on <code>D2R.exe</code> (not ‘Diablo II Resurrected Launcher’), and select <code>Create Shortcut</code> (you may need to click ‘Show more options’).</p>
-<p>You should see a new file called <code>D2R.exe - Shortcut</code></p>
-<p>Right-click the shortcut file and select <code>Properties</code></p>
-<p>In the Target field, add the following to the end of the field: <code>-mod Reimagined -txt</code></p>
-<p>Your Target field should look similar to this: <code>"C:\Program Files (x86)\Diablo II Resurrected\D2R.exe" -mod Reimagined -txt</code></p>
-<p>Move your shortcut to a memorable location.</p>
-<p>Double-click the shortcut to play the mod.</p>
 <h2>Reimagined BETA Launcher</h2>
 <p>Introducing the Reimagined BETA Launcher - a simple way to install, update, tweak and run the Reimagined mod!</p>
 <p>The BETA Launcher is a precursor solution to the official Reimagined Launcher, which is still in development.</p>
@@ -73,7 +64,7 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <blockquote>
   <p><mark class="pen-red"><strong>D2RMM Users: The BETA launcher makes changes to mod files in your D2R install directory (above) - you will need to copy the ‘data’ folder to D2RMM\mods\Reimagined for updates to work.</strong></mark></p>
 </blockquote>
-<h3>&nbsp;</h3>
+<p>&nbsp;</p>
 <h3>Play &amp; Backup</h3>
 <p>The BETA Launcher will automatically back up your save files on launch with today's date and time.</p>
 <p>You can make additional backups, and find/open the backup folder under the <code>Backup Save Files</code> menu.<br>&nbsp;</p>
@@ -99,7 +90,35 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <p>&nbsp;</p>
 <p><mark class="pen-green"><strong>5.&nbsp;</strong></mark> You now have more stash tabs. Enjoy.</p>
 <figure class="image image_resized" style="width:45.92%;"><img src="/installguides/extra-stash5-newinstall.png"></figure>
-<p><br>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Manual Mod Installation</h2>
+<ol>
+  <li>Download the latest Reimagined version from <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files">Nexus Mods</a>.<ul>
+      <li>&nbsp;</li>
+    </ul>
+  </li>
+  <li>Install the program <a href="https://www.7-zip.org/">7zip</a> if not already installed.</li>
+  <li>Right click on the download and click “7-Zip” and then “Extract Here”<ul>
+      <li><i>W11 Users Click “Show More Options” to complete the above step.</i></li>
+    </ul>
+  </li>
+  <li>Drag the resulting mods folder from where it is into your D2R Installation Directory</li>
+  <li>Create a Desktop Shortcut<ol>
+      <li>Right click on D2R.exe and click “Send to” and then “Desktop (Create Shortcut)”<ul>
+          <li><i>W11 Users Click “Show More Options” to complete the above step.</i></li>
+        </ul>
+      </li>
+      <li>Right click the shortcut and select “Properties”</li>
+      <li>In the Target field, add the following to the end of the field:<ul>
+          <li><code>-mod Reimagined -txt</code></li>
+          <li><code>-mod Reimagined -txt -resetofflinemaps </code><i>(OPTIONAL: This will reset your map each Save &amp; Exit)</i></li>
+        </ul>
+      </li>
+      <li>Click “Apply” and then “OK”</li>
+    </ol>
+  </li>
+  <li>Rename to preference and then Click or Double-Click the shortcut to play the mod.</li>
+</ol>
 <h2>Fix Unavailable Stash Tabs (Manual Fix)</h2>
 <p><mark class="pen-green">Step 1:</mark> Download this file. <a href="/installguides/expand_stash_2.1.0.zip">Expand Stash 2.1.0</a></p>
 <p><mark class="pen-green">Step 2:</mark> Locate the file on your PC.</p>

@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2025-08-12T11:58:08.958Z
+date: 2025-08-12T12:00:18.521Z
 tags: d2rmm, install
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -204,6 +204,20 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <p><mark class="pen-green">Step 8:</mark> If you have already launched D2R Reimagined then it is going to ask you to overwrite/replace files. Do so.</p>
 <figure class="image"><img src="/installguides/6_overwrite.png"></figure>
 <p><mark class="pen-green">Step 9:</mark> Launch the game with your preferred method and check if the tabs are now useable. If they are not then the file was dropped into the wrong location or inside of the existing mods folder and will need to be placed in the right location.</p>
+<p>&nbsp;</p>
+<h2>Crashing Frequently? Tips to Troubleshoot</h2>
+<p>Here are some common resolutions to frequent crashing we've encountered in bug reports across the Discord, Nexus and Reddit.</p>
+<p>1. Reimagined is not compatible with saves from D2R vanilla or other mods if the save file contains items. Trying to place them in the saves folder and use them will often cause the game to crash.</p>
+<p>2. Use the <a href="https://wiki.d2r-reimagined.com/en/Installs#reimagined-beta-launcher">Reimagined Beta Launcher</a> to install the mod or use <a href="https://wiki.d2r-reimagined.com/en/Installs#manual-mod-installation">manual installation instructions</a> and pay attention to step 2. Use 7zip to extract the mod, WinRAR and Windows File manager do not extract the files properly.</p>
+<p>3. Change graphics option VFX Lighting Quality off from Ultra to High or Medium as it barely has any visual impact but kills game performance and causes crashing.</p>
+<p>4. See this post about <a href="https://wiki.d2r-reimagined.com/en/new_player_guide">file size limitations.</a></p>
+<p>5. Cap your framerate to your monitors refresh rate and/or use Vsync.</p>
+<p>6. Don't Alt + Tab or click out of the screen if playing in windowed. You can try to mitigate this crash by limiting the Background FPS of D2R.exe via your GPU Control Panel. (The game still likes to crash anyways but the background FPS limit helps reduce the frequency.)</p>
+<p>7. Don't equip items on Mercs with Chance to Cast a minion. (Reanimate is fine, it is specifically CTC that seems to cause issues.)</p>
+<p>8. Change Power Settings from Performance to Balanced (Unintuitive but seems to work for some people.)</p>
+<p>9. If you are using other mods, you can try disabling them to see if the crashes continue but if they edit itemstatcost.txt then disabling them will cause crashes anyways so pay attention to what you are doing and make backups before experimenting.</p>
+<p>10. If you are making local mod edits, undo those edits or reinstall the mod fresh.</p>
+<p>&nbsp;</p>
 <h2>D2RMM</h2>
 <p>Using a Mod Manager allows you to easily install a variety of mods together (assuming they play nice) without having to know anything about modding.</p>
 <p>Reimagined is packed full of expansive features and QOL updates, so installing extra mods isn't always necessary.&nbsp;</p>

@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2025-08-12T10:32:48.849Z
+date: 2025-08-12T11:14:59.500Z
 tags: d2rmm, install
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -92,33 +92,73 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <figure class="image image_resized" style="width:45.92%;"><img src="/installguides/extra-stash5-newinstall.png"></figure>
 <p>&nbsp;</p>
 <h2>Manual Mod Installation</h2>
-<ol>
-  <li>Download the latest Reimagined version from <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files">Nexus Mods</a>.<ul>
-      <li>&nbsp;</li>
+<p>&nbsp;</p>
+<p>1. Download the latest Reimagined version from <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files">Nexus Mods</a>.</p>
+<ul>
+  <li>Grab optional 2 skill per level file if you wish to use it also.</li>
+</ul>
+<figure class="image"><img src="/installguides/step_1_nexus.png"></figure>
+<p>&nbsp;</p>
+<p>2. Install the program <a href="https://www.7-zip.org/">7zip</a> if not already installed.</p>
+<figure class="image"><img src="/installguides/step_2_7zip.png"></figure>
+<p>&nbsp;</p>
+<p>3. Right click on the download and click <code>7-Zip</code> and then <code>Extract Here</code></p>
+<figure class="image"><img src="/installguides/step_3a_extract.png"></figure>
+<ul>
+  <li><i>W11 Users Click “Show More Options” to complete the above step.</i></li>
+</ul>
+<figure class="image"><img src="/installguides/step_3b_w11.png"></figure>
+<p>&nbsp;</p>
+<p>4A. Navigate to your<a href="https://wiki.d2r-reimagined.com/en/Installs#file-locations"> D2R Installation Directory</a> and check for a previous installation. Delete it <a href="https://wiki.d2r-reimagined.com/en/Installs#making-backups-manual-steps">after backing up</a> in case you want to revert versions.</p>
+<figure class="image"><img src="/installguides/step_4a_delete_old.png"></figure>
+<p>4B. Drag the extracted <code>mods</code> folder from where it is into your D2R Installation Directory.</p>
+<figure class="image"><img src="/installguides/step_4_drag_mods_folder.png"></figure>
+<ul>
+  <li><mark class="pen-red">NOTE: If mods folder exists in base D2R Directory already then do not drop this folder on top of it or it will go inside and the installation will be incorrect.</mark></li>
+</ul>
+<p>&nbsp;</p>
+<p>5. Right click on D2R.exe and click “Send to” and then “Desktop (Create Shortcut)”</p>
+<figure class="image"><img src="/installguides/step_5a_shortcut.png"></figure>
+<ul>
+  <li><i>W11 Users Click “Show More Options” to complete the above step.</i></li>
+</ul>
+<figure class="image"><img src="/installguides/step_3b_w11.png"></figure>
+<ul>
+  <li>Right click the shortcut and select “Properties”</li>
+</ul>
+<figure class="image"><img src="/installguides/step_5b_properties.png"></figure>
+<ul>
+  <li>In the Target field, add the following to the end of the field:<ul>
+      <li><code>&nbsp;-mod Reimagined -txt</code></li>
+      <li><code>&nbsp;-mod Reimagined -txt -resetofflinemaps</code> <i>(OPTIONAL: This will reset your map each Save &amp; Exit)</i></li>
     </ul>
   </li>
-  <li>Install the program <a href="https://www.7-zip.org/">7zip</a> if not already installed.</li>
-  <li>Right click on the download and click “7-Zip” and then “Extract Here”<ul>
-      <li><i>W11 Users Click “Show More Options” to complete the above step.</i></li>
-    </ul>
-  </li>
-  <li>Drag the resulting mods folder from where it is into your D2R Installation Directory</li>
-  <li>Create a Desktop Shortcut<ol>
-      <li>Right click on D2R.exe and click “Send to” and then “Desktop (Create Shortcut)”<ul>
-          <li><i>W11 Users Click “Show More Options” to complete the above step.</i></li>
-        </ul>
-      </li>
-      <li>Right click the shortcut and select “Properties”</li>
-      <li>In the Target field, add the following to the end of the field:<ul>
-          <li><code>-mod Reimagined -txt</code></li>
-          <li><code>-mod Reimagined -txt -resetofflinemaps </code><i>(OPTIONAL: This will reset your map each Save &amp; Exit)</i></li>
-        </ul>
-      </li>
-      <li>Click “Apply” and then “OK”</li>
-    </ol>
-  </li>
-  <li>Rename to preference and then Click or Double-Click the shortcut to play the mod.</li>
-</ol>
+</ul>
+<figure class="image"><img src="/installguides/step_5c_target.png"></figure>
+<ul>
+  <li>Click “Apply” and then “OK”</li>
+</ul>
+<p>&nbsp;</p>
+<p>6. Rename to preference and then Click or Double-Click the shortcut to play the mod.</p>
+<p>&nbsp;</p>
+<h2>Manual 2 Skill Point 8 Attribute Per Level Optional file</h2>
+<p>Instructions to install the optional file that grants 2 skill points, 8 attribute points per level up. This file also makes walking speed = running speed.</p>
+<ul>
+  <li><mark class="pen-red">NOTE: This is not a retroactive change, existing characters will not receive 2/8 for past level ups when respecc'ed, but will gain 2/8 on future level ups.</mark></li>
+  <li><mark class="pen-red">NOTE: This will need to be completed each time you update the mod installation.</mark></li>
+</ul>
+<p>1. Download the file from <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files">Nexus Mods</a></p>
+<figure class="image"><img src="/installguides/step_1_2_skill_download.png"></figure>
+<p>&nbsp;</p>
+<p>2. Extract the file with any extraction program.</p>
+<figure class="image"><img src="/installguides/step_2_2_skill_file.png"></figure>
+<p>&nbsp;</p>
+<p>3. Drop the file in <code>C:\Program Files (x86)\Diablo II Resurrected\mods\Reimagined\Reimagined.mpq\data\global\excel</code></p>
+<figure class="image"><img src="/installguides/step_3_2_skill_drop.png"></figure>
+<p>&nbsp;</p>
+<p>4. Overwrite when prompted.</p>
+<figure class="image"><img src="/installguides/step_3_2_skill_overwrite.png"></figure>
+<p>&nbsp;</p>
 <h2>Fix Unavailable Stash Tabs (Manual Fix)</h2>
 <p><mark class="pen-green">Step 1:</mark> Download this file. <a href="/installguides/expand_stash_2.1.0.zip">Expand Stash 2.1.0</a></p>
 <p><mark class="pen-green">Step 2:</mark> Locate the file on your PC.</p>

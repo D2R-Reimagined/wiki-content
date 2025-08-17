@@ -2,7 +2,7 @@
 title: Item Upgrades
 description: How to upgrade items to add additional stats
 published: true
-date: 2025-07-29T06:03:48.260Z
+date: 2025-08-17T21:17:11.284Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-02-07T13:46:35.085Z
@@ -16,8 +16,8 @@ dateCreated: 2025-02-07T13:46:35.085Z
 <p>Jewelry can be upgraded 2 times.</p>
 <blockquote>
   <p><mark class="pen-red">Items still respect their data size limits (e.g. +All Skills cannot go past 7).&nbsp;</mark></p>
-  <p><mark class="pen-red">To find Stat Caps cross-reference the itemstatcost.txt entry with a stat calculator</mark></p>
-  <p><mark class="pen-red">e.g.</mark> <a href="https://docs.google.com/spreadsheets/d/1vOA1tJoTLBr3oIVIsJhZ0SW18GAvPTK3i24Ca6cJivQ/copy">https://docs.google.com/spreadsheets/d/1vOA1tJoTLBr3oIVIsJhZ0SW18GAvPTK3i24Ca6cJivQ/copy</a></p>
+  <p><mark class="pen-red">To find Stat Caps cross-reference the itemstatcost.txt entry with the stat you wish to upgrade. Limits are savebits # ^ 2 - 1 shifted by saveadd.&nbsp;</mark></p>
+  <p><mark class="pen-red">Ex. magicfind: savebits 9, saveadd 100. 9 ^ 2 = 512 - 1 = 511 saveadd 100 = -100 to 411 stat range.</mark></p>
 </blockquote>
 <blockquote>
   <p><mark class="pen-red">When upgrading set items you must remove all other items from that set from your character first.&nbsp;</mark></p>

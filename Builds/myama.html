@@ -2,7 +2,7 @@
 title: 100%CB All-in-One Bowazon 全能弓马
 description: With this build, your bowazon can do everything you want......
 published: false
-date: 2025-08-21T13:21:31.963Z
+date: 2025-08-21T13:31:36.642Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-08-18T08:03:08.628Z
@@ -533,11 +533,12 @@ dateCreated: 2025-08-18T08:03:08.628Z
 </figure>
 <h1>Formulas 公式</h1>
 <h2>Damage Formula 伤害计算公式</h2>
-<p><mark class="marker-yellow"><strong>Dmg = { [ Dmg<sub>B </sub>× ( 1 + ED<sub>W </sub>) ] + Dmg<sub>E</sub> } × ( 1 + ED<sub>N</sub> ) + EleDmg</strong></mark></p>
+<p><mark class="marker-yellow"><strong>Dmg = { [ Dmg<sub>B </sub>× ( 1 + ED<sub>W </sub>) ] + Dmg<sub>E</sub> } × [ 1 + ED<sub>N</sub> + ( Dex ÷ 100 ) ] + EleDmg</strong></mark></p>
 <p>Dmg<sub>B</sub> = Base Damage. The damage value of weapon base item. 武器基础伤害（白字）</p>
 <p>Dmg<sub>E</sub> = Equipment Damage. Min/Max Damage value from any equipment attributes. 所有装备属性上的最大最小伤害值（蓝字）</p>
 <p>ED<sub>W</sub> = ED from Weapon. Including that from jewelries embedded&nbsp;in weapon. 武器ED值，包含镶嵌在武器上的珠宝</p>
 <p>ED<sub>N</sub> = ED from Non-Weapon. Including that from skills. 非武器ED值总和，包含技能加成</p>
+<p>Dex = Total Dexterity points. 总敏捷点数</p>
 <p>EleDmg = Element Damage. 元素伤害</p>
 <h2>Attack Speed Formula 攻速计算公式</h2>
 <p><mark class="marker-yellow"><strong>Anim<sub>Duration</sub> = {(Anim<sub>Length</sub> * 256) / [Anim<sub>Speed</sub> * (Anim<sub>Rate</sub> + SIAS + EIAS - WSM) / 100]} -1</strong></mark><br>[EIAS = 120 * IAS<sub>Item</sub> / (120 + IAS<sub>Item</sub>)]</p>

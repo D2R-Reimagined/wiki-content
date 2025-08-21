@@ -2,7 +2,7 @@
 title: 100%CB All-in-One Bowazon 全能弓马
 description: With this build, your bowazon can do everything you want......
 published: false
-date: 2025-08-21T11:10:34.000Z
+date: 2025-08-21T11:42:31.110Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-08-18T08:03:08.628Z
@@ -532,24 +532,32 @@ dateCreated: 2025-08-18T08:03:08.628Z
   </table>
 </figure>
 <h1>Formulas 公式</h1>
-<h4>Damage Formula 伤害计算公式</h4>
+<h2>Damage Formula 伤害计算公式</h2>
 <p><mark class="marker-yellow"><strong>Dmg = { [ Dmg<sub>B </sub>× ( 1 + ED<sub>W </sub>) ] + Dmg<sub>E</sub> } × ( 1 + ED<sub>N</sub> ) + EleDmg</strong></mark></p>
 <p>Dmg<sub>B</sub> = Base Damage. The damage value of weapon base item. 武器基础伤害（白字）</p>
 <p>Dmg<sub>E</sub> = Equipment Damage. Min/Max Damage value from any equipment attributes. 所有装备属性上的最大最小伤害值（蓝字）</p>
 <p>ED<sub>W</sub> = ED from Weapon. Including that from jewelries embedded&nbsp;in weapon. 武器ED值，包含镶嵌在武器上的珠宝</p>
 <p>ED<sub>N</sub> = ED from Non-Weapon. Including that from skills. 非武器ED值总和，包含技能加成</p>
 <p>EleDmg = Element Damage. 元素伤害</p>
-<h4>Attack Speed Formula 攻速计算公式</h4>
+<h2>Attack Speed Formula 攻速计算公式</h2>
 <p><mark class="marker-yellow"><strong>Anim<sub>Duration</sub> = {(Anim<sub>Length</sub> * 256) / [Anim<sub>Speed</sub> * (Anim<sub>Rate</sub> + SIAS + EIAS - WSM) / 100]} -1</strong></mark><br>[EIAS = 120 * IAS<sub>Item</sub> / (120 + IAS<sub>Item</sub>)]</p>
 <p>It's a little complex. Please see <a href="https://maxroll.gg/d2/resources/attack-speed">attack speed formula details</a>.</p>
 <p>We can lookup IAS breakpoints in <a href="https://maxroll.gg/d2/d2planner/">D2planner</a> or <a href="https://d2.lc/IAS/">a simple calculator</a>.</p>
 <p>公式的具体解释参看<a href="https://maxroll.gg/d2/resources/attack-speed">这里</a>。查询攻速断点可以用<a href="https://maxroll.gg/d2/d2planner/">D2planner</a>或者<a href="https://d2.lc/IAS/">简易计算器</a>。</p>
-<h4>HP Formula 血量计算公式</h4>
-<p>&nbsp;</p>
+<h2>HP Formula 血量计算公式</h2>
+<p><mark class="marker-yellow"><strong>HP = [ HP<sub>B</sub> + HP<sub>CL</sub> × ( Lvl - 1 ) + ( Vit × HP<sub>V</sub> ) + HP<sub>E</sub> ] × ( 1 + HP% ) + ( HP<sub>EL</sub> × Lvl&nbsp;)</strong></mark></p>
+<p>Lvl = Character Level. 角色等级</p>
+<p>Vit = Total Vitality Points, including that from equipment. 活力点数，包含装备属性</p>
+<p>HP<sub>B</sub> = Character Base HP. (AMA=50, Mizan=74)&nbsp;角色基础HP（1级时血量）（亚马逊为50，米山为74）</p>
+<p>HP<sub>CL</sub> = Character Increased HP per Level. (AMA=2, Mizan=10) 角色每级增加的HP（亚马逊为2，米山为10）</p>
+<p>HP<sub>V</sub> = Increased HP per Vitality point. (AMA=3, Mizan=0) 每1点活力增加的HP（亚马逊为3，米山为0）</p>
+<p>HP<sub>E</sub> = Fixed HP from Equipment, not HP per Level. 装备上增加的确定的HP值，非每级增加HP</p>
+<p>HP<sub>EL</sub> = HP per Level from Equipment. 装备上每级增加的HP</p>
+<p>HP% = Increase Max HP percentage from Equipment, including skill bonus(like BO). 装备上的增加血量上限，包含技能加成（比如BO）</p>
 <h1>Explanations 解释</h1>
-<h4>[1] Why not Str or Vital points? 为什么不加力量和体力？</h4>
+<h4>[1] Why not Str or Vit points? 为什么不加力量和体力？</h4>
 <p>We will have enough Strength points from the crafted GC and belt, so we do not need extra Str.</p>
-<p>We will have about 1.5K life after BO, so we do not need extra Vital.</p>
+<p>We will have about 1.5K life after BO, so we do not need extra Vit.</p>
 <p>超大符和腰带已经提供了足够的力量穿装备，所以不需要再加力量点。</p>
 <p>使用BO以后可以达到1.5K血量，基本上死不了，所以不需要再加体力点。</p>
 <h4>[2] Why Guided Arrow but not Strafe? 为什么用导引箭而不用炮轰？</h4>

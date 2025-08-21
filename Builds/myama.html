@@ -2,7 +2,7 @@
 title: 100%CB All-in-One Bowazon 全能弓马
 description: With this build, your bowazon can do everything you want......
 published: false
-date: 2025-08-21T09:45:58.406Z
+date: 2025-08-21T11:10:34.000Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-08-18T08:03:08.628Z
@@ -10,14 +10,14 @@ dateCreated: 2025-08-18T08:03:08.628Z
 
 <h1>Build 构建</h1>
 <p>This build is for 8pp difficulty.</p>
+<p>The superscript means an explanation that can be found in the Explanation chapter.</p>
 <p>本套搭配适用于8pp难度。</p>
-<p><mark class="marker-green">The superscript means an explanation that can be found in the Explanation chapter.</mark></p>
-<p><mark class="marker-green">上角标的标注内容，请参看解释部分。</mark></p>
+<p>上角标的标注内容，请参看解释部分。</p>
 <p>只想抄作业的童鞋，可以只看这第一部分即可。</p>
 <p>下面表格里，有多种选择的部分，无脑选第一种即是最佳答案。</p>
 <h2>Stat Points 属性点</h2>
 <ul>
-  <li>Add all points to <mark class="marker-yellow"><strong>Dexterity</strong></mark><sup>[1]</sup>.</li>
+  <li>Put all points into <mark class="marker-yellow"><strong>Dexterity</strong></mark><sup>[1]</sup>.</li>
 </ul>
 <p>&nbsp;</p>
 <ul>
@@ -531,10 +531,30 @@ dateCreated: 2025-08-18T08:03:08.628Z
     </tbody>
   </table>
 </figure>
+<h1>Formulas 公式</h1>
+<h4>Damage Formula 伤害计算公式</h4>
+<p><mark class="marker-yellow"><strong>Dmg = { [ Dmg<sub>B </sub>× ( 1 + ED<sub>W </sub>) ] + Dmg<sub>E</sub> } × ( 1 + ED<sub>N</sub> ) + EleDmg</strong></mark></p>
+<p>Dmg<sub>B</sub> = Base Damage. The damage value of weapon base item. 武器基础伤害（白字）</p>
+<p>Dmg<sub>E</sub> = Equipment Damage. Min/Max Damage value from any equipment attributes. 所有装备属性上的最大最小伤害值（蓝字）</p>
+<p>ED<sub>W</sub> = ED from Weapon. Including that from jewelries embedded&nbsp;in weapon. 武器ED值，包含镶嵌在武器上的珠宝</p>
+<p>ED<sub>N</sub> = ED from Non-Weapon. Including that from skills. 非武器ED值总和，包含技能加成</p>
+<p>EleDmg = Element Damage. 元素伤害</p>
+<h4>Attack Speed Formula 攻速计算公式</h4>
+<p><mark class="marker-yellow"><strong>Anim<sub>Duration</sub> = {(Anim<sub>Length</sub> * 256) / [Anim<sub>Speed</sub> * (Anim<sub>Rate</sub> + SIAS + EIAS - WSM) / 100]} -1</strong></mark><br>[EIAS = 120 * IAS<sub>Item</sub> / (120 + IAS<sub>Item</sub>)]</p>
+<p>It's a little complex. Please see <a href="https://maxroll.gg/d2/resources/attack-speed">attack speed formula details</a>.</p>
+<p>We can lookup IAS breakpoints in <a href="https://maxroll.gg/d2/d2planner/">D2planner</a> or <a href="https://d2.lc/IAS/">a simple calculator</a>.</p>
+<p>公式的具体解释参看<a href="https://maxroll.gg/d2/resources/attack-speed">这里</a>。查询攻速断点可以用<a href="https://maxroll.gg/d2/d2planner/">D2planner</a>或者<a href="https://d2.lc/IAS/">简易计算器</a>。</p>
+<h4>HP Formula 血量计算公式</h4>
+<p>&nbsp;</p>
 <h1>Explanations 解释</h1>
-<h6>[1] Why not adding Str or Vital points? 为什么不加力量和体力？</h6>
-<p>We will have enough Strength points from the crafted GC, so we do not have to add Str.</p>
-<p>We will have about 1.5K life after BO, so we do not have to add Vital.</p>
-<p>背包里合成的超大符已经提供了足够的力量穿装备，所以不需要再加力量点。</p>
-<p>BO以后可以达到1.5K血量，基本上死不了，所以不需要再加体力点。</p>
+<h4>[1] Why not Str or Vital points? 为什么不加力量和体力？</h4>
+<p>We will have enough Strength points from the crafted GC and belt, so we do not need extra Str.</p>
+<p>We will have about 1.5K life after BO, so we do not need extra Vital.</p>
+<p>超大符和腰带已经提供了足够的力量穿装备，所以不需要再加力量点。</p>
+<p>使用BO以后可以达到1.5K血量，基本上死不了，所以不需要再加体力点。</p>
+<h4>[2] Why Guided Arrow but not Strafe? 为什么用导引箭而不用炮轰？</h4>
+<p>With D2RR, one shot of guided arrow can hit one single target 5 times at most just like 1.09.</p>
+<p>It's much faster killing a boss using guided arrow than strafe with nearly 100% pierce.</p>
+<p>现在可以像1.09版本一样，一发导引箭可以击中单个目标最多5次。</p>
+<p>当穿刺概率接近100%，打BOSS用导引箭比炮轰要快得多。</p>
 <p>&nbsp;</p>

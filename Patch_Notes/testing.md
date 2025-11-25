@@ -2,13 +2,13 @@
 title: Testing
 description: Testing
 published: false
-date: 2025-11-25T06:23:13.306Z
+date: 2025-11-25T06:27:22.341Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-24T11:50:40.542Z
 ---
 
-moo# Patch Notes
+# Patch Notes
 
 ## Summary
 - Uniques: 16 added, 9 removed, 1242 modified
@@ -223,112 +223,39 @@ moo# Patch Notes
 <details>
 <summary>Boots</summary>
 
-- Road to Perdition1 [Sharkskin Boots [X]]
-  - Base: Enabled: Enabled, Item Level: 28, Required Level: 38, Rarity: 3
-  - Properties:
-    - +120-160% Enhanced Defense
-    - +15% Faster Run/Walk Speed
-    - +20 to Dexterity
-    - +25% Faster Hit Recovery
-    - +4-7% to Experience Gained
-    - Level 20 Sacrifice (250 Charges)
-    - Repairs 0.08 durability per second
+- Road to Perdition1
 </details>
 <details>
 <summary>Bow</summary>
 
-- Ravenclaw [Cedar Bow [X]]
-  - Base: Enabled: Enabled, Item Level: 55, Required Level: 49, Rarity: 1
-  - Properties:
-    - +1 to Pierce (oskill)
-    - +15% Increased Attack Speed
-    - +2 to Barbarian Skill Levels
-    - +20% Bonus to Attack Rating
-    - +30 to Mana
-    - +7-9% Life stolen per hit
-    - +80-125% Enhanced Weapon Damage
-    - Adds 25-50 Weapon Damage
+- Ravenclaw
 </details>
 <details>
 <summary>Helm</summary>
 
-- Gaiden's Loss [Crown [N]]
-  - Base: Enabled: Enabled, Item Level: 14, Required Level: 30, Rarity: 3
-  - Properties:
-    - +1 to Shape Shifting Skills (Druid Only)
-    - +100% Damage to Undead
-    - +25 to Mana
-    - +3-5% Mana stolen per hit
-    - +45-55 Defense
-    - +50% Extra Gold from Monsters
-    - Ignore Target's Defense
-- Gotterdamerung [Winged Helm [X]]
-  - Base: Enabled: Enabled, Item Level: 40, Required Level: 50, Rarity: 3
-  - Properties:
-    - +1% Chance of Open Wounds (Per Character Level)
-    - +15% Physical Damage Reduction
-    - +25% Faster Hit Recovery
-    - +35% to All Resistances
-    - +8-12 Fire Damage Absorbed
-    - +90-130% Enhanced Defense
-    - 4% Chance to cast level 7 Teeth on striking
-- Treachery's Allure [Mask [N]]
-  - Base: Enabled: Enabled, Item Level: 5, Required Level: 23, Rarity: 3
-  - Properties:
-    - +10 to all Attributes
-    - +3-5% Mana stolen per hit
-    - +80-120% Enhanced Defense
-    - Slows Target by 15%
-    - Socketed (2)
-    - Vendor Prices Reduced By 15%
+- Gaiden's Loss
+- Gotterdamerung
+- Treachery's Allure
 </details>
 <details>
 <summary>Large Charm</summary>
 
-- Life & Death [cm2]
-  - Base: Enabled: Enabled, Item Level: 55, Required Level: 55, Rarity: 3
-  - Properties:
-    - +1 to All Skills
-    - +30% Chance Items Roll Magic or Better
-    - +50-75% Extra Gold from Monsters
-    - Attacker Takes Damage of 50-100
-    - Charm Weight: 2
+- Life & Death
 </details>
 <details>
 <summary>Pelt</summary>
 
-- Swift Decent [Hawk Helm [N]]
-  - Base: Enabled: Enabled, Item Level: 1, Required Level: 16, Rarity: 1
-  - Properties:
-    - +1-2 to Shape Shifting Skills (Druid Only)
-    - +105-125% Enhanced Defense
-    - +20% Increased Attack Speed
-    - +5% Life stolen per hit
-    - +6-10 to Maximum Weapon Damage
-    - +75 to Attack Rating
+- Swift Decent
 </details>
 <details>
 <summary>Small Charm</summary>
 
-- t9 Splash Charm [cm5]
-  - Base: Enabled: Enabled, Item Level: 1, Required Level: 90, Rarity: 1
-  - Properties:
-    - Charm Weight: 1
-    - Splash 100% of Melee Damage
+- t9 Splash Charm
 </details>
 <details>
 <summary>Staff</summary>
 
-- Serpent Lord1 [Long Staff [N]]
-  - Base: Enabled: Enabled, Item Level: 1, Required Level: 9, Rarity: 5
-  - Properties:
-    - +10 to Mana
-    - +100% Mana stolen per hit
-    - +50% Poison Resistance
-    - +60-90% Enhanced Weapon Damage
-    - -1 to Light Radius
-    - -50% Target Defense
-    - Adds 12 Weapon Poison Damage over 3 seconds
+- Serpent Lord1
 </details>
 
 ### Modified
@@ -7092,4 +7019,3 @@ moo# Patch Notes
 
 
 </details>
-

@@ -2,7 +2,7 @@
 title: Testing
 description: Testing
 published: false
-date: 2025-11-25T13:04:09.062Z
+date: 2025-11-25T13:04:51.029Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-24T11:50:40.542Z
@@ -6441,548 +6441,500 @@ dateCreated: 2025-11-24T11:50:40.542Z
 <summary>Show Set Changes</summary>
 
 ### Added
-- Deus et Diabolus
-  - Base: Level: 1
-  - Partial Set Bonuses:
-    - +10% Fire Damage Absorbed
-    - +2 to War Cry (Barbarian Only)
-  - Full Set Bonuses:
-    - +100% Mana Regeneration
-    - +15% Physical Damage Reduction
-    - +3 to All Skills
-  - Items:
-    - Grasp of Lament [Demonhide Gloves [X]]
-      - Base: Enabled: Enabled, Item Level: 70, Required Level: 76, Rarity: 7
-      - Properties:
-        - +10-15% Faster Cast Rate
-        - +100% Enhanced Defense
-        - +15-30% Mana Regeneration
-        - +2 to War Cry (Barbarian Only)
-        - +25% Chance Items Roll Magic or Better
-        - +35% Cold Resistance
-      - Set Bonuses:
-        - +15% Faster Cast Rate (2 Items)
-    - Shackles of the Veiled Belt [Vampirefang Belt [E]]
-      - Base: Enabled: Enabled, Item Level: 80, Required Level: 80, Rarity: 7
-      - Properties:
-        - +1 to All Skills
-        - +15% Damage Taken Goes To Mana
-        - +20% Faster Hit Recovery
-        - +30% Fire Resistance
-        - Replenish Life +30
-      - Set Bonuses:
-        - +15% Faster Cast Rate (3 Items)
-        - +3 to War Cry (Barbarian Only) (2 Items)
-    - Steps Etched in Ash [Boneweave Boots [E]]
-      - Base: Enabled: Enabled, Item Level: 70, Required Level: 78, Rarity: 7
-      - Properties:
-        - +20% Faster Run/Walk Speed
-        - +20% Fire Resistance
-        - +20% Lightning Resistance
-        - +40% Chance Items Roll Magic or Better
-        - +5 to Find Item (oskill)
-        - +75% Extra Gold from Monsters
-        - 100% Chance to cast level 20 Blaze when struck
-      - Set Bonuses:
-        - +15% Faster Run/Walk Speed (2 Items)
-        - +50% Chance Items Roll Magic or Better (3 Items)
+<details>
+<summary>Deus et Diabolus</summary>
+
+- Base: Level: 1
+- Partial Set Bonuses:
+  - +10% Fire Damage Absorbed
+  - +2 to War Cry (Barbarian Only)
+- Full Set Bonuses:
+  - +100% Mana Regeneration
+  - +15% Physical Damage Reduction
+  - +3 to All Skills
+- Items:
+  - Grasp of Lament [Demonhide Gloves [X]]
+    - Base: Enabled: Enabled, Item Level: 70, Required Level: 76, Rarity: 7
+    - Properties:
+      - +10-15% Faster Cast Rate
+      - +100% Enhanced Defense
+      - +15-30% Mana Regeneration
+      - +2 to War Cry (Barbarian Only)
+      - +25% Chance Items Roll Magic or Better
+      - +35% Cold Resistance
+    - Set Bonuses:
+      - +15% Faster Cast Rate (2 Items)
+  - Shackles of the Veiled Belt [Vampirefang Belt [E]]
+    - Base: Enabled: Enabled, Item Level: 80, Required Level: 80, Rarity: 7
+    - Properties:
+      - +1 to All Skills
+      - +15% Damage Taken Goes To Mana
+      - +20% Faster Hit Recovery
+      - +30% Fire Resistance
+      - Replenish Life +30
+    - Set Bonuses:
+      - +15% Faster Cast Rate (3 Items)
+      - +3 to War Cry (Barbarian Only) (2 Items)
+  - Steps Etched in Ash [Boneweave Boots [E]]
+    - Base: Enabled: Enabled, Item Level: 70, Required Level: 78, Rarity: 7
+    - Properties:
+      - +20% Faster Run/Walk Speed
+      - +20% Fire Resistance
+      - +20% Lightning Resistance
+      - +40% Chance Items Roll Magic or Better
+      - +5 to Find Item (oskill)
+      - +75% Extra Gold from Monsters
+      - 100% Chance to cast level 20 Blaze when struck
+    - Set Bonuses:
+      - +15% Faster Run/Walk Speed (2 Items)
+      - +50% Chance Items Roll Magic or Better (3 Items)
+
+</details>
 
 ### Modified
-- Aiel Shieldmaiden
-  - Items Modified:
-    <details>
-    <summary>Ring</summary>
+<details>
+<summary>Aiel Shieldmaiden</summary>
 
-    - Chiad's Halo [rin]
-      - Base: Rarity: 1 (was 2)
-    </details>
-- Amaunator's Peace
-  - Items Modified:
-    <details>
-    <summary>Ring</summary>
+- Items Modified:
+  - Chiad's Halo [rin]
+    - Base: Rarity: 1 (was 2)
 
-    - Holy Ring of Amaunator [rin]
-      - Base: Rarity: 3 (was 5)
-    </details>
-- Angelic Raiment
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Amaunator's Peace</summary>
 
-    - Angelic Wings [amu]
-      - Base: Rarity: 3 (was 7)
-    </details>
-- Arcanna's Tricks
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Items Modified:
+  - Holy Ring of Amaunator [rin]
+    - Base: Rarity: 3 (was 5)
 
-    - Arcanna's Sign [amu]
-      - Base: Rarity: 3 (was 1)
-    </details>
-- Berserker's Arsenal
-  - Full Set Bonuses:
-    - Changed: Adds 0 Weapon Poison Damage over 0 seconds (was 5-10)
-- Bul-Kathos' Children
-  - Full Set Bonuses:
-    - Changed: +25% Deadly Strike (was +20%)
-    - Changed: +300% Damage to Demons (was +200%)
-    - Changed: +300% Damage to Undead (was +200%)
-    - Added: +25% Chance of Crushing Blow
-    - Added: Adds 150-250 Weapon Damage
-    - Removed: +200 Defense
-    - Removed: Adds 200 Weapon Fire Damage
-  - Items Modified:
-    <details>
-    <summary>Sword</summary>
+</details>
+<details>
+<summary>Angelic Raiment</summary>
 
-    - Bul-Kathos' Sacred Charge [Colossus Blade [E]]
-      - Base: Item Level: 60 (was 50), Required Level: 75 (was 63)
-      - Properties:
-        - Changed: +20-30% Increased Attack Speed (was +20%)
-        - Changed: +250-350% Enhanced Weapon Damage (was +200%)
-        - Added: 15% Chance to cast level 5 Dust Devils on striking
-        - Removed: +35% Chance of Crushing Blow
-      - Set Bonuses:
-        - Added: 10% Chance to cast level 5 Amplify Damage on striking (2 Items)
-    - Bul-Kathos' Tribal Guardian [Mythical Sword [E]]
-      - Base: Item Level: 60 (was 50)
-      - Properties:
-        - Changed: +20-30% Increased Attack Speed (was +20%)
-        - Changed: +250-350% Enhanced Weapon Damage (was +200%)
-        - Added: +20 to all Attributes
-        - Added: 15% Chance to cast level 3 Blightburst on striking
-        - Removed: +20 to Strength
-        - Removed: +50% Fire Resistance
-        - Removed: Adds 50 Weapon Poison Damage over 2 seconds
-      - Set Bonuses:
-        - Added: 10% Chance to cast level 5 Amplify Damage on striking (2 Items)
-    </details>
-- Cathan's Traps
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Items Modified:
+  - Angelic Wings [amu]
+    - Base: Rarity: 3 (was 7)
 
-    - Cathan's Sigil [amu]
-      - Base: Rarity: 3 (was 7)
-    </details>
-    <details>
-    <summary>Ring</summary>
+</details>
+<details>
+<summary>Arcanna's Tricks</summary>
 
-    - Cathan's Seal [rin]
-      - Base: Rarity: 3 (was 7)
-    </details>
-- Celestial Hierarchy
-  - Items Modified:
-    <details>
-    <summary>Ring</summary>
+- Items Modified:
+  - Arcanna's Sign [amu]
+    - Base: Rarity: 3 (was 1)
 
-    - Seraphim [rin]
-      - Base: Rarity: 1 (was 5)
-    </details>
-- Chaos Energy
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Berserker's Arsenal</summary>
 
-    - Soulstone of Power [amu]
-      - Base: Rarity: 1 (was 2)
-    </details>
-- Civerb's Vestments
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Full Set Bonuses:
+  - Changed: Adds 0 Weapon Poison Damage over 0 seconds (was 5-10)
 
-    - Civerb's Icon [amu]
-      - Base: Rarity: 3 (was 7)
-    </details>
-- Corruption Coils
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Bul-Kathos' Children</summary>
 
-    - Temptation's Death [amu]
-      - Base: Rarity: 3 (was 1)
-    </details>
-- Darque Necromancy
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Full Set Bonuses:
+  - Changed: +25% Deadly Strike (was +20%)
+  - Changed: +300% Damage to Demons (was +200%)
+  - Changed: +300% Damage to Undead (was +200%)
+  - Added: +25% Chance of Crushing Blow
+  - Added: Adds 150-250 Weapon Damage
+  - Removed: +200 Defense
+  - Removed: Adds 200 Weapon Fire Damage
+- Items Modified:
+  - Bul-Kathos' Sacred Charge [Colossus Blade [E]]
+    - Base: Item Level: 60 (was 50), Required Level: 75 (was 63)
+    - Properties:
+      - Changed: +20-30% Increased Attack Speed (was +20%)
+      - Changed: +250-350% Enhanced Weapon Damage (was +200%)
+      - Added: 15% Chance to cast level 5 Dust Devils on striking
+      - Removed: +35% Chance of Crushing Blow
+    - Set Bonuses:
+      - Added: 10% Chance to cast level 5 Amplify Damage on striking (2 Items)
+  - Bul-Kathos' Tribal Guardian [Mythical Sword [E]]
+    - Base: Item Level: 60 (was 50)
+    - Properties:
+      - Changed: +20-30% Increased Attack Speed (was +20%)
+      - Changed: +250-350% Enhanced Weapon Damage (was +200%)
+      - Added: +20 to all Attributes
+      - Added: 15% Chance to cast level 3 Blightburst on striking
+      - Removed: +20 to Strength
+      - Removed: +50% Fire Resistance
+      - Removed: Adds 50 Weapon Poison Damage over 2 seconds
+    - Set Bonuses:
+      - Added: 10% Chance to cast level 5 Amplify Damage on striking (2 Items)
 
-    - Legacy in Blood [amu]
-      - Base: Rarity: 2 (was 4)
-    </details>
-- Dragon Reborn
-  - Items Modified:
-    <details>
-    <summary>Ring</summary>
+</details>
+<details>
+<summary>Cathan's Traps</summary>
 
-    - Ter'Angreal Ring [rin]
-      - Base: Rarity: 1 (was 3)
-    </details>
-- Forsaken Divinity
-  - Items Added:
-    <details>
-    <summary>Ring</summary>
+- Items Modified:
+  - Cathan's Sigil [amu]
+    - Base: Rarity: 3 (was 7)
+  - Cathan's Seal [rin]
+    - Base: Rarity: 3 (was 7)
 
-    - Tyrael's Grief [rin]
-      - Base: Enabled: Enabled, Item Level: 45, Required Level: 45, Rarity: 3
-      - Properties:
-        - +20% Faster Cast Rate
-        - +25-35% Chance Items Roll Magic or Better
-        - +45-70% Mana Regeneration
-        - Replenish Life +3-5
-    </details>
-  - Items Removed:
-    <details>
-    <summary>Ring</summary>
+</details>
+<details>
+<summary>Celestial Hierarchy</summary>
 
-    - Tyrial's Grief [rin]
-      - Base: Enabled: Enabled, Item Level: 45, Required Level: 45, Rarity: 3
-      - Properties:
-        - +20% Faster Cast Rate
-        - +25-35% Chance Items Roll Magic or Better
-        - +45-70% Mana Regeneration
-        - Replenish Life +3-5
-    </details>
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Items Modified:
+  - Seraphim [rin]
+    - Base: Rarity: 1 (was 5)
 
-    - Redemption Denied [amu]
-      - Base: Rarity: 1 (was 3)
-    </details>
-- Gweibret's Rule
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Chaos Energy</summary>
 
-    - Dominion's Thesis [amu]
-      - Base: Rarity: 2 (was 3)
-    </details>
-- Hades' Underworld
-  - Items Modified:
-    <details>
-    <summary>Ring</summary>
+- Items Modified:
+  - Soulstone of Power [amu]
+    - Base: Rarity: 1 (was 2)
 
-    - Vampire's Crusade [rin]
-      - Base: Rarity: 3 (was 5)
-    </details>
-- Immortal King
-  - Full Set Bonuses:
-    - Added: +1 to Kings Trinity (oskill)
-    - Added: 10% Chance to cast level 1 Kings Charisma on striking
-  - Items Modified:
-    <details>
-    <summary>Belt</summary>
+</details>
+<details>
+<summary>Civerb's Vestments</summary>
 
-    - Immortal King's Detail [War Belt [X]]
-      - Properties:
-        - Added: +2 Random Barbarian Skill
-        - Added: Adds 10-20 Weapon Damage
-    </details>
-    <details>
-    <summary>Body Armor</summary>
+- Items Modified:
+  - Civerb's Icon [amu]
+    - Base: Rarity: 3 (was 7)
 
-    - Immortal King's Soul Cage [Sacred Armor [E]]
-      - Properties:
-        - Added: 10% Chance to cast level 1 Empowering Flame when struck
-        - Removed: 5% Chance to cast level 5 Enchant when struck
-    </details>
-    <details>
-    <summary>Boots</summary>
+</details>
+<details>
+<summary>Corruption Coils</summary>
 
-    - Immortal King's Pillar [War Boots [X]]
-      - Properties:
-        - Added: +2 Random Barbarian Skill
-    </details>
-    <details>
-    <summary>Gloves</summary>
+- Items Modified:
+  - Temptation's Death [amu]
+    - Base: Rarity: 3 (was 1)
 
-    - Immortal King's Forge [War Gauntlets [X]]
-      - Properties:
-        - Added: +2 Random Barbarian Skill
-        - Added: 20% Chance to cast level 3 Storm Shard when struck
-        - Removed: 12% Chance to cast level 4 Charged Bolt when struck
-    </details>
-    <details>
-    <summary>Hammer</summary>
+</details>
+<details>
+<summary>Darque Necromancy</summary>
 
-    - Immortal King's Stone Crusher [Ogre Maul [E]]
-      - Properties:
-        - Changed: +15-25% Chance of Crushing Blow (was +35-40%)
-        - Changed: +200-300% Enhanced Weapon Damage (was +200%)
-        - Added: Ethereal (Cannot be Repaired)
-        - Removed: Indestructible
-        - Removed: Socketed (2)
-      - Set Bonuses:
-        - Changed: Adds 10-700 Weapon Lightning Damage (3 Items) (was 7-477)
-        - Changed: Adds 250-500 Weapon Cold Damage (4 Items) (was 127-364)
-        - Changed: Adds 250-500 Weapon Fire Damage (2 Items) (was 211-397)
-        - Changed: Adds 250-500 Weapon Magic Damage (5 Items) (was 250-361)
-        - Added: Adds 50-100 Weapon Damage (6 Items)
-        - Removed: Adds 205 Weapon Poison Damage over 6 seconds (5 Items)
-    </details>
-    <details>
-    <summary>Primal Helm</summary>
+- Items Modified:
+  - Legacy in Blood [amu]
+    - Base: Rarity: 2 (was 4)
 
-    - Immortal King's Will [Avenger Guard [N]]
-      - Properties:
-        - Added: +2 Random Barbarian Skill
-        - Removed: Socketed (2)
-      - Set Bonuses:
-        - Added: +15% Faster Hit Recovery (2 Items)
-        - Added: +2 to Barbarian Skill Levels (4 Items)
-    </details>
-- Insight of Brother Laz
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Dragon Reborn</summary>
 
-    - Brother Laz' Holy Symbol [amu]
-      - Base: Rarity: 3 (was 5)
-    </details>
-- Iratha's Finery
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Items Modified:
+  - Ter'Angreal Ring [rin]
+    - Base: Rarity: 1 (was 3)
 
-    - Iratha's Collar [amu]
-      - Base: Rarity: 3 (was 7)
-    </details>
-- JBouley's Scion
-  - Items Modified:
-    <details>
-    <summary>Body Armor</summary>
+</details>
+<details>
+<summary>Forsaken Divinity</summary>
 
-    - Shadow Ninja [Trellised Armor [X]]
-      - Properties:
-        - Removed: +1 to Avoid (oskill)
-    </details>
-- Knight's Gallantry
-  - Items Modified:
-    <details>
-    <summary>Club</summary>
+- Items Added:
+  - Tyrael's Grief [rin]
+    - Base: Enabled: Enabled, Item Level: 45, Required Level: 45, Rarity: 3
+    - Properties:
+      - +20% Faster Cast Rate
+      - +25-35% Chance Items Roll Magic or Better
+      - +45-70% Mana Regeneration
+      - Replenish Life +3-5
+- Items Removed:
+  - Tyrial's Grief [rin]
+    - Base: Enabled: Enabled, Item Level: 45, Required Level: 45, Rarity: 3
+    - Properties:
+      - +20% Faster Cast Rate
+      - +25-35% Chance Items Roll Magic or Better
+      - +45-70% Mana Regeneration
+      - Replenish Life +3-5
+- Items Modified:
+  - Redemption Denied [amu]
+    - Base: Rarity: 1 (was 3)
 
-    - Baton of Intrepidity [Truncheon [E]]
-      - Properties:
-        - Removed: Knockback
-    </details>
-- Kraj's Memorial
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Gweibret's Rule</summary>
 
-    - Eternal Sleep [amu]
-      - Base: Rarity: 1 (was 2)
-    </details>
-- Lords of Hell
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Items Modified:
+  - Dominion's Thesis [amu]
+    - Base: Rarity: 2 (was 3)
 
-    - Baal's Cryptic Amulet [amu]
-      - Base: Rarity: 1 (was 3)
-    </details>
-    <details>
-    <summary>Ring</summary>
+</details>
+<details>
+<summary>Hades' Underworld</summary>
 
-    - Diablo's Soulstone Ring [rin]
-      - Base: Rarity: 1 (was 3)
-    </details>
-- Mishy's Avatar
-  - Items Modified:
-    <details>
-    <summary>Ring</summary>
+- Items Modified:
+  - Vampire's Crusade [rin]
+    - Base: Rarity: 3 (was 5)
 
-    - Warder's Bond [rin]
-      - Base: Rarity: 3 (was 5)
-    </details>
-- Myhrginoc's Warbreeder
-  - Items Modified:
-    <details>
-    <summary>Axe</summary>
+</details>
+<details>
+<summary>Immortal King</summary>
 
-    - Myhrginoc's Headhunter [Champion Axe [E]]
-      - Properties:
-        - Removed: Knockback
-    </details>
-- Narrow Path Between Light and Darkness
-  - Items Modified:
-    <details>
-    <summary>Scepter</summary>
+- Full Set Bonuses:
+  - Added: +1 to Kings Trinity (oskill)
+  - Added: 10% Chance to cast level 1 Kings Charisma on striking
+- Items Modified:
+  - Immortal King's Detail [War Belt [X]]
+    - Properties:
+      - Added: +2 Random Barbarian Skill
+      - Added: Adds 10-20 Weapon Damage
+  - Immortal King's Soul Cage [Sacred Armor [E]]
+    - Properties:
+      - Added: 10% Chance to cast level 1 Empowering Flame when struck
+      - Removed: 5% Chance to cast level 5 Enchant when struck
+  - Immortal King's Pillar [War Boots [X]]
+    - Properties:
+      - Added: +2 Random Barbarian Skill
+  - Immortal King's Forge [War Gauntlets [X]]
+    - Properties:
+      - Added: +2 Random Barbarian Skill
+      - Added: 20% Chance to cast level 3 Storm Shard when struck
+      - Removed: 12% Chance to cast level 4 Charged Bolt when struck
+  - Immortal King's Stone Crusher [Ogre Maul [E]]
+    - Properties:
+      - Changed: +15-25% Chance of Crushing Blow (was +35-40%)
+      - Changed: +200-300% Enhanced Weapon Damage (was +200%)
+      - Added: Ethereal (Cannot be Repaired)
+      - Removed: Indestructible
+      - Removed: Socketed (2)
+    - Set Bonuses:
+      - Changed: Adds 10-700 Weapon Lightning Damage (3 Items) (was 7-477)
+      - Changed: Adds 250-500 Weapon Cold Damage (4 Items) (was 127-364)
+      - Changed: Adds 250-500 Weapon Fire Damage (2 Items) (was 211-397)
+      - Changed: Adds 250-500 Weapon Magic Damage (5 Items) (was 250-361)
+      - Added: Adds 50-100 Weapon Damage (6 Items)
+      - Removed: Adds 205 Weapon Poison Damage over 6 seconds (5 Items)
+  - Immortal King's Will [Avenger Guard [N]]
+    - Properties:
+      - Added: +2 Random Barbarian Skill
+      - Removed: Socketed (2)
+    - Set Bonuses:
+      - Added: +15% Faster Hit Recovery (2 Items)
+      - Added: +2 to Barbarian Skill Levels (4 Items)
 
-    - Char's Hand of Blessed Light [Mighty Scepter [E]]
-      - Set Bonuses:
-        - Added: +13-16 to Static Field (oskill) (3 Items)
-        - Removed: +13-16 to Merc Static Field (oskill) (3 Items)
-    </details>
-- Nature's Grove
-  - Items Modified:
-    <details>
-    <summary>Ring</summary>
+</details>
+<details>
+<summary>Insight of Brother Laz</summary>
 
-    - Peace Ring [rin]
-      - Base: Rarity: 3 (was 5)
-    </details>
-- Salander's Tirade
-  - Items Modified:
-    <details>
-    <summary>Polearm</summary>
+- Items Modified:
+  - Brother Laz' Holy Symbol [amu]
+    - Base: Rarity: 3 (was 5)
 
-    - Lancer's Reach [Partizan [X]]
-      - Properties:
-        - Removed: Knockback
-    </details>
-- Sheena's Grace
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Iratha's Finery</summary>
 
-    - Sheena's Choker [amu]
-      - Base: Rarity: 3 (was 5)
-    </details>
-- Snowmane's Jewelry
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Items Modified:
+  - Iratha's Collar [amu]
+    - Base: Rarity: 3 (was 7)
 
-    - Diamond Necklace [amu]
-      - Base: Rarity: 3 (was 4)
-    </details>
-    <details>
-    <summary>Ring</summary>
+</details>
+<details>
+<summary>JBouley's Scion</summary>
 
-    - Ruby Ring [rin]
-      - Base: Rarity: 3 (was 4)
-    </details>
-- Tal Rasha's Wrappings
-  - Partial Set Bonuses:
-    - Changed: +100% Chance Items Roll Magic or Better (was +65%)
-    - Changed: Replenish Life +50 (was +10)
-  - Full Set Bonuses:
-    - Changed: +200 Defense (was +150)
-    - Added: +20% to All Elemental Skill Damage
-    - Added: -10% to All Enemy Elemental Resistances
-    - Removed: +50 Defense vs. Missile
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+- Items Modified:
+  - Shadow Ninja [Trellised Armor [X]]
+    - Properties:
+      - Removed: +1 to Avoid (oskill)
 
-    - Tal Rasha's Adjudication [amu]
-      - Properties:
-        - Changed: +50 to Mana (was +42)
-        - Added: +2 Random Sorceress Skill
-      - Set Bonuses:
-        - Changed: +15% Faster Cast Rate (2 Items) (was +10% 4)
-        - Added: +25% Chance Items Roll Magic or Better (4 Items)
-    </details>
-    <details>
-    <summary>Belt</summary>
+</details>
+<details>
+<summary>Knight's Gallantry</summary>
 
-    - Tal Rasha's Fine-Spun Cloth [Mesh Belt [X]]
-      - Properties:
-        - Changed: +30 to Dexterity (was +20)
-        - Changed: +30-40% Chance Items Roll Magic or Better (was +10-15%)
-        - Changed: +50 to Mana (was +30)
-        - Added: +2 Random Sorceress Skill
-      - Set Bonuses:
-        - Changed: +100 Defense (2 Items) (was +60 2)
-        - Changed: +15% Faster Cast Rate (3 Items) (was +10% 3)
-    </details>
-    <details>
-    <summary>Body Armor</summary>
+- Items Modified:
+  - Baton of Intrepidity [Truncheon [E]]
+    - Properties:
+      - Removed: Knockback
 
-    - Tal Rasha's Guardianship [Lacquered Plate [E]]
-      - Properties:
-        - Changed: +80-100% Chance Items Roll Magic or Better (was +88%)
-      - Set Bonuses:
-        - Changed: +15% Faster Cast Rate (2 Items) (was +10% 2)
-        - Added: +50 to Life (4 Items)
-    </details>
-    <details>
-    <summary>Helm</summary>
+</details>
+<details>
+<summary>Kraj's Memorial</summary>
 
-    - Tal Rasha's Horadric Crest [Death Mask [X]]
-      - Properties:
-        - Added: +3 Random Sorceress Skill
-      - Set Bonuses:
-        - Added: +10% Faster Hit Recovery (2 Items)
-        - Added: +10% Faster Hit Recovery (4 Items)
-    </details>
-    <details>
-    <summary>Orb</summary>
+- Items Modified:
+  - Eternal Sleep [amu]
+    - Base: Rarity: 1 (was 2)
 
-    - Tal Rasha's Lidless Eye [Swirling Crystal [X]]
-      - Properties:
-        - Changed: +2-5 to Cold Mastery (Sorceress Only) (was +1-2)
-        - Changed: +2-5 to Fire Mastery (Sorceress Only) (was +1-2)
-        - Changed: +2-5 to Lightning Mastery (Sorceress Only) (was +1-2)
-        - Changed: +20 to Energy (was +10)
-        - Changed: +25% Faster Cast Rate (was +20%)
-      - Set Bonuses:
-        - Added: +1 to Sorceress Skill Levels (3 Items)
-        - Added: -20% to All Enemy Elemental Resistances (5 Items)
-        - Removed: +15% to Cold Skill Damage (5 Items)
-        - Removed: -15% to Enemy Fire Resistance (3 Items)
-        - Removed: -15% to Enemy Lightning Resistance (4 Items)
-    </details>
-- Tancred's Battlegear
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Lords of Hell</summary>
 
-    - Tancred's Weird [amu]
-      - Base: Rarity: 3 (was 7)
-    </details>
-- Terror of the Deep
-  - Items Modified:
-    <details>
-    <summary>Belt</summary>
+- Items Modified:
+  - Baal's Cryptic Amulet [amu]
+    - Base: Rarity: 1 (was 3)
+  - Diablo's Soulstone Ring [rin]
+    - Base: Rarity: 1 (was 3)
 
-    - Mako's Quickness [Sharkskin Belt [X]]
-      - Properties:
-        - Added: +4-8 to Dodge (oskill)
-        - Removed: +4-8 to Avoid (oskill)
-    </details>
-- The Disciple
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Mishy's Avatar</summary>
 
-    - Telling of Beads [amu]
-      - Base: Rarity: 2 (was 1)
-    </details>
-- Treasure Hunter
-  - Partial Set Bonuses:
-    - Changed: +100% Chance Items Roll Magic or Better (was +25%)
-  - Full Set Bonuses:
-    - Changed: +3 to All Skills (was +1)
-    - Changed: +300% Chance Items Roll Magic or Better (was +200%)
-  - Items Modified:
-    <details>
-    <summary>Ring</summary>
+- Items Modified:
+  - Warder's Bond [rin]
+    - Base: Rarity: 3 (was 5)
 
-    - Kingpin's Signet [rin]
-      - Base: Rarity: 3 (was 4)
-    </details>
-- Vidala's Rig
-  - Items Modified:
-    <details>
-    <summary>Amulet</summary>
+</details>
+<details>
+<summary>Myhrginoc's Warbreeder</summary>
 
-    - Vidala's Snare [amu]
-      - Base: Rarity: 3 (was 7)
-    </details>
-- Zhoulomcrist's Dread
-  - Items Modified:
-    <details>
-    <summary>Axe</summary>
+- Items Modified:
+  - Myhrginoc's Headhunter [Champion Axe [E]]
+    - Properties:
+      - Removed: Knockback
 
-    - Darkest Wishes [Ettin Axe [E]]
-      - Properties:
-        - Removed: Knockback
-    </details>
+</details>
+<details>
+<summary>Narrow Path Between Light and Darkness</summary>
+
+- Items Modified:
+  - Char's Hand of Blessed Light [Mighty Scepter [E]]
+    - Set Bonuses:
+      - Added: +13-16 to Static Field (oskill) (3 Items)
+      - Removed: +13-16 to Merc Static Field (oskill) (3 Items)
+
+</details>
+<details>
+<summary>Nature's Grove</summary>
+
+- Items Modified:
+  - Peace Ring [rin]
+    - Base: Rarity: 3 (was 5)
+
+</details>
+<details>
+<summary>Salander's Tirade</summary>
+
+- Items Modified:
+  - Lancer's Reach [Partizan [X]]
+    - Properties:
+      - Removed: Knockback
+
+</details>
+<details>
+<summary>Sheena's Grace</summary>
+
+- Items Modified:
+  - Sheena's Choker [amu]
+    - Base: Rarity: 3 (was 5)
+
+</details>
+<details>
+<summary>Snowmane's Jewelry</summary>
+
+- Items Modified:
+  - Diamond Necklace [amu]
+    - Base: Rarity: 3 (was 4)
+  - Ruby Ring [rin]
+    - Base: Rarity: 3 (was 4)
+
+</details>
+<details>
+<summary>Tal Rasha's Wrappings</summary>
+
+- Partial Set Bonuses:
+  - Changed: +100% Chance Items Roll Magic or Better (was +65%)
+  - Changed: Replenish Life +50 (was +10)
+- Full Set Bonuses:
+  - Changed: +200 Defense (was +150)
+  - Added: +20% to All Elemental Skill Damage
+  - Added: -10% to All Enemy Elemental Resistances
+  - Removed: +50 Defense vs. Missile
+- Items Modified:
+  - Tal Rasha's Adjudication [amu]
+    - Properties:
+      - Changed: +50 to Mana (was +42)
+      - Added: +2 Random Sorceress Skill
+    - Set Bonuses:
+      - Changed: +15% Faster Cast Rate (2 Items) (was +10% 4)
+      - Added: +25% Chance Items Roll Magic or Better (4 Items)
+  - Tal Rasha's Fine-Spun Cloth [Mesh Belt [X]]
+    - Properties:
+      - Changed: +30 to Dexterity (was +20)
+      - Changed: +30-40% Chance Items Roll Magic or Better (was +10-15%)
+      - Changed: +50 to Mana (was +30)
+      - Added: +2 Random Sorceress Skill
+    - Set Bonuses:
+      - Changed: +100 Defense (2 Items) (was +60 2)
+      - Changed: +15% Faster Cast Rate (3 Items) (was +10% 3)
+  - Tal Rasha's Guardianship [Lacquered Plate [E]]
+    - Properties:
+      - Changed: +80-100% Chance Items Roll Magic or Better (was +88%)
+    - Set Bonuses:
+      - Changed: +15% Faster Cast Rate (2 Items) (was +10% 2)
+      - Added: +50 to Life (4 Items)
+  - Tal Rasha's Horadric Crest [Death Mask [X]]
+    - Properties:
+      - Added: +3 Random Sorceress Skill
+    - Set Bonuses:
+      - Added: +10% Faster Hit Recovery (2 Items)
+      - Added: +10% Faster Hit Recovery (4 Items)
+  - Tal Rasha's Lidless Eye [Swirling Crystal [X]]
+    - Properties:
+      - Changed: +2-5 to Cold Mastery (Sorceress Only) (was +1-2)
+      - Changed: +2-5 to Fire Mastery (Sorceress Only) (was +1-2)
+      - Changed: +2-5 to Lightning Mastery (Sorceress Only) (was +1-2)
+      - Changed: +20 to Energy (was +10)
+      - Changed: +25% Faster Cast Rate (was +20%)
+    - Set Bonuses:
+      - Added: +1 to Sorceress Skill Levels (3 Items)
+      - Added: -20% to All Enemy Elemental Resistances (5 Items)
+      - Removed: +15% to Cold Skill Damage (5 Items)
+      - Removed: -15% to Enemy Fire Resistance (3 Items)
+      - Removed: -15% to Enemy Lightning Resistance (4 Items)
+
+</details>
+<details>
+<summary>Tancred's Battlegear</summary>
+
+- Items Modified:
+  - Tancred's Weird [amu]
+    - Base: Rarity: 3 (was 7)
+
+</details>
+<details>
+<summary>Terror of the Deep</summary>
+
+- Items Modified:
+  - Mako's Quickness [Sharkskin Belt [X]]
+    - Properties:
+      - Added: +4-8 to Dodge (oskill)
+      - Removed: +4-8 to Avoid (oskill)
+
+</details>
+<details>
+<summary>The Disciple</summary>
+
+- Items Modified:
+  - Telling of Beads [amu]
+    - Base: Rarity: 2 (was 1)
+
+</details>
+<details>
+<summary>Treasure Hunter</summary>
+
+- Partial Set Bonuses:
+  - Changed: +100% Chance Items Roll Magic or Better (was +25%)
+- Full Set Bonuses:
+  - Changed: +3 to All Skills (was +1)
+  - Changed: +300% Chance Items Roll Magic or Better (was +200%)
+- Items Modified:
+  - Kingpin's Signet [rin]
+    - Base: Rarity: 3 (was 4)
+
+</details>
+<details>
+<summary>Vidala's Rig</summary>
+
+- Items Modified:
+  - Vidala's Snare [amu]
+    - Base: Rarity: 3 (was 7)
+
+</details>
+<details>
+<summary>Zhoulomcrist's Dread</summary>
+
+- Items Modified:
+  - Darkest Wishes [Ettin Axe [E]]
+    - Properties:
+      - Removed: Knockback
+
+</details>
 
 </details>
 

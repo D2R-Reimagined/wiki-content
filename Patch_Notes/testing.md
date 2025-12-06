@@ -2,7 +2,7 @@
 title: Testing
 description: Testing
 published: false
-date: 2025-12-06T04:24:55.679Z
+date: 2025-12-06T06:34:28.928Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-24T11:50:40.542Z
@@ -11,8 +11,8 @@ dateCreated: 2025-11-24T11:50:40.542Z
 # Patch Notes
 
 ## Summary
-- Uniques: 16 added, 9 removed, 1254 modified
-- Sets: 1 added, 0 removed, 36 modified
+- Uniques: 15 added, 8 removed, 1255 modified
+- Sets: 1 added, 0 removed, 35 modified
 - Runewords: 0 added, 0 removed, 71 modified
 - Base Items: 0 added, 0 removed, 36 modified
 
@@ -170,22 +170,6 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Vendor Prices Reduced By 0-10%
 </details>
 <details>
-<summary>Large Charm</summary>
-
-
-#### Life and Death
-- Base Item: cm2
-- Item Level: 55
-- Required Level: 55
-- Rarity: 2
-- Properties:
-  - +1 to All Skills
-  - +50-100% Chance Items Roll Magic or Better
-  - +50-100% Extra Gold from Monsters
-  - Charm Weight: 2
-  - Drain Life -6 (Per Character Level)
-</details>
-<details>
 <summary>Magic Bow Quiv</summary>
 
 
@@ -299,11 +283,6 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Gaiden's Loss
 - Gotterdamerung
 - Treachery's Allure
-</details>
-<details>
-<summary>Large Charm</summary>
-
-- Life & Death
 </details>
 <details>
 <summary>Pelt</summary>
@@ -677,7 +656,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 
 #### Atma's Scarab
-- Base Item: amu
+- Base Item: Amulet
 - Properties:
   - Changed:
     - +50-100% Chance Items Roll Magic or Better (was +15-30%)
@@ -692,7 +671,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - Attacker Takes Damage of 5
 
 #### Crescent Moon
-- Base Item: amu
+- Base Item: Amulet
 - Item Level: 60 (was 68)
 - Properties:
   - Changed:
@@ -704,15 +683,15 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +4 to Light Radius
 
 #### Cryptking
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 5 (was 6)
 
 #### Eye of Kahn
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 7 (was 9)
 
 #### Highlord's Wrath
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 5)
 - Properties:
   - Changed:
@@ -720,7 +699,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - Adds 1-120 Weapon Lightning Damage (was 1-30)
 
 #### Mara's Kaleidoscope
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 5)
 - Properties:
   - Added:
@@ -732,7 +711,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +5 to Vitality
 
 #### Metalgrid
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 7 (was 2)
 - Properties:
   - Added:
@@ -742,20 +721,20 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - Level 22 Iron Golem (11 Charges)
 
 #### Nokozan Relic
-- Base Item: amu
+- Base Item: Amulet
 - Item Level: 1 (was 14)
 - Rarity: 7 (was 20)
 
 #### Psyche Shroud
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 7 (was 9)
 
 #### Rat Lord's Curse
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 5 (was 6)
 
 #### Saracen's Chance
-- Base Item: amu
+- Base Item: Amulet
 - Item Level: 45 (was 55)
 - Required Level: 55 (was 47)
 - Properties:
@@ -770,11 +749,11 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - 10% Chance to cast level 2 Iron Maiden when struck
 
 #### Sequence of Seasons
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 5 (was 6)
 
 #### Sigil of Hope
-- Base Item: amu
+- Base Item: Amulet
 - Properties:
   - Changed:
     - +3-5% to All Maximum Resistances (was +5%)
@@ -785,20 +764,20 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +25% Bonus to Attack Rating
 
 #### The Cat's Eye
-- Base Item: amu
+- Base Item: Amulet
 - Item Level: 50 (was 58)
 
 #### The Eye of Etlich
-- Base Item: amu
+- Base Item: Amulet
 - Item Level: 1 (was 20)
 
 #### The Mahim-Oak Curio
-- Base Item: amu
+- Base Item: Amulet
 - Item Level: 12 (was 34)
 - Rarity: 7 (was 10)
 
 #### The Rising Sun
-- Base Item: amu
+- Base Item: Amulet
 - Item Level: 60 (was 73)
 - Properties:
   - Changed:
@@ -4254,11 +4233,11 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 
 #### Nightshade
-- Base Item: cm3
+- Base Item: Grand Charm
 - Rarity: 2 (was 5)
 
 #### Web of Wyrd
-- Base Item: cm3
+- Base Item: Grand Charm
 - Properties:
   - Changed:
     - +10-15% to Vitality (was +15)
@@ -5736,30 +5715,30 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 
 #### Adamantine Facet
-- Base Item: jew
+- Base Item: Jewel
 - Properties:
   - Changed:
     - Magic Damage Reduced By 3-6 (was 8-10)
     - Physical Damage Reduced By 3-6 (was 8-12)
 
 #### Autumn Facet
-- Base Item: jew
+- Base Item: Jewel
 - Properties:
   - Removed:
     - Adds 37 Weapon Poison Damage over 2 seconds
 
 #### Diamond Facet
-- Base Item: jew
+- Base Item: Jewel
 - Properties:
   - Changed:
     - +5-10% to All Resistances (was +12-15%)
 
 #### Emerald Facet
-- Base Item: jew
+- Base Item: Jewel
 - Rarity: 2 (was 5)
 
 #### Heaven Facet
-- Base Item: jew
+- Base Item: Jewel
 - Properties:
   - Added:
     - +25 to Life
@@ -5769,7 +5748,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +5% Increased Maximum Mana
 
 #### Jade Facet
-- Base Item: jew
+- Base Item: Jewel
 - Rarity: 2 (was 5)
 - Properties:
   - Changed:
@@ -5782,15 +5761,15 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +5-8% Chance of Crushing Blow
 
 #### Quartz Facet
-- Base Item: jew
+- Base Item: Jewel
 - Rarity: 2 (was 5)
 
 #### Sapphire Facet
-- Base Item: jew
+- Base Item: Jewel
 - Rarity: 2 (was 1)
 
 #### Spinel Facet
-- Base Item: jew
+- Base Item: Jewel
 - Rarity: 2 (was 1)
 - Properties:
   - Added:
@@ -5800,7 +5779,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +5-8% Piercing Attack
 
 #### Star Facet
-- Base Item: jew
+- Base Item: Jewel
 - Properties:
   - Changed:
     - +45-50% Enhanced Weapon Damage (was +40%)
@@ -5810,7 +5789,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +15 to Maximum Weapon Damage
 
 #### Tiger Eye
-- Base Item: jew
+- Base Item: Jewel
 - Rarity: 1 (was 5)
 - Properties:
   - Changed:
@@ -5821,11 +5800,11 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +5-8% Deadly Strike
 
 #### Topaz Facet
-- Base Item: jew
+- Base Item: Jewel
 - Rarity: 2 (was 5)
 
 #### Toxic Facet
-- Base Item: jew
+- Base Item: Jewel
 - Properties:
   - Removed:
     - Adds 37 Weapon Poison Damage over 2 seconds
@@ -6141,8 +6120,20 @@ dateCreated: 2025-11-24T11:50:40.542Z
 <summary>Large Charm</summary>
 
 
+#### Life and Death
+- Base Item: Large Charm
+- Rarity: 2 (was 3)
+- Properties:
+  - Changed:
+    - +50-100% Chance Items Roll Magic or Better (was +30%)
+    - +50-100% Extra Gold from Monsters (was +50-75%)
+  - Added:
+    - Drain Life -6 (Per Character Level)
+  - Removed:
+    - Attacker Takes Damage of 50-100
+
 #### Ogre King's Bowl
-- Base Item: cm2
+- Base Item: Large Charm
 - Properties:
   - Added:
     - +20% to Strength
@@ -6150,13 +6141,13 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - Replenish Life +8-12
 
 #### Throne of Power
-- Base Item: cm2
+- Base Item: Large Charm
 - Properties:
   - Changed:
     - +50 to Maximum Weapon Damage (was +10-15)
 
 #### Valknut
-- Base Item: cm2
+- Base Item: Large Charm
 - Rarity: 3 (was 1)
 - Properties:
   - Changed:
@@ -7584,7 +7575,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 
 #### Bul-Kathos' Wedding Band
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 50 (was 66)
 - Rarity: 3 (was 1)
 - Properties:
@@ -7594,7 +7585,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +0.5 to Maximum Weapon Damage (Per Character Level)
 
 #### Carrion Wind
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 5 (was 3)
 - Properties:
   - Changed:
@@ -7611,12 +7602,12 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - Level 21 Poison Creeper (15 Charges)
 
 #### Constricting Ring
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 90 (was 95)
 - Rarity: 2 (was 1)
 
 #### Dwarf Star
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 45 (was 53)
 - Rarity: 5 (was 10)
 - Properties:
@@ -7625,14 +7616,14 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +10-15% Fire Damage Absorbed (was +15%)
 
 #### Elven Heartband
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 7 (was 8)
 - Properties:
   - Changed:
     - +5% to Experience Gained (was +3-5%)
 
 #### Faerie Ring
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 2 (was 1)
 - Properties:
   - Changed:
@@ -7644,12 +7635,12 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +7 to Light Radius
 
 #### Golem's Might
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 12 (was 24)
 - Rarity: 7 (was 6)
 
 #### Jackal's Laughter
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 70 (was 64)
 - Required Level: 75 (was 64)
 - Rarity: 2 (was 3)
@@ -7660,7 +7651,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +3-5% Mana stolen per hit (was +7-8%)
 
 #### Knell of Discord
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 1 (was 2)
 - Required Level: 24 (was 20)
 - Rarity: 7 (was 8)
@@ -7675,12 +7666,12 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - Slows Target by 15%
 
 #### Manald Heal
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 1 (was 20)
 - Rarity: 7 (was 15)
 
 #### Nagelring
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 12 (was 10)
 - Required Level: 30 (was 7)
 - Rarity: 7 (was 15)
@@ -7689,7 +7680,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +1 to Deadly Treasures (oskill)
 
 #### Nameless Fear
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 7 (was 9)
 - Properties:
   - Changed:
@@ -7697,14 +7688,14 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +20% Hits Cause Monsters to Flee (was +35%)
 
 #### Nature's Peace
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 70 (was 77)
 - Properties:
   - Changed:
     - +5% Physical Damage Reduction (was +3-5%)
 
 #### Plantar Enlightenment
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 60 (was 23)
 - Required Level: 60 (was 23)
 - Properties:
@@ -7713,7 +7704,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - Vendor Prices Reduced By 3-5% (was 8-10%)
 
 #### Raven Frost
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 45 (was 53)
 - Rarity: 5 (was 10)
 - Properties:
@@ -7721,27 +7712,27 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - Adds 25-50 Weapon Cold Damage (was 15-45)
 
 #### Ring of Engagement
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 7 (was 9)
 
 #### The Stone of Jordan
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 2 (was 1)
 
 #### Thief of Dreams
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 2 (was 5)
 - Properties:
   - Changed:
     - +50% Chance Items Roll Magic or Better (was +33-50%)
 
 #### Vampiric Regeneration
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 1 (was 8)
 - Rarity: 5 (was 7)
 
 #### Wisp Projector
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 5 (was 1)
 - Properties:
   - Added:
@@ -8457,15 +8448,15 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 
 #### Autumn's Avatar
-- Base Item: cm1
+- Base Item: Small Charm
 - Rarity: 3 (was 5)
 
 #### Peacemaker
-- Base Item: cm1
+- Base Item: Small Charm
 - Rarity: 3 (was 5)
 
 #### Remembrance of Glory
-- Base Item: cm1
+- Base Item: Small Charm
 - Rarity: 1 (was 4)
 </details>
 <details>
@@ -11131,10 +11122,12 @@ dateCreated: 2025-11-24T11:50:40.542Z
 <summary>Deus et Diabolus</summary>
 
 - Base: Level: 1
-- Partial Set Bonuses:
+
+#### Partial Set Bonuses
   - +10% Fire Damage Absorbed
   - +2 to War Cry (Barbarian Only)
-- Full Set Bonuses:
+
+#### Full Set Bonuses
   - +100% Mana Regeneration
   - +15% Physical Damage Reduction
   - +3 to All Skills
@@ -11193,54 +11186,44 @@ Items:
 <details>
 <summary>Aiel Shieldmaiden</summary>
 
-Items Modified:
 
 #### Chiad's Halo
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 1 (was 2)
 
 </details>
 <details>
 <summary>Amaunator's Peace</summary>
 
-Items Modified:
 
 #### Holy Ring of Amaunator
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 3 (was 5)
 
 </details>
 <details>
 <summary>Angelic Raiment</summary>
 
-Items Modified:
 
 #### Angelic Wings
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 7)
 
 </details>
 <details>
 <summary>Arcanna's Tricks</summary>
 
-Items Modified:
 
 #### Arcanna's Sign
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 1)
-
-</details>
-<details>
-<summary>Berserker's Arsenal</summary>
-
-- Full Set Bonuses:
-  - Changed: Adds 0 Weapon Poison Damage over 0 seconds (was 5-10)
 
 </details>
 <details>
 <summary>Bul-Kathos' Children</summary>
 
-- Full Set Bonuses:
+
+#### Full Set Bonuses
   - Changed: +25% Deadly Strike (was +20%)
   - Changed: +300% Damage to Demons (was +200%)
   - Changed: +300% Damage to Undead (was +200%)
@@ -11248,7 +11231,6 @@ Items Modified:
   - Added: Adds 150-250 Weapon Damage
   - Removed: +200 Defense
   - Removed: Adds 200 Weapon Fire Damage
-Items Modified:
 
 #### Bul-Kathos' Sacred Charge
 - Base Item: Colossus Blade [E]
@@ -11288,61 +11270,55 @@ Items Modified:
 <details>
 <summary>Cathan's Traps</summary>
 
-Items Modified:
 
 #### Cathan's Sigil
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 7)
 
 #### Cathan's Seal
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 3 (was 7)
 
 </details>
 <details>
 <summary>Celestial Hierarchy</summary>
 
-Items Modified:
 
 #### Seraphim
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 1 (was 5)
 
 </details>
 <details>
 <summary>Chaos Energy</summary>
 
-Items Modified:
 
 #### Soulstone of Power
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 1 (was 2)
 
 </details>
 <details>
 <summary>Civerb's Vestments</summary>
 
-Items Modified:
 
 #### Civerb's Icon
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 7)
 
 </details>
 <details>
 <summary>Corruption Coils</summary>
 
-Items Modified:
 
 #### Temptation's Death
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 1)
 
 </details>
 <details>
 <summary>Darkmage's Astral Projection</summary>
 
-Items Modified:
 
 #### Darkmage's Celestial Fury
 - Base Item: Shako [E] (was Sky Spirit [E])
@@ -11351,20 +11327,18 @@ Items Modified:
 <details>
 <summary>Darque Necromancy</summary>
 
-Items Modified:
 
 #### Legacy in Blood
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 2 (was 4)
 
 </details>
 <details>
 <summary>Dragon Reborn</summary>
 
-Items Modified:
 
 #### Ter'Angreal Ring
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 1 (was 3)
 
 </details>
@@ -11374,7 +11348,7 @@ Items Modified:
 Items Added:
 
 #### Tyrael's Grief
-- Base Item: rin
+- Base Item: Ring
 - Item Level: 45
 - Required Level: 45
 - Rarity: 3
@@ -11384,47 +11358,44 @@ Items Added:
   - +45-70% Mana Regeneration
   - Replenish Life +3-5
 - Items Removed:
-  - Tyrial's Grief (rin)
+  - Tyrial's Grief (Ring)
     - Base: Enabled: Enabled, Item Level: 45, Required Level: 45, Rarity: 3
     - Properties:
       - +20% Faster Cast Rate
       - +25-35% Chance Items Roll Magic or Better
       - +45-70% Mana Regeneration
       - Replenish Life +3-5
-Items Modified:
 
 #### Redemption Denied
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 1 (was 3)
 
 </details>
 <details>
 <summary>Gweibret's Rule</summary>
 
-Items Modified:
 
 #### Dominion's Thesis
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 2 (was 3)
 
 </details>
 <details>
 <summary>Hades' Underworld</summary>
 
-Items Modified:
 
 #### Vampire's Crusade
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 3 (was 5)
 
 </details>
 <details>
 <summary>Immortal King</summary>
 
-- Full Set Bonuses:
+
+#### Full Set Bonuses
   - Added: +1 to Kings Trinity (oskill)
   - Added: 10% Chance to cast level 1 Kings Charisma on striking
-Items Modified:
 
 #### Immortal King's Detail
 - Base Item: War Belt [X]
@@ -11494,27 +11465,24 @@ Items Modified:
 <details>
 <summary>Insight of Brother Laz</summary>
 
-Items Modified:
 
 #### Brother Laz' Holy Symbol
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 5)
 
 </details>
 <details>
 <summary>Iratha's Finery</summary>
 
-Items Modified:
 
 #### Iratha's Collar
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 7)
 
 </details>
 <details>
 <summary>Knight's Gallantry</summary>
 
-Items Modified:
 
 #### Baton of Intrepidity
 - Base Item: Truncheon [E]
@@ -11526,41 +11494,37 @@ Items Modified:
 <details>
 <summary>Kraj's Memorial</summary>
 
-Items Modified:
 
 #### Eternal Sleep
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 1 (was 2)
 
 </details>
 <details>
 <summary>Lords of Hell</summary>
 
-Items Modified:
 
 #### Baal's Cryptic Amulet
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 1 (was 3)
 
 #### Diablo's Soulstone Ring
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 1 (was 3)
 
 </details>
 <details>
 <summary>Mishy's Avatar</summary>
 
-Items Modified:
 
 #### Warder's Bond
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 3 (was 5)
 
 </details>
 <details>
 <summary>Myhrginoc's Warbreeder</summary>
 
-Items Modified:
 
 #### Myhrginoc's Headhunter
 - Base Item: Champion Axe [E]
@@ -11572,7 +11536,6 @@ Items Modified:
 <details>
 <summary>Narrow Path Between Light and Darkness</summary>
 
-Items Modified:
 
 #### Char's Hand of Blessed Light
 - Base Item: Mighty Scepter [E]
@@ -11586,17 +11549,15 @@ Items Modified:
 <details>
 <summary>Nature's Grove</summary>
 
-Items Modified:
 
 #### Peace Ring
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 3 (was 5)
 
 </details>
 <details>
 <summary>Salander's Tirade</summary>
 
-Items Modified:
 
 #### Lancer's Reach
 - Base Item: Partizan [X]
@@ -11608,42 +11569,41 @@ Items Modified:
 <details>
 <summary>Sheena's Grace</summary>
 
-Items Modified:
 
 #### Sheena's Choker
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 5)
 
 </details>
 <details>
 <summary>Snowmane's Jewelry</summary>
 
-Items Modified:
 
 #### Diamond Necklace
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 4)
 
 #### Ruby Ring
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 3 (was 4)
 
 </details>
 <details>
 <summary>Tal Rasha's Wrappings</summary>
 
-- Partial Set Bonuses:
+
+#### Partial Set Bonuses
   - Changed: +100% Chance Items Roll Magic or Better (was +65%)
   - Changed: Replenish Life +50 (was +10)
-- Full Set Bonuses:
+
+#### Full Set Bonuses
   - Changed: +200 Defense (was +150)
   - Added: +20% to All Elemental Skill Damage
   - Added: -10% to All Enemy Elemental Resistances
   - Removed: +50 Defense vs. Missile
-Items Modified:
 
 #### Tal Rasha's Adjudication
-- Base Item: amu
+- Base Item: Amulet
 - Properties:
   - Changed:
     - +50 to Mana (was +42)
@@ -11712,52 +11672,49 @@ Items Modified:
 <details>
 <summary>Tancred's Battlegear</summary>
 
-Items Modified:
 
 #### Tancred's Weird
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 7)
 
 </details>
 <details>
 <summary>The Disciple</summary>
 
-Items Modified:
 
 #### Telling of Beads
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 2 (was 1)
 
 </details>
 <details>
 <summary>Treasure Hunter</summary>
 
-- Partial Set Bonuses:
+
+#### Partial Set Bonuses
   - Changed: +100% Chance Items Roll Magic or Better (was +25%)
-- Full Set Bonuses:
+
+#### Full Set Bonuses
   - Changed: +3 to All Skills (was +1)
   - Changed: +300% Chance Items Roll Magic or Better (was +200%)
-Items Modified:
 
 #### Kingpin's Signet
-- Base Item: rin
+- Base Item: Ring
 - Rarity: 3 (was 4)
 
 </details>
 <details>
 <summary>Vidala's Rig</summary>
 
-Items Modified:
 
 #### Vidala's Snare
-- Base Item: amu
+- Base Item: Amulet
 - Rarity: 3 (was 7)
 
 </details>
 <details>
 <summary>Zhoulomcrist's Dread</summary>
 
-Items Modified:
 
 #### Darkest Wishes
 - Base Item: Ettin Axe [E]

@@ -2,7 +2,7 @@
 title: Testing
 description: Testing
 published: false
-date: 2025-12-06T06:34:28.928Z
+date: 2025-12-06T07:25:37.100Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-24T11:50:40.542Z
@@ -11121,7 +11121,6 @@ dateCreated: 2025-11-24T11:50:40.542Z
 <details>
 <summary>Deus et Diabolus</summary>
 
-- Base: Level: 1
 
 #### Partial Set Bonuses
   - +10% Fire Damage Absorbed
@@ -11131,7 +11130,6 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - +100% Mana Regeneration
   - +15% Physical Damage Reduction
   - +3 to All Skills
-Items:
 
 #### Grasp of Lament
 - Base Item: Demonhide Gloves [X]

@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2025-12-26T23:14:21.757Z
+date: 2026-01-12T16:45:11.182Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -74,22 +74,6 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <p>As mentioned above, whenever you install or update the mod any modifications you've made (whether manually or via the Launcher) will need to be redone.</p>
 <p>If you encounter any issues, please post in the <code>installation-help</code> channel on discord.</p>
 <p>&nbsp;</p>
-<h3>Fix Unavailable Stash Tabs (Launcher)</h3>
-<p>To install extra stash tabs follow the steps below</p>
-<p><mark class="pen-green"><strong>1.&nbsp;</strong></mark> Press <code>3</code> &nbsp;and hit enter to go to the Configuration Menu</p>
-<figure class="image image_resized" style="width:46.36%;"><img src="/installguides/extra-stash1.png"></figure>
-<p>&nbsp;</p>
-<p><mark class="pen-green"><strong>2.&nbsp;</strong></mark> Press <code>1</code> &nbsp;to select the <strong>Expand Shared Stash</strong> modification option.</p>
-<figure class="image image_resized" style="width:46.29%;"><img src="/installguides/extra-stash2.png"></figure>
-<p><mark class="pen-green"><strong>3.&nbsp;</strong></mark> Press <code>1</code> &nbsp;to select Fix Unavailable Shared Tabs if you are unable to use the last 4 shared tabs.<mark class="pen-green"><strong>&nbsp;</strong></mark></p>
-<figure class="image"><img src="/installguides/stash_selection.png"></figure>
-<p>&nbsp;</p>
-<p><mark class="pen-green"><strong>4.&nbsp;</strong></mark> You will be prompted to verify your shared stash is empty. &nbsp;Press <code>Y</code> &nbsp;to install the expanded stash.</p>
-<figure class="image image_resized" style="width:46.15%;"><img src="/installguides/extra-stash4-newinstall.png"></figure>
-<p>&nbsp;</p>
-<p><mark class="pen-green"><strong>5.&nbsp;</strong></mark> You now have more stash tabs. Enjoy.</p>
-<figure class="image image_resized" style="width:45.92%;"><img src="/installguides/extra-stash5-newinstall.png"></figure>
-<p>&nbsp;</p>
 <h2>Manual Mod Installation</h2>
 <p>Instructions to install the Reimagined mod manually without using any launchers or assistive programs.</p>
 <p><mark class="pen-green">Step 1.</mark> Download the latest Reimagined version from <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files">Nexus Mods</a>.</p>
@@ -159,50 +143,13 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <figure class="image"><img src="/installguides/step_3_2_skill_overwrite.png"></figure>
 <p>&nbsp;</p>
 <h2>Fix Unavailable Stash Tabs (Manual Fix)</h2>
-<p><mark class="pen-green">Step 1:</mark> Download this file. <a href="/installguides/expand_stash_2.1.0.zip">Expand Stash 2.1.0</a></p>
-<p><mark class="pen-green">Step 2:</mark> Locate the file on your PC.</p>
-<figure class="image"><img src="/installguides/1_locate_zip.png"></figure>
+<p><strong><u>Note:&nbsp;</u></strong><br>A new patch by Blizzard on 12.10.2025 has broken the support for shared stash tabs 4,5,6, and 7 and they will only mirror your personal tab.&nbsp;If you had items in these stash the items are still there. The D2R update did not alter the saves.<br><br>You can attempt to use the <a href="https://discord.com/channels/898562996715012096/898579552798916669/1353999892384841740">Reimagined GoMule</a> fork to grab items off of the last 4 tabs and move them/mule them, but some properties break the program currently and we need to look into and fix it but I personally don't have time to until this weekend.&nbsp;<br><br>You can also try Delegus' fork of KPA's fork of the <a href="https://delegus.github.io/d2-stash-organizer/">Stash Organizer</a> program to move items from those tabs onto mules or shared 1-3 but it won't load stash/character files that contain items we've renamed since you found it.&nbsp;</p>
+<p>An in-game method has been developed by Bonesy from D2R Modding via a script that separates the tabs at the stash file level allowing you to mule the items off of the separated tabs. He posted a <a href="https://www.youtube.com/watch?v=vCZa4vmJUbw">video on YouTube</a> and goes into extensive detail on how his script works, I'm not going to rehash it all here, but suffice to say this works for any player on any mod or vanilla, as long as you follow the directions.</p>
 <p>&nbsp;</p>
-<p><mark class="pen-green">Step 3:</mark> Extract the .zip file and open the folder, you will see these two files inside.</p>
-<figure class="image"><img src="/installguides/2_extracted_files.png"></figure>
+<p><mark class="pen-green"><strong><u>To Remove the tabs:</u></strong></mark><br><mark class="pen-green">Step 1:</mark> Download this file from the discord and follow the isntruction steps in the link. <a href="https://discord.com/channels/898562996715012096/910921404571070515/1454763116771414143">Expand Stash 2.1.0</a></p>
+<p><strong>Install</strong>: Drop the mods folder from the zip into your root D2R directory and overwrite the 6 files when prompted. If you are not prompted then you dropped it in the wrong location. Either it nested into the mods folder, went into another folder it should not have, or you don't actually have the mod installed</p>
 <p>&nbsp;</p>
-<p><mark class="pen-green">Step 4:</mark> Open the read me and give it a glance.</p>
-<ul>
-  <li><mark class="pen-red">Make sure to mule all items and gold out of your “Shared” tabs that you wish to keep.</mark></li>
-</ul>
-<figure class="image"><img src="/installguides/3_readme_reading.png"></figure>
 <p>&nbsp;</p>
-<p><mark class="pen-green">Step 5:</mark> Locate your saved game files directory.</p>
-<ul>
-  <li><code>C:\Users\lemin\Saved Games\Diablo II Resurrected</code> is the default location in Windows but yours may be in a different spot.</li>
-</ul>
-<figure class="image"><img src="/installguides/4_save_location.png"></figure>
-<ul>
-  <li><mark class="pen-green">Step 5A &amp; B:</mark> If you are unable to find the location, open <code>This PC,</code> click <code>Search This PC</code> at the top right, &nbsp;and type <code>*.d2i</code> and press enter. It will likely take a while to find something and there are going to be multiples.</li>
-</ul>
-<figure class="image"><img src="/installguides/4ab_save_location_search.png"></figure>
-<ul>
-  <li><mark class="pen-green">Step 5C:</mark> You are looking for this file with this path. (Softcore or Hardcore)</li>
-</ul>
-<figure class="image"><img src="/installguides/4c_save_location_search.png"></figure>
-<ul>
-  <li><mark class="pen-green">Step 5D:</mark> Right click the .d2i file and click “Open File Location” Note: W11 users may need to click “Show More” first.</li>
-</ul>
-<figure class="image"><img src="/installguides/4d_save_location_search.png"></figure>
-<ul>
-  <li><mark class="pen-green">Step 5E:</mark> Then go up 2 folders.</li>
-</ul>
-<figure class="image"><img src="/installguides/4da_save_location_search.png"></figure>
-<p>&nbsp;</p>
-<p><mark class="pen-green">Step 6</mark>: We should be in the vanilla D2R character save file location and you should see a <code>mods</code> folder as well as your offline characters for vanilla if you have any.</p>
-<figure class="image"><img src="/installguides/4_save_location.png"></figure>
-<p>&nbsp;</p>
-<p><mark class="pen-green">Step 7</mark>: Drag the <code>mods</code> folder from the <code>unzipped Expand Stash 2.1.0 folder</code> into your vanilla character saves folder and drop it on anything that is not another folder.</p>
-<figure class="image"><img src="/installguides/5_drag_drop.png"></figure>
-<p>&nbsp;</p>
-<p><mark class="pen-green">Step 8:</mark> If you have already launched D2R Reimagined then it is going to ask you to overwrite/replace files. Do so.</p>
-<figure class="image"><img src="/installguides/6_overwrite.png"></figure>
-<p><mark class="pen-green">Step 9:</mark> Launch the game with your preferred method and check if the tabs are now useable. If they are not then the file was dropped into the wrong location or inside of the existing mods folder and will need to be placed in the right location.</p>
 <p>&nbsp;</p>
 <h2>Crashing Frequently? Tips to Troubleshoot</h2>
 <p>Here are some common resolutions to frequent crashing we've encountered in bug reports across the Discord, Nexus and Reddit.</p>

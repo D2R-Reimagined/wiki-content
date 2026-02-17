@@ -1,20 +1,18 @@
 ---
-title: Testing
-description: Testing
+title: D2RR 3.0.0 Item Changes
+description: A collapsed list of item changes from 2.1.2 to 3.0.0
 published: true
-date: 2026-02-15T09:13:08.054Z
+date: 2026-02-17T11:52:37.596Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-24T11:50:40.542Z
 ---
 
-# Patch Notes
-
 ## Summary
-- Uniques: 15 added, 8 removed, 1255 modified
-- Sets: 1 added, 0 removed, 35 modified
-- Runewords: 0 added, 0 removed, 71 modified
-- Base Items: 0 added, 0 removed, 36 modified
+- Uniques: 45 added, 8 removed, 1264 modified
+- Sets: 6 added, 1 removed, 59 modified
+- Runewords: 7 added, 2 removed, 79 modified
+- Base Items: 15 added, 0 removed, 36 modified
 
 ## Uniques
 
@@ -22,6 +20,23 @@ dateCreated: 2025-11-24T11:50:40.542Z
 <summary>Show Unique Changes</summary>
 
 ### Added
+<details>
+<summary>Amulet</summary>
+
+
+#### Entropy Locket
+- Base Item: Amulet
+- Item Level: 60
+- Required Level: 54
+- Rarity: 1
+- Properties:
+  - +10-15% Increased Maximum Mana
+  - +25-40% Lightning Resistance
+  - +5-10% Faster Cast Rate
+  - +5-10% to Magic Skill Damage
+  - 4% Chance to cast level 19 Miasma Chains on striking
+  - Magic Damage Reduced By 8-12
+</details>
 <details>
 <summary>Belt</summary>
 
@@ -43,6 +58,20 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - 15% Chance to cast level 25 Fist Of The Heavens on striking
   - Adds 1-100 Weapon Lightning Damage
 
+#### Gheed's Wager
+- Base Item: Troll Belt [E]
+- Item Level: 79
+- Required Level: 71
+- Rarity: 1
+- Properties:
+  - +10-20% Faster Cast Rate
+  - +10-20% Faster Hit Recovery
+  - +10-20% Faster Run/Walk Speed
+  - +44-75% Extra Gold from Monsters
+  - +5-15% to All Resistances
+  - +90-150% Enhanced Defense
+  - -3-7% to Enemy Magic Resistance
+
 #### The Saboteur's Bandolier
 - Base Item: Mithril Coil [E]
 - Item Level: 81
@@ -50,10 +79,9 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Rarity: 2
 - Properties:
   - +1 to Max Traps
-  - +10% to Fire Skill Damage
-  - +10% to Lightning Skill Damage
   - +15-20% Increased Attack Speed
-  - +2 Random Assassin Skill
+  - +3 Random Assassin Skill
+  - +5% to All Elemental Skill Damage
   - Requirements Increased By 50-75%
 </details>
 <details>
@@ -72,6 +100,19 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - +20% Faster Hit Recovery
   - +20% Faster Run/Walk Speed
   - +50% Extra Gold from Monsters
+
+#### Wraithstep
+- Base Item: Mirrored Boots [E]
+- Item Level: 73
+- Required Level: 67
+- Rarity: 2
+- Properties:
+  - +10-15 to Dexterity
+  - +10-15 to Energy
+  - +20% Faster Hit Recovery
+  - +30% Faster Run/Walk Speed
+  - +40-60 Defense
+  - {"group-properties":{"skilltab-war":[{"PropertyString":"+1 Random Skill Tab (Warlock Only)","Index":0}]}}
 </details>
 <details>
 <summary>Bow</summary>
@@ -106,13 +147,316 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Adds 100-300 Weapon Fire Damage
 </details>
 <details>
+<summary>Colossal Jewel</summary>
+
+
+#### Defender's Bile
+- Base Item: cjw
+- Item Level: 110
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - +15-35% Chance Items Roll Magic or Better
+  - +25-50% Extra Gold from Monsters
+  - +3-5% to Experience Gained
+  - +5-10% to Poison Skill Damage
+  - -5-10% to Enemy Poison Resistance
+  - 1% Chance to cast level 25 Bone Armor when struck
+  - Adds 96 Weapon Poison Damage over 1 seconds
+
+#### Defender's Fire
+- Base Item: cjw
+- Item Level: 110
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - +15-35% Chance Items Roll Magic or Better
+  - +25-50% Extra Gold from Monsters
+  - +3-5% to Experience Gained
+  - +5-10% to Fire Skill Damage
+  - -5-10% to Enemy Fire Resistance
+  - 1% Chance to cast level 25 Blaze when struck
+  - Adds 20-60 Weapon Fire Damage
+
+#### Guardian's Light
+- Base Item: cjw
+- Item Level: 110
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - +15-35% Chance Items Roll Magic or Better
+  - +25-50% Extra Gold from Monsters
+  - +3-5% to Experience Gained
+  - +5-10% to Magic Skill Damage
+  - -5-10% to Enemy Magic Resistance
+  - 1% Chance to cast level 25 Psychic Ward when struck
+  - Adds 15-35 Weapon Magic Damage
+
+#### Guardian's Thunder
+- Base Item: cjw
+- Item Level: 110
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - +15-35% Chance Items Roll Magic or Better
+  - +25-50% Extra Gold from Monsters
+  - +3-5% to Experience Gained
+  - +5-10% to Lightning Skill Damage
+  - -5-10% to Enemy Lightning Resistance
+  - 1% Chance to cast level 25 Cyclone Armor when struck
+  - Adds 1-75 Weapon Lightning Damage
+
+#### Protector's Frost
+- Base Item: cjw
+- Item Level: 110
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - +15-35% Chance Items Roll Magic or Better
+  - +25-50% Extra Gold from Monsters
+  - +3-5% to Experience Gained
+  - +5-10% to Cold Skill Damage
+  - -5-10% to Enemy Cold Resistance
+  - 1% Chance to cast level 25 Frozen Armor when struck
+  - Adds 10-30 Weapon Cold Damage
+
+#### Protector's Stone
+- Base Item: cjw
+- Item Level: 110
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - +15-35% Chance Items Roll Magic or Better
+  - +25-50% Extra Gold from Monsters
+  - +3-5% to Experience Gained
+  - +30-50% Enhanced Weapon Damage
+  - -5-10% to Enemy Physical Damage Resistance
+  - 1% Chance to cast level 15 Fade when struck
+  - Adds 10-30 Weapon Damage
+</details>
+<details>
+<summary>Crafted Sunder Charm</summary>
+
+
+#### Crafted Black Cleft
+- Base Item: cs2
+- Item Level: 69
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - -65 to -45% Magic Resistance
+  - Monster Magic Immunity is Sundered
+  - {"group-properties":{"Mystical-Affix1":[{"PropertyString":"+10-15% to Magic Skill Damage","Index":0},{"PropertyString":"-5-10% to Enemy Magic Resistance","Index":1}]}}
+  - {"group-properties":{"Mystical-Affix2":[{"PropertyString":"+14-25% Chance Items Roll Magic or Better","Index":0},{"PropertyString":"+20-55% Extra Gold from Monsters","Index":1}]}}
+  - {"group-properties":{"Mystical-Affix3":[{"PropertyString":"+10-65 to Life","Index":0},{"PropertyString":"+10-75 to Mana","Index":1}]}}
+  - {"group-properties":{"Mystical-Affix4":[{"PropertyString":"+5-10% Faster Run/Walk Speed","Index":0},{"PropertyString":"+12-24% Faster Hit Recovery","Index":1},{"PropertyString":"+3-8 to all Attributes","Index":2}]}}
+  - {"group-properties":{"Mystical-Affix6":[{"PropertyString":"Magic Damage Reduced By 5-10","Index":0},{"PropertyString":"Physical Damage Reduced By 5-10","Index":1}]}}
+
+#### Crafted Bone Break
+- Base Item: cs2
+- Item Level: 69
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - -20 to -10% Physical Damage Reduction
+  - Monster Physical Immunity is Sundered
+  - {"group-properties":{"Breaching-Affix1":[{"PropertyString":"+75-100% Enhanced Weapon Damage","Index":0},{"PropertyString":"-5-10% to Enemy Physical Damage Resistance","Index":1}]}}
+  - {"group-properties":{"Breaching-Affix2":[{"PropertyString":"+14-25% Chance Items Roll Magic or Better","Index":0},{"PropertyString":"+20-55% Extra Gold from Monsters","Index":1}]}}
+  - {"group-properties":{"Breaching-Affix3":[{"PropertyString":"+10-65 to Life","Index":0},{"PropertyString":"+10-75 to Mana","Index":1}]}}
+  - {"group-properties":{"Breaching-Affix4":[{"PropertyString":"+5-10% Faster Run/Walk Speed","Index":0},{"PropertyString":"+12-24% Faster Hit Recovery","Index":1},{"PropertyString":"+3-8 to all Attributes","Index":2}]}}
+  - {"group-properties":{"Breaching-Affix6":[{"PropertyString":"Magic Damage Reduced By 5-10","Index":0},{"PropertyString":"Physical Damage Reduced By 5-10","Index":1}]}}
+
+#### Crafted Cold Rupture
+- Base Item: cs2
+- Item Level: 69
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - -90 to -70% Cold Resistance
+  - Monster Cold Immunity is Sundered
+  - {"group-properties":{"Gelid-Affix1":[{"PropertyString":"+5-15% to Cold Skill Damage","Index":0},{"PropertyString":"-5-10% to Enemy Cold Resistance","Index":1}]}}
+  - {"group-properties":{"Gelid-Affix2":[{"PropertyString":"+14-25% Chance Items Roll Magic or Better","Index":0},{"PropertyString":"+20-55% Extra Gold from Monsters","Index":1}]}}
+  - {"group-properties":{"Gelid-Affix3":[{"PropertyString":"+10-65 to Life","Index":0},{"PropertyString":"+10-75 to Mana","Index":1}]}}
+  - {"group-properties":{"Gelid-Affix4":[{"PropertyString":"+5-10% Faster Run/Walk Speed","Index":0},{"PropertyString":"+12-24% Faster Hit Recovery","Index":1},{"PropertyString":"+3-8 to all Attributes","Index":2}]}}
+  - {"group-properties":{"Gelid-Affix6":[{"PropertyString":"Magic Damage Reduced By 5-10","Index":0},{"PropertyString":"Physical Damage Reduced By 5-10","Index":1}]}}
+
+#### Crafted Crack of the Heavens
+- Base Item: cs2
+- Item Level: 69
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - -90 to -70% Lightning Resistance
+  - Monster Lightning Immunity is Sundered
+  - {"group-properties":{"Magnetic-Affix1":[{"PropertyString":"+5-15% to Lightning Skill Damage","Index":0},{"PropertyString":"-5-10% to Enemy Lightning Resistance","Index":1}]}}
+  - {"group-properties":{"Magnetic-Affix2":[{"PropertyString":"+14-25% Chance Items Roll Magic or Better","Index":0},{"PropertyString":"+20-55% Extra Gold from Monsters","Index":1}]}}
+  - {"group-properties":{"Magnetic-Affix3":[{"PropertyString":"+10-65 to Life","Index":0},{"PropertyString":"+10-75 to Mana","Index":1}]}}
+  - {"group-properties":{"Magnetic-Affix4":[{"PropertyString":"+5-10% Faster Run/Walk Speed","Index":0},{"PropertyString":"+12-24% Faster Hit Recovery","Index":1},{"PropertyString":"+3-8 to all Attributes","Index":2}]}}
+  - {"group-properties":{"Magnetic-Affix6":[{"PropertyString":"Magic Damage Reduced By 5-10","Index":0},{"PropertyString":"Physical Damage Reduced By 5-10","Index":1}]}}
+
+#### Crafted Flame Rift
+- Base Item: cs2
+- Item Level: 69
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - -90 to -70% Fire Resistance
+  - Monster Fire Immunity is Sundered
+  - {"group-properties":{"Incendiary-Affix1":[{"PropertyString":"+5-15% to Fire Skill Damage","Index":0},{"PropertyString":"-5-10% to Enemy Fire Resistance","Index":1}]}}
+  - {"group-properties":{"Incendiary-Affix2":[{"PropertyString":"+14-25% Chance Items Roll Magic or Better","Index":0},{"PropertyString":"+20-55% Extra Gold from Monsters","Index":1}]}}
+  - {"group-properties":{"Incendiary-Affix3":[{"PropertyString":"+10-65 to Life","Index":0},{"PropertyString":"+10-75 to Mana","Index":1}]}}
+  - {"group-properties":{"Incendiary-Affix4":[{"PropertyString":"+5-10% Faster Run/Walk Speed","Index":0},{"PropertyString":"+12-24% Faster Hit Recovery","Index":1},{"PropertyString":"+3-8 to all Attributes","Index":2}]}}
+  - {"group-properties":{"Incendiary-Affix6":[{"PropertyString":"Magic Damage Reduced By 5-10","Index":0},{"PropertyString":"Physical Damage Reduced By 5-10","Index":1}]}}
+
+#### Crafted Rotting Fissure
+- Base Item: cs2
+- Item Level: 69
+- Required Level: 75
+- Rarity: 1
+- Properties:
+  - -90 to -70% Poison Resistance
+  - Monster Poison Immunity is Sundered
+  - {"group-properties":{"Virulent-Affix1":[{"PropertyString":"+5-15% to Poison Skill Damage","Index":0},{"PropertyString":"-5-10% to Enemy Poison Resistance","Index":1}]}}
+  - {"group-properties":{"Virulent-Affix2":[{"PropertyString":"+14-25% Chance Items Roll Magic or Better","Index":0},{"PropertyString":"+20-55% Extra Gold from Monsters","Index":1}]}}
+  - {"group-properties":{"Virulent-Affix3":[{"PropertyString":"+10-65 to Life","Index":0},{"PropertyString":"+10-75 to Mana","Index":1}]}}
+  - {"group-properties":{"Virulent-Affix4":[{"PropertyString":"+5-10% Faster Run/Walk Speed","Index":0},{"PropertyString":"+12-24% Faster Hit Recovery","Index":1},{"PropertyString":"+3-8 to all Attributes","Index":2}]}}
+  - {"group-properties":{"Virulent-Affix6":[{"PropertyString":"Magic Damage Reduced By 5-10","Index":0},{"PropertyString":"Physical Damage Reduced By 5-10","Index":1}]}}
+</details>
+<details>
+<summary>Grand Charm</summary>
+
+
+#### PreCrafted Black Cleft
+- Base Item: Grand Charm
+- Item Level: 69
+- Required Level: 75
+- Rarity: 2
+- Properties:
+  - -65% Magic Resistance
+  - Monster Magic Immunity is Sundered
+
+#### PreCrafted Bone Break
+- Base Item: Grand Charm
+- Item Level: 69
+- Required Level: 75
+- Rarity: 2
+- Properties:
+  - -20% Physical Damage Reduction
+  - Monster Physical Immunity is Sundered
+
+#### PreCrafted Cold Rupture
+- Base Item: Grand Charm
+- Item Level: 69
+- Required Level: 75
+- Rarity: 2
+- Properties:
+  - -90% Cold Resistance
+  - Monster Cold Immunity is Sundered
+
+#### PreCrafted Crack of the Heavens
+- Base Item: Grand Charm
+- Item Level: 69
+- Required Level: 75
+- Rarity: 2
+- Properties:
+  - -90% Lightning Resistance
+  - Monster Lightning Immunity is Sundered
+
+#### PreCrafted Flame Rift
+- Base Item: Grand Charm
+- Item Level: 69
+- Required Level: 75
+- Rarity: 2
+- Properties:
+  - -90% Fire Resistance
+  - Monster Fire Immunity is Sundered
+
+#### PreCrafted Rotting Fissure
+- Base Item: Grand Charm
+- Item Level: 69
+- Required Level: 75
+- Rarity: 2
+- Properties:
+  - -90% Poison Resistance
+  - Monster Poison Immunity is Sundered
+</details>
+<details>
+<summary>Grimoire</summary>
+
+
+#### Ars Al'Diablolos
+- Base Item: Blasphemous Grimoire [E]
+- Item Level: 85
+- Required Level: 80
+- Rarity: 1
+- Properties:
+  - +15-25% to Fire Skill Damage
+  - +170-200% Enhanced Defense
+  - +2 to Chaos Skills (Warlock Only)
+  - +20-30% Fire Resistance
+  - +25% Faster Cast Rate
+  - +3-5 to Apocalypse (Warlock Only)
+  - +5-10 to Light Radius
+  - +5-10 to Mana after each Kill
+  - 15% Chance to cast level 1 Terror when struck
+
+#### Ars Dul'Mephistos
+- Base Item: Occult Tome [E]
+- Item Level: 85
+- Required Level: 78
+- Rarity: 1
+- Properties:
+  - +10-25% Chance Items Roll Magic or Better
+  - +140-170% Enhanced Defense
+  - +2 to Warlock Skill Levels
+  - +20-30% Faster Cast Rate
+  - +30% Faster Hit Recovery
+  - +50-70% Bonus to Attack Rating
+  - +70-115% Enhanced Weapon Damage
+  - -10-20% to Enemy Magic Resistance
+  - 15% Chance to cast level 28 Blizzard when struck
+
+#### Ars Tor'Baalos
+- Base Item: Blasphemous Compendium [E]
+- Item Level: 85
+- Required Level: 73
+- Rarity: 1
+- Properties:
+  - +1.5 to Life (Per Character Level)
+  - +120-150% Enhanced Defense
+  - +2 to Demon Skills (Warlock Only)
+  - +2-3 to Consume (Warlock Only)
+  - +2-3 to Demonic Mastery (Warlock Only)
+  - +2-3 to Engorge (Warlock Only)
+  - +2-4 to Blood Boil (Warlock Only)
+  - +5-10% Physical Damage Reduction
+  - 15% Chance to cast level 1 Decrepify when struck
+
+#### Measured Wrath
+- Base Item: Burnt Text [X]
+- Item Level: 58
+- Required Level: 52
+- Rarity: 3
+- Properties:
+  - +1 to Warlock Skill Levels
+  - +1-3 to Flame Wave (Warlock Only)
+  - +1-3 to Ring of Fire (Warlock Only)
+  - +1-3 to Summon Tainted (Warlock Only)
+  - +10-20 to Vitality
+  - +130-180% Enhanced Defense
+  - +20-30% to All Resistances
+  - +25% Faster Cast Rate
+  - +3-5 Life after each Kill
+  - 5% Chance to cast level 25 Ring Of Fire when struck
+</details>
+<details>
 <summary>Hand to Hand</summary>
 
 
 #### Storm Talons
 - Base Item: Wrist Sword [E]
 - Item Level: 85
-- Required Level: 82
+- Required Level: 85
 - Rarity: 1
 - Properties:
   - +1-3 to Traps (Assassin Only)
@@ -120,8 +464,8 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - +15-20% Increased Attack Speed
   - +2-4 to Charged Bolt Sentry (Assassin Only)
   - +2-4 to Lightning Sentry (Assassin Only)
-  - -10% to Enemy Lightning Resistance
-  - Level 3-5 Conviction Aura When Equipped
+  - +5 to Cyclone Armor (oskill)
+  - -10-20% to Enemy Lightning Resistance
 </details>
 <details>
 <summary>Helm</summary>
@@ -168,6 +512,39 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - -30-30% Physical Damage Reduction
   - Requirements Increased By 0-150%
   - Vendor Prices Reduced By 0-10%
+
+#### Unique Warlock Helm
+- Base Item: Death Mask [X]
+- Item Level: 55
+- Required Level: 50
+- Rarity: 2
+- Properties:
+  - +1 to All Skills
+  - +150-215% Enhanced Defense
+  - +20% Faster Cast Rate
+  - +20% Increased Attack Speed
+  - +4-6 to Mana after each Kill
+  - -5-8% to Enemy Fire Resistance
+  - -5-8% to Enemy Magic Resistance
+</details>
+<details>
+<summary>Knife</summary>
+
+
+#### Bloodpact Shard
+- Base Item: Mithril Point [E]
+- Item Level: 73
+- Required Level: 67
+- Rarity: 2
+- Properties:
+  - +1 to All Skills
+  - +1-3 to Bind Demon (Warlock Only)
+  - +10-15% Increased Maximum Life
+  - +2-3 to Blood Boil (Warlock Only)
+  - +2-3 to Blood Oath (Warlock Only)
+  - +20-35% Chance Items Roll Magic or Better
+  - +30% Faster Cast Rate
+  - Slows Target by 25%
 </details>
 <details>
 <summary>Magic Bow Quiv</summary>
@@ -220,6 +597,36 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - +75 to Attack Rating
 </details>
 <details>
+<summary>Ring</summary>
+
+
+#### Opalvein
+- Base Item: Ring
+- Item Level: 58
+- Required Level: 50
+- Rarity: 1
+- Properties:
+  - +1-3 Life after each Kill
+  - +1-3 to Mana after each Kill
+  - +10% Faster Cast Rate
+  - +6-8% to All Resistances
+  - 2% Chance to cast level 15 Flame Wave on attack
+  - {"group-properties":{"magdam-rand":[{"PropertyString":"+3-5% to Magic Skill Damage","Index":0},{"PropertyString":"+20-40% Enhanced Weapon Damage","Index":1},{"PropertyString":"+3-5% to Fire Skill Damage","Index":2},{"PropertyString":"+3-5% to Cold Skill Damage","Index":3},{"PropertyString":"+3-5% to Lightning Skill Damage","Index":4},{"PropertyString":"+3-5% to Poison Skill Damage","Index":5}]}}
+
+#### Sling
+- Base Item: Ring
+- Item Level: 58
+- Required Level: 50
+- Rarity: 1
+- Properties:
+  - +1 to Townportal O Skill (oskill)
+  - +10% Faster Cast Rate
+  - +10-15 to Energy
+  - +10-20% Chance Items Roll Magic or Better
+  - -3-5% to Enemy Magic Resistance
+  - Slows Target by 15%
+</details>
+<details>
 <summary>Small Charm</summary>
 
 
@@ -264,6 +671,21 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - +20% Chance Items Roll Magic or Better
   - Adds 10-20 Weapon Cold Damage
   - Adds 10-20 Weapon Magic Damage
+
+#### Dreadfang
+- Base Item: Legend Sword [E]
+- Item Level: 69
+- Required Level: 61
+- Rarity: 2
+- Properties:
+  - +133-166% Enhanced Weapon Damage
+  - +3 to Mirrored Blades (Warlock Only)
+  - +3-6% Mana stolen per hit
+  - +33% Bonus to Attack Rating
+  - +33% Deadly Strike
+  - +33% Increased Attack Speed
+  - 33% Chance to cast level 3 Amplify Damage on striking
+  - Requirements Reduced By -33%
 </details>
 
 ### Removed
@@ -306,13 +728,23 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 
 #### Abyssal Torment
-- Base Item: Ashwood Bow [X]
-- Item Level: 25 (was 21)
-- Required Level: 45 (was 41)
+- Base Item: Matriarchal Bow [E] (was Ashwood Bow [X])
+- Item Level: 90 (was 21)
+- Required Level: 90 (was 41)
 - Rarity: 1 (was 3)
 - Properties:
   - Changed:
-    - +2-3 to Bow and Crossbow Skills (Amazon Only) (was +3)
+    - +2 to Maximum Weapon Damage (Per Character Level) (was +1)
+    - +3-4 to Bow and Crossbow Skills (Amazon Only) (was +3)
+    - +300-395% Enhanced Weapon Damage (was +200-250%)
+  - Added:
+    - +1 to Amplify Damage (oskill)
+    - +3-5 to Valkyrie (Amazon Only)
+    - 10% Chance to cast level 10 Dim Vision on striking
+  - Removed:
+    - +1 to Lower Resist (oskill)
+    - +15% to Fire Skill Damage
+    - +35-50% Fire Resistance
 
 #### Angelsong
 - Base Item: Stag Bow [N]
@@ -383,12 +815,28 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +1-2 to Bow and Crossbow Skills (Amazon Only) (was +1-3)
 
 #### Heartpiercer
-- Base Item: Reflex Bow [N]
-- Item Level: 12 (was 4)
+- Base Item: Grand Matron Bow [E] (was Reflex Bow [N])
+- Item Level: 90 (was 4)
+- Required Level: 90 (was 24)
 - Rarity: 1 (was 5)
 - Properties:
   - Changed:
-    - +0.38% Deadly Strike (Per Character Level) (was +1.5%)
+    - +3 to Amazon Skill Levels (was +1)
+    - +325-425% Enhanced Weapon Damage (was +125-175%)
+  - Added:
+    - +100-200 to Minimum Weapon Damage
+    - +100-300 to Maximum Weapon Damage
+    - +25-35% Deadly Strike
+    - +25-35% Piercing Attack
+    - +30-40% Increased Attack Speed
+    - Ignore Target's Defense
+  - Removed:
+    - +1 to All Skills
+    - +1.5% Deadly Strike (Per Character Level)
+    - +15 to Dexterity
+    - +2 to Critical Strike (Amazon Only)
+    - Adds 10-25 Weapon Damage
+    - Requirements Reduced By -50%
 
 #### Kashya's Retort
 - Base Item: Reflex Bow [N]
@@ -1836,7 +2284,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Properties:
   - Changed:
     - +5% to Maximum Cold Resistance (was +15%)
-    - 15% Chance to cast level 30 Blizzard when struck (was 7-19)
+    - 12% Chance to cast level 30 Blizzard when struck (was 7-19)
     - Adds 20-30 Weapon Cold Damage (was 13-21)
   - Added:
     - +10-15% to Cold Skill Damage
@@ -2188,8 +2636,8 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Rarity: 1 (was 3)
 - Properties:
   - Changed:
+    - 10% Chance to cast level 15 Chilling Armor when struck (was 50% 8)
     - 15% Chance to cast level 20 Frozen Orb when struck (was 5% 5)
-    - 25% Chance to cast level 15 Chilling Armor when struck (was 50% 8)
   - Added:
     - -30% Fire Resistance
 
@@ -2391,11 +2839,10 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Properties:
   - Changed:
     - +150-200% Enhanced Defense (was +130-200%)
-    - Level 3-5 Conviction Aura When Equipped (was 3-4)
+    - Level 4-8 Conviction Aura When Equipped (was 3-4)
   - Added:
     - +1-2 to Max Traps
-    - +10% to Fire Skill Damage
-    - +10% to Lightning Skill Damage
+    - +10% to All Elemental Skill Damage
     - You feel incorporeal...
   - Removed:
     - +1 to Warp (oskill)
@@ -2478,12 +2925,12 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Base Item: Hard Leather Armor [N]
 - Rarity: 1 (was 3)
 - Properties:
-  - Changed:
-    - 12% Chance to cast level 5 Weaken when struck (was 5% 9)
   - Added:
+    - 8% Chance to cast level 1 Decrepify when struck
     - Adds 10 Weapon Poison Damage over 2 seconds
   - Removed:
     - +2 Random Assassin Skill
+    - 5% Chance to cast level 9 Weaken when struck
 
 #### Succulent Sin
 - Base Item: Templar Coat [X]
@@ -2612,6 +3059,14 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Item Level: 65 (was 5)
 - Required Level: 65 (was 19)
 - Rarity: 1 (was 3)
+- Properties:
+  - Changed:
+    - +3 to Raise Skeleton (oskill) (was +1)
+    - Replenish Life +20 (was +3)
+  - Added:
+    - +20% Faster Run/Walk Speed
+  - Removed:
+    - +1-2 to Summoning Skills (Necromancer Only)
 
 #### Cheetah Speed
 - Base Item: Boots [N]
@@ -2680,6 +3135,9 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Properties:
   - Changed:
     - +10% Chance of Crushing Blow (was +25%)
+    - -3 to Light Radius (was -1)
+    - Magic Damage Reduced By 2-4 (was 1)
+    - Physical Damage Reduced By 2-4 (was 1)
   - Added:
     - +10% Faster Run/Walk Speed
 
@@ -2762,10 +3220,12 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +20-30% Faster Run/Walk Speed (was +20%)
     - +3-5 to Skeleton Mastery (Necromancer Only) (was +1-2)
   - Added:
-    - +1 to All Skills
+    - +1-2 to Necromancer Skill Levels
   - Removed:
     - +10% Mana Regeneration
     - Heal Stamina Plus 10%
+    - Level 12 Life Tap (10 Charges)
+    - Level 33 Bone Prison (13 Charges)
 
 #### Pepin's Grace
 - Base Item: Chain Boots [N]
@@ -2777,7 +3237,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Changed:
     - +20-30% Faster Hit Recovery (was +30%)
   - Removed:
-    - +1 to Dodge (oskill)
+    - +1 to Avoid (oskill)
     - +1 to Evade (oskill)
 
 #### Sandstorm Trek
@@ -2817,7 +3277,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Item Level: 25 (was 39)
 - Properties:
   - Added:
-    - Level 5 Vigor Aura When Equipped
+    - Level 2-3 Vigor Aura When Equipped
   - Removed:
     - +2 to Vigor (Paladin Only)
 
@@ -2945,8 +3405,21 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - 10% Reanimate as: Returned
 
 #### Carrion Wing
-- Base Item: Hunter's Bow [N]
+- Base Item: Spider Bow [E] (was Hunter's Bow [N])
+- Item Level: 85 (was 1)
+- Required Level: 85 (was 10)
 - Rarity: 1 (was 3)
+- Properties:
+  - Changed:
+    - +25-35% to Fire Skill Damage (was +20%)
+    - +300-350% Enhanced Weapon Damage (was +100-150%)
+  - Added:
+    - +2-3 to Fire Skills
+    - +300 to Attack Rating against Undead
+    - Adds 200-350 Weapon Fire Damage
+  - Removed:
+    - +6-10 to Maximum Weapon Damage
+    - Socketed (1-2)
 
 #### Celestial Strike
 - Base Item: Diamond Bow [E]
@@ -3050,39 +3523,76 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +50 Defense vs. Missile
 
 #### Final Flight
-- Base Item: Long War Bow [N]
+- Base Item: Diamond Bow [E] (was Long War Bow [N])
+- Item Level: 85 (was 20)
+- Required Level: 86 (was 31)
 - Rarity: 1 (was 3)
 - Properties:
   - Changed:
-    - +100-150% Enhanced Weapon Damage (was +100-125%)
-    - +15-25 to Minimum Weapon Damage (was +10-20)
-    - +50-75 to Maximum Weapon Damage (was +40-60)
-    - 20% Chance to cast level 1 Teleport when struck (was 10% 1)
+    - +100-200 to Maximum Weapon Damage (was +40-60)
+    - +333% Enhanced Weapon Damage (was +100-125%)
+    - 5% Chance to cast level 1 Teleport when struck (was 10% 1)
+  - Added:
+    - +30% Faster Run/Walk Speed
+    - -20-30% to Enemy Cold Resistance
+    - Adds 222-333 Weapon Cold Damage
+  - Removed:
+    - +10-20 to Minimum Weapon Damage
+    - +100 Defense
+    - +5% to Experience Gained
 
 #### Foxfire Leaf
 - Base Item: Blade Bow [E]
+- Item Level: 85 (was 60)
+- Required Level: 89 (was 68)
 - Properties:
   - Changed:
+    - +300-350% Enhanced Weapon Damage (was +180-230%)
     - +35-75% Chance Items Roll Magic or Better (was +35%)
+    - +6 to Weapon Maximum Fire Damage (Per Character Level) (was +3)
+  - Added:
+    - +20-30% to Fire Skill Damage
+  - Removed:
+    - +15 to Dexterity
 
 #### Freedom's Flight
-- Base Item: Short Bow [N]
-- Item Level: 12 (was 24)
+- Base Item: Shadow Bow [E] (was Short Bow [N])
+- Item Level: 85 (was 24)
+- Required Level: 89 (was 25)
 - Properties:
   - Changed:
-    - +1-2 to Bow and Crossbow Skills (Amazon Only) (was +1-3)
-    - +3-5 to Magic Arrow (Amazon Only) (was +10)
+    - +2-3 to Bow and Crossbow Skills (Amazon Only) (was +1-3)
   - Added:
-    - +50 to Attack Rating
+    - +15-25% to Cold Skill Damage
+    - +15-25% to Fire Skill Damage
+    - +30 to Dexterity
+    - +300-380% Enhanced Weapon Damage
+    - 10% Chance to cast level 10 Burst of Speed on striking
   - Removed:
+    - +10 to Magic Arrow (Amazon Only)
+    - +20% Increased Attack Speed
     - +50% Bonus to Attack Rating
+    - Adds 20-40 Weapon Damage
 
 #### Gale Song
-- Base Item: Long Bow [N]
+- Base Item: Hydra Bow [E] (was Long Bow [N])
+- Item Level: 85 (was 4)
+- Required Level: 87 (was 16)
 - Rarity: 1 (was 3)
 - Properties:
   - Changed:
-    - +20% Hits Cause Monsters to Flee (was +100%)
+    - +2-3 to Amazon Skill Levels (was +1)
+    - +277-377% Enhanced Weapon Damage (was +100-150%)
+  - Added:
+    - +15-30% Increased Attack Speed
+    - +33-43% to Cold Skill Damage
+    - Adds 211-411 Weapon Cold Damage
+    - Requirements Increased By 25%
+  - Removed:
+    - +100% Hits Cause Monsters to Flee
+    - +20 to Dexterity
+    - Adds 5-12 Weapon Damage
+    - Requirements Reduced By -25%
 
 #### Ghost Mount
 - Base Item: Gothic Bow [X]
@@ -3102,9 +3612,9 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +100% Damage to Demons (was +100-200%)
     - +100% Damage to Undead (was +100-200%)
     - +20-30% Increased Attack Speed (was +50%)
-    - 15% Chance to cast level 25 Fist Of The Heavens on striking (was 5% 7)
+    - 10% Chance to cast level 25 Fist Of The Heavens on striking (was 5% 7)
   - Added:
-    - +1 to Multiple Shot (oskill)
+    - +1 to Strafe (oskill)
     - Drain Life -50
   - Removed:
     - +100-150% Bonus to Attack Rating
@@ -3134,6 +3644,10 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Properties:
   - Changed:
     - 10% Chance to cast level 10 Freezing Arrow on striking (was 4% 1)
+  - Added:
+    - +5 to Glacial Orb Arrow (Amazon Only)
+  - Removed:
+    - +5 to Ice Arrow (Amazon Only)
 
 #### Harper's Call
 - Base Item: Gothic Bow [X]
@@ -3153,13 +3667,21 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +50% Bonus to Attack Rating
 
 #### Hellclap
-- Base Item: Short War Bow [N]
-- Item Level: 22 (was 36)
+- Base Item: Ward Bow [E] (was Short War Bow [N])
+- Item Level: 85 (was 36)
+- Required Level: 90 (was 27)
 - Properties:
+  - Changed:
+    - +100-130 to Attack Rating (was +50-75)
+    - +2-3 to Fire Skills (was +1)
+    - +30-45% Increased Attack Speed (was +10%)
+    - +300-400% Enhanced Weapon Damage (was +70-90%)
   - Added:
-    - +10% to Fire Skill Damage
-    - Adds 15-50 Weapon Fire Damage
+    - +30-40% to Fire Skill Damage
+    - 10% Chance to cast level 15 Cinderstorm on striking
+    - Adds 200-375 Weapon Fire Damage
   - Removed:
+    - +12 to Dexterity
     - +15 to Weapon Minimum Fire Damage
     - +30-50 to Weapon Maximum Fire Damage
 
@@ -3168,8 +3690,10 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Rarity: 1 (was 3)
 - Properties:
   - Added:
+    - +5 to Glacial Orb Arrow (oskill)
     - 10% Chance to cast level 2 Winters Pulse on striking
   - Removed:
+    - +5 to Ice Arrow (oskill)
     - 8% Chance to cast level 4 Frost Nova when struck
 
 #### Kirre Strike
@@ -3179,15 +3703,29 @@ dateCreated: 2025-11-24T11:50:40.542Z
 #### Kuko Shakaku
 - Base Item: Cedar Bow [X]
 - Item Level: 25 (was 41)
-
-#### Larissa's Aim
-- Base Item: Double Bow [X]
-- Item Level: 45 (was 55)
 - Properties:
   - Added:
-    - Level 5-10 Blessed Aim Aura When Equipped
+    - +3 to Meteoric Arrow (Amazon Only)
   - Removed:
+    - +3 to Immolation Arrow (Amazon Only)
+
+#### Larissa's Aim
+- Base Item: Crusader Bow [E] (was Double Bow [X])
+- Item Level: 85 (was 55)
+- Required Level: 85 (was 51)
+- Properties:
+  - Changed:
+    - +300-350% Enhanced Weapon Damage (was +175-220%)
+  - Added:
+    - +100-200 to Maximum Weapon Damage
+    - +100-200 to Minimum Weapon Damage
+    - +3-5 to Strafe (Amazon Only)
+    - Level 10-15 Blessed Aim Aura When Equipped
+  - Removed:
+    - +15 to Dexterity
     - +35-50% Cold Resistance
+    - +5% Mana stolen per hit
+    - Adds 25-50 Weapon Damage
 
 #### Magewrath
 - Base Item: Rune Bow [X]
@@ -3280,8 +3818,10 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Rarity: 1 (was 3)
 - Properties:
   - Added:
+    - +3 to Meteoric Arrow (oskill)
     - Level 10 Lower Resist (30 Charges)
   - Removed:
+    - +3 to Immolation Arrow (oskill)
     - Level 10 Slow Missiles (100 Charges)
 
 #### Riphook
@@ -3300,12 +3840,24 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +15% Deadly Strike (was +30%)
 
 #### Sadira
-- Base Item: Razor Bow [X]
-- Item Level: 30 (was 55)
+- Base Item: Blade Bow [E] (was Razor Bow [X])
+- Item Level: 85 (was 55)
+- Required Level: 90 (was 46)
 - Properties:
   - Changed:
-    - +50% Mana Regeneration (was +75%)
-    - Socketed (2-3) (was 1)
+    - +301-391% Enhanced Weapon Damage (was +80-125%)
+  - Added:
+    - +20-30% to Cold Skill Damage
+    - +200-300 to Maximum Weapon Damage
+    - +3-5 to Dodge (Amazon Only)
+    - +3-5 to Freezing Arrow (Amazon Only)
+    - +5 Life after each Kill
+  - Removed:
+    - +20% to All Resistances
+    - +75% Mana Regeneration
+    - Adds 25-100 Weapon Lightning Damage
+    - Adds 25-50 Weapon Damage
+    - Socketed (1)
 
 #### Shayira's Flight
 - Base Item: Short Battle Bow [N]
@@ -3339,13 +3891,13 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Base Item: Short War Bow [N]
 - Item Level: 22 (was 30)
 - Properties:
-  - Changed:
-    - +2-5 to Ice Arrow (oskill) (was +2)
   - Added:
     - +1 to All Skills
+    - +2-5 to Glacial Orb Arrow (oskill)
   - Removed:
     - +1 to Amazon Skill Levels
     - +1-2 to Bow and Crossbow Skills (Amazon Only)
+    - +2 to Ice Arrow (oskill)
 
 #### Teldicia's Sting
 - Base Item: Edge Bow [X]
@@ -4232,9 +4784,63 @@ dateCreated: 2025-11-24T11:50:40.542Z
 <summary>Grand Charm</summary>
 
 
+#### Black Cleft
+- Base Item: Grand Charm
+- Properties:
+  - Added:
+    - -65 to -45% Magic Resistance
+  - Removed:
+    - -30% Magic Resistance
+    - Charm Weight: 3
+
+#### Bone Break
+- Base Item: Grand Charm
+- Properties:
+  - Added:
+    - -20 to -10% Physical Damage Reduction
+  - Removed:
+    - -10% Physical Damage Reduction
+    - Charm Weight: 3
+
+#### Cold Rupture
+- Base Item: Grand Charm
+- Properties:
+  - Added:
+    - -90 to -70% Cold Resistance
+  - Removed:
+    - -50% Cold Resistance
+    - Charm Weight: 3
+
+#### Crack of the Heavens
+- Base Item: Grand Charm
+- Properties:
+  - Added:
+    - -90 to -70% Lightning Resistance
+  - Removed:
+    - -50% Lightning Resistance
+    - Charm Weight: 3
+
+#### Flame Rift
+- Base Item: Grand Charm
+- Properties:
+  - Added:
+    - -90 to -70% Fire Resistance
+  - Removed:
+    - -50% Fire Resistance
+    - Charm Weight: 3
+
 #### Nightshade
 - Base Item: Grand Charm
 - Rarity: 2 (was 5)
+
+#### Rotting Fissure
+- Base Item: Grand Charm
+- Properties:
+  - Added:
+    - -90 to -70% Poison Resistance
+  - Removed:
+    - -50% Poison Resistance
+    - Charm Weight: 3
 
 #### Web of Wyrd
 - Base Item: Grand Charm
@@ -4486,6 +5092,10 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Changed:
     - +10% Chance of Crushing Blow (was +27%)
     - +20% Deadly Strike (was +44%)
+  - Added:
+    - +1-3 to Shadow Disciplines (Assassin Only)
+  - Removed:
+    - +1-3 to Traps (Assassin Only)
 
 #### Androsphinx
 - Base Item: Cestus [N]
@@ -4550,21 +5160,33 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Changed:
     - +10-20% to All Resistances (was +20-40%)
     - +25% Deadly Strike (was +33%)
-    - +3-5 to Psychic Hammer (Assassin Only) (was +5-7)
+  - Added:
+    - +2 to Phoenix Strike (Assassin Only)
+  - Removed:
+    - +5-7 to Psychic Hammer (Assassin Only)
 
 #### Cold of Winter
-- Base Item: Hatchet Hands [N]
-- Item Level: 12 (was 1)
+- Base Item: Suwayyah [E] (was Hatchet Hands [N])
+- Item Level: 85 (was 1)
+- Required Level: 83 (was 16)
 - Rarity: 1 (was 3)
 - Properties:
   - Changed:
-    - +2-3 to Blade Sentinel (Assassin Only) (was +1-3)
+    - +20-30% Increased Attack Speed (was +20%)
   - Added:
-    - 10% Chance to cast level 1 Winters Pulse on striking
-    - Adds 10-20 Weapon Cold Damage
+    - +1-3 to Traps (Assassin Only)
+    - +10-15% to Cold Skill Damage
+    - +2-4 to Glacial Vortex Sentry (Assassin Only)
+    - +2-4 to Snowlash Sentry (Assassin Only)
+    - +5 to Chilling Armor (oskill)
+    - -25-30% to Enemy Cold Resistance
   - Removed:
+    - +1-3 to Blade Sentinel (Assassin Only)
     - +1-3 to Shock Field (Assassin Only)
+    - +110-160% Enhanced Weapon Damage
     - 5% Chance to cast level 2 Frost Nova when struck
+    - Adds 10-15 Weapon Cold Damage
+    - Repairs 0.2 durability per second
 
 #### Corpseflayer
 - Base Item: Quhab [X]
@@ -4599,6 +5221,11 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Base Item: Greater Talons [X]
 - Item Level: 40 (was 55)
 - Required Level: 50 (was 68)
+- Properties:
+  - Added:
+    - +1-3 to Shadow Disciplines (Assassin Only)
+  - Removed:
+    - +1-3 to Traps (Assassin Only)
 
 #### Dusk Ray
 - Base Item: Wrist Spike [X]
@@ -4634,15 +5261,17 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 #### Flaming Fist
 - Base Item: Battle Cestus [E]
+- Item Level: 83 (was 74)
+- Required Level: 84 (was 79)
 - Properties:
   - Changed:
-    - -10-20% to Enemy Fire Resistance (was -15%)
+    - -10-15% to Enemy Fire Resistance (was -15%)
   - Added:
     - +1-3 to Traps (Assassin Only)
     - +15-20% Increased Attack Speed
-    - +15-30% to Fire Skill Damage
-    - +2-4 to Inferno Sentry (Assassin Only)
+    - +2-4 to Flameburst Sentry (Assassin Only)
     - +2-4 to Wake of Fire Sentry (Assassin Only)
+    - +25-30% to Fire Skill Damage
     - +5 to Warmth (oskill)
   - Removed:
     - +1 to All Skills
@@ -4738,8 +5367,10 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Required Level: 30 (was 28)
 - Rarity: 1 (was 3)
 - Properties:
-  - Changed:
-    - +1-2 to Traps (Assassin Only) (was +1-3)
+  - Added:
+    - +1-2 to Shadow Disciplines (Assassin Only)
+  - Removed:
+    - +1-3 to Traps (Assassin Only)
 
 #### Killer's Watch
 - Base Item: Katar [N]
@@ -4748,8 +5379,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Changed:
     - +1 to Traps (Assassin Only) (was +1-3)
   - Added:
-    - +5-10% to Fire Skill Damage
-    - +5-10% to Lightning Skill Damage
+    - +5% to All Elemental Skill Damage
   - Removed:
     - +10-20 to Minimum Weapon Damage
     - +30-40 to Maximum Weapon Damage
@@ -4791,6 +5421,11 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Properties:
   - Changed:
     - +1-2 to Shadow Disciplines (Assassin Only) (was +1-3)
+  - Added:
+    - +25% Chance of Open Wounds
+  - Removed:
+    - +10% to Fire Skill Damage
+    - +10% to Lightning Skill Damage
 
 #### Nightwrath
 - Base Item: War Fist [E]
@@ -4826,10 +5461,13 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Required Level: 45 (was 60)
 - Properties:
   - Changed:
-    - +1-3 to Traps (Assassin Only) (was +3)
     - +20-30% Faster Cast Rate (was +25%)
     - +20-30% Increased Attack Speed (was +30%)
     - Attacker Takes Damage of 2 (Per Character Level) (was 1)
+  - Added:
+    - +1-3 to Shadow Disciplines (Assassin Only)
+  - Removed:
+    - +3 to Traps (Assassin Only)
 
 #### Razorspine
 - Base Item: Wrist Blade [N]
@@ -4912,6 +5550,17 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Added:
     - +1 to Max Shadow Masters
     - +10-20 to Valkyrie (oskill)
+
+#### Skaadi's Claws
+- Base Item: Runic Talons [E]
+- Properties:
+  - Added:
+    - -20-30% to Enemy Cold Resistance
+  - Removed:
+    - +15-20% to Cold Skill Damage
+    - +25% Magic Resistance
+    - +25% to All Resistances
+    - +3 to Cold Mastery (oskill)
 
 #### Slithertongue
 - Base Item: Hand Scythe [X]
@@ -5113,6 +5762,9 @@ dateCreated: 2025-11-24T11:50:40.542Z
 #### Darksight Helm
 - Base Item: Basinet [X]
 - Item Level: 35 (was 46)
+- Properties:
+  - Removed:
+    - Level 5 Cloak of Shadows (30 Charges)
 
 #### Devourer of Dreams
 - Base Item: Skull Cap [N]
@@ -5254,7 +5906,14 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Item Level: 65 (was 75)
 - Properties:
   - Changed:
-    - +10-15% to Cold Skill Damage (was +8-15%)
+    - +10-15 Cold Damage Absorbed (was +5-9)
+    - +100-180% Enhanced Defense (was +90-120%)
+    - +15-25% to Cold Skill Damage (was +8-15%)
+    - Requirements Reduced By -25% (was -50%)
+  - Added:
+    - Cannot Be Frozen
+  - Removed:
+    - Half Freeze Duration
 
 #### Overlord's Helm
 - Base Item: Bone Visage [E]
@@ -5620,9 +6279,13 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Item Level: 25 (was 18)
 - Rarity: 1 (was 3)
 - Properties:
+  - Changed:
+    - Level 3-5 Holy Freeze Aura When Equipped (was 1-3)
   - Added:
+    - -10-15% to Enemy Cold Resistance
     - 8% Chance to cast level 1 Winters Pulse on striking
   - Removed:
+    - +1 to Cold Mastery (oskill)
     - 100% Chance to cast level 6 Frost Nova on striking
 
 #### Sting of Humiliation
@@ -6128,7 +6791,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
     - +50-100% Chance Items Roll Magic or Better (was +30%)
     - +50-100% Extra Gold from Monsters (was +50-75%)
   - Added:
-    - Drain Life -6 (Per Character Level)
+    - Drain Life -4 (Per Character Level)
   - Removed:
     - Attacker Takes Damage of 50-100
 
@@ -6398,6 +7061,16 @@ dateCreated: 2025-11-24T11:50:40.542Z
 - Base Item: Flail [N]
 - Item Level: 25 (was 14)
 - Rarity: 1 (was 3)
+</details>
+<details>
+<summary>Magic Xbow Quiv</summary>
+
+
+#### Bolt Case of Piercing
+- Base Item: z02
+
+#### Bolt Case of Slaying
+- Base Item: z02
 </details>
 <details>
 <summary>Orb</summary>
@@ -8775,6 +9448,10 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Changed:
     - +25% Chance of Open Wounds (was +40%)
     - +3-5 to Impale (Amazon Only) (was +5)
+  - Added:
+    - +1-2 to Fend (Amazon Only)
+  - Removed:
+    - +3 to Power Strike (Amazon Only)
 
 #### The Tannr Gorerod
 - Base Item: Pike [N]
@@ -8802,6 +9479,7 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - Added:
     - +10-15% to Poison Skill Damage
     - -10-15% to Enemy Poison Resistance
+    - 8% Chance to cast level 10 Lower Resist on striking
   - Removed:
     - +30-50% Poison Resistance
     - Adds 326 Weapon Poison Damage over 10 seconds
@@ -9342,7 +10020,12 @@ dateCreated: 2025-11-24T11:50:40.542Z
 #### Cloaker Beast
 - Base Item: Two-Handed Sword [N]
 - Item Level: 5 (was 20)
-- Required Level: 15 (was 20)
+- Required Level: 18 (was 20)
+- Properties:
+  - Added:
+    - +1 to Fade (oskill)
+  - Removed:
+    - +2-4 to Cloak of Shadows (oskill)
 
 #### Cloudcrack
 - Base Item: Gothic Sword [X]
@@ -10895,7 +11578,19 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 #### Boneshade
 - Base Item: Lich Wand [E]
-- Item Level: 75 (was 84)
+- Item Level: 85 (was 84)
+- Required Level: 83 (was 79)
+- Properties:
+  - Changed:
+    - +2-3 to Necromancer Skill Levels (was +2)
+    - +25-35% Faster Cast Rate (was +25%)
+    - +3-5 to Bone Armor (Necromancer Only) (was +4-5)
+    - +3-5 to Bone Spear (Necromancer Only) (was +2-3)
+    - +3-5 to Bone Spirit (Necromancer Only) (was +1-2)
+    - +3-5 to Bone Wall (Necromancer Only) (was +2-3)
+    - +3-5 to Teeth (Necromancer Only) (was +4-5)
+  - Added:
+    - +1-2 to Poison and Bone Skills (Necromancer Only)
 
 #### Carin Shard
 - Base Item: Petrified Wand [X]
@@ -11119,6 +11814,55 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 ### Added
 <details>
+<summary>Bane's Garments</summary>
+
+
+#### Partial Set Bonuses
+  - +80% Enhanced Weapon Damage
+
+#### Full Set Bonuses
+  - +1 to All Skills
+  - +15 to Dexterity
+  - +25% Faster Cast Rate
+  - +40% Chance Items Roll Magic or Better
+
+#### Bane's Authority
+- Base Item: Light Belt [N]
+- Item Level: 7
+- Required Level: 8
+- Rarity: 7
+- Properties:
+  - +10% Faster Cast Rate
+  - +20 to Life
+- Set Bonuses:
+  - +15 to Energy (3 Items)
+
+#### Bane's Oathmaker
+- Base Item: Kris [N]
+- Item Level: 7
+- Required Level: 8
+- Rarity: 7
+- Properties:
+  - +1 to Maximum Weapon Damage (Per Character Level)
+  - +20% Faster Run/Walk Speed
+- Set Bonuses:
+  - +3 to Mana after each Kill (2 Items)
+  - +30% Deadly Strike (3 Items)
+
+#### Bane's Wraithskin
+- Base Item: Hard Leather Armor [N]
+- Item Level: 7
+- Required Level: 8
+- Rarity: 7
+- Properties:
+  - +30% Magic Resistance
+  - +50 Defense
+- Set Bonuses:
+  - +25% Faster Hit Recovery (2 Items)
+  - +8 to Attack Rating (Per Character Level) (3 Items)
+
+</details>
+<details>
 <summary>Deus et Diabolus</summary>
 
 
@@ -11179,6 +11923,257 @@ dateCreated: 2025-11-24T11:50:40.542Z
   - +50% Chance Items Roll Magic or Better (3 Items)
 
 </details>
+<details>
+<summary>Expansion</summary>
+
+
+</details>
+<details>
+<summary>Horazon's Splendor</summary>
+
+
+#### Partial Set Bonuses
+  - +20 to Dexterity
+  - +30 to Energy
+  - +300 Defense
+
+#### Full Set Bonuses
+  - +100% Chance Items Roll Magic or Better
+  - +3 to Warlock Skill Levels
+  - +30 to Enchant (oskill)
+  - +350% Enhanced Weapon Damage
+  - +50% to All Resistances
+
+#### Horazon's Countenance
+- Base Item: Demonhead [E]
+- Item Level: 40
+- Required Level: 62
+- Rarity: 7
+- Properties:
+  - +1 to Warlock Skill Levels
+  - +1% Bonus to Attack Rating (Per Character Level)
+  - +10-20 to Strength
+  - Magic Damage Reduced By 7-10
+- Set Bonuses:
+  - +15 to Strength (4 Items)
+  - +5% Increased Maximum Life (2 Items)
+
+#### Horazon's Dominion
+- Base Item: Russet Armor [X]
+- Item Level: 40
+- Required Level: 55
+- Rarity: 7
+- Properties:
+  - +15-25% Cold Resistance
+  - +15-25% Fire Resistance
+  - +15-25% Lightning Resistance
+  - +2 to Demon Skills (Warlock Only)
+  - +75-100 to Mana
+  - +75-100% Enhanced Defense
+- Set Bonuses:
+  - +15 to Vitality (4 Items)
+  - +15% Physical Damage Reduction (6 Items)
+  - +25% Poison Resistance (2 Items)
+
+#### Horazon's Hold
+- Base Item: Demonhide Gloves [X]
+- Item Level: 40
+- Required Level: 48
+- Rarity: 7
+- Properties:
+  - +10% Chance of Crushing Blow
+  - +10-15 to Dexterity
+  - +30-40 to Life
+  - +95-150 to Attack Rating
+  - Adds 140-270 Weapon Fire Damage
+- Set Bonuses:
+  - +30% Increased Attack Speed (2 Items)
+  - +7% Life stolen per hit (4 Items)
+  - +7% Mana stolen per hit (3 Items)
+
+#### Horazon's Legacy
+- Base Item: Mirrored Boots [E]
+- Item Level: 40
+- Required Level: 67
+- Rarity: 7
+- Properties:
+  - +10-15 to Dexterity
+  - +10-15 to Strength
+  - +20-30% Magic Resistance
+  - +30% Faster Run/Walk Speed
+  - Cannot Be Frozen
+  - Requirements Reduced By -30%
+- Set Bonuses:
+  - +10% Faster Run/Walk Speed (2 Items)
+
+#### Horazon's Secrets
+- Base Item: Occult Codex [E]
+- Item Level: 40
+- Required Level: 57
+- Rarity: 7
+- Properties:
+  - +2 to Eldritch Skills (Warlock Only)
+  - +20-30 to Vitality
+  - +30% Faster Hit Recovery
+  - +30-50 to Life
+  - 20% Increased Chance of Blocking
+- Set Bonuses:
+  - +15 to Energy (4 Items)
+  - -25% to Enemy Fire Resistance (3 Items)
+  - Poison Length Reduced by 75% (2 Items)
+
+</details>
+<details>
+<summary>Stormsigil Vestments</summary>
+
+
+#### Partial Set Bonuses
+  - +10 to Mana after each Kill
+  - +100% Mana Regeneration
+  - +200 to Mana
+
+#### Full Set Bonuses
+  - +100% Chance Items Roll Magic or Better
+  - +30% Faster Hit Recovery
+  - +30% to All Resistances
+  - +5 to Lightning Skills
+  - 50% Chance to cast level 30 Charged Bolt when struck
+
+#### Dark Cataclysm
+- Base Item: Tiara [X]
+- Item Level: 40
+- Required Level: 52
+- Rarity: 7
+- Properties:
+  - +135-175% Enhanced Defense
+  - +15% Faster Cast Rate
+  - +2 to Lightning Skills
+  - +50-100 to Mana
+- Set Bonuses:
+  - +10 to Mana after each Kill (2 Items)
+  - +20% Faster Hit Recovery (3 Items)
+
+#### Deflector of Light
+- Base Item: Ancient Shield [X]
+- Item Level: 25
+- Required Level: 30
+- Rarity: 7
+- Properties:
+  - +10% Physical Damage Reduction
+  - +120-140% Enhanced Defense
+  - +30% Faster Cast Rate
+  - +30% Increased Attack Speed
+  - +50% Lightning Resistance
+  - +50-100 to Life
+- Set Bonuses:
+  - +10% to All Resistances (2 Items)
+  - -10% to Enemy Lightning Resistance (4 Items)
+
+#### Ebony Plate of Evil
+- Base Item: Great Hauberk [E]
+- Item Level: 50
+- Required Level: 56
+- Rarity: 7
+- Properties:
+  - +2 to Lightning Skills
+  - +30% Faster Hit Recovery
+  - +600-800 Defense
+  - -10-15% to Enemy Lightning Resistance
+- Set Bonuses:
+  - +15% Physical Damage Reduction (4 Items)
+  - +25% Lightning Resistance (3 Items)
+
+#### Stormtwist Grasp
+- Base Item: Sharkskin Gloves [X]
+- Item Level: 25
+- Required Level: 30
+- Rarity: 7
+- Properties:
+  - +10-15% to Lightning Skill Damage
+  - +20% Faster Cast Rate
+  - +20% Increased Attack Speed
+  - +5% to Experience Gained
+  - +50% Mana Regeneration
+- Set Bonuses:
+  - +10 Life after each Kill (2 Items)
+  - +20% to Lightning Skill Damage (4 Items)
+
+</details>
+<details>
+<summary>Warlord's Glory</summary>
+
+
+#### Partial Set Bonuses
+  - +15% Life stolen per hit
+  - +150 Defense
+
+#### Full Set Bonuses
+  - +1 to All Skills
+  - +15% Fire Resistance
+  - +20 to Mana
+  - Level 10 Meditation Aura When Equipped
+  - Physical Damage Reduced By 9
+
+#### Warlord's Authority
+- Base Item: Plated Belt [N]
+- Item Level: 100
+- Required Level: 1
+- Rarity: 7
+- Properties:
+  - +20% Lightning Resistance
+  - +25 to Life
+- Set Bonuses:
+  - +8 to Attack Rating (Per Character Level) (2 Items)
+
+#### Warlord's Conquest
+- Base Item: Gauntlets [N]
+- Item Level: 100
+- Required Level: 1
+- Rarity: 7
+- Properties:
+  - +15 to Strength
+  - +45 to Attack Rating
+- Set Bonuses:
+  - +20% Increased Attack Speed (2 Items)
+
+#### Warlord's Crushers
+- Base Item: Greaves [N]
+- Item Level: 100
+- Required Level: 1
+- Rarity: 7
+- Properties:
+  - +20% Faster Run/Walk Speed
+  - +20% Fire Resistance
+- Set Bonuses:
+  - +75% Chance Items Roll Magic or Better (2 Items)
+
+#### Warlord's Lust
+- Base Item: Great Helm [N]
+- Item Level: 100
+- Required Level: 1
+- Rarity: 7
+- Properties:
+  - +15 Defense
+  - +30 to Life
+- Set Bonuses:
+  - + to Attack Rating (2 Items)
+  - +2 Defense (Per Character Level) (2 Items)
+
+#### Warlord's Mantle
+- Base Item: Full Plate Mail [N]
+- Item Level: 100
+- Required Level: 1
+- Rarity: 7
+- Properties:
+  - +25% Enhanced Defense
+  - +30% Cold Resistance
+- Set Bonuses:
+  - +20 to Mana (2 Items)
+
+</details>
+
+### Removed
+- Lord Sith's Province
 
 ### Modified
 <details>
@@ -11205,7 +12200,20 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 #### Angelic Wings
 - Base Item: Amulet
+- Item Level: 1 (was 17)
 - Rarity: 3 (was 7)
+
+#### Angelic Mantle
+- Base Item: Ring Mail [N]
+- Item Level: 1 (was 17)
+
+#### Angelic Halo
+- Base Item: Ring
+- Item Level: 1 (was 17)
+
+#### Angelic Sickle
+- Base Item: Sabre [N]
+- Item Level: 1 (was 17)
 
 </details>
 <details>
@@ -11214,7 +12222,76 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 #### Arcanna's Sign
 - Base Item: Amulet
+- Item Level: 12 (was 20)
 - Rarity: 3 (was 1)
+
+#### Arcanna's Flesh
+- Base Item: Light Plate [N]
+- Item Level: 12 (was 20)
+
+#### Arcanna's Head
+- Base Item: Skull Cap [N]
+- Item Level: 12 (was 20)
+
+#### Arcanna's Deathwand
+- Base Item: War Staff [N]
+- Item Level: 12 (was 20)
+
+</details>
+<details>
+<summary>Arctic Gear</summary>
+
+
+#### Arctic Binding
+- Base Item: Light Belt [N]
+- Item Level: 1 (was 3)
+
+#### Arctic Furs
+- Base Item: Quilted Armor [N]
+- Item Level: 1 (was 3)
+
+#### Arctic Horn
+- Base Item: Short War Bow [N]
+- Item Level: 1 (was 3)
+
+#### Arctic Mitts
+- Base Item: Light Gauntlets [N]
+- Item Level: 1 (was 3)
+
+</details>
+<details>
+<summary>Berserker's Arsenal</summary>
+
+
+#### Berserker's Hatchet
+- Base Item: Double Axe [N]
+- Item Level: 1 (was 5)
+
+#### Berserker's Hauberk
+- Base Item: Splint Mail [N]
+- Item Level: 1 (was 5)
+
+#### Berserker's Headgear
+- Base Item: Helm [N]
+- Item Level: 1 (was 5)
+
+</details>
+<details>
+<summary>Blood Raven's Despair</summary>
+
+
+#### Blood Raven's Redemption
+- Base Item: Shadow Bow [E]
+- Properties:
+  - Added:
+    - +10-12 to Glacial Orb Arrow (oskill)
+  - Removed:
+    - +10-12 to Ice Arrow (oskill)
+- Set Bonuses:
+  - Added:
+    - +10 to Meteoric Arrow (oskill) (2 Items)
+  - Removed:
+    - +10 to Immolation Arrow (oskill) (2 Items)
 
 </details>
 <details>
@@ -11271,11 +12348,25 @@ dateCreated: 2025-11-24T11:50:40.542Z
 
 #### Cathan's Sigil
 - Base Item: Amulet
+- Item Level: 1 (was 15)
 - Rarity: 3 (was 7)
+
+#### Cathan's Mesh
+- Base Item: Chain Mail [N]
+- Item Level: 1 (was 15)
+
+#### Cathan's Visage
+- Base Item: Mask [N]
+- Item Level: 1 (was 15)
 
 #### Cathan's Seal
 - Base Item: Ring
+- Item Level: 1 (was 15)
 - Rarity: 3 (was 7)
+
+#### Cathan's Rule
+- Base Item: Battle Staff [N]
+- Item Level: 1 (was 15)
 
 </details>
 <details>
@@ -11300,9 +12391,69 @@ dateCreated: 2025-11-24T11:50:40.542Z
 <summary>Civerb's Vestments</summary>
 
 
+#### Full Set Bonuses
+  - Changed: +100 Defense (was +50)
+  - Changed: +25 to Strength (was +15)
+  - Added: +100 to Attack Rating
+  - Removed: +25% Bonus to Attack Rating
+
 #### Civerb's Icon
 - Base Item: Amulet
+- Item Level: 1 (was 13)
 - Rarity: 3 (was 7)
+- Properties:
+  - Added:
+    - +2 to Mana (Per Character Level)
+    - Replenish Life +1 (Per Character Level)
+  - Removed:
+    - Replenish Life +4
+- Set Bonuses:
+  - Changed:
+    - +50 Defense (3 Items) (was +25 3)
+
+#### Civerb's Cudgel
+- Base Item: Grand Scepter [N]
+- Item Level: 1 (was 13)
+- Properties:
+  - Changed:
+    - +20-35 to Maximum Weapon Damage (was +17-23)
+  - Removed:
+    - +1 to Maximum Weapon Damage (Per Character Level)
+- Set Bonuses:
+  - Added:
+    - +1.5 to Maximum Weapon Damage (Per Character Level) (2 Items)
+    - +30% Increased Attack Speed (3 Items)
+
+#### Civerb's Ward
+- Base Item: Large Shield [N]
+- Item Level: 1 (was 13)
+- Properties:
+  - Changed:
+    - +25 Defense (was +15)
+  - Added:
+    - +15% Faster Block Rate
+- Set Bonuses:
+  - Added:
+    - +25-50% Faster Run/Walk Speed (Civerb's Icon)
+  - Removed:
+    - +21-22 to Mana (Civerb's Icon)
+
+</details>
+<details>
+<summary>Cleglaw's Brace</summary>
+
+
+#### Cleglaw's Pincers
+- Base Item: Chain Gloves [N]
+- Item Level: 1 (was 6)
+
+#### Cleglaw's Claw
+- Base Item: Small Shield [N]
+- Item Level: 1 (was 6)
+
+#### Cleglaw's Tooth
+- Base Item: Long Sword [N]
+- Item Level: 1 (was 6)
 
 </details>
 <details>
@@ -11312,6 +12463,82 @@ dateCreated: 2025-11-24T11:50:40.542Z
 #### Temptation's Death
 - Base Item: Amulet
 - Rarity: 3 (was 1)
+
+</details>
+<details>
+<summary>Corthala Family Heirlooms</summary>
+
+
+#### Partial Set Bonuses
+  - Changed: +35% Faster Hit Recovery (was +15%)
+  - Added: +20% to All Resistances
+  - Added: +25% Increased Attack Speed
+  - Removed: +25% Faster Hit Recovery
+
+#### Full Set Bonuses
+  - Added: +35% Chance of Crushing Blow
+  - Added: +50% Chance of Open Wounds
+  - Removed: +0.75% Deadly Strike (Per Character Level)
+  - Removed: +8 to Dodge (oskill)
+
+#### Sir Tylan's Sylvan Mail
+- Base Item: Diamond Mail [E]
+- Properties:
+  - Changed:
+    - +15-25% to All Resistances (was +10-20%)
+- Set Bonuses:
+  - Added:
+    - Adds 50 Weapon Damage (3 Items)
+
+#### Lady Daan's Celeritous Jambeau
+- Base Item: Mesh Boots [X]
+- Properties:
+  - Changed:
+    - +15% Increased Attack Speed (was +10%)
+    - +2 Defense (Per Character Level) (was +1.75)
+    - +30-50 to Maximum Weapon Damage (was +20-30)
+  - Added:
+    - +15% Faster Run/Walk Speed
+- Set Bonuses:
+  - Changed:
+    - +30% Faster Run/Walk Speed (3 Items) (was +30% 4)
+  - Added:
+    - Adds 50 Weapon Magic Damage (4 Items)
+
+#### Prince Karnd's Abomination
+- Base Item: Demon Crossbow [E]
+- Properties:
+  - Changed:
+    - +20-40% Piercing Attack (was +40%)
+    - +299-344% Enhanced Weapon Damage (was +200-240%)
+    - +40-60% Increased Attack Speed (was +60%)
+    - Adds 50-100 Weapon Damage (was 30-60)
+- Set Bonuses:
+  - Changed:
+    - +10 to Guided Arrow (oskill) (4 Items) (was +6 4)
+    - Adds 25-50 Weapon Damage (2 Items) (was 20-100)
+  - Added:
+    - Adds 200 Weapon Magic Damage (5 Items)
+
+#### Prince Gwar's Bracers
+- Base Item: Heavy Bracers [X]
+- Set Bonuses:
+  - Added:
+    - +5% Life stolen per hit (2 Items)
+
+#### Yavin's Infernal Visage
+- Base Item: Giant Conch [E] (was Bone Visage [E])
+- Properties:
+  - Changed:
+    - +20-30% to All Resistances (was +10-20%)
+  - Added:
+    - Adds 50-100 Weapon Magic Damage
+  - Removed:
+    - Adds 15-30 Weapon Damage
+- Set Bonuses:
+  - Added:
+    - +20% Increased Attack Speed (2 Items)
+    - Adds 50 Weapon Magic Damage (4 Items)
 
 </details>
 <details>
@@ -11329,6 +12556,23 @@ dateCreated: 2025-11-24T11:50:40.542Z
 #### Legacy in Blood
 - Base Item: Amulet
 - Rarity: 2 (was 4)
+
+</details>
+<details>
+<summary>Death's Disguise</summary>
+
+
+#### Death's Guard
+- Base Item: Sash [N]
+- Item Level: 1 (was 8)
+
+#### Death's Hand
+- Base Item: Leather Gloves [N]
+- Item Level: 1 (was 8)
+
+#### Death's Touch
+- Base Item: War Sword [N]
+- Item Level: 1 (was 8)
 
 </details>
 <details>
@@ -11385,6 +12629,45 @@ Items Added:
 #### Vampire's Crusade
 - Base Item: Ring
 - Rarity: 3 (was 5)
+
+</details>
+<details>
+<summary>Hsarus' Defense</summary>
+
+
+#### Partial Set Bonuses
+  - Changed: Attacker Takes Damage of 25 (was 5)
+
+#### Full Set Bonuses
+  - Changed: +15 to Maximum Weapon Damage (was +5)
+  - Added: Attacker Takes Damage of 100
+
+#### Hsarus' Iron Stay
+- Base Item: Belt [N]
+- Item Level: 1 (was 4)
+- Properties:
+  - Added:
+    - +20 to Mana
+- Set Bonuses:
+  - Added:
+    - Attacker Takes Damage of 25 (3 Items)
+
+#### Hsarus' Iron Heel
+- Base Item: Chain Boots [N]
+- Item Level: 1 (was 4)
+
+#### Hsarus' Iron Fist
+- Base Item: Buckler [N]
+- Item Level: 1 (was 4)
+- Properties:
+  - Added:
+    - +10% Physical Damage Reduction
+    - +25% Enhanced Weapon Damage
+  - Removed:
+    - Physical Damage Reduced By 2
+- Set Bonuses:
+  - Added:
+    - Attacker Takes Damage of 25 (3 Items)
 
 </details>
 <details>
@@ -11461,12 +12744,34 @@ Items Added:
 
 </details>
 <details>
+<summary>Infernal Tools</summary>
+
+
+#### Infernal Sign
+- Base Item: Heavy Belt [N]
+- Item Level: 1 (was 7)
+
+#### Infernal Cranium
+- Base Item: Cap [N]
+- Item Level: 1 (was 7)
+
+#### Infernal Torch
+- Base Item: Grim Wand [N]
+- Item Level: 1 (was 7)
+
+</details>
+<details>
 <summary>Insight of Brother Laz</summary>
 
 
 #### Brother Laz' Holy Symbol
 - Base Item: Amulet
 - Rarity: 3 (was 5)
+- Set Bonuses:
+  - Added:
+    - 13% Chance to cast level 20 Bone Spirit when struck (3 Items)
+  - Removed:
+    - 9% Chance to cast level 2 Mind Blast when struck (3 Items)
 
 </details>
 <details>
@@ -11475,7 +12780,170 @@ Items Added:
 
 #### Iratha's Collar
 - Base Item: Amulet
+- Item Level: 10 (was 21)
 - Rarity: 3 (was 7)
+
+#### Iratha's Cord
+- Base Item: Heavy Belt [N]
+- Item Level: 10 (was 21)
+
+#### Iratha's Cuff
+- Base Item: Light Gauntlets [N]
+- Item Level: 10 (was 21)
+
+#### Iratha's Coil
+- Base Item: Crown [N]
+- Item Level: 10 (was 21)
+
+</details>
+<details>
+<summary>Isenhart's Armory</summary>
+
+
+#### Full Set Bonuses
+  - Changed: +30% to All Resistances (was +10%)
+  - Added: +100 to Attack Rating
+  - Removed: +35% Bonus to Attack Rating
+
+#### Isenhart's Case
+- Base Item: Breast Plate [N]
+- Item Level: 1 (was 11)
+- Properties:
+  - Changed:
+    - Magic Damage Reduced By 5 (was 2)
+  - Added:
+    - +10% Magic Resistance
+
+#### Isenhart's Horns
+- Base Item: Full Helm [N]
+- Item Level: 1 (was 11)
+- Properties:
+  - Changed:
+    - +10-15 to Dexterity (was +6)
+    - Physical Damage Reduced By 5 (was 2)
+  - Added:
+    - +25% Enhanced Weapon Damage
+- Set Bonuses:
+  - Changed:
+    - +15% to All Resistances (2 Items) (was +8% 2)
+  - Added:
+    - +25% Enhanced Weapon Damage (3 Items)
+
+#### Isenhart's Parry
+- Base Item: Gothic Shield [N]
+- Item Level: 1 (was 11)
+- Properties:
+  - Changed:
+    - Attacker Takes Lightning Damage of 30 (was 4)
+  - Added:
+    - Attacker Takes Damage of 30
+- Set Bonuses:
+  - Changed:
+    - +20% to All Resistances (2 Items) (was +8% 2)
+  - Added:
+    - Adds 1-30 Weapon Lightning Damage (3 Items)
+
+#### Isenhart's Lightbrand
+- Base Item: Broad Sword [N]
+- Item Level: 1 (was 11)
+- Properties:
+  - Changed:
+    - +10-20 to Minimum Weapon Damage (was +10)
+  - Added:
+    - +20-40 to Maximum Weapon Damage
+- Set Bonuses:
+  - Added:
+    - Adds 10-30 Weapon Magic Damage (3 Items)
+
+</details>
+<details>
+<summary>JBouley's Scion</summary>
+
+
+#### Partial Set Bonuses
+  - Changed: +30% Increased Attack Speed (was +20%)
+  - Added: +0.38% Deadly Strike (Per Character Level)
+  - Added: +30% Faster Run/Walk Speed
+  - Removed: +33% Deadly Strike
+
+#### Full Set Bonuses
+  - Changed: +10% to Experience Gained (was +3%)
+  - Changed: +100% Chance Items Roll Magic or Better (was +50%)
+  - Changed: +50% Chance of Open Wounds (was +100%)
+  - Added: +100% Extra Gold from Monsters
+  - Removed: +2 to Assassin Skill Levels
+
+#### Shadow Ninja
+- Base Item: Trellised Armor [X]
+- Item Level: 25 (was 35)
+- Properties:
+  - Changed:
+    - +200-400 Defense (was +300-400)
+  - Added:
+    - +100-200% Enhanced Defense
+    - +20% Faster Run/Walk Speed
+    - 15% Chance to cast level 5 Dim Vision on striking
+  - Removed:
+    - +1 to Avoid (oskill)
+    - +1 to Dodge (oskill)
+    - +1 to Evade (oskill)
+- Set Bonuses:
+  - Added:
+    - +100% Enhanced Weapon Damage (3 Items)
+    - Adds 25-50 Weapon Damage (4 Items)
+
+#### Night's Caress
+- Base Item: Demonhide Gloves [X]
+- Properties:
+  - Changed:
+    - +2 Defense (Per Character Level) (was +1.5)
+  - Added:
+    - +1 to Maximum Weapon Damage (Per Character Level)
+  - Removed:
+    - +2 to Martial Arts (Assassin Only)
+- Set Bonuses:
+  - Changed:
+    - +25% to All Resistances (3 Items) (was +15% 3)
+
+#### Fade to Black
+- Base Item: Sallet [X] (was Battle Belt [X])
+- Item Level: 17 (was 35)
+- Required Level: 25 (was 38)
+- Properties:
+  - Changed:
+    - +20% to All Resistances (was +15%)
+  - Added:
+    - +1.5 Defense (Per Character Level)
+    - +1.5 to Life (Per Character Level)
+    - +1.5 to Mana (Per Character Level)
+  - Removed:
+    - +25 to Life
+    - +25 to Mana
+    - +80% Enhanced Defense
+- Set Bonuses:
+  - Added:
+    - +10% Physical Damage Reduction (2 Items)
+  - Removed:
+    - Slows Target by 15% (2 Items)
+
+#### Mystic Blades
+- Base Item: Barbed Shield [X] (was Scissors Quhab [X])
+- Item Level: 25 (was 35)
+- Required Level: 35 (was 40)
+- Properties:
+  - Changed:
+    - +25% Increased Attack Speed (was +20%)
+    - +50% Enhanced Weapon Damage (was +160-190%)
+  - Added:
+    - +30% Faster Block Rate
+  - Removed:
+    - Socketed (1)
+- Set Bonuses:
+  - Changed:
+    - +5% Life stolen per hit (3 Items) (was +8% 3)
+    - +5% Mana stolen per hit (4 Items) (was +8% 4)
+  - Added:
+    - Adds 25-50 Weapon Magic Damage (2 Items)
 
 </details>
 <details>
@@ -11506,14 +12974,60 @@ Items Added:
 - Base Item: Amulet
 - Rarity: 1 (was 3)
 
+#### Mephisto's Misty Aura
+- Base Item: Shadow Plate [E]
+- Properties:
+  - Added:
+    - 20% Chance to cast level 8 Dim Vision when struck
+  - Removed:
+    - 20% Chance to cast level 8 Cloak Of Shadows when struck
+
 #### Diablo's Soulstone Ring
 - Base Item: Ring
 - Rarity: 1 (was 3)
 
 </details>
 <details>
+<summary>Midnight Calling</summary>
+
+
+#### Jakira's Hood
+- Base Item: Skull Cap [N] (was Cap [N])
+
+</details>
+<details>
+<summary>Milabrega's Regalia</summary>
+
+
+#### Milabrega's Robe
+- Base Item: Ancient Armor [N]
+- Item Level: 12 (was 23)
+
+#### Milabrega's Diadem
+- Base Item: Crown [N]
+- Item Level: 12 (was 23)
+
+#### Milabrega's Rod
+- Base Item: War Scepter [N]
+- Item Level: 12 (was 23)
+
+#### Milabrega's Orb
+- Base Item: Kite Shield [N]
+- Item Level: 12 (was 23)
+
+</details>
+<details>
 <summary>Mishy's Avatar</summary>
 
+
+#### Maiden's Kiss
+- Base Item: Heavy Bracers [X]
+- Properties:
+  - Changed:
+    - +20-30% Cold Resistance (was +30-40%)
+    - +20-30% Fire Resistance (was +30-40%)
+    - +20-30% Lightning Resistance (was +30-40%)
+    - +20-30% Poison Resistance (was +30-40%)
 
 #### Warder's Bond
 - Base Item: Ring
@@ -11527,13 +13041,72 @@ Items Added:
 #### Myhrginoc's Headhunter
 - Base Item: Champion Axe [E]
 - Properties:
+  - Added:
+    - +100% Extra Gold from Monsters
+    - +35% Chance of Open Wounds
   - Removed:
     - Knockback
+    - Prevent Monster Heal
+- Set Bonuses:
+  - Added:
+    - +5% Life stolen per hit (2 Items)
+    - Adds 50-100 Weapon Damage (4 Items)
+
+#### Myhrginoc's Black Rain
+- Base Item: Shadow Plate [E]
+- Properties:
+  - Changed:
+    - +200-300% Enhanced Defense (was +170-200%)
+  - Added:
+    - +100% Enhanced Weapon Damage
+  - Removed:
+    - Socketed (2)
+- Set Bonuses:
+  - Added:
+    - +10% Magic Resistance (4 Items)
+    - +10% to All Resistances (2 Items)
+
+#### Myhrginoc's Deathmonger
+- Base Item: Ogre Gauntlets [E]
+- Properties:
+  - Changed:
+    - +150-200% Enhanced Defense (was +100-130%)
+    - +20-30% Increased Attack Speed (was +15%)
+    - +50% Enhanced Weapon Damage (was +30-40%)
+  - Added:
+    - +25% Chance of Open Wounds
+    - +50% Chance Items Roll Magic or Better
+  - Removed:
+    - +10 to Melee Mastery (oskill)
+- Set Bonuses:
+  - Changed:
+    - +15% Chance of Crushing Blow (2 Items) (was +22% 2)
+    - +15% Deadly Strike (4 Items) (was +16% 3)
+  - Added:
+    - +5 to Melee Mastery (oskill) (3 Items)
+
+#### Myhrginoc's Crimson Crusader
+- Base Item: Armet [E]
+- Properties:
+  - Changed:
+    - 12% Chance to cast level 30 War Cry when struck (was 12% 4)
+- Set Bonuses:
+  - Added:
+    - +15% Increased Attack Speed (3 Items)
+    - +25% Faster Cast Rate (2 Items)
 
 </details>
 <details>
 <summary>Narrow Path Between Light and Darkness</summary>
 
+
+#### Char's Carapace
+- Base Item: Wire Fleece [E] (was Dusk Shroud [E])
+
+#### Char's Grimace of Death
+- Base Item: Demonhead [E] (was Grim Helm [X])
+- Item Level: 50 (was 35)
+- Required Level: 55 (was 62)
 
 #### Char's Hand of Blessed Light
 - Base Item: Mighty Scepter [E]
@@ -11545,12 +13118,100 @@ Items Added:
 
 </details>
 <details>
+<summary>Natalya's Odium</summary>
+
+
+#### Full Set Bonuses
+  - Changed: +200 Defense (was +150)
+
+#### Natalya's Shadow
+- Base Item: Loricated Mail [E]
+- Item Level: 60 (was 22)
+- Properties:
+  - Changed:
+    - +1.5 to Life (Per Character Level) (was +1)
+    - +2-3 to Shadow Disciplines (Assassin Only) (was +2)
+    - +200-300 Defense (was +150-225)
+    - +50% Poison Resistance (was +25%)
+    - Poison Length Reduced by 50% (was 75%)
+    - Socketed (2-4) (was 1-3)
+- Set Bonuses:
+  - Added:
+    - +1 to Max Shadow Masters (3 Items)
+    - +2 to Max Shadow Masters (4 Items)
+
+#### Natalya's Soul
+- Base Item: Mesh Boots [X]
+- Item Level: 17 (was 22)
+- Properties:
+  - Changed:
+    - +100-150 Defense (was +75-125)
+    - +30-40% Faster Run/Walk Speed (was +40%)
+  - Added:
+    - +1 to Shadow Disciplines (Assassin Only)
+    - +20% Chance of Open Wounds
+  - Removed:
+    - Heal Stamina Plus 0.25% (Per Character Level)
+- Set Bonuses:
+  - Added:
+    - +10% to All Resistances (2 Items)
+    - +10% to All Resistances (4 Items)
+
+#### Natalya's Mark
+- Base Item: Scissors Suwayyah [E]
+- Item Level: 60 (was 22)
+- Properties:
+  - Changed:
+    - +250-350% Enhanced Weapon Damage (was +200%)
+  - Added:
+    - +50-100 to Maximum Weapon Damage
+  - Removed:
+    - Adds 12-17 Weapon Fire Damage
+    - Adds 50 Weapon Cold Damage
+- Set Bonuses:
+  - Added:
+    - +100 to Maximum Weapon Damage (3 Items)
+    - +25% Deadly Strike (4 Items)
+    - +50 to Minimum Weapon Damage (2 Items)
+
+#### Natalya's Totem
+- Base Item: Grim Helm [X]
+- Item Level: 40 (was 22)
+- Properties:
+  - Changed:
+    - Magic Damage Reduced By 5-10 (was 3)
+- Set Bonuses:
+  - Added:
+    - Adds 25-50 Weapon Damage (4 Items)
+
+</details>
+<details>
 <summary>Nature's Grove</summary>
 
 
 #### Peace Ring
 - Base Item: Ring
 - Rarity: 3 (was 5)
+
+</details>
+<details>
+<summary>Nefarious Ways</summary>
+
+
+#### Partial Set Bonuses
+  - Added: Drain Life -2 (Per Character Level)
+  - Removed: Drain Life -3
+
+</details>
+<details>
+<summary>Orphan's Call</summary>
+
+
+#### Guillaume's Face
+- Base Item: Winged Helm [X]
+- Properties:
+  - Changed:
+    - +15% Chance of Crushing Blow (was +35%)
 
 </details>
 <details>
@@ -11565,12 +13226,73 @@ Items Added:
 
 </details>
 <details>
+<summary>Servitude or Rebellion</summary>
+
+
+#### Equilibrium
+- Base Item: Mesh Belt [X]
+- Set Bonuses:
+  - Added:
+    - Adds 25-50 Weapon Damage (2 Items)
+  - Removed:
+    - Replenish Life +3-5 (2 Items)
+
+#### Slave to Anarchy
+- Base Item: Chaos Armor [X]
+- Properties:
+  - Added:
+    - +50% Enhanced Weapon Damage
+
+#### Bound by Honor
+- Base Item: Stygian Pike [E]
+- Properties:
+  - Changed:
+    - +20% Increased Attack Speed (was +30%)
+    - +250-300% Enhanced Weapon Damage (was +240-270%)
+    - +5 to Melee Mastery (oskill) (was +5-9)
+    - Adds 50-100 Weapon Damage (was 50-200)
+- Set Bonuses:
+  - Added:
+    - +25% Deadly Strike (3 Items)
+    - Adds 50-150 Weapon Damage (2 Items)
+
+</details>
+<details>
 <summary>Sheena's Grace</summary>
 
 
 #### Sheena's Choker
 - Base Item: Amulet
 - Rarity: 3 (was 5)
+
+</details>
+<details>
+<summary>Sigon's Complete Steel</summary>
+
+
+#### Sigon's Wrap
+- Base Item: Plated Belt [N]
+- Item Level: 1 (was 9)
+
+#### Sigon's Shelter
+- Base Item: Gothic Plate [N]
+- Item Level: 1 (was 9)
+
+#### Sigon's Sabot
+- Base Item: Greaves [N]
+- Item Level: 1 (was 9)
+
+#### Sigon's Gage
+- Base Item: Gauntlets [N]
+- Item Level: 1 (was 9)
+
+#### Sigon's Visor
+- Base Item: Great Helm [N]
+- Item Level: 1 (was 9)
+
+#### Sigon's Guard
+- Base Item: Tower Shield [N]
+- Item Level: 1 (was 9)
 
 </details>
 <details>
@@ -11592,7 +13314,7 @@ Items Added:
 
 #### Partial Set Bonuses
   - Changed: +100% Chance Items Roll Magic or Better (was +65%)
-  - Changed: Replenish Life +50 (was +10)
+  - Changed: Replenish Life +30 (was +10)
 
 #### Full Set Bonuses
   - Changed: +200 Defense (was +150)
@@ -11673,7 +13395,100 @@ Items Added:
 
 #### Tancred's Weird
 - Base Item: Amulet
+- Item Level: 12 (was 27)
 - Rarity: 3 (was 7)
+
+#### Tancred's Crowbill
+- Base Item: Military Pick [N]
+- Item Level: 12 (was 27)
+
+#### Tancred's Spine
+- Base Item: Full Plate Mail [N]
+- Item Level: 12 (was 27)
+
+#### Tancred's Hobnails
+- Base Item: Boots [N]
+- Item Level: 12 (was 27)
+
+#### Tancred's Skull
+- Base Item: Bone Helm [N]
+- Item Level: 12 (was 27)
+
+</details>
+<details>
+<summary>Terror of the Deep</summary>
+
+
+#### Partial Set Bonuses
+  - Added: +20% Increased Attack Speed
+  - Removed: Half Freeze Duration
+
+#### Full Set Bonuses
+  - Changed: +25% Chance of Crushing Blow (was +66%)
+  - Changed: +300% Enhanced Weapon Damage (was +150%)
+  - Changed: Adds 50-100 Weapon Damage (was 25-50)
+  - Added: +50% Chance of Open Wounds
+  - Removed: 15% Chance to cast level 18 Shock Wave on striking
+
+#### Mako's Quickness
+- Base Item: Sharkskin Belt [X]
+- Properties:
+  - Changed:
+    - +25% Faster Run/Walk Speed (was +15%)
+  - Added:
+    - +20% Cold Resistance
+  - Removed:
+    - +4-8 to Avoid (oskill)
+- Set Bonuses:
+  - Added:
+    - +25% to All Resistances (3 Items)
+
+#### Great White Terror
+- Base Item: Kraken Shell [E]
+- Properties:
+  - Changed:
+    - +15-20% Physical Damage Reduction (was +25%)
+    - Physical Damage Reduced By 20-30 (was 35-50)
+  - Added:
+    - +50-100% Enhanced Weapon Damage
+
+#### Hammerhead's Persistence
+- Base Item: Sharkskin Boots [X]
+- Properties:
+  - Changed:
+    - +150-200% Enhanced Defense (was +100%)
+    - +50-100 to Life (was +60-90)
+  - Added:
+    - +15% Deadly Strike
+  - Removed:
+    - +15-25% Chance of Crushing Blow
+- Set Bonuses:
+  - Added:
+    - +15% Faster Run/Walk Speed (2 Items)
+    - +25% to All Resistances (4 Items)
+
+#### Feeding Frenzy
+- Base Item: Giant Thresher [E]
+- Properties:
+  - Changed:
+    - +300-350% Enhanced Weapon Damage (was +220-290%)
+  - Added:
+    - +100-200 to Maximum Weapon Damage
+  - Removed:
+    - +3 to Barbarian Skill Levels
+    - Requirements Reduced By -25%
+- Set Bonuses:
+  - Changed:
+    - +45% Increased Attack Speed (2 Items) (was +45% 4)
+    - Adds 150-300 Weapon Damage (3 Items) (was 50-250)
+
+</details>
+<details>
+<summary>The Darkest Weaves</summary>
+
+
+#### Full Set Bonuses
+  - Changed: Adds 200-500 Weapon Fire Damage (was 300-500)
 
 </details>
 <details>
@@ -11683,6 +13498,187 @@ Items Added:
 #### Telling of Beads
 - Base Item: Amulet
 - Rarity: 2 (was 1)
+
+</details>
+<details>
+<summary>The Mysterious Spin</summary>
+
+
+#### Spin's Mystery
+- Base Item: Spiderweb Sash [E]
+- Item Level: 40 (was 60)
+- Required Level: 46 (was 63)
+
+#### Spin's Paradox
+- Base Item: Scarab Husk [E]
+- Item Level: 50 (was 60)
+- Required Level: 51 (was 68)
+
+#### Spin's Enigma
+- Base Item: Tiara [X]
+- Item Level: 50 (was 60)
+- Required Level: 52 (was 59)
+- Properties:
+  - Changed:
+    - +1-2 to All Skills (was +1)
+
+#### Spin's Perplexing Puzzle
+- Base Item: Eldritch Orb [E]
+- Item Level: 40 (was 60)
+- Required Level: 50 (was 70)
+
+#### Spin's Conundrum
+- Base Item: Aegis [E]
+- Item Level: 50 (was 60)
+- Required Level: 59 (was 84)
+
+</details>
+<details>
+<summary>Tika's Request</summary>
+
+
+#### Full Set Bonuses
+  - Added: Adds 1-300 Weapon Lightning Damage
+  - Removed: Attacker Takes Lightning Damage of 100
+
+#### Hallowed Redeemer
+- Base Item: Silver-edged Axe [E]
+- Set Bonuses:
+  - Changed:
+    - +3 to Maximum Weapon Damage (Per Character Level) (4 Items) (was +2.5 4)
+
+#### Girdle of Kitthix
+- Base Item: Colossus Girdle [E]
+- Properties:
+  - Changed:
+    - +50% Enhanced Weapon Damage (was +25-35%)
+  - Removed:
+    - +3-5 to Melee Mastery (oskill)
+- Set Bonuses:
+  - Added:
+    - +3 to Melee Mastery (oskill) (3 Items)
+
+#### Frostwyrm Hide
+- Base Item: Wyrmhide [E]
+- Set Bonuses:
+  - Added:
+    - +100% Enhanced Weapon Damage (3 Items)
+
+#### Gauntlets of Quietus
+- Base Item: Battle Gauntlets [X]
+- Properties:
+  - Changed:
+    - +20-25 to Dexterity (was +10-15)
+    - +25% Increased Attack Speed (was +15%)
+    - 12% Chance to cast level 30 Glacial Spike on striking (was 12% 3)
+  - Added:
+    - Adds 10-20 Weapon Damage
+  - Removed:
+    - +1-3 to Melee Mastery (oskill)
+- Set Bonuses:
+  - Changed:
+    - +100 to Life (4 Items) (was +45 4)
+  - Added:
+    - +3 to Melee Mastery (oskill) (2 Items)
+
+#### Draconian Mask
+- Base Item: Casque [X]
+- Set Bonuses:
+  - Changed:
+    - +50% Chance Items Roll Magic or Better (3 Items) (was +25% 3)
+
+</details>
+<details>
+<summary>Trang-Oul's Avatar</summary>
+
+
+#### Partial Set Bonuses
+  - Changed: +25% Mana Regeneration (was +15%)
+  - Added: +15 to Trang-Ouls Burning Shroud (oskill)
+  - Added: +15 to Trang-Ouls Doomfall (oskill)
+  - Added: +15 to Trang-Ouls Hellflare (oskill)
+  - Removed: +10 to Meteor (oskill)
+  - Removed: +13 to Fire Wall (oskill)
+  - Removed: +18 to Fire Ball (oskill)
+
+#### Full Set Bonuses
+  - Changed: +100% Mana Regeneration (was +15%)
+  - Changed: +200 to Mana (was +100)
+  - Added: +3 to All Skills
+  - Added: +3 to Max Fire Golems
+  - Added: +50% to Fire Skill Damage
+  - Removed: +20% Life stolen per hit
+  - Removed: +3 to Fire Mastery (oskill)
+  - Removed: +3 to Necromancer Skill Levels
+
+#### Trang-Oul's Girth
+- Base Item: Troll Belt [E]
+- Item Level: 60 (was 32)
+- Required Level: 70 (was 62)
+- Properties:
+  - Changed:
+    - +100-150 Defense (was +75-100)
+    - +50-100 to Life (was +66)
+    - +50-100 to Mana (was +25-50)
+    - Replenish Life +20-30 (was +5)
+  - Added:
+    - +1 to Summoning Skills (Necromancer Only)
+- Set Bonuses:
+  - Added:
+    - +20% Lightning Resistance (2 Items)
+
+#### Trang-Oul's Scales
+- Base Item: Chaos Armor [X]
+- Properties:
+  - Changed:
+    - +150-300% Enhanced Defense (was +150%)
+
+#### Trang-Oul's Claws
+- Base Item: Heavy Bracers [X]
+- Properties:
+  - Changed:
+    - +20-30% Faster Cast Rate (was +20%)
+    - +50-100 Defense (was +30)
+  - Added:
+    - +25% Fire Resistance
+  - Removed:
+    - +25% to Poison Skill Damage
+- Set Bonuses:
+  - Added:
+    - +10% to All Resistances (2 Items)
+    - +15% Faster Cast Rate (3 Items)
+
+#### Trang-Oul's Guise
+- Base Item: Bone Visage [E]
+- Item Level: 70 (was 32)
+- Required Level: 80 (was 65)
+- Properties:
+  - Changed:
+    - +100-150 Defense (was +80-100)
+    - Replenish Life +30 (was +5)
+  - Added:
+    - +3 to Fire Golem (Necromancer Only)
+  - Removed:
+    - Attacker Takes Damage of 20
+- Set Bonuses:
+  - Added:
+    - +10% Faster Cast Rate (2 Items)
+    - +10% to Fire Skill Damage (3 Items)
+
+#### Trang-Oul's Wing
+- Base Item: Cantor Trophy [X]
+- Properties:
+  - Added:
+    - +2 to Summoning Skills (Necromancer Only)
+  - Removed:
+    - +2 to Poison and Bone Skills (Necromancer Only)
+- Set Bonuses:
+  - Changed:
+    - Replenish Life +30 (4 Items) (was +15 4)
+  - Added:
+    - -25% to Enemy Fire Resistance (3 Items)
+  - Removed:
+    - -25% to Enemy Poison Resistance (3 Items)
 
 </details>
 <details>
@@ -11707,18 +13703,134 @@ Items Added:
 
 #### Vidala's Snare
 - Base Item: Amulet
+- Item Level: 10 (was 19)
 - Rarity: 3 (was 7)
+- Properties:
+  - Changed:
+    - +15-30 to Life (was +15)
+  - Added:
+    - Freezes target +1
+- Set Bonuses:
+  - Added:
+    - +50% Extra Gold from Monsters (3 Items)
+
+#### Vidala's Ambush
+- Base Item: Leather Armor [N]
+- Item Level: 10 (was 19)
+- Properties:
+  - Changed:
+    - +10-15 to Dexterity (was +11)
+  - Added:
+    - Prevent Monster Heal
+
+#### Vidala's Fetlock
+- Base Item: Light Plated Boots [N]
+- Item Level: 10 (was 19)
+- Properties:
+  - Added:
+    - Adds 10-20 Weapon Fire Damage
+- Set Bonuses:
+  - Changed:
+    - +10% to All Resistances (2 Items) (was +8% 2)
+  - Added:
+    - +15% Faster Run/Walk Speed (3 Items)
+
+#### Vidala's Barb
+- Base Item: Long Battle Bow [N]
+- Item Level: 10 (was 19)
+- Properties:
+  - Changed:
+    - +20-40 to Weapon Maximum Lightning Damage (was +20)
+  - Added:
+    - +25% Increased Attack Speed
+- Set Bonuses:
+  - Added:
+    - +1 to Weapon Maximum Lightning Damage (Per Character Level) (3 Items)
+
+</details>
+<details>
+<summary>Warlock's Exploration</summary>
+
+
+#### Lilarcor Cap
+- Base Item: Diadem [E] (was War Hat [X])
+- Item Level: 50 (was 30)
+- Required Level: 64 (was 38)
+
+</details>
+<details>
+<summary>Yohann's Savant</summary>
+
+
+#### Wiseman's Cap
+- Base Item: Coronet [N] (was Crown [N])
+- Required Level: 39 (was 28)
 
 </details>
 <details>
 <summary>Zhoulomcrist's Dread</summary>
 
 
+#### Partial Set Bonuses
+  - Changed: Replenish Life +30 (was +5)
+
 #### Darkest Wishes
 - Base Item: Ettin Axe [E]
+- Item Level: 50 (was 60)
+- Required Level: 60 (was 70)
 - Properties:
+  - Changed:
+    - +300-330% Enhanced Weapon Damage (was +220-260%)
   - Removed:
     - Knockback
+- Set Bonuses:
+  - Added:
+    - 10% Chance to cast level 5 Burst of Speed when you Kill an Enemy (4 Items)
+    - Adds 100-200 Weapon Damage (5 Items)
+    - Adds 100-200 Weapon Fire Damage (3 Items)
+  - Removed:
+    - 20% Chance to cast level 15 Life Tap when you Kill an Enemy (4 Items)
+
+#### Shadowed Plate
+- Base Item: Archon Plate [E]
+- Required Level: 65 (was 74)
+- Properties:
+  - Changed:
+    - +200-300% Enhanced Defense (was +175-195%)
+    - +5-10% to Experience Gained (was +1-5%)
+- Set Bonuses:
+  - Added:
+    - +25% Increased Attack Speed (2 Items)
+
+#### Unholy Desires
+- Base Item: War Hat [X]
+- Properties:
+  - Changed:
+    - +15% Damage Taken Goes To Mana (was +12-15%)
+    - +25% Faster Cast Rate (was +15%)
+    - +50 to Mana (was +35-50)
+- Set Bonuses:
+  - Changed:
+    - Adds 50-100 Weapon Cold Damage (3 Items) (was 25-35)
+  - Removed:
+    - +1 to Warmth (oskill) (5 Items)
+
+#### Draven Coil
+- Base Item: Ring
+- Properties:
+  - Changed:
+    - +10-15% Faster Cast Rate (was +10%)
+  - Added:
+    - +50-100 to Attack Rating
+  - Removed:
+    - +10-20% Bonus to Attack Rating
+- Set Bonuses:
+  - Added:
+    - Adds 10-300 Weapon Lightning Damage (4 Items)
+    - Adds 100-150 Weapon Fire Damage (3 Items)
+    - Adds 50-100 Weapon Cold Damage (2 Items)
+  - Removed:
+    - Freezes target +2 (4 Items)
 
 </details>
 
@@ -11729,7 +13841,115 @@ Items Added:
 <details>
 <summary>Show Runeword Changes</summary>
 
+### Added
+
+#### Empower
+- Item Level: 27
+- Required Level: 27
+- Properties:
+  - +1 to Barbarian Skill Levels
+  - +10-15 to Maximum Weapon Damage
+  - +25% Faster Hit Recovery
+  - +25% Faster Run/Walk Speed
+  - +3-6% Life stolen per hit
+  - +3-6% Mana stolen per hit
+  - +50 to Life
+  - Attacker Takes Damage of 14
+  - Physical Damage Reduced By 7
+
+#### Glammer
+- Item Level: 69
+- Required Level: 81
+- Properties:
+  - +1.5% Chance Items Roll Magic or Better (Per Character Level)
+  - +12 to Required Level
+  - +160-200% Enhanced Defense
+  - +2 to All Skills
+  - +25% Deadly Strike
+  - +8% Physical Damage Reduction
+  - 16% Chance to cast level 9 Weaken on striking
+  - Cannot Be Frozen
+  - Indestructible
+
+#### Hysteria
+- Item Level: 39
+- Required Level: 39
+- Properties:
+  - +10 to Dexterity
+  - +10% to All Resistances
+  - +20% Faster Hit Recovery
+  - +40% Increased Attack Speed
+  - +5 Life after each Kill
+  - +6 to Evade (oskill)
+  - +65% Faster Run/Walk Speed
+
+#### Mania
+- Item Level: 39
+- Required Level: 39
+- Properties:
+  - +10 to Dexterity
+  - +180-200% Enhanced Weapon Damage
+  - +30% Increased Attack Speed
+  - +50 to Attack Rating against Undead
+  - +75% Damage to Undead
+  - 5% Chance to cast level 1 Burst of Speed on striking
+  - Level 1 Fanaticism Aura When Equipped
+
+#### Rimewind
+- Item Level: 43
+- Required Level: 43
+- Properties:
+  - +1-2 to Traps (Assassin Only)
+  - +10-15% to Cold Skill Damage
+  - +140-190% Enhanced Weapon Damage
+  - +75% Extra Gold from Monsters
+  - Adds 1-300 Weapon Lightning Damage
+  - Adds 100-200 Weapon Fire Damage
+  - Adds 3-14 Weapon Cold Damage
+  - Adds 30-70 Weapon Cold Damage
+
+#### Runeword180
+- Item Level: 51
+- Required Level: 51
+- Properties:
+  - +1 to All Skills
+  - +1-5 Life after each Kill
+  - +10 to Vitality
+  - +20% Faster Cast Rate
+  - +26-40% Chance Items Roll Magic or Better
+  - +30% Fire Resistance
+  - +30-50% Enhanced Defense
+  - 5% Chance to cast level 10 Sigil Lethargy when struck
+
+#### Wildfire
+- Item Level: 43
+- Required Level: 43
+- Properties:
+  - +1-2 to Traps (Assassin Only)
+  - +10-15% to Fire Skill Damage
+  - +140-190% Enhanced Weapon Damage
+  - +75% Extra Gold from Monsters
+  - Adds 1-300 Weapon Lightning Damage
+  - Adds 105-230 Weapon Fire Damage
+  - Adds 30-70 Weapon Cold Damage
+
+### Removed
+- Hustle (Torso)
+- Hustle (Weapon)
+
 ### Modified
+
+#### Arcane2
+- Properties:
+  - Changed:
+    - +30-50% Faster Cast Rate (was +50%)
+    - +50% Mana Regeneration (was +75%)
+  - Added:
+    - +10% Magic Resistance
+  - Removed:
+    - +1 to Warmth (oskill)
+    - +20% Increased Maximum Mana
+    - +5-10% to Experience Gained
 
 #### Armageddon
 - Properties:
@@ -11743,8 +13963,27 @@ Items Added:
     - 40% Chance to cast level 20 Chain Lightning when struck
 
 #### Authority
+- Item Level: 33 (was 69)
+- Required Level: 29 (was 81)
 - Properties:
+  - Added:
+    - +2 to Warlock Skill Levels
+    - +20% Faster Hit Recovery
+    - +30% Fire Resistance
+    - +40-60% Enhanced Weapon Damage
+    - 10% Chance to cast level 15 Miasma Chains on striking
+    - 2% Chance to cast level 10 Psychic Ward when struck
+    - Requirements Reduced By -15%
   - Removed:
+    - +1.5% Chance Items Roll Magic or Better (Per Character Level)
+    - +12 to Required Level
+    - +160-200% Enhanced Defense
+    - +2 to All Skills
+    - +25% Deadly Strike
+    - +8% Physical Damage Reduction
+    - 16% Chance to cast level 9 Weaken on striking
+    - Cannot Be Frozen
+    - Indestructible
     - Slows Target by 20%
 
 #### Beast1
@@ -11801,6 +14040,11 @@ Items Added:
     - 11% Chance to cast level 9 Charged Bolt on striking
     - 9% Chance to cast level 11 Frozen Orb on striking
 
+#### Darkness
+- Properties:
+  - Changed:
+    - Adds 100-150 Weapon Damage (was 75-150)
+
 #### Daylight
 - Properties:
   - Changed:
@@ -11818,8 +14062,10 @@ Items Added:
 - Properties:
   - Added:
     - 11% Chance to cast level 18 Attract on striking
+    - 12% Chance to cast level 35 Bone Spirit when struck
   - Removed:
     - 11% Chance to cast level 18 Confuse on striking
+    - 6% Chance to cast level 14 Mind Blast when struck
 
 #### Destruction
 - Properties:
@@ -11960,6 +14206,7 @@ Items Added:
     - +20% Chance of Crushing Blow (was +40%)
 
 #### Jealousy
+- Required Level: 18 (was 17)
 - Properties:
   - Added:
     - +3 to Impale (oskill)
@@ -12050,6 +14297,21 @@ Items Added:
   - Changed:
     - 25% Chance to cast level 1 Howl when struck (was 3% 1)
 
+#### Nadir
+- Properties:
+  - Added:
+    - Level 10 Inner Sight (10 Charges)
+  - Removed:
+    - Level 13 Cloak of Shadows (9 Charges)
+
+#### Natalya's Shroud
+- Properties:
+  - Added:
+    - +10% to All Elemental Skill Damage
+  - Removed:
+    - +20% to Fire Skill Damage
+    - +20% to Lightning Skill Damage
+
 #### Night1
 - Properties:
   - Added:
@@ -12061,6 +14323,10 @@ Items Added:
 - Properties:
   - Changed:
     - +200-230% Enhanced Weapon Damage (was +210-340%)
+  - Added:
+    - Level 16 HoW (20 Charges)
+  - Removed:
+    - Level 16 Heart of Wolverine (20 Charges)
 
 #### Obedience
 - Properties:
@@ -12074,6 +14340,13 @@ Items Added:
     - +1 to Warp (oskill)
   - Removed:
     - Level 1 Teleport (5 Charges)
+
+#### Passion
+- Properties:
+  - Added:
+    - Level 3 HoW (12 Charges)
+  - Removed:
+    - Level 3 Heart of Wolverine (12 Charges)
 
 #### Peril
 - Properties:
@@ -12115,6 +14388,13 @@ Items Added:
   - Changed:
     - 12% Chance to cast level 10 Meteor on striking (was 8% 4)
 
+#### Shadow1
+- Properties:
+  - Added:
+    - 25% Chance to cast level 12 Dim Vision when struck
+  - Removed:
+    - 25% Chance to cast level 12 Cloak Of Shadows when struck
+
 #### Siren's Song
 - Properties:
   - Added:
@@ -12139,6 +14419,13 @@ Items Added:
     - +6 to Minimum Weapon Damage (was +3)
     - +9 to Maximum Weapon Damage (was +3)
 
+#### Sting
+- Properties:
+  - Added:
+    - +5 to Freezing Arrow (oskill)
+  - Removed:
+    - +5 to Ice Arrow (oskill)
+
 #### Storm1
 - Properties:
   - Changed:
@@ -12158,9 +14445,11 @@ Items Added:
 - Properties:
   - Changed:
     - +1-2 to Traps (Assassin Only) (was +3)
-    - +15-20% to Lightning Skill Damage (was +20-30%)
+    - +10-15% to Lightning Skill Damage (was +20-30%)
+    - Adds 2-350 Weapon Lightning Damage (was 1-300)
   - Removed:
     - +2 to Assassin Skill Levels
+    - Adds 3-14 Weapon Cold Damage
 
 #### Tradition
 - Properties:
@@ -12189,6 +14478,31 @@ Items Added:
     - 100% Chance to cast level 25 Blightburst when you Die
   - Removed:
     - 100% Chance to cast level 55 Poison Nova when you Die
+
+#### Void
+- Item Level: 69 (was 27)
+- Required Level: 69 (was 27)
+- Properties:
+  - Added:
+    - +1-3 to Abyss (oskill)
+    - +10-15% to Magic Skill Damage
+    - +2 to All Skills
+    - +30% Chance Items Roll Magic or Better
+    - +40% Faster Cast Rate
+    - +8-12 to all Attributes
+    - Adds 3-14 Weapon Cold Damage
+    - Indestructible
+    - Level 4 Decrepify (35 Charges)
+  - Removed:
+    - +1 to Barbarian Skill Levels
+    - +10-15 to Maximum Weapon Damage
+    - +25% Faster Hit Recovery
+    - +25% Faster Run/Walk Speed
+    - +3-6% Life stolen per hit
+    - +3-6% Mana stolen per hit
+    - +50 to Life
+    - Attacker Takes Damage of 14
+    - Physical Damage Reduced By 7
 
 #### Wind1
 - Properties:
@@ -12223,19 +14537,246 @@ Items Added:
 <details>
 <summary>Show Base Item Changes</summary>
 
+### Added
+- Blasphemous Compendium [E] [wae] (Armor)
+  - Base: Base Required Level: 60, Required Strength: 95, Required Dexterity: 0, Durability: 20, Item Level: 81, Sockets: (1-25): 2 - (26-40): 3 - (41+): 4, Armor: 100-146, Block: 10
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Blasphemous Grimoire [E] [waf] (Armor)
+  - Base: Base Required Level: 65, Required Strength: 106, Required Dexterity: 0, Durability: 20, Item Level: 85, Sockets: (1-25): 2 - (26-40): 3 - (41+): 4, Armor: 103-148, Block: 12
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Burnt Text [X] [wa6] (Armor)
+  - Base: Base Required Level: 24, Required Strength: 38, Required Dexterity: 0, Durability: 20, Item Level: 33, Sockets: (1+): 2, Armor: 38-48, Block: 3
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Codex [N] [wa3] (Armor)
+  - Base: Base Required Level: 12, Required Strength: 18, Required Dexterity: 0, Durability: 20, Item Level: 16, Sockets: (1+): 2, Armor: 6-10, Block: 8
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Compendium [N] [wa4] (Armor)
+  - Base: Base Required Level: 15, Required Strength: 20, Required Dexterity: 0, Durability: 20, Item Level: 20, Sockets: (1+): 2, Armor: 10-16, Block: 10
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Dark Codex [X] [wa8] (Armor)
+  - Base: Base Required Level: 33, Required Strength: 47, Required Dexterity: 0, Durability: 20, Item Level: 45, Sockets: (1+): 2, Armor: 44-55, Block: 8
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Dark Tome [X] [wa7] (Armor)
+  - Base: Base Required Level: 29, Required Strength: 41, Required Dexterity: 0, Durability: 20, Item Level: 39, Sockets: (1+): 2, Armor: 41-52, Block: 5
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Forgotten Volume [E] [wab] (Armor)
+  - Base: Base Required Level: 44, Required Strength: 77, Required Dexterity: 0, Durability: 20, Item Level: 59, Sockets: (1-25): 2 - (26+): 3, Armor: 95-139, Block: 3
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Grimoire [N] [wa5] (Armor)
+  - Base: Base Required Level: 18, Required Strength: 25, Required Dexterity: 0, Durability: 20, Item Level: 24, Sockets: (1+): 2, Armor: 15-20, Block: 12
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Occult Codex [E] [wad] (Armor)
+  - Base: Base Required Level: 50, Required Strength: 91, Required Dexterity: 0, Durability: 20, Item Level: 66, Sockets: (1-25): 2 - (26+): 3, Armor: 98-142, Block: 8
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Occult Tome [E] [wac] (Armor)
+  - Base: Base Required Level: 49, Required Strength: 82, Required Dexterity: 0, Durability: 20, Item Level: 67, Sockets: (1-25): 2 - (26+): 3, Armor: 96-141, Block: 5
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Old Book [N] [wa1] (Armor)
+  - Base: Base Required Level: 3, Required Strength: 12, Required Dexterity: 0, Durability: 20, Item Level: 4, Sockets: (1+): 2, Armor: 2-5, Block: 3
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Possessed Compendium [X] [wa9] (Armor)
+  - Base: Base Required Level: 36, Required Strength: 50, Required Dexterity: 0, Durability: 20, Item Level: 49, Sockets: (1-25): 2 - (26+): 3, Armor: 50-64, Block: 10
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Possessed Grimoire [X] [waa] (Armor)
+  - Base: Base Required Level: 40, Required Strength: 58, Required Dexterity: 0, Durability: 20, Item Level: 54, Sockets: (1-25): 2 - (26+): 3, Armor: 58-70, Block: 12
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+- Tome [N] [wa2] (Armor)
+  - Base: Base Required Level: 6, Required Strength: 14, Required Dexterity: 0, Durability: 20, Item Level: 8, Sockets: (1+): 2, Armor: 4-8, Block: 5
+  - Automagic:
+    - +3 to Weapon Minimum Fire Damage
+    - +5 to Weapon Minimum Fire Damage
+    - +8 to Weapon Minimum Fire Damage
+    - +16 to Weapon Minimum Fire Damage
+    - +8 to Weapon Maximum Fire Damage
+    - +16 to Weapon Maximum Fire Damage
+    - +18 to Weapon Maximum Fire Damage
+    - +32 to Weapon Maximum Fire Damage
+    - Adds 3-5 Weapon Magic Damage
+    - Adds 6-10 Weapon Magic Damage
+    - Adds 11-20 Weapon Magic Damage
+    - Adds 21-30 Weapon Magic Damage
+
 ### Modified
 - Balanced Axe [N] [bal] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1-25): 1 - (26+): 2 (was 0)
 - Balanced Knife [N] [bkf] (Weapon)
-  - Base: Sockets: 1 (was 0)
+  - Base: Sockets: (1+): 1 (was 0)
 - Balrog Spear [E] [7s7] (Weapon)
-  - Base: Sockets: 3 (was 0)
+  - Base: Sockets: (1-40): 2 - (41+): 3 (was 0)
 - Battle Dart [X] [9tk] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1-25): 1 - (26+): 2 (was 0)
 - Bone Knife [E] [7dg] (Weapon)
-  - Base: Sockets: 2 (was 1)
+  - Base: Sockets: (1+): 2 (was 1 1)
 - Ceremonial Javelin [X] [ama] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Circlet [N] [ci0] (Armor)
   - Base: Required Dexterity: 40 (was 0)
 - Coronet [N] [ci1] (Armor)
@@ -12243,61 +14784,62 @@ Items Added:
 - Diadem [E] [ci3] (Armor)
   - Base: Required Dexterity: 80 (was 0)
 - Flying Axe [E] [7ta] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1-25): 1 - (26+): 2 (was 0)
 - Flying Knife [E] [7tk] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1-25): 1 - (26+): 2 (was 0)
 - Francisca [X] [9ta] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1-25): 1 - (26+): 2 (was 0)
 - Ghost Glaive [E] [7gl] (Weapon)
-  - Base: Sockets: 3 (was 0)
+  - Base: Sockets: (1-40): 2 - (41+): 3 (was 0)
 - Glaive [N] [glv] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Great Pilum [X] [9pi] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Harpoon [X] [9ts] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Hurlbat [X] [9b8] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1-25): 1 - (26+): 2 (was 0)
 - Hyperion Javelin [E] [7ja] (Weapon)
-  - Base: Sockets: 3 (was 0)
+  - Base: Sockets: (1-40): 2 - (41+): 3 (was 0)
 - Javelin [N] [jav] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
   - Automagic:
     - Added: Replenishes quantity
 - Maiden Javelin [N] [am5] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Matriarchal Javelin [E] [amf] (Weapon)
-  - Base: Sockets: 3 (was 0)
+  - Base: Sockets: (1-40): 2 - (41+): 3 (was 0)
 - Mithril Point [E] [7di] (Weapon)
-  - Base: Sockets: 2 (was 1)
+  - Base: Sockets: (1+): 2 (was 1 1)
 - Pilum [N] [pil] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Short Spear [N] [ssp] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Simbilan [X] [9s9] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Spiculum [X] [9gl] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Stygian Pilum [E] [7pi] (Weapon)
-  - Base: Sockets: 3 (was 0)
+  - Base: Sockets: (1-40): 2 - (41+): 3 (was 0)
 - Throwing Axe [N] [tax] (Weapon)
-  - Base: Sockets: 1 (was 0)
+  - Base: Sockets: (1+): 1 (was 0)
 - Throwing Knife [N] [tkf] (Weapon)
-  - Base: Sockets: 1 (was 0)
+  - Base: Sockets: (1+): 1 (was 0)
 - Throwing Spear [N] [tsp] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Tiara [X] [ci2] (Armor)
   - Base: Required Dexterity: 60 (was 0)
 - War Dart [X] [9bk] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1-25): 1 - (26+): 2 (was 0)
 - War Javelin [X] [9ja] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1+): 2 (was 0)
 - Winged Axe [E] [7b8] (Weapon)
-  - Base: Sockets: 3 (was 0)
+  - Base: Sockets: (1-25): 1 - (26-40): 2 - (41+): 3 (was 0)
 - Winged Harpoon [E] [7ts] (Weapon)
-  - Base: Sockets: 3 (was 0)
+  - Base: Sockets: (1-40): 2 - (41+): 3 (was 0)
 - Winged Knife [E] [7bk] (Weapon)
-  - Base: Sockets: 2 (was 0)
+  - Base: Sockets: (1-25): 1 - (26+): 2 (was 0)
 
 
 </details>
+

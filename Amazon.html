@@ -2,16 +2,16 @@
 title: Amazon
 description: Summary of changes to the Amazon in Reimagined
 published: true
-date: 2025-11-20T03:11:10.559Z
+date: 2026-03-02T23:39:28.171Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T01:55:00.631Z
 -->
 
 <h2>General Changes</h2>
-<p>&nbsp;</p>
-<h2>Skill Trees</h2>
-<h3>Passive and Magic</h3>
+<p>- Matched Xbow attack frame data to 2HT frames.</p>
+<h1>Skill Trees</h1>
+<h1>Passive and Magic</h1>
 <p>Inner Sight</p>
 <ul>
   <li>Now also applies 5 + 1% per soft point of physical damage reduction to enemies</li>
@@ -19,20 +19,99 @@ dateCreated: 2025-04-14T01:55:00.631Z
 </ul>
 <p>Penetrate</p>
 <ul>
-  <li>Now also grants 6 + 2% per hard point elemental penetration (fire, cold, lightning, poison)</li>
+  <li>Required level decreased to 12 from 18.</li>
+</ul>
+<h4>Critical Strike</h4>
+<ul>
+  <li>5+1% per level + 1% per every 2 levels post level 25.</li>
+  <li>Base points increase this bonus by 2% per point.</li>
+</ul>
+<h4>Dodge &amp; Avoid (Renamed from Dodge)</h4>
+<ul>
+  <li>Combined the melee and missile avoid while attacking and standing still into one passive.</li>
+  <li>5+1% per level + 1% per every 3 levels post level 25.<ul>
+      <li>Base points increase this bonus by 2% per point.</li>
+    </ul>
+  </li>
 </ul>
 <p>&nbsp;</p>
-<h3>Bow and Crossbow</h3>
+<h4>Titans Covenant (Renamed from Dopplezon/Decoy)</h4>
+<blockquote>
+  <p>Reworked because Decoy is so buggy. Self-only aura that reduces movement speed, attack speed, and physical damage reduction in exchange for increased global physical damage and crushing blow.</p>
+</blockquote>
+<ul>
+  <li>Requires level 30.</li>
+  <li>FRW and IAS range of -25% to -50%.<ul>
+      <li>Soft points increase (cap -50%).</li>
+      <li>Hard points decrease (can't go under -25%).</li>
+    </ul>
+  </li>
+  <li>PDR penalty range of -10% to -25%.<ul>
+      <li>Soft points increase the penalty (can't go above -25%).</li>
+      <li>Hard points reduce it (can't go under -10%).</li>
+    </ul>
+  </li>
+  <li>Global Damage Bonus is current 5% base with a 1% growth per base level and 1% growth per 2 soft levels excluding base levels. Results in a cap of around 67% global physical damage at level 100 with 25 base points.</li>
+  <li>Gains 1% Crushing Blow per 4 base/soft points to a cap of 25%.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Evade</h4>
+<ul>
+  <li>5+1% per level + 1% per every 3 levels post level 25.<ul>
+      <li>Base points increase this bonus by 2% per point.</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h4>Elemental Covenant (Renamed from Avoid)</h4>
+<blockquote>
+  <p>Self-only Aura that reduces your maximum elemental resistances and increases your elemental pierce.</p>
+</blockquote>
+<ul>
+  <li>Requires level 30.</li>
+  <li>Starts at 6% pierce and caps at -102% at base 25 bonus 75 (total 100). Grows 1% per level until 25, then 1% per 2 levels afterwards. Base points increase the bonus by 2% per base point.<ul>
+      <li>Level 100 with no base points is only around 65%.</li>
+    </ul>
+  </li>
+  <li>-10% All Maximum Resistances starting and grows by -1% with bonus levels up to a max of -35.<ul>
+      <li>Base levels decrease to or maintain this penalty at -10%.</li>
+    </ul>
+  </li>
+</ul>
+<blockquote>
+  <p>Penetrate having the permanent bonus of additional pierce was boring and I wanted to combine dodge and avoid so I needed to dream up something to replace them, this is the result.</p>
+</blockquote>
+<h4>Valkyrie</h4>
+<ul>
+  <li>Any synergy relying upon Dopplezon (Decoy) are now self-synergies.</li>
+</ul>
+<h4>Pierce</h4>
+<ul>
+  <li>Required level decreased to 24 from 30.</li>
+  <li>5+1% per level + 1% per every 2 levels post level 25.<ul>
+      <li>Base points increase this bonus by 2% per point.</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h1>Bow and Crossbow</h1>
 <p>Magic Arrow</p>
 <ul>
   <li>Gains 1 missile per 3 hard points in Multiple Shot</li>
   <li>Gains Flat Magic Damage Per Level</li>
+  <li>Added 10% Strafe magic damage synergy.</li>
+  <li>Conversion removed.</li>
+  <li>Added projectile count to tooltip.</li>
 </ul>
 <p>Fire Arrow</p>
 <ul>
   <li>Gains 1 missile per 3 hard points in Multiple Shot</li>
   <li>Min/Max Starting Damage Increased</li>
   <li>Gains increased fire damage per level</li>
+  <li>Decreased synergy to 9% from 12%.</li>
+  <li>Added Meteoric Arrow as synergy.</li>
+  <li>Conversion removed.</li>
+  <li>Added projectile count to tooltip.</li>
 </ul>
 <p>Cold Arrow</p>
 <ul>
@@ -40,16 +119,54 @@ dateCreated: 2025-04-14T01:55:00.631Z
   <li>Min/Max Starting Damage Increased</li>
   <li>Gains increased fire damage per level</li>
 </ul>
-<p>Multiple Shot</p>
+<p>&nbsp;</p>
+<h4>Freezing Arrow</h4>
 <ul>
-  <li>Now deals full weapon damage</li>
-  <li>Synergy reduced to keep the overall damage at similar values</li>
+  <li>Required level moved to 18 (formerly Ice Arrow).</li>
+  <li>Increased Curve 4 and 5.</li>
+  <li>Decreased synergy to 9% from 12%.</li>
+  <li>Added Glacial Orb Arrow as a synergy.</li>
+  <li>Gains 1 additional projectile per 10 base points.</li>
 </ul>
 <p>&nbsp;</p>
-<h3>Javelin and Spear</h3>
+<h4>Glacial Orb Arrow (Renamed from Ice Arrow)</h4>
+<ul>
+  <li>Required level moved to 30 (formerly Freezing Arrow).</li>
+  <li>Shoots an arrow that hits an enemy and spawns an orb that then spawns 4 Frost Novae rapidly and randomly around it.</li>
+  <li>Initial shot does weapon damage and carries weapon effects; subsequent novae deal 100% cold converted damage.</li>
+  <li>Adjusted curve for rework.</li>
+  <li>Adjusted synergy to 9% for rework. Synergies are Cold and Freezing Arrow.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Exploding Arrow</h4>
+<ul>
+  <li>Increased Curve 4 and 5.</li>
+  <li>Decreased synergy to 8% from 14%.</li>
+  <li>Added Meteoric Arrow as synergy.</li>
+  <li>Removed Multiple Shot prerequisite.</li>
+  <li>Gains 1 additional projectile per 10 base points.</li>
+</ul>
+<h4>Guided Arrow</h4>
+<ul>
+  <li>Removed Cold Arrow prerequisite.</li>
+  <li>Removed extra formula.</li>
+</ul>
+<h4>Strafe</h4>
+<ul>
+  <li>Added magic damage per level growth and Magic Arrow synergy for the magic damage.</li>
+</ul>
+<h4>Meteoric Arrow (Renamed from Immolation Arrow)</h4>
+<ul>
+  <li>Reworked, now casts Meteor on hit instead of random ground fire thing.</li>
+  <li>Adjusted damage curves for new ability.</li>
+  <li>Adjusted synergy to 8%.</li>
+  <li>Meteor hit deals weapon damage, but the explosion and the fire DoT do not.</li>
+  <li>Meteors will cast multiple times if the arrow pierces enemies.</li>
+</ul>
+<h1>Javelin and Spear</h1>
 <p>Jab</p>
 <ul>
-  <li>Added 6% Damage Synergy from Impale and Fend</li>
+  <li>Added 10% Damage Synergy from Impale and Fend</li>
   <li>Gains Flat Physical Damage Per Level</li>
 </ul>
 <p>Poison Javelin</p>
@@ -66,14 +183,77 @@ dateCreated: 2025-04-14T01:55:00.631Z
   <li>Now uses attack rating and is not flagged for “Always Hits”</li>
   <li>Added 6% Damage Synergy from Jab and Fend</li>
   <li>Gains Flat Physical Damage Per Level</li>
+  <li>Required level increased to 18 from 12.</li>
 </ul>
 <p>Plague Javelin</p>
 <ul>
   <li>Poison Clouds are bigger and spread faster for AoE clearing</li>
   <li>Damage reduced &nbsp;to facilitate the goal of being an AoE focused skill</li>
 </ul>
-<p>Fend</p>
+<h4>Charged Strike</h4>
 <ul>
-  <li>Added 6% Damage Synergy with Jab and Impale</li>
-  <li>Gains Flat Physical Damage Per Level</li>
+  <li>Required level increased to 30 from 18.</li>
+  <li>Prerequisite changed to Lightning Strike only.</li>
+  <li>Lightning Strike, Bolt, and Fury as synergies.</li>
+  <li>Added Attack Rating scaling.</li>
+  <li>Added source damage so it can leech, CB, CTC, OW, etc. on hit more reliably, but missile is still skill lightning damage only.</li>
 </ul>
+<blockquote>
+  <p>Want to revisit if needed in the future to potentially alter projectile growth. Left alone for now due to LS buffs.</p>
+</blockquote>
+<h4>Lightning Bolt</h4>
+<ul>
+  <li>Lightning conversion reduced to 50% from 100%.</li>
+  <li>Added Attack Rating scaling.</li>
+  <li>Lightning also strikes a target when hit (will cast on further out enemies also if the initial is pierced) that does a small AOE after a short delay (0.5 seconds for the cool visuals).</li>
+  <li>Gains 1 additional projectile for 25 hard points in Lightning Fury and Charged Strike.</li>
+  <li>Synergy reduced to 2% from 3% due to rework.</li>
+  <li>Synergy with Lightning Strike, Charged Strike, Lightning Fury.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Fend</h4>
+<blockquote>
+  <p>Reworked to do an AOE sporadic missile that hits enemies closest to where it spawns from, gives bonus defense in exchange for entirely disabling chance to block if wearing a shield so that while usable with jav/shield it encourages spear use.</p>
+</blockquote>
+<ul>
+  <li>Required level increased to 30.</li>
+  <li>Grants base 5% defense +1% per level for a second on use and disables block for that duration.</li>
+  <li>Due to the use of slam_state for synergy for missile damage, the character sheet display is correct on idle and inflated on use.</li>
+  <li>Damage synergy lowered to 4% due to the nature of the rework.</li>
+  <li>Spawns around 6-8 missiles on striking.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Toxic Whirl (Renamed from Power Strike)</h4>
+<ul>
+  <li>Spear and Javelin melee strike with a poison AOE swirly effect.</li>
+  <li>Strike deals source damage and poison; missile does not carry source damage.</li>
+  <li>Required level increased to 12.</li>
+  <li>Synergy with Poison and Plague Javelin but no prerequisite.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Lightning Strike</h4>
+<ul>
+  <li>Required level decreased to 24 from 30.</li>
+  <li>Removed prerequisite.</li>
+  <li>Target jump radius increased to 22 from 20.</li>
+  <li>Added source damage for leech, CB, CTC, OW, etc., but resulting missile is still only skill lightning damage.</li>
+  <li>Adjusted jumps from 3 + 1 per level to 3 + 1 per 5 levels.</li>
+  <li>Increased Curve 4 and 5.</li>
+  <li>Increased synergy to 12% from 11%.</li>
+  <li>Synergy: Charged Strike, Lightning Bolt, Lightning Fury.</li>
+</ul>
+<blockquote>
+  <p>Overall damage buff while reducing the level requirement and toning down the travel range; if this skill doesn't see more use then it and CS can be revisited.</p>
+</blockquote>
+<p>&nbsp;</p>
+<h4>Lightning Fury</h4>
+<ul>
+  <li>3 bolts to begin, adds 1 every 4 to a max of 24 instead of 3 + 1 per level with no cap.</li>
+  <li>Target search radius reduced to 12 from 15.</li>
+  <li>Added Attack Rating scaling.</li>
+  <li>Removed Power Strike as synergy due to rework; this also results in a damage nerf as nothing was added in compensation.</li>
+</ul>
+<blockquote>
+  <p>If this cripples the skill I will revisit and adjust the damage to bring it back into usability but testing shows that it feels the same in the end game and results in being less instantly OP in the mid to late game.</p>
+</blockquote>
+<p>&nbsp;</p>

@@ -2,7 +2,7 @@
 title: Necromancer
 description: Summary of changes to the Necromancer in Reimagined
 published: true
-date: 2025-06-04T03:08:11.895Z
+date: 2026-03-02T23:43:39.511Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:01:47.535Z
@@ -31,6 +31,10 @@ dateCreated: 2025-04-14T02:01:47.535Z
   <li>Synergy moved to missiles off of skill level to facilitate scaling into the end game properly</li>
   <li>10% damage synergy with Raise Skeleton added</li>
   <li>5% damage synergy with Skeleton Mastery added</li>
+  <li>Gains elemental pierce from Summon Resist passive.<ul>
+      <li>5% base, 1% per hard point, 1% per 2 soft points.</li>
+    </ul>
+  </li>
 </ul>
 <p>Clay Golem</p>
 <ul>
@@ -38,12 +42,16 @@ dateCreated: 2025-04-14T02:01:47.535Z
   <li>Can now summon 2 at skill level 20+</li>
   <li>Now casts “Defiance” aura whose level is determined by hard points up to a max level of 13</li>
   <li>Gains flat damage as a synergy with Golem Mastery</li>
+  <li>Slow changed from 0-75% diminishing returns to 25% at all levels.</li>
 </ul>
 <p>Blood Golem</p>
 <ul>
   <li>Reworked so that synergies are baked into the base skill for damage and attack rating</li>
   <li>Can now summon 2 at skill level 20+</li>
-  <li>Now casts “Blood Magic” aura on the player causing spells to cost life instead of mana (this was removed from Succubi and Baal).</li>
+  <li>Now casts “Blood Magic” aura on the player causing spells to cost life instead of mana (this was removed from Succubi and Baal).<ul>
+      <li>Aura also provides the player life after each kill 3 base + 1 per 3 levels</li>
+    </ul>
+  </li>
   <li>Now casts “Magic Mastery Aura” which benefits skills that deal magic damage 10 + 1% per level to maximum of 50% (Necromancer spells only for now.)</li>
   <li>Gains flat damage as a synergy with Golem Mastery</li>
 </ul>
@@ -58,22 +66,30 @@ dateCreated: 2025-04-14T02:01:47.535Z
   <li>Reworked so that synergies are baked into the base skill for health, damage and attack rating</li>
   <li>Can now summon 2 at skill level 20+</li>
   <li>Now casts an aura that grants allies flat fire damage instead of Holy Fire aura</li>
+  <li>Now has built-in 50% splash damage but a global damage penalty of 40% on Normal, 20% on Nightmare, and 0% penalty in Hell.</li>
+  <li>Now has a fire damage synergy with Golem Mastery for its base attack.</li>
+  <li>Now inherits the players fire mastery and fire pierce</li>
 </ul>
 <p>Revive</p>
 <ul>
   <li>Revives are no longer bound by a duration</li>
   <li>Revive monster velocity decreased from +200% to +130%</li>
+  <li>Pet maximum is now 5 baseline +1 per 5 base levels.</li>
+  <li>No longer receive bonus life from Skeleton Mastery; now have a baseline 100% bonus life.</li>
+  <li>Now gain 8 base weapon damage per Skeleton Mastery level.</li>
+  <li>Now gain 4 base weapon damage per Revive skill level.</li>
 </ul>
-<h3>Poison and Bone Skills</h3>
+<p>&nbsp;</p>
+<h1>Poison and Bone Skills</h1>
 <p>Teeth</p>
 <ul>
-  <li>Synergy with Energy added at 1% damager per Energy</li>
+  <li>Synergy with Energy added at 1% damage per 2 Energy</li>
   <li>Skill synergies reduced from 15 to 13%</li>
   <li>Skill curve base damage increased by 110% by skill level 29+</li>
 </ul>
 <p>Bone Spear</p>
 <ul>
-  <li>Synergy with Energy added at 1% damager per Energy</li>
+  <li>Synergy with Energy added at 1% damage per 2 Energy</li>
   <li>Skill synergies from 8% to 10%</li>
   <li>Can gain an additional projectile from magic/rare/crafted Wands and/or Necromancer heads</li>
   <li>Base damage increased by 40% by skill level 29+</li>
@@ -93,7 +109,7 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <ul>
   <li>Reworked into a bow/crossbow/throwing knife/throwing axe skill</li>
   <li>Uses attack speed</li>
-  <li>Fires 2 projectiles base and gains an additional projectile for every 3 hard points points in Poison Nova capping out at 5 total</li>
+  <li>Fires 2 projectiles base and gains extra projectiles through self levels instead of synergies (1 per 6 levels up to a max of 5 projectiles).</li>
   <li>Deals poison damage with a static length of 2 seconds</li>
   <li>Synergies increased from 15 to 20% with Poison Dagger and Poison Nova</li>
 </ul>
@@ -114,7 +130,7 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <ul>
   <li>Initial duration reduced from 24 seconds to 10 seconds</li>
 </ul>
-<h3>Curses</h3>
+<h1>Curses</h1>
 <p>Amplify Damage</p>
 <ul>
   <li>Flat enemy physical resistance reduction changed from 100% flat to 25% + 2% per soft level with a maximum of 100%</li>
@@ -127,4 +143,17 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <p>Decrepify</p>
 <ul>
   <li>Effect reduced from 50% to 25% total slow, damage, and negative enemy physical resistance</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Corpse Field (Renamed from Confuse Curse)</h4>
+<ul>
+  <li>Spawns corpses.</li>
+  <li>3 base, +1 per 5 levels.</li>
+  <li>5s cooldown base, -1s per 12 levels.</li>
+  <li>Spawns a 1 HP mob with no treasure class; cannot be revived and is useless for Corpse Explosion.</li>
+  <li>Replaced Confuse on items with Attract.</li>
+</ul>
+<h4>Life Tap</h4>
+<ul>
+  <li>Changed to 1% leech per base point + 1% per 5 levels.</li>
 </ul>

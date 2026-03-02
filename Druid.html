@@ -2,7 +2,7 @@
 title: Druid
 description: Summary of changes to the Druid in Reimagined
 published: true
-date: 2025-09-22T17:22:57.859Z
+date: 2026-03-02T23:29:55.090Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:00:01.798Z
@@ -23,6 +23,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Cap raised to 10 and hits reduced to 3</li>
   <li>Velocity adjusted by +5</li>
   <li>Small amount of attack speed gained per level</li>
+  <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
 </ul>
 <h3>Spirit Wolf</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.08%;"><img src="/spirit_wolf_(2).png"></figure>
@@ -32,6 +33,9 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Now has a chance to cast cold twisters on hit</li>
   <li>Now inherits the players cold pierce stat</li>
   <li>Now has a synergy with all cold and wind elemental skills</li>
+  <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
+  <li>Adjusted synergies to accept the cold spells or other summons up to a max of 100 for Zoo viability.</li>
+  <li>Adjusted damage curves to round out the early and end game better.</li>
 </ul>
 <h3>Dire Wolf</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.97%;"><img src="/dire_wolf_(2).png"></figure>
@@ -43,6 +47,9 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Now inherits the players fire pierce stat</li>
   <li>Now has a synergy with all fire elemental skills and fire claws</li>
   <li>Tooltip corrected for max wolves</li>
+  <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
+  <li>Adjusted synergies to accept the fire spells or other summons up to a max of 100 for Zoo viability.</li>
+  <li>Adjusted damage curves to round out the early and end game better.</li>
 </ul>
 <h3>Grizzly</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.24%;"><img src="/summon_grizzly.png"></figure>
@@ -51,6 +58,9 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Max bears remains at 2 at 10 hard skill points. You can't separate a bonded pair</li>
   <li>Now has a chance to cast shockwave on hit</li>
   <li>Now has a synergy with all physical shapeshift skills</li>
+  <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
+  <li>Adjusted synergies to accept the physical shapeshifting spells or other summons up to a max of 100 for Zoo viability.</li>
+  <li>Adjusted damage curves to round out the early and end game better.</li>
 </ul>
 <h3>Oak Sage</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.58%;"><img src="/oak_sage_(2).png"></figure>
@@ -168,6 +178,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:8.19%;"><img src="/lycanthropy.png"></figure>
 <ul>
   <li>No longer increases shapeshifting duration</li>
+  <li>HP% changed from 20 + 5% per level to: 5% from base levels and 1% from soft levels.</li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -175,6 +186,13 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:7.97%;"><img src="/werewolf.png"></figure>
 <ul>
   <li>No longer has a limited duration</li>
+  <li>Baseline HP% lowered from 25% to 10%.</li>
+  <li>Attack rating baseline lowered from 50 to 10.</li>
+  <li>Attack rating gained per level lowered from 15% to 3%.</li>
+  <li>New synergy with Lycanthropy:<ul>
+      <li>+1% chance to dodge melee and missile attacks while attacking/standing still per 2 levels.</li>
+    </ul>
+  </li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -182,6 +200,15 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:8.02%;"><img src="/werebear.png"></figure>
 <ul>
   <li>No longer has a limited duration</li>
+  <li>Baseline HP% lowered from 75% to 50%.</li>
+  <li>Damage% baseline lowered from 55% to 20%.</li>
+  <li>Damage per level changed from 15% at all levels to 10% per base level and 5% per soft level.</li>
+  <li>Defense% baseline increased from 40% to 50%.</li>
+  <li>Defense% per level changed from 10% at all levels to 5% per base level and 2% per soft level.</li>
+  <li>New synergy with Lycanthropy:<ul>
+      <li>+5% Physical damage reduction per 8 levels.</li>
+    </ul>
+  </li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -221,9 +248,15 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Has a 15% synergy with Rabies and Poison Creeper</li>
 </ul>
 <p>&nbsp;</p>
-<h3>Shockwave</h3>
+<h3>Shockwave (Now an attack-based skill)</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.05%;"><img src="/shockwave.png"></figure>
-<p>&nbsp;</p>
+<ul>
+  <li>AR Check for Missile Hits.</li>
+  <li>Uses Attack Speed Breakpoints.</li>
+  <li>Gains 10% synergy from Maul.</li>
+  <li>Has updated missile.</li>
+  <li>Requires Bear/Polar Bear.</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Fury</h3>
@@ -232,6 +265,17 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <p>&nbsp;</p>
 <h2>Polar Bear Form</h2>
 <p>Granted by the set: Panda's Polar Adventure</p>
+<ul>
+  <li>New synergy with Lycanthropy:<ul>
+      <li>+5% Physical damage reduction per 8 levels.</li>
+    </ul>
+  </li>
+  <li>Damage% baseline lowered from 55% to 20%.</li>
+  <li>Damage% per level to 10%.</li>
+  <li>Defense% baseline to 50.</li>
+  <li>Defense% per level to 5.</li>
+  <li>HP baseline to 50%.</li>
+</ul>
 <p>&nbsp;</p>
 <h3>Base IAS No Weapon</h3>
 <p>&nbsp;</p>

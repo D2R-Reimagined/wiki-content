@@ -2,7 +2,7 @@
 title: Barbarian
 description: Summary of changes to the Barbarian in Reimagined
 published: true
-date: 2025-06-09T08:54:59.539Z
+date: 2026-03-03T00:21:40.313Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T01:59:22.723Z
@@ -11,7 +11,7 @@ dateCreated: 2025-04-14T01:59:22.723Z
 <h2>General Changes</h2>
 <p>Bash, Double Swing, Double Throw, Frenzy, Tectonic Slam, Carnage, Berserk and Whirlwind now have a small amount of added flat damage/level to make +skills a bit more useful and smooth out the leveling process.</p>
 <h2>Skill Trees</h2>
-<h3>Warcries</h3>
+<h1>Warcries</h1>
 <p>Howl</p>
 <ul>
   <li>Has been reworked into a short-range cone effect that does physical damage</li>
@@ -22,16 +22,20 @@ dateCreated: 2025-04-14T01:59:22.723Z
   <li>Now deals a small echoing shockwave from each target hit for a percentage of the skills damage</li>
   <li>Skill curve has been redone</li>
   <li>Synergy bonus extended to include the other Shout-based skills</li>
+  <li>Does not stun</li>
 </ul>
 <p>Battle Cry</p>
 <ul>
   <li>No longer reduces enemy defense</li>
   <li>Now reduces enemy physical damage reduction</li>
   <li>These changes also apply to the 2H Act 5 merc that uses Battle Cry</li>
+  <li>Capped lowering enemy damage to 50%.</li>
+  <li>Removed Battle Cry from being castable while shifted.</li>
 </ul>
 <p>Shout</p>
 <ul>
   <li>Duration synergy extended to include all Shout-based skills</li>
+  <li>Changed from 100% base Defense and 10%/lvl to 50% base and 5% per level.</li>
 </ul>
 <p>Battle Orders</p>
 <ul>
@@ -47,7 +51,16 @@ dateCreated: 2025-04-14T01:59:22.723Z
   <li>Gain 25 + 4% per level MF</li>
   <li>Gain 41.25 + 6.6% per level GF</li>
 </ul>
-<h3>Combat Masteries -&gt; Masteries and Throwing Skills</h3>
+<h4>Battle Orders</h4>
+<blockquote>
+  <p>BO HP buff stacking with all the other available HP% buffs and the increased life gained through the mod meant it provided an extraordinary amount of life in some cases.</p>
+</blockquote>
+<ul>
+  <li>HP/Mana/Stamina baseline changed from 35% to 10%.</li>
+  <li>HP/Mana/Stamina per level changed from 3% at all levels to 5% per base level and 1% per soft level.</li>
+</ul>
+<p>&nbsp;</p>
+<h1>Combat Masteries -&gt; Masteries and Throwing Skills</h1>
 <h6>Masteries</h6>
 <p>Melee Mastery (Replaced Sword Mastery)</p>
 <ul>
@@ -62,6 +75,24 @@ dateCreated: 2025-04-14T01:59:22.723Z
   <li>Increases Faster Block Rate</li>
   <li>Increases Chance to Block %</li>
 </ul>
+<h4>Iron Skin</h4>
+<ul>
+  <li>Defense% baseline changed from 30% to 10%.</li>
+  <li>Defense% per level changed from 10% at all levels to 10% per base level and 3% per soft level.</li>
+</ul>
+<h4>Natural Resistance</h4>
+<ul>
+  <li>Diminishing returns max decreased from 80% to 50%.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Melee Mastery</h4>
+<blockquote>
+  <p>Melee mastery provides a ton of damage% and attack rating% as well as crit chance. Due to how the diminishing returns formula works, you hit near max crit chance after only a few levels.&nbsp;<br>This change incentivizes Barbarians to put points into it (if you were melee you already did), and limits its full power as an oskill.</p>
+</blockquote>
+<ul>
+  <li>Crit chance changed from diminishing returns up to 35% to 10% baseline + 1% per base level.</li>
+</ul>
+<p>&nbsp;</p>
 <h6>Throwing Skills</h6>
 <ul>
   <li>Each skill requires a throwing weapon and doesn't use a second throwing weapon though they can be used while dual-wielding.</li>
@@ -88,6 +119,8 @@ dateCreated: 2025-04-14T01:59:22.723Z
   <li>Level 24</li>
   <li>Throw a weapon that appears to teleport into an enemy and causes of rocks to fall on them for a short period dealing periodic weapon damage to enemies nearby the target<ul>
       <li>Credit to ESR celestialray for the missiles.txt entry and Median by Brother Laz for the inspiration from Rock Shower</li>
+      <li>Reduced life steal efficiency for skill to 10%.</li>
+      <li>Character sheet reflects weapon damage alone until synergies are applied on throw.</li>
     </ul>
   </li>
 </ul>
@@ -101,7 +134,7 @@ dateCreated: 2025-04-14T01:59:22.723Z
     </ul>
   </li>
 </ul>
-<h3>Combat Skills</h3>
+<h1>Combat Skills</h1>
 <p>Double Swing</p>
 <ul>
   <li>Required level is now 1</li>
@@ -111,12 +144,14 @@ dateCreated: 2025-04-14T01:59:22.723Z
 <ul>
   <li>Replaces Stun Skill</li>
   <li>Tectonic Slam slams your target and causes a shockwave that unearths the ground, damaging the target and enemies behind it</li>
-  <li>Tectonic Slam cannot trigger Leech effects, but it can proc Chance To Cast (CtC) skills</li>
+  <li>Life steal added to skill at 10% efficiency.</li>
   <li>Tectonic Slam requires a "Slam" weapon. Slam weapons include: Two-handed Swords, Maces, Axes, Polearms, or Staves</li>
   <li>Unaffected by Slow Missiles</li>
   <li>Fires 8 rows of spikes that deal 100% of weapon damage</li>
   <li>Has a 20% damage synergy with Bash</li>
   <li>seismictrail.json missile provided by<mark class="pen-green"> hida8633734</mark></li>
+  <li>Does not work while shifted</li>
+  <li>Checks AR for missile hits.</li>
 </ul>
 <p>Leap</p>
 <ul>
@@ -145,10 +180,20 @@ dateCreated: 2025-04-14T01:59:22.723Z
 <p>Concentrate → Carnage</p>
 <ul>
   <li>Reworked into a new skill named carnage which spawns a gore filled tornado when you strike an enemy and uses their bones as projectiles</li>
-  <li>Fires 8 spikes out in a small nova that then seek out nearby enemies and strike them</li>
+  <li>Tornado is still visual only and spawns on swing.</li>
+  <li>Spikes spawn on weapon swing instead of after tornado animation finishes.</li>
+  <li>Swing is full weapon damage.</li>
+  <li>Fires 8 spikes out in a small nova that then seek out nearby enemies and strike them (each projectile carries 50% weapon damage)</li>
   <li>Has a 10% damage synergy with Bash and Berserk</li>
+  <li>Does not work while shapeshifted</li>
+  <li>Reduced life steal efficiency for skill to 10%.</li>
 </ul>
 <p>Whirlwind</p>
 <ul>
   <li>AR/lvl for Whirlwind bumped to match Berserk and Tectonic Slam</li>
+  <li>Damage scaling per level increased to 10% from 5%.</li>
+  <li>Synergy increased to 5% from 4%.</li>
 </ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

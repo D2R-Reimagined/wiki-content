@@ -2,7 +2,7 @@
 title: Assassin
 description: Summary of changes to the Assassin in Reimagined
 published: true
-date: 2026-01-24T16:26:24.232Z
+date: 2026-03-03T00:17:10.151Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T01:58:49.724Z
@@ -10,8 +10,8 @@ dateCreated: 2025-04-14T01:58:49.724Z
 
 <h2>General Changes</h2>
 <p>&nbsp;</p>
-<h2>Skill Trees</h2>
-<h3>Shadow Discipline Skills</h3>
+<h1>Skill Trees</h1>
+<h1>Shadow Discipline Skills</h1>
 <p>Shadow Warrior</p>
 <ul>
   <li>Mana cost reduced</li>
@@ -19,19 +19,11 @@ dateCreated: 2025-04-14T01:58:49.724Z
 <p>Shadow Master</p>
 <ul>
   <li>Mana cost reduced</li>
+  <li>Now inherit fire/lightning skill damage and -enemy fire/lightning resist stats.</li>
 </ul>
-<h3>Martial Arts Skills&nbsp;</h3>
-<ul>
-  <li>Charge duration increased to<mark class="pen-green"> 30s </mark>from <mark class="pen-red">15s</mark></li>
-  <li>Charge duration shows in tooltip</li>
-</ul>
-<p>Fist of Fire</p>
-<ul>
-  <li>No longer converts physical damage to fire damage for consistency with other elemental attacks</li>
-</ul>
-<h3>Trap Skills</h3>
 <p>Blade Sentinel</p>
 <ul>
+  <li>Moved to Shadow tree</li>
   <li>Now does 100% of weapon damage from 75%</li>
   <li>Damage bonuses doubles at higher skill levels to keep it competitive in higher difficulties.</li>
   <li>Blade Sentinel can now fly so it won't have to path around terrain</li>
@@ -43,8 +35,10 @@ dateCreated: 2025-04-14T01:58:49.724Z
 </ul>
 <p>Blade Fury</p>
 <ul>
+  <li>Moved to Shadow tree</li>
   <li>Has been reworked and is no longer a channeled attack</li>
   <li>Now throws a shuriken that bounces to up to 1 nearby enemies (1 bounce limit doesn't scale)</li>
+  <li>Updated Blade Fury to properly bounce from 1 enemy to another or 1 enemy to a wall and back instead of from 1 enemy to 2 to 4.</li>
   <li>Shuriken throw rate is based on attack speed</li>
   <li>Gains 1 projectile per 8 soft skill levels after level 16. (12 total at skill level 100)</li>
   <li>Initial throw projectiles can pierce enemies</li>
@@ -54,9 +48,111 @@ dateCreated: 2025-04-14T01:58:49.724Z
 </ul>
 <p>Blade Shield</p>
 <ul>
+  <li>Moved to Shadow tree</li>
   <li>Damage curves increased at higher skill levels</li>
   <li>Mana cost reduced</li>
   <li>Delay between hits reduced</li>
   <li>Can now hit every <mark class="pen-green">15</mark> frames (was <mark class="pen-red">25</mark>)</li>
   <li>Now gains AR and AR per level</li>
 </ul>
+<h4>Fade</h4>
+<blockquote>
+  <p>Fade prebuff gave you up to 90% curse length reduction and 75% all res. Lowering that to 50% for both.</p>
+</blockquote>
+<ul>
+  <li>Diminishing returns max for curse reduction and all res changed to 50%.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Weapon Block</h4>
+<ul>
+  <li>Changed diminishing return so it starts at 10% block for the first level.</li>
+  <li>Now receives +50 defense baseline + 10 per level.</li>
+</ul>
+<h1>Martial Arts Skills&nbsp;</h1>
+<ul>
+  <li>Charge duration increased to<mark class="pen-green"> 30s </mark>from <mark class="pen-red">15s</mark></li>
+  <li>Charge duration shows in tooltip</li>
+</ul>
+<p>Fist of Fire</p>
+<ul>
+  <li>No longer converts physical damage to fire damage for consistency with other elemental attacks</li>
+</ul>
+<h1>Trap Skills</h1>
+<p>&nbsp;</p>
+<h4>Ice Barrage (Renamed from Psychic Hammer)</h4>
+<ul>
+  <li>Moved to Trap tree.</li>
+  <li>Works like Fire Blast but gets multiple projectiles and releases a Frost Nova on impact.</li>
+</ul>
+<h4>Snowlash Sentry (Renamed from Cloak of Shadows)</h4>
+<ul>
+  <li>Moved to Trap tree, requires Ice Barrage.</li>
+  <li>Shoots 3 ice bolts that can split and ricochet off enemies and walls once.</li>
+  <li>Synergizes with Ice Barrage and Glacial Vortex Sentry.</li>
+</ul>
+<h4>Glacial Vortex Sentry (Renamed from Mind Blast)</h4>
+<ul>
+  <li>Moved to Trap tree, requires Snowlash Sentry.</li>
+  <li>Launches glacial spikes in a helix (think Blessed Hammers).</li>
+  <li>Synergizes with Ice Barrage and Snowlash Sentry.</li>
+  <li>Now shoots 5 times + 1 per 5 base levels.</li>
+</ul>
+<h4>Shock Web</h4>
+<ul>
+  <li>Removed cast delay.</li>
+  <li>Adjusted spikes synergies so they are all built-in (+1 projectile per base 3 levels).</li>
+  <li>Adjusted mana cost so it is cheaper to cast (2 + 0.25/lvl).</li>
+  <li>Increased damage curve at all stages.</li>
+  <li>Increased synergy from 17% to 20% (synergizes with Charged Bolt Sentry and Lightning Sentry).</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Charged Bolt Sentry</h4>
+<ul>
+  <li>Now shoots much faster.</li>
+  <li>Bolt increases were all baked into the levels instead of synergies (5 bolts + 1 bolt per 5 levels).</li>
+  <li>Increased damage curve at all stages.</li>
+  <li>Increased synergy from 9% to 15% (synergizes with Fire Blast and Flameburst Sentry).</li>
+  <li>Adjusted mana cost so it is cheaper to cast (3 + 0.5/lvl).</li>
+  <li>Now shoots 5 times + 1 per 5 base levels.</li>
+</ul>
+<h4>Lightning Sentry</h4>
+<ul>
+  <li>Now shoots a chain lightning projectile instead of a single lightning beam.</li>
+  <li>Chains 10 times.</li>
+  <li>Now shoots 5 times + 1 per 5 base levels.</li>
+  <li>Adjusted mana cost so it is cheaper to cast (6 + 0.5/lvl).</li>
+  <li>Increased damage curve at all stages.</li>
+  <li>Decreased synergy from 18% to 15% (synergizes with Shock Web and Charged Bolt Sentry).</li>
+</ul>
+<h4>Fire Blast</h4>
+<ul>
+  <li>Increased radius from 5 to 7.</li>
+  <li>Increased damage curve at all stages.</li>
+  <li>Increased synergy from 11% to 20% (synergizes with Wake of Fire Sentry and Flameburst Sentry).</li>
+  <li>Adjusted mana cost so it is cheaper to cast (2 + 0.25/lvl).</li>
+</ul>
+<h4>Wake of Fire Sentry</h4>
+<ul>
+  <li>Fire wave no longer has a scaling per level travel length, now moves faster at all levels.</li>
+  <li>Adjusted mana cost so it is cheaper to cast (3 + 0.5/lvl).</li>
+  <li>Increased damage curve at all stages.</li>
+  <li>Increased synergy from 10% to 20% (synergizes with Fire Blast and Flameburst Sentry).</li>
+  <li>Now shoots 5 times + 1 per 5 base levels.</li>
+</ul>
+<h4>Flameburst Sentry (Renamed from Inferno Sentry)</h4>
+<ul>
+  <li>Now shoots a nova of firebolts that seek out nearby enemies.</li>
+  <li>Adjusted mana cost so it is cheaper to cast (6 + 0.5/lvl).</li>
+  <li>Increased damage curve at all stages.</li>
+  <li>Decreased synergy from 18% to 15% (synergizes with Fire Blast and Flameburst Sentry).</li>
+  <li>Now shoots 5 times + 1 per 5 base levels.</li>
+</ul>
+<h4>Death Sentry</h4>
+<ul>
+  <li>Reworked from the ground up, no longer casts lightning and corpse explosion.</li>
+  <li>Now shoots a ring of magic skulls that collapse in on itself.</li>
+  <li>Synergizes with all trap skills.</li>
+  <li>Now shoots 5 times + 1 per 5 base levels.</li>
+  <li>Mana cost changed from 20 at all levels to 10 + 0.5/lvl.</li>
+</ul>
+<p>&nbsp;</p>

@@ -1,0 +1,365 @@
+<!--
+title: 3.X Easy End Game and Uber Viable -  Jerrdan's Frozen Orb Sorceress! 
+description: FROZEN ORB SORC
+published: true
+date: 2026-03-08T03:41:33.100Z
+tags: 
+editor: code
+dateCreated: 2026-03-08T03:41:33.100Z
+-->
+
+<header style="background: rgba(26, 26, 26, 0.8); border: 2px solid #4a3c1f; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); color: #d4c090; text-align: center; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+    <h1 style="margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px #000; font-family: 'Cinzel', Georgia, serif;">Diablo 2 Resurrected Reimagined - Frozen Orb Sorceress Guide</h1>
+    <p style="text-shadow: 1px 1px 2px #000;"><a href="https://www.youtube.com/watch?v=m5jdgSR3JJI&t=4s" style="color: #ffcc00; text-decoration: underline;">Watch the build on YouTube</a></p>
+</header>
+
+        <nav style="background: rgba(51, 51, 51, 0.8); border: 2px solid #4a3c1f; padding: 1rem; text-align: center; border-radius: 8px; margin-bottom: 1rem;">
+            <ul style="list-style: none; padding: 0; margin: 0; display: inline-flex; flex-wrap: wrap; justify-content: center;">
+                <li style="margin: 0 1rem;"><a href="#overview" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Overview</a></li>
+                <li style="margin: 0 1rem;"><a href="#skills" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Skills</a></li>
+                <li style="margin: 0 1rem;"><a href="#gear" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Gear</a></li>
+                <li style="margin: 0 1rem;"><a href="#stats" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Stats</a></li>
+                <li style="margin: 0 1rem;"><a href="#endgame" style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; background: #444 url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center; background-size: cover; border: 1px solid #4a3c1f; border-radius: 4px; display: block; text-shadow: 1px 1px 2px #000;">Endgame</a></li>
+            </ul>
+        </nav>
+
+        <style>
+            nav a:hover {
+                color: #ffcc00 !important;
+                background: rgba(0, 0, 0, 0.7) url('https://wiki.d2r-reimagined.com/pentagram.gif') no-repeat center !important;
+                background-size: cover !important;
+            }
+            section {
+                background: rgba(255, 255, 255, 0.9);
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border: 2px solid #4a3c1f;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            }
+            h2 {
+                color: #d4c090;
+                border-bottom: 2px solid #ffcc00;
+                padding-bottom: 0.5rem;
+                text-shadow: 1px 1px 2px #000;
+            }
+            h3 {
+                color: #d4c090;
+                margin-top: 1.5rem;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .pros-cons {
+                display: flex;
+                justify-content: space-between;
+            }
+            .pros, .cons {
+                width: 48%;
+            }
+            .pros h3, .cons h3 {
+                color: #d4c090;
+            }
+            .build-pictures img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #4a3c1f;
+                border-radius: 4px;
+            }
+            .build-pictures .stats-img {
+                max-width: 600px;
+                display: block;
+                margin: 0 auto 2rem;
+            }
+            .build-pictures .gear-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+            .build-pictures .gear-grid img {
+                max-width: 150px;
+                height: 150px;
+                object-fit: contain;
+            }
+            .build-pictures .gear-grid p {
+                text-align: center;
+                margin: 0.5rem 0 0;
+                color: #d4c090;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .gear-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 1rem 0;
+            }
+            .gear-row {
+                display: flex;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+            .gear-row h4 {
+                width: 100%;
+                text-align: center;
+                color: #ffcc00;
+                font-size: 1.2rem;
+                margin: 0 0 0.5rem;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .gear-item {
+                flex: 1;
+                max-width: 48%;
+                background: rgba(51, 51, 51, 0.8);
+                border: 2px solid #4a3c1f;
+                border-radius: 8px;
+                padding: 1rem;
+                color: #d4c090;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .gear-item p {
+                margin: 0.25rem 0;
+                font-size: 0.9rem;
+            }
+            .gear-item .item-type {
+                font-size: 0.8rem;
+                color: #ffcc00;
+                font-weight: bold;
+            }
+            .gear-item .item-name {
+                font-weight: bold;
+                color: #fff;
+            }
+            .gear-item .item-notes {
+                font-style: italic;
+                color: #d4c090;
+            }
+            @media (max-width: 768px) {
+                nav ul {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: center !important;
+                }
+                nav ul li {
+                    margin: 0.5rem 0 !important;
+                }
+                .pros-cons {
+                    flex-direction: column;
+                }
+                .pros, .cons {
+                    width: 100%;
+                }
+                .build-pictures .gear-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                }
+                .gear-row {
+                    flex-direction: column;
+                }
+                .gear-item {
+                    max-width: 100%;
+                }
+            }
+        </style>
+
+        <section id="overview">
+            <h2>Build Overview</h2>
+            <p>
+                This Frozen orb sorceress provides entire screen clearing power while remaining mobile with teleport. Enjoy clearing P8 TZ Hell and all end game content with a little bit of investment in to gear. Uber Tristram and Ancients VIABLE.
+            </p>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>High Cold and AOE Damage</li>
+                        <li>Freezing and Slowing entire screens</li>
+                        <li>Fun and mobile Teleport distance playstyle that will demolish TZ Nightmare/hell</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>Can be very squishy without proper equipment enchantments</li>
+                        <li>Can feel stuck with out proper merc setup / if merc dies</li>
+                        <li>High gear investment for ubers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skill Allocation</h2>
+            <p>This build focuses on the Cold tree for Cold Mastery for %dmg and negative enemy resistance, with a point in Teleport and your chosen ice shield skill.</p>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Ice Bolt</td>
+                    <td>25</td>
+                    <td>Good killing skill SYNERGY FOR ORB</td>
+                </tr>
+                <tr>
+                    <td>Frost Nova</td>
+                    <td>25</td>
+                    <td>SYNERGY FOR ORB</td>
+                </tr>
+                <tr>
+                    <td>Frozen Orb</td>
+                    <td>25</td>
+                    <td>Main skill, screen clearing aoe.</td>
+                </tr>
+                <tr>
+                    <td>Cold Mastery</td>
+                    <td>as many left over</td>
+                    <td>Extreme dmg</td>
+                </tr>
+                <tr>
+                    <td>Teleport</td>
+                    <td>1</td>
+                    <td>Mobility</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="gear">
+            <h2>Gear Recommendations</h2>
+            <p>Gear is split into budget-friendly and endgame setups, both prioritizing cold damage, faster cast rate, and survivability.</p>
+            
+            <div class="gear-grid">
+                <div class="gear-row">
+                    <h4>Helmet</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">Any skiller helm</p>
+                        <p class="item-notes">+1 skills, life, all res</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">Night Wings Veil</p>
+                        <p class="item-notes"> Enchant with Cold skills, Socket with Cold Facets</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Weapon</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">Any unique/rare sorc orb with +skills</p>
+                        <p class="item-notes">+2 skills, affordable unique</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">Mang Song Lesson</p>
+                        <p class="item-notes">High all skills, High cold skills, Cold element Dmg and negative enemy res. Socket with all skills or cold facets</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Armor</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">Anything with Skills</p>
+                        <p class="item-notes">FCR, all skills, all res easy to craft</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">ShadowTrick </p>
+                        <p class="item-notes">Self wield conviction, all skills, cold dmg%, socket with facets or all skils. </p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Gloves</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">Mephistos Claws</p>
+                        <p class="item-notes">-enemy cold res.</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Belt</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">String of Ears</p>
+                        <p class="item-notes">damage reduction</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">Ogres Embrace</p>
+                        <p class="item-notes">VIT and Defense. A MUST</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Boots</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">Lustwander</p>
+                        <p class="item-notes">Free teleport, free res, free skill</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Rings</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">Rare rings</p>
+                        <p class="item-notes">resists, all skill</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">+2skill jordan sigil</p>
+                        <p class="item-notes">try to corrupt with max res or +skill</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Amulet</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">Rare amulet</p>
+                        <p class="item-notes">+ skills or resists, vendor-crafted</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">Crescent moon</p>
+                        <p class="item-notes">cold skills cold dmg, add sorc skill</p>
+                    </div>
+                </div>
+                <div class="gear-row">
+                    <h4>Charms</h4>
+                    <div class="gear-item">
+                        <p class="item-type">Budget</p>
+                        <p class="item-name">Resist or life charms</p>
+                        <p class="item-notes">Fill inventory with charms for resists</p>
+                    </div>
+                    <div class="gear-item">
+                        <p class="item-type">Endgame</p>
+                        <p class="item-name">cold skillers, %cold damage</p>
+                        <p class="item-notes">add life/resists</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats">
+            <h2>Stat Allocation</h2>
+            <p>Prioritize enough Strength and Dexterity for gear, with the rest into Vitality for survivability. Energy is unnecessary.</p>
+            <ul>
+                <li><strong>Strength:</strong> 95-120</li>
+                <li><strong>Dexterity:</strong> 75-100</li>
+                <li><strong>Vitality:</strong> Rest (maximize for HP)</li>
+                <li><strong>Energy:</strong> Base</li>
+            </ul>
+        </section>
+
+
+        <section id="endgame">
+            <h2>Endgame Strategy</h2>
+            <p>Focus on farming high-density areas with Frozen orb, using Teleport to stay safe. Act 1 mercenary with good gear boosts dmg and survivablity.</p>
+            <ul>
+                <li><strong>Farming Areas:</strong> Chaos Sanctuary, Travincal, Pits, Ancient Tunnels, Entire Acts</li>
+                <li><strong>Mercenary:</strong> Act 1 with Lower resist, As many +skills as possible</li>
+                <li><strong>Breakpoints:</strong> Aim for FCR 200%+ -195% enemy cold res than damage focus.</li>
+            </ul>
+        </section>
+        <footer style="background: rgba(26, 26, 26, 0.8); border: 2px solid #4a3c1f; color: #d4c090; border-radius: 8px; text-shadow: 1px 1px 2px #000; padding: 1rem; text-align: center;">
+            <p>© 2025 Diablo 2 Resurrected Community. All Rights Reserved. Diablo 2 Resurrected is a trademark of Blizzard Entertainment.</p>
+        </footer>
+    </div>
+</div>
+

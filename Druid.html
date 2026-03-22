@@ -2,7 +2,7 @@
 title: Druid
 description: Summary of changes to the Druid in Reimagined
 published: true
-date: 2026-03-03T02:49:54.362Z
+date: 2026-03-22T14:37:03.437Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:00:01.798Z
@@ -28,7 +28,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <h3>Spirit Wolf</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.08%;"><img src="/spirit_wolf_(2).png"></figure>
 <ul>
-  <li>No longer has synergy with Dire Wolf or Grizzly. Previous synergies are now baked into the skill scaling</li>
+  <li>No longer has AR/HP/Defense synergy with Dire Wolf or Grizzly. Previous synergies are now baked into the skill scaling</li>
   <li>Max wolves has been reduced from 10 to 5</li>
   <li>Now has a chance to cast cold twisters on hit</li>
   <li>Now inherits the players cold pierce stat</li>
@@ -40,7 +40,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <h3>Dire Wolf</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.97%;"><img src="/dire_wolf_(2).png"></figure>
 <ul>
-  <li>No longer has synergy with Spirit Wolf or Grizzly. Previous synergies are now baked into the skill scaling</li>
+  <li>No longer has has AR/HP/Defense&nbsp;synergy with Spirit Wolf or Grizzly. Previous synergies are now baked into the skill scaling</li>
   <li>Max wolves has been reduced from 5 to 3</li>
   <li>Now deals fire damage on hit</li>
   <li>Now has a chance to cast fire storm on hit</li>
@@ -54,8 +54,8 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <h3>Grizzly</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.24%;"><img src="/summon_grizzly.png"></figure>
 <ul>
-  <li>No longer has synergy with Spirit Wolf or Dire Wolf. Previous synergies are now baked into the skill scaling</li>
-  <li>Max bears remains at 2 at 10 hard skill points. You can't separate a bonded pair</li>
+  <li>No longer has has AR/HP/Defense&nbsp;synergy with Spirit Wolf or Dire Wolf. Previous synergies are now baked into the skill scaling</li>
+  <li>Max bears increased to 2 at 10 hard skill points.</li>
   <li>Now has a chance to cast shockwave on hit</li>
   <li>Now has a synergy with all physical shapeshift skills</li>
   <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
@@ -113,34 +113,55 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <h2>Elemental Skills</h2>
 <figure class="image image_resized" style="width:50.01%;"><img src="/elemental_skills_tree.png"></figure>
 <ul>
-  <li>All elemental skills now have a synergy bonus soft cap of 25 points and an uncapped bonus past 25 points at a reduced rate</li>
-  <li>Synergy bonus was adjusted so that the bulk of the previous synergies (25-75 points) are now in the first 25 points</li>
-  <li>Synergies were changed from the previous limitations to now work with ALL elemental skills (e.g. Fissure can gain more fire damage from Tornado)</li>
+  <li>Changes were made to encourage more build diversity between which spells to use<ul>
+      <li>Synergies were changed from the previous limitations to now work with ALL elemental skills (e.g. Fissure can gain more fire damage from Tornado)</li>
+      <li>Pre-requisites have been removed (level requirements still exist)</li>
+    </ul>
+  </li>
 </ul>
 <h3>Firestorm</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.62%;"><img src="/firestorm.png"></figure>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<ul>
+  <li>Damage increased to be a usable primary spell</li>
+  <li>Gains additional projectiles and travels further with level</li>
+  <li>Fixed tooltip lying about damage<ul>
+      <li>Note: There is a slight discrepancy between char sheet and tooltip damage due to how accurate these calcs are for damage over time</li>
+    </ul>
+  </li>
+</ul>
 <p>&nbsp;</p>
 <h3>Molten Boulder</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.49%;"><img src="/moltan_boulder.png"></figure>
-<p>&nbsp;</p>
+<ul>
+  <li>Damage increased to be competitive with other options</li>
+  <li>Fire trail should now properly deal damage and scales much higher</li>
+  <li>Travels faster and no longer stops when hitting a large enemy</li>
+  <li>Chance for knockback reduced from 50% to 10%</li>
+  <li>Now uses a scaling mana curve</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Fissure</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.62%;"><img src="/fissure.png"></figure>
-<p>&nbsp;</p>
+<ul>
+  <li>Late game damage increased</li>
+  <li>Now uses a scaling mana curve</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Volcano</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.94%;"><img src="/volcano.png"></figure>
-<p>&nbsp;</p>
+<ul>
+  <li>Late game damage increased</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Armageddon</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.97%;"><img src="/armegeddon.png"></figure>
-<p>&nbsp;</p>
+<ul>
+  <li>Gains duration synergy from all elemental skills and additional duration per level</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Arctic Blast</h3>
@@ -156,17 +177,27 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <p>&nbsp;</p>
 <h3>Twister</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.94%;"><img src="/twister.png"></figure>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<ul>
+  <li>Damage increased to be a usable area clear spell</li>
+  <li>Gains additional projectiles with level</li>
+  <li>No longer gains stun duration from arctic blast</li>
+  <li>Now uses a scaling mana curve</li>
+</ul>
 <p>&nbsp;</p>
 <h3>Tornado</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.86%;"><img src="/tornado.png"></figure>
-<p>&nbsp;</p>
+<ul>
+  <li>Late game damage increased</li>
+  <li>Now uses a scaling mana curve</li>
+  <li>Damage tick rate and missile size increased to make the skill more reliable</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Hurricane</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.48%;"><img src="/hurricane.png"></figure>
-<p>&nbsp;</p>
+<ul>
+  <li>Gains duration synergy from all elemental skills and additional duration per level</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h2>Shapeshifting Skills</h2>

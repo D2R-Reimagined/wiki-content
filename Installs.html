@@ -2,27 +2,32 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-02-27T01:26:55.865Z
+date: 2026-04-03T14:11:15.060Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
 -->
 
 <p>Below is a compilation of useful information and guides for installation of the mod and fixing problems you may encounter.</p>
-<h2>File Locations - Depends if you bought on Battle.net App or Steam</h2>
+<h2>Default File Locations - Depends if you bought on Battle.net App or Steam</h2>
 <blockquote>
-  <p><i><mark class="pen-red"><strong>C: Drive is the most common install location. Yours may differ depending on your setup.</strong></mark></i></p>
+  <p><i><mark class="pen-red"><strong>C: Drive is the most common install location. Yours may differ depending on your setup. &nbsp;Launcher finds them automatically.</strong></mark></i></p>
   <p><mark class="pen-green"><strong>Battle.net D2R Mod Files:</strong></mark> <code>C:\Program Files (x86)\Diablo II Resurrected\mods\Reimagined</code></p>
   <p><mark class="pen-green"><strong>Steam D2R Mod Files:</strong></mark> <code>C:\Program Files (x86)\Steam\steamapps\common\Diablo II Resurrected\mods\Reimagined</code></p>
   <p><i><mark class="pen-green"><strong>Saved Game Files:</strong></mark> </i><code><i>C:\Users\</i>%USERPROFILE%<i>\Saved Games\Diablo II Resurrected\mods\ReimaginedThree</i></code></p>
 </blockquote>
 <p>&nbsp;</p>
-<h2>Making Backups (Manual Steps)</h2>
-<p>In File Explorer, navigate to your D2R install and Saved Games directories.</p>
-<p>Right click the <code>mod</code> folder and <code>Reimagined</code> folder, select ‘compress to…’ and choose ZIP file. Rename the ZIP file to something memorable, and move it somewhere easy to remember (e.g. your desktop).</p>
-<p>Remember to periodically create new ZIP folders so that you don't lose progress in case of crashes, exceeding your save file data limit, etc..<br>&nbsp;</p>
+<h2>Manually Create Saved Game Backups</h2>
+<p>1. In File Explorer, navigate to your <mark class="pen-green">Saved Game Files</mark> directory as listed above.</p>
+<p>2. Go back one directory to the \Saved Games\Diablo II Resurrected\mods\ folder which contains the saved games for each mod as shown in the picture below.</p>
+<figure class="image image_resized" style="width:41.69%;"><img src="/installguides/step_2_manual_savedgamesbackup.png"></figure>
+<p><mark class="pen-red">All Reimagined 3.x saved game versions will be in the ReimaginedThree folder.</mark></p>
+<p>3. As shown in the picture right click on the &nbsp;<code>ReimaginedThree</code> folder, select ‘<strong>Send to</strong>’ and choose ‘<strong>Compressed (zipped) folder</strong>’ which copies the contents into a ZIP file. Rename the ZIP file to something memorable, and move it somewhere easy to remember (<i>e.g. your desktop</i>).</p>
+<figure class="image image_resized" style="width:41.39%;"><img src="/installguides/step_3_manual_savedgamesbackup.png"></figure>
+<p>Remember to periodically create new ZIP saved game backups so that you don't lose progress in case of crashes. &nbsp;While playing the game, if your PC crashes while the game is writing to a saved game that game can become corrupt resulting in a “Failed to join game” message. &nbsp;The Reimagined Launcher is capable of backing up your saved games making this easier.<br>&nbsp;</p>
 <h2>Reimagined BETA Launcher</h2>
 <p>Introducing the Reimagined BETA Launcher - a simple way to install, update, tweak and run the Reimagined mod!</p>
+<p>No need to know where you installed the game, as it will look it all the directories itself. &nbsp;It can backup your Reimagined saved games too.</p>
 <p>The BETA Launcher is a precursor solution to the official Reimagined Launcher, which is still in development.</p>
 <p>The Reimagined BETA Launcher was originally conceived by <mark class="pen-green"><strong>Slamina</strong></mark>.</p>
 <p><strong>Any feedback, issues or suggestions, please speak to </strong><mark class="pen-green"><strong>Vinge, Ben, or Delegus.</strong></mark><br>&nbsp;</p>
@@ -32,9 +37,12 @@ dateCreated: 2025-03-03T02:26:58.618Z
   <p>Download Link: <a href="/reimagined_beta_launcher_for_non-steam.zip">Reimagined Beta Launcher for non steam</a><br>Download Link:<a href="/reimagined_beta_launcher_for_steam.zip"> Reimagined Beta Launcher for steam</a></p>
   <p><mark class="pen-green"><strong>Requires an official Diablo II: Resurrected install to work.</strong></mark></p>
 </blockquote>
-<p>Download and extract the <mark class="pen-green"><strong>Reimagined BETA Launcher</strong></mark>. We suggest keeping the folder in an easy-to-remember location, such as your desktop.</p>
+<p>Steps for extracting the <mark class="pen-green"><strong>Reimagined BETA Launcher</strong></mark>.</p>
+<p>1. Navigate to where you downloaded the Reimagined Beta Launcher ZIP file (by default files usually get downloaded to your ‘Downloads’ folder) &amp; move it to an easy-to-remember location, such as your desktop.</p>
+<p>2. Right click the ZIP file &amp; click ‘Extract All…’ and on the next box that pops up click the ‘Extract’ button. &nbsp;You can rename the Launcher's folder to anything you want &amp; run it from anywhere.</p>
+<figure class="image image_resized" style="width:81.22%;"><img src="/installguides/step_2_download_reimaginedlauncher.png"></figure>
 <ul>
-  <li><i>The launcher includes executables that are used by files to perform their various functions. These can be found in the </i><code><i>utils</i></code><i> directory. Nothing is installed on your PC.</i></li>
+  <li><i>The launcher also includes a executable file that is only used by the CASC Fastloading customization if you choose to perform that. This is located in the </i><code><i>utils</i></code><i> directory. Nothing is installed on your PC when you run the launcher. &nbsp;The launcher itself is simply a batch file looking up game installation locations, unzipping the mod if you chose so &amp; swapping customizations into the reimagined mod.</i></li>
 </ul>
 <p>If anything isn't working please post in the <code>installation-help</code> channel on discord.<br>&nbsp;</p>
 <h3>Installing &amp; Updating Reimagined</h3>
@@ -42,40 +50,48 @@ dateCreated: 2025-03-03T02:26:58.618Z
   <p><mark class="pen-green"><strong>Your Save Game files are unaffected by these steps.</strong></mark></p>
 </blockquote>
 <p>Follow these steps to install and/or update Reimagined to the latest version:</p>
-<p><mark class="pen-green"><strong>1. </strong></mark>Download the latest version from <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=description">Nexus Mods</a> - this can take a few minutes. The file downloads in a <code>.zip</code> format.</p>
-<p><mark class="pen-green"><strong>2.</strong></mark> Move the downloaded .zip file from your <code>Downloads</code>&nbsp;folder to the <code>Reimagined BETA Launcher</code> folder.</p>
-<figure class="image image_resized" style="width:42.97%;"><img src="/installguides/folderpic1.png"></figure>
+<p><mark class="pen-green"><strong>1. </strong></mark>Download the latest Reimagined version from <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=description">Nexus Mods</a> - this can take a few minutes. The file downloads in a <code>.zip</code> format.</p>
+<p><mark class="pen-green"><strong>2.</strong></mark> Move the downloaded .zip file from your <code>Downloads</code>&nbsp;folder into the <code>Reimagined BETA Launcher</code> folder.</p>
+<figure class="image image_resized" style="width:40.33%;"><img src="/installguides/step_2_installing_updating_reimagined.png"></figure>
 <p><mark class="pen-green"><strong>3.</strong></mark> Run the launcher.</p>
 <ul>
   <li>If you see a warning from Windows Defender, press ‘More Info’ and click ‘Run Anyway’.</li>
 </ul>
-<figure class="image image_resized" style="width:43.44%;"><img src="/installguides/runanyways1.png"></figure>
-<p><mark class="pen-green"><strong>4. </strong></mark>If re-installing select <code>Install / Update</code>.</p>
-<figure class="image image_resized" style="width:43.74%;"><img src="/installguides/install-update2.png"></figure>
+<figure class="image"><img src="/installguides/runanyways_cropped.png"></figure>
+<p><mark class="pen-green"><strong>4.&nbsp;</strong></mark> For Installing Reimagined as shown inside the green circle below choose: <code>Install / Update - Reimagined</code>.</p>
+<p>You make choices by typing the number you want &amp; pressing enter. &nbsp;The launcher finds your mod version &amp; game's location and displays this too.</p>
+<figure class="image image_resized" style="width:43.93%;"><img src="/installguides/step_4_installing_updating_reimagined.png"></figure>
 <p>&nbsp;</p>
-<p><mark class="pen-green"><strong>5.&nbsp;</strong></mark> Press <code>Y</code> and hit enter.</p>
-<figure class="image image_resized" style="width:43.91%;"><img src="/installguides/install-confirm1.png"></figure>
+<p><mark class="pen-green"><strong>5.&nbsp;</strong></mark> Type <code>Y</code> and hit enter.</p>
+<figure class="image image_resized" style="width:43.9%;"><img src="/installguides/step_5_installing_updating_reimagined.png"></figure>
 <p><br><mark class="pen-green"><strong>6.&nbsp;</strong></mark> Once the Install is completed you can press any key to restart the launcher.&nbsp;</p>
-<figure class="image image_resized" style="width:44.71%;"><img src="/installguides/done-restarting-launcher1.png"></figure>
+<figure class="image image_resized" style="width:43.75%;"><img src="/installguides/step_6_installing_updating_reimagined.png"></figure>
 <p>&nbsp;</p>
-<p><mark class="pen-green"><strong>7.&nbsp;</strong></mark> You can verify the install by navigating to your Diablo 2 install directory and verify the mods\Reimagined\Reimagined.mpq folder is populated</p>
-<figure class="image image_resized" style="width:44.96%;"><img src="/installguides/verify-isntall1.png"></figure>
-<p><mark class="pen-green"><strong>8.&nbsp;</strong></mark> You can now hit <code>1</code> to play or create a shortcut link following the <a href="https://wiki.d2r-reimagined.com/en/Installs#create-a-desktop-shortcut">steps above</a>. See additional modifications section belong on how to install extra stash tabs.</p>
+<p><mark class="pen-green"><strong>7.&nbsp;</strong></mark> You can now type <code>1</code> to pick 'Play Reimagined' or you could create a shortcut link to the game following the <a href="https://wiki.d2r-reimagined.com/en/Installs#create-a-desktop-shortcut">steps below</a>.</p>
 <p>&nbsp;</p>
 <blockquote>
-  <p><mark class="pen-red"><strong>D2RMM Users: The BETA launcher makes changes to mod files in your D2R install directory (above) - you will need to copy the ‘data’ folder to D2RMM\mods\Reimagined for updates to work.</strong></mark></p>
+  <p><mark class="pen-red"><strong><u>D2RMM Users:</u> Only the purple text options will work inside the Launcher.</strong></mark></p>
+  <p><mark class="pen-red"><strong><u>STEP 1:</u> &nbsp;You must have run your D2RMM.exe &amp; have chosen ‘AGREE’ at least once as shown in the picture below.</strong></mark></p>
+  <figure class="image image_resized" style="width:26.93%;"><img src="/installguides/d2rmmbox.png"></figure>
+  <p><mark class="pen-red"><strong><u>Step 2:</u> &nbsp;Inside the Beta Launcher choose the purple text Install / Update for D2RMM Users.</strong></mark></p>
+  <p><mark class="pen-red"><strong><u>Step 3:</u> &nbsp;Open your D2RMM.exe program &amp; the now extracted Reimagined is available to install along with other mods so press INSTALL when ready.</strong></mark></p>
+  <p><mark class="pen-red"><strong><u>Step 4:</u> </strong></mark><i><mark class="pen-red">(Optional) Inside the Beta Launcher you can finally choose the purple text Extra Configuration Options for D2RMM Users.</mark></i></p>
+  <p>&nbsp;</p>
+  <p><mark class="pen-red">If you have issues, alternatively you can manually copy any files from the launcher's \utils\mods\ folder that contains all the configuration option's files which the launcher uses to copy whenever a configuration option is chosen.</mark></p>
+  <p><mark class="pen-red"><strong><u>TROUBLESHOOTING:</u> If you had clicked Disagree in step 1, you'll need to download a different version of D2RMM &amp; run it's exe which will trigger this the first time you open D2RMM.exe. &nbsp;After you click agree a registry key is updated &amp; the Beta Launcher uses this information for the purple text choices to work.&nbsp;</strong></mark></p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>Play &amp; Backup</h3>
 <p>The BETA Launcher will automatically back up your save files on launch with today's date and time.</p>
 <p>You can make additional backups, and find/open the backup folder under the <code>Backup Save Files</code> menu.<br>&nbsp;</p>
-<h3>Additional Modifications</h3>
+<h3>Extra Configuration Options</h3>
 <p>In addition to installing and updating the mod, you can use the BETA Launcher to install pre-packaged changes.</p>
-<p>To <mark class="pen-green"><strong>install</strong></mark> changes visit the <code>Configuration Menu</code> and follow the prompts.</p>
-<p>To <mark class="pen-red"><strong>uninstall </strong></mark>changes simply re-run <code>Install / Update</code> from the Main Menu.</p>
-<p>As mentioned above, whenever you install or update the mod any modifications you've made (whether manually or via the Launcher) will need to be redone.</p>
+<p>To <mark class="pen-green"><strong>install</strong></mark> changes visit the <code>Extra Configuration Options</code> and follow the prompts.</p>
+<p>To <mark class="pen-red"><strong>uninstall </strong></mark>all configuration changes simply re-run <code>Install / Update</code> from the Main Menu.</p>
+<p>As mentioned above, whenever you install or update the mod any modifications you've made <i>(whether manually or via the Launcher)</i> will need to be redone.</p>
+<figure class="image image_resized" style="width:42.42%;"><img src="/installguides/launcher_configuration_menu.png"></figure>
 <p>If you encounter any issues, please post in the <code>installation-help</code> channel on discord.</p>
-<p>&nbsp;</p>
+<p>Alternatively you can manually copy any files from the launcher's \utils\mods\ folder that contains all (1-6) of the Configuration Menu's files which the launcher uses to copy whenever a configuration option is chosen.</p>
 <h2>Manual Mod Installation</h2>
 <p>Instructions to install the Reimagined mod manually without using any launchers or assistive programs.</p>
 <p><mark class="pen-green">Step 1.</mark> Download the latest Reimagined version from <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files">Nexus Mods</a>.</p>

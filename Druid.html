@@ -36,6 +36,9 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
   <li>Adjusted synergies to accept the cold spells or other summons up to a max of 100 for Zoo viability.</li>
   <li>Adjusted damage curves to round out the early and end game better.</li>
+  <li>Twister skill tooltip updated to reflect correct damage.</li>
+  <li>Chill limit of the pet actions set to above where actions stop entirely.</li>
+  <li>Base movement speed increased.</li>
 </ul>
 <h3>Dire Wolf</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.97%;"><img src="/dire_wolf_(2).png"></figure>
@@ -50,6 +53,9 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
   <li>Adjusted synergies to accept the fire spells or other summons up to a max of 100 for Zoo viability.</li>
   <li>Adjusted damage curves to round out the early and end game better.</li>
+  <li>Firestorm skill tooltip updated to reflect correct damage.</li>
+  <li>Chill limit of the pet actions set to above where actions stop entirely.</li>
+  <li>Base movement speed increased.</li>
 </ul>
 <h3>Grizzly</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.24%;"><img src="/summon_grizzly.png"></figure>
@@ -61,8 +67,10 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
   <li>Adjusted synergies to accept the physical shapeshifting spells or other summons up to a max of 100 for Zoo viability.</li>
   <li>Adjusted damage curves to round out the early and end game better.</li>
+  <li>Shockwave skill tooltip updated to reflect correct damage.</li>
+  <li>Base movement speed increased.</li>
+  <li>Grizzly now deals weapon damage * 2 correctly on his swipe.</li>
 </ul>
-<h3>Oak Sage</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.58%;"><img src="/oak_sage_(2).png"></figure>
 <ul>
   <li>HP% Aura now scales from base 5 to 100% max</li>
@@ -76,6 +84,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Reworked to be more attractive to all builds</li>
   <li>%DMG per reduced</li>
   <li>Now gains %IAS and %FCR per hard point</li>
+  <li>Spirits are now 99% likely to run from enemies</li>
 </ul>
 <p>&nbsp;</p>
 <h3>Spirit of the Barbs</h3>
@@ -91,6 +100,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <ul>
   <li>Now inherits the Player's poison pierce stat</li>
   <li>Synergies are now 15% from Rabies and Toxic Fangs from 20% from Rabies</li>
+  <li>Vines are now considered flying</li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -100,6 +110,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <ul>
   <li>Now regenerates both HP and Mana at increased rates</li>
   <li>Grants a 5 replenish and 5% mana regeneration aura that gains an additional 1 per level up to 25%</li>
+  <li>Vines are now considered flying</li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -108,6 +119,8 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <ul>
   <li>Now does an AOE physical dot damage based on the floor animation of vines</li>
   <li>Synergizes with all summons for +10% damage.</li>
+  <li>Removed bugged and unworking monster property</li>
+  <li>Vines are now considered flying</li>
 </ul>
 <p>&nbsp;</p>
 <h2>Elemental Skills</h2>
@@ -115,6 +128,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <ul>
   <li>Changes were made to encourage more build diversity between which spells to use<ul>
       <li>Synergies were changed from the previous limitations to now work with ALL elemental skills (e.g. Fissure can gain more fire damage from Tornado)</li>
+      <li>Removed synergy caps across the board and adjusted synergies and curves to match</li>
       <li>Pre-requisites have been removed (level requirements still exist)</li>
     </ul>
   </li>
@@ -123,7 +137,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:9.62%;"><img src="/firestorm.png"></figure>
 <ul>
   <li>Damage increased to be a usable primary spell</li>
-  <li>Gains additional projectiles and travels further with level</li>
+  <li>Casts 3 projectiles base + 1 every 8 levels (was 1 every 15 levels) and travels further with level</li>
   <li>Fixed tooltip lying about damage<ul>
       <li>Note: There is a slight discrepancy between char sheet and tooltip damage due to how accurate these calcs are for damage over time</li>
     </ul>
@@ -161,6 +175,9 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:8.97%;"><img src="/armegeddon.png"></figure>
 <ul>
   <li>Gains duration synergy from all elemental skills and additional duration per level</li>
+  <li>Fixed fire trail to correctly deal damage (was 1/4 damage)</li>
+  <li>Increased duration by +1 second per level</li>
+  <li>Base damage decreased slightly to compensate for trail fix</li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -179,9 +196,10 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:8.94%;"><img src="/twister.png"></figure>
 <ul>
   <li>Damage increased to be a usable area clear spell</li>
-  <li>Gains additional projectiles with level</li>
+  <li>Now fires 4 missiles + 1 every 5 levels (was 4 missiles + 1 every 10 levels)</li>
   <li>No longer gains stun duration from arctic blast</li>
   <li>Now uses a scaling mana curve</li>
+  <li>Reduced Next Hit Delay (NHD) to 10 from 25</li>
 </ul>
 <p>&nbsp;</p>
 <h3>Tornado</h3>
@@ -288,6 +306,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
   <li>Uses Attack Speed Breakpoints.</li>
   <li>Gains 10% synergy from Maul.</li>
   <li>Requires Bear/Polar Bear.</li>
+  <li>Removed stun.</li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

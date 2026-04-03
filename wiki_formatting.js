@@ -1,141 +1,237 @@
-// Define the lists for rarities and items
 const rarities = ['Magic', 'Rare', 'Unique', 'Set', 'Crafted', 'Ethereal'];
 const items = ['Item', 'Jewel', 'Jewelry', 'Amulet', 'Ring', 'Charm',
-'Armor', 'Shield', 'Weapon', 'Belt', "Boot", "Glove",'Helm', 'Circlet'];
+'Armor', 'Shield', 'Weapon', 'Belt', 'Boot', 'Glove', 'Helm', 'Circlet'];
 
-// Define the list for runes
-const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL', 
-'ORT', 'THUL', 'AMN', 'SOL', 'SHAEL', 'DOL', 'HEL', 'IO', 'LUM', 
-'KO', 'FAL', 'LEM', 'PUL', 'UM', 'MAL', 'IST', 'GUL', 
+const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL',
+'ORT', 'THUL', 'AMN', 'SOL', 'SHAEL', 'DOL', 'HEL', 'IO', 'LUM',
+'KO', 'FAL', 'LEM', 'PUL', 'UM', 'MAL', 'IST', 'GUL',
 'VEX', 'OHM', 'LO', 'SUR', 'BER', 'JAH', 'CHAM', 'ZOD'];
 
-// Define the list for gems
-const gems = ['Amethyst', 'Sapphire', 'Ruby', 'Emerald', 'Topaz', 'Diamond', 'Skull'];
+const gems = ['Amethyst', 'Sapphire', 'Ruby', 'Emerald', 'Topaz', 'Diamond', 'Skull', 'Chaos Onyx'];
 
-// Define the list for orbs and their colors (using HEX codes)
 const orbs = {
-    'Conversion': '#e67e22', // Orange
-    'Assemblage': '#109001', // Green
-    'Infusion': '#dadd00',   // Yellow
-    'Corruption': '#cd0000', // Red
-    'Socketing': '#0025cd',  // Blue
-    'Shadows': '#9200a1'     // Purple
+  'Conversion': '#e67e22',
+  'Assemblage': '#109001',
+  'Infusion': '#dadd00',
+  'Corruption': '#cd0000',
+  'Socketing': '#0025cd',
+  'Shadows': '#9200a1'
 };
 
-// Define the colors for each rarity and their colors (using HEX codes)
 const rarityColors = {
-    'Magic': '#1770ff',     // Blue
-    'Rare': '#ffee00',      // Yellow
-    'Unique': '#c48300',    // Tan
-    'Set': '#009102',       // Green
-    'Crafted': '#c44500',   // Orange
-    'Ethereal': '#9400ab',  // Purple
+  'Magic': '#1770ff',
+  'Rare': '#ffee00',
+  'Unique': '#c48300',
+  'Set': '#009102',
+  'Crafted': '#c44500',
+  'Ethereal': '#9400ab'
 };
 
-// Function to highlight rarity and item combinations
-function highlightItems(bodyText) {
-    let newText = bodyText;
-
-    rarities.forEach(rarity => {
-        const color = rarityColors[rarity];
-        items.forEach(item => {
-            let regex;
-            if (item === 'Jewelry') {
-                // Special case for 'Jewelry' which doesn't follow the typical singular/plural pattern
-                regex = new RegExp(`\\b${rarity}\\s+${item}\\b`, 'gi');
-            } else {
-                const keywordPair = `${rarity} ${item}`;
-                regex = new RegExp(`\\b${rarity}\\s+${item}s?\\b`, 'gi'); // Match singular and plural forms
-            }
-            newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">$&</span>`);
-        });
-
-        // Highlight rarity words within brackets
-        const bracketRegex = new RegExp(`\\(${rarity}\\)`, 'gi');
-        newText = newText.replace(bracketRegex, `<span style="color: ${color}; font-weight: bold;">(${rarity})</span>`);
-
-        // Highlight the word 'Ethereal'
-        if (rarity === 'Ethereal') {
-            const etherealRegex = new RegExp(`\\b${rarity}\\b`, 'gi');
-            newText = newText.replace(etherealRegex, `<span style="color: ${color}; font-weight: bold;">${rarity}</span>`);
-        }
-    });
-
-    return newText;
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Function to highlight runes and rune combinations
-function highlightRunes(bodyText) {
-    let newText = bodyText;
+function highlightItems(text) {
+  let newText = text;
 
-    runes.forEach(rune => {
-        const regex = new RegExp(`\\b${rune} Rune\\b`, 'gi');
-        newText = newText.replace(regex, `<span style="color: orange; font-weight: bold;">${rune} Rune</span>`);
+  rarities.forEach(rarity => {
+    const color = rarityColors[rarity];
+
+    items.forEach(item => {
+      let regex;
+
+      if (item === 'Jewelry') {
+        regex = new RegExp(`\\b${escapeRegExp(rarity)}\\s+${escapeRegExp(item)}\\b`, 'gi');
+      } else {
+        regex = new RegExp(`\\b${escapeRegExp(rarity)}\\s+${escapeRegExp(item)}s?\\b`, 'gi');
+      }
+
+      newText = newText.replace(regex, match =>
+        `<span class="wiki-keyword-highlight" style="color: ${color}; font-weight: bold;">${match}</span>`
+      );
     });
 
-    return newText;
-}
+    const bracketRegex = new RegExp(`\\(${escapeRegExp(rarity)}\\)`, 'gi');
+    newText = newText.replace(bracketRegex, match =>
+      `<span class="wiki-keyword-highlight" style="color: ${color}; font-weight: bold;">${match}</span>`
+    );
 
-// Function to highlight gems
-function highlightGems(bodyText) {
-    let newText = bodyText;
-
-    gems.forEach(gem => {
-        const regex = new RegExp(`\\b${gem}\\b`, 'gi');
-        newText = newText.replace(regex, `<span style="color: turquoise; font-weight: bold;">${gem}</span>`);
-    });
-
-    // Highlight 'Gem (Any)', 'Gems (Any)', and 'Gem Bag (X Gem|Gems)'
-    const gemAnyRegex = new RegExp(`Gem \\(Any\\)`, 'gi');
-    newText = newText.replace(gemAnyRegex, `<span style="color: turquoise; font-weight: bold;">Gem (Any)</span>`);
-
-    const gemsAnyRegex = new RegExp(`Gems \\(Any\\)`, 'gi');
-    newText = newText.replace(gemsAnyRegex, `<span style="color: turquoise; font-weight: bold;">Gems (Any)</span>`);
-
-    const gemBagRegex = new RegExp(`Gem Bag \\(\\d+ (Gem|Gems)\\)`, 'gi');
-    newText = newText.replace(gemBagRegex, `<span style="color: turquoise; font-weight: bold;">$&</span>`);
-
-    return newText;
-}
-
-// Function to highlight orbs
-function highlightOrbs(bodyText) {
-    let newText = bodyText;
-
-    Object.keys(orbs).forEach(orbType => {
-        const keyword = `Orb of ${orbType}`;
-        const color = orbs[orbType];
-        const regex = new RegExp(`\\b(${keyword})\\b`, 'gi');
-        newText = newText.replace(regex, `<span style="color: ${color}; font-weight: bold;">${keyword}</span>`);
-    });
-
-    return newText;
-}
-
-// Function to traverse the DOM and apply highlighting to text nodes within specified elements
-function traverseAndHighlight(node) {
-    if (node.nodeType === Node.TEXT_NODE) {
-        let newText = node.nodeValue;
-        newText = highlightItems(newText);
-        newText = highlightRunes(newText);
-        newText = highlightGems(newText);
-        newText = highlightOrbs(newText);
-
-        if (newText !== node.nodeValue) {
-            const span = document.createElement('span');
-            span.innerHTML = newText;
-            node.parentNode.replaceChild(span, node);
-        }
-    } else if (node.nodeType === Node.ELEMENT_NODE && node.nodeName !== 'IMG') {
-        node.childNodes.forEach(child => traverseAndHighlight(child));
+    if (rarity === 'Ethereal') {
+      const etherealRegex = new RegExp(`\\b${escapeRegExp(rarity)}\\b`, 'gi');
+      newText = newText.replace(etherealRegex, match =>
+        `<span class="wiki-keyword-highlight" style="color: ${color}; font-weight: bold;">${match}</span>`
+      );
     }
+  });
+
+  return newText;
 }
 
-// Function to update the HTML page with highlighted keywords within specified elements
-function highlightKeywords() {
-    const elements = document.querySelectorAll('figure.table, p, h1, toc-header');
-    elements.forEach(element => traverseAndHighlight(element));
+function highlightRunes(text) {
+  let newText = text;
+
+  runes.forEach(rune => {
+    const regex = new RegExp(`\\b${escapeRegExp(rune)} Rune\\b`, 'gi');
+    newText = newText.replace(regex, match =>
+      `<span class="wiki-keyword-highlight" style="color: orange; font-weight: bold;">${match}</span>`
+    );
+  });
+
+  return newText;
 }
 
-// Run the function to highlight keywords when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', highlightKeywords);
+function highlightGems(text) {
+  let newText = text;
+
+  gems.forEach(gem => {
+    const regex = new RegExp(`\\b${escapeRegExp(gem)}\\b`, 'gi');
+    newText = newText.replace(regex, match =>
+      `<span class="wiki-keyword-highlight" style="color: turquoise; font-weight: bold;">${match}</span>`
+    );
+  });
+
+  newText = newText.replace(/Gem \(Any\)/gi,
+    `<span class="wiki-keyword-highlight" style="color: turquoise; font-weight: bold;">Gem (Any)</span>`);
+
+  newText = newText.replace(/Gems \(Any\)/gi,
+    `<span class="wiki-keyword-highlight" style="color: turquoise; font-weight: bold;">Gems (Any)</span>`);
+
+  newText = newText.replace(/Gem Bag \(\d+ (Gem|Gems)\)/gi, match =>
+    `<span class="wiki-keyword-highlight" style="color: turquoise; font-weight: bold;">${match}</span>`
+  );
+
+  return newText;
+}
+
+function highlightOrbs(text) {
+  let newText = text;
+
+  Object.keys(orbs).forEach(orbType => {
+    const keyword = `Orb of ${orbType}`;
+    const color = orbs[orbType];
+    const regex = new RegExp(`\\b${escapeRegExp(keyword)}\\b`, 'gi');
+
+    newText = newText.replace(regex, match =>
+      `<span class="wiki-keyword-highlight" style="color: ${color}; font-weight: bold;">${match}</span>`
+    );
+  });
+
+  return newText;
+}
+
+function shouldSkipNode(node) {
+  const parent = node.parentElement;
+  if (!parent) return true;
+
+  if (
+    parent.closest('.wiki-keyword-highlight') ||
+    parent.closest('script, style, code, pre, textarea, input, select, option, button, svg')
+  ) {
+    return true;
+  }
+
+  return false;
+}
+
+function processTextNode(node) {
+  if (shouldSkipNode(node)) return;
+
+  const originalText = node.nodeValue;
+  if (!originalText || !originalText.trim()) return;
+
+  let newText = originalText;
+  newText = highlightItems(newText);
+  newText = highlightRunes(newText);
+  newText = highlightGems(newText);
+  newText = highlightOrbs(newText);
+
+  if (newText === originalText) return;
+
+  const wrapper = document.createElement('span');
+  wrapper.innerHTML = newText;
+
+  const fragment = document.createDocumentFragment();
+  while (wrapper.firstChild) {
+    fragment.appendChild(wrapper.firstChild);
+  }
+
+  node.parentNode.replaceChild(fragment, node);
+}
+
+function highlightWithin(root) {
+  if (!root) return;
+
+  const walker = document.createTreeWalker(
+    root,
+    NodeFilter.SHOW_TEXT,
+    null
+  );
+
+  const textNodes = [];
+  let current;
+
+  while ((current = walker.nextNode())) {
+    textNodes.push(current);
+  }
+
+  textNodes.forEach(processTextNode);
+}
+
+function getContentRoot() {
+  return (
+    document.querySelector('.page-content') ||
+    document.querySelector('.contents') ||
+    document.querySelector('main') ||
+    document.body
+  );
+}
+
+let observer;
+let scheduled = false;
+
+function scheduleHighlight(root) {
+  if (scheduled) return;
+  scheduled = true;
+
+  requestAnimationFrame(() => {
+    scheduled = false;
+    highlightWithin(root || getContentRoot());
+  });
+}
+
+function initHighlighting() {
+  const root = getContentRoot();
+  if (!root) return;
+
+  scheduleHighlight(root);
+
+  if (observer) {
+    observer.disconnect();
+  }
+
+  observer = new MutationObserver(mutations => {
+    for (const mutation of mutations) {
+      if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+        scheduleHighlight(root);
+        break;
+      }
+    }
+  });
+
+  observer.observe(root, {
+    childList: true,
+    subtree: true
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initHighlighting();
+
+  window.addEventListener('load', () => {
+    scheduleHighlight(getContentRoot());
+  });
+
+  window.addEventListener('popstate', () => {
+    setTimeout(initHighlighting, 50);
+  });
+});

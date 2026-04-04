@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-04-04T03:35:41.129Z
+date: 2026-04-04T03:56:36.362Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -37,6 +37,17 @@ dateCreated: 2025-02-02T15:10:31.872Z
 
 ## Gameplay Changes
 
+### Charm Weight System
+
+There is a weight system to restrict the number of charms placed in the main inventory. If you reach charm weight 41 or more then your maximum mana is set to 0. You can check weight in the advanced stats panel. This applies to all Charms.
+
+-   Small Charms have a weight of 1
+-   Large charms have a weight of 2
+-   Grand Charms have a weight of 3
+
+![charmies.png](/charmies.png)
+
+### Difficulty
 - Normal difficulty is not meant to be challenging, but more an introduction for the player to learn about their class changes. Do not expect a tough time through normal. 
 	- Bosses and side quests may have additional enemies and will preset a challenge if you venture to their areas early.
 <br>
@@ -51,6 +62,7 @@ dateCreated: 2025-02-02T15:10:31.872Z
 <br>
 - Cow portal only requires wirt's leg and has unlimited uses, but the original recipe works too.
 <br>
+### Rune drops
 > Rune drops are greatly increased across the entire treasure class/loot table. 
 
 - Countess rune drop table revised, highest rune is now:
@@ -198,18 +210,3 @@ See [this page](https://wiki.d2r-reimagined.com/en/Items/LootTable) for special 
     -   Halls of Pain and Halls of Vaught
     -   Worldstone Keep and Throne of Destruction (Baal Waves and Baal are underwhelming for time spent but those areas still have great density.)
 
-## Charm Weight System
-
-There is a weight system to restrict the number of charms placed in the main inventory. If you reach charm weight 41 or more then your maximum mana is set to 0. You can check weight in the advanced stats panel. This applies to all Charms.
-
--   Small Charms have a weight of 1
-
-![](/scweight.png)
-
--   Large charms have a weight of 2
-
-![](/lcweight.png)
-
--   Grand Charms have a weight of 3
-
-![](/gcweight.png)

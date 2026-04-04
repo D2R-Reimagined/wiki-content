@@ -2,7 +2,7 @@
 title: Oskills & CTC Only Skills
 description: Page detailing the Oskill & CTC only skills you will see in ReImagined
 published: true
-date: 2026-04-04T00:16:39.408Z
+date: 2026-04-04T01:41:17.290Z
 tags: oskills, ctc, warp
 editor: markdown
 dateCreated: 2026-04-03T23:11:31.926Z
@@ -19,6 +19,7 @@ If a +X to Skill also contains (Class Only) then only that class benefits from t
 More information can be found [Here](https://www.theamazonbasin.com/wiki/index.php/Oskill)
 
 ### Oskill only table + Deadly Treasures
+
 |----|----|
 |Skill| Description|
 |Warp| Teleport with a 3 Second cooldown|

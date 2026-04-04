@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-04-04T03:07:39.667Z
+date: 2026-04-04T03:08:31.823Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -10,19 +10,10 @@ dateCreated: 2025-02-02T15:10:31.872Z
 
 ## [**Official Website**](https://www.d2r-reimagined.com/)
 
-If you have questions, want to report bugs, or swap build ideas then join our Discord Server : [Reimagined](https://discord.gg/esH3j2zV)
 
-> **IMPORTANT:**
-> 
-> Storing a large quantity of small items (Small Charms, Large Charms, Grand Charms, Jewels, Rings, Amulets, Belts, Etc.) in your Personal Stash and/or Horadric Cube in between game sessions (Save and Exit) can drastically increase the file size of your character which has a **_hardcoded limit of 8192 bytes on disk or around 8KB._**
-> 
-> The file to watch is (charname).d2s in C:\\Users\\(your user)\\Saved Games\\Diablo II Resurrected\\mods\\Reimagined.
-> 
-> Keep smaller items(1x1 size) like jewels in Shared Tabs if using Personal tab for rune/orb stack storage. If you store Rune and Orb stacks in your personal tab, keep them stacked together, a stack of 100 quantity takes up less file space than 2 stacks of 1 quantity.
-> 
-> Failure to be aware of the file size limit and follow these basic guidelines will eventually result in items disappearing!
-> 
-> **Never use the Horadric Cube for in between game storage, (Save and Exit), the cube contributes to your save file limit. Items disappear when the file size has reached the limit above.**
+
+> If you have questions, want to report bugs, or swap build ideas then join our Discord Server : [Reimagined](https://discord.gg/esH3j2zV)
+
 
 ## For a quick list of features Reimagined contains [click here.](https://wiki.d2r-reimagined.com/en/Installs#reimagined-features)
 

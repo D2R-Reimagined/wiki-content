@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-04-04T03:08:31.823Z
+date: 2026-04-04T03:18:05.981Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -17,29 +17,23 @@ dateCreated: 2025-02-02T15:10:31.872Z
 
 ## For a quick list of features Reimagined contains [click here.](https://wiki.d2r-reimagined.com/en/Installs#reimagined-features)
 
-## How-To Series
+## New Player Videos
 
 [D2RR 3.0 Starting Tips](https://www.youtube.com/watch?v=P5YpLsjt9Z0)
 
-[Beginner Tips: 10 Things To Help You With D2R Re-Imagined](https://www.youtube.com/watch?v=TA-fAlegGlk)
-
-[Beginner Tips: 9 more things to help you with D2R Re-Imagined](https://youtu.be/SEDvSBiqO_E)
-
 [How To Get Any Base Type For Runewords](https://www.youtube.com/watch?v=dOFn7dSsqHw)
 
-[How To Use The Item Upgrade System](https://www.youtube.com/watch?v=rYUac84Yjn4)
-
-[Item Upgrades You Should Be Using](https://www.youtube.com/watch?v=OKDkgHMTKLM)
 
 ## **Characters**
+> For a list of all class changes click [HERE](https://wiki.d2r-reimagined.com/en/ClassChanges)
 
-Max character level is 100, mercenaries can reach 99.
+- Max character level is 100, mercenaries can reach 99.
 
-Skills cap out at 25 hard points, up from 20.
+- Skills cap out at 25 hard points, up from 20.
 
-Many skills and their synergies have been changed, so experiment and try new things!
+- Many skills and their synergies have been changed, so experiment and try new things!
 
-You can respec at any time by purchasing a Token of Absolution from potion vendors in each act.
+- You can respec at any time by purchasing a Token of Absolution from potion vendors in each act.
 
 ## **Items**
 

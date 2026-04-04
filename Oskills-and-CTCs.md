@@ -2,7 +2,7 @@
 title: Oskills & CTC Only Skills
 description: Page detailing the Oskill & CTC only skills you will see in ReImagined
 published: true
-date: 2026-04-04T01:42:17.748Z
+date: 2026-04-04T02:30:37.016Z
 tags: oskills, ctc, warp
 editor: markdown
 dateCreated: 2026-04-03T23:11:31.926Z
@@ -16,7 +16,7 @@ OSkills (+X to Skill) only provides +3 to the class that owns the skill, total. 
 
 If a +X to Skill also contains (Class Only) then only that class benefits from the skill level increase and gains the full effect.
 
-More information can be found [Here](https://www.theamazonbasin.com/wiki/index.php/Oskill)
+More information can be found [Here](https://www.theamazonbasin.com/wiki/index.php/Oskill) and [Here](https://diablo.fandom.com/wiki/Oskill#Same_class_cap)
 
 ### Oskill only table + Deadly Treasures
 

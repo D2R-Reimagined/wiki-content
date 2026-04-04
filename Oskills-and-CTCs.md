@@ -2,7 +2,7 @@
 title: Oskills & CTC Only Skills
 description: Page detailing the Oskill & CTC only skills you will see in ReImagined
 published: true
-date: 2026-04-04T01:41:17.290Z
+date: 2026-04-04T01:42:17.748Z
 tags: oskills, ctc, warp
 editor: markdown
 dateCreated: 2026-04-03T23:11:31.926Z
@@ -46,6 +46,7 @@ Note2: When struck means when you actually take a hit. Blocking does not proc wh
 For more detailed information see the amazon basin page: [Here](https://www.theamazonbasin.com/wiki/index.php/Chance_to_Cast)
 
 ### CTC Only Skill Table
+
 |----|----|
 |Skill Name|Description|
 |Winter's Pulse|Cloned Frost nova with a damage curve of 100-150 cold damage per level. Visual slightly darker blue than normal Frost Nova

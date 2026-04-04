@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-04-04T03:33:56.433Z
+date: 2026-04-04T03:35:41.129Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -37,17 +37,15 @@ dateCreated: 2025-02-02T15:10:31.872Z
 
 ## Gameplay Changes
 
-- Normal difficulty is not meant to be challenging, but more an introduction for the player to learn about their class changes. Do not expect a tough time through normal. There are some side areas and new super unique monsters that will preset a challenge if you venture to their areas early.
+- Normal difficulty is not meant to be challenging, but more an introduction for the player to learn about their class changes. Do not expect a tough time through normal. 
+	- Bosses and side quests may have additional enemies and will preset a challenge if you venture to their areas early.
 <br>
 - Nightmare difficulty will feel the same until around mid Act 3 where the level starts to ramp up to accommodate the new Hell changes. By the end of Act 5 and killing Baal the area level is around 69-70 and Nightmare Terror Zone level cap is increased to 80 to facilitate farming before attempting to tackle Hell difficulty.  
-<br>
-- Nightmare Terror zones drop up to a **CHAM** rune.  
-<br>  
-- **Sunder charms can also be obtained from Nightmare terror zones.**
+	- Nightmare Terror zones drop up to a **CHAM** rune.  
+	- **Sunder charms can also be obtained from Nightmare terror zones.**
 <br>
 - Hell difficulty has been scaled up from the original game to encompass levels 90+ as well as terror zone level cap increased to 99. It is recommended to farm in NM TZ until 85+ and getting resistances situated and your build a goal before attempting Hell.
-<br>
-- Monster HP is about 4X higher and damage is about 1.5X higher on all player counts.
+	- **Monster HP is about 4X higher and damage is about 1.5X higher on all player counts.**
 <br>
 - Terror Zones encompass the entire act and rotate every hour. Cows, stony field, and tristram are located in act 4 terror zone since it felt empty. There is also a cow waypoint you can activate after your first visit to the secret level.
 <br>

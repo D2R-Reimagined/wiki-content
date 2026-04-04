@@ -2,7 +2,7 @@
 title: Oskills & CTC Only Skills
 description: Page detailing the Oskill & CTC only skills you will see in ReImagined
 published: true
-date: 2026-04-04T00:16:15.380Z
+date: 2026-04-04T00:16:39.408Z
 tags: oskills, ctc, warp
 editor: markdown
 dateCreated: 2026-04-03T23:11:31.926Z

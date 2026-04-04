@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-04-04T03:18:05.981Z
+date: 2026-04-04T03:33:16.041Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -34,6 +34,44 @@ dateCreated: 2025-02-02T15:10:31.872Z
 - Many skills and their synergies have been changed, so experiment and try new things!
 
 - You can respec at any time by purchasing a Token of Absolution from potion vendors in each act.
+
+## Gameplay Changes
+
+- Normal difficulty is not meant to be challenging, but more an introduction for the player to learn about their class changes. Do not expect a tough time through normal. There are some side areas and new super unique monsters that will preset a challenge if you venture to their areas early.
+
+- Nightmare difficulty will feel the same until around mid Act 3 where the level starts to ramp up to accommodate the new Hell changes. By the end of Act 5 and killing Baal the area level is around 69-70 and Nightmare Terror Zone level cap is increased to 80 to facilitate farming before attempting to tackle Hell difficulty.  
+  
+- Nightmare Terror zones drop up to a **CHAM** rune.  
+  
+- **Sunder charms can also be obtained from Nightmare terror zones.**
+
+- Hell difficulty has been scaled up from the original game to encompass levels 90+ as well as terror zone level cap increased to 99. It is recommended to farm in NM TZ until 85+ and getting resistances situated and your build a goal before attempting Hell.
+
+- Monster HP is about 4X higher and damage is about 1.5X higher on all player counts.
+
+- Terror Zones encompass the entire act and rotate every hour. Cows, stony field, and tristram are located in act 4 terror zone since it felt empty. There is also a cow waypoint you can activate after your first visit to the secret level.
+
+- Cow portal only requires wirt's leg and has unlimited uses, but the original recipe works too.
+
+<br>
+<br>
+
+> Rune drops are greatly increased across the entire treasure class/loot table. 
+
+- Countess rune drop table revised, highest rune is now:
+	- Normal: THUL
+	- Nightmare: KO
+	- Hell: VEX
+- Countess Rune drop table has been extended to other Super Uniques:
+    -   Act 2 - Halls of the Dead: Bloodwitch the Wild
+    -   Act 3 - Ruined Temple: Battlemaiden Sarina
+    -   Act 4 - River of Flame: Hephasto (Countess Table +1, Normal: DOL, Nightmare: UM, Hell: LO)
+    -   Act 5 - Frozen River: Frozenstein (Countess Table +1, Normal: DOL, Nightmare: UM, Hell: LO)
+
+See [this page](https://wiki.d2r-reimagined.com/en/Items/Runes#where-do-runes-drop) for more information on runes and rune holders.
+
+For further drop table changes you can visit [this page](https://wiki.d2r-reimagined.com/en/Items/LootTable)
+
 
 ## **Items**
 
@@ -134,34 +172,7 @@ Infernal Keys can be stored in a Keychain, and extracted with the appropriate ke
 
 ![](/keychain_3.png)
 
-## Gameplay Changes
 
-Nightmare difficulty will feel the same until around mid Act 3 where the level starts to ramp up to accommodate the new Hell changes. By the end of Act 5 and killing Baal the area level is around 69-70 and Nightmare Terror Zone level cap is increased to 80 to facilitate farming before attempting to tackle Hell difficulty.  
-  
-Nightmare Terror zones drop up to a **CHAM** rune.  
-  
-**Sunder charms can also be obtained from Nightmare terror zones.**
-
-Hell difficulty has been scaled up from the original game to encompass levels 90+ as well as terror zone level cap increased to 99. It is recommended to farm in NM TZ until 85+ and getting resistances situated and your build a goal before attempting Hell.
-
--   Monster HP is about 4X higher and damage is about 1.5X higher on all player counts.
-
-Terror Zones changed to rotate between 5 sets. Each TZ rotation is Act based and contains most of the original TZs within that act. Cows are under Act 4 due to the limit on number of TZs allowed.
-
-**_Cow Level Portal now only requires Wirt's Leg to open._**
-
-Countess rune drop table revised, highest rune is now:
-
--   Normal: THUL
--   Nightmare: KO
--   Hell: VEX
--   Countess Rune drop table has been extended to other Super Uniques:
-    -   Act 2 - Halls of the Dead: Bloodwitch the Wild
-    -   Act 3 - Ruined Temple: Battlemaiden Sarina
-    -   Act 4 - River of Flame: Hephasto (Countess Table +1, Normal: DOL, Nightmare: UM, Hell: LO)
-    -   Act 5 - Frozen River: Frozenstein (Countess Table +1, Normal: DOL, Nightmare: UM, Hell: LO)
-
-See [this page](https://wiki.d2r-reimagined.com/en/Items/LootTable) for more information.
 
 ## Suggested Farming Areas
 

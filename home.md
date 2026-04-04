@@ -2,7 +2,7 @@
 title: Home
 description: Home page for the D2R Reimagined Wiki
 published: true
-date: 2026-04-04T04:00:31.217Z
+date: 2026-04-04T04:00:54.559Z
 tags: home, welcome, links, credits, contributors
 editor: markdown
 dateCreated: 2025-02-01T21:10:03.330Z
@@ -17,6 +17,8 @@ Our Mission is to provide a Diablo II experience that is both familiar and new. 
 Everything we do is open source whether it be files edits, or mod tools. We believe that the community should have the ability to see and modify the code that runs the mod. We also believe that the community should have the ability to contribute to the mod and help shape its future.
 
 Want to be apart of this mission? Join our Discord Server [https://discord.gg/9zZkYrSA8C](https://discord.gg/9zZkYrSA8C) for more information on contributing and collaborating.
+
+> If you are a new player consider checking out the [New Player Guide](https://wiki.d2r-reimagined.com/en/new_player_guide)
 
 ## **Contribute to the Wiki**
 

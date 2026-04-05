@@ -2,7 +2,7 @@
 title: Oskills & CTC Only Skills
 description: Page detailing the Oskill & CTC only skills you will see in ReImagined
 published: true
-date: 2026-04-04T02:38:03.390Z
+date: 2026-04-05T03:14:28.727Z
 tags: oskills, ctc, warp
 editor: markdown
 dateCreated: 2026-04-03T23:11:31.926Z
@@ -27,6 +27,8 @@ More information can be found [Here](https://www.theamazonbasin.com/wiki/index.p
 |Trang-Oul's Burning Shroud |Trang set only meteor skill |
 |Trang-Oul's Doomfall |Trang set only fireball skill |
 |King's Trinity | Immortal King only skill that releases triple elemental twisters when attacking |
+|Polar Bear | Panda set only skill that shape shifts you into a polar bear(white bear)|
+|Arctic Claws| Panda set only skill that is a cold splashing melee attack|
 |Deadly Treasures| Barbarian skill that gives passive magic find and gold find|
 |If it's not in this list|check the class skill trees|
 

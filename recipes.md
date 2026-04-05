@@ -2,17 +2,16 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-04-05T03:08:42.219Z
+date: 2026-04-05T03:09:39.036Z
 tags: crafting, recipes, enchants
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
 ---
 
 # Recipes in Reimagined
-Below are the cube recipes, enchanting recipes, and item crafting recipes. Many vanilla recipes were removed. If the recipe is not on this page or the website's list of recipes [here](https://www.d2r-reimagined.com/cube-recipes?hideVanilla=false) it does not exist in the mod.
+Below are the cube recipes, [Enchanting](https://wiki.d2r-reimagined.com/en/recipes#item-enchant-system) recipes, and [Item Crafting](https://wiki.d2r-reimagined.com/en/recipes#item-crafting-system) recipes. Many vanilla recipes were removed. If the recipe is not on this page or the website's list of recipes [here](https://www.d2r-reimagined.com/cube-recipes?hideVanilla=false) it does not exist in the mod.
 
-[Enchants](https://wiki.d2r-reimagined.com/en/recipes#item-enchant-system)
-[Crafting](https://wiki.d2r-reimagined.com/en/recipes#item-crafting-system)
+
 
 # Cube Recipes
 

@@ -2,17 +2,18 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-04-05T02:57:13.104Z
+date: 2026-04-05T03:04:39.315Z
 tags: crafting, recipes, enchants
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
 ---
 
+# Recipes in Reimagined
+Below are the cube recipes, enchanting recipes, and item crafting recipes. Many vanilla recipes were removed. If the recipe is not on this page or the website's list of recipes [here](https://www.d2r-reimagined.com/cube-recipes?hideVanilla=false) it does not exist in the mod.
+
 # Cube Recipes
 
 Horadric Cube recipes that players may find useful on their journeys.
-
-Additional recipes can be found on the [Item Crafting](https://wiki.d2r-reimagined.com/en/recipes/Crafting) and [Item Enchants](https://wiki.d2r-reimagined.com/en/recipes/ItemEnchants)  pages.
 
 ## Socket Recipes
 
@@ -20,8 +21,8 @@ Applies to Weapons, Shields, Chest Armor and Helms only.
 
 Jewelry, Belts, Gloves and Boots cannot have sockets.
 
-The number of sockets is dependent on Item Level. Check [online sources](https://diablo2.diablowiki.net/Sockets) before attempting to punch sockets.  
- 
+The number of sockets is dependent on Item Level. Check the [Bases](https://www.d2r-reimagined.com/bases) website page in order to check the number of sockets an item can have based on its item level.
+<br> 
 
 | **Reagent** | **Reagent** |     | **Outcome** |
 | --- | --- | --- | --- |
@@ -31,7 +32,7 @@ The number of sockets is dependent on Item Level. Check [online sources](https:/
 | Item | Orb of Socketing | \=  | #-# Sockets (Random) **\*** |
 
 **\*Based on item's level and max number of sockets**
-
+- Example of socket punching with jewels: weapon with 3 socket currently that can have 4 or more sockets cubed with 4 jewels = item with 4 sockets
 ## Unsocket Recipes
 
 Pliers can be bought from Blacksmithing vendors in all acts.  
@@ -64,8 +65,8 @@ Pliers can be bought from Blacksmithing vendors in all acts.
 | **^**Does not work on Indestructible Items, Bows or Crossbows, or items without durability. |     |     |     |     |     |
 | Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \=  | White Base Item |     |
 | **^**Item is completely regenerated, as if a new white base dropped. |     |     |     |     |     |
-| Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \=  | White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) |     |
-| **^**This recipe accepts any rarity.  <br>Item is completely regenerated as a white item( no previous stats are retained), upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._** |     |     |     |     |     |
+| Weapon / Torso / Shield  <br>(Any)<br><br>**^**This recipe accepts any rarity.  <br>Item is completely regenerated as a white item( no previous stats are retained), upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._** | Orb of Infusion | Uber Spirits (1 of each) | \=  | White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) |     |
+
 
 **\* Tome is returned full**
 

@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-04-05T03:04:39.315Z
+date: 2026-04-05T03:07:46.038Z
 tags: crafting, recipes, enchants
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -157,8 +157,12 @@ Pliers can be bought from Blacksmithing vendors in all acts.
 | Key of Terror | Key of Hate | Key of Destruction | \=  | Random Portal To:  <br>Matron's Den  <br>Forgotten Sands  <br>Furnace of Pain |
 | Diablo's Horn | Baal's Eye | Mephisto's Brain | \=  | Portal to Tristram (Pandemonium Finale) |
 
+<br>
+<br>
 
-## Item Enchant System
+___
+
+# Item Enchant System
 
 All weapons, armor and jewelry can be enchanted with various additional stats a certain number of times.   
 2H Weapons can be enchanted 10 times.  

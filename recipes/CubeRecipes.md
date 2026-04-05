@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-05T02:40:34.374Z
+date: 2026-04-05T02:40:39.987Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z

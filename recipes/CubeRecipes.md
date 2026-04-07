@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-05T02:40:39.987Z
+date: 2026-04-07T18:41:21.539Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -103,8 +103,8 @@ Pliers can be bought from Blacksmithing vendors in all acts.
 | Key of Hate | Orb of Corruption | ID Tome **\*** | \=  | Key of Terror |
 | Key of Destruction | Orb of Corruption | TP Tome **\*** | \=  | Key of Terror |
 | Key of Destruction | Orb of Corruption | ID Tome **\*** | \=  | Key of Hate |
-| Eastern Worldstone Shard | Any Statue |     | \=  | Talic's Anguish Statue |
-| Western Worldstone Shard | Any Statue |     | \=  | Korlic's Pain Statue |
+| Eastern Worldstone Shard | Any Statue |     | \=  | Korlic's Pain Statue |
+| Western Worldstone Shard | Any Statue |     | \=  | Talic's Anguish Statue |
 | Southern Worldstone Shard | Any Statue |     | \=  | Madawc's Ire Statue |
 | Deep Worldstone Shard | Any Statue |     | \=  | Bul-Kathos' Nightmare Statue |
 | Northern Worldstone Shard | Any Statue |     | \=  | Worusk's End Statue |

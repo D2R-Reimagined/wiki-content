@@ -1,8 +1,8 @@
 ---
-title: Plugin Semi Deep Eli 5 Super Deep
+title: Plugin Example ELI5 for Delegus to Grasp
 description: 
 published: true
-date: 2026-04-07T08:34:46.134Z
+date: 2026-04-07T08:35:42.597Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z

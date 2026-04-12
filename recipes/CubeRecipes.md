@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-12T14:35:59.454Z
+date: 2026-04-12T18:35:16.981Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -53,6 +53,7 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | 9 Magic Jewels |     |     | \=  | Rare Jewel |
 | 6 Rare Jewels |     |     | \= | Unique Jewel |
 | Uber Spirits (1 of each) |     |     | \=  | Hellfire Torch |
+| Standard of Heroes <br>(100% drop from Ubers) | TP Tome \* |     | \=  | Standard of Terror <br><br><span style="color:red">Selling this to any vendor spawns DClone <br>inplace of next Super Unique monster</span> <br>(sells just like SOJ) |
 | 2 Unstacked Runes | TP Tome \* |     | \=  | 1 Rune Higher |
 | Stacked Rune (Qty ≥ 2) | TP Tome \* |     | \=  | 1 Rune Higher<br><br>Stack Qty - 2 |
 | 1 Unstacked Rune | ID Tome \* |     | \=  | 1 Rune Lower |     |

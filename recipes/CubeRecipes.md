@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-12T12:20:44.729Z
+date: 2026-04-12T12:21:33.647Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -56,10 +56,10 @@ Pliers can be bought from Blacksmithing vendors in all acts.
 | 1 Unstacked Rune | ID Tome \* |     | \=  | 1 Rune Lower |     |
 | Stacked Rune (Qty ≥ 1) | ID Tome \* |     | \=  | 1 Rune Lower<br><br>Stack Qty - 1 |
 | Healing Potion  <br>(Any) | Gem (Any) |     | \=  | Rejuvenation Potion |
-| 3 Rejuvenation Potions |     | \=  | Full Rejuvenation Potion |
-| Healing Potion  <br>(Any) | 3 Gems (Any) | \=  | Full Rejuvenation Potion |
-| Healing Potion  <br>(Any) | Gem Bag (3 Gems) | \=  | Full Rejuvenation Potion |
-| 5 Orb of Infusion | Uber Spirits (1 of each) | \=  | Orb of Conversion |
+| 3 Rejuvenation Potions |     |     | \=  | Full Rejuvenation Potion |
+| Healing Potion  <br>(Any) | 3 Gems (Any) |     | \=  | Full Rejuvenation Potion |
+| Healing Potion  <br>(Any) | Gem Bag (3 Gems) |     | \=  | Full Rejuvenation Potion |
+| 5 Orb of Infusion | Uber Spirits (1 of each) |     | \=  | Orb of Conversion |
 | Armor / Weapon / Shield  <br>(Any) | Unique Jewel | OHM Rune | \=  | Ethereal Item |
 | **^**Does not work on Indestructible Items, Bows or Crossbows, or items without durability. |     |     |     |     |
 | Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \=  | White Base Item |

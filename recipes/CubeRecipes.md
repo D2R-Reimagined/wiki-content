@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-12T13:16:38.201Z
+date: 2026-04-12T13:20:57.699Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -31,10 +31,12 @@ The number of sockets is dependent on Item Level. Check [online sources](https:/
 | Item | Orb of Socketing | \=  | #-# Sockets (Random) **\*** |
 
 **\*Based on item's level and max number of sockets**
+**\*Orb of Socketing can always be used if sockets are already present, it will randomly reroll a new amount.**
 
 ## Unsocket Recipes
 
-Pliers can be bought from Blacksmithing vendors in all acts.  
+Pliers can be bought from Blacksmithing vendors in all acts.
+Socketed amount will remain, but you get the socketed items attached jewels or runes returned.
  
 
 | **Reagent** | **Reagent** |     | **Outcome** |
@@ -60,13 +62,11 @@ Pliers can be bought from Blacksmithing vendors in all acts.
 | Healing Potion  <br>(Any) | 3 Gems (Any) |     | \=  | Full Rejuvenation Potion |
 | Healing Potion  <br>(Any) | Gem Bag (3 Gems) |     | \=  | Full Rejuvenation Potion |
 | 5 Orb of Infusion | Uber Spirits (1 of each) |     | \=  | Orb of Conversion |
-| Armor / Weapon / Shield  <br>(Any) | Unique Jewel | OHM Rune | \=  | Ethereal Item |
-| **^**Does not work on Indestructible Items,<br> Bows or Crossbows, or items without durability. |     |     |     |     |
-| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \=  | White Base Item |
-| **^**Item is completely regenerated,<br>as if a new white base dropped. |     |     |     |     |
-| Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \=  | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) |
+| Armor / Weapon / Shield  <br><span style="color:red">_DOES NOT WORK ON:_ <br>Indestructible items<br>Bows or Crossbows<br>Items without Durability</span> | Unique Jewel | OHM Rune | \=  | Ethereal Item |
+| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \=  | Becomes White Base Item<br><br><span style="color:red">Item is regenerated as a new white item. <br>Enchants/Corruption wiped.</span> |
+| Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \=  | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) <br><span style="color:red">Item is regenerated as a new white item. <br>Enchants/Corruption wiped.</span>|
 
- **^**Item is completely regenerated as a white item( no previous stats are retained), upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._**
+ |     |     |     |     |** **Item is upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._**|
 **\* Tome is returned full**
 
 ## Recycle Recipes

@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-07T18:41:21.539Z
+date: 2026-04-12T12:20:44.729Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -46,26 +46,26 @@ Pliers can be bought from Blacksmithing vendors in all acts.
 
 ## Conversion Recipes
 
-| **Reagent** | **Reagent** | **Reagent** |     | **Output** |     |
+| **Reagent** | **Reagent** | **Reagent** |     | **Output** |
 | --- | --- | --- | --- | --- |
-| 9 Magic Jewels |     |     | \=  | Rare Jewel |     |
-| 6 Rare Jewels | \=  | Unique Jewel |     |
-| Uber Spirits (1 of each) | \=  | Hellfire Torch |     |
-| 2 Unstacked Runes | TP Tome \* |     | \=  | 1 Rune Higher |     |
-| Stacked Rune (Qty ≥ 2) | TP Tome \* | \=  | 1 Rune Higher<br><br>Stack Qty - 2 |     |
-| 1 Unstacked Rune | ID Tome \* | \=  | 1 Rune Lower |     |
-| Stacked Rune (Qty ≥ 1) | ID Tome \* | \=  | 1 Rune Lower<br><br>Stack Qty - 1 |     |
-| Healing Potion  <br>(Any) | Gem (Any) | \=  | Rejuvenation Potion |     |
-| 3 Rejuvenation Potions |     | \=  | Full Rejuvenation Potion |     |
-| Healing Potion  <br>(Any) | 3 Gems (Any) | \=  | Full Rejuvenation Potion |     |
-| Healing Potion  <br>(Any) | Gem Bag (3 Gems) | \=  | Full Rejuvenation Potion |     |
-| 5 Orb of Infusion | Uber Spirits (1 of each) | \=  | Orb of Conversion |     |
-| Armor / Weapon / Shield  <br>(Any) | Unique Jewel | OHM Rune | \=  | Ethereal Item |     |
-| **^**Does not work on Indestructible Items, Bows or Crossbows, or items without durability. |     |     |     |     |     |
-| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \=  | White Base Item |     |
-| **^**Item is completely regenerated, as if a new white base dropped. |     |     |     |     |     |
-| Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \=  | White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) |     |
-| **^**This recipe accepts any rarity.  <br>Item is completely regenerated as a white item( no previous stats are retained), upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._** |     |     |     |     |     |
+| 9 Magic Jewels |     |     | \=  | Rare Jewel |
+| 6 Rare Jewels |     |     | \= | Unique Jewel |
+| Uber Spirits (1 of each) |     |     | \=  | Hellfire Torch |
+| 2 Unstacked Runes | TP Tome \* |     | \=  | 1 Rune Higher |
+| Stacked Rune (Qty ≥ 2) | TP Tome \* |     | \=  | 1 Rune Higher<br><br>Stack Qty - 2 |
+| 1 Unstacked Rune | ID Tome \* |     | \=  | 1 Rune Lower |     |
+| Stacked Rune (Qty ≥ 1) | ID Tome \* |     | \=  | 1 Rune Lower<br><br>Stack Qty - 1 |
+| Healing Potion  <br>(Any) | Gem (Any) |     | \=  | Rejuvenation Potion |
+| 3 Rejuvenation Potions |     | \=  | Full Rejuvenation Potion |
+| Healing Potion  <br>(Any) | 3 Gems (Any) | \=  | Full Rejuvenation Potion |
+| Healing Potion  <br>(Any) | Gem Bag (3 Gems) | \=  | Full Rejuvenation Potion |
+| 5 Orb of Infusion | Uber Spirits (1 of each) | \=  | Orb of Conversion |
+| Armor / Weapon / Shield  <br>(Any) | Unique Jewel | OHM Rune | \=  | Ethereal Item |
+| **^**Does not work on Indestructible Items, Bows or Crossbows, or items without durability. |     |     |     |     |
+| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \=  | White Base Item |
+| **^**Item is completely regenerated, as if a new white base dropped. |     |     |     |     |
+| Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \=  | White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) |
+| **^**This recipe accepts any rarity.  <br>Item is completely regenerated as a white item( no previous stats are retained), upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._** |     |     |     |     |
 
 **\* Tome is returned full**
 

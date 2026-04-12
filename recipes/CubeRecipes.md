@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-12T13:27:23.566Z
+date: 2026-04-12T14:34:32.753Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -86,17 +86,17 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | **Reagent** | **Reagent** |     |     | **Output** |
 | --- | --- | --- | --- | --- |
 | 3 Magic Jewelry  <br>(same type) |     |     | \=  | New Magic Jewelry (100% plvl) |
-| 3 Rare Jewelry  <br>(same type) | \=  | New Rare Jewelry(100% plvl) |
-| 3 Magic Charms  <br>(same size) | \=  | New Magic Charm (100% plvl) |
-| 3 Latent Sunder Charms | \=  | New Latent Sunder Charm (Random Element) |
-| Magic Charm | Gem Bag (3 Gems) | \=  | NewMagic Charm (100% plvl) |
-| Magic Jewelry | Gem Bag (3 Gems) | \=  | New Magic Jewelry(100% plvl) |
-| Rare Jewelry | Gem Bag (20 Gems) | \=  | New Rare Jewelry(100% plvl) |
-| Set Jewelry | Gem Bag (50 Gems) | \=  | New Set Jewelry(100% plvl) |
-| Unique Jewelry | Gem Bag (50 Gems) | \=  | New Unique Jewelry(100% plvl) |
-| Magic Jewel | Gem Bag (3 Gems) | \=  | New Magic Jewel (100% plvl) |
-| Rare Jewel | Gem Bag (10 Gems) | \=  | New Rare Jewel (100% plvl) |
-| Unique Jewel | Gem Bag (50 Gems) | \=  | New Unique Jewel (100% ilvl) |
+| 3 Rare Jewelry  <br>(same type) |     |     | \=  | New Rare Jewelry(100% plvl) |
+| 3 Magic Charms  <br>(same size) |     |     | \=  | New Magic Charm (100% plvl) |
+| 3 Latent Sunder Charms |     |     | \=  | New Latent Sunder Charm (Random Element) |
+| Magic Charm | Gem Bag (3 Gems) |     | \=  | NewMagic Charm (100% plvl) |
+| Magic Jewelry | Gem Bag (3 Gems) |     | \=  | New Magic Jewelry(100% plvl) |
+| Rare Jewelry | Gem Bag (20 Gems) |     | \=  | New Rare Jewelry(100% plvl) |
+| Set Jewelry | Gem Bag (50 Gems) |     | \=  | New Set Jewelry(100% plvl) |
+| Unique Jewelry | Gem Bag (50 Gems) |     | \=  | New Unique Jewelry(100% plvl) |
+| Magic Jewel | Gem Bag (3 Gems) |     | \=  | New Magic Jewel (100% plvl) |
+| Rare Jewel | Gem Bag (10 Gems) |     | \=  | New Rare Jewel (100% plvl) |
+| Unique Jewel | Gem Bag (50 Gems) |     | \=  | New Unique Jewel (100% ilvl) |
 | Key of Terror | Orb of Corruption | TP Tome **\*** | \=  | Key of Hate |
 | Key of Terror | Orb of Corruption | ID Tome **\*** | \=  | Key of Destruction |
 | Key of Hate | Orb of Corruption | TP Tome **\*** | \=  | Key of Destruction |
@@ -108,14 +108,16 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | Southern Worldstone Shard | Any Statue |     | \=  | Madawc's Ire Statue |
 | Deep Worldstone Shard | Any Statue |     | \=  | Bul-Kathos' Nightmare Statue |
 | Northern Worldstone Shard | Any Statue |     | \=  | Worusk's End Statue |
-|     | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Unique Item \*\* |
+| Any Set Armor or Ring/Amulet | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Set Item \*\*<br>Regenerates the same set item but with re-rolled stats.<br><span style="color:red">Upgrades/Corruption wiped.<br>If the set's base was previously up-tiered, then instead this will change the set to a different one that can roll on that base type.</span> |
+| Any Unique Armor or Ring/Amulet | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Unique Item \*\* <br>Regenerates the same unique item but with re-rolled stats.<br><span style="color:red">Upgrades/Corruption wiped.<br>If the unique's base was previously up-tiered, then instead this will change the unique to a different one that can roll on that base type.</span>|
 
 100% plvl = item's level is based 100% on character's level  
 100% ilvl = item's level is based 100% on input item's level
 
 **\*Tome is returned full**  
-**\*\*****Generates the same unique item but with re-rolled stats. Corruptions and Upgrades are scrubbed clean.**  
-**\*\*****Using this recipe on a unique that is up-tiered will change the unique to one that naturally roles on that base type.**
+**\**_Example1:_** If you used this on the Unique boots "War Traveler" that are [X] (Battle Boots), they would get rerolled as a brand new Unique boots "War Traveler".  Beecause they naturally drop as [X].
+
+**\**_Example2:_** Instead say the Unique boots "War Traveler" are [E] (Mirrored Boots) because you previously used the cube recipe to upgrade them from Exceptional to Elite, this recipe would instead reroll the item into a completely different unique that matches only the Unique [E] Mirrored Boots base.
 
 ## Armor & Weapon Base Upgrade Recipes
 
@@ -143,15 +145,16 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | **Reagent** | **Reagent** | **Reagent** |     | **Output** |
 | --- | --- | --- | --- | --- |
 | Quiver  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
-| Bolt Case  <br>(Any) | Healing Potion  <br>(Any) | \=  | Replenished Quantity |
+| Bolt Case  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
 | Item  <br>(Ethereal) | 2 Rare Jewels | PUL Rune | \=  | Repaired Ethereal Item |
 | Weapon  <br>(Any) | ORT Rune | Gem (Any) | \=  | Repaired & Recharged |
 | Armor  <br>(Any) | RAL Rune | Gem (Any) | \=  | Repaired & Recharged |
 
 ## Portal Recipes
 
-| **Reagent** | **Reagent** | **Reagent** |     | **Output** |
-| --- | --- | --- | --- | --- |
-| Wirt's Leg |     |     | \=  | Cow Level |
-| Key of Terror | Key of Hate | Key of Destruction | \=  | Random Portal To:  <br>Matron's Den  <br>Forgotten Sands  <br>Furnace of Pain |
-| Diablo's Horn | Baal's Eye | Mephisto's Brain | \=  | Portal to Tristram (Pandemonium Finale) |
+| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Output** |
+| --- | --- | --- | --- | --- | --- | --- |
+| Wirt's Leg |     |     |     |     | \=  | Cow Level |
+| Key of Terror | Key of Hate | Key of Destruction |     |     | \=  | Random Portal To:  <br>Matron's Den  <br>Forgotten Sands  <br>Furnace of Pain |
+| Diablo's Horn | Baal's Eye | Mephisto's Brain |     |     | \=  | Portal to Tristram (Pandemonium Finale) |
+|Korlic's Pain Statue|Talic's Anguish Statue|Madawc's Ire Statue|Bul-Kathos' Nightmare Statue|Worusk's End Statue| = | Portal to Colossal Summit (Colossal Ancients)|

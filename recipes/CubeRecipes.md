@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-12T13:20:57.699Z
+date: 2026-04-12T13:27:23.566Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -66,7 +66,7 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \=  | Becomes White Base Item<br><br><span style="color:red">Item is regenerated as a new white item. <br>Enchants/Corruption wiped.</span> |
 | Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \=  | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) <br><span style="color:red">Item is regenerated as a new white item. <br>Enchants/Corruption wiped.</span>|
 
- |     |     |     |     |** **Item is upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._**|
+ |     |     |     |     |** **Item is upgraded to or remains Elite,<br> and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._**|
 **\* Tome is returned full**
 
 ## Recycle Recipes

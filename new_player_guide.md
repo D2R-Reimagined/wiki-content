@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-04-04T03:56:36.362Z
+date: 2026-04-14T22:52:20.896Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -22,6 +22,12 @@ dateCreated: 2025-02-02T15:10:31.872Z
 [D2RR 3.0 Starting Tips](https://www.youtube.com/watch?v=P5YpLsjt9Z0)
 
 [How To Get Any Base Type For Runewords](https://www.youtube.com/watch?v=dOFn7dSsqHw)
+
+### Craft the Warp Ring to get TP with a 3 second cooldown
+
+| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
+| --- | --- | --- | --- | --- | --- | --- |
+| Magic Ring | Rare Jewel | TAL Rune | RAL Rune | ORT Rune | \=  | Barilzar's Mazed Band Unique Ring Req lvl 25<br><br>+1 Warp oskill<br>+5 to All Resistances<br>+5 to All Attributes<br>Unique Ring |
 
 
 ## **Characters**

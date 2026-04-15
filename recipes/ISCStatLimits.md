@@ -2,13 +2,11 @@
 title: Item Stat Limits
 description: A list of the stat limits you'll encounter when applying item upgrades to equipement.
 published: true
-date: 2026-04-15T10:47:22.252Z
+date: 2026-04-15T10:48:47.681Z
 tags: upgrades, stat limits, bit limits, enchantments
 editor: markdown
 dateCreated: 2025-11-22T13:14:58.384Z
 ---
-
-Work in Progress list of stats and their limits in relation to our item upgrade/enchantment system. 
 
 This is to communicate information, not to provide a modding guide or tutorial. For that information please lookup the proper references on YouTube, d2mods.info, d2rmodding.com or ask in our Discord modding-help channel.
 

@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-15T02:56:29.207Z
+date: 2026-04-15T02:58:19.772Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -123,8 +123,8 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 ## Armor & Weapon Base Upgrade Recipes
 
 | **ARMOR** ||||||
+| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=**| **Output** |
 | :--- | :---: | :---: | :---: | :---: | ---: |
-| **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Output** |
 | Rare Armor  <br>(Normal) | RAL Rune | THUL Rune | Amethyst | \=  | Rare Armor  <br>(Exceptional) |
 | Rare Armor  <br>(Exceptional) | KO Rune | PUL Rune | Amethyst | \=  | Rare Armor  <br>(Elite) |
 | Set Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Set Armor  <br>(Exceptional) |
@@ -134,8 +134,8 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 
 
 | **WEAPONS** ||||||
+| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=** | **Output** |
 | :--- | :---: | :---: | :---: | :---: | ---: |
-| **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Output** |
 | Rare Weapon  <br>(Normal) | ORT Rune | AMN Rune | Sapphire | \=  | Rare Weapon  <br>(Exceptional) |
 | Rare Weapon  <br>(Exceptional) | FAL Rune | UM Rune | Sapphire | \=  | Rare Weapon  <br>(Elite) |
 | Set Weapon  <br>(Normal) | RAL Rune | SOL Rune | Emerald | \=  | Set Weapon  <br>(Exceptional) |
@@ -145,7 +145,7 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 
 ## Repair Recipes
 
-| **Reagent** | **Reagent** | **Reagent** |     | **Output** |
+| **Reagent** | **Reagent** | **Reagent** | **=** | **Output** |
 | :--- | :---: | :---: | :---: | ---: |
 | Quiver  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
 | Bolt Case  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |

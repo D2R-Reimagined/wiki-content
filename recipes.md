@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-04-15T10:40:47.524Z
+date: 2026-04-15T10:46:52.767Z
 tags: crafting, recipes, enchants
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -55,7 +55,7 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | :--- | :---: | :---: | :---: | ---: |
 | 9 Magic Jewels | | | \= | Rare Jewel |
 | 6 Rare Jewels | | | \= | Unique Jewel |
-| Standard of Heroes  <br>(100% drop from Ubers) | TP Tome \* | | \= | Standard of Terror  <br><br>**Selling this to any vendor spawns DClone  <br>inplace of next Super Unique monster**  <br>(sells just like SOJ) |
+| Standard of Heroes<br>(100% drop from Ubers) | TP Tome \* | | \= | Standard of Terror  <br><br>**Selling this to any vendor spawns DClone<br>in place of next Super Unique monster** |
 | Uber Spirits (1 of each) | | | \= | Hellfire Torch |
 | 2 Unstacked Runes | TP Tome \* | | \= | 1 Rune Higher |
 | Stacked Rune (Qty ≥ 2) | TP Tome \* | | \= | 1 Rune Higher<br><br>Stack Qty - 2 |
@@ -67,10 +67,10 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | Healing Potion  <br>(Any) | Gem Bag (3 Gems) | | \= | Full Rejuvenation Potion |
 | 5 Orb of Infusion | Uber Spirits (1 of each) | | \= | Orb of Conversion |
 | Armor / Weapon / Shield  <br>(Any) | Unique Jewel | OHM Rune | \= | Ethereal Item |
-| **^**Does not work on Indestructible Items, Bows or Crossbows, or items without durability. | | | | |
+| **\^** Does not work on Indestructible Items, Bows or Crossbows, or items without durability. | | | | |
 | Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \= | White Base Item |
-| **^**Item is completely regenerated, as if a new white base dropped. | | | | |
-| Weapon / Torso / Shield  <br>(Any)<br><br>**^**This recipe accepts any rarity.  <br>Item is completely regenerated as a white item( no previous stats are retained), upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._** | Orb of Infusion | Uber Spirits (1 of each) | \= | White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) |
+| **\^** Item is completely regenerated, as if a new white base dropped. | | | | |
+| Weapon / Torso / Shield  <br>(Any)<br><br>**\^** This recipe accepts any rarity.  <br>Item is completely regenerated as a white item (no previous stats are retained), upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._** | Orb of Infusion | Uber Spirits (1 of each) | \= | White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) |
 
 
 **\* Tome is returned full**

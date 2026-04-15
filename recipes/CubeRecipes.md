@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-04-15T02:58:19.772Z
+date: 2026-04-15T03:09:53.471Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -23,8 +23,8 @@ Jewelry, Belts, Gloves and Boots cannot have sockets.
 The number of sockets is dependent on Item Level. Check [online sources](https://diablo2.diablowiki.net/Sockets) before attempting to punch sockets.  
  
 
-| **Reagent** | **Reagent** |     | **Outcome** |
-| --- | --- | --- | --- |
+| **Reagent** | **Reagent** | **=**| **Outcome** |
+| :--- | :---: | :---: | ---: |
 | Item (White)  <br>OR  <br>Item (Magic) | \# Magic Jewels | \=  | \# Sockets |
 | Item (Rare)  <br>OR  <br>Item (Set) | \# Rare Jewels | \=  | \# Sockets |
 | Item (Unique)  <br>OR  <br>Item (Crafted) | \# Unique Jewels | \=  | \# Sockets |

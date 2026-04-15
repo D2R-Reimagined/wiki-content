@@ -2,17 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-04-15T10:40:35.077Z
-tags: crafting, recipes, enchants
-editor: markdown
-dateCreated: 2026-04-05T02:57:13.104Z
----
-
----
-title: Recipes
-description: Cube Recipes, Enchants, and Crafting recipes
-published: true
-date: 2026-04-05T03:10:06.055Z
+date: 2026-04-15T10:40:47.524Z
 tags: crafting, recipes, enchants
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z

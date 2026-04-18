@@ -1,8 +1,8 @@
 ---
 title: Item Stat Limits
-description: A list of the stat limits you'll encounter when applying item upgrades to equipement.
+description: A list of the stat limits you'll encounter when applying item enchantments to equipment
 published: true
-date: 2026-04-15T11:04:37.122Z
+date: 2026-04-18T13:54:32.294Z
 tags: upgrades, stat limits, bit limits, enchantments
 editor: markdown
 dateCreated: 2025-11-22T13:14:58.384Z

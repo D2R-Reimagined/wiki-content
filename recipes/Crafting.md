@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-04-19T03:42:19.812Z
+date: 2026-04-19T03:44:28.008Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z
@@ -173,14 +173,14 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Amethyst |     | \=  | +1 Random Amazon Skill Tab |     |
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Diamond |     | \=  | +1 Random Paladin Skill Tab |     |
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Chaos Onyx |     | \=  | +1 Random Warlock Skill Tab |     |
-| <br><span style="color:red">Requires non-crafted<br> sunder charm as reagent</span> |     |     |     |     |     |     | <span style="color:red">**_Reimagined Specific Sunder Charms_**</span> |     |
+| <br><span style="color:red">Requires non-crafted<br> latent sunder charm as reagent</span> |     |     |     |     |     |     | <span style="color:red">**_Reimagined Specific Sunder Charms_**</span> |     |
 | Unique Charm  <br>(Latent Sunder: Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Fire Resistance<br><br>No Resistance Penalty |     |
 | Unique Charm  <br>(Latent Sunder: Cold) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Cold Resistance<br><br>No Resistance Penalty |     |
 | Unique Charm  <br>(Latent Sunder: Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Lightning Resistance<br><br>No Resistance Penalty |     |
 | Unique Charm  <br>(Latent Sunder: Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Poison Resistance<br><br>No Resistance Penalty |     |
 | Unique Charm  <br>(Latent Sunder: Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Physical Resistance<br><br>No Resistance Penalty |     |
 | Unique Charm  <br>(Latent Sunder: Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Magic Resistance<br><br>No Resistance Penalty |     |
-| <span style="color:red">Requires non-crafted<br> sunder charm as reagent</span> |     |     |     |     |     |     | <span style="color:red">**_Vanilla Sunder Charms are Below_**</span> |     |
+| <span style="color:red">Requires non-crafted<br> latent sunder charm as reagent</span> |     |     |     |     |     |     | <span style="color:red">**_Vanilla Sunder Charms are Below_**</span> |     |
 | Unique Charm  <br>(Latent Sunder: Fire) | Deep Worldstone Shard | IO Rune | Ruby |     |     | \=  | Renewed Flame Rift<br><br>\-70% Fire Resistance Penalty<br><br>Either: +5-15% to Fire Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Fire Resistance<br><br>Unique Charm |     |
 | Unique Charm  <br>(Latent Sunder: Cold) | Eastern Worldstone Shard | LUM Rune | Sapphire |     |     | \=  | Renewed Cold Rupture<br><br>\-70% Cold Resistance Penalty<br><br>Either: +5-15% to Cold Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Cold Resistance<br><br>Unique Charm |     |
 | Unique Charm  <br>(Latent Sunder: Lightning) | Southern Worldstone Shard | FAL Rune | Topaz |     |     | \=  | Renewed Crack of the Heavens<br><br>\-70% Lightning Resistance Penalty<br><br>Either: +5-15% to Lightning Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Lightning Resistance<br><br>Unique Charm |     |

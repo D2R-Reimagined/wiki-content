@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-22T01:06:42.867Z
+date: 2026-04-22T01:15:53.181Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -12,24 +12,7 @@ dateCreated: 2026-04-07T08:34:46.134Z
 
 Welcome to the Reimagined Launcher's Plugin System. If you've ever felt that game mechanics were more of a "suggestion" than a rule, you're in the right place. This guide will walk you through the architecture of our plugin system without using metaphors involving five-year-olds or toy boxes. We're all adults here (at least on paper).
 
-Please keep in mind this system is in it's infancy and we plan to expand and grow it to include almost every text editable file within reason.
-
 ---
-
-# GitHub Discussions Post
-This is required information in the post on [GitHub Discussions Plugins](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) board for it to automagically show up in the launcher.
-
-```
-Title: Plugin Title
-Desc: Short summary of what it does (Also accepts Description:)
-Mod: #.#.# This must be in the correct format. ex) 3.0.0
-
-An attached .zip file with the plugininfo.json as well as the .json files listed as "files": that are setup in the correct syntax.
-
-```
-
----
-
 
 ## 1. The Architectural Blueprint (`plugininfo.json`)
 
@@ -179,6 +162,19 @@ While the launcher doesn't evaluate math inside the brackets, you can use tokens
   "updatedValue": "{{ parameter:globalDurationScalar }}"
 }
 ```
+
+---
+
+## 5. Sharing on GitHub Discussions
+
+To share your plugin through the launcher's **User Plugins** page, create a post in the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub. The launcher scrapes discussion posts and requires specific fields in the post body:
+
+- **`Title:`** Your Plugin Name — displayed as the plugin title in the launcher.
+- **`Desc:` or `Description:`** A short summary — displayed under the title.
+- **`Mod:` or `ModVer:` or `ModVersion:`** followed by a version in `#.#.#` format — displayed next to the title. Posts without a valid mod version are not loaded.
+- **`.zip` attachment**: Attach the plugin zip file to the post. Posts without a `.zip` attachment are not loaded.
+
+The `.zip` must still contain a valid `plugininfo.json` with all required fields (`name`, `version`, `modVersion`, `files`). The launcher validates the archive on install.
 
 ---
 

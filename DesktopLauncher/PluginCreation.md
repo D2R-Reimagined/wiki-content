@@ -2,7 +2,7 @@
 title: Plugin Example ELI5 for Delegus to Grasp
 description: 
 published: true
-date: 2026-04-22T01:03:59.143Z
+date: 2026-04-22T01:04:25.696Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -24,8 +24,7 @@ Title: Plugin Title
 Desc: Short summary of what it does (Also accepts Description:)
 Mod: #.#.# This must be in the correct format. ex) 3.0.0
 
-An attached .zip file with the plugininfo.json as well as the .json files listed
-as "files": that are setup in the correct syntax.
+An attached .zip file with the plugininfo.json as well as the .json files listed as "files": that are setup in the correct syntax.
 
 ```
 

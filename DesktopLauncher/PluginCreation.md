@@ -1,9 +1,9 @@
 ---
-title: Plugin Example ELI5 for Delegus to Grasp
-description: 
+title: Plugin Authoring Guide
+description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-22T01:04:25.696Z
-tags: 
+date: 2026-04-22T01:06:42.867Z
+tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
 ---

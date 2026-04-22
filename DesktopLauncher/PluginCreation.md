@@ -2,7 +2,7 @@
 title: Plugin Example ELI5 for Delegus to Grasp
 description: 
 published: true
-date: 2026-04-22T01:03:15.401Z
+date: 2026-04-22T01:03:59.143Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -14,7 +14,9 @@ Welcome to the Reimagined Launcher's Plugin System. If you've ever felt that gam
 
 Please keep in mind this system is in it's infancy and we plan to expand and grow it to include almost every text editable file within reason.
 
-## GitHub Discussions Post
+---
+
+# GitHub Discussions Post
 This is required information in the post on [GitHub Discussions Plugins](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) board for it to automagically show up in the launcher.
 
 ```
@@ -28,6 +30,7 @@ as "files": that are setup in the correct syntax.
 ```
 
 ---
+
 
 ## 1. The Architectural Blueprint (`plugininfo.json`)
 

@@ -2,7 +2,7 @@
 title: Plugin Example ELI5 for Delegus to Grasp
 description: 
 published: true
-date: 2026-04-07T08:35:42.597Z
+date: 2026-04-22T01:03:15.401Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -11,6 +11,21 @@ dateCreated: 2026-04-07T08:34:46.134Z
 # Plugin Authoring Guide: From Concept to Chaos
 
 Welcome to the Reimagined Launcher's Plugin System. If you've ever felt that game mechanics were more of a "suggestion" than a rule, you're in the right place. This guide will walk you through the architecture of our plugin system without using metaphors involving five-year-olds or toy boxes. We're all adults here (at least on paper).
+
+Please keep in mind this system is in it's infancy and we plan to expand and grow it to include almost every text editable file within reason.
+
+## GitHub Discussions Post
+This is required information in the post on [GitHub Discussions Plugins](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) board for it to automagically show up in the launcher.
+
+```
+Title: Plugin Title
+Desc: Short summary of what it does (Also accepts Description:)
+Mod: #.#.# This must be in the correct format. ex) 3.0.0
+
+An attached .zip file with the plugininfo.json as well as the .json files listed
+as "files": that are setup in the correct syntax.
+
+```
 
 ---
 
@@ -23,6 +38,8 @@ Every plugin requires a manifest file named `plugininfo.json`. This isn't just m
 {
   "name": "Kinetic Overdrive",
   "version": "1.1.0",
+  "modVersion": "3.0.7",
+  "author": "YourName",
   "description": "Recalibrates skill dynamics for maximum efficiency (and slightly more explosions).",
   "files": ["skill-overrides.json"],
   "parameters": [
@@ -50,6 +67,9 @@ Every plugin requires a manifest file named `plugininfo.json`. This isn't just m
 }
 ```
 
+- **`modVersion`**: **Required.** The mod version this plugin targets, must be in `#.#.#` format (e.g. `3.0.7`). Plugins without a valid modVersion will be rejected.
+- **`author`**: Optional. The plugin author's name, displayed in the launcher.
+- **`description`**: Optional. A short description of what the plugin does.
 - **`files`**: An array of relative paths to JSON files containing your operations.
 - **`parameters`**: Defines the UI elements the user will see. The `key` is what you'll reference in your code.
 
@@ -163,8 +183,9 @@ While the launcher doesn't evaluate math inside the brackets, you can use tokens
 ## Authoring Checklist
 
 1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all your operation files.
-2. **Key Consistency**: Match your `parameterKey` exactly to the `key` in the manifest. Case sensitivity matters (sometimes).
-3. **Target Accuracy**: Double-check `rowIdentifier` and `column` names against the actual `skills.txt` structure.
-4. **Validation**: The launcher will yell at you if you try to reference a non-existent parameter or a file outside the plugin folder. Listen to it.
+2. **modVersion**: Include a `modVersion` field in `#.#.#` format matching the mod version your plugin targets. This is required.
+3. **Key Consistency**: Match your `parameterKey` exactly to the `key` in the manifest. Case sensitivity matters (sometimes).
+4. **Target Accuracy**: Double-check `rowIdentifier` and `column` names against the actual `skills.txt` structure.
+5. **Validation**: The launcher will yell at you if you try to reference a non-existent parameter or a file outside the plugin folder. Listen to it.
 
 Now go forth and break—I mean, *enhance*—the game responsibly. 🚀

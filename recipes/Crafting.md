@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-04-23T02:41:45.951Z
+date: 2026-04-23T02:47:33.069Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z
@@ -23,7 +23,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Magic Amulet | ITH Rune | EL Rune |     |     | \=  | 100% CTC Battle Orders on Level-Up<br><br>Magic Amulet |
-| Magic Amulet | Orb of Infusion | RAL Rune | Gem (Any) | \=  | +1 All (Random Class) Skills<br><br>Rare Amulet |
+| Magic Amulet | Orb of Infusion | RAL Rune | Gem (Any) | | \=  | +1 All (Random Class) Skills<br><br>Rare Amulet |
 | Rare Amulet | Rare Jewel | PUL Rune | EL Rune | Ruby | \=  | +1 to All Skills<br><br>+10-12% Faster Attack Speed<br><br>Rare Amulet |
 | Rare Amulet | Rare Jewel | PUL Rune | EL Rune | Sapphire | \=  | +1 to All Skills<br><br>+10-12% Faster Cast Speed<br><br>Rare Amulet |
 | Rare Amulet | Unique Jewel | VEX Rune | LO Rune | Skull | \=  | +2 to All Skills<br><br>+25-35 Weapon Damage<br><br>Crafted Amulet |
@@ -47,7 +47,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Magic Belt | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 1 Frozen Armor on Level-Up<br><br>Magic Belt |
-| Magic Belt | Magic Jewel | RAL Rune | \=  | +1 to All (Random Class) Skills<br><br>Magic Belt |
+| Magic Belt | Magic Jewel | RAL Rune |    |    | \=  | +1 to All (Random Class) Skills<br><br>Magic Belt |
 | Rare Belt | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% to All Resistances<br><br>+30-40% Chance Items Roll Magic or Better<br><br>Rare Belt |
 | Rare Belt | Rare Jewel | LEM Rune | MAL Rune | Gem (Any) | \=  | +10-15% Piercing Attack<br><br>+10-15% Chance of Open Wounds<br><br>Rare Belt |
 | Rare Belt | Unique Jewel | CHAM Rune | JAH Rune | Gem (Any) | \=  | Cannot Be Frozen<br><br>+10-15% Increased Maximum Health<br><br>Crafted Belt |
@@ -59,7 +59,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Magic Boots | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 1 Burst of Speed on Level-Up<br><br>Magic Boots |
-| Magic Boots | Orb of Infusion | HEL Rune | Gem (Any) | \=  | +15% Faster Run/Walk Speed<br><br>+10 to All Attributes<br><br>Rare Boots |
+| Magic Boots | Orb of Infusion | HEL Rune | Gem (Any) |    | \=  | +15% Faster Run/Walk Speed<br><br>+10 to All Attributes<br><br>Rare Boots |
 | Rare Boots | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% to All Resistances<br><br>+30-40% Chance Items Roll Magic or Better<br><br>Rare Boots |
 | Rare Boots | Unique Jewel | ZOD Rune | OHM Rune | Gem (Any) | \=  | +1 to All Skills<br><br>+20-30% Faster Run/Walk Speed<br><br>+20-30 Weapon Damage<br><br>Crafted Boots |
 | Rare Boots | Unique Jewel | ZOD Rune | VEX Rune | Gem (Any) | \=  | +1 to All Skills<br><br>+20-30% Faster Run/Walk Speed<br><br>+5-10% to All Elemental Damage<br><br>Crafted Boots |
@@ -69,7 +69,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Magic Gloves | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 4 Battle Command on Level-Up<br><br>Magic Gloves |
-| Magic Gloves | Magic Jewel | RAL Rune | \=  | +8% Faster Attack Speed<br><br>+8% Faster Cast Rate<br><br>Magic Gloves |
+| Magic Gloves | Magic Jewel | RAL Rune |    |    | \=  | +8% Faster Attack Speed<br><br>+8% Faster Cast Rate<br><br>Magic Gloves |
 | Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (Current Class)<br><br>+10-15% Increased Attack Speed<br><br>Rare Gloves |
 | Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (Current Class -)<br><br>+10-15% Faster Cast Rate<br><br>Rare Gloves |
 | Rare Gloves | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +30% Chance Items Roll Magic or Better<br><br>+20-25% to All Resistances<br><br>Rare Gloves |
@@ -81,7 +81,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Magic Helm | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 1 Shout on Level-Up<br><br>Magic Helm |
-| Magic Helm | Orb of Infusion | RAL Rune | Gem (Any) | \=  | +15% Faster Hit Recovery<br><br>Rare Helm |
+| Magic Helm | Orb of Infusion | RAL Rune | Gem (Any) |    | \=  | +15% Faster Hit Recovery<br><br>Rare Helm |
 | Rare Helm | Rare Jewel | UM Rune | EL Rune | Gem (Any) | \=  | +20-30% Faster Hit Recovery<br><br>+20-25% to All Resistances<br><br>Rare Helm |
 | Rare Helm | Rare Jewel | Pul Rune | EL Rune | Ruby | \=  | +1 to All (Current Class  Skills<br><br>+10-15% Increased Attack Speed<br><br>Rare Helm |
 | Rare Helm | Rare Jewel | PUL Rune | EL Rune | Sapphire | \=  | +1 to All (Current Class ) Skills<br><br>+10-15% Faster Cast Rate<br><br>Rare Helm |
@@ -94,7 +94,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Magic Shield | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 4 Holy Shield on Level-Up<br><br>+5 to All Attributes<br><br>Magic Shield |
-| Magic Shield | Orb of Infusion | AMN Rune | Gem (Any) | \=  | +1 to All (Current Class) Skills<br><br>Rare Shield |
+| Magic Shield | Orb of Infusion | AMN Rune | Gem (Any) |    | \=  | +1 to All (Current Class) Skills<br><br>Rare Shield |
 | Rare Shield | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +30-40% Chance Items Roll Magic or Better<br><br>+25% to All Resistances<br><br>Rare Shield |
 | Rare Shield | Rare Jewel | UM Rune | SHAEL Rune | Gem (Any) | \=  | +30% Faster Hit Recovery<br><br>+20-30% Increased Chance to Block<br><br>+20-25% to All Resistances<br><br>Rare Shield |
 | Rare Shield | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1-2 to All (Current Class) Skills<br><br>+20-30% Enhanced Weapon Damage<br><br>Rare Shield |
@@ -108,7 +108,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Magic Torso | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 5 Oak Sage on Level-Up<br><br>Magic Torso |
-| Magic Torso | Orb of Infusion | Ral Rune | Gem (Any) | \=  | +20% Faster Run/Walk Speed<br><br>+100 Defense<br><br>Magic Torso |
+| Magic Torso | Orb of Infusion | Ral Rune | Gem (Any) |    | \=  | +20% Faster Run/Walk Speed<br><br>+100 Defense<br><br>Magic Torso |
 | Rare Torso | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-40% Chance Items Roll Magic or Better<br><br>+20-25% to All Resistances<br><br>Rare Torso |
 | Rare Torso | Rare Jewel | PUL Rune | SHAEL Rune | Gem (Any) | \=  | +1 to All (Current Class) Skills<br><br>+30-50 to Life<br><br>+10-15% Increased Attack Speed<br><br>Rare Torso |
 | Rare Torso | Rare Jewel | PUL Rune | DOL Rune | Gem (Any) | \=  | +1 to All (Current Class) Skills<br><br>+30-50 to Mana<br><br>+10-15% Faster Cast Rate<br><br>Rare Torso |
@@ -119,7 +119,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Any Magic Weapon | Magic Jewel | RAL Rune | Ruby |     | \=  | +85% Enhanced Weapon Damage<br><br>+20% Increased Attack Speed<br><br>Magic Weapon |
-| Any Magic Weapon | Magic Jewel | RAL Rune | Sapphire | \=  | +5% to All Elemental Damage<br><br>+15% Faster Cast Rate<br><br>Magic Weapon |
+| Any Magic Weapon | Magic Jewel | RAL Rune | Sapphire |    | \=  | +5% to All Elemental Damage<br><br>+15% Faster Cast Rate<br><br>Magic Weapon |
 | Any Magic Weapon | Orb of Infusion | SOL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Min/Max Weapon Damage (Per Character Level)<br><br>+20% Increased Attack Speed<br><br>Rare Weapon |
 | Any Rare Weapon | Rare Jewel | LEM Rune | EL Rune | Gem (Any) | \=  | +150% Enhanced Weapon Damage<br><br>+30% Increased Attack Speed<br><br>Rare Weapon |
 | Any Rare Weapon | Rare Jewel | PUL Rune | EL Rune | Gem (Any) | \=  | +1to All skills<br><br>\-10% to All Enemy Elemental Resistances<br><br>+20% Faster Caste Rate<br><br>Rare Weapon |

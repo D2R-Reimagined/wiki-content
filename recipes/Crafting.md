@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-04-23T02:34:47.804Z
+date: 2026-04-23T02:36:09.269Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z
@@ -164,8 +164,8 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Magic Charm  <br>(Grand) | Magic Jewel | HEL Rune | EL Rune |     |     | \=  | +5-10% Experience Gained  <br>Magic Charm |     |
 | Magic Charm  <br>(Grand) | Magic Jewel | KO Rune | FAL Rune |     |     | \=  | +5-8 Dexterity<br><br>+5-8 Strength<br><br>+5-8% Enhanced Weapon Damage  <br>Magic Charm |     |
 | Magic Charm  <br>(Grand) | Magic Jewel | PUL Rune | EL Rune |     |     | \=  | +50-70 Defense<br><br>+10-15 Weapon Damage |     |
-| Magic Charm  <br>(Grand) | Magic Jewel | UM Rune | EL Rune |     |     | \=  | +8-10 All Resistances |     |
-| Magic Charm  <br>(Grand) | Magic Jewel | IST Rune | EL Rune |     |     | \=  | +25-40% Magic Find<br><br>+50-80% Gold Find |     |
+| Magic Charm  <br>(Grand) | Magic Jewel | UM Rune | EL Rune |     |     | \=  | +8-10 All Resistances<br>Magic Charm |     |
+| Magic Charm  <br>(Grand) | Magic Jewel | IST Rune | EL Rune |     |     | \=  | +25-40% Magic Find<br><br>+50-80% Gold Find<br>Magic Charm |     |
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Topaz |     | \=  | +1 Random Assassin Skill Tab |     |
 | Magic Charm  <br>(Grand) | Rare Jewel | VEX Rune | THUL Rune | Ruby |     | \=  | +1 Random Barbarian Skill Tab |     |
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Sapphire |     | \=  | +1 Random Sorceress Skill Tab |     |

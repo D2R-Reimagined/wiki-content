@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-04-19T03:44:28.008Z
+date: 2026-04-23T02:34:47.804Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z
@@ -154,7 +154,8 @@ When the item is returned as crafted, it will have a chance to have a set number
 
 ## Charms
 
-> All crafts produce guaranteed stats, and an additional 3--4 random stats from the Grand Charm Prefix/Suffix table 
+> All crafts produce guaranteed stats, and an additional 3-4 random stats from the Grand Charm Prefix/Suffix table
+> Crafts that produce a Magic item will only roll 1-2 random affixes
 
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     |     | **Guaranteed Stats** |     |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |

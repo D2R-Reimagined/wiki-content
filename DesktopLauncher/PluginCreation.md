@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-23T08:09:22.773Z
+date: 2026-04-23T13:44:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -75,11 +75,17 @@ Your operation file can be either a single object or an array of objects. **Two 
 | Field | Required | Purpose |
 |---|---|---|
 | `file` | yes | Target `.txt` file from the base excel folder (e.g. `skills.txt`). All files are supported except `itemstatcost.txt`. |
-| `rowIdentifier` | yes | Identifies **which row** to change. Contents depend on the file — see [Row Identification Rules](#3-row-identification-rules-per-file) below. |
+| `rowIdentifier` | yes | Identifies **which row** to change. Contents depend on the file — see [Row Identification Rules](#3-row-identification-rules-per-file) below. Also accepts a numeric index range `"start-end"` (inclusive, 0-based) to target many rows at once — see [Row Ranges](#row-ranges-multiple-rows-with-one-operation). |
 | `column` | yes | The property name of the column to modify. Must match a public property on the target entry type (case-insensitive). In practice, it's the header name with spaces and punctuation stripped, PascalCase. |
-| `operation` | no | `replace` (default) or `multiplyExisting`. |
-| `updatedValue` | when replacing or multiplying without a `parameterKey` | The new value, the multiplier, or a template string containing parameter tokens. |
-| `parameterKey` | no | References a parameter declared in `plugininfo.json`. For `replace`, the parameter value becomes the new value. For `multiplyExisting`, it becomes the multiplier. |
+| `operation` | no | `replace` (default), `multiplyExisting`, or `append`. |
+| `updatedValue` | when replacing, multiplying, or appending without a `parameterKey` | The new value, the multiplier, the text to append, or a template string containing parameter tokens. |
+| `parameterKey` | no | References a parameter declared in `plugininfo.json`. For `replace`, the parameter value becomes the new value. For `multiplyExisting`, it becomes the multiplier. For `append`, it becomes the text appended after the existing value. |
+
+### Operation semantics
+
+- **`replace`** — Overwrites the target column with `updatedValue` (or the resolved `parameterKey` value).
+- **`multiplyExisting`** — Parses the existing column value as a decimal and multiplies it by `updatedValue` / the `parameterKey` value. Requires a numeric current value.
+- **`append`** — Wraps the existing column value in parentheses and concatenates your text. For example, if the current value is `ln12` and your `updatedValue` is `+10*20`, the resulting value is `(ln12)+10*20`. Useful for extending skill `calc` expressions without rewriting them.
 
 ### Parameter Tokens
 `updatedValue` supports tokens in the form `{{parameter:key}}` (or `{{ parameter:key }}`). They are resolved at runtime from the user-supplied parameter values.
@@ -98,10 +104,11 @@ Your operation file can be either a single object or an array of objects. **Two 
 
 ## 3. Row Identification Rules Per File
 
-The launcher looks up rows in one of two ways:
+The launcher looks up rows in one of three ways:
 
 1. **Column lookup** (most files) — `rowIdentifier` must match the value of a specific column on the row you want to change. Matching is case-insensitive. **The match must be unique within the file**; if the value appears in multiple rows, every match is updated.
 2. **Row-ID lookup** (a handful of files whose natural identifier columns contain duplicates) — `rowIdentifier` is a **0-based numeric index** into the data rows, in file order.
+3. **Row-range lookup** (any supported `.txt` file) — `rowIdentifier` is a `"start-end"` string that applies one operation across every data row in the inclusive 0-based range. See [Row Ranges](#row-ranges-multiple-rows-with-one-operation).
 
 ### The `−2` rule for Row-ID lookup
 
@@ -190,6 +197,44 @@ These files use numeric indices because their natural identifier columns contain
 > Tip: if you're staring at the file in AFJ Sheet and see the row you want on **row 42**, your `rowIdentifier` is `"40"`.
 {.is-info}
 
+
+### Row Ranges (multiple rows with one operation)
+
+In addition to a single identifier value or a single numeric Row-ID, `rowIdentifier` also accepts a **numeric index range** in the form `"start-end"`. The bounds are **inclusive** and **0-based data row indices** (the same `−2` rule as Row-ID lookup — editor row N → index `N − 2`).
+
+- Ranges work for **every supported `.txt` file**, including column-lookup files. A range always targets rows by data-row index and bypasses the identifier column entirely.
+- `start` and `end` can be given in either order; inverted ranges (e.g. `"100-50"`) are auto-normalized.
+- Out-of-bounds ranges (beyond the file's row count) are rejected with a descriptive error.
+- Whitespace around the numbers and the dash is tolerated, so `"50-100"` and `" 50 - 100 "` are equivalent.
+
+#### Examples
+
+Zero out the `Cel1` column on rows 50 through 100 of `automap.txt`:
+
+```json
+{
+  "file": "automap.txt",
+  "rowIdentifier": "50-100",
+  "column": "Cel1",
+  "operation": "replace",
+  "updatedValue": "0"
+}
+```
+
+Double the `manacost` across rows 300–400 of `skills.txt` using a parameter:
+
+```json
+{
+  "file": "skills.txt",
+  "rowIdentifier": "300-400",
+  "column": "Mana",
+  "operation": "multiplyExisting",
+  "parameterKey": "manaCost"
+}
+```
+
+> Ranges are validated the same way as regular operations — `column`, `operation`, and `parameterKey` / `updatedValue` still have to be valid for the target file.
+{.is-info}
 
 ### `itemstatcost.txt` is not supported
 
@@ -299,6 +344,13 @@ A single operations file can touch multiple target files. The example below buff
     "column": "Spawnable",
     "operation": "replace",
     "updatedValue": "0"
+  },
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "amazonlightningfury",
+    "column": "calc1",
+    "operation": "append",
+    "updatedValue": "+10*20"
   }
 ]
 ```
@@ -380,7 +432,7 @@ The `.zip` must still contain a valid `plugininfo.json` with all required fields
 
 1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all your operation files.
 2. **modVersion**: Include a `modVersion` field in `#.#.#` format matching the mod version your plugin targets. This is required.
-3. **Row identification (excel)**: Use the identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, remember the `−2` rule.
+3. **Row identification (excel)**: Use the identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, remember the `−2` rule. For bulk edits, use a `"start-end"` range (e.g. `"50-100"`) to target many rows with a single operation.
 4. **Column names (excel)**: `column` must match a property name on the target entry (case-insensitive). Header names with spaces or punctuation (e.g. `Min ac`) map to PascalCase property names (e.g. `MinAc`).
 5. **Strings schema**: For `.json` files under `data/local/lng/strings`, use the flat `{ file, Key, <languageCode>: "…" }` layout from [Section 5](#5-string-json-files). Only listed language fields are overwritten.
 6. **Key Consistency**: Match your `parameterKey` exactly to the `key` in the manifest.

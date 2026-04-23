@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-04-23T02:36:09.269Z
+date: 2026-04-23T02:37:41.662Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z
@@ -163,24 +163,24 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Magic Charm  <br>(Grand) | Magic Jewel | DOL Rune | EL Rune |     |     | \=  | +5-10% Faster Cast Rate  <br>Magic Charm |     |
 | Magic Charm  <br>(Grand) | Magic Jewel | HEL Rune | EL Rune |     |     | \=  | +5-10% Experience Gained  <br>Magic Charm |     |
 | Magic Charm  <br>(Grand) | Magic Jewel | KO Rune | FAL Rune |     |     | \=  | +5-8 Dexterity<br><br>+5-8 Strength<br><br>+5-8% Enhanced Weapon Damage  <br>Magic Charm |     |
-| Magic Charm  <br>(Grand) | Magic Jewel | PUL Rune | EL Rune |     |     | \=  | +50-70 Defense<br><br>+10-15 Weapon Damage |     |
+| Magic Charm  <br>(Grand) | Magic Jewel | PUL Rune | EL Rune |     |     | \=  | +50-70 Defense<br><br>+10-15 Weapon Damage<br>Magic Charm |     |
 | Magic Charm  <br>(Grand) | Magic Jewel | UM Rune | EL Rune |     |     | \=  | +8-10 All Resistances<br>Magic Charm |     |
 | Magic Charm  <br>(Grand) | Magic Jewel | IST Rune | EL Rune |     |     | \=  | +25-40% Magic Find<br><br>+50-80% Gold Find<br>Magic Charm |     |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Topaz |     | \=  | +1 Random Assassin Skill Tab |     |
-| Magic Charm  <br>(Grand) | Rare Jewel | VEX Rune | THUL Rune | Ruby |     | \=  | +1 Random Barbarian Skill Tab |     |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Sapphire |     | \=  | +1 Random Sorceress Skill Tab |     |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Emerald |     | \=  | +1 Random Druid Skill Tab |     |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Skull |     | \=  | +1 Random Necromancer Skill Tab |     |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Amethyst |     | \=  | +1 Random Amazon Skill Tab |     |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Diamond |     | \=  | +1 Random Paladin Skill Tab |     |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Chaos Onyx |     | \=  | +1 Random Warlock Skill Tab |     |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Topaz |     | \=  | +1 Random Assassin Skill Tab<br>Crafted Charm |     |
+| Magic Charm  <br>(Grand) | Rare Jewel | VEX Rune | THUL Rune | Ruby |     | \=  | +1 Random Barbarian Skill Tab<br>Crafted Charm |     |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Sapphire |     | \=  | +1 Random Sorceress Skill Tab<br>Crafted Charm |     |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Emerald |     | \=  | +1 Random Druid Skill Tab<br>Crafted Charm |     |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Skull |     | \=  | +1 Random Necromancer Skill Tab<br>Crafted Charm |     |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Amethyst |     | \=  | +1 Random Amazon Skill Tab<br>Crafted Charm |     |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Diamond |     | \=  | +1 Random Paladin Skill Tab<br>Crafted Charm |     |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Chaos Onyx |     | \=  | +1 Random Warlock Skill Tab<br>Crafted Charm |     |
 | <br><span style="color:red">Requires non-crafted<br> latent sunder charm as reagent</span> |     |     |     |     |     |     | <span style="color:red">**_Reimagined Specific Sunder Charms_**</span> |     |
-| Unique Charm  <br>(Latent Sunder: Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Fire Resistance<br><br>No Resistance Penalty |     |
-| Unique Charm  <br>(Latent Sunder: Cold) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Cold Resistance<br><br>No Resistance Penalty |     |
-| Unique Charm  <br>(Latent Sunder: Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Lightning Resistance<br><br>No Resistance Penalty |     |
-| Unique Charm  <br>(Latent Sunder: Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Poison Resistance<br><br>No Resistance Penalty |     |
-| Unique Charm  <br>(Latent Sunder: Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Physical Resistance<br><br>No Resistance Penalty |     |
-| Unique Charm  <br>(Latent Sunder: Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Magic Resistance<br><br>No Resistance Penalty |     |
+| Unique Charm  <br>(Latent Sunder: Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Fire Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
+| Unique Charm  <br>(Latent Sunder: Cold) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Cold Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
+| Unique Charm  <br>(Latent Sunder: Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Lightning Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
+| Unique Charm  <br>(Latent Sunder: Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Poison Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
+| Unique Charm  <br>(Latent Sunder: Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Physical Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
+| Unique Charm  <br>(Latent Sunder: Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Magic Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
 | <span style="color:red">Requires non-crafted<br> latent sunder charm as reagent</span> |     |     |     |     |     |     | <span style="color:red">**_Vanilla Sunder Charms are Below_**</span> |     |
 | Unique Charm  <br>(Latent Sunder: Fire) | Deep Worldstone Shard | IO Rune | Ruby |     |     | \=  | Renewed Flame Rift<br><br>\-70% Fire Resistance Penalty<br><br>Either: +5-15% to Fire Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Fire Resistance<br><br>Unique Charm |     |
 | Unique Charm  <br>(Latent Sunder: Cold) | Eastern Worldstone Shard | LUM Rune | Sapphire |     |     | \=  | Renewed Cold Rupture<br><br>\-70% Cold Resistance Penalty<br><br>Either: +5-15% to Cold Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Cold Resistance<br><br>Unique Charm |     |

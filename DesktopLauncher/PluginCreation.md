@@ -2,16 +2,13 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-25T21:23:00.000Z
+date: 2026-04-25T22:12:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
 ---
 
-
-# Plugin Authoring Guide: From Concept to Chaos
-
-Welcome to the Reimagined Launcher's plugin system. A plugin is a small zip archive that tells the launcher how to tweak the game's `.txt` data files and string `.JSON` files at launch time. This guide covers the manifest, the operation format, how to identify the row you're targeting for every supported file, the separate schema used for string JSON targets, and a handful of worked examples.
+Welcome to the Reimagined Launcher's plugin system. A plugin is a small zip archive that tells the launcher how to tweak the game's `.txt` data files and string `.json` files at launch time. This guide covers the manifest, the operation format, how to identify the row you're targeting for every supported file, the separate schema used for string JSON targets, and a handful of worked examples.
 
 ---
 
@@ -341,7 +338,7 @@ The `addRow` operation inserts a brand-new row into a target `.txt` file.
 
 Efficiency matters. You don't need a separate parameter for every single field — map one UI knob to many operations.
 
-#### Example 1: The "Master Balance" Multiplier
+### Example 1: The "Master Balance" Multiplier
 Scale both min and max damage of a skill with a single slider:
 
 ```json
@@ -363,7 +360,7 @@ Scale both min and max damage of a skill with a single slider:
 ]
 ```
 
-#### Example 2: Uniform Level Caps
+### Example 2: Uniform Level Caps
 Set the same `maxlvl` for several skills through one parameter:
 
 ```json
@@ -392,7 +389,7 @@ Set the same `maxlvl` for several skills through one parameter:
 ]
 ```
 
-#### Example 3: Multi-file plugin with parameter tokens
+### Example 3: Multi-file plugin with parameter tokens
 
 A single operations file can touch multiple target files. The example below buffs one weapon and one armor piece, changes a skill, and tweaks a magic prefix by Row-ID:
 

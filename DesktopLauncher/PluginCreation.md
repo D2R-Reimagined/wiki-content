@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-25T22:12:00.000Z
+date: 2026-04-25T23:39:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -72,7 +72,7 @@ Your operation file can be either a single object or an array of objects. **Two 
 | Field | Required | Purpose |
 |---|---|---|
 | `file` | yes | Target `.txt` file from the base excel folder (e.g. `skills.txt`). All files are supported except `itemstatcost.txt`. |
-| `rowIdentifier` | yes | Identifies **which row** to change. Contents depend on the file — see [Row Identification Rules](#3-row-identification-rules-per-file) below. Also accepts a numeric index range `"start-end"` (inclusive, 0-based) to target many rows at once — see [Row Ranges](#row-ranges-multiple-rows-with-one-operation). |
+| `rowIdentifier` | yes | Identifies **which row** to change. Contents depend on the file — see [Row Identification Rules](#3-row-identification-rules-per-file) below. Also accepts a numeric index range `"start-end"` (inclusive, 0-based) to target many rows at once — see [Row Ranges](#row-ranges-multiple-rows-with-one-operation). Also accepts an **object** of `{column: expectedValue}` pairs to override the default match logic with multiple columns — see [Multi-column rowIdentifier override](#multi-column-rowidentifier-override). |
 | `column` | yes (unless `columns` is provided) | The property name of the column to modify. Must match a public property on the target entry type (case-insensitive). In practice, it's the header name with spaces and punctuation stripped, PascalCase. |
 | `columns` | no | An array of `{ column, updatedValue, parameterKey, operation }` objects to update **multiple columns on the same matched row(s)** with a single `rowIdentifier`. Each entry inherits `operation` / `updatedValue` / `parameterKey` from the parent operation when omitted. See [Multi-column updates](#multi-column-updates-one-rowidentifier-many-columns). |
 | `operation` | no | `replace` (default), `multiplyExisting`, `append`, or `addRow`. |
@@ -103,11 +103,12 @@ Your operation file can be either a single object or an array of objects. **Two 
 
 # 3. Row Identification Rules Per File
 
-The launcher looks up rows in one of three ways:
+The launcher looks up rows in one of four ways:
 
 1. **Column lookup** (most files) — `rowIdentifier` must match the value of a specific column on the row you want to change. Matching is case-insensitive. **The match must be unique within the file**; if the value appears in multiple rows, every match is updated.
 2. **Row-ID lookup** (a handful of files whose natural identifier columns contain duplicates) — `rowIdentifier` is a **0-based numeric index** into the data rows, in file order.
 3. **Row-range lookup** (any supported `.txt` file) — `rowIdentifier` is a `"start-end"` string that applies one operation across every data row in the inclusive 0-based range. See [Row Ranges](#row-ranges-multiple-rows-with-one-operation).
+4. **Multi-column override** (any supported `.txt` file) — `rowIdentifier` is an **object** listing one or more `{column: expectedValue}` pairs. A row only matches when **every** listed column equals its expected value (case-insensitive). See [Multi-column rowIdentifier override](#multi-column-rowidentifier-override).
 
 ## The `−2` rule for Row-ID lookup
 
@@ -196,6 +197,43 @@ These files use numeric indices because their natural identifier columns contain
 > Tip: if you're staring at the file in AFJ Sheet and see the row you want on **row 42**, your `rowIdentifier` is `"40"`.
 {.is-info}
 
+
+## Multi-column `rowIdentifier` override
+
+In addition to the default column / Row-ID / range matching, `rowIdentifier` also accepts an **object** that lists one or more `{column: expectedValue}` pairs. The launcher matches a row only when **every** listed column equals its expected value (case-insensitive), bypassing the file's default identifier column entirely.
+
+- Works on **every supported `.txt` file**, including Row-ID files.
+- Column names follow the same rules as the `column` field — header names with spaces / punctuation map to PascalCase property names (e.g. `Min ac` → `MinAc`).
+- Unknown columns are rejected at validation time.
+- A dedicated `rowIdentifiers` (plural) property is also accepted as an alias if you prefer to keep `rowIdentifier` reserved for the legacy string form.
+- On **Row-ID files** (the duplicate-identifier files listed above), the launcher emits a **warning** if you list fewer than 2 identifier columns, because a single column is unlikely to uniquely match the intended row. The operation still runs — it's a heads-up, not an error.
+
+### Example: target a specific monstats row by name + hardcore index
+
+```json
+{
+  "file": "monstats.txt",
+  "rowIdentifier": { "NameStr": "Skeleton", "HcIdx": "86" },
+  "column": "MinHP",
+  "operation": "replace",
+  "updatedValue": "50"
+}
+```
+
+### Example: pin down a specific magicprefix row by name + group
+
+```json
+{
+  "file": "magicprefix.txt",
+  "rowIdentifiers": { "Name": "Stout", "Group": "1" },
+  "column": "Spawnable",
+  "operation": "replace",
+  "updatedValue": "0"
+}
+```
+
+> When targeting a Row-ID file with the object form, list at least two columns to make the match unambiguous. The launcher will warn you when only one is provided.
+{.is-warning}
 
 ## Row Ranges (multiple rows with one operation)
 
@@ -524,7 +562,7 @@ The `.zip` must still contain a valid `plugininfo.json` with all required fields
 
 1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all your operation files.
 2. **modVersion**: Include a `modVersion` field in `#.#.#` format matching the mod version your plugin targets. This is required.
-3. **Row identification (excel)**: Use the identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, remember the `−2` rule. For bulk edits, use a `"start-end"` range (e.g. `"50-100"`) to target many rows with a single operation.
+3. **Row identification (excel)**: Use the identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, remember the `−2` rule. For bulk edits, use a `"start-end"` range (e.g. `"50-100"`) to target many rows with a single operation. To override the default match logic, supply an object `rowIdentifier` listing `{column: expectedValue}` pairs — list at least two columns on Row-ID files or you'll get a warning.
 4. **Column names (excel)**: `column` must match a property name on the target entry (case-insensitive). Header names with spaces or punctuation (e.g. `Min ac`) map to PascalCase property names (e.g. `MinAc`).
 5. **Strings schema**: For `.json` files under `data/local/lng/strings`, use the flat `{ file, Key, <languageCode>: "…" }` layout from [Section 6](#6-string-json-files). Only listed language fields are overwritten.
 6. **Multi-column updates**: When changing several columns on the same row, prefer a single operation with a `columns` array over many duplicated operations — it's terser and shares one `rowIdentifier`.

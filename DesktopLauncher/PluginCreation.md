@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-25T23:39:00.000Z
+date: 2026-04-26T00:40:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -545,7 +545,143 @@ String entries do **not** use `rowIdentifier` / `column` / `operation` / `update
 
 ---
 
-# 7. Sharing on GitHub Discussions
+# 7. Asset File Replacement
+
+In addition to editing `.txt` and string `.json` files, plugins can ship **arbitrary asset files** (sounds, textures, icons, etc.) and copy them into the mod folder at apply time. This is the right tool when you want to swap a `.flac`, `.dc6`, `.dds`, or any other binary file the game loads from disk.
+
+## Manifest schema
+
+Asset replacements are declared on `plugininfo.json` via an optional `assets` array. Each entry is a `{ source, target }` pair:
+
+```json
+{
+  "name": "Sound Plugin Test",
+  "version": "1.0",
+  "modVersion": "3.0.7",
+  "author": "Delegus",
+  "description": "Replaces the Flippy gem pickup sound with an alternate gem sound.",
+  "files": [],
+  "parameters": [],
+  "assets": [
+    {
+      "source": "assets/item_gem_hd.flac",
+      "target": "data/hd/global/sfx/item/item_flippy_hd.flac"
+    }
+  ]
+}
+```
+
+| Field | Required | Purpose |
+|---|---|---|
+| `source` | yes | Path to the bundled asset, **relative to the plugin root**. Must live under the plugin's `assets/` folder (subdirectories under `assets/` are fine, e.g. `assets/sfx/item/foo.flac`). |
+| `target` | yes | Destination path **relative to the mod root** (the folder that contains `data/`). Must be a relative path; absolute paths and `..` segments are rejected. |
+
+## Multiple entries
+
+The `assets` array supports as many `source` / `target` pairs as you need. Every entry is validated independently and applied in order:
+
+```json
+{
+  "name": "Multi-Asset Example",
+  "version": "1.0",
+  "modVersion": "3.0.7",
+  "files": [],
+  "parameters": [],
+  "assets": [
+    {
+      "source": "assets/item_gem_hd.flac",
+      "target": "data/hd/global/sfx/item/item_flippy_hd.flac"
+    },
+    {
+      "source": "assets/another_sound_hd.flac",
+      "target": "data/hd/global/sfx/item/item_other_hd.flac"
+    },
+    {
+      "source": "assets/icons/my_icon.dc6",
+      "target": "data/global/ui/spells/my_icon.dc6"
+    }
+  ]
+}
+```
+
+## Plugin layout
+
+A plugin that ships assets should look like this on disk (and inside the `.zip`):
+
+```
+my-plugin/
+├── plugininfo.json
+└── assets/
+    ├── item_gem_hd.flac
+    └── icons/
+        └── my_icon.dc6
+```
+
+## Apply-time semantics
+
+- The destination directory is created automatically if it does not already exist.
+- Each `target` is **overwritten** on apply (the file is opened with create-mode). If two entries share the same `target`, the later one wins — avoid duplicate targets.
+- Asset copies happen alongside the regular `.txt` / strings operations when the plugin is enabled, after the mod root is resolved from the launcher's excel directory.
+- Validation runs before any copying: empty `source` / `target`, sources outside `assets/`, and absolute or `..`-traversing targets all cause the plugin to be rejected with a descriptive error.
+
+## Pure-asset plugins
+
+Asset-only plugins are fully supported — leave `files` and `parameters` as empty arrays (`[]`) and only populate `assets`. The bundled `soundplugintest` example does exactly this.
+
+## Combining assets with normal operations
+
+A single plugin can mix asset replacements with regular `.txt` / strings operations — the three manifest sections (`files`, `parameters`, `assets`) are independent and all run during the same plugin-apply pass:
+
+- Operations from `files` are processed by the normal excel / strings pipeline (using `parameters`).
+- Every entry in `assets` is copied to its `target` under the mod root.
+- The mod root is resolved once per plugin, asset paths are validated up front, and a failure in either phase surfaces as a single plugin failure in the launcher log.
+
+### Example: combined manifest
+
+```json
+{
+  "name": "Combo Plugin",
+  "version": "1.0",
+  "modVersion": "3.0.7",
+  "author": "Delegus",
+  "description": "Tweaks skill data and swaps a sound effect.",
+  "files": [
+    "skill-overrides.json"
+  ],
+  "parameters": [
+    {
+      "key": "manaCost",
+      "name": "Mana Cost Override",
+      "defaultValue": "5"
+    }
+  ],
+  "assets": [
+    {
+      "source": "assets/item_gem_hd.flac",
+      "target": "data/hd/global/sfx/item/item_flippy_hd.flac"
+    }
+  ]
+}
+```
+
+With a matching `skill-overrides.json` targeting `skills.txt`, this single plugin both rewrites excel data and replaces the `.flac` asset on the same launch.
+
+### Combined plugin layout
+
+```
+my-plugin/
+├── plugininfo.json
+├── skill-overrides.json
+└── assets/
+    └── item_gem_hd.flac
+```
+
+> Parameter tokens (`{{parameter:key}}`) are only resolved inside excel operations — asset `source` / `target` strings are **not** templated. Use literal paths there.
+{.is-info}
+
+---
+
+# 8. Sharing on GitHub Discussions
 
 To share your plugin through the launcher's **User Plugins** page, create a post in the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub. The launcher scrapes discussion posts and requires specific fields in the post body:
 
@@ -558,16 +694,17 @@ The `.zip` must still contain a valid `plugininfo.json` with all required fields
 
 ---
 
-# 8. Authoring Checklist
+# 9. Authoring Checklist
 
 1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all your operation files.
 2. **modVersion**: Include a `modVersion` field in `#.#.#` format matching the mod version your plugin targets. This is required.
 3. **Row identification (excel)**: Use the identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, remember the `−2` rule. For bulk edits, use a `"start-end"` range (e.g. `"50-100"`) to target many rows with a single operation. To override the default match logic, supply an object `rowIdentifier` listing `{column: expectedValue}` pairs — list at least two columns on Row-ID files or you'll get a warning.
 4. **Column names (excel)**: `column` must match a property name on the target entry (case-insensitive). Header names with spaces or punctuation (e.g. `Min ac`) map to PascalCase property names (e.g. `MinAc`).
 5. **Strings schema**: For `.json` files under `data/local/lng/strings`, use the flat `{ file, Key, <languageCode>: "…" }` layout from [Section 6](#6-string-json-files). Only listed language fields are overwritten.
-6. **Multi-column updates**: When changing several columns on the same row, prefer a single operation with a `columns` array over many duplicated operations — it's terser and shares one `rowIdentifier`.
-7. **New rows**: Use `"operation": "addRow"` to append (no `rowIdentifier`) or insert at a 0-based index. Make sure to populate the file's identifier column(s) in the `columns` array.
-8. **Key Consistency**: Match your `parameterKey` exactly to the `key` in the manifest.
-9. **Validation**: The launcher rejects plugins that reference unknown files, columns, or parameters; it also rejects file paths that traverse outside the plugin archive. Read the error list it produces.
+6. **Asset replacements**: To swap binary game files (sounds, icons, textures, …), declare an `assets` array in `plugininfo.json` with `{ source, target }` pairs. Sources must live under the plugin's `assets/` folder; targets are mod-root-relative. Multiple entries are supported. See [Section 7](#7-asset-file-replacement).
+7. **Multi-column updates**: When changing several columns on the same row, prefer a single operation with a `columns` array over many duplicated operations — it's terser and shares one `rowIdentifier`.
+8. **New rows**: Use `"operation": "addRow"` to append (no `rowIdentifier`) or insert at a 0-based index. Make sure to populate the file's identifier column(s) in the `columns` array.
+9. **Key Consistency**: Match your `parameterKey` exactly to the `key` in the manifest.
+10. **Validation**: The launcher rejects plugins that reference unknown files, columns, or parameters; it also rejects file paths that traverse outside the plugin archive. Read the error list it produces.
 
 Now go forth and break — I mean, *enhance* — the game responsibly. 🚀

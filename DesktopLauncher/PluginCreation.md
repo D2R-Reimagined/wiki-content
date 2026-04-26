@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-23T13:44:00.000Z
+date: 2026-04-25T21:23:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -68,7 +68,7 @@ Every plugin requires a manifest file named `plugininfo.json`. It defines the pl
 Your operation file can be either a single object or an array of objects. **Two target kinds are supported**, each with its own schema:
 
 1. **Excel (`.txt`) targets** — any `.txt` file in the base excel folder except `itemstatcost.txt`.
-2. **Strings (`.json`) targets** — any `.json` file under `data/local/lng/strings` (e.g. `item-runes.json`). See [Section 5](#5-string-json-files) for the flat d2rr-style layout.
+2. **Strings (`.json`) targets** — any `.json` file under `data/local/lng/strings` (e.g. `item-runes.json`). See [Section 6](#6-string-json-files) for the flat d2rr-style layout.
 
 ### Excel target fields
 
@@ -76,8 +76,9 @@ Your operation file can be either a single object or an array of objects. **Two 
 |---|---|---|
 | `file` | yes | Target `.txt` file from the base excel folder (e.g. `skills.txt`). All files are supported except `itemstatcost.txt`. |
 | `rowIdentifier` | yes | Identifies **which row** to change. Contents depend on the file — see [Row Identification Rules](#3-row-identification-rules-per-file) below. Also accepts a numeric index range `"start-end"` (inclusive, 0-based) to target many rows at once — see [Row Ranges](#row-ranges-multiple-rows-with-one-operation). |
-| `column` | yes | The property name of the column to modify. Must match a public property on the target entry type (case-insensitive). In practice, it's the header name with spaces and punctuation stripped, PascalCase. |
-| `operation` | no | `replace` (default), `multiplyExisting`, or `append`. |
+| `column` | yes (unless `columns` is provided) | The property name of the column to modify. Must match a public property on the target entry type (case-insensitive). In practice, it's the header name with spaces and punctuation stripped, PascalCase. |
+| `columns` | no | An array of `{ column, updatedValue, parameterKey, operation }` objects to update **multiple columns on the same matched row(s)** with a single `rowIdentifier`. Each entry inherits `operation` / `updatedValue` / `parameterKey` from the parent operation when omitted. See [Multi-column updates](#multi-column-updates-one-rowidentifier-many-columns). |
+| `operation` | no | `replace` (default), `multiplyExisting`, `append`, or `addRow`. |
 | `updatedValue` | when replacing, multiplying, or appending without a `parameterKey` | The new value, the multiplier, the text to append, or a template string containing parameter tokens. |
 | `parameterKey` | no | References a parameter declared in `plugininfo.json`. For `replace`, the parameter value becomes the new value. For `multiplyExisting`, it becomes the multiplier. For `append`, it becomes the text appended after the existing value. |
 
@@ -86,6 +87,7 @@ Your operation file can be either a single object or an array of objects. **Two 
 - **`replace`** — Overwrites the target column with `updatedValue` (or the resolved `parameterKey` value).
 - **`multiplyExisting`** — Parses the existing column value as a decimal and multiplies it by `updatedValue` / the `parameterKey` value. Requires a numeric current value.
 - **`append`** — Wraps the existing column value in parentheses and concatenates your text. For example, if the current value is `ln12` and your `updatedValue` is `+10*20`, the resulting value is `(ln12)+10*20`. Useful for extending skill `calc` expressions without rewriting them.
+- **`addRow`** — Creates a brand-new row in the target `.txt` file. Omit `rowIdentifier` (or leave it empty) to **append** at the end of the file, or provide a numeric **0-based index** (e.g. `"5"`) to **insert** at that position. The new row's column values come from the `columns` array (preferred) or from a single top-level `column` / `updatedValue`. Columns you do not list keep their default value, so be sure to populate any required identifier columns the downstream parser expects. See [Adding new rows](#adding-new-rows-with-addrow).
 
 ### Parameter Tokens
 `updatedValue` supports tokens in the form `{{parameter:key}}` (or `{{ parameter:key }}`). They are resolved at runtime from the user-supplied parameter values.
@@ -242,7 +244,100 @@ The launcher intentionally rejects `itemstatcost.txt`. Attempts to target it wil
 
 ---
 
-## 4. Power Techniques: Key Reuse
+## 4. Multi-Column Updates and New Rows
+
+### Multi-column updates: one `rowIdentifier`, many columns
+
+When you need to change several columns on the **same row** (or row range), you no longer need to repeat `file` / `rowIdentifier` for each column. Provide a `columns` array on a single operation — every entry in the array is applied to **every matched row** sharing that `rowIdentifier`.
+
+Each `columns` entry supports the following fields:
+
+| Field | Required | Purpose |
+|---|---|---|
+| `column` | yes | Target column name on the row. |
+| `updatedValue` | no | Per-column override of the parent `updatedValue` (or the literal value for `addRow`). |
+| `parameterKey` | no | Per-column override of the parent `parameterKey`. |
+| `operation` | no | Per-column override of the parent `operation` (e.g. mix `replace` and `multiplyExisting` in one block). |
+
+When a per-column field is omitted, the value from the parent operation is used. This means the most common case — "apply the same `multiplyExisting` with the same `parameterKey` to a handful of damage columns" — collapses to a very small block.
+
+#### Example: scale all damage fields of a skill with one parameter
+
+```json
+{
+  "file": "skills.txt",
+  "rowIdentifier": "amazonlightningfury",
+  "operation": "multiplyExisting",
+  "parameterKey": "damageMultiplier",
+  "columns": [
+    { "column": "EMin" },
+    { "column": "EMax" },
+    { "column": "EMinLev" },
+    { "column": "EMaxLev" }
+  ]
+}
+```
+
+#### Example: mix operations on the same row
+
+```json
+{
+  "file": "skills.txt",
+  "rowIdentifier": "Teleport",
+  "columns": [
+    { "column": "Mana", "operation": "replace", "parameterKey": "manaCost" },
+    { "column": "reqlevel", "operation": "replace", "updatedValue": "10" },
+    { "column": "calc1", "operation": "append", "updatedValue": "+5*lvl" }
+  ]
+}
+```
+
+> Each `columns` entry must reference a known column on the target file. Per-column `parameterKey` / `updatedValue` overrides the parent value when both are present.
+{.is-info}
+
+### Adding new rows with `addRow`
+
+The `addRow` operation inserts a brand-new row into a target `.txt` file.
+
+- Omit `rowIdentifier` (or leave it empty) to **append** the new row at the end of the file.
+- Provide a numeric, **0-based** `rowIdentifier` (e.g. `"5"`) to **insert** at that position. Valid range is `0` to `rowCount` inclusive (`rowCount` is equivalent to appending). Out-of-range or non-numeric identifiers are rejected at validation time.
+- New row column values come from the `columns` array (preferred) or from top-level `column` / `updatedValue`. At least one column must be provided.
+- Columns you do not list keep their default value. **Always populate any required identifier columns** (e.g. `Skill` on `skills.txt`, `Code` on `weapons.txt`) so downstream parsers and saves don't reject the row.
+- Per-column `operation` overrides are honored, but `addRow` defaults to `replace` semantics for each assignment (the row starts empty).
+
+#### Example: append a new skill
+
+```json
+{
+  "file": "skills.txt",
+  "operation": "addRow",
+  "columns": [
+    { "column": "Skill",     "updatedValue": "MyNewSkill" },
+    { "column": "charclass", "updatedValue": "ama" },
+    { "column": "reqlevel",  "updatedValue": "30" },
+    { "column": "manacost",  "updatedValue": "10" }
+  ]
+}
+```
+
+#### Example: insert a cube recipe at a specific row index
+
+```json
+{
+  "file": "cubemain.txt",
+  "rowIdentifier": "10",
+  "operation": "addRow",
+  "columns": [
+    { "column": "Description", "updatedValue": "My Custom Recipe" },
+    { "column": "NumInputs",   "updatedValue": "2" },
+    { "column": "Output",      "updatedValue": "ssp" }
+  ]
+}
+```
+
+---
+
+## 5. Power Techniques: Key Reuse
 
 Efficiency matters. You don't need a separate parameter for every single field — map one UI knob to many operations.
 
@@ -357,7 +452,7 @@ A single operations file can touch multiple target files. The example below buff
 
 ---
 
-## 5. String JSON Files
+## 6. String JSON Files
 
 In addition to excel `.txt` files, plugins can patch D2R's string tables — any `.json` file that lives under `data/local/lng/strings` (e.g. `item-runes.json`, `item-nameaffixes.json`, `ui.json`). The launcher resolves the strings directory automatically, alongside the excel folder.
 
@@ -415,7 +510,7 @@ String entries do **not** use `rowIdentifier` / `column` / `operation` / `update
 
 ---
 
-## 6. Sharing on GitHub Discussions
+## 7. Sharing on GitHub Discussions
 
 To share your plugin through the launcher's **User Plugins** page, create a post in the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub. The launcher scrapes discussion posts and requires specific fields in the post body:
 
@@ -428,14 +523,16 @@ The `.zip` must still contain a valid `plugininfo.json` with all required fields
 
 ---
 
-## 7. Authoring Checklist
+## 8. Authoring Checklist
 
 1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all your operation files.
 2. **modVersion**: Include a `modVersion` field in `#.#.#` format matching the mod version your plugin targets. This is required.
 3. **Row identification (excel)**: Use the identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, remember the `−2` rule. For bulk edits, use a `"start-end"` range (e.g. `"50-100"`) to target many rows with a single operation.
 4. **Column names (excel)**: `column` must match a property name on the target entry (case-insensitive). Header names with spaces or punctuation (e.g. `Min ac`) map to PascalCase property names (e.g. `MinAc`).
-5. **Strings schema**: For `.json` files under `data/local/lng/strings`, use the flat `{ file, Key, <languageCode>: "…" }` layout from [Section 5](#5-string-json-files). Only listed language fields are overwritten.
-6. **Key Consistency**: Match your `parameterKey` exactly to the `key` in the manifest.
-7. **Validation**: The launcher rejects plugins that reference unknown files, columns, or parameters; it also rejects file paths that traverse outside the plugin archive. Read the error list it produces.
+5. **Strings schema**: For `.json` files under `data/local/lng/strings`, use the flat `{ file, Key, <languageCode>: "…" }` layout from [Section 6](#6-string-json-files). Only listed language fields are overwritten.
+6. **Multi-column updates**: When changing several columns on the same row, prefer a single operation with a `columns` array over many duplicated operations — it's terser and shares one `rowIdentifier`.
+7. **New rows**: Use `"operation": "addRow"` to append (no `rowIdentifier`) or insert at a 0-based index. Make sure to populate the file's identifier column(s) in the `columns` array.
+8. **Key Consistency**: Match your `parameterKey` exactly to the `key` in the manifest.
+9. **Validation**: The launcher rejects plugins that reference unknown files, columns, or parameters; it also rejects file paths that traverse outside the plugin archive. Read the error list it produces.
 
 Now go forth and break — I mean, *enhance* — the game responsibly. 🚀

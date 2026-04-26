@@ -12,11 +12,11 @@ Welcome to the Reimagined Launcher's plugin system. A plugin is a small zip arch
 
 ---
 
-## 1. The Architectural Blueprint (`plugininfo.json`)
+# 1. The Architectural Blueprint (`plugininfo.json`)
 
 Every plugin requires a manifest file named `plugininfo.json`. It defines the plugin's identity, the user-facing "knobs" (parameters), and the operation files the launcher will run.
 
-### The Anatomy of a Manifest
+## The Anatomy of a Manifest
 ```json
 {
   "name": "Kinetic Overdrive",
@@ -60,14 +60,14 @@ Every plugin requires a manifest file named `plugininfo.json`. It defines the pl
 
 ---
 
-## 2. The Instruction Set (`*.json`)
+# 2. The Instruction Set (`*.json`)
 
 Your operation file can be either a single object or an array of objects. **Two target kinds are supported**, each with its own schema:
 
 1. **Excel (`.txt`) targets** — any `.txt` file in the base excel folder except `itemstatcost.txt`.
 2. **Strings (`.json`) targets** — any `.json` file under `data/local/lng/strings` (e.g. `item-runes.json`). See [Section 6](#6-string-json-files) for the flat d2rr-style layout.
 
-### Excel target fields
+## Excel target fields
 
 | Field | Required | Purpose |
 |---|---|---|
@@ -79,14 +79,14 @@ Your operation file can be either a single object or an array of objects. **Two 
 | `updatedValue` | when replacing, multiplying, or appending without a `parameterKey` | The new value, the multiplier, the text to append, or a template string containing parameter tokens. |
 | `parameterKey` | no | References a parameter declared in `plugininfo.json`. For `replace`, the parameter value becomes the new value. For `multiplyExisting`, it becomes the multiplier. For `append`, it becomes the text appended after the existing value. |
 
-### Operation semantics
+## Operation semantics
 
 - **`replace`** — Overwrites the target column with `updatedValue` (or the resolved `parameterKey` value).
 - **`multiplyExisting`** — Parses the existing column value as a decimal and multiplies it by `updatedValue` / the `parameterKey` value. Requires a numeric current value.
 - **`append`** — Wraps the existing column value in parentheses and concatenates your text. For example, if the current value is `ln12` and your `updatedValue` is `+10*20`, the resulting value is `(ln12)+10*20`. Useful for extending skill `calc` expressions without rewriting them.
 - **`addRow`** — Creates a brand-new row in the target `.txt` file. Omit `rowIdentifier` (or leave it empty) to **append** at the end of the file, or provide a numeric **0-based index** (e.g. `"5"`) to **insert** at that position. The new row's column values come from the `columns` array (preferred) or from a single top-level `column` / `updatedValue`. Columns you do not list keep their default value, so be sure to populate any required identifier columns the downstream parser expects. See [Adding new rows](#adding-new-rows-with-addrow).
 
-### Parameter Tokens
+## Parameter Tokens
 `updatedValue` supports tokens in the form `{{parameter:key}}` (or `{{ parameter:key }}`). They are resolved at runtime from the user-supplied parameter values.
 
 ```json
@@ -101,7 +101,7 @@ Your operation file can be either a single object or an array of objects. **Two 
 
 ---
 
-## 3. Row Identification Rules Per File
+# 3. Row Identification Rules Per File
 
 The launcher looks up rows in one of three ways:
 
@@ -109,7 +109,7 @@ The launcher looks up rows in one of three ways:
 2. **Row-ID lookup** (a handful of files whose natural identifier columns contain duplicates) — `rowIdentifier` is a **0-based numeric index** into the data rows, in file order.
 3. **Row-range lookup** (any supported `.txt` file) — `rowIdentifier` is a `"start-end"` string that applies one operation across every data row in the inclusive 0-based range. See [Row Ranges](#row-ranges-multiple-rows-with-one-operation).
 
-### The `−2` rule for Row-ID lookup
+## The `−2` rule for Row-ID lookup
 
 Every file that uses numeric Row-ID lookup follows the same mapping between the AFJ Sheet (or any tab-separated editor that shows a header row) and the launcher:
 
@@ -123,11 +123,11 @@ RowId = editor_row − 2
 
 The `Expansion` separator row that appears in a few files is a normal entry: it consumes one Row-ID, so the `−2` rule still holds with no extra off-by-one.
 
-### File-by-file requirements
+## File-by-file requirements
 
 The column listed in **Identifier** is the exact value a plugin must place in `rowIdentifier`. For Row-ID files, use a numeric string; the **Display column** is listed only for context (what you'd actually *see* in that row in an editor).
 
-#### Column-lookup files
+### Column-lookup files
 
 | File | Identifier column | Example `rowIdentifier` | Notes |
 |---|---|---|---|
@@ -176,7 +176,7 @@ The column listed in **Identifier** is the exact value a plugin must place in `r
 | `weapons.txt` | `Code` | `hax` | Weapon code. |
 | `overlay.txt` | `OverlayName` | *(overlay name)* | Overlay record name. |
 
-#### Row-ID files (numeric `rowIdentifier`, `−2` rule applies)
+### Row-ID files (numeric `rowIdentifier`, `−2` rule applies)
 
 These files use numeric indices because their natural identifier columns contain duplicates or are not unique enough.
 
@@ -197,7 +197,7 @@ These files use numeric indices because their natural identifier columns contain
 {.is-info}
 
 
-### Row Ranges (multiple rows with one operation)
+## Row Ranges (multiple rows with one operation)
 
 In addition to a single identifier value or a single numeric Row-ID, `rowIdentifier` also accepts a **numeric index range** in the form `"start-end"`. The bounds are **inclusive** and **0-based data row indices** (the same `−2` rule as Row-ID lookup — editor row N → index `N − 2`).
 
@@ -206,7 +206,7 @@ In addition to a single identifier value or a single numeric Row-ID, `rowIdentif
 - Out-of-bounds ranges (beyond the file's row count) are rejected with a descriptive error.
 - Whitespace around the numbers and the dash is tolerated, so `"50-100"` and `" 50 - 100 "` are equivalent.
 
-#### Examples
+### Examples
 
 Zero out the `Cel1` column on rows 50 through 100 of `automap.txt`:
 
@@ -235,15 +235,15 @@ Double the `manacost` across rows 300–400 of `skills.txt` using a parameter:
 > Ranges are validated the same way as regular operations — `column`, `operation`, and `parameterKey` / `updatedValue` still have to be valid for the target file.
 {.is-info}
 
-### `itemstatcost.txt` is not supported
+## `itemstatcost.txt` is not supported
 
 The launcher intentionally rejects `itemstatcost.txt`. Attempts to target it will fail validation.
 
 ---
 
-## 4. Multi-Column Updates and New Rows
+# 4. Multi-Column Updates and New Rows
 
-### Multi-column updates: one `rowIdentifier`, many columns
+## Multi-column updates: one `rowIdentifier`, many columns
 
 When you need to change several columns on the **same row** (or row range), you no longer need to repeat `file` / `rowIdentifier` for each column. Provide a `columns` array on a single operation — every entry in the array is applied to **every matched row** sharing that `rowIdentifier`.
 
@@ -258,7 +258,7 @@ Each `columns` entry supports the following fields:
 
 When a per-column field is omitted, the value from the parent operation is used. This means the most common case — "apply the same `multiplyExisting` with the same `parameterKey` to a handful of damage columns" — collapses to a very small block.
 
-#### Example: scale all damage fields of a skill with one parameter
+### Example: scale all damage fields of a skill with one parameter
 
 ```json
 {
@@ -275,7 +275,7 @@ When a per-column field is omitted, the value from the parent operation is used.
 }
 ```
 
-#### Example: mix operations on the same row
+### Example: mix operations on the same row
 
 ```json
 {
@@ -292,7 +292,7 @@ When a per-column field is omitted, the value from the parent operation is used.
 > Each `columns` entry must reference a known column on the target file. Per-column `parameterKey` / `updatedValue` overrides the parent value when both are present.
 {.is-info}
 
-### Adding new rows with `addRow`
+## Adding new rows with `addRow`
 
 The `addRow` operation inserts a brand-new row into a target `.txt` file.
 
@@ -302,7 +302,7 @@ The `addRow` operation inserts a brand-new row into a target `.txt` file.
 - Columns you do not list keep their default value. **Always populate any required identifier columns** (e.g. `Skill` on `skills.txt`, `Code` on `weapons.txt`) so downstream parsers and saves don't reject the row.
 - Per-column `operation` overrides are honored, but `addRow` defaults to `replace` semantics for each assignment (the row starts empty).
 
-#### Example: append a new skill
+### Example: append a new skill
 
 ```json
 {
@@ -317,7 +317,7 @@ The `addRow` operation inserts a brand-new row into a target `.txt` file.
 }
 ```
 
-#### Example: insert a cube recipe at a specific row index
+### Example: insert a cube recipe at a specific row index
 
 ```json
 {
@@ -334,11 +334,11 @@ The `addRow` operation inserts a brand-new row into a target `.txt` file.
 
 ---
 
-## 5. Power Techniques: Key Reuse
+# 5. Power Techniques: Key Reuse
 
 Efficiency matters. You don't need a separate parameter for every single field — map one UI knob to many operations.
 
-### Example 1: The "Master Balance" Multiplier
+## Example 1: The "Master Balance" Multiplier
 Scale both min and max damage of a skill with a single slider:
 
 ```json
@@ -360,7 +360,7 @@ Scale both min and max damage of a skill with a single slider:
 ]
 ```
 
-### Example 2: Uniform Level Caps
+## Example 2: Uniform Level Caps
 Set the same `maxlvl` for several skills through one parameter:
 
 ```json
@@ -389,7 +389,7 @@ Set the same `maxlvl` for several skills through one parameter:
 ]
 ```
 
-### Example 3: Multi-file plugin with parameter tokens
+## Example 3: Multi-file plugin with parameter tokens
 
 A single operations file can touch multiple target files. The example below buffs one weapon and one armor piece, changes a skill, and tweaks a magic prefix by Row-ID:
 
@@ -449,11 +449,11 @@ A single operations file can touch multiple target files. The example below buff
 
 ---
 
-## 6. String JSON Files
+# 6. String JSON Files
 
 In addition to excel `.txt` files, plugins can patch D2R's string tables — any `.json` file that lives under `data/local/lng/strings` (e.g. `item-runes.json`, `item-nameaffixes.json`, `ui.json`). The launcher resolves the strings directory automatically, alongside the excel folder.
 
-### Flat d2rr-style layout
+## Flat d2rr-style layout
 
 String entries do **not** use `rowIdentifier` / `column` / `operation` / `updatedValue`. Instead, each entry is a flat object listing the target file, the D2R entry `Key`, and one or more language fields with the replacement text:
 
@@ -467,7 +467,7 @@ String entries do **not** use `rowIdentifier` / `column` / `operation` / `update
 }
 ```
 
-### Fields
+## Fields
 
 | Field | Required | Purpose |
 |---|---|---|
@@ -475,18 +475,18 @@ String entries do **not** use `rowIdentifier` / `column` / `operation` / `update
 | `Key` | yes | The D2R entry `Key` to match inside that file. |
 | Language fields | at least one | Any of the 13 recognized language codes (see below) with the replacement string. |
 
-### Supported language codes
+## Supported language codes
 
 `enUS`, `zhTW`, `deDE`, `esES`, `frFR`, `itIT`, `koKR`, `plPL`, `esMX`, `jaJP`, `ptBR`, `ruRU`, `zhCN`.
 
-### Replacement semantics
+## Replacement semantics
 
 - Only the language fields you list on the entry are overwritten on the matched D2R entry.
 - Every other language on that same entry — and every other entry in the file — is left completely untouched.
 - Any field that is not one of the recognized language codes (and is not `file` or `Key`) is ignored. This is intentional so plugin authors can leave notes without breaking the format.
 - Parameter tokens (`{{parameter:key}}`) are **not** resolved inside string JSON values today — provide the final replacement text directly.
 
-### Example
+## Example
 
 ```json
 [
@@ -507,7 +507,7 @@ String entries do **not** use `rowIdentifier` / `column` / `operation` / `update
 
 ---
 
-## 7. Sharing on GitHub Discussions
+# 7. Sharing on GitHub Discussions
 
 To share your plugin through the launcher's **User Plugins** page, create a post in the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub. The launcher scrapes discussion posts and requires specific fields in the post body:
 
@@ -520,7 +520,7 @@ The `.zip` must still contain a valid `plugininfo.json` with all required fields
 
 ---
 
-## 8. Authoring Checklist
+# 8. Authoring Checklist
 
 1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all your operation files.
 2. **modVersion**: Include a `modVersion` field in `#.#.#` format matching the mod version your plugin targets. This is required.

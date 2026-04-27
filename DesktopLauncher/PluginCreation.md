@@ -2,21 +2,46 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-27T13:27:00.000Z
+date: 2026-04-27T14:45:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
 ---
 
-Welcome to the Reimagined Launcher's plugin system. A plugin is a small zip archive that tells the launcher how to tweak the game's `.txt` data files and string `.json` files at launch time. This guide covers the manifest, the operation format, how to identify the row you're targeting for every supported file, the separate schema used for string JSON targets, and a handful of worked examples.
+# Welcome!
+
+This guide walks you through writing your own plugin for the **Reimagined Launcher**. You don't need to be a programmer — if you can edit a text file and you know what a JSON object looks like, you can build a plugin.
+
+## What is a plugin, in plain English?
+
+A plugin is just a **zip file** that the launcher unpacks and reads. Inside that zip you describe:
+
+1. **Who you are** — your plugin's name, version, and a short description.
+2. **What knobs you want the player to see** — sliders or text boxes (the launcher calls these *parameters*).
+3. **What you want to change in the game** — for example, "double the damage of Fire Bolt", "rename the Doom rune", or "swap the gem pickup sound".
+
+The launcher applies your changes when the game launches and never edits the game's original files directly — it builds a fresh, modified copy each time.
+
+## The three kinds of changes you can make
+
+Plugins can do three things, and you can mix any of them in a single plugin:
+
+- **Edit excel `.txt` files** — these are the spreadsheet-like data files (`skills.txt`, `weapons.txt`, etc.) that drive most game behavior.
+- **Edit string `.json` files** — these are the in-game text/translation files (`item-runes.json`, `ui.json`, etc.).
+- **Replace asset files** — sounds, textures, icons, anything binary.
+
+This guide explains each one, with worked examples. If you ever feel stuck, jump to **[Section 9 — Authoring Checklist](#9-authoring-checklist)** for a quick recap.
 
 ---
 
-# 1. The Architectural Blueprint (`plugininfo.json`)
+# 1. The Manifest (`plugininfo.json`)
 
-Every plugin requires a manifest file named `plugininfo.json`. It defines the plugin's identity, the user-facing "knobs" (parameters), and the operation files the launcher will run.
+Every plugin **must** have a file called `plugininfo.json` at its root. Think of it as the plugin's ID card: it tells the launcher who the plugin is, what knobs to show the player, and which other files to read.
 
-## The Anatomy of a Manifest
+## A complete example
+
+Here's a manifest with everything filled in. We'll break each field down right after.
+
 ```json
 {
   "name": "Kinetic Overdrive",
@@ -50,45 +75,88 @@ Every plugin requires a manifest file named `plugininfo.json`. It defines the pl
 }
 ```
 
-- **`name`**: **Required.** Plugin display name.
-- **`version`**: **Required.** Plugin version.
-- **`modVersion`**: **Required.** The mod version this plugin targets, in `#.#.#` format (e.g. `3.0.7`). Plugins without a valid `modVersion` are rejected.
-- **`author`**: Optional. Displayed in the launcher.
-- **`description`**: Optional. Short description shown in the launcher.
-- **`files`**: **Required when no `assets` are provided.** Relative paths to the JSON files containing your operations. May be `[]` if the plugin only ships asset replacements (see [Section 7](#7-asset-file-replacement)). At least one of `files` or `assets` must be non-empty.
-- **`parameters`**: Optional. Defines the UI knobs the user will see. Each parameter needs `key`, `name`, and `defaultValue`, and may optionally include a `description` (a short help text displayed alongside the parameter in the launcher). The `key` is what you reference from operations.
-- **`assets`**: Optional. An array of `{ source, target }` pairs that copies arbitrary files from the plugin's `assets/` folder into the mod folder at apply time. See [Section 7](#7-asset-file-replacement).
+### Required fields
+
+These three fields **must** be present, or the launcher will refuse to load the plugin:
+
+- **`name`** — the plugin's display name, shown in the launcher's plugin list.
+- **`version`** — your plugin's own version number. Bump it whenever you publish an update.
+- **`modVersion`** — the version of the mod that this plugin is built for, written as three numbers separated by dots (for example, `3.0.7`). If this is missing or malformed, the plugin is rejected.
+
+You also need **at least one** of the following two fields to be non-empty:
+
+- **`files`** — a list of operation files (other `.json` files in your zip) that describe the changes you want to make to excel `.txt` data. See **[Section 2](#2-the-instruction-set-json)**.
+- **`assets`** — a list of binary asset replacements (sounds, textures, etc.) you want to copy into the mod. See **[Section 7](#7-asset-file-replacement)**.
+
+If your plugin only changes excel/strings data, fill in `files` and leave `assets` as `[]`. If it only swaps assets, do the opposite. You can also do both.
+
+### Optional fields
+
+These improve the player's experience but aren't strictly required:
+
+- **`author`** — your name or handle, shown in the launcher.
+- **`description`** — a short, friendly sentence that explains what the plugin does.
+- **`parameters`** — the player-facing knobs. Each parameter has:
+  - **`key`** — an internal id you'll use to refer to the value from your operations.
+  - **`name`** — the human-friendly label the player sees.
+  - **`defaultValue`** — the value the parameter starts at.
+  - **`description`** *(optional)* — a short help text shown next to the knob.
+
+> **Tip:** keep your parameter `key` values short and lowercase (e.g. `damageMultiplier`, `manaCost`). You'll be typing them a lot.
+{.is-info}
 
 ---
 
 # 2. The Instruction Set (`*.json`)
 
-Your operation file can be either a single object or an array of objects. **Two target kinds are supported**, each with its own schema:
+So far the manifest has only described *who* the plugin is. The actual changes live in **operation files** — the `.json` files you listed under `files`. Each operation file is either:
 
-1. **Excel (`.txt`) targets** — any `.txt` file in the base excel folder except `itemstatcost.txt`.
-2. **Strings (`.json`) targets** — any `.json` file under `data/local/lng/strings` (e.g. `item-runes.json`). See [Section 6](#6-string-json-files) for the flat d2rr-style layout.
+- a **single operation object**, or
+- an **array of operation objects** (most plugins use an array because they make several changes).
+
+## Two flavors of operations
+
+There are two kinds of files you can target, and each has its own schema:
+
+1. **Excel (`.txt`) targets** — almost any `.txt` file from the game's base excel folder. The big exception is `itemstatcost.txt`, which the launcher refuses to touch.
+2. **Strings (`.json`) targets** — any `.json` file under `data/local/lng/strings`, such as `item-runes.json` or `ui.json`. Strings use a much simpler format described in **[Section 6](#6-string-json-files)** — read that one when you need to rename items, runes, or UI text.
+
+The rest of this section is about **excel targets**.
 
 ## Excel target fields
 
-| Field | Required | Purpose |
+Every excel operation answers three questions:
+
+1. **Which file?** → `file`
+2. **Which row(s) inside that file?** → `rowIdentifier`
+3. **What change should I make?** → `column` (or `columns`) + `operation` + `updatedValue` / `parameterKey`
+
+Here are the fields in detail. Don't worry about absorbing every option at once — the [examples in Sections 4 and 5](#4-multi-column-updates-and-new-rows) make this concrete.
+
+| Field | Required? | What it does |
 |---|---|---|
-| `file` | yes | Target `.txt` file from the base excel folder (e.g. `skills.txt`). All files are supported except `itemstatcost.txt`. |
-| `rowIdentifier` | yes | Identifies **which row** to change. Contents depend on the file — see [Row Identification Rules](#3-row-identification-rules-per-file) below. Also accepts a numeric index range `"start-end"` (inclusive, 0-based) to target many rows at once — see [Row Ranges](#row-ranges-multiple-rows-with-one-operation). Also accepts an **object** of `{column: expectedValue}` pairs to override the default match logic with multiple columns — see [Multi-column rowIdentifier override](#multi-column-rowidentifier-override). |
-| `column` | yes (unless `columns` is provided) | The property name of the column to modify. Must match a public property on the target entry type (case-insensitive). In practice, it's the header name with spaces and punctuation stripped, PascalCase. |
-| `columns` | no | An array of `{ column, updatedValue, parameterKey, operation }` objects to update **multiple columns on the same matched row(s)** with a single `rowIdentifier`. Each entry inherits `operation` / `updatedValue` / `parameterKey` from the parent operation when omitted. See [Multi-column updates](#multi-column-updates-one-rowidentifier-many-columns). |
-| `operation` | no | `replace` (default), `multiplyExisting`, `append`, or `addRow`. |
-| `updatedValue` | when replacing, multiplying, or appending without a `parameterKey` | The new value, the multiplier, the text to append, or a template string containing parameter tokens. |
-| `parameterKey` | no | References a parameter declared in `plugininfo.json`. For `replace`, the parameter value becomes the new value. For `multiplyExisting`, it becomes the multiplier. For `append`, it becomes the text appended after the existing value. |
+| `file` | yes | The target `.txt` file, e.g. `skills.txt`. Anything in the base excel folder works **except** `itemstatcost.txt`. |
+| `rowIdentifier` | yes | Picks **which row** to change. The exact value depends on the file (see [Section 3](#3-row-identification-rules-per-file)). It can also be a range like `"50-100"` for bulk edits, or an object listing several columns when one column isn't unique enough. |
+| `column` | yes (unless you use `columns`) | The column you want to change. Use the header name with spaces and punctuation removed, in PascalCase (e.g. `Min ac` → `MinAc`). Matching is case-insensitive. |
+| `columns` | no | Use this when you want to change **several columns on the same row(s)** in one operation. See [Multi-column updates](#multi-column-updates-one-rowidentifier-many-columns). |
+| `operation` | no | What kind of change to make. Defaults to `replace`. The four choices are explained right below. |
+| `updatedValue` | sometimes | The new value, the multiplier, or the text to append. Required unless you're pulling the value from a parameter via `parameterKey`. |
+| `parameterKey` | no | Pulls the value from a player-facing parameter you declared in the manifest. Handy for sliders that affect many rows. |
 
-## Operation semantics
+## The four operations
 
-- **`replace`** — Overwrites the target column with `updatedValue` (or the resolved `parameterKey` value).
-- **`multiplyExisting`** — Parses the existing column value as a decimal and multiplies it by `updatedValue` / the `parameterKey` value. Requires a numeric current value.
-- **`append`** — Wraps the existing column value in parentheses and concatenates your text. For example, if the current value is `ln12` and your `updatedValue` is `+10*20`, the resulting value is `(ln12)+10*20`. Useful for extending skill `calc` expressions without rewriting them.
-- **`addRow`** — Creates a brand-new row in the target `.txt` file. Omit `rowIdentifier` (or leave it empty) to **append** at the end of the file, or provide a numeric **0-based index** (e.g. `"5"`) to **insert** at that position. The new row's column values come from the `columns` array (preferred) or from a single top-level `column` / `updatedValue`. Columns you do not list keep their default value, so be sure to populate any required identifier columns the downstream parser expects. See [Adding new rows](#adding-new-rows-with-addrow).
+Pick one of these four verbs in the `operation` field:
 
-## Parameter Tokens
-`updatedValue` supports tokens in the form `{{parameter:key}}` (or `{{ parameter:key }}`). They are resolved at runtime from the user-supplied parameter values.
+- **`replace`** *(the default)* — Overwrites the column with whatever you put in `updatedValue` (or the parameter value).
+- **`multiplyExisting`** — Reads the current value as a number and multiplies it. Useful for "double the damage" style tweaks. The current value must already be numeric.
+- **`append`** — Tacks your text onto the existing value, with the original wrapped in parentheses. For example, if a `calc` column reads `ln12` and your `updatedValue` is `+10*20`, the row ends up reading `(ln12)+10*20`. Mostly used to extend skill `calc` expressions without rewriting them.
+- **`addRow`** — Creates a brand-new row. See **[Adding new rows](#adding-new-rows-with-addrow)** for the full story.
+
+## Parameter tokens
+
+You can also embed a parameter directly inside an `updatedValue` string by writing `{{parameter:yourKey}}`. The launcher swaps in the player-supplied value when the plugin runs.
+
+For example, this operation lets the player decide Teleport's mana cost:
 
 ```json
 {
@@ -104,32 +172,51 @@ Your operation file can be either a single object or an array of objects. **Two 
 
 # 3. Row Identification Rules Per File
 
-The launcher looks up rows in one of four ways:
+This is the section that trips most people up, so let's slow down. **Telling the launcher *which row* to change is the most important part of writing an operation.** The launcher offers four different ways to do it, and which one you use depends on the file you're editing.
 
-1. **Column lookup** (most files) — `rowIdentifier` must match the value of a specific column on the row you want to change. Matching is case-insensitive. **The match must be unique within the file**; if the value appears in multiple rows, every match is updated.
-2. **Row-ID lookup** (a handful of files whose natural identifier columns contain duplicates) — `rowIdentifier` is a **0-based numeric index** into the data rows, in file order.
-3. **Row-range lookup** (any supported `.txt` file) — `rowIdentifier` is a `"start-end"` string that applies one operation across every data row in the inclusive 0-based range. See [Row Ranges](#row-ranges-multiple-rows-with-one-operation).
-4. **Multi-column override** (any supported `.txt` file) — `rowIdentifier` is an **object** listing one or more `{column: expectedValue}` pairs. A row only matches when **every** listed column equals its expected value (case-insensitive). See [Multi-column rowIdentifier override](#multi-column-rowidentifier-override).
+## The four ways to identify a row
 
-## The `−2` rule for Row-ID lookup
+1. **By a unique column value** *(the easiest, used by most files).*
+   You give the value of the file's natural identifier column and the launcher finds the matching row.
+   *Example:* in `skills.txt`, `"rowIdentifier": "Teleport"` matches the row whose `Skill` column equals `Teleport`.
+   Matching is case-insensitive. If your value happens to appear in more than one row, **all** matching rows are updated.
 
-Every file that uses numeric Row-ID lookup follows the same mapping between the AFJ Sheet (or any tab-separated editor that shows a header row) and the launcher:
+2. **By numeric row index (the "Row-ID" files).**
+   A handful of files have so many duplicate names that no single column is unique. For these, you give a number — the position of the row, counting from `0` — instead of a name.
+   *Example:* `"rowIdentifier": "12"` targets the 13th data row.
 
-```
-RowId = editor_row − 2
-```
+3. **By a range of rows.**
+   Want to change rows 50 through 100 in one go? Use a string like `"50-100"`. This works on **any** supported file. Details in [Row Ranges](#row-ranges-multiple-rows-with-one-operation).
 
-- Editor row 1 is the header row (not counted).
-- Editor row 2 is the first data row → `RowId = 0`.
-- Editor row N → `RowId = N − 2`.
+4. **By matching several columns at once.**
+   When even the natural identifier isn't unique, you can pass an **object** of column/value pairs — the row must match **all** of them. Details in [Multi-column rowIdentifier override](#multi-column-rowidentifier-override).
 
-The `Expansion` separator row that appears in a few files is a normal entry: it consumes one Row-ID, so the `−2` rule still holds with no extra off-by-one.
+## The "minus two" rule for Row-ID files
+
+If you're editing a Row-ID file, you'll usually have it open in **AFJ Sheet** or another tab-separated editor that shows a header row at the top. There's one simple formula to remember:
+
+> **Editor row number − 2 = the number you put in `rowIdentifier`.**
+{.is-info}
+
+Why minus two?
+
+- Editor row **1** is the header row, which doesn't count.
+- Editor row **2** is the first real data row → that's index `0`.
+- Editor row **N** → index `N − 2`.
+
+> The `Expansion` separator row that some files contain counts as a normal row. The minus-two rule still works — no off-by-one to worry about.
+{.is-info}
 
 ## File-by-file requirements
 
-The column listed in **Identifier** is the exact value a plugin must place in `rowIdentifier`. For Row-ID files, use a numeric string; the **Display column** is listed only for context (what you'd actually *see* in that row in an editor).
+The two tables below tell you, for each supported file, **what to put in `rowIdentifier`**.
+
+- The **Identifier column** tells you which column in the file the launcher matches against (or, for Row-ID files, that you use a numeric index).
+- The **Display column** is purely informational — it's what you'll *see* in the row when you scroll through the file in an editor.
 
 ### Column-lookup files
+
+These are the easy ones: just put the row's identifier value in `rowIdentifier`.
 
 | File | Identifier column | Example `rowIdentifier` | Notes |
 |---|---|---|---|
@@ -180,7 +267,7 @@ The column listed in **Identifier** is the exact value a plugin must place in `r
 
 ### Row-ID files (numeric `rowIdentifier`, `−2` rule applies)
 
-These files use numeric indices because their natural identifier columns contain duplicates or are not unique enough.
+These files use numeric indices because their natural identifier columns contain too many duplicates to be useful for matching. For each file you'd put something like `"rowIdentifier": "0"`, `"rowIdentifier": "1"`, and so on. Remember the minus-two rule: AFJ Sheet row 42 → `"40"`.
 
 | File | `rowIdentifier` | Display column (for context only) | Why Row-ID |
 |---|---|---|---|
@@ -201,13 +288,17 @@ These files use numeric indices because their natural identifier columns contain
 
 ## Multi-column `rowIdentifier` override
 
-In addition to the default column / Row-ID / range matching, `rowIdentifier` also accepts an **object** that lists one or more `{column: expectedValue}` pairs. The launcher matches a row only when **every** listed column equals its expected value (case-insensitive), bypassing the file's default identifier column entirely.
+Sometimes a single column isn't specific enough — for example, two rows in `magicprefix.txt` both have the name `Stout`, but they belong to different groups. In cases like that, you can pass `rowIdentifier` an **object** instead of a string, listing several columns that **all** need to match.
 
-- Works on **every supported `.txt` file**, including Row-ID files.
-- Column names follow the same rules as the `column` field — header names with spaces / punctuation map to PascalCase property names (e.g. `Min ac` → `MinAc`).
-- Unknown columns are rejected at validation time.
-- A dedicated `rowIdentifiers` (plural) property is also accepted as an alias if you prefer to keep `rowIdentifier` reserved for the legacy string form.
-- On **Row-ID files** (the duplicate-identifier files listed above), the launcher emits a **warning** if you list fewer than 2 identifier columns, because a single column is unlikely to uniquely match the intended row. The operation still runs — it's a heads-up, not an error.
+A row is only considered a match when **every** column you list has the value you specified (case-insensitive). The default identifier column is ignored — your list takes over.
+
+A few things to know:
+
+- This works on **every supported `.txt` file**, including Row-ID files.
+- Column names follow the same rule as elsewhere — strip spaces and punctuation, PascalCase (e.g. `Min ac` → `MinAc`).
+- Unknown columns are caught at validation time, so typos won't silently do nothing.
+- If you'd prefer to keep `rowIdentifier` for the simple string form, you can use `rowIdentifiers` (plural) as an alias for the object form.
+- On Row-ID files, listing only one column is rarely specific enough. The launcher will warn you if you do — the operation still runs, but it's a nudge to add another column.
 
 ### Example: target a specific monstats row by name + hardcore index
 
@@ -238,12 +329,14 @@ In addition to the default column / Row-ID / range matching, `rowIdentifier` als
 
 ## Row Ranges (multiple rows with one operation)
 
-In addition to a single identifier value or a single numeric Row-ID, `rowIdentifier` also accepts a **numeric index range** in the form `"start-end"`. The bounds are **inclusive** and **0-based data row indices** (the same `−2` rule as Row-ID lookup — editor row N → index `N − 2`).
+Need to apply the same change across a whole stretch of rows? Pass a **range** like `"50-100"` to `rowIdentifier`. The two numbers are 0-based data-row indices (same minus-two rule as Row-ID files), and both ends are **inclusive** — so `"50-100"` covers 51 rows.
 
-- Ranges work for **every supported `.txt` file**, including column-lookup files. A range always targets rows by data-row index and bypasses the identifier column entirely.
-- `start` and `end` can be given in either order; inverted ranges (e.g. `"100-50"`) are auto-normalized.
-- Out-of-bounds ranges (beyond the file's row count) are rejected with a descriptive error.
-- Whitespace around the numbers and the dash is tolerated, so `"50-100"` and `" 50 - 100 "` are equivalent.
+A few useful properties of ranges:
+
+- They work on **every** supported `.txt` file, even ones that normally use column lookup. A range always targets rows by index, so the file's identifier column is ignored.
+- The numbers can go in either direction — `"100-50"` is the same as `"50-100"`.
+- Whitespace around the numbers or the dash is tolerated. `"50-100"` and `" 50 - 100 "` both work.
+- If either end goes past the end of the file, the launcher rejects the operation with a clear error.
 
 ### Examples
 
@@ -274,28 +367,34 @@ Double the `manacost` across rows 300–400 of `skills.txt` using a parameter:
 > Ranges are validated the same way as regular operations — `column`, `operation`, and `parameterKey` / `updatedValue` still have to be valid for the target file.
 {.is-info}
 
-## `itemstatcost.txt` is not supported
+## One file the launcher will not touch
 
-The launcher intentionally rejects `itemstatcost.txt`. Attempts to target it will fail validation.
+> **Heads up:** `itemstatcost.txt` is **not** supported. Any plugin that targets it will fail validation. This is intentional — that file is too tightly coupled to the rest of the data for safe automated edits.
+{.is-warning}
 
 ---
 
 # 4. Multi-Column Updates and New Rows
 
+So far each operation has changed exactly one column on one row. Two shortcuts make life easier when you want to change a lot at once:
+
+- **`columns`** — change several columns on the same row(s) without repeating yourself.
+- **`addRow`** — add a brand-new row to a file.
+
 ## Multi-column updates: one `rowIdentifier`, many columns
 
-When you need to change several columns on the **same row** (or row range), you no longer need to repeat `file` / `rowIdentifier` for each column. Provide a `columns` array on a single operation — every entry in the array is applied to **every matched row** sharing that `rowIdentifier`.
+If you find yourself writing two operations that share the same `file` and `rowIdentifier` but only differ by `column`, stop — you can collapse them into a single operation by using a `columns` array.
 
-Each `columns` entry supports the following fields:
+Every entry in `columns` is applied to **every row matched by `rowIdentifier`**. Each entry can override the parent operation's settings if it needs to:
 
-| Field | Required | Purpose |
+| Field | Required | What it does |
 |---|---|---|
-| `column` | yes | Target column name on the row. |
-| `updatedValue` | no | Per-column override of the parent `updatedValue` (or the literal value for `addRow`). |
-| `parameterKey` | no | Per-column override of the parent `parameterKey`. |
-| `operation` | no | Per-column override of the parent `operation` (e.g. mix `replace` and `multiplyExisting` in one block). |
+| `column` | yes | The column to change on the matched row. |
+| `updatedValue` | no | A per-column override of the parent `updatedValue`. |
+| `parameterKey` | no | A per-column override of the parent `parameterKey`. |
+| `operation` | no | A per-column override of the parent `operation`, so you can mix `replace`, `multiplyExisting`, and `append` in one block. |
 
-When a per-column field is omitted, the value from the parent operation is used. This means the most common case — "apply the same `multiplyExisting` with the same `parameterKey` to a handful of damage columns" — collapses to a very small block.
+If you leave a field out of a `columns` entry, the value from the parent operation is used. That means the most common case — "multiply these four damage columns by the same parameter" — collapses to a very small, very tidy block.
 
 ### Example: scale all damage fields of a skill with one parameter
 
@@ -333,13 +432,15 @@ When a per-column field is omitted, the value from the parent operation is used.
 
 ## Adding new rows with `addRow`
 
-The `addRow` operation inserts a brand-new row into a target `.txt` file.
+`addRow` is the operation you use to insert a row that didn't exist before — for example, a brand-new skill or recipe.
 
-- Omit `rowIdentifier` (or leave it empty) to **append** the new row at the end of the file.
-- Provide a numeric, **0-based** `rowIdentifier` (e.g. `"5"`) to **insert** at that position. Valid range is `0` to `rowCount` inclusive (`rowCount` is equivalent to appending). Out-of-range or non-numeric identifiers are rejected at validation time.
-- New row column values come from the `columns` array (preferred) or from top-level `column` / `updatedValue`. At least one column must be provided.
-- Columns you do not list keep their default value. **Always populate any required identifier columns** (e.g. `Skill` on `skills.txt`, `Code` on `weapons.txt`) so downstream parsers and saves don't reject the row.
-- Per-column `operation` overrides are honored, but `addRow` defaults to `replace` semantics for each assignment (the row starts empty).
+How it works:
+
+- **Append** to the end of the file by leaving `rowIdentifier` out (or empty).
+- **Insert** at a specific position by giving a numeric, 0-based `rowIdentifier` like `"5"`. The valid range is `0` up to and including the file's row count (passing the row count is the same as appending). Anything else is rejected.
+- The new row's values come from the `columns` array (the recommended form) or from a top-level `column` / `updatedValue` if you only need to set one column. **At least one column must be provided.**
+- Any column you don't set keeps its default value. **Make sure to fill in the file's required identifier columns** — for example, `Skill` on `skills.txt` or `Code` on `weapons.txt` — otherwise the game's parser may reject the row entirely.
+- `addRow` always *writes* values, so per-column `operation` overrides are honored but the default behavior is plain `replace`.
 
 ### Example: append a new skill
 
@@ -373,12 +474,13 @@ The `addRow` operation inserts a brand-new row into a target `.txt` file.
 
 ---
 
-# 5. Power Techniques: Key Reuse
+# 5. Power Techniques: Reusing Parameters
 
-Efficiency matters. You don't need a separate parameter for every single field — map one UI knob to many operations.
+You don't need a separate slider for every column you change. **One parameter can drive many operations** — that's how a single "Damage Multiplier" knob can scale dozens of fields at once. The examples below show common patterns.
 
-## Example 1: The "Master Balance" Multiplier
-Scale both min and max damage of a skill with a single slider:
+## Example 1: one slider, both min and max damage
+
+Scale both min and max damage of a skill with a single multiplier:
 
 ```json
 [
@@ -399,8 +501,9 @@ Scale both min and max damage of a skill with a single slider:
 ]
 ```
 
-## Example 2: Uniform Level Caps
-Set the same `maxlvl` for several skills through one parameter:
+## Example 2: one slider, the same level cap on several skills
+
+Set the same `maxlvl` on several skills using a single parameter:
 
 ```json
 [
@@ -428,9 +531,9 @@ Set the same `maxlvl` for several skills through one parameter:
 ]
 ```
 
-## Example 3: Multi-file plugin with parameter tokens
+## Example 3: one file, several target files
 
-A single operations file can touch multiple target files. The example below buffs one weapon and one armor piece, changes a skill, and tweaks a magic prefix by Row-ID:
+A single operations file is allowed to touch as many `.txt` files as you like. The example below buffs one weapon, one piece of armor, a skill, and a magic prefix — all in one go, mixing literal values, parameter tokens, and a Row-ID lookup:
 
 ```json
 [
@@ -490,11 +593,13 @@ A single operations file can touch multiple target files. The example below buff
 
 # 6. String JSON Files
 
-In addition to excel `.txt` files, plugins can patch D2R's string tables — any `.json` file that lives under `data/local/lng/strings` (e.g. `item-runes.json`, `item-nameaffixes.json`, `ui.json`). The launcher resolves the strings directory automatically, alongside the excel folder.
+Want to rename a rune, change an item description, or rephrase a UI button? That's what string files are for. They live under `data/local/lng/strings` (for example, `item-runes.json`, `item-nameaffixes.json`, `ui.json`), and the launcher finds them automatically next to the excel folder.
 
-## Flat d2rr-style layout
+## A much simpler format
 
-String entries do **not** use `rowIdentifier` / `column` / `operation` / `updatedValue`. Instead, each entry is a flat object listing the target file, the D2R entry `Key`, and one or more language fields with the replacement text:
+String operations **do not** use `rowIdentifier`, `column`, `operation`, or `updatedValue`. The format is intentionally flat: you tell the launcher which file, which D2R entry `Key` to find, and what text to put in for one or more languages.
+
+Here's a single string entry:
 
 ```json
 {
@@ -508,23 +613,24 @@ String entries do **not** use `rowIdentifier` / `column` / `operation` / `update
 
 ## Fields
 
-| Field | Required | Purpose |
+| Field | Required | What it does |
 |---|---|---|
-| `file` | yes | A `.json` file name that exists under `data/local/lng/strings`. |
-| `Key` | yes | The D2R entry `Key` to match inside that file. |
-| Language fields | at least one | Any of the 13 recognized language codes (see below) with the replacement string. |
+| `file` | yes | A `.json` file name from `data/local/lng/strings` (e.g. `item-runes.json`). |
+| `Key` | yes | The D2R entry `Key` to find inside that file (the same `Key` you'd see if you opened the file in a text editor). |
+| Language fields | at least one | One or more language codes (see the list below) and the text you want to put in for each one. |
 
 ## Supported language codes
 
 `enUS`, `zhTW`, `deDE`, `esES`, `frFR`, `itIT`, `koKR`, `plPL`, `esMX`, `jaJP`, `ptBR`, `ruRU`, `zhCN`.
 
-## Replacement semantics
+## What gets changed (and what doesn't)
 
-- Only the language fields you list on the entry are overwritten on the matched D2R entry.
-- Every other language on that same entry — and every other entry in the file — is left completely untouched.
-- Any field that is not one of the recognized language codes (and is not `file`, `Key`, lowercase `key`, or `id`) is ignored. This is intentional so plugin authors can leave notes without breaking the format. The keys `file`, `Key` / `key`, and `id` are reserved.
-- Language-code matching is **case-insensitive**, but using the canonical casing (e.g. `enUS`, `zhTW`) is strongly recommended for readability and forward compatibility.
-- Parameter tokens (`{{parameter:key}}`) are **not** resolved inside string JSON values today — provide the final replacement text directly.
+A few things are worth knowing:
+
+- Only the language fields you list are overwritten. Every **other** language on the same entry — and every other entry in the file — is left alone.
+- Any field that **isn't** a recognized language code (and isn't `file`, `Key`, lowercase `key`, or `id`) is silently ignored. This is on purpose, so you can leave yourself notes inside an entry without breaking anything. The names `file`, `Key`/`key`, and `id` are reserved.
+- Language-code matching is case-insensitive, but please use the canonical casing (`enUS`, `zhTW`, …) so the file stays readable.
+- Parameter tokens (`{{parameter:key}}`) are **not** substituted inside string values yet — write the final text directly.
 
 ## Example
 
@@ -549,11 +655,11 @@ String entries do **not** use `rowIdentifier` / `column` / `operation` / `update
 
 # 7. Asset File Replacement
 
-In addition to editing `.txt` and string `.json` files, plugins can ship **arbitrary asset files** (sounds, textures, icons, etc.) and copy them into the mod folder at apply time. This is the right tool when you want to swap a `.flac`, `.dc6`, `.dds`, or any other binary file the game loads from disk.
+Plugins aren't limited to text data. You can also ship **arbitrary files** — sounds, icons, textures, anything binary — and have the launcher copy them into the mod's folder when the plugin is applied. This is the right tool whenever you want to swap a `.flac`, `.dc6`, `.dds`, or similar file that the game loads from disk.
 
-## Manifest schema
+## How it's declared in the manifest
 
-Asset replacements are declared on `plugininfo.json` via an optional `assets` array. Each entry is a `{ source, target }` pair:
+Asset replacements live on the `plugininfo.json` manifest, in an optional `assets` array. Each entry is a simple **`{ source, target }`** pair: where the file comes from inside your plugin, and where it should end up in the mod folder.
 
 ```json
 {
@@ -573,14 +679,14 @@ Asset replacements are declared on `plugininfo.json` via an optional `assets` ar
 }
 ```
 
-| Field | Required | Purpose |
+| Field | Required | What it does |
 |---|---|---|
-| `source` | yes | Path to the bundled asset, **relative to the plugin root**. Must live under the plugin's `assets/` folder (subdirectories under `assets/` are fine, e.g. `assets/sfx/item/foo.flac`). |
-| `target` | yes | Destination path **relative to the mod root** (the folder that contains `data/`). Must be a relative path; absolute paths and `..` segments are rejected. |
+| `source` | yes | Where the file lives inside your plugin zip, relative to the plugin root. Must sit under the `assets/` folder. Subfolders are fine — for example, `assets/sfx/item/foo.flac` is valid. |
+| `target` | yes | Where the file should be copied to, relative to the mod root (the folder that contains `data/`). Must be a relative path. Absolute paths and any `..` segments are rejected for safety. |
 
-## Multiple entries
+## Replacing more than one file
 
-The `assets` array supports as many `source` / `target` pairs as you need. Every entry is validated independently and applied in order:
+The `assets` array can contain as many entries as you need. Each pair is validated on its own and applied in order:
 
 ```json
 {
@@ -606,9 +712,9 @@ The `assets` array supports as many `source` / `target` pairs as you need. Every
 }
 ```
 
-## Plugin layout
+## What the plugin folder looks like
 
-A plugin that ships assets should look like this on disk (and inside the `.zip`):
+A plugin that ships assets should be laid out like this on disk (and inside the `.zip`):
 
 ```
 my-plugin/
@@ -619,24 +725,26 @@ my-plugin/
         └── my_icon.dc6
 ```
 
-## Apply-time semantics
+## What happens when the plugin is applied
 
-- The destination directory is created automatically if it does not already exist.
-- Each `target` is **overwritten** on apply (the file is opened with create-mode). If two entries share the same `target`, the later one wins — avoid duplicate targets.
-- Asset copies happen alongside the regular `.txt` / strings operations when the plugin is enabled, after the mod root is resolved from the launcher's excel directory.
-- Validation runs before any copying: empty `source` / `target`, sources outside `assets/`, and absolute or `..`-traversing targets all cause the plugin to be rejected with a descriptive error.
+A few things to keep in mind:
 
-## Pure-asset plugins
+- If the destination folder doesn't exist yet, the launcher creates it for you.
+- Each `target` is **overwritten** on every apply. If two entries point to the same `target`, the second one wins — so don't use duplicate targets unless you really mean it.
+- Asset copies happen at the same time as the regular `.txt` / strings operations, right after the launcher figures out where the mod folder lives.
+- Everything is validated **before** any copying starts. An empty `source` or `target`, a source outside `assets/`, or a target that is absolute or contains `..` will reject the plugin with a clear error.
 
-Asset-only plugins are fully supported — leave `files` and `parameters` as empty arrays (`[]`) and only populate `assets`. The bundled `soundplugintest` example does exactly this.
+## Asset-only plugins are fine
 
-## Combining assets with normal operations
+You don't have to ship any data edits if you don't want to. Set `files` and `parameters` to empty arrays (`[]`) and put everything in `assets`. The bundled `soundplugintest` example does exactly this.
 
-A single plugin can mix asset replacements with regular `.txt` / strings operations — the three manifest sections (`files`, `parameters`, `assets`) are independent and all run during the same plugin-apply pass:
+## Combining assets with data edits
 
-- Operations from `files` are processed by the normal excel / strings pipeline (using `parameters`).
+A single plugin can mix asset replacements with normal `.txt` / strings operations. The three sections of the manifest — `files`, `parameters`, and `assets` — are independent of each other and all run during the same apply pass:
+
+- Operations from `files` are processed by the normal excel / strings pipeline, using the values from `parameters`.
 - Every entry in `assets` is copied to its `target` under the mod root.
-- The mod root is resolved once per plugin, asset paths are validated up front, and a failure in either phase surfaces as a single plugin failure in the launcher log.
+- The mod root is resolved once per plugin, asset paths are validated up front, and any failure in either phase shows up as a single plugin failure in the launcher log.
 
 ### Example: combined manifest
 
@@ -666,7 +774,7 @@ A single plugin can mix asset replacements with regular `.txt` / strings operati
 }
 ```
 
-With a matching `skill-overrides.json` targeting `skills.txt`, this single plugin both rewrites excel data and replaces the `.flac` asset on the same launch.
+With a matching `skill-overrides.json` targeting `skills.txt`, this single plugin both rewrites excel data **and** replaces the `.flac` asset on the same launch.
 
 ### Combined plugin layout
 
@@ -685,28 +793,32 @@ my-plugin/
 
 # 8. Sharing on GitHub Discussions
 
-To share your plugin through the launcher's **User Plugins** page, create a post in the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub. The launcher scrapes discussion posts and requires specific fields in the post body:
+Once your plugin works locally, you can share it with everyone else. The launcher's **User Plugins** page reads from the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub, so creating a post there is all it takes to publish.
 
-- **`Title:`** Your Plugin Name — displayed as the plugin title in the launcher.
-- **`Desc:`** or **`Description:`** A short summary — displayed under the title.
-- **`Mod:`** / **`ModVer:`** / **`ModVersion:`** followed by a version in `#.#.#` format — displayed next to the title. Posts without a valid mod version are not loaded.
-- **`.zip` attachment**: Attach the plugin zip file to the post. Posts without a `.zip` attachment are not loaded.
+For your post to be picked up, the body needs four things:
 
-The `.zip` must still contain a valid `plugininfo.json` with all required fields (`name`, `version`, `modVersion`, and at least one of `files` / `assets`). The launcher validates the archive on install.
+- **A title line** — `Title: Your Plugin Name`. This shows up as the plugin title in the launcher.
+- **A description line** — `Desc:` or `Description:` followed by a short summary. Displayed under the title.
+- **A mod version line** — `Mod:`, `ModVer:`, or `ModVersion:` followed by a version in `#.#.#` format (e.g. `3.0.7`). Posts without a valid mod version are skipped.
+- **A `.zip` attachment** — drag your plugin zip into the post. Posts without a zip are skipped too.
+
+The zip itself still has to contain a valid `plugininfo.json` with all the required fields (`name`, `version`, `modVersion`, and at least one of `files` / `assets`). The launcher validates the archive when a player installs the plugin.
 
 ---
 
 # 9. Authoring Checklist
 
-1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all of your operation files in `files` and/or asset entries in `assets`. At least one of `files` / `assets` must be non-empty (pure-asset plugins are fully supported — see [Section 7](#7-asset-file-replacement)).
-2. **modVersion**: Include a `modVersion` field in `#.#.#` format matching the mod version your plugin targets. This is required.
-3. **Row identification (excel)**: Use the identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, remember the `−2` rule. For bulk edits, use a `"start-end"` range (e.g. `"50-100"`) to target many rows with a single operation. To override the default match logic, supply an object `rowIdentifier` listing `{column: expectedValue}` pairs — list at least two columns on Row-ID files or you'll get a warning.
-4. **Column names (excel)**: `column` must match a property name on the target entry (case-insensitive). Header names with spaces or punctuation (e.g. `Min ac`) map to PascalCase property names (e.g. `MinAc`).
-5. **Strings schema**: For `.json` files under `data/local/lng/strings`, use the flat `{ file, Key, <languageCode>: "…" }` layout from [Section 6](#6-string-json-files). Only listed language fields are overwritten.
-6. **Asset replacements**: To swap binary game files (sounds, icons, textures, …), declare an `assets` array in `plugininfo.json` with `{ source, target }` pairs. Sources must live under the plugin's `assets/` folder; targets are mod-root-relative. Multiple entries are supported. See [Section 7](#7-asset-file-replacement).
-7. **Multi-column updates**: When changing several columns on the same row, prefer a single operation with a `columns` array over many duplicated operations — it's terser and shares one `rowIdentifier`.
-8. **New rows**: Use `"operation": "addRow"` to append (no `rowIdentifier`) or insert at a 0-based index. Make sure to populate the file's identifier column(s) in the `columns` array.
-9. **Key Consistency**: Match your `parameterKey` exactly to the `key` in the manifest.
-10. **Validation**: The launcher rejects plugins that reference unknown files, columns, or parameters; it also rejects file paths that traverse outside the plugin archive. Read the error list it produces.
+If you're about to publish a plugin, walk down this list. If you can tick all the boxes, you're in good shape.
+
+1. **Manifest first.** Your `plugininfo.json` is valid JSON. It lists every operation file under `files`, every asset under `assets`, or both. At least one of `files` / `assets` is non-empty. (Pure-asset plugins are perfectly fine — see [Section 7](#7-asset-file-replacement).)
+2. **`modVersion` is set.** Use `#.#.#` format and match the mod version your plugin targets. Without it, the plugin is rejected.
+3. **Rows are identified correctly (excel).** You're using the right identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, you've remembered the minus-two rule. For bulk edits you can use a range like `"50-100"`. For tricky rows you can use the multi-column object form — and on Row-ID files, you've listed at least two columns to avoid the warning.
+4. **Column names are right (excel).** `column` matches a property on the target entry (case-insensitive). Header names with spaces or punctuation (like `Min ac`) become PascalCase (`MinAc`).
+5. **Strings use the simple format.** For `.json` files under `data/local/lng/strings`, you're using the flat `{ file, Key, <languageCode>: "…" }` shape from [Section 6](#6-string-json-files). Only the language fields you list get overwritten.
+6. **Asset entries are valid.** Each `assets` entry is a `{ source, target }` pair. Sources live under your `assets/` folder; targets are relative to the mod root. Multiple entries are fine. See [Section 7](#7-asset-file-replacement).
+7. **Multi-column updates are tidy.** When you change several columns on the same row, you've collapsed them into a single operation with a `columns` array instead of repeating yourself.
+8. **New rows are well-formed.** When using `addRow`, you've populated the file's required identifier column(s) inside the `columns` array. Skip `rowIdentifier` to append, or pass a 0-based index to insert.
+9. **Parameter keys match.** Every `parameterKey` you reference matches a `key` you actually declared in the manifest.
+10. **Listen to the validator.** The launcher rejects plugins that reference unknown files, columns, or parameters, and any path that tries to escape the plugin archive. If it does, read the error list it prints — it usually tells you exactly what to fix.
 
 Now go forth and break — I mean, *enhance* — the game responsibly. 🚀

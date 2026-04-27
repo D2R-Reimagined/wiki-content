@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-26T00:40:00.000Z
+date: 2026-04-27T13:27:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -55,8 +55,9 @@ Every plugin requires a manifest file named `plugininfo.json`. It defines the pl
 - **`modVersion`**: **Required.** The mod version this plugin targets, in `#.#.#` format (e.g. `3.0.7`). Plugins without a valid `modVersion` are rejected.
 - **`author`**: Optional. Displayed in the launcher.
 - **`description`**: Optional. Short description shown in the launcher.
-- **`files`**: **Required.** Relative paths to the JSON files containing your operations.
-- **`parameters`**: Optional. Defines the UI knobs the user will see. Each parameter needs `key`, `name`, and `defaultValue`. The `key` is what you reference from operations.
+- **`files`**: **Required when no `assets` are provided.** Relative paths to the JSON files containing your operations. May be `[]` if the plugin only ships asset replacements (see [Section 7](#7-asset-file-replacement)). At least one of `files` or `assets` must be non-empty.
+- **`parameters`**: Optional. Defines the UI knobs the user will see. Each parameter needs `key`, `name`, and `defaultValue`, and may optionally include a `description` (a short help text displayed alongside the parameter in the launcher). The `key` is what you reference from operations.
+- **`assets`**: Optional. An array of `{ source, target }` pairs that copies arbitrary files from the plugin's `assets/` folder into the mod folder at apply time. See [Section 7](#7-asset-file-replacement).
 
 ---
 
@@ -521,7 +522,8 @@ String entries do **not** use `rowIdentifier` / `column` / `operation` / `update
 
 - Only the language fields you list on the entry are overwritten on the matched D2R entry.
 - Every other language on that same entry — and every other entry in the file — is left completely untouched.
-- Any field that is not one of the recognized language codes (and is not `file` or `Key`) is ignored. This is intentional so plugin authors can leave notes without breaking the format.
+- Any field that is not one of the recognized language codes (and is not `file`, `Key`, lowercase `key`, or `id`) is ignored. This is intentional so plugin authors can leave notes without breaking the format. The keys `file`, `Key` / `key`, and `id` are reserved.
+- Language-code matching is **case-insensitive**, but using the canonical casing (e.g. `enUS`, `zhTW`) is strongly recommended for readability and forward compatibility.
 - Parameter tokens (`{{parameter:key}}`) are **not** resolved inside string JSON values today — provide the final replacement text directly.
 
 ## Example
@@ -690,13 +692,13 @@ To share your plugin through the launcher's **User Plugins** page, create a post
 - **`Mod:`** / **`ModVer:`** / **`ModVersion:`** followed by a version in `#.#.#` format — displayed next to the title. Posts without a valid mod version are not loaded.
 - **`.zip` attachment**: Attach the plugin zip file to the post. Posts without a `.zip` attachment are not loaded.
 
-The `.zip` must still contain a valid `plugininfo.json` with all required fields (`name`, `version`, `modVersion`, `files`). The launcher validates the archive on install.
+The `.zip` must still contain a valid `plugininfo.json` with all required fields (`name`, `version`, `modVersion`, and at least one of `files` / `assets`). The launcher validates the archive on install.
 
 ---
 
 # 9. Authoring Checklist
 
-1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all your operation files.
+1. **Manifest First**: Ensure your `plugininfo.json` is valid JSON and lists all of your operation files in `files` and/or asset entries in `assets`. At least one of `files` / `assets` must be non-empty (pure-asset plugins are fully supported — see [Section 7](#7-asset-file-replacement)).
 2. **modVersion**: Include a `modVersion` field in `#.#.#` format matching the mod version your plugin targets. This is required.
 3. **Row identification (excel)**: Use the identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, remember the `−2` rule. For bulk edits, use a `"start-end"` range (e.g. `"50-100"`) to target many rows with a single operation. To override the default match logic, supply an object `rowIdentifier` listing `{column: expectedValue}` pairs — list at least two columns on Row-ID files or you'll get a warning.
 4. **Column names (excel)**: `column` must match a property name on the target entry (case-insensitive). Header names with spaces or punctuation (e.g. `Min ac`) map to PascalCase property names (e.g. `MinAc`).

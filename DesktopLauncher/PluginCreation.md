@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-27T14:45:00.000Z
+date: 2026-04-28T06:45:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -28,9 +28,10 @@ Plugins can do three things, and you can mix any of them in a single plugin:
 
 - **Edit excel `.txt` files** — these are the spreadsheet-like data files (`skills.txt`, `weapons.txt`, etc.) that drive most game behavior.
 - **Edit string `.json` files** — these are the in-game text/translation files (`item-runes.json`, `ui.json`, etc.).
+- **Edit `missiles.json`** — the single JSON object at `data/hd/missiles/missiles.json` that maps missile keys to asset paths.
 - **Replace asset files** — sounds, textures, icons, anything binary.
 
-This guide explains each one, with worked examples. If you ever feel stuck, jump to **[Section 9 — Authoring Checklist](#9-authoring-checklist)** for a quick recap.
+This guide explains each one, with worked examples. If you ever feel stuck, jump to **[Section 10 — Authoring Checklist](#10-authoring-checklist)** for a quick recap.
 
 ---
 
@@ -86,7 +87,7 @@ These three fields **must** be present, or the launcher will refuse to load the 
 You also need **at least one** of the following two fields to be non-empty:
 
 - **`files`** — a list of operation files (other `.json` files in your zip) that describe the changes you want to make to excel `.txt` data. See **[Section 2](#2-the-instruction-set-json)**.
-- **`assets`** — a list of binary asset replacements (sounds, textures, etc.) you want to copy into the mod. See **[Section 7](#7-asset-file-replacement)**.
+- **`assets`** — a list of binary asset replacements (sounds, textures, etc.) you want to copy into the mod. See **[Section 8](#8-asset-file-replacement)**.
 
 If your plugin only changes excel/strings data, fill in `files` and leave `assets` as `[]`. If it only swaps assets, do the opposite. You can also do both.
 
@@ -116,10 +117,11 @@ So far the manifest has only described *who* the plugin is. The actual changes l
 
 ## Two flavors of operations
 
-There are two kinds of files you can target, and each has its own schema:
+There are three kinds of files you can target, and each has its own schema:
 
 1. **Excel (`.txt`) targets** — almost any `.txt` file from the game's base excel folder. The big exception is `itemstatcost.txt`, which the launcher refuses to touch.
 2. **Strings (`.json`) targets** — any `.json` file under `data/local/lng/strings`, such as `item-runes.json` or `ui.json`. Strings use a much simpler format described in **[Section 6](#6-string-json-files)** — read that one when you need to rename items, runes, or UI text.
+3. **Missiles (`missiles.json`) target** — the single JSON object at `data/hd/missiles/missiles.json`. It uses its own flat format described in **[Section 7](#7-the-missilesjson-file)** — read that one when you need to swap or add a missile asset path.
 
 The rest of this section is about **excel targets**.
 
@@ -653,7 +655,66 @@ A few things are worth knowing:
 
 ---
 
-# 7. Asset File Replacement
+# 7. The `missiles.json` File
+
+In addition to excel `.txt` files and string JSON files, the launcher supports edits to **`missiles.json`** — a single JSON object that maps a missile key to a string value (typically an asset path). The file lives at `data/hd/missiles/missiles.json`, alongside the strings folder under the mod data root, and the launcher resolves it automatically.
+
+Reach for this section when you want to swap an existing missile's asset path or register a brand-new missile key.
+
+## A flat format
+
+Missiles operations **do not** use `rowIdentifier`, `column`, `multiplyExisting`, or `append`. Each entry is a flat object that names the file, the `Key` to find, and the value to write:
+
+```json
+{
+  "file": "missiles.json",
+  "Key": "FireBolt",
+  "updatedValue": "data/hd/missiles/firebolt/firebolt.json"
+}
+```
+
+## Fields
+
+| Field | Required? | What it does |
+|---|---|---|
+| `file` | yes | Always `missiles.json`. The launcher routes this file to its own dispatcher; it is **not** treated as a strings translation file. |
+| `Key` | yes | The missile key inside `missiles.json` to update or add. Each `missiles.json` entry must include one. |
+| `updatedValue` | one of | The new value to write for `Key`. Supports `{{parameter:key}}` tokens. |
+| `parameterKey` | one of | Pulls the value from a parameter declared in the manifest. Tokens inside the resolved parameter value are also expanded. |
+| `operation` | no | `replace` *(the default)* overwrites the value for `Key`. `addRow` appends a brand-new key/value pair. No other operations are accepted. |
+
+You must provide either `updatedValue` or `parameterKey` — without one of them the entry is rejected at validation time.
+
+## What gets changed (and what doesn't)
+
+A few things are worth knowing:
+
+- The launcher reads and rewrites `missiles.json` **in place**, preserving the file's original property order and surrounding entries. Only the keys you list are touched.
+- `replace` requires the `Key` to already exist in `missiles.json`; otherwise the operation fails with a clear error.
+- `addRow` appends a brand-new key/value pair to the file. Use it only for keys that don't already exist — for keys that are already present, use `replace` (the default).
+- Even though `missiles.json` lives near the strings folder, it is **not** a strings file. The 13 language fields from [Section 6](#6-string-json-files) do **not** apply here — write the value as a single string.
+
+## Example
+
+```json
+[
+  {
+    "file": "missiles.json",
+    "Key": "FireBolt",
+    "updatedValue": "data/hd/missiles/firebolt/firebolt.json"
+  },
+  {
+    "file": "missiles.json",
+    "Key": "MyNewMissile",
+    "operation": "addRow",
+    "parameterKey": "myMissileAssetPath"
+  }
+]
+```
+
+---
+
+# 8. Asset File Replacement
 
 Plugins aren't limited to text data. You can also ship **arbitrary files** — sounds, icons, textures, anything binary — and have the launcher copy them into the mod's folder when the plugin is applied. This is the right tool whenever you want to swap a `.flac`, `.dc6`, `.dds`, or similar file that the game loads from disk.
 
@@ -791,7 +852,7 @@ my-plugin/
 
 ---
 
-# 8. Sharing on GitHub Discussions
+# 9. Sharing on GitHub Discussions
 
 Once your plugin works locally, you can share it with everyone else. The launcher's **User Plugins** page reads from the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub, so creating a post there is all it takes to publish.
 
@@ -806,19 +867,20 @@ The zip itself still has to contain a valid `plugininfo.json` with all the requi
 
 ---
 
-# 9. Authoring Checklist
+# 10. Authoring Checklist
 
 If you're about to publish a plugin, walk down this list. If you can tick all the boxes, you're in good shape.
 
-1. **Manifest first.** Your `plugininfo.json` is valid JSON. It lists every operation file under `files`, every asset under `assets`, or both. At least one of `files` / `assets` is non-empty. (Pure-asset plugins are perfectly fine — see [Section 7](#7-asset-file-replacement).)
+1. **Manifest first.** Your `plugininfo.json` is valid JSON. It lists every operation file under `files`, every asset under `assets`, or both. At least one of `files` / `assets` is non-empty. (Pure-asset plugins are perfectly fine — see [Section 8](#8-asset-file-replacement).)
 2. **`modVersion` is set.** Use `#.#.#` format and match the mod version your plugin targets. Without it, the plugin is rejected.
 3. **Rows are identified correctly (excel).** You're using the right identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, you've remembered the minus-two rule. For bulk edits you can use a range like `"50-100"`. For tricky rows you can use the multi-column object form — and on Row-ID files, you've listed at least two columns to avoid the warning.
 4. **Column names are right (excel).** `column` matches a property on the target entry (case-insensitive). Header names with spaces or punctuation (like `Min ac`) become PascalCase (`MinAc`).
 5. **Strings use the simple format.** For `.json` files under `data/local/lng/strings`, you're using the flat `{ file, Key, <languageCode>: "…" }` shape from [Section 6](#6-string-json-files). Only the language fields you list get overwritten.
-6. **Asset entries are valid.** Each `assets` entry is a `{ source, target }` pair. Sources live under your `assets/` folder; targets are relative to the mod root. Multiple entries are fine. See [Section 7](#7-asset-file-replacement).
-7. **Multi-column updates are tidy.** When you change several columns on the same row, you've collapsed them into a single operation with a `columns` array instead of repeating yourself.
-8. **New rows are well-formed.** When using `addRow`, you've populated the file's required identifier column(s) inside the `columns` array. Skip `rowIdentifier` to append, or pass a 0-based index to insert.
-9. **Parameter keys match.** Every `parameterKey` you reference matches a `key` you actually declared in the manifest.
-10. **Listen to the validator.** The launcher rejects plugins that reference unknown files, columns, or parameters, and any path that tries to escape the plugin archive. If it does, read the error list it prints — it usually tells you exactly what to fix.
+6. **Missiles entries are well-formed.** For `missiles.json`, you're using the flat `{ file, Key, updatedValue|parameterKey }` shape from [Section 7](#7-the-missilesjson-file). `replace` requires the key to already exist; use `addRow` to add a new key/value pair.
+7. **Asset entries are valid.** Each `assets` entry is a `{ source, target }` pair. Sources live under your `assets/` folder; targets are relative to the mod root. Multiple entries are fine. See [Section 8](#8-asset-file-replacement).
+8. **Multi-column updates are tidy.** When you change several columns on the same row, you've collapsed them into a single operation with a `columns` array instead of repeating yourself.
+9. **New rows are well-formed.** When using `addRow`, you've populated the file's required identifier column(s) inside the `columns` array. Skip `rowIdentifier` to append, or pass a 0-based index to insert.
+10. **Parameter keys match.** Every `parameterKey` you reference matches a `key` you actually declared in the manifest.
+11. **Listen to the validator.** The launcher rejects plugins that reference unknown files, columns, or parameters, and any path that tries to escape the plugin archive. If it does, read the error list it prints — it usually tells you exactly what to fix.
 
 Now go forth and break — I mean, *enhance* — the game responsibly. 🚀

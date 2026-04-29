@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-28T06:45:00.000Z
+date: 2026-04-29T03:45:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -141,18 +141,20 @@ Here are the fields in detail. Don't worry about absorbing every option at once 
 | `rowIdentifier` | yes | Picks **which row** to change. The exact value depends on the file (see [Section 3](#3-row-identification-rules-per-file)). It can also be a range like `"50-100"` for bulk edits, or an object listing several columns when one column isn't unique enough. |
 | `column` | yes (unless you use `columns`) | The column you want to change. Use the header name with spaces and punctuation removed, in PascalCase (e.g. `Min ac` → `MinAc`). Matching is case-insensitive. |
 | `columns` | no | Use this when you want to change **several columns on the same row(s)** in one operation. See [Multi-column updates](#multi-column-updates-one-rowidentifier-many-columns). |
-| `operation` | no | What kind of change to make. Defaults to `replace`. The four choices are explained right below. |
+| `operation` | no | What kind of change to make. Defaults to `replace`. The six choices are explained right below. |
 | `updatedValue` | sometimes | The new value, the multiplier, or the text to append. Required unless you're pulling the value from a parameter via `parameterKey`. |
 | `parameterKey` | no | Pulls the value from a player-facing parameter you declared in the manifest. Handy for sliders that affect many rows. |
 
-## The four operations
+## The six operations
 
-Pick one of these four verbs in the `operation` field:
+Pick one of these six verbs in the `operation` field:
 
 - **`replace`** *(the default)* — Overwrites the column with whatever you put in `updatedValue` (or the parameter value).
 - **`multiplyExisting`** — Reads the current value as a number and multiplies it. Useful for "double the damage" style tweaks. The current value must already be numeric.
 - **`append`** — Tacks your text onto the existing value, with the original wrapped in parentheses. For example, if a `calc` column reads `ln12` and your `updatedValue` is `+10*20`, the row ends up reading `(ln12)+10*20`. Mostly used to extend skill `calc` expressions without rewriting them.
 - **`addRow`** — Creates a brand-new row. See **[Adding new rows](#adding-new-rows-with-addrow)** for the full story.
+- **`cloneRow`** — Copies an existing row and either appends the clone to the end of the file or overwrites another row with it. See **[Cloning rows with `cloneRow`](#cloning-rows-with-clonerow)**.
+- **`swapRow`** — Exchanges two rows in place, with optional column overrides applied to each row after the swap. See **[Swapping rows with `swapRow`](#swapping-rows-with-swaprow)**.
 
 ## Parameter tokens
 
@@ -382,6 +384,8 @@ So far each operation has changed exactly one column on one row. Two shortcuts m
 
 - **`columns`** — change several columns on the same row(s) without repeating yourself.
 - **`addRow`** — add a brand-new row to a file.
+- **`cloneRow`** — duplicate an existing row, then optionally tweak a few columns.
+- **`swapRow`** — swap two rows in place, with optional column overrides applied after the swap.
 
 ## Multi-column updates: one `rowIdentifier`, many columns
 
@@ -472,6 +476,90 @@ How it works:
     { "column": "Output",      "updatedValue": "ssp" }
   ]
 }
+```
+
+## Cloning rows with `cloneRow`
+
+Reach for `cloneRow` whenever you'd otherwise hand-copy every column of an existing row just to tweak a few values. The launcher does the deep copy for you, then layers any column overrides you provide on top.
+
+How it works:
+
+- **`sourceRowIdentifier`** *(required)* — the row to copy from. Accepts a numeric 0-based index or a value of the file's default identifier column (case-insensitive — same matching rules as a normal `rowIdentifier`).
+- **`mode`** *(optional, defaults to `"add"`)* — controls where the clone lands:
+  - **`"add"`** — always appends the cloned row to the end of the file. Insertion at a specific index is **not** supported, so `rowIdentifier` must be omitted.
+  - **`"replace"`** — overwrites the row at `rowIdentifier` (numeric index or default identifier column value). `rowIdentifier` is required in this mode.
+- **`columns`** *(optional)* — column overrides applied on top of the clone, using the standard `replace` / `multiplyExisting` / `append` operators. Columns you don't list keep the source row's values.
+
+> `cloneRow` does not support inserting a clone at a specific position. Use `mode: "add"` (omit `rowIdentifier`) to append, or `mode: "replace"` with a `rowIdentifier` to overwrite an existing row.
+{.is-info}
+
+### Example: clone a `monstats.txt` row and rename it
+
+This example clones `monstats.txt` row `700`, appends the clone to the end of the file, and overrides the `Id` and `NameStr` columns on the new row:
+
+```json
+[
+  {
+    "file": "monstats.txt",
+    "operation": "cloneRow",
+    "mode": "add",
+    "sourceRowIdentifier": "700",
+    "columns": [
+      { "column": "Id",      "updatedValue": "skeleton1" },
+      { "column": "NameStr", "updatedValue": "Zombie" }
+    ]
+  }
+]
+```
+
+### Example: replace an existing row with a clone of another
+
+```json
+{
+  "file": "monstats.txt",
+  "operation": "cloneRow",
+  "mode": "replace",
+  "sourceRowIdentifier": "700",
+  "rowIdentifier": "773",
+  "columns": [
+    { "column": "NameStr", "updatedValue": "Skillname274" }
+  ]
+}
+```
+
+## Swapping rows with `swapRow`
+
+`swapRow` exchanges the contents of two rows in place. It's handy when two rows have grown to mean each other's identity (for example, you want the row at index 0 to become what's currently at index 773 and vice versa) and you'd otherwise need to hand-copy every column twice.
+
+How it works:
+
+- **`rowIdentifier`** *(required)* — the first row to swap (numeric 0-based index or default identifier column value).
+- **`swapRowIdentifier`** *(required)* — the second row to swap, using the same rules. The two rows must resolve to different positions; swapping a row with itself is rejected.
+- **`columns`** *(optional)* — column overrides applied **after** the swap to the row that ends up at `rowIdentifier` (i.e. the row originally at `swapRowIdentifier`).
+- **`swapColumns`** *(optional)* — column overrides applied **after** the swap to the row that ends up at `swapRowIdentifier` (i.e. the row originally at `rowIdentifier`). Same shape as `columns`.
+
+> Both override blocks run *after* the rows have been swapped, so the field names describe the row that finally sits at that position — not where it started.
+{.is-info}
+
+### Example: swap two `monstats.txt` rows and rename them
+
+This example swaps `monstats.txt` row `0` with row `773`, then sets the post-swap row 0's `NameStr` to `skeleton1` and the post-swap row 773's `NameStr` to `Skillname274`:
+
+```json
+[
+  {
+    "file": "monstats.txt",
+    "operation": "swapRow",
+    "rowIdentifier": "0",
+    "swapRowIdentifier": "773",
+    "columns": [
+      { "column": "NameStr", "updatedValue": "skeleton1" }
+    ],
+    "swapColumns": [
+      { "column": "NameStr", "updatedValue": "Skillname274" }
+    ]
+  }
+]
 ```
 
 ---
@@ -880,7 +968,9 @@ If you're about to publish a plugin, walk down this list. If you can tick all th
 7. **Asset entries are valid.** Each `assets` entry is a `{ source, target }` pair. Sources live under your `assets/` folder; targets are relative to the mod root. Multiple entries are fine. See [Section 8](#8-asset-file-replacement).
 8. **Multi-column updates are tidy.** When you change several columns on the same row, you've collapsed them into a single operation with a `columns` array instead of repeating yourself.
 9. **New rows are well-formed.** When using `addRow`, you've populated the file's required identifier column(s) inside the `columns` array. Skip `rowIdentifier` to append, or pass a 0-based index to insert.
-10. **Parameter keys match.** Every `parameterKey` you reference matches a `key` you actually declared in the manifest.
-11. **Listen to the validator.** The launcher rejects plugins that reference unknown files, columns, or parameters, and any path that tries to escape the plugin archive. If it does, read the error list it prints — it usually tells you exactly what to fix.
+10. **Cloned rows are well-formed.** When using `cloneRow`, you've supplied `sourceRowIdentifier`. With `mode: "add"` (the default) `rowIdentifier` is **omitted** — the clone is always appended. With `mode: "replace"` you've supplied a `rowIdentifier` for the row to overwrite.
+11. **Swapped rows are unambiguous.** When using `swapRow`, both `rowIdentifier` and `swapRowIdentifier` are present and resolve to different rows. Remember `columns` targets the row that ends up at `rowIdentifier` after the swap, and `swapColumns` targets the row that ends up at `swapRowIdentifier`.
+12. **Parameter keys match.** Every `parameterKey` you reference matches a `key` you actually declared in the manifest.
+13. **Listen to the validator.** The launcher rejects plugins that reference unknown files, columns, or parameters, and any path that tries to escape the plugin archive. If it does, read the error list it prints — it usually tells you exactly what to fix.
 
 Now go forth and break — I mean, *enhance* — the game responsibly. 🚀

@@ -17,21 +17,21 @@ This guide walks you through writing your own plugin for the **Reimagined Launch
 A plugin is just a **zip file** that the launcher unpacks and reads. Inside that zip you describe:
 
 1. **Who you are** — your plugin's name, version, and a short description.
-2. **What knobs you want the player to see** — sliders or text boxes (the launcher calls these *parameters*).
+2. **What options you want the player to see** — text boxes, checkboxes, or other player-facing settings. The launcher calls these *parameters*.
 3. **What you want to change in the game** — for example, "double the damage of Fire Bolt", "rename the Doom rune", or "swap the gem pickup sound".
 
 The launcher applies your changes when the game launches and never edits the game's original files directly — it builds a fresh, modified copy each time.
 
-## The three kinds of changes you can make
+## The four kinds of changes you can make
 
-Plugins can do three things, and you can mix any of them in a single plugin:
+Plugins can do four things, and you can mix any of them in a single plugin:
 
 - **Edit excel `.txt` files** — these are the spreadsheet-like data files (`skills.txt`, `weapons.txt`, etc.) that drive most game behavior.
 - **Edit string `.json` files** — these are the in-game text/translation files (`item-runes.json`, `ui.json`, etc.).
 - **Edit `missiles.json`** — the single JSON object at `data/hd/missiles/missiles.json` that maps missile keys to asset paths.
 - **Replace asset files** — sounds, textures, icons, anything binary.
 
-This guide explains each one, with worked examples. If you ever feel stuck, jump to **[Section 10 — Authoring Checklist](#10-authoring-checklist)** for a quick recap.
+This guide explains each one, with worked examples. If you ever feel stuck, jump to **[Section 11 — Authoring Checklist](#11-authoring-checklist)** for a quick recap.
 
 ---
 
@@ -102,6 +102,7 @@ These improve the player's experience but aren't strictly required:
   - **`name`** — the human-friendly label the player sees.
   - **`defaultValue`** — the value the parameter starts at.
   - **`description`** *(optional)* — a short help text shown next to the knob.
+  - **`type`** *(optional)* — controls how the parameter is rendered. Missing or `"text"` = the existing free-form textbox; `"checkbox"` = a true/false checkbox/switch. See **[Section 9](#9-optional-parameter-types-and-conditions)** for details.
 
 > **Tip:** keep your parameter `key` values short and lowercase (e.g. `damageMultiplier`, `manaCost`). You'll be typing them a lot.
 {.is-info}
@@ -115,7 +116,7 @@ So far the manifest has only described *who* the plugin is. The actual changes l
 - a **single operation object**, or
 - an **array of operation objects** (most plugins use an array because they make several changes).
 
-## Two flavors of operations
+## Operation target types
 
 There are three kinds of files you can target, and each has its own schema:
 
@@ -144,6 +145,7 @@ Here are the fields in detail. Don't worry about absorbing every option at once 
 | `operation` | no | What kind of change to make. Defaults to `replace`. The six choices are explained right below. |
 | `updatedValue` | sometimes | The new value, the multiplier, or the text to append. Required unless you're pulling the value from a parameter via `parameterKey`. |
 | `parameterKey` | no | Pulls the value from a player-facing parameter you declared in the manifest. Handy for sliders that affect many rows. |
+| `condition` | no | Optional declarative condition that gates the **whole operation**. If a `columns` array is used, the condition controls whether the entire multi-column operation runs. Missing `condition` means the operation always applies. See **[Section 9](#9-optional-parameter-types-and-conditions)**. |
 
 ## The six operations
 
@@ -808,7 +810,7 @@ Plugins aren't limited to text data. You can also ship **arbitrary files** — s
 
 ## How it's declared in the manifest
 
-Asset replacements live on the `plugininfo.json` manifest, in an optional `assets` array. Each entry is a simple **`{ source, target }`** pair: where the file comes from inside your plugin, and where it should end up in the mod folder.
+Asset replacements live on the `plugininfo.json` manifest, in an optional `assets` array. Each entry is at minimum a **`{ source, target }`** pair — where the file comes from inside your plugin and where it should end up in the mod folder — and may also include an optional `condition` that gates whether the copy runs.
 
 ```json
 {
@@ -832,6 +834,7 @@ Asset replacements live on the `plugininfo.json` manifest, in an optional `asset
 |---|---|---|
 | `source` | yes | Where the file lives inside your plugin zip, relative to the plugin root. Must sit under the `assets/` folder. Subfolders are fine — for example, `assets/sfx/item/foo.flac` is valid. |
 | `target` | yes | Where the file should be copied to, relative to the mod root (the folder that contains `data/`). Must be a relative path. Absolute paths and any `..` segments are rejected for safety. |
+| `condition` | no | Optional declarative condition that gates whether the asset is copied. Missing `condition` means the asset is always copied. See **[Section 9](#9-optional-parameter-types-and-conditions)**. |
 
 ## Replacing more than one file
 
@@ -935,12 +938,366 @@ my-plugin/
     └── item_gem_hd.flac
 ```
 
-> Parameter tokens (`{{parameter:key}}`) are only resolved inside excel operations — asset `source` / `target` strings are **not** templated. Use literal paths there.
+> Asset `source` / `target` paths are **not** templated — use literal paths there. Parameter tokens (`{{parameter:key}}`) are only supported where they are explicitly documented, namely excel operation values (Sections 2–5) and `missiles.json` `updatedValue` (Section 7).
 {.is-info}
 
 ---
 
-# 9. Sharing on GitHub Discussions
+# 9. Optional Parameter Types and Conditions
+
+Up to here every parameter has been a free-form text box, and every operation and asset entry has been applied unconditionally. Two small, fully **backward-compatible** extensions let plugin authors expose feature toggles and skip individual operations or asset copies based on those toggles — all without introducing any scripting.
+
+If your plugin doesn't use either of these features, you don't need to change anything: missing `type` fields and missing `condition` blocks behave exactly as the rest of this guide describes.
+
+## Parameter Types
+
+Every parameter declared in `plugininfo.json` may include an optional **`type`** field that controls how the launcher renders the parameter in the plugin UI.
+
+| `type` value | Behavior |
+|---|---|
+| *(missing)* or `"text"` | The existing free-form textbox. The value is whatever the user typed. |
+| `"checkbox"` | A checkbox / switch. The launcher persists the value as the normalized string `"true"` or `"false"`. |
+
+For `parameterKey` lookups and `{{parameter:key}}` substitution, the **string value** of the parameter is used in both cases — nothing changes there. A checkbox parameter simply guarantees that value is `"true"` or `"false"`. Common boolean aliases (`1`/`0`, `yes`/`no`, `on`/`off`, `checked`) are accepted case-insensitively when reading older files, and the launcher normalizes them to `"true"` or `"false"` on save.
+
+### Text parameter (existing behavior)
+
+```json
+{
+  "key": "damageMultiplier",
+  "name": "Damage Multiplier",
+  "type": "text",
+  "defaultValue": "1.25",
+  "description": "Scales the chosen skill damage."
+}
+```
+
+A parameter with **no** `type` field behaves identically to a `text` parameter — existing plugins do not need to be updated.
+
+### Optional `group` (display-only)
+
+Any parameter may also declare an optional **`group`** string. The launcher renders all parameters that share the same group under a single section heading on the Plugins page. Grouping is purely visual and never affects parameter lookup, `{{parameter:key}}` substitution, condition evaluation, saving, or apply.
+
+```json
+{
+  "key": "enableCombinedSkillChanges",
+  "name": "Enable Combined Skill Changes",
+  "type": "checkbox",
+  "group": "All Condition Example",
+  "defaultValue": "false",
+  "description": "Master toggle for the all-condition example."
+}
+```
+
+Rules:
+
+- `group` is optional. Missing, null, or empty means the parameter is ungrouped and renders in the default flat area.
+- Groups are rendered in the order they first appear in the `parameters` array; parameter order within a group is preserved.
+- If no parameter declares a group, the existing flat layout is used.
+- If only one group exists, the heading is still rendered so authors can document plugin sections.
+- Existing plugins without `group` continue to render exactly as before.
+
+### Checkbox parameter
+
+```json
+{
+  "key": "enableBaalPortal",
+  "name": "Enable Baal Portal",
+  "type": "checkbox",
+  "defaultValue": "false",
+  "description": "Adds a town portal to Baal."
+}
+```
+
+## Conditional Operations and Assets
+
+Any operation entry inside a plugin operation file (Section 2 / Section 6 / Section 7), and any asset entry in the manifest (Section 8), may include an optional **`condition`** block. Before the operation or asset copy runs, the launcher evaluates the condition against the current parameter values:
+
+- if the condition evaluates to **true**, the operation/asset is applied as usual;
+- if the condition evaluates to **false**, the operation/asset is **skipped**;
+- if the `condition` field is **missing**, the operation/asset always applies (existing behavior).
+
+Conditions compare against the **effective parameter value**: the launcher uses `parameter.value` if the user has set one, otherwise it falls back to `parameter.defaultValue`. Boolean-like comparisons (`"true"` / `"false"`) are case-insensitive.
+
+> Conditions are pure **declarative JSON**. The launcher never evaluates scripts or arbitrary expressions — only the small set of shapes described below.
+{.is-info}
+
+### Conditional operation
+
+```json
+{
+  "file": "skills.txt",
+  "rowIdentifier": "Bind Demon",
+  "column": "calc1",
+  "operation": "replace",
+  "updatedValue": "100",
+  "condition": {
+    "parameterKey": "bindDemonAlwaysSucceeds",
+    "equals": "true"
+  }
+}
+```
+
+### Conditional asset
+
+```json
+{
+  "source": "assets/town-baal-only.ds1",
+  "target": "data/global/tiles/act1/town/example.ds1",
+  "condition": {
+    "all": [
+      { "parameterKey": "enableBaalPortal",     "equals": "true"  },
+      { "parameterKey": "enableTristramPortal", "equals": "false" }
+    ]
+  }
+}
+```
+
+## Condition Syntax
+
+A condition is a JSON object that takes one of the following shapes. They can be nested freely.
+
+| Shape | Meaning |
+|---|---|
+| *(no `condition` field)* | Always apply the operation/asset (existing behavior). |
+| `{ "parameterKey": "k", "equals": "v" }` | True when the effective value of parameter `k` equals `"v"` (case-insensitive for boolean-like values). |
+| `{ "parameterKey": "k", "notEquals": "v" }` | True when the effective value of parameter `k` is **not** equal to `"v"`. |
+| `{ "all": [ ...conditions ] }` *(AND)* | True only when **every** nested condition is true. |
+| `{ "any": [ ...conditions ] }` *(OR)* | True when **at least one** nested condition is true. |
+| `{ "not": { ...condition } }` | Inverts the nested condition. |
+
+### `all` example — both portals at once
+
+```json
+{
+  "all": [
+    { "parameterKey": "enableBaalPortal",     "equals": "true" },
+    { "parameterKey": "enableTristramPortal", "equals": "true" }
+  ]
+}
+```
+
+### `any` example — either toggle is on
+
+```json
+{
+  "any": [
+    { "parameterKey": "enableBaalPortal",     "equals": "true" },
+    { "parameterKey": "enableTristramPortal", "equals": "true" }
+  ]
+}
+```
+
+### `not` example — only when novice mode is **off**
+
+```json
+{
+  "not": { "parameterKey": "enableNoviceMode", "equals": "true" }
+}
+```
+
+## Validation
+
+The launcher validates every condition when it loads the plugin. The most common errors are:
+
+- a `parameterKey` that doesn't match any declared parameter — the plugin is rejected with a clear error pointing at the offending key;
+- an empty or malformed condition object (e.g. neither `equals`/`notEquals`, nor `all`/`any`/`not`) — the plugin is rejected with a clear error;
+- nested conditions inside `all` / `any` / `not` are validated recursively using the same rules.
+
+Missing `condition` fields are explicitly fine: omitting `condition` is the documented way to say *"always apply this operation/asset"*.
+
+## Full Conditional Plugin Example
+
+This is a small, self-contained plugin that uses every option introduced in this section: a text parameter, three checkbox parameters, an unconditional operation, conditional operations using `equals` / `notEquals` / `all` / `any` / `not`, and conditional assets that pick between three asset variants.
+
+### `plugininfo.json`
+
+```json
+{
+  "name": "Town Portal Options",
+  "version": "1.0.0",
+  "modVersion": "3.0.7",
+  "author": "YourName",
+  "description": "Adds optional town portal destinations.",
+  "files": [
+    "operations.json"
+  ],
+  "parameters": [
+    {
+      "key": "manaCost",
+      "name": "Mana Cost",
+      "type": "text",
+      "defaultValue": "5"
+    },
+    {
+      "key": "enableBaalPortal",
+      "name": "Enable Baal Portal",
+      "type": "checkbox",
+      "defaultValue": "false"
+    },
+    {
+      "key": "enableTristramPortal",
+      "name": "Enable Tristram Portal",
+      "type": "checkbox",
+      "defaultValue": "false"
+    },
+    {
+      "key": "enableNoviceMode",
+      "name": "Novice Mode",
+      "type": "checkbox",
+      "defaultValue": "false"
+    }
+  ],
+  "assets": [
+    {
+      "source": "assets/town-baal-only.ds1",
+      "target": "data/global/tiles/act1/town/example.ds1",
+      "condition": {
+        "all": [
+          { "parameterKey": "enableBaalPortal",     "equals": "true"  },
+          { "parameterKey": "enableTristramPortal", "equals": "false" }
+        ]
+      }
+    },
+    {
+      "source": "assets/town-tristram-only.ds1",
+      "target": "data/global/tiles/act1/town/example.ds1",
+      "condition": {
+        "all": [
+          { "parameterKey": "enableBaalPortal",     "equals": "false" },
+          { "parameterKey": "enableTristramPortal", "equals": "true"  }
+        ]
+      }
+    },
+    {
+      "source": "assets/town-baal-and-tristram.ds1",
+      "target": "data/global/tiles/act1/town/example.ds1",
+      "condition": {
+        "all": [
+          { "parameterKey": "enableBaalPortal",     "equals": "true" },
+          { "parameterKey": "enableTristramPortal", "equals": "true" }
+        ]
+      }
+    }
+  ]
+}
+```
+
+> If **neither** portal checkbox is enabled, none of the three conditional town assets above are copied. That is the expected *"do nothing"* behavior — a missing match across all conditional asset variants simply means no asset is replaced for that target.
+{.is-info}
+
+### `operations.json`
+
+```json
+[
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "Town Portal",
+    "column": "Mana",
+    "operation": "replace",
+    "parameterKey": "manaCost"
+  },
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "Town Portal",
+    "column": "reqlevel",
+    "operation": "replace",
+    "updatedValue": "1",
+    "condition": {
+      "parameterKey": "enableNoviceMode",
+      "equals": "true"
+    }
+  },
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "Town Portal",
+    "column": "reqlevel",
+    "operation": "replace",
+    "updatedValue": "10",
+    "condition": {
+      "parameterKey": "enableNoviceMode",
+      "notEquals": "true"
+    }
+  },
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "Town Portal",
+    "column": "maxlvl",
+    "operation": "replace",
+    "updatedValue": "20",
+    "condition": {
+      "any": [
+        { "parameterKey": "enableBaalPortal",     "equals": "true" },
+        { "parameterKey": "enableTristramPortal", "equals": "true" }
+      ]
+    }
+  },
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "Town Portal",
+    "column": "manashift",
+    "operation": "replace",
+    "updatedValue": "0",
+    "condition": {
+      "not": { "parameterKey": "enableNoviceMode", "equals": "true" }
+    }
+  }
+]
+```
+
+## Bundled Reference Plugin for Visual Inspection
+
+A fully-validated reference plugin called **Conditional Options Example Plugin** ships with the launcher under `Assets/Plugins/conditional-options-example/`. It appears in the launcher's bundled/official plugin list (the in-app plugins shipped with the launcher itself, not the user-submitted plugins from GitHub Discussions) with that name and is the fastest way to see every shape from this section rendered in the UI. Every checkbox in the bundled plugin is named after the operation it controls so the relationship between a parameter and the data it edits is obvious at a glance.
+
+The bundled plugin demonstrates each condition shape against `skills.txt`. The mapping below is reproduced from the plugin's own `README.md`:
+
+### Operation → checkbox map
+
+| # | Operation (skills.txt) | Condition | Applies when |
+|---|---|---|---|
+| 1 | Fire Bolt → `Mana` ← `exampleTextValue` | *(none)* | Always. Demonstrates `parameterKey` text substitution. |
+| 2 | Fire Bolt → `reqlevel` ← `{{parameter:legacyTextValue}}` | *(none)* | Always. Demonstrates `{{parameter:key}}` token substitution against a legacy (no-`type`) parameter. |
+| 3 | Fire Bolt → `maxlvl` = `20` | `equals` on `enableFireBoltMaxLevel20` | The **Enable Fire Bolt Max Level 20** checkbox is checked. |
+| 4 | Teleport → `Mana` = `10` | `equals` on `useReducedTeleportMana` | The **Use Reduced Teleport Mana** checkbox is checked. |
+| 5 | Teleport → `reqlevel` = `12` | `notEquals "false"` on `enableTeleportLevelRequirement` | The **Enable Teleport Level Requirement** checkbox is checked. |
+| 6 | Charged Bolt → `maxlvl` = `30` | `all` of `enableCombinedSkillChanges`, `requireOptionA`, `requireOptionB`, `requireOptionC` | **All four** checkboxes are checked. |
+| 7 | Static Field → `reqlevel` = `5` | `any` of `enableEitherSkillChange`, `eitherOptionA`, `eitherOptionB` | **At least one** of those checkboxes is checked. |
+| 8 | Frozen Orb → `maxlvl` = `25` | `not` { `disableWhenCheckedExample` `equals` `"true"` } | The **Disable When Checked** checkbox is **unchecked**. |
+
+### Asset → checkbox map
+
+| Source asset | Condition | Copies when |
+|---|---|---|
+| `always-applied.txt` | *(none)* | Always. |
+| `fire-bolt-asset.txt` | `equals` on `enableFireBoltMaxLevel20` | Same checkbox as operation #3. |
+| `combined-asset.txt` | `all` of `enableCombinedSkillChanges` + the three `requireOption*` | Same combination as operation #6. |
+| `either-asset.txt` | `any` of `enableEitherSkillChange`, `eitherOptionA`, `eitherOptionB` | Same combination as operation #7. |
+| `unchecked-asset.txt` | `not` { `disableWhenCheckedExample` `equals` `"true"` } | Same rule as operation #8 (only when unchecked). |
+
+### File layout
+
+```
+conditional-options-example/
+├── plugininfo.json           Manifest with text + checkbox params and conditional assets.
+├── operations.json           Operation file with no-condition / equals / notEquals /
+│                             all / any / not examples.
+├── README.md                 Plain-English explanation of every condition shape.
+└── assets/
+    ├── always-applied.txt    Copied unconditionally.
+    ├── fire-bolt-asset.txt   Copied when enableFireBoltMaxLevel20 is true.
+    ├── combined-asset.txt    Copied only when enableCombinedSkillChanges AND
+    │                         requireOptionA AND requireOptionB AND requireOptionC are true.
+    ├── either-asset.txt      Copied when enableEitherSkillChange OR eitherOptionA OR
+    │                         eitherOptionB is true.
+    └── unchecked-asset.txt   Copied when disableWhenCheckedExample is NOT true.
+```
+
+> The data values written by the bundled plugin are illustrative — toggling its checkboxes is meant for **UI inspection**, not for balanced gameplay. Inspect `plugininfo.json`, `operations.json`, and `README.md` next to each other for the full schema surface area.
+{.is-info}
+
+---
+
+# 10. Sharing on GitHub Discussions
 
 Once your plugin works locally, you can share it with everyone else. The launcher's **User Plugins** page reads from the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub, so creating a post there is all it takes to publish.
 
@@ -955,7 +1312,7 @@ The zip itself still has to contain a valid `plugininfo.json` with all the requi
 
 ---
 
-# 10. Authoring Checklist
+# 11. Authoring Checklist
 
 If you're about to publish a plugin, walk down this list. If you can tick all the boxes, you're in good shape.
 
@@ -971,6 +1328,7 @@ If you're about to publish a plugin, walk down this list. If you can tick all th
 10. **Cloned rows are well-formed.** When using `cloneRow`, you've supplied `sourceRowIdentifier`. With `mode: "add"` (the default) `rowIdentifier` is **omitted** — the clone is always appended. With `mode: "replace"` you've supplied a `rowIdentifier` for the row to overwrite.
 11. **Swapped rows are unambiguous.** When using `swapRow`, both `rowIdentifier` and `swapRowIdentifier` are present and resolve to different rows. Remember `columns` targets the row that ends up at `rowIdentifier` after the swap, and `swapColumns` targets the row that ends up at `swapRowIdentifier`.
 12. **Parameter keys match.** Every `parameterKey` you reference matches a `key` you actually declared in the manifest.
-13. **Listen to the validator.** The launcher rejects plugins that reference unknown files, columns, or parameters, and any path that tries to escape the plugin archive. If it does, read the error list it prints — it usually tells you exactly what to fix.
+13. **Optional types and conditions are valid.** If you used `"type": "checkbox"` on any parameter, its `defaultValue` (and any saved `value`) is `"true"` or `"false"`. Every `condition` you wrote uses one of the supported shapes (`equals` / `notEquals` / `all` / `any` / `not`) and every `parameterKey` it references is declared in the manifest. Missing `type` and missing `condition` are always fine. See [Section 9](#9-optional-parameter-types-and-conditions).
+14. **Listen to the validator.** The launcher rejects plugins that reference unknown files, columns, or parameters, and any path that tries to escape the plugin archive. If it does, read the error list it prints — it usually tells you exactly what to fix.
 
 Now go forth and break — I mean, *enhance* — the game responsibly. 🚀

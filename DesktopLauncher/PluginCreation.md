@@ -29,6 +29,7 @@ Plugins can do four things, and you can mix any of them in a single plugin:
 - **Edit excel `.txt` files** — these are the spreadsheet-like data files (`skills.txt`, `weapons.txt`, etc.) that drive most game behavior.
 - **Edit string `.json` files** — these are the in-game text/translation files (`item-runes.json`, `ui.json`, etc.).
 - **Edit `missiles.json`** — the single JSON object at `data/hd/missiles/missiles.json` that maps missile keys to asset paths.
+- **Edit `monsters.json`** — the single JSON object at `data/hd/character/monsters.json` that maps monster keys to asset paths. It uses the same flat layout as `missiles.json`.
 - **Replace asset files** — sounds, textures, icons, anything binary.
 
 This guide explains each one, with worked examples. If you ever feel stuck, jump to **[Section 11 — Authoring Checklist](#11-authoring-checklist)** for a quick recap.
@@ -122,7 +123,7 @@ There are three kinds of files you can target, and each has its own schema:
 
 1. **Excel (`.txt`) targets** — almost any `.txt` file from the game's base excel folder. The big exception is `itemstatcost.txt`, which the launcher refuses to touch.
 2. **Strings (`.json`) targets** — any `.json` file under `data/local/lng/strings`, such as `item-runes.json` or `ui.json`. Strings use a much simpler format described in **[Section 6](#6-string-json-files)** — read that one when you need to rename items, runes, or UI text.
-3. **Missiles (`missiles.json`) target** — the single JSON object at `data/hd/missiles/missiles.json`. It uses its own flat format described in **[Section 7](#7-the-missilesjson-file)** — read that one when you need to swap or add a missile asset path.
+3. **Missiles (`missiles.json`) and Monsters (`monsters.json`) targets** — the single JSON objects at `data/hd/missiles/missiles.json` and `data/hd/character/monsters.json`. They share a flat format described in **[Section 7](#7-the-missilesjson-and-monstersjson-files)** — read that one when you need to swap or add a missile or monster asset path.
 
 The rest of this section is about **excel targets**.
 
@@ -745,21 +746,32 @@ A few things are worth knowing:
 
 ---
 
-# 7. The `missiles.json` File
+# 7. The `missiles.json` and `monsters.json` Files
 
-In addition to excel `.txt` files and string JSON files, the launcher supports edits to **`missiles.json`** — a single JSON object that maps a missile key to a string value (typically an asset path). The file lives at `data/hd/missiles/missiles.json`, alongside the strings folder under the mod data root, and the launcher resolves it automatically.
+In addition to excel `.txt` files and string JSON files, the launcher supports edits to two single-object JSON files that map a key to a single string value (the name of an entry from the corresponding game `.txt` file — **not** a file path):
 
-Reach for this section when you want to swap an existing missile's asset path or register a brand-new missile key.
+- **`missiles.json`** at `data/hd/missiles/missiles.json` — maps missile keys to a single entry name from `missiles.txt` (e.g. `safe_arrow`).
+- **`monsters.json`** at `data/hd/character/monsters.json` — maps monster keys to a single entry name from `monstats.txt` (e.g. `fallen1`).
+
+Both files share the same flat layout (a leading `dependencies` header followed by a flat `key` → `value` map), and the launcher resolves each one automatically from the mod data root. Reach for this section when you want to swap an existing missile or monster entry, or register a brand-new key.
 
 ## A flat format
 
-Missiles operations **do not** use `rowIdentifier`, `column`, `multiplyExisting`, or `append`. Each entry is a flat object that names the file, the `Key` to find, and the value to write:
+Missiles and monsters operations **do not** use `rowIdentifier`, `column`, `multiplyExisting`, or `append`. Each entry is a flat object that names the file, the `Key` to find, and the value to write:
 
 ```json
 {
   "file": "missiles.json",
   "Key": "FireBolt",
-  "updatedValue": "data/hd/missiles/firebolt/firebolt.json"
+  "updatedValue": "safe_arrow"
+}
+```
+
+```json
+{
+  "file": "monsters.json",
+  "Key": "Skeleton1",
+  "updatedValue": "fallen1"
 }
 ```
 
@@ -767,9 +779,9 @@ Missiles operations **do not** use `rowIdentifier`, `column`, `multiplyExisting`
 
 | Field | Required? | What it does |
 |---|---|---|
-| `file` | yes | Always `missiles.json`. The launcher routes this file to its own dispatcher; it is **not** treated as a strings translation file. |
-| `Key` | yes | The missile key inside `missiles.json` to update or add. Each `missiles.json` entry must include one. |
-| `updatedValue` | one of | The new value to write for `Key`. Supports `{{parameter:key}}` tokens. |
+| `file` | yes | Either `missiles.json` or `monsters.json`. The launcher routes each file to its own dispatcher; neither is treated as a strings translation file. |
+| `Key` | yes | The missile or monster key inside the target file to update or add. Each entry must include one. |
+| `updatedValue` | one of | The new value to write for `Key` — a single entry name from the corresponding `.txt` file (e.g. `safe_arrow` for `missiles.json`, `fallen1` for `monsters.json`), **not** a full file path. Supports `{{parameter:key}}` tokens. |
 | `parameterKey` | one of | Pulls the value from a parameter declared in the manifest. Tokens inside the resolved parameter value are also expanded. |
 | `operation` | no | `replace` *(the default)* overwrites the value for `Key`. `addRow` appends a brand-new key/value pair. No other operations are accepted. |
 
@@ -777,12 +789,13 @@ You must provide either `updatedValue` or `parameterKey` — without one of them
 
 ## What gets changed (and what doesn't)
 
-A few things are worth knowing:
+A few things are worth knowing — they apply identically to both files:
 
-- The launcher reads and rewrites `missiles.json` **in place**, preserving the file's original property order and surrounding entries. Only the keys you list are touched.
-- `replace` requires the `Key` to already exist in `missiles.json`; otherwise the operation fails with a clear error.
+- The launcher reads and rewrites the target file **in place**, preserving its original property order and surrounding entries. Only the keys you list are touched.
+- `replace` requires the `Key` to already exist in the target file; otherwise the operation fails with a clear error.
 - `addRow` appends a brand-new key/value pair to the file. Use it only for keys that don't already exist — for keys that are already present, use `replace` (the default).
-- Even though `missiles.json` lives near the strings folder, it is **not** a strings file. The 13 language fields from [Section 6](#6-string-json-files) do **not** apply here — write the value as a single string.
+- Even though `missiles.json` and `monsters.json` look like other JSON files in the mod, they are **not** strings files. The 13 language fields from [Section 6](#6-string-json-files) do **not** apply here — write the value as a single string.
+- Each operation targets exactly one file via its `file` field; you can mix `missiles.json` and `monsters.json` operations freely inside the same plugin operation array.
 
 ## Example
 
@@ -791,13 +804,24 @@ A few things are worth knowing:
   {
     "file": "missiles.json",
     "Key": "FireBolt",
-    "updatedValue": "data/hd/missiles/firebolt/firebolt.json"
+    "updatedValue": "safe_arrow"
   },
   {
     "file": "missiles.json",
     "Key": "MyNewMissile",
     "operation": "addRow",
     "parameterKey": "myMissileAssetPath"
+  },
+  {
+    "file": "monsters.json",
+    "Key": "Skeleton1",
+    "updatedValue": "fallen1"
+  },
+  {
+    "file": "monsters.json",
+    "Key": "MyNewMonster",
+    "operation": "addRow",
+    "parameterKey": "myMonsterAssetPath"
   }
 ]
 ```
@@ -938,7 +962,7 @@ my-plugin/
     └── item_gem_hd.flac
 ```
 
-> Asset `source` / `target` paths are **not** templated — use literal paths there. Parameter tokens (`{{parameter:key}}`) are only supported where they are explicitly documented, namely excel operation values (Sections 2–5) and `missiles.json` `updatedValue` (Section 7).
+> Asset `source` / `target` paths are **not** templated — use literal paths there. Parameter tokens (`{{parameter:key}}`) are only supported where they are explicitly documented, namely excel operation values (Sections 2–5) and `missiles.json` / `monsters.json` `updatedValue` (Section 7).
 {.is-info}
 
 ---
@@ -1011,7 +1035,7 @@ Rules:
 
 ## Conditional Operations and Assets
 
-Any operation entry inside a plugin operation file (Section 2 / Section 6 / Section 7), and any asset entry in the manifest (Section 8), may include an optional **`condition`** block. Before the operation or asset copy runs, the launcher evaluates the condition against the current parameter values:
+Any operation entry inside a plugin operation file (Section 2 / Section 6 / Section 7, including both `missiles.json` and `monsters.json` operations), and any asset entry in the manifest (Section 8), may include an optional **`condition`** block. Before the operation or asset copy runs, the launcher evaluates the condition against the current parameter values:
 
 - if the condition evaluates to **true**, the operation/asset is applied as usual;
 - if the condition evaluates to **false**, the operation/asset is **skipped**;
@@ -1321,7 +1345,7 @@ If you're about to publish a plugin, walk down this list. If you can tick all th
 3. **Rows are identified correctly (excel).** You're using the right identifier column from [Section 3](#3-row-identification-rules-per-file). For Row-ID files, you've remembered the minus-two rule. For bulk edits you can use a range like `"50-100"`. For tricky rows you can use the multi-column object form — and on Row-ID files, you've listed at least two columns to avoid the warning.
 4. **Column names are right (excel).** `column` matches a property on the target entry (case-insensitive). Header names with spaces or punctuation (like `Min ac`) become PascalCase (`MinAc`).
 5. **Strings use the simple format.** For `.json` files under `data/local/lng/strings`, you're using the flat `{ file, Key, <languageCode>: "…" }` shape from [Section 6](#6-string-json-files). Only the language fields you list get overwritten.
-6. **Missiles entries are well-formed.** For `missiles.json`, you're using the flat `{ file, Key, updatedValue|parameterKey }` shape from [Section 7](#7-the-missilesjson-file). `replace` requires the key to already exist; use `addRow` to add a new key/value pair.
+6. **Missiles and monsters entries are well-formed.** For `missiles.json` and `monsters.json`, you're using the flat `{ file, Key, updatedValue|parameterKey }` shape from [Section 7](#7-the-missilesjson-and-monstersjson-files). `replace` requires the key to already exist; use `addRow` to add a new key/value pair.
 7. **Asset entries are valid.** Each `assets` entry is a `{ source, target }` pair. Sources live under your `assets/` folder; targets are relative to the mod root. Multiple entries are fine. See [Section 8](#8-asset-file-replacement).
 8. **Multi-column updates are tidy.** When you change several columns on the same row, you've collapsed them into a single operation with a `columns` array instead of repeating yourself.
 9. **New rows are well-formed.** When using `addRow`, you've populated the file's required identifier column(s) inside the `columns` array. Skip `rowIdentifier` to append, or pass a 0-based index to insert.

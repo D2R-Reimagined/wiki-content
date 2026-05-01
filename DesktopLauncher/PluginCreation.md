@@ -140,20 +140,23 @@ Here are the fields in detail. Don't worry about absorbing every option at once 
 | Field | Required? | What it does |
 |---|---|---|
 | `file` | yes | The target `.txt` file, e.g. `skills.txt`. Anything in the base excel folder works **except** `itemstatcost.txt`. |
-| `rowIdentifier` | yes | Picks **which row** to change. The exact value depends on the file (see [Section 3](#3-row-identification-rules-per-file)). It can also be a range like `"50-100"` for bulk edits, or an object listing several columns when one column isn't unique enough. |
+| `rowIdentifier` | yes | Picks **which row(s)** to change. The exact value depends on the file (see [Section 3](#3-row-identification-rules-per-file)). It can also be a range like `"50-100"` for bulk edits, an object listing several columns when one column isn't unique enough, or a **list** of any of those when you want one operation to update several specific rows at once. |
 | `column` | yes (unless you use `columns`) | The column you want to change. Use the header name with spaces and punctuation removed, in PascalCase (e.g. `Min ac` → `MinAc`). Matching is case-insensitive. |
 | `columns` | no | Use this when you want to change **several columns on the same row(s)** in one operation. See [Multi-column updates](#multi-column-updates-one-rowidentifier-many-columns). |
-| `operation` | no | What kind of change to make. Defaults to `replace`. The six choices are explained right below. |
-| `updatedValue` | sometimes | The new value, the multiplier, or the text to append. Required unless you're pulling the value from a parameter via `parameterKey`. |
+| `operation` | no | What kind of change to make. Defaults to `replace`. The choices are explained right below. |
+| `updatedValue` | sometimes | The new value; the multiplier, the amount to add, the amount to subtract, or the divisor when you're working with the existing number; or the text to append. Required unless you're pulling the value from a parameter via `parameterKey`. |
 | `parameterKey` | no | Pulls the value from a player-facing parameter you declared in the manifest. Handy for sliders that affect many rows. |
 | `condition` | no | Optional declarative condition that gates the **whole operation**. If a `columns` array is used, the condition controls whether the entire multi-column operation runs. Missing `condition` means the operation always applies. See **[Section 9](#9-optional-parameter-types-and-conditions)**. |
 
-## The six operations
+## The available operations
 
-Pick one of these six verbs in the `operation` field:
+Pick one of these verbs in the `operation` field:
 
 - **`replace`** *(the default)* — Overwrites the column with whatever you put in `updatedValue` (or the parameter value).
 - **`multiplyExisting`** — Reads the current value as a number and multiplies it. Useful for "double the damage" style tweaks. The current value must already be numeric.
+- **`addExisting`** — Reads the current value as a number and adds your value to it. Useful for "give every level a +5 bonus" style tweaks. The current value must already be numeric.
+- **`subtractExisting`** — Reads the current value as a number and subtracts your value from it. Same numeric-only rule as `addExisting`.
+- **`divideExisting`** — Reads the current value as a number and divides it by your value. Handy for halving cooldowns and the like. The current value must be numeric and your value can't be zero.
 - **`append`** — Tacks your text onto the existing value, with the original wrapped in parentheses. For example, if a `calc` column reads `ln12` and your `updatedValue` is `+10*20`, the row ends up reading `(ln12)+10*20`. Mostly used to extend skill `calc` expressions without rewriting them.
 - **`addRow`** — Creates a brand-new row. See **[Adding new rows](#adding-new-rows-with-addrow)** for the full story.
 - **`cloneRow`** — Copies an existing row and either appends the clone to the end of the file or overwrites another row with it. See **[Cloning rows with `cloneRow`](#cloning-rows-with-clonerow)**.
@@ -179,9 +182,9 @@ For example, this operation lets the player decide Teleport's mana cost:
 
 # 3. Row Identification Rules Per File
 
-This is the section that trips most people up, so let's slow down. **Telling the launcher *which row* to change is the most important part of writing an operation.** The launcher offers four different ways to do it, and which one you use depends on the file you're editing.
+This is the section that trips most people up, so let's slow down. **Telling the launcher *which row* to change is the most important part of writing an operation.** The launcher offers five different ways to do it, and which one you use depends on the file you're editing and how many rows you want to touch in a single operation.
 
-## The four ways to identify a row
+## The five ways to identify a row
 
 1. **By a unique column value** *(the easiest, used by most files).*
    You give the value of the file's natural identifier column and the launcher finds the matching row.
@@ -197,6 +200,9 @@ This is the section that trips most people up, so let's slow down. **Telling the
 
 4. **By matching several columns at once.**
    When even the natural identifier isn't unique, you can pass an **object** of column/value pairs — the row must match **all** of them. Details in [Multi-column rowIdentifier override](#multi-column-rowidentifier-override).
+
+5. **By a list of rows.**
+   When you want one operation to touch several specific rows that aren't next to each other, pass a **list** — each entry can be any of the four shapes above (a name, a number, a range, or a multi-column object). Details in [Lists of row identifiers](#lists-of-row-identifiers).
 
 ## The "minus two" rule for Row-ID files
 
@@ -374,6 +380,62 @@ Double the `manacost` across rows 300–400 of `skills.txt` using a parameter:
 > Ranges are validated the same way as regular operations — `column`, `operation`, and `parameterKey` / `updatedValue` still have to be valid for the target file.
 {.is-info}
 
+## Lists of row identifiers
+
+When you want **one operation to update several rows that aren't next to each other**, hand `rowIdentifier` a **list** instead of a single value. Each item in the list is treated as its own row identifier and rows that match **any** entry in the list are included.
+
+The list can mix and match every form you've already learned:
+
+- A **name** like `"amazonjavazon"` — the launcher looks it up in the file's normal identifier column.
+- A **row number** like `"5"` — used on Row-ID files, same minus-two rule as everywhere else.
+- A **range** like `"50-55"` — the launcher includes every row in the range.
+- An **object** like `{ "Class": "skeleton", "Level": "5" }` — the row must match every column you list (the same all-columns-must-match rule as the [object form](#multi-column-rowidentifier-override)).
+
+A few things worth knowing:
+
+- The list form is **only** for `updateRow` operations (the default `replace`, `multiplyExisting`, and `append` work just fine on top of it). `addRow`, `cloneRow`, and `swapRow` always work on a single row, so they reject lists — the launcher will tell you exactly which entry to fix.
+- If a row is matched by more than one item in the list, the change is still applied to it just once. You don't have to worry about double-applying `multiplyExisting` because two list entries happened to overlap.
+- If any single entry in the list finds **zero** rows, the launcher stops with a clear error pointing at that entry. That keeps typos loud instead of silent.
+- An empty list, or a list whose entries all evaluate to nothing, is rejected at validation time.
+- Combine the list with a `columns` array and you can change several columns on several rows in one tidy operation.
+
+### Example: lower the level requirement on three Amazon skills at once
+
+```json
+{
+  "file": "skills.txt",
+  "rowIdentifier": [
+    "amazonjavazon",
+    "amazonbowzon",
+    "amazonlightningfury"
+  ],
+  "column": "reqlevel",
+  "operation": "replace",
+  "updatedValue": "1"
+}
+```
+
+### Example: bump the level on a hand-picked group of monstats rows
+
+This one mixes all four shapes in a single list — a name, a multi-column object, and a range — to show that you don't have to pick one style:
+
+```json
+{
+  "file": "monstats.txt",
+  "rowIdentifier": [
+    "skeleton1",
+    { "Class": "zombie", "hcIdx": "12" },
+    "50-55"
+  ],
+  "column": "Level",
+  "operation": "replace",
+  "updatedValue": "10"
+}
+```
+
+> If the same plugin needs to update lots of rows in completely different ways, keep using separate operations — the list form shines when several rows want the **same** change, not when each row needs something different.
+{.is-info}
+
 ## One file the launcher will not touch
 
 > **Heads up:** `itemstatcost.txt` is **not** supported. Any plugin that targets it will fail validation. This is intentional — that file is too tightly coupled to the rest of the data for safe automated edits.
@@ -491,7 +553,7 @@ How it works:
 - **`mode`** *(optional, defaults to `"add"`)* — controls where the clone lands:
   - **`"add"`** — always appends the cloned row to the end of the file. Insertion at a specific index is **not** supported, so `rowIdentifier` must be omitted.
   - **`"replace"`** — overwrites the row at `rowIdentifier` (numeric index or default identifier column value). `rowIdentifier` is required in this mode.
-- **`columns`** *(optional)* — column overrides applied on top of the clone, using the standard `replace` / `multiplyExisting` / `append` operators. Columns you don't list keep the source row's values.
+- **`columns`** *(optional)* — column overrides applied on top of the clone, using the standard `replace` / `multiplyExisting` / `addExisting` / `subtractExisting` / `divideExisting` / `append` operators. Columns you don't list keep the source row's values.
 
 > `cloneRow` does not support inserting a clone at a specific position. Use `mode: "add"` (omit `rowIdentifier`) to append, or `mode: "replace"` with a `rowIdentifier` to overwrite an existing row.
 {.is-info}
@@ -594,7 +656,40 @@ Scale both min and max damage of a skill with a single multiplier:
 ]
 ```
 
-## Example 2: one slider, the same level cap on several skills
+## Example 2: nudging numbers up, down, or in half
+
+The `addExisting`, `subtractExisting`, and `divideExisting` verbs work just like `multiplyExisting` — they read the current number out of the file, do the math against your value (or a `parameterKey`), and write the result back. They're the natural fit when you want a flat bonus, a flat penalty, or a "halve this" tweak instead of a percentage scale.
+
+```json
+[
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "Fire Bolt",
+    "column": "reqlevel",
+    "operation": "addExisting",
+    "updatedValue": "5"
+  },
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "Fire Bolt",
+    "column": "manacost",
+    "operation": "subtractExisting",
+    "updatedValue": "2"
+  },
+  {
+    "file": "skills.txt",
+    "rowIdentifier": "Fire Bolt",
+    "column": "ResultFlags",
+    "operation": "divideExisting",
+    "updatedValue": "2"
+  }
+]
+```
+
+> `divideExisting` won't accept a value of zero — the launcher rejects the operation rather than producing a broken number.
+{.is-info}
+
+## Example 3: one slider, the same level cap on several skills
 
 Set the same `maxlvl` on several skills using a single parameter:
 
@@ -624,7 +719,7 @@ Set the same `maxlvl` on several skills using a single parameter:
 ]
 ```
 
-## Example 3: one file, several target files
+## Example 4: one file, several target files
 
 A single operations file is allowed to touch as many `.txt` files as you like. The example below buffs one weapon, one piece of armor, a skill, and a magic prefix — all in one go, mixing literal values, parameter tokens, and a Row-ID lookup:
 
@@ -909,6 +1004,12 @@ A few things to keep in mind:
 - Each `target` is **overwritten** on every apply. If two entries point to the same `target`, the second one wins — so don't use duplicate targets unless you really mean it.
 - Asset copies happen at the same time as the regular `.txt` / strings operations, right after the launcher figures out where the mod folder lives.
 - Everything is validated **before** any copying starts. An empty `source` or `target`, a source outside `assets/`, or a target that is absolute or contains `..` will reject the plugin with a clear error.
+
+## The animdata pair stays in sync automatically
+
+The two binary files at `data/global/animdata.d2` and `data/global/exanimdata.d2` are read together by the game. If your plugin replaces only one of them, the launcher copies whichever file you replaced onto the other one too, so the two stay matched on disk. You don't need to ship both copies — pick whichever path matches your authoring workflow and the launcher fills in the other side for you. If you actually want the two files to differ, list them both as separate `assets` entries (each with its own `source`) and the launcher will leave them alone.
+
+The original contents of whichever file the launcher mirrored onto are still snapshotted before being overwritten, so disabling or removing the plugin restores both sides to their pre-plugin state.
 
 ## Asset-only plugins are fine
 

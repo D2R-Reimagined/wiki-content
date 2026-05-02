@@ -76,11 +76,10 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | --- | --- | --- | --- |
 | 3 Unique Rings  <br>OR  <br>3 Unique Amulets | ID Tome **\*** | \=  | Rare Jewel |
 | 3 Set Rings  <br>OR  <br>3 Set Amulets | ID Tome **\*** | \=  | Rare Jewel |
-| 5 Set Weapons  <br>OR  <br>5 Set Armors (Same Type)**\*\*** | ID Tome **\*** | \=  | Gem Cluster |
-| 5 Unique Weapons  <br>OR  <br>5 Unique Armors (Same Type)**\*\*** | ID Tome **\*** | \=  | Gem Cluster |
+| 5 Set Weapons  <br>OR  <br>5 Set Armors | ID Tome **\*** | \=  | Gem Cluster |
+| 5 Unique Weapons  <br>OR  <br>5 Unique Armors | ID Tome **\*** | \=  | Gem Cluster |
 
 **\*Tome is returned full**  
-**\*\*5 gloves, 5 boots, 5 chests, etc.**
 
 ## Reroll Recipes
 

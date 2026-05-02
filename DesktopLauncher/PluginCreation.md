@@ -2,7 +2,7 @@
 title: Plugin Authoring Guide
 description: A guide for how to write plugins for the D2R Reimagined Desktop launcher and GitHub Discussions plugins page.
 published: true
-date: 2026-04-29T03:45:00.000Z
+date: 2026-05-02T00:00:00.000Z
 tags: desktop launcher, launcher, desktop, plugin, plugin guide
 editor: markdown
 dateCreated: 2026-04-07T08:34:46.134Z
@@ -1001,8 +1001,8 @@ my-plugin/
 A few things to keep in mind:
 
 - If the destination folder doesn't exist yet, the launcher creates it for you.
-- Each `target` is **overwritten** on every apply. If two entries point to the same `target`, the second one wins — so don't use duplicate targets unless you really mean it.
-- Asset copies happen at the same time as the regular `.txt` / strings operations, right after the launcher figures out where the mod folder lives.
+- Each `target` is **overwritten** on every apply. If two enabled plugins point to the same `target`, the plugin **lower** in the launcher's plugin list wins (it is applied last) — so don't use duplicate targets unless you really mean it. The launcher emits a single warning per launch when it detects two or more enabled plugins claiming the same destination, identifying the losers and the load-order winner; identical-bytes overlaps are demoted to a log-only line so cooperative bundles do not produce noise.
+- **When** an asset is copied depends on what the destination is. Assets that target a parser-managed file (any excel `.txt`, `missiles.json`, `monsters.json`, or anything under `data/local/lng/strings/`) are **pre-staged** before launcher tweaks and plugin parser ops run on that file, so surgical edits layer cleanly on top of your bundled file. Every other asset (binary files, JSON files outside the parser surface, brand-new paths) is copied in a single pass at the end of the launch pipeline, after all parser work is complete. The full pipeline is documented in **[Section 10](#10-loading-and-staging-order)** — give it a read if you ship asset replacements for parser-managed files.
 - Everything is validated **before** any copying starts. An empty `source` or `target`, a source outside `assets/`, or a target that is absolute or contains `..` will reject the plugin with a clear error.
 
 ## The animdata pair stays in sync automatically
@@ -1422,7 +1422,91 @@ conditional-options-example/
 
 ---
 
-# 10. Sharing on GitHub Discussions
+# 10. Loading and Staging Order
+
+Up to here we have covered *what* a plugin can declare. This section covers *when* and *in what order* the launcher applies it, so you can predict exactly what ends up on disk when your plugin runs alongside the launcher's own tweaks and other plugins. None of the rules below require you to do anything new — they are documented so authors can reason about layering without having to read the launcher source.
+
+## When plugins are actually installed
+
+Enabling or disabling a plugin in the launcher UI **does not** write anything to the mod folder. Toggling the checkbox only flips an `IsEnabled` flag in the launcher's settings. Plugins are installed onto disk **after the player clicks Start Game and before the game process is launched**, as part of the launch pipeline described below.
+
+Disabling or deleting a plugin **does** immediately revert that plugin's tracked binary asset writes from the previous launch (so removing a plugin that swapped a sound file restores the original sound right away). Parser-managed files (excel, missiles, monsters, strings) are not reverted on toggle — they are reset to the clean copy on the next Start Game and then re-layered with whatever is still enabled.
+
+## Clean copies
+
+When the mod is installed or updated, the launcher captures a **clean copy** of every parser-managed file under the launcher's data directory. Today this covers:
+
+- The full excel directory tree (`data/global/excel/**` and `data/global/excel/base/**` if present).
+- `data/hd/missiles/missiles.json`.
+- `data/hd/character/monsters.json`.
+- The strings directory (`data/local/lng/strings/**`).
+- The launcher-tweak-managed files: layouts profile HD JSON, armor tweak JSONs, `desecratedzones.json`, and the vis JSONs.
+
+The clean copy is the launcher's recovery mechanism: every Start Game restores parser-managed files from the clean copy *before* anything else writes to them, so each launch starts from a known pristine baseline regardless of what the previous launch did. Plugin authors can rely on the fact that the file your operations see at apply time is either (a) a freshly-restored clean copy, or (b) a clean copy with another plugin's asset pre-staged on top — never leftover state from a prior session.
+
+## The launch pipeline
+
+When the player clicks Start Game, the launcher runs the steps below in order. Each step finishes completely before the next one starts.
+
+1. **Restore prior asset writes.** Every binary asset write tracked from the previous launch is reverted to its pre-plugin state. Brand-new files plugins introduced are deleted; replaced files are copied back from the per-launch backup. The launcher's manifest is then cleared, so the next steps see a true pre-plugin disk state.
+2. **Asset-collision warning sweep.** The launcher walks every enabled plugin's `assets` array, evaluates each entry's `condition`, and groups the surviving entries by absolute destination path. Any destination claimed by two or more plugins produces one warning identifying the losers and the load-order winner.
+3. **Per-excel-directory loop.** For each excel directory that exists on disk (`excel/` and, if present, `excel/base/`), the launcher does the following — *in this order, on that directory*:
+   1. Copy the clean variant of the directory over the target. Every `.txt` file is reset to its pristine state.
+   2. **Pre-stage plugin asset copies** whose `target` lives directly in this excel directory. Plugins are iterated in load-order; the last enabled plugin to claim a given destination wins.
+   3. Apply the launcher's own excel tweaks (charstats, skills, difficultylevels, states, properties, treasureclassex, sounds — whichever the player has toggled on).
+   4. Apply every enabled plugin's excel parser ops on `.txt` files in this directory, in load-order.
+4. **Restore-and-pre-stage the other parser-managed files** (mod-root scoped, runs once per launch). For each of `missiles.json`, `monsters.json`, the strings directory, the layouts profile HD JSON, the armor tweak files, `desecratedzones.json`, and the vis files:
+   1. Restore the file (or directory) from its clean copy.
+   2. Pre-stage any enabled plugin's asset copies that target this file. Last-writer-wins, in load-order.
+   3. Apply the launcher's own tweaks for that file (where applicable).
+5. **Mod-root plugin pass (single, last).** The launcher runs each enabled plugin once at mod-root scope, in load-order. This is where:
+   - `missiles.json`, `monsters.json`, and strings parser operations are applied (on top of the file produced by step 4).
+   - Every remaining `assets` entry — anything *not* targeting a parser-managed file — is copied. This includes binary files (sounds, textures, icons), JSON files outside the parser surface, and any brand-new path a plugin introduces. These are the assets tracked by the launcher's per-launch backup so they can be reverted on disable.
+   - The `data/global/animdata.d2` ↔ `data/global/exanimdata.d2` mirror is synchronized (see [Section 8](#8-asset-file-replacement)).
+6. **Game launch.** Only after every step above has succeeded does the launcher start the game executable.
+
+## What that means for any single file
+
+For any parser-managed file (an excel `.txt`, `missiles.json`, `monsters.json`, or a strings file), the effective layering at the moment the game reads it is:
+
+```
+clean copy  →  plugin asset (if any)  →  launcher tweaks  →  plugin parser ops
+```
+
+In plain English: a plugin asset replaces the whole file with the plugin's bundled version, the launcher's surgical tweaks then re-apply on top of that bundled file (so a player who has launcher tweaks toggled on still gets them), and finally every plugin's parser operations layer on top of that. This is the layering you should design around: if you ship a wholesale `monstats.txt` replacement and another plugin ships `updateRow` operations on `monstats.txt`, the row-level edits land on top of *your* file, in load-order.
+
+For any file outside the parser surface (binary assets, JSON files the launcher does not parse, plugin-introduced new paths), the layering is simpler — every enabled plugin's asset copy is applied in load-order, and the last writer wins.
+
+## Asset-vs-asset collisions
+
+When two or more enabled plugins declare an asset copy targeting the same destination, the plugin **lower** in the launcher's plugin list wins (it is applied last). This is true for both pre-staged and post-pass asset copies. The launcher emits one warning per real collision at the start of the launch (see step 2 above) so you and your players can see which override is actually in effect.
+
+If two plugins ship the *same bytes* at the same destination — common when one plugin re-bundles another's asset for compatibility — the warning is demoted to a log-only line, because there is no observable difference in the resulting file.
+
+## Asset vs. parser-op precedence
+
+Because asset copies are pre-staged in steps 3 and 4 and parser ops run after them, **parser operations always win against asset copies for the same file**. If plugin A ships an asset copy of `skills.txt` and plugin B has an `updateRow` parser op on a single column of `skills.txt`, B's edit lands on top of A's bundled file. Load order does not change this — the pipeline ordering does. If you want the entire file replaced *after* parser ops, that is not currently supported; plugin authors who need wholesale control over a parser-managed file should ship the bundled file as an asset and accept that other plugins' parser ops layer on top of it.
+
+## Excel directories run independently
+
+The per-directory loop in step 3 runs once for `excel/` and again for `excel/base/` if that directory exists in the mod. The two are physically distinct directories with different file contents, so each gets its own clean-copy restore, its own pre-stage pass, its own launcher tweaks, and its own pass of plugin parser ops. **Plugin asset copies, however, are not mirrored across the two directories** — an asset entry whose `target` is `data/global/excel/monstats.txt` only writes to `excel/`, not to `excel/base/`. If you actually want your file in both, declare two asset entries with two different `target` paths.
+
+Mod-root parser-op work (`missiles.json`, `monsters.json`, strings) and binary asset copies all run exactly once per launch.
+
+## Practical implications for plugin authors
+
+A short list of things that fall out of the pipeline above:
+
+- Toggling a plugin off and on without clicking Start Game has no effect on disk. Players are sometimes confused by this — when in doubt, click Start Game.
+- A wholesale asset replacement of a parser-managed file is rarely the right tool. If your edits can be expressed as parser ops, prefer that — they layer cleanly with other plugins. Reserve asset copies for binary files, files outside the parser surface, or wholesale replacements where you genuinely want every other parser op to layer on top of your file.
+- The launcher's surgical tweaks always re-apply on top of your asset. If you intentionally want to suppress a launcher tweak by shipping the file, expect the player's tweak toggles to override your asset's content for the columns that tweak touches. (A flag on plugins to opt out of launcher tweaks is planned but not yet shipped.)
+- Plugin order matters for asset-vs-asset conflicts only. If you want your asset to win against another plugin's asset on the same path, your plugin must be lower in the load-order list than theirs. The collision warning at launch identifies who currently wins.
+- Disabling a plugin reverts its tracked binary asset writes immediately, but parser-managed files only reset on the next Start Game. This is a deliberate choice — it keeps the launch pipeline the single point at which parser-managed state is rebuilt.
+- The launcher writes a per-launch diagnostic log that records every restore, pre-stage, parser op, and asset copy. If a plugin appears not to be applying as expected, the log is the fastest way to see what the launcher actually did.
+
+---
+
+# 11. Sharing on GitHub Discussions
 
 Once your plugin works locally, you can share it with everyone else. The launcher's **User Plugins** page reads from the [Plugins discussion category](https://github.com/D2R-Reimagined/reimagined-launcher/discussions/categories/plugins) on GitHub, so creating a post there is all it takes to publish.
 
@@ -1437,7 +1521,7 @@ The zip itself still has to contain a valid `plugininfo.json` with all the requi
 
 ---
 
-# 11. Authoring Checklist
+# 12. Authoring Checklist
 
 If you're about to publish a plugin, walk down this list. If you can tick all the boxes, you're in good shape.
 

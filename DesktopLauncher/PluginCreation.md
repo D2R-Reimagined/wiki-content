@@ -785,9 +785,9 @@ Want to rename a rune, change an item description, or rephrase a UI button? That
 
 ## A much simpler format
 
-String operations **do not** use `rowIdentifier`, `column`, `operation`, or `updatedValue`. The format is intentionally flat: you tell the launcher which file, which D2R entry `Key` to find, and what text to put in for one or more languages.
+String operations **do not** use `rowIdentifier`, `column`, or `updatedValue`. The format is intentionally flat: you tell the launcher which file, which D2R entry `Key` to use, and what text to put in for one or more languages. An optional `operation` field switches between updating an existing entry (`replace`, the default) and appending a brand-new entry (`addRow`).
 
-Here's a single string entry:
+Here's a single string entry that updates an existing translation:
 
 ```json
 {
@@ -804,23 +804,37 @@ Here's a single string entry:
 | Field | Required | What it does |
 |---|---|---|
 | `file` | yes | A `.json` file name from `data/local/lng/strings` (e.g. `item-runes.json`). |
-| `Key` | yes | The D2R entry `Key` to find inside that file (the same `Key` you'd see if you opened the file in a text editor). |
-| Language fields | at least one | One or more language codes (see the list below) and the text you want to put in for each one. |
+| `Key` | yes | For `replace`, the D2R entry `Key` to find inside that file. For `addRow`, the unique `Key` for the new entry; the launcher refuses to add it if that `Key` already exists in the file. |
+| `operation` | no | Either `replace` (default) or `addRow`. See the two sections below. |
+| Language fields | at least one | One or more language codes (see the list below) and the text you want to put in for each one. For `addRow`, `enUS` is required. |
 
 ## Supported language codes
 
 `enUS`, `zhTW`, `deDE`, `esES`, `frFR`, `itIT`, `koKR`, `plPL`, `esMX`, `jaJP`, `ptBR`, `ruRU`, `zhCN`.
 
-## What gets changed (and what doesn't)
+## `replace` (the default)
 
-A few things are worth knowing:
+If you don't specify `operation`, or you set it to `"replace"`, the launcher looks up the entry whose `Key` matches and overwrites just the language fields you listed:
 
 - Only the language fields you list are overwritten. Every **other** language on the same entry — and every other entry in the file — is left alone.
-- Any field that **isn't** a recognized language code (and isn't `file`, `Key`, lowercase `key`, or `id`) is silently ignored. This is on purpose, so you can leave yourself notes inside an entry without breaking anything. The names `file`, `Key`/`key`, and `id` are reserved.
+- Any field that **isn't** a recognized language code (and isn't `file`, `Key`, lowercase `key`, `id`, or `operation`) is silently ignored. This is on purpose, so you can leave yourself notes inside an entry without breaking anything. The names `file`, `Key`/`key`, `id`, and `operation` are reserved.
 - Language-code matching is case-insensitive, but please use the canonical casing (`enUS`, `zhTW`, …) so the file stays readable.
 - Parameter tokens (`{{parameter:key}}`) are **not** substituted inside string values yet — write the final text directly.
 
-## Example
+## `addRow` (append a brand-new entry)
+
+Set `"operation": "addRow"` when you want to introduce a brand-new translation row instead of changing an existing one. The launcher hands the entry to the underlying `D2RReimaginedTools.FileExtensions` translation parser, which:
+
+1. Verifies that no existing entry already uses your `Key` (case-insensitive). If one does, the plugin fails with an error rather than creating a duplicate.
+2. Reads the last entry in the file and assigns the new entry an `id` of `last id + 1` (or `0` if the file is empty). You do **not** supply `id` yourself.
+3. Writes all 13 language columns in the canonical D2R order (`enUS`, `zhTW`, `deDE`, `esES`, `frFR`, `itIT`, `koKR`, `plPL`, `esMX`, `jaJP`, `ptBR`, `ruRU`, `zhCN`).
+4. Uses your `Key` exactly as supplied — it is **not** looked up against existing entries.
+
+`enUS` is **required** on every `addRow` entry. The launcher rejects the plugin during validation if it's missing or empty. Any of the other 12 languages you omit (or leave empty) are populated with the `enUS` value, so it's always safe to ship an English-only `addRow` entry.
+
+## Examples
+
+A pair of `replace` entries (the historical, default shape):
 
 ```json
 [
@@ -835,6 +849,27 @@ A few things are worth knowing:
     "enUS": "NoDoom",
     "ptBR": "SemFatalidade",
     "frFR": "PasDeDévastation"
+  }
+]
+```
+
+Two `addRow` entries against `item-names.json` — the first ships English only (the other 12 columns will be filled with `"SAY YES"`), the second supplies overrides for Korean and German (the remaining 10 columns will be filled with `"SAY NO"`):
+
+```json
+[
+  {
+    "file": "item-names.json",
+    "Key": "yes1",
+    "operation": "addRow",
+    "enUS": "SAY YES"
+  },
+  {
+    "file": "item-names.json",
+    "Key": "no2",
+    "operation": "addRow",
+    "enUS": "SAY NO",
+    "koKR": "NO NO",
+    "deDE": "NOPE NOTTA NOTHING"
   }
 ]
 ```

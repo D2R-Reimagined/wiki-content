@@ -108,8 +108,8 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | Southern Worldstone Shard | Any Statue |     | \=  | Madawc's Ire Statue |
 | Deep Worldstone Shard | Any Statue |     | \=  | Bul-Kathos' Nightmare Statue |
 | Northern Worldstone Shard | Any Statue |     | \=  | Worusk's End Statue |
-| Any Set Armor or Ring/Amulet | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Set Item \*\*<br>Regenerates the same set item but with re-rolled stats.<br><span style="color:red">Upgrades/Corruption wiped.<br>If the set's base was previously up-tiered, then instead this <br>will change the set to a different one that can roll on that base type.</span> |
-| Any Unique Armor or Ring/Amulet | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Unique Item \*\* <br>Regenerates the same unique item but with re-rolled stats.<br><span style="color:red">Upgrades/Corruption wiped.<br>If the unique's base was previously up-tiered, then instead this <br>will change the unique to a different one that can roll on that base type.</span>|
+| Item (Set) | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Set Item \*\*<br>Regenerates the same set item but with re-rolled stats.<br><span style="color:red">Upgrades/Corruption wiped.<br>If the set's base was previously up-tiered, then instead this <br>will change the set to a different one that can roll on that base type.</span> |
+| Item (Unique)  | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Unique Item \*\* <br>Regenerates the same unique item but with re-rolled stats.<br><span style="color:red">Upgrades/Corruption wiped.<br>If the unique's base was previously up-tiered, then instead this <br>will change the unique to a different one that can roll on that base type.</span>|
 
 100% plvl = item's level is based 100% on character's level  
 100% ilvl = item's level is based 100% on input item's level

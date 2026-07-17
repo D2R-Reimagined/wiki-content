@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-07-03T00:29:33.997Z
+date: 2026-07-17T06:24:54.448Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -330,6 +330,75 @@ dateCreated: 2025-03-03T02:26:58.618Z
   <li>Diablood</li>
   <li>Skill Icons (all skills have been colorised and textured for each class, including Mercs)</li>
 </ul>
+<p>&nbsp;</p>
+<h2>Reimagined and D2RLoader</h2>
+<p><strong>D2RLoader</strong> provides <mark class="pen-green"><strong>LAN TCP/IP support</strong></mark> for Reimagined, including <mark class="pen-green"><strong>Reign of the Warlock (ROTW)</strong></mark>, without the former class and mechanic restrictions.</p>
+<blockquote>
+  <p><mark class="pen-red"><strong>notice:</strong> D2RLoader is still in active development, so installation steps and configuration options may change in future updates.</mark></p>
+</blockquote>
+<blockquote>
+  <p><mark class="pen-green"><strong>Before you begin:</strong></mark> Everyone joining the same TCP/IP game must use <strong>matching D2R, D2RLoader, and Reimagined compatibility-build versions</strong>.</p>
+</blockquote>
+<h3>1. Install the Reimagined compatibility build</h3>
+<p><a href="https://drive.google.com/drive/folders/1j9iWBFg5hsocjVa97jKQRX0Gv2AlCErf?usp=sharing"><mark class="pen-green"><strong>Download the Reimagined compatibility build from Google Drive</strong></mark></a>.</p>
+<blockquote>
+  <p><mark class="pen-red"><strong>Important:</strong></mark> The official Reimagined release on Nexus is <strong>not directly compatible with D2RLoader</strong>. Use the compatibility build linked above.</p>
+</blockquote>
+<p><strong>Download and extract the archive</strong>, then place the extracted <code>Reimagined</code> folder in:</p>
+<pre><code class="language-plaintext">Diablo II Resurrected\mods</code></pre>
+<h3>2. Install and configure D2RLoader</h3>
+<p>Open the <a href="https://discord.gg/eEHT2kcBMf"><mark class="pen-green"><strong>D2RLoader link</strong></mark></a>, then download the latest release from the project's <strong>Download</strong> category.</p>
+<p>After extracting the archive, move the <code>d2rloader</code> folder, <code>D2RCore.dll</code>, and <code>D2RLoader.exe</code> into the Diablo II Resurrected installation folder containing <code>D2R.exe</code>.</p>
+<figure class="image"><img src="https://i.imgur.com/MoZFytC.png" alt="Extracted D2RLoader files">
+  <figcaption>The three extracted D2RLoader items.</figcaption>
+</figure>
+<p>Open <code>d2rloader\config\d2rloader.toml</code> in a text editor and set Reimagined as the default mod:</p>
+<pre><code class="language-plaintext">default_mod = "Reimagined"</code></pre>
+<figure class="image"><img src="https://i.imgur.com/sOKfIun.png" alt="D2RLoader configuration file">
+  <figcaption>D2RLoader configuration file.</figcaption>
+</figure>
+<p><mark class="pen-green"><strong>Save the file with Ctrl+S</strong></mark>, close the editor, and launch the game by running <code>D2RLoader.exe</code>.</p>
+<h3>3. Set up Radmin VPN for LAN play</h3>
+<p>The game and loader are now ready. To play TCP/IP with friends over the internet, <strong>every player must join the same virtual LAN</strong>.</p>
+<p>Download and install <a href="https://www.radmin-vpn.com/"><mark class="pen-green"><strong>Radmin VPN</strong></mark></a>, then turn it on.</p>
+<figure class="image"><img src="https://i.imgur.com/BOILHmA.png" alt="Radmin VPN start screen">
+  <figcaption>Turn on Radmin VPN.</figcaption>
+</figure>
+<p>Open the <strong>Network</strong> menu. Create a private network for your group, or select <strong>Join Network</strong> to connect to an existing one.</p>
+<figure class="image"><img src="https://i.imgur.com/y8rOE3I.png" alt="Radmin VPN Network menu">
+  <figcaption>Open the Network menu and select Create Network or Join Network.</figcaption>
+</figure>
+<figure class="image"><img src="https://i.imgur.com/kRCg0PY.png" alt="Radmin VPN Join Network dialog">
+  <figcaption>Enter the network name and password.</figcaption>
+</figure>
+<p><mark class="pen-green"><strong>Example public network</strong></mark></p>
+<pre><code class="language-plaintext">Network name: D2RR TCP/IPPassword:     DeckardLikesWine@69</code></pre>
+<p>Enter the details and click <strong>Join</strong>. Radmin VPN should display the shared network and its connected players.</p>
+<figure class="image"><img src="https://i.imgur.com/XWZocSN.png" alt="Players connected through Radmin VPN">
+  <figcaption>Players connected to the same virtual network.</figcaption>
+</figure>
+<h3>4. Connect in-game through TCP/IP</h3>
+<p>From the character-selection screen, click <mark class="pen-green"><strong>TCP/IP</strong></mark> at the bottom center.</p>
+<ul>
+  <li><strong>Hosting:</strong> Click <strong>Host Game</strong>. Give the other players your Radmin VPN IP address.</li>
+  <li><strong>Joining:</strong> Click <strong>Join Game</strong>, enter the host's Radmin VPN IP address, and click <strong>OK</strong>.</li>
+</ul>
+<figure class="image"><img src="https://i.imgur.com/qhHWPIj.jpeg" alt="Hosting a Reimagined TCP/IP game">
+  <figcaption>Host Game and Join Game are available from the TCP/IP menu.</figcaption>
+</figure>
+<figure class="image"><img src="https://i.imgur.com/6Nz3Q4p.png" alt="Joining a Reimagined TCP/IP game">
+  <figcaption>Enter the host's Radmin VPN IP address to join.</figcaption>
+</figure>
+<h3>Multiplayer checklist</h3>
+<ul>
+  <li><strong>The same D2R version</strong></li>
+  <li><strong>The same D2RLoader version and configuration</strong></li>
+  <li><strong>The same Reimagined compatibility-build version</strong></li>
+  <li><strong>Matching mod files</strong></li>
+</ul>
+<blockquote>
+  <p><mark class="pen-red"><strong>Mismatched versions or files</strong> may cause connection failures, crashes, missing visuals, broken skills, or other unexpected behavior.</mark></p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>Reimagined and D2RLaunch</h2>
 <p>The launcher D2RLaunch created by the D2R Modding team who created and maintain the D2R mod ReMoDDeD works fine with Reimagined and can be used to launch and play the mod after installation is completed.</p>

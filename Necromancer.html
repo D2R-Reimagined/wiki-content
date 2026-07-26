@@ -2,7 +2,7 @@
 title: Necromancer
 description: Summary of changes to the Necromancer in Reimagined
 published: true
-date: 2026-03-03T02:48:32.083Z
+date: 2026-07-26T14:57:20.500Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:01:47.535Z
@@ -18,6 +18,7 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <p>Golem Mastery</p>
 <ul>
   <li>Now provides a bonus to each golems unique aura as well as providing base stat increases</li>
+  <li>Now applies damage 5% synergy per base level to all Golems damage curve instead of flat damage</li>
 </ul>
 <p>Raise Skeleton</p>
 <ul>
@@ -41,7 +42,8 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <p>Clay Golem</p>
 <ul>
   <li>Reworked so that synergies are baked into the base skill for damage and attack rating</li>
-  <li>Can now summon 2 at skill level 20+</li>
+  <li>Re-scaled to use damage curve, does not self grow with damage % until level 25 or higher due to early acquisition</li>
+  <li>Can now summon 2 at skill level 10+</li>
   <li>Now casts “Defiance” aura whose level is determined by hard points up to a max level of 13</li>
   <li>Gains flat damage as a synergy with Golem Mastery</li>
   <li>Slow changed from 0-75% diminishing returns to 25% at all levels.</li>
@@ -49,12 +51,14 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <p>Blood Golem</p>
 <ul>
   <li>Reworked so that synergies are baked into the base skill for damage and attack rating</li>
-  <li>Can now summon 2 at skill level 20+</li>
+  <li>Re-scaled to use damage curve, self scaling locked at 18+</li>
+  <li>Leech Scaling is now 1% baseline with 1% per level, still only provides 1% of self-leech to necromancer</li>
+  <li>Can now summon 2 at skill level 10+</li>
   <li>Now casts “Blood Magic” aura on the player causing spells to cost life instead of mana (this was removed from Succubi and Baal).<ul>
       <li>Aura also provides the player life after each kill 3 base + 1 per 3 levels</li>
     </ul>
   </li>
-  <li>Now casts “Magic Mastery Aura” which benefits skills that deal magic damage 10 + 1% per level to maximum of 50% (Necromancer spells only for now.)</li>
+  <li>Now casts “Magic Mastery Aura” which benefits skills that deal magic damage 10 + 1% per level to maximum of 50%</li>
   <li>Gains flat damage as a synergy with Golem Mastery</li>
 </ul>
 <p>Iron Golem</p>
@@ -62,11 +66,14 @@ dateCreated: 2025-04-14T02:01:47.535Z
   <li>Reworked so that synergies are baked into the base skill for damage and attack rating</li>
   <li>Aura changes from flat damage return to percent damage returned with a base of 150 + 15% per soft level</li>
   <li>Gains flat damage as a synergy with Golem Mastery</li>
+  <li>Re-scaled to use damage curve, self scaling locked at 12+</li>
+  <li>Has splash damage</li>
+  <li>Gains 1% PDR per level capping at 50%</li>
 </ul>
 <p>Fire Golem</p>
 <ul>
   <li>Reworked so that synergies are baked into the base skill for health, damage and attack rating</li>
-  <li>Can now summon 2 at skill level 20+</li>
+  <li>Can now summon 2 at skill level 10+</li>
   <li>Now casts an aura that grants allies flat fire damage instead of Holy Fire aura</li>
   <li>Now has built-in 50% splash damage but a global damage penalty of 40% on Normal, 20% on Nightmare, and 0% penalty in Hell.</li>
   <li>Now has a fire damage synergy with Golem Mastery for its base attack.</li>
@@ -76,10 +83,9 @@ dateCreated: 2025-04-14T02:01:47.535Z
 <ul>
   <li>Revives are no longer bound by a duration</li>
   <li>Revive monster velocity decreased from +200% to +130%</li>
-  <li>Pet maximum is now 5 baseline +1 per 5 base levels.</li>
+  <li>Now uses damage curve and uses the correct Skeleton Mastery field for synergy scaling</li>
+  <li>Pet maximum is now 5 baseline +1 per 5 base levels. (they do a lot more damage now but reduce their amount due to collision and balance reasons)</li>
   <li>No longer receive bonus life from Skeleton Mastery; now have a baseline 100% bonus life.</li>
-  <li>Now gain 8 base weapon damage per Skeleton Mastery level.</li>
-  <li>Now gain 4 base weapon damage per Revive skill level.</li>
 </ul>
 <p>&nbsp;</p>
 <h1>Poison and Bone Skills</h1>

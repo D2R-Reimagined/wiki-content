@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-04-23T02:47:33.069Z
+date: 2026-08-31T17:25:32.497Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z
@@ -128,17 +128,6 @@ When the item is returned as crafted, it will have a chance to have a set number
 | 1H Rare Weapon | Unique Jewel | CHAM Rune | BER Rune | Gem (Any) | \=  | +2 to All skills<br><br>+10-15% to All Elemental Damage<br><br>\-8-12% to All Enemy Elemental Resistances<br><br>1H Crafted Weapon |
 | 2H Rare Weapon | Unique Jewel | CHAM Rune | BER Rune | Gem (Any) | \=  | +2 to All skills<br><br>+15-20% to All Elemental Damage<br><br>\-12-16% to All Enemy Elemental Resistances<br><br>2H Crafted Weapon |
 
-## Arrows & Bolts
-
-| **Reagent** | **Reagent** | **Reagent** |     | **Result** |
-| --- | --- | --- | --- | --- |
-| Arrows  <br>OR  <br>Bolts | TIR Rune | Gem (Any) | \=  | Replenishing Quiver   <br>OR  <br>Replenishing Bolt Case<br><br>Req lvl: 6  <br>Adds 2-8 Dmg  <br>+10% Increased Attack Speed  <br>Replenishes Quantity |
-| Arrows  <br>OR  <br>Bolts | THUL Rune | Gem (Any) | \=  | Quiver of Piercing   <br>OR  <br>Bolt Case of Piercing<br><br>Reqlvl: 35  <br>Adds 4-12 Dmg  <br>+15% Increased Attack Speed  <br>+15% Pierce  <br>Replenishes Quantity |
-| Arrows  <br>OR  <br>Bolts | FAL Rune | Gem (Any) | \=  | Quiver of Slaying   <br>OR  <br>Bolt Case of Slaying<br><br>Req lvl: 65  <br>Adds 5-20 Dmg  <br>+20% Increased Attack Speed  <br>+15% Pierce (Bolt) or +25% Pierce (Quiver)  <br>+1 Bow & Crossbow Skills  <br>Replenishes Quantity |
-| Quiver of Slaying  <br>OR  <br>Bolt Case of Slaying | Rare Jewel | VEX Rune | \=  | Quiver of Amplified Slaying   <br>OR  <br>Bolt Case of Amplified Slaying<br><br>Req lvl: 85  <br>Adds 10-25 Dmg  <br>+20% Increased Attack Speed  <br>25% Pierce  <br>+2 Bow & Crossbow Skills  <br>20% Chance to Cast lvl10 Amplify Damage on Hit |
-| Quiver of Slaying  <br>OR  <br>Bolt Case of Slaying | Rare Jewel | OHM Rune | \=  | Quiver of Resistance Slaying   <br>OR  <br>Bolt Case of Resistance Slaying<br><br>Req lvl: 85  <br>Adds 10-25 Dmg  <br>+20% Increased Attack Speed  <br>+25% Pierce  <br>+2 Bow & Crossbow Skills  <br>20% Chance to Cast lvl5 Lower Resist on Hit |
-| Quiver of Slaying  <br>OR  <br>Bolt Case of Slaying | Rare Jewel | GUL Rune | \=  | Quiver of Pestilence   <br>OR  <br>Bolt Case of Pestilence<br><br>Req lvl: 85  <br>\-10% to Enemy Poison Resistance  <br>+10% to Poison Damage  <br>+20% Increased Attack Speed  <br>+25% Piercing Attack  <br>5% CTC Level 10 Corpse Explosion on Hit |
-
 ## Jewels
 
 > These crafts result in various unique jewels based upon the element type Latent Sunder Charm used as a reagent.  <br><span style="color:red">Must be a non-crafted sunder charm.</span>
@@ -174,17 +163,26 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Amethyst |     | \=  | +1 Random Amazon Skill Tab<br>Crafted Charm |     |
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Diamond |     | \=  | +1 Random Paladin Skill Tab<br>Crafted Charm |     |
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Chaos Onyx |     | \=  | +1 Random Warlock Skill Tab<br>Crafted Charm |     |
-| <br><span style="color:red">Requires non-crafted<br> latent sunder charm as reagent</span> |     |     |     |     |     |     | <span style="color:red">**_Reimagined Specific Sunder Charms_**</span> |     |
-| Unique Charm  <br>(Latent Sunder: Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Fire Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
-| Unique Charm  <br>(Latent Sunder: Cold) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Cold Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
-| Unique Charm  <br>(Latent Sunder: Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Lightning Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
-| Unique Charm  <br>(Latent Sunder: Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Poison Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
-| Unique Charm  <br>(Latent Sunder: Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Physical Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
-| Unique Charm  <br>(Latent Sunder: Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |     |     | \=  | Sunder Enemy Magic Resistance<br><br>No Resistance Penalty<br>Crafted Charm |     |
-| <span style="color:red">Requires non-crafted<br> latent sunder charm as reagent</span> |     |     |     |     |     |     | <span style="color:red">**_Vanilla Sunder Charms are Below_**</span> |     |
-| Unique Charm  <br>(Latent Sunder: Fire) | Deep Worldstone Shard | IO Rune | Ruby |     |     | \=  | Renewed Flame Rift<br><br>\-70% Fire Resistance Penalty<br><br>Either: +5-15% to Fire Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Fire Resistance<br><br>Unique Charm |     |
-| Unique Charm  <br>(Latent Sunder: Cold) | Eastern Worldstone Shard | LUM Rune | Sapphire |     |     | \=  | Renewed Cold Rupture<br><br>\-70% Cold Resistance Penalty<br><br>Either: +5-15% to Cold Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Cold Resistance<br><br>Unique Charm |     |
-| Unique Charm  <br>(Latent Sunder: Lightning) | Southern Worldstone Shard | FAL Rune | Topaz |     |     | \=  | Renewed Crack of the Heavens<br><br>\-70% Lightning Resistance Penalty<br><br>Either: +5-15% to Lightning Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Lightning Resistance<br><br>Unique Charm |     |
-| Unique Charm  <br>(Latent Sunder: Poison) | Western Worldstone Shard | KO Rune | Emerald |     |     | \=  | Renewed Rotting Fissure<br><br>\-70% Poison Resistance Penalty<br><br>Either: +5-15% to Poison Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Poison Resistance<br><br>Unique Charm |     |
-| Unique Charm  <br>(Latent Sunder: Physical) | Northern Worldstone Shard | PUL Rune | Amethyst |     |     | \=  | Renewed Bone Break<br><br>\-10% Physical Resistance Penalty<br><br>Either: +75-100% to Enhanced Weapon Damage<br><br>OR<br><br>\-5-10% to Enemy Physical Damage Resistance<br><br>Unique Charm |     |
-| Unique Charm  <br>(Latent Sunder: Magic) | Southern Worldstone Shard | Deep Worldstone Shard | Northern Worldstone Shard | MAL Rune | Diamond | \=  | Renewed Black Cleft<br><br>\-45% Magic Resistance Penalty<br><br>Either: +10-15% to Magic Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Magic Resistance<br><br>Unique Charm |     |
+
+
+## Sunder Charms
+
+> The renewed sunders now roll:
+> - Affix 1: extra 5-15% elemental skill damage or 5-15% elemental pierce (enhanced weapon damage 50-100%) or +1 to all skills.
+> - Affix 2: 20-30% magic find or 40-60% gold find.
+> - Affix 3: 20-50 HP or 20-50 mana or 50-100 defense.
+> - Affix 4: 10-20% faster run/walk or 15-20% faster hit recovery or 5-10 all stats.
+> - Affix 5: Remove negative resist penalty or half the resist penalty.
+> - Affix 6: 5-15% increased attack speed or 5-15% faster cast rate.
+
+| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |  **Reagent**   |   **Reagent**  |  |   **Guaranteed Stats**  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| <span style="color:red">RENEWED<br> SUNDER CHARMS</span> |     |     |     |     |     |     |  |     |
+| Unique Charm:  <br> Latent Flame Rift <br> (Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Deep Worldstone Shard   |     |  | \=  |   Renewed Flame Rift  |
+| Unique Charm:  <br> Latent Cold Rupture <br> (Cold) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Eastern Worldstone Shard  |     |  | \= |  Renewed Cold Rupture   |
+| Unique Charm:  <br> Latent Crack of the Heavens <br> (Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Southern Worldstone Shard  |     |   | \=  |   Renewed Crack of the Heavens  |
+| Unique Charm:  <br>Latent Rotting Fissure <br> (Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Western Worldstone Shard  |     |   | \= |  Renewed Rotting Fissure   |
+| Unique Charm:  <br>Latent Bone Break <br> (Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Northern Worldstone Shard    |     |   | \= |   Renewed Bone Break  |
+| Unique Charm:  <br>Latent Black Cleft <br> (Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Eastern Worldstone Shard  |  Southern Worldstone Shard   | Deep Worldstone Shard  | \=  |   Renewed Black Cleft   |
+| <span style="color:red">Reset renewed sunder<br> back to its latent version</span> |     |     |     |     |     |     |  |     |
+| Charm:  <br>Renewed Sunder <br> Any Type | HEL Rune | Gem Bag(200 gems) |  |     |     |   | \= |  Latent Charm of the same type  |

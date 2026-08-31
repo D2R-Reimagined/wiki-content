@@ -2,7 +2,7 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-08-31T18:00:26.918Z
+date: 2026-08-31T18:00:35.675Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
@@ -78,7 +78,7 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | 3 Unique Rings  <br>OR  <br>3 Unique Amulets | ID Tome **\*** | \=  | Rare Jewel |
 | 3 Set Rings  <br>OR  <br>3 Set Amulets | ID Tome **\*** | \=  | Rare Jewel |
 | Any 5 <span style="color:green">Set Weapons/**Armors****</span>  | ID Tome **\*** | \=  | Gem Cluster |
-| Any 5 <span style="color:orange">Unique Weapons/**Armors**/**Ammo*****</span> | ID Tome **\*** | \=  | Gem Cluster |
+| Any 5 <span style="color:orange">Unique Weapons/**Armors****/**Ammo*****</span> | ID Tome **\*** | \=  | Gem Cluster |
 
 **\*Tome is returned full**  
 **\*\*5 gloves, 5 boots, 5 chests, etc.**

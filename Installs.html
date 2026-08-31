@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-08-31T13:07:40.687Z
+date: 2026-08-31T23:45:14.428Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: ckeditor
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -269,30 +269,70 @@ dateCreated: 2025-03-03T02:26:58.618Z
   <p><mark class="pen-red"><strong>notice:</strong> D2RLoader is still in active development, so installation steps and configuration options may change in future updates.</mark></p>
 </blockquote>
 <blockquote>
-  <p><mark class="pen-green"><strong>Before you begin:</strong></mark> Everyone joining the same TCP/IP game must use <strong>matching D2R, D2RLoader, and Reimagined compatibility-build versions</strong>.</p>
+  <p><mark class="pen-green"><strong>Before you begin:</strong></mark> Everyone joining the same TCP/IP game must use <strong>matching D2R, D2RLoader, D2RLoader Plugins/Patches, and Reimagined compatibility-build versions, as well as any Reimagined Launcher Tweaks or Plugins/alterations to files.</strong></p>
 </blockquote>
-<h3>1. Install the Reimagined compatibility build</h3>
-<p><a href="https://drive.google.com/drive/folders/1j9iWBFg5hsocjVa97jKQRX0Gv2AlCErf?usp=sharing"><mark class="pen-green"><strong>Download the Reimagined compatibility build from Google Drive</strong></mark></a>.</p>
-<blockquote>
-  <p><mark class="pen-red"><strong>Important:</strong></mark> The official Reimagined release on Nexus is <strong>not directly compatible with D2RLoader</strong>. Use the compatibility build linked above.</p>
-</blockquote>
-<p><strong>Download and extract the archive</strong>, then place the extracted <code>Reimagined</code> folder in:</p>
-<pre><code class="language-plaintext">Diablo II Resurrected\mods</code></pre>
-<h3>2. Install and configure D2RLoader</h3>
-<p>Open the <a href="https://d2rloader.net/downloads/latest"><mark class="pen-green"><strong>D2RLoader link</strong></mark></a>, then download the latest release zip file.</p>
-<p>After extracting the archive, move the <code>d2rloader</code> folder, <code>D2RCore.dll</code>, and <code>D2RLoader.exe</code> into the Diablo II Resurrected installation folder containing <code>D2R.exe</code>.</p>
-<figure class="image"><img src="https://i.imgur.com/MoZFytC.png" alt="Extracted D2RLoader files">
-  <figcaption>The three extracted D2RLoader items.</figcaption>
-</figure>
-<p>Open <code>d2rloader\config\d2rloader.toml</code> in a text editor and set Reimagined as the default mod:</p>
-<pre><code class="language-plaintext">default_mod = "Reimagined"</code></pre>
+<h3>1. Have the Reimagined Launcher installed</h3>
+<ul>
+  <li>Install the Reimagined Launcher, see the top of this page</li>
+</ul>
+<p>Once installed you should see something like this where you have an option for offline or online</p>
+<figure class="image image_resized" style="width:60.61%;"><img src="/loader1.png"></figure>
 <p>&nbsp;</p>
-<figure class="image"><img src="https://i.imgur.com/sOKfIun.png" alt="D2RLoader configuration file">
-  <figcaption>D2RLoader configuration file.</figcaption>
-</figure>
-<p><mark class="pen-green"><strong>Save the file with Ctrl+S</strong></mark>, close the editor, and launch the game by running <code>D2RLoader.exe</code>.</p>
-<h3>3. Set up Radmin VPN for LAN play</h3>
-<p>The game and loader are now ready. To play TCP/IP with friends over the internet, <strong>every player must join the same virtual LAN</strong>.</p>
+<h3>2. Click Online and let the launcher install D2RLoader for you</h3>
+<ul>
+  <li>Simply click the Online box which will check if D2RLoader is installed.</li>
+  <li>If D2RLoader is not installed the launcher will download and install it for you</li>
+</ul>
+<figure class="image image_resized" style="width:73.73%;"><img src="/loader2.png"></figure>
+<p>&nbsp;</p>
+<ul>
+  <li>Once D2RLoader is installed it will say it has completed</li>
+</ul>
+<figure class="image image_resized" style="width:35.76%;"><img src="/loader3.png"></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>3. Enable the Multiplayer widget</h3>
+<ul>
+  <li>As of writing this, the multiplayer button widget is not automatically added to the UI of the mod (future launcher versions will handle this step)</li>
+  <li>So hit the “Start Online” button to launch the game with D2RLoader enabled</li>
+  <li>Once the game has started click the red cog at the bottom</li>
+</ul>
+<figure class="image"><img src="/loader4.png"></figure>
+<ul>
+  <li>Then enable the multiplayer button</li>
+</ul>
+<figure class="image"><img src="/loader5.png"></figure>
+<ul>
+  <li>At which point you will now see a multiplayer button which will allow you to host and browse games</li>
+</ul>
+<figure class="image"><img src="/loader6.png"></figure>
+<p>&nbsp;</p>
+<h3>4. Hosting and Browsing games</h3>
+<p>&nbsp;</p>
+<ul>
+  <li>To host simply create a game with whatever the desired details and rules are</li>
+</ul>
+<figure class="image"><img src="/loader7.png"></figure>
+<p>&nbsp;</p>
+<ul>
+  <li>To join a game go to browse and then join any open games or join your friends games with their game ID and password</li>
+</ul>
+<figure class="image image_resized" style="width:54.85%;"><img src="/loader8.png"></figure>
+<p>&nbsp;</p>
+<ul>
+  <li>if hosting an unlisted/private game, then the host needs to provide the game ID from the party menu.</li>
+</ul>
+<figure class="image image_resized" style="width:33.99%;"><img src="/laoder10.png"></figure>
+<p>&nbsp;</p>
+<ul>
+  <li>And viola you are now playing reimagined on the latest mod version with rotw content with friends</li>
+</ul>
+<figure class="image"><img src="/loader9.png"></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>5. (optional legacy VPN setup) Set up Radmin VPN for LAN play</h3>
+<p>If you have issues with windows firewall or other network issues consider using radmin to setup a vpn</p>
 <p>Download and install <a href="https://www.radmin-vpn.com/"><mark class="pen-green"><strong>Radmin VPN</strong></mark></a>, then turn it on.</p>
 <figure class="image"><img src="https://i.imgur.com/BOILHmA.png" alt="Radmin VPN start screen">
   <figcaption>Turn on Radmin VPN.</figcaption>
@@ -310,28 +350,9 @@ dateCreated: 2025-03-03T02:26:58.618Z
 <figure class="image"><img src="https://i.imgur.com/XWZocSN.png" alt="Players connected through Radmin VPN">
   <figcaption>Players connected to the same virtual network.</figcaption>
 </figure>
-<h3>4. Connect in-game through TCP/IP</h3>
-<p>From the character-selection screen, click <mark class="pen-green"><strong>TCP/IP</strong></mark> at the bottom center.</p>
-<ul>
-  <li><strong>Hosting:</strong> Click <strong>Host Game</strong>. Give the other players your Radmin VPN IP address.</li>
-  <li><strong>Joining:</strong> Click <strong>Join Game</strong>, enter the host's Radmin VPN IP address, and click <strong>OK</strong>.</li>
-</ul>
-<figure class="image"><img src="https://i.imgur.com/qhHWPIj.jpeg" alt="Hosting a Reimagined TCP/IP game">
-  <figcaption>Host Game and Join Game are available from the TCP/IP menu.</figcaption>
-</figure>
-<figure class="image"><img src="https://i.imgur.com/6Nz3Q4p.png" alt="Joining a Reimagined TCP/IP game">
-  <figcaption>Enter the host's Radmin VPN IP address to join.</figcaption>
-</figure>
-<h3>Multiplayer checklist</h3>
-<ul>
-  <li><strong>The same D2R version</strong></li>
-  <li><strong>The same D2RLoader version and configuration</strong></li>
-  <li><strong>The same Reimagined compatibility-build version</strong></li>
-  <li><strong>Matching mod files</strong></li>
-</ul>
-<blockquote>
-  <p><mark class="pen-red"><strong>Mismatched versions or files</strong> may cause connection failures, crashes, missing visuals, broken skills, or other unexpected behavior</mark></p>
-</blockquote>
+<h3>&nbsp;</h3>
 <p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<h3><strong><u>If you have issues with the install go to the Reimagined discord and post in the d2rr-installation-help or d2rr-online channels. Comments on the wiki are ignored.</u></strong></h3>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

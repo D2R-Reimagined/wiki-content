@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-08-31T17:29:37.552Z
+date: 2026-09-01T23:05:50.601Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z
@@ -183,6 +183,6 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Unique Charm:  <br> Latent Crack of the Heavens <br> (Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Southern Worldstone Shard  |     |   | \=  |   Renewed Crack of the Heavens  |
 | Unique Charm:  <br>Latent Rotting Fissure <br> (Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Western Worldstone Shard  |     |   | \= |  Renewed Rotting Fissure   |
 | Unique Charm:  <br>Latent Bone Break <br> (Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Northern Worldstone Shard    |     |   | \= |   Renewed Bone Break  |
-| Unique Charm:  <br>Latent Black Cleft <br> (Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Eastern Worldstone Shard  |  Southern Worldstone Shard   | Deep Worldstone Shard  | \=  |   Renewed Black Cleft   |
+| Unique Charm:  <br>Latent Black Cleft <br> (Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) |  Northern Worldstone Shard  |  Southern Worldstone Shard   | Deep Worldstone Shard  | \=  |   Renewed Black Cleft   |
 | <span style="color:red">Reset renewed sunder<br> back to its latent version</span> |     |     |     |     |     |     |  |     |
 | Charm:  <br>Renewed Sunder <br> Any Type | HEL Rune | Gem Bag (200 Gems) |  |     |     |   | \= |  Latent Charm of the same type  |

@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-04-14T22:52:20.896Z
+date: 2026-09-01T01:24:30.424Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -133,6 +133,20 @@ The charm drops from Corpsefire in the Den of Evil on normal (once per game, and
 It can be upgraded a number of times via cube recipes to deal more damage and have less penalties.
 
 ## **Quality of Life**
+
+### Socket Punching
+
+
+There are two ways to add sockets to items:
+
+* **Jewel Punching:** Cube an item with a Jewel of the **same rarity** to add a specific number of sockets. Magic/White items use Magic Jewels, Rare/Set items use Rare Jewels, and Crafted/Unique items use Unique Jewels. See the [Socket Recipes](https://wiki.d2r-reimagined.com/en/recipes/CubeRecipes#socket-recipes) for the recipes.
+* **Orb of Socketing:** Use an [Orb of Socketing](https://wiki.d2r-reimagined.com/en/Items/Orbs#orb-of-socketing) to randomly roll **1-6 sockets**. These work on Set and Unique items too!
+
+Both methods respect the item's maximum socket limit. Check the [Base Items](https://www.d2r-reimagined.com/bases) page to see how many sockets an item can have.
+
+Socket limits are shown as `(item level):sockets`. For example, **`(1+):6`** means the base can have up to **6 sockets at item level 1 or higher**.
+
+
 
 ### Rune Stacks:
 

@@ -2,7 +2,7 @@
 title: Druid
 description: Summary of changes to the Druid in Reimagined
 published: true
-date: 2026-03-22T14:37:56.820Z
+date: 2026-09-01T12:47:11.189Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:00:01.798Z
@@ -61,7 +61,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:9.24%;"><img src="/summon_grizzly.png"></figure>
 <ul>
   <li>No longer has has AR/HP/Defense&nbsp;synergy with Spirit Wolf or Dire Wolf. Previous synergies are now baked into the skill scaling</li>
-  <li>Max bears increased to 2 at 10 hard skill points.</li>
+  <li>Max bears increased to 2 at 10 skill points.</li>
   <li>Now has a chance to cast shockwave on hit</li>
   <li>Now has a synergy with all physical shapeshift skills</li>
   <li>Petmax changed to lvl instead of blvl (any level vs base levels)</li>
@@ -182,14 +182,16 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Arctic Blast</h3>
-<p>&nbsp;</p>
+<ul>
+  <li>Reworked. Now creates an area that does cold damage over time against targets caught in the area</li>
+</ul>
 <figure class="image image_resized image-style-align-right" style="width:9.18%;"><img src="/arctic_blast.png"></figure>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Cyclone Armor</h3>
 <figure class="image image_resized image-style-align-right" style="width:9.08%;"><img src="/cyclone_armor.png"></figure>
-<p>&nbsp;</p>
+<p>Now receives synergy from all elemental skills</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>Twister</h3>
@@ -223,6 +225,8 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <ul>
   <li>Frozen/Chilling/Shiver Armor, Enchant, Energy Shield, Battle Cry, Bone Armor, Cyclone Armor, Burst of Speed, Fade, Venom, Holy shield, Find Potion, Find Item are now castable in druid shapeshift</li>
 </ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>Lycanthropy</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.19%;"><img src="/lycanthropy.png"></figure>
 <ul>
@@ -235,11 +239,12 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:7.97%;"><img src="/werewolf.png"></figure>
 <ul>
   <li>No longer has a limited duration</li>
+  <li>Form has incrased base movement speed and increased fast run/walk as it levels</li>
   <li>Baseline HP% lowered from 25% to 10%.</li>
   <li>Attack rating baseline lowered from 50 to 10.</li>
   <li>Attack rating gained per level lowered from 15% to 3%.</li>
   <li>New synergy with Lycanthropy:<ul>
-      <li>+1% chance to dodge melee and missile attacks while attacking/standing still per 2 levels.</li>
+      <li>+1% chance to dodge melee and missile attacks while attacking/standing still per 2 levels</li>
     </ul>
   </li>
 </ul>
@@ -249,6 +254,7 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:8.02%;"><img src="/werebear.png"></figure>
 <ul>
   <li>No longer has a limited duration</li>
+  <li>Form has incrased base movement speed</li>
   <li>Baseline HP% lowered from 75% to 50%.</li>
   <li>Damage% baseline lowered from 55% to 20%.</li>
   <li>Damage per level changed from 15% at all levels to 10% per base level and 5% per soft level.</li>
@@ -264,15 +270,23 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <h3>Feral Rage</h3>
 <figure class="image image_resized image-style-align-right" style="width:8.04%;"><img src="/feral_rage.png"></figure>
 <ul>
+  <li>Charge System reworked from 3 base and 1 charge per 2 (soft) skill levels to 2 base and 1 additional one at level 4 and every 3 levels after that, with charges having increased effect per level instead of static effects.</li>
   <li>Duration now scales with levels in Lycanthropy</li>
   <li>Minor flat damage added across all skill levels</li>
+  <li>Movement speed aspect removed</li>
+  <li>Life leech per charge reduced from 4% to 2% per charge.</li>
+  <li>-2% Enemy Physical Resistance per charge.</li>
+  <li>Scaling Enhanced Damage % and -Enemy Defense per Hit per charge.</li>
 </ul>
 <p>&nbsp;</p>
 <h3>Maul</h3>
 <figure class="image image_resized image-style-align-right" style="width:7.93%;"><img src="/maul.png"></figure>
 <ul>
+  <li>Charge System reworked from 3 base and 1 charge per 2 (soft) skill levels to 2 base and 1 additional one at level 4 and every 3 levels after that, with charges having increased effect per level instead of static effects.</li>
   <li>Duration now scales with levels in Lycanthropy</li>
   <li>Minor flat damage added across all skill levels</li>
+  <li>Flat 1% Crushing Blow added per charge.</li>
+  <li>Scaling Enhanced Damage % and eIAS% per charge.</li>
 </ul>
 <p>&nbsp;</p>
 <h3>Fire Claws</h3>
@@ -286,8 +300,9 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:8.06%;"><img src="/rabies_(2).png"></figure>
 <ul>
   <li>Plague now also reduces enemy poison resistance by 20%</li>
-  <li>Synergies updated to 15% from Poison Creeper and Toxic Fangs from 20% from Poison Creeper</li>
+  <li>Synergies updated to 13% from Poison Creeper and Toxic Fangs from 20% from Poison Creeper</li>
   <li>More aggressive spread and jump radius</li>
+  <li>Overall mana cost increased significantly</li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -295,7 +310,9 @@ dateCreated: 2025-04-14T02:00:01.798Z
 <figure class="image image_resized image-style-align-right" style="width:7.99%;"><img src="/toxic_fangs_icon.png"></figure>
 <ul>
   <li>Reworked into high damage single target killing poison skill</li>
-  <li>Has a 15% synergy with Rabies and Poison Creeper</li>
+  <li>Also reduces enemy poison resistance by 20%</li>
+  <li>Has a 13% synergy with Rabies and Poison Creeper</li>
+  <li>Flat Physical damage curve added</li>
 </ul>
 <p>&nbsp;</p>
 <h3>Shockwave (Now an attack-based skill)</h3>
@@ -366,6 +383,6 @@ dateCreated: 2025-04-14T02:00:01.798Z
 </figure>
 <p>&nbsp;</p>
 <h3>Skills Available&nbsp;</h3>
-<p><strong>Feral Rage, Maul, Rabies, Fire Claws, Hunger, Shockwave, Polar Claws</strong></p>
+<p><strong>Maul, Rabies and Arctic Claws</strong></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

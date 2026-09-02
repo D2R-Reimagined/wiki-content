@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-09-01T23:05:50.601Z
+date: 2026-09-02T23:48:19.324Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z
@@ -174,6 +174,8 @@ When the item is returned as crafted, it will have a chance to have a set number
 > - Affix 4: 10-20% faster run/walk or 15-20% faster hit recovery or 5-10 all stats.
 > - Affix 5: Remove negative resist penalty or half the resist penalty.
 > - Affix 6: 5-15% increased attack speed or 5-15% faster cast rate.
+
+> - <span style="color:red">You can only hold one renewed sunder charm of a single element.<br>Be sure to put already crafted ones in shared stash when you try to craft them</span> 
 
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |  **Reagent**   |   **Reagent**  |  |   **Guaranteed Stats**  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |

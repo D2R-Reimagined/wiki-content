@@ -8,6 +8,16 @@ const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL',
 const gems = ['Amethyst', 'Sapphire', 'Ruby', 'Emerald', 'Topaz', 'Diamond', 'Skull', 'Chaos Onyx'];
 const tools = ['Rune Pliers', 'Jewel Pliers', 'Gem Bag', 'Worldstone Shard', 'Uber Spirits'];
 const recolorRunes = false;
+const gemColors = {
+  'Amethyst': '#8e44ad',
+  'Sapphire': '#2474d1',
+  'Ruby': '#c62828',
+  'Emerald': '#159447',
+  'Topaz': '#c58a00',
+  'Diamond': '#159fc1',
+  'Skull': '#7b8188',
+  'Chaos Onyx': '#41464d'
+};
 
 const rarityColors = {
   'Magic': '#1769d1',
@@ -21,7 +31,7 @@ const rarityColors = {
 const orbColors = {
   'Conversion': '#b45309',
   'Assemblage': '#08752b',
-  'Infusion': '#6b6200',
+  'Infusion': '#d9aa00',
   'Corruption': '#b42318',
   'Socketing': '#1248a0',
   'Shadows': '#7316a8'
@@ -56,7 +66,10 @@ function createHighlightRules() {
   if (recolorRunes) {
     runes.forEach(rune => rules.push({ pattern: `\\b${rune} Rune\\b`, className: 'wiki-rune' }));
   }
-  gems.forEach(gem => rules.push({ pattern: `\\b${escapeRegExp(gem)}\\b`, className: 'wiki-gem' }));
+  gems.forEach(gem => rules.push({
+    pattern: `\\b${escapeRegExp(gem)}\\b`,
+    className: `wiki-gem-${gem.toLowerCase().replace(/ /g, '-')}`
+  }));
   rules.push({ pattern: '\\bGems? \\(Any\\)', className: 'wiki-gem' });
   rules.push({ pattern: '\\bGem Bag \\(\\d+ Gems?\\)', className: 'wiki-gem' });
   Object.keys(orbColors).forEach(orb => rules.push({
@@ -93,6 +106,14 @@ function addHighlightStyles() {
     .wiki-rarity-ethereal { color: ${rarityColors.Ethereal}; }
     .wiki-rune { color: #a34b00; }
     .wiki-gem { color: #008f83; }
+    .wiki-gem-amethyst { color: ${gemColors.Amethyst}; }
+    .wiki-gem-sapphire { color: ${gemColors.Sapphire}; }
+    .wiki-gem-ruby { color: ${gemColors.Ruby}; }
+    .wiki-gem-emerald { color: ${gemColors.Emerald}; }
+    .wiki-gem-topaz { color: ${gemColors.Topaz}; }
+    .wiki-gem-diamond { color: ${gemColors.Diamond}; }
+    .wiki-gem-skull { color: ${gemColors.Skull}; }
+    .wiki-gem-chaos-onyx { color: ${gemColors['Chaos Onyx']}; }
     .wiki-orb-conversion { color: ${orbColors.Conversion}; }
     .wiki-orb-assemblage { color: ${orbColors.Assemblage}; }
     .wiki-orb-infusion { color: ${orbColors.Infusion}; }

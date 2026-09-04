@@ -65,7 +65,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 - **Socket limit:** Depends on item level and the base. Check the [maximum socket count for each base](https://www.d2r-reimagined.com/data/bases) before punching sockets.
 <br> 
 
-| **Reagent 1** | **Reagent 1** | **=** | **Outcome** |
+| **Reagent 1** | **Reagent 2** | **=** | **Outcome** |
 | :--- | :--- | :--- | :--- |
 | Item (White)  <br>OR  <br>Item (Magic) | \# Magic Jewels | \=  | \# Sockets |
 | Item (Rare)  <br>OR  <br>Item (Set) | \# Rare Jewels | \=  | \# Sockets |
@@ -83,7 +83,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 - The socket count remains unchanged, and the removed runes or jewels are returned.
  
 
-| **Reagent 1** | **Reagent 1** | **=** | **Outcome** |
+| **Reagent 1** | **Reagent 2** | **=** | **Outcome** |
 | :--- | :--- | :--- | :--- |
 | Runeword | Rune Pliers | \=  | Base Item<br><br>Runes |
 | Socketed Item | Jewel Pliers **\*** | \=  | Base Item<br><br>Socketed Items |
@@ -92,7 +92,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 ## Conversion Recipes
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Output** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- |
 | 9 Magic Jewels | | | \= | Rare Jewel |
 | 6 Rare Jewels | | | \= | Unique Jewel |
@@ -119,7 +119,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 ## Recycle Recipes
 
-| **Reagent 1** | **Reagent 1** | **=** | **Output** |
+| **Reagent 1** | **Reagent 2** | **=** | **Output** |
 | :--- | :--- | :--- | :--- |
 | 3 Unique Rings  <br>OR  <br>3 Unique Amulets | ID Tome **\*** | \=  | Rare Jewel |
 | 3 Set Rings  <br>OR  <br>3 Set Amulets | ID Tome **\*** | \=  | Rare Jewel |
@@ -132,7 +132,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 ## Reroll Recipes
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Output** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- |
 | 3 Magic Jewelry  <br>(same type) | | | \= | New Magic Jewelry (100% plvl) |
 | 3 Rare Jewelry  <br>(same type) | | | \= | New Rare Jewelry(100% plvl) |
@@ -175,7 +175,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 ### Armor
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Output** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Rare Armor  <br>(Normal) | RAL Rune | THUL Rune | Amethyst | \=  | Rare Armor  <br>(Exceptional) |
 | Rare Armor  <br>(Exceptional) | KO Rune | PUL Rune | Amethyst | \=  | Rare Armor  <br>(Elite) |
@@ -186,7 +186,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 ### Weapons
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Output** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Rare Weapon  <br>(Normal) | ORT Rune | AMN Rune | Sapphire | \=  | Rare Weapon  <br>(Exceptional) |
 | Rare Weapon  <br>(Exceptional) | FAL Rune | UM Rune | Sapphire | \=  | Rare Weapon  <br>(Elite) |
@@ -197,7 +197,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 ## Repair Recipes
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Output** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- |
 | Quiver  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
 | Bolt Case  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
@@ -207,7 +207,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 ## Portal Recipes
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Output** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Wirt's Leg | | | | | \= | Cow Level |
 | Key of Terror | Key of Hate | Key of Destruction | | | \= | Random Portal To:  <br>Matron's Den  <br>Forgotten Sands  <br>Furnace of Pain |
@@ -256,7 +256,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants: 2**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Amulet** | Topaz |     |     | \=  | +12% Magic Find  <br>+25% Gold Find |
 | **Amulet** | Ruby |     |     | \=  | +25 Life  <br>+4 Life / Kill |
@@ -290,7 +290,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants: 2**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Ring** | Topaz | Magic Jewel |     |     | \=  | +10% Magic Find  <br>+20% Gold Find |
 | **Ring** | Ruby | Magic Jewel |     |     | \=  | +20 HP  <br>+2 Life / Kill |
@@ -317,7 +317,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants: 3**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Belt** | Topaz | Magic Jewel |     |     | \=  | +7% Magic Find  <br>+10% Gold Find |
 | **Belt** | Ruby | Magic Jewel |     |     | \=  | +15 HP  <br>+2 Life / Kill |
@@ -352,7 +352,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants: 3**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Boots** | Topaz | Magic Jewel |     |     | \=  | +7% Magic Find  <br>+10% Gold Find |
 | **Boots** | Ruby | Magic Jewel |     |     | \=  | +15 HP  <br>+2 Life / Kill |
@@ -389,7 +389,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants: 3**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Gloves** | Topaz | Magic Jewel |     |     | \=  | +7% Magic Find  <br>+10% Gold Find |
 | **Gloves** | Ruby | Magic Jewel |     |     | \=  | +15 HP  <br>+2 Life / Kill |
@@ -427,7 +427,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants: 3**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Helm** | Topaz | Magic Jewel |     |     | \=  | +7% Magic Find  <br>+10% Gold Find |
 | **Helm** | Ruby | Magic Jewel |     |     | \=  | +15 HP  <br>+2 Life / Kill |
@@ -465,7 +465,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants: 5**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Shield** | Topaz | Magic Jewel |     |     | \=  | +7% Magic Find  <br>+10% Gold Find |
 | **Shield** | Ruby | Magic Jewel |     |     | \=  | +15 HP  <br>+4 Life / Kill |
@@ -501,7 +501,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants: 5**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Body Armor** | Topaz | Magic Jewel |     |     | \=  | +15% Magic Find  <br>+30% Gold Find |
 | **Body Armor** | Ruby | Magic Jewel |     |     | \=  | +15 HP  <br>+2 Life / Kill |
@@ -538,7 +538,7 @@ When enchanting set items you must remove all other items from that set from you
 
 > **Max Enchants:** 1H Weapons: 5; 2H Weapons: 10
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Added Stat(s)** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **Reagent 6** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Weapon** | Topaz | Magic Jewel |     |     |     | \=  | +15% Magic Find  <br>+30% Gold Find |
 | **Weapon** | Ruby | Magic Jewel |     |     |     | \=  | +75 Attack Rating |
@@ -592,7 +592,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Amulets
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Amulet | ITH Rune | EL Rune |     |     | \=  | 100% CTC Battle Orders on Level-Up<br><br>Magic Amulet |
 | Magic Amulet | Orb of Infusion | RAL Rune | Gem (Any) |     | \=  | +1 All (Random Class) Skills<br><br>Rare Amulet |
@@ -603,7 +603,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Rings
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Ring | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 1 Fade on Level-Up<br><br>Magic Ring |
 | Magic Ring | Orb of Infusion | AMN Rune | Gem (Any) |     | \=  | +20% Chance Items Roll Magic or Better<br><br>Rare Ring |
@@ -616,7 +616,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Belts
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Belt | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 1 Frozen Armor on Level-Up<br><br>Magic Belt |
 | Magic Belt | Magic Jewel | RAL Rune |     |     | \=  | +1 to All (Random Class) Skills<br><br>Magic Belt |
@@ -628,7 +628,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Boots
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Boots | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 1 Burst of Speed on Level-Up<br><br>Magic Boots |
 | Magic Boots | Orb of Infusion | HEL Rune | Gem (Any) |     | \=  | +15% Faster Run/Walk Speed<br><br>+10 to All Attributes<br><br>Rare Boots |
@@ -638,7 +638,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Gloves
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Gloves | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 4 Battle Command on Level-Up<br><br>Magic Gloves |
 | Magic Gloves | Magic Jewel | RAL Rune |     |     | \=  | +8% Faster Attack Speed<br><br>+8% Faster Cast Rate<br><br>Magic Gloves |
@@ -650,7 +650,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Helms
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Helm | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 1 Shout on Level-Up<br><br>Magic Helm |
 | Magic Helm | Orb of Infusion | RAL Rune | Gem (Any) |     | \=  | +15% Faster Hit Recovery<br><br>Rare Helm |
@@ -663,7 +663,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Shields
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Shield | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 4 Holy Shield on Level-Up<br><br>+5 to All Attributes<br><br>Magic Shield |
 | Magic Shield | Orb of Infusion | AMN Rune | Gem (Any) |     | \=  | +1 to All (Current Class) Skills<br><br>Rare Shield |
@@ -677,7 +677,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Body Armor
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Torso | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 5 Oak Sage on Level-Up<br><br>Magic Torso |
 | Magic Torso | Orb of Infusion | Ral Rune | Gem (Any) |     | \=  | +20% Faster Run/Walk Speed<br><br>+100 Defense<br><br>Magic Torso |
@@ -688,7 +688,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Weapons
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Any Magic Weapon | Magic Jewel | RAL Rune | Ruby |     | \=  | +85% Enhanced Weapon Damage<br><br>+20% Increased Attack Speed<br><br>Magic Weapon |
 | Any Magic Weapon | Magic Jewel | RAL Rune | Sapphire |     | \=  | +5% to All Elemental Damage<br><br>+15% Faster Cast Rate<br><br>Magic Weapon |
@@ -704,7 +704,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 > These crafts result in various unique jewels based upon the element type Latent Sunder Charm used as a reagent.  <br>**Must be a non-crafted sunder charm.**
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- |
 | Cold Rupture  <br>(Sunder: Cold) | Unique Jewel | Gem Bag (100 Gems) | \= | Winter Facet<br><br>Unique Jewel |
 | Flame Rift  <br>(Sunder: Fire) | Unique Jewel | Gem Bag (100 Gems) | \= | Summer Facet<br><br>Unique Jewel |
@@ -718,7 +718,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 > All crafts produce guaranteed stats, and an additional 3-4 random stats from the Grand Charm Prefix/Suffix table
 > Crafts that produce a Magic item will only roll 1-2 random affixes
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **=** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **Reagent 6** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Charm  <br>(Grand) | Magic Jewel | SHAEL Rune | EL Rune | | | \= | +5-10% Faster Attack Speed  <br>Magic Charm |
 | Magic Charm  <br>(Grand) | Magic Jewel | DOL Rune | EL Rune | | | \= | +5-10% Faster Cast Rate  <br>Magic Charm |
@@ -749,7 +749,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 > - **You can only hold one renewed sunder charm of a single element.**  
 > Be sure to put already crafted ones in shared stash when you try to craft them
 
-| **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Reagent 1** | **Guaranteed Stats** |
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **Reagent 6** | **Reagent 7** | **Reagent 8** | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **RENEWED SUNDER CHARMS** | | | | | | | | |
 | Unique Charm:<br>Latent Flame Rift (Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Deep Worldstone Shard | | | \= | Renewed Flame Rift |

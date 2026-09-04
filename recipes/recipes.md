@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-04-15T10:46:52.767Z
+date: 2026-09-04T17:33:31.997Z
 tags: crafting, recipes, enchants
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -107,8 +107,7 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \= | Becomes White Base Item<br><br>**Item is regenerated as a new white item. <br>Enchants/Corruption wiped.** |
 | Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \= | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield)<br>**Item is regenerated as a new white item. <br>Enchants/Corruption wiped.** |
 
-| | | | | **Item is upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.**  
-**_This recipe no longer stacks on items._** |
+| | | | | **Item is upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.** <br>**_This recipe no longer stacks on items._** |
 
 
 **\* Tome is returned full**

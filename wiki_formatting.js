@@ -10,8 +10,8 @@ const tools = ['Rune Pliers', 'Jewel Pliers', 'Gem Bag', 'Worldstone Shard', 'Ub
 const recolorRunes = false;
 
 const rarityColors = {
-  'Magic': '#0b3d91',
-  'Rare': '#c49a00',
+  'Magic': '#1769d1',
+  'Rare': '#d9aa00',
   'Unique': '#a35b00',
   'Set': '#078a38',
   'Crafted': '#a63b00',
@@ -65,7 +65,11 @@ function createHighlightRules() {
   }));
   tools.forEach(tool => rules.push({
     pattern: `\\b${escapeRegExp(tool)}\\b`,
-    className: tool === 'Uber Spirits' ? 'wiki-uber-spirits' : 'wiki-recipe-tool'
+    className: tool === 'Uber Spirits'
+      ? 'wiki-uber-spirits'
+      : tool === 'Worldstone Shard'
+        ? 'wiki-worldstone-shard'
+        : 'wiki-recipe-tool'
   }));
 
   return rules.sort((left, right) => right.pattern.length - left.pattern.length);
@@ -88,15 +92,16 @@ function addHighlightStyles() {
     .wiki-rarity-crafted { color: ${rarityColors.Crafted}; }
     .wiki-rarity-ethereal { color: ${rarityColors.Ethereal}; }
     .wiki-rune { color: #a34b00; }
-    .wiki-gem { color: #00756b; }
+    .wiki-gem { color: #008f83; }
     .wiki-orb-conversion { color: ${orbColors.Conversion}; }
     .wiki-orb-assemblage { color: ${orbColors.Assemblage}; }
     .wiki-orb-infusion { color: ${orbColors.Infusion}; }
     .wiki-orb-corruption { color: ${orbColors.Corruption}; }
     .wiki-orb-socketing { color: ${orbColors.Socketing}; }
     .wiki-orb-shadows { color: ${orbColors.Shadows}; }
-    .wiki-recipe-tool { color: #5b3a9d; }
+    .wiki-recipe-tool { color: #6b4f2a; }
     .wiki-uber-spirits { color: #8a4b08; }
+    .wiki-worldstone-shard { color: #f05a00; }
   `;
   document.head.appendChild(style);
 }

@@ -140,9 +140,9 @@ Purchase from Blacksmith vendors to retrieve socketed items:
 
 ### Item Enhancement Resources
 
-- **[Cube Recipes](https://wiki.d2r-reimagined.com/en/recipes/CubeRecipes)** — Useful recipes while leveling
-- **[Item Enchants](https://wiki.d2r-reimagined.com/en/recipes/ItemEnchants)** — Add various properties via enchanting (multiple times possible)
-- **[Item Crafting](https://wiki.d2r-reimagined.com/en/recipes/Crafting)** — Create powerful items to level and maximize potential
+- **[Cube Recipes](https://wiki.d2r-reimagined.com/en/recipes/recipes#cube-recipes)** — Useful recipes while leveling
+- **[Item Enchants](https://wiki.d2r-reimagined.com/en/recipes/recipes#item-enchant-system)** — Add various properties via enchanting (multiple times possible)
+- **[Item Crafting](https://wiki.d2r-reimagined.com/en/recipes/recipes#item-crafting-system)** — Create powerful items to level and maximize potential
 
 ### Special Items
 
@@ -172,7 +172,7 @@ There are two ways to add sockets to items:
 - **Rare/Set items** use Rare Jewels
 - **Crafted/Unique items** use Unique Jewels
 - Add specific number of sockets (respects item limits)
-- [Socket Recipes](https://wiki.d2r-reimagined.com/en/recipes/CubeRecipes#socket-recipes)
+- [Socket Recipes](https://wiki.d2r-reimagined.com/en/recipes/recipes#socket-recipes)
 
 #### Orb of Socketing
 - Randomly rolls **1-6 sockets**

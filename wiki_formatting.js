@@ -7,12 +7,13 @@ const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL',
 'VEX', 'OHM', 'LO', 'SUR', 'BER', 'JAH', 'CHAM', 'ZOD'];
 const gems = ['Amethyst', 'Sapphire', 'Ruby', 'Emerald', 'Topaz', 'Diamond', 'Skull', 'Chaos Onyx'];
 const tools = ['Rune Pliers', 'Jewel Pliers', 'Gem Bag', 'Worldstone Shard', 'Uber Spirits'];
+const recolorRunes = false;
 
 const rarityColors = {
-  'Magic': '#1456b8',
-  'Rare': '#9a7100',
+  'Magic': '#0b3d91',
+  'Rare': '#c49a00',
   'Unique': '#a35b00',
-  'Set': '#08752b',
+  'Set': '#078a38',
   'Crafted': '#a63b00',
   'Ethereal': '#7316a8'
 };
@@ -48,8 +49,13 @@ function createHighlightRules() {
     });
   });
 
-  rules.push({ pattern: '\\bEthereal\\b', className: 'wiki-rarity-ethereal' });
-  runes.forEach(rune => rules.push({ pattern: `\\b${rune} Rune\\b`, className: 'wiki-rune' }));
+  rarities.forEach(rarity => rules.push({
+    pattern: `\\b${escapeRegExp(rarity)}\\b`,
+    className: `wiki-rarity-${rarity.toLowerCase()}`
+  }));
+  if (recolorRunes) {
+    runes.forEach(rune => rules.push({ pattern: `\\b${rune} Rune\\b`, className: 'wiki-rune' }));
+  }
   gems.forEach(gem => rules.push({ pattern: `\\b${escapeRegExp(gem)}\\b`, className: 'wiki-gem' }));
   rules.push({ pattern: '\\bGems? \\(Any\\)', className: 'wiki-gem' });
   rules.push({ pattern: '\\bGem Bag \\(\\d+ Gems?\\)', className: 'wiki-gem' });
@@ -59,7 +65,7 @@ function createHighlightRules() {
   }));
   tools.forEach(tool => rules.push({
     pattern: `\\b${escapeRegExp(tool)}\\b`,
-    className: 'wiki-recipe-tool'
+    className: tool === 'Uber Spirits' ? 'wiki-uber-spirits' : 'wiki-recipe-tool'
   }));
 
   return rules.sort((left, right) => right.pattern.length - left.pattern.length);
@@ -90,6 +96,7 @@ function addHighlightStyles() {
     .wiki-orb-socketing { color: ${orbColors.Socketing}; }
     .wiki-orb-shadows { color: ${orbColors.Shadows}; }
     .wiki-recipe-tool { color: #5b3a9d; }
+    .wiki-uber-spirits { color: #8a4b08; }
   `;
   document.head.appendChild(style);
 }

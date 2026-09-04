@@ -8,6 +8,7 @@ const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL',
 const gems = ['Amethyst', 'Sapphire', 'Ruby', 'Emerald', 'Topaz', 'Diamond', 'Skull', 'Chaos Onyx'];
 const tools = ['Rune Pliers', 'Jewel Pliers', 'Gem Bag', 'Worldstone Shard', 'Uber Spirits'];
 const recolorRunes = false;
+const gemBagColor = '#d89b00';
 const gemColors = {
   'Amethyst': '#8e44ad',
   'Sapphire': '#2474d1',
@@ -16,7 +17,7 @@ const gemColors = {
   'Topaz': '#c58a00',
   'Diamond': '#d7e5ed',
   'Skull': '#7b8188',
-  'Chaos Onyx': '#aeb4bb'
+  'Chaos Onyx': '#ff4fa3'
 };
 
 const rarityColors = {
@@ -60,7 +61,7 @@ function createHighlightRules() {
   });
 
   rarities.forEach(rarity => rules.push({
-    pattern: `\\b${escapeRegExp(rarity)}\\b`,
+    pattern: `\\b${escapeRegExp(rarity)}(?=\\s*(?:,|\\.|and\\b|items?\\b|$))`,
     className: `wiki-rarity-${rarity.toLowerCase()}`
   }));
   if (recolorRunes) {
@@ -71,7 +72,7 @@ function createHighlightRules() {
     className: `wiki-gem-${gem.toLowerCase().replace(/ /g, '-')}`
   }));
   rules.push({ pattern: '\\bGems? \\(Any\\)', className: 'wiki-gem' });
-  rules.push({ pattern: '\\bGem Bag \\(\\d+ Gems?\\)', className: 'wiki-gem' });
+  rules.push({ pattern: '\\bGem Bag \\(\\d+ Gems?\\)', className: 'wiki-gem-bag' });
   Object.keys(orbColors).forEach(orb => rules.push({
     pattern: `\\bOrb of ${escapeRegExp(orb)}\\b`,
     className: `wiki-orb-${orb.toLowerCase()}`
@@ -82,6 +83,8 @@ function createHighlightRules() {
       ? 'wiki-uber-spirits'
       : tool === 'Worldstone Shard'
         ? 'wiki-worldstone-shard'
+        : tool === 'Gem Bag'
+          ? 'wiki-gem-bag'
         : 'wiki-recipe-tool'
   }));
 
@@ -114,6 +117,7 @@ function addHighlightStyles() {
     .wiki-gem-diamond { color: ${gemColors.Diamond}; }
     .wiki-gem-skull { color: ${gemColors.Skull}; }
     .wiki-gem-chaos-onyx { color: ${gemColors['Chaos Onyx']}; }
+    .wiki-gem-bag { color: ${gemBagColor}; }
     .wiki-orb-conversion { color: ${orbColors.Conversion}; }
     .wiki-orb-assemblage { color: ${orbColors.Assemblage}; }
     .wiki-orb-infusion { color: ${orbColors.Infusion}; }

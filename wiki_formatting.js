@@ -1,122 +1,97 @@
 const rarities = ['Magic', 'Rare', 'Unique', 'Set', 'Crafted', 'Ethereal'];
 const items = ['Item', 'Jewel', 'Jewelry', 'Amulet', 'Ring', 'Charm',
 'Armor', 'Shield', 'Weapon', 'Belt', 'Boot', 'Glove', 'Helm', 'Circlet'];
-
 const runes = ['EL', 'ELD', 'TIR', 'NEF', 'ETH', 'ITH', 'TAL', 'RAL',
 'ORT', 'THUL', 'AMN', 'SOL', 'SHAEL', 'DOL', 'HEL', 'IO', 'LUM',
 'KO', 'FAL', 'LEM', 'PUL', 'UM', 'MAL', 'IST', 'GUL',
 'VEX', 'OHM', 'LO', 'SUR', 'BER', 'JAH', 'CHAM', 'ZOD'];
-
 const gems = ['Amethyst', 'Sapphire', 'Ruby', 'Emerald', 'Topaz', 'Diamond', 'Skull', 'Chaos Onyx'];
-
-const orbs = {
-  'Conversion': '#e67e22',
-  'Assemblage': '#109001',
-  'Infusion': '#dadd00',
-  'Corruption': '#cd0000',
-  'Socketing': '#0025cd',
-  'Shadows': '#9200a1'
-};
+const tools = ['Rune Pliers', 'Jewel Pliers', 'Gem Bag', 'Worldstone Shard', 'Uber Spirits'];
 
 const rarityColors = {
-  'Magic': '#1770ff',
-  'Rare': '#ffee00',
-  'Unique': '#c48300',
-  'Set': '#009102',
-  'Crafted': '#c44500',
-  'Ethereal': '#9400ab'
+  'Magic': '#1456b8',
+  'Rare': '#9a7100',
+  'Unique': '#a35b00',
+  'Set': '#08752b',
+  'Crafted': '#a63b00',
+  'Ethereal': '#7316a8'
+};
+
+const orbColors = {
+  'Conversion': '#b45309',
+  'Assemblage': '#08752b',
+  'Infusion': '#6b6200',
+  'Corruption': '#b42318',
+  'Socketing': '#1248a0',
+  'Shadows': '#7316a8'
 };
 
 function escapeRegExp(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function highlightItems(text) {
-  let newText = text;
+function createHighlightRules() {
+  const rules = [];
 
   rarities.forEach(rarity => {
-    const color = rarityColors[rarity];
-
     items.forEach(item => {
-      let regex;
-
-      if (item === 'Jewelry') {
-        regex = new RegExp(`\\b${escapeRegExp(rarity)}\\s+${escapeRegExp(item)}\\b`, 'gi');
-      } else {
-        regex = new RegExp(`\\b${escapeRegExp(rarity)}\\s+${escapeRegExp(item)}s?\\b`, 'gi');
-      }
-
-      newText = newText.replace(regex, match =>
-        `<span class="wiki-keyword-highlight" style="color: ${color}; font-weight: bold;">${match}</span>`
-      );
+      const plural = item === 'Jewelry' ? '' : 's?';
+      rules.push({
+        pattern: `\\b${escapeRegExp(rarity)}\\s+${escapeRegExp(item)}${plural}\\b`,
+        className: `wiki-rarity-${rarity.toLowerCase()}`
+      });
     });
 
-    const bracketRegex = new RegExp(`\\(${escapeRegExp(rarity)}\\)`, 'gi');
-    newText = newText.replace(bracketRegex, match =>
-      `<span class="wiki-keyword-highlight" style="color: ${color}; font-weight: bold;">${match}</span>`
-    );
-
-    if (rarity === 'Ethereal') {
-      const etherealRegex = new RegExp(`\\b${escapeRegExp(rarity)}\\b`, 'gi');
-      newText = newText.replace(etherealRegex, match =>
-        `<span class="wiki-keyword-highlight" style="color: ${color}; font-weight: bold;">${match}</span>`
-      );
-    }
+    rules.push({
+      pattern: `\\(${escapeRegExp(rarity)}\\)`,
+      className: `wiki-rarity-${rarity.toLowerCase()}`
+    });
   });
 
-  return newText;
+  rules.push({ pattern: '\\bEthereal\\b', className: 'wiki-rarity-ethereal' });
+  runes.forEach(rune => rules.push({ pattern: `\\b${rune} Rune\\b`, className: 'wiki-rune' }));
+  gems.forEach(gem => rules.push({ pattern: `\\b${escapeRegExp(gem)}\\b`, className: 'wiki-gem' }));
+  rules.push({ pattern: '\\bGems? \\(Any\\)', className: 'wiki-gem' });
+  rules.push({ pattern: '\\bGem Bag \\(\\d+ Gems?\\)', className: 'wiki-gem' });
+  Object.keys(orbColors).forEach(orb => rules.push({
+    pattern: `\\bOrb of ${escapeRegExp(orb)}\\b`,
+    className: `wiki-orb-${orb.toLowerCase()}`
+  }));
+  tools.forEach(tool => rules.push({
+    pattern: `\\b${escapeRegExp(tool)}\\b`,
+    className: 'wiki-recipe-tool'
+  }));
+
+  return rules.sort((left, right) => right.pattern.length - left.pattern.length);
 }
 
-function highlightRunes(text) {
-  let newText = text;
+const highlightRules = createHighlightRules();
+const highlightPattern = new RegExp(highlightRules.map(rule => `(${rule.pattern})`).join('|'), 'gi');
 
-  runes.forEach(rune => {
-    const regex = new RegExp(`\\b${escapeRegExp(rune)} Rune\\b`, 'gi');
-    newText = newText.replace(regex, match =>
-      `<span class="wiki-keyword-highlight" style="color: orange; font-weight: bold;">${match}</span>`
-    );
-  });
+function addHighlightStyles() {
+  if (document.getElementById('wiki-formatting-styles')) return;
 
-  return newText;
-}
-
-function highlightGems(text) {
-  let newText = text;
-
-  gems.forEach(gem => {
-    const regex = new RegExp(`\\b${escapeRegExp(gem)}\\b`, 'gi');
-    newText = newText.replace(regex, match =>
-      `<span class="wiki-keyword-highlight" style="color: turquoise; font-weight: bold;">${match}</span>`
-    );
-  });
-
-  newText = newText.replace(/Gem \(Any\)/gi,
-    `<span class="wiki-keyword-highlight" style="color: turquoise; font-weight: bold;">Gem (Any)</span>`);
-
-  newText = newText.replace(/Gems \(Any\)/gi,
-    `<span class="wiki-keyword-highlight" style="color: turquoise; font-weight: bold;">Gems (Any)</span>`);
-
-  newText = newText.replace(/Gem Bag \(\d+ (Gem|Gems)\)/gi, match =>
-    `<span class="wiki-keyword-highlight" style="color: turquoise; font-weight: bold;">${match}</span>`
-  );
-
-  return newText;
-}
-
-function highlightOrbs(text) {
-  let newText = text;
-
-  Object.keys(orbs).forEach(orbType => {
-    const keyword = `Orb of ${orbType}`;
-    const color = orbs[orbType];
-    const regex = new RegExp(`\\b${escapeRegExp(keyword)}\\b`, 'gi');
-
-    newText = newText.replace(regex, match =>
-      `<span class="wiki-keyword-highlight" style="color: ${color}; font-weight: bold;">${match}</span>`
-    );
-  });
-
-  return newText;
+  const style = document.createElement('style');
+  style.id = 'wiki-formatting-styles';
+  style.textContent = `
+    .wiki-keyword-highlight { font-weight: 700; }
+    .wiki-rarity-magic { color: ${rarityColors.Magic}; }
+    .wiki-rarity-rare { color: ${rarityColors.Rare}; }
+    .wiki-rarity-unique { color: ${rarityColors.Unique}; }
+    .wiki-rarity-set { color: ${rarityColors.Set}; }
+    .wiki-rarity-crafted { color: ${rarityColors.Crafted}; }
+    .wiki-rarity-ethereal { color: ${rarityColors.Ethereal}; }
+    .wiki-rune { color: #a34b00; }
+    .wiki-gem { color: #00756b; }
+    .wiki-orb-conversion { color: ${orbColors.Conversion}; }
+    .wiki-orb-assemblage { color: ${orbColors.Assemblage}; }
+    .wiki-orb-infusion { color: ${orbColors.Infusion}; }
+    .wiki-orb-corruption { color: ${orbColors.Corruption}; }
+    .wiki-orb-socketing { color: ${orbColors.Socketing}; }
+    .wiki-orb-shadows { color: ${orbColors.Shadows}; }
+    .wiki-recipe-tool { color: #5b3a9d; }
+  `;
+  document.head.appendChild(style);
 }
 
 function shouldSkipNode(node) {
@@ -138,23 +113,29 @@ function processTextNode(node) {
 
   const originalText = node.nodeValue;
   if (!originalText || !originalText.trim()) return;
-
-  let newText = originalText;
-  newText = highlightItems(newText);
-  newText = highlightRunes(newText);
-  newText = highlightGems(newText);
-  newText = highlightOrbs(newText);
-
-  if (newText === originalText) return;
-
-  const wrapper = document.createElement('span');
-  wrapper.innerHTML = newText;
+  highlightPattern.lastIndex = 0;
 
   const fragment = document.createDocumentFragment();
-  while (wrapper.firstChild) {
-    fragment.appendChild(wrapper.firstChild);
+  let lastIndex = 0;
+  let match;
+
+  while ((match = highlightPattern.exec(originalText))) {
+    if (match.index > lastIndex) {
+      fragment.appendChild(document.createTextNode(originalText.slice(lastIndex, match.index)));
+    }
+
+    const ruleIndex = match.slice(1).findIndex(Boolean);
+    const highlight = document.createElement('span');
+    highlight.className = `wiki-keyword-highlight ${highlightRules[ruleIndex].className}`;
+    highlight.textContent = match[0];
+    fragment.appendChild(highlight);
+    lastIndex = match.index + match[0].length;
   }
 
+  if (lastIndex === 0) return;
+  if (lastIndex < originalText.length) {
+    fragment.appendChild(document.createTextNode(originalText.slice(lastIndex)));
+  }
   node.parentNode.replaceChild(fragment, node);
 }
 
@@ -202,6 +183,8 @@ function scheduleHighlight(root) {
 function initHighlighting() {
   const root = getContentRoot();
   if (!root) return;
+
+  addHighlightStyles();
 
   scheduleHighlight(root);
 

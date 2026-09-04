@@ -16,7 +16,7 @@ const gemColors = {
   'Topaz': '#c58a00',
   'Diamond': '#d7e5ed',
   'Skull': '#7b8188',
-  'Chaos Onyx': '#252a30'
+  'Chaos Onyx': '#aeb4bb'
 };
 
 const rarityColors = {

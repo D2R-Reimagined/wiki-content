@@ -223,11 +223,8 @@ ___
 
 # Item Enchant System
 
-All weapons, armor and jewelry can be enchanted with various additional stats a certain number of times.   
-2H Weapons can be enchanted 10 times.  
-1H Weapons, Shields and Chest Armor can be enchanted 5 times.  
-Helms, Gloves, Belts and Boots can be enchanted 3 times.  
-Jewelry can be enchanted 2 times.
+> All weapons, armor and jewelry can be enchanted with various additional stats a certain number of times.   
+
 
 **Sections:** [Amulets](#amulets) | [Rings](#rings) | [Belts](#belts) | [Boots](#boots) | [Gloves](#gloves) | [Helms](#helms) | [Shields](#shields) | [Body Armor](#body-armor) | [Weapons](#weapons)
 

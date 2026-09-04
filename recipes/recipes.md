@@ -9,7 +9,40 @@ dateCreated: 2026-04-05T02:57:13.104Z
 ---
 
 # Recipes in Reimagined
-Below are the cube recipes, [Enchanting](https://wiki.d2r-reimagined.com/en/recipes#item-enchant-system) recipes, and [Item Crafting](https://wiki.d2r-reimagined.com/en/recipes#item-crafting-system) recipes. Many vanilla recipes were removed. If the recipe is not on this page or the website's list of recipes [here](https://www.d2r-reimagined.com/cube-recipes?hideVanilla=false) it does not exist in the mod.
+Below are the cube, enchanting, and item crafting recipes for Reimagined. Many vanilla recipes were removed. If a recipe is not on this page or the website's list of recipes [here](https://www.d2r-reimagined.com/data/cube-recipes?hideVanilla=false), it does not exist in the mod.
+
+## Contents
+
+- [Cube Recipes](#cube-recipes)
+	- [Socket Recipes](#socket-recipes)
+	- [Unsocket Recipes](#unsocket-recipes)
+	- [Conversion Recipes](#conversion-recipes)
+	- [Recycle Recipes](#recycle-recipes)
+	- [Reroll Recipes](#reroll-recipes)
+	- [Base Upgrade Recipes](#armor--weapon-base-upgrade-recipes)
+	- [Repair Recipes](#repair-recipes)
+	- [Portal Recipes](#portal-recipes)
+- [Item Enchant System](#item-enchant-system)
+	- [Enchant Recipes](#amulets)
+- [Item Crafting System](#item-crafting-system)
+	- [Crafting Recipes](#amulets-1)
+	- [Jewels](#jewels)
+	- [Charms](#charms)
+	- [Sunder Charms](#sunder-charms)
+
+## How to Read the Tables
+
+- Start with the item in the first column, then add the reagents from left to right.
+- The `=` column separates the recipe inputs from the result.
+- Empty cells mean no reagent is required in that position.
+- Multiple lines in one cell describe alternatives or multiple resulting stats.
+
+| Term | Meaning |
+| --- | --- |
+| `plvl` | The result's level is based on the character's level. |
+| `ilvl` | The result's level is based on the input item's level. |
+| `CTC` | Chance to Cast. |
+| `oskill` | A skill usable by any class. |
 
 
 
@@ -17,13 +50,15 @@ Below are the cube recipes, [Enchanting](https://wiki.d2r-reimagined.com/en/reci
 
 Horadric Cube recipes that players may find useful on their journeys.
 
+**Sections:** [Sockets](#socket-recipes) | [Unsocket](#unsocket-recipes) | [Conversion](#conversion-recipes) | [Recycle](#recycle-recipes) | [Reroll](#reroll-recipes) | [Base Upgrades](#armor--weapon-base-upgrade-recipes) | [Repair](#repair-recipes) | [Portals](#portal-recipes)
+
 ## Socket Recipes
 
 Applies to Weapons, Shields, Chest Armor and Helms only.
 
 Jewelry, Belts, Gloves and Boots cannot have sockets.
 
-The number of sockets is dependent on Item Level. Check the [Bases](https://www.d2r-reimagined.com/bases) website page in order to check the number of sockets an item can have based on its item level.
+The number of sockets is dependent on Item Level. Check the [maximum socket count for each base](https://www.d2r-reimagined.com/data/bases) before attempting to punch sockets.
 <br> 
 
 | **Reagent** | **Reagent** | **=** | **Outcome** |
@@ -36,6 +71,7 @@ The number of sockets is dependent on Item Level. Check the [Bases](https://www.
 **\*Based on item's level and max number of sockets**
 **\*Orb of Socketing can always be used if sockets are already present, it will randomly reroll a new amount.**
 - Example of socket punching with jewels: weapon with 3 socket currently that can have 4 or more sockets cubed with 4 jewels = item with 4 sockets
+
 ## Unsocket Recipes
 
 Pliers can be bought from Blacksmithing vendors in all acts.  
@@ -55,9 +91,10 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | :--- | :---: | :---: | :---: | ---: |
 | 9 Magic Jewels | | | \= | Rare Jewel |
 | 6 Rare Jewels | | | \= | Unique Jewel |
-| Standard of Heroes<br>(100% drop from Ubers) | TP Tome \* | | \= | Standard of Terror  <br><br>**Selling this to any vendor spawns DClone<br>in place of next Super Unique monster** |
+| Standard of Heroes <br>(100% drop from Ubers) | TP Tome \* | | \= | Standard of Terror <br><br>**Selling this to any vendor spawns DClone <br>in place of next Super Unique monster** <br>(sells just like SOJ) |
 | Uber Spirits (1 of each) | | | \= | Hellfire Torch |
 | 2 Unstacked Runes | TP Tome \* | | \= | 1 Rune Higher |
+| 9 Unstacked Runes | | | \= | 1 Rune 3 Levels Higher |
 | Stacked Rune (Qty ≥ 2) | TP Tome \* | | \= | 1 Rune Higher<br><br>Stack Qty - 2 |
 | 1 Unstacked Rune | ID Tome \* | | \= | 1 Rune Lower |
 | Stacked Rune (Qty ≥ 1) | ID Tome \* | | \= | 1 Rune Lower<br><br>Stack Qty - 1 |
@@ -66,11 +103,12 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | Healing Potion  <br>(Any) | 3 Gems (Any) | | \= | Full Rejuvenation Potion |
 | Healing Potion  <br>(Any) | Gem Bag (3 Gems) | | \= | Full Rejuvenation Potion |
 | 5 Orb of Infusion | Uber Spirits (1 of each) | | \= | Orb of Conversion |
-| Armor / Weapon / Shield  <br>(Any) | Unique Jewel | OHM Rune | \= | Ethereal Item |
-| **\^** Does not work on Indestructible Items, Bows or Crossbows, or items without durability. | | | | |
-| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \= | White Base Item |
-| **\^** Item is completely regenerated, as if a new white base dropped. | | | | |
-| Weapon / Torso / Shield  <br>(Any)<br><br>**\^** This recipe accepts any rarity.  <br>Item is completely regenerated as a white item (no previous stats are retained), upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._** | Orb of Infusion | Uber Spirits (1 of each) | \= | White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) |
+| Armor / Weapon / Shield  <br>**_DOES NOT WORK ON:_** <br>Indestructible items<br>Bows or Crossbows<br>Items without Durability | Unique Jewel | OHM Rune | \= | Ethereal Item |
+| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \= | Becomes White Base Item<br><br>**Item is regenerated as a new white item. <br>Enchants/Corruption wiped.** |
+| Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \= | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield)<br>**Item is regenerated as a new white item. <br>Enchants/Corruption wiped.** |
+
+| | | | | **Item is upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.**  
+**_This recipe no longer stacks on items._** |
 
 
 **\* Tome is returned full**
@@ -81,11 +119,12 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | :--- | :---: | :---: | ---: |
 | 3 Unique Rings  <br>OR  <br>3 Unique Amulets | ID Tome **\*** | \=  | Rare Jewel |
 | 3 Set Rings  <br>OR  <br>3 Set Amulets | ID Tome **\*** | \=  | Rare Jewel |
-| 5 Set Weapons  <br>OR  <br>5 Set Armors (Same Type)**\*\*** | ID Tome **\*** | \=  | Gem Cluster |
-| 5 Unique Weapons  <br>OR  <br>5 Unique Armors (Same Type)**\*\*** | ID Tome **\*** | \=  | Gem Cluster |
+| Any 5 Set Weapons/**Armors**** | ID Tome **\*** | \=  | Gem Cluster |
+| Any 5 Unique Weapons/**Armors****/**Ammo***** | ID Tome **\*** | \=  | Gem Cluster |
 
 **\*Tome is returned full**  
-**\*\*5 gloves, 5 boots, 5 chests, etc.**
+**\*\*5 gloves, 5 boots, 5 chests, etc.**  
+**\*\*\*Arrows or Bolts**
 
 ## Reroll Recipes
 
@@ -95,7 +134,7 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | 3 Rare Jewelry  <br>(same type) | | | \= | New Rare Jewelry(100% plvl) |
 | 3 Magic Charms  <br>(same size) | | | \= | New Magic Charm (100% plvl) |
 | 3 Latent Sunder Charms | | | \= | New Latent Sunder Charm (Random Element) |
-| Magic Charm | Gem Bag (3 Gems) | | \= | NewMagic Charm (100% plvl) |
+| Magic Charm | Gem Bag (3 Gems) | | \= | New Magic Charm (100% plvl) |
 | Magic Jewelry | Gem Bag (3 Gems) | | \= | New Magic Jewelry(100% plvl) |
 | Rare Jewelry | Gem Bag (20 Gems) | | \= | New Rare Jewelry(100% plvl) |
 | Set Jewelry | Gem Bag (50 Gems) | | \= | New Set Jewelry(100% plvl) |
@@ -130,18 +169,21 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 
 ## Armor & Weapon Base Upgrade Recipes
 
+### Armor
+
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=** | **Output** |
 | :--- | :---: | :---: | :---: | :---: | ---: |
-| **ARMOR** | | | | | |
-| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=** | **Output** |
 | Rare Armor  <br>(Normal) | RAL Rune | THUL Rune | Amethyst | \=  | Rare Armor  <br>(Exceptional) |
 | Rare Armor  <br>(Exceptional) | KO Rune | PUL Rune | Amethyst | \=  | Rare Armor  <br>(Elite) |
 | Set Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Set Armor  <br>(Exceptional) |
 | Set Armor  <br>(Exceptional) | KO Rune | LEM Rune | Diamond | \=  | Set Armor  <br>(Elite) |
 | Unique Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Unique Armor  <br>(Exceptional) |
 | Unique Armor  <br>(Exceptional) | KO Rune | LEM Rune | Diamond | \=  | Unique Armor  <br>(Elite) |
-| **WEAPONS** | | | | | |
+
+### Weapons
+
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=** | **Output** |
+| :--- | :---: | :---: | :---: | :---: | ---: |
 | Rare Weapon  <br>(Normal) | ORT Rune | AMN Rune | Sapphire | \=  | Rare Weapon  <br>(Exceptional) |
 | Rare Weapon  <br>(Exceptional) | FAL Rune | UM Rune | Sapphire | \=  | Rare Weapon  <br>(Elite) |
 | Set Weapon  <br>(Normal) | RAL Rune | SOL Rune | Emerald | \=  | Set Weapon  <br>(Exceptional) |
@@ -168,6 +210,8 @@ Socketed amount will remain, but you get the socketed items attached jewels or r
 | Diablo's Horn | Baal's Eye | Mephisto's Brain | | | \= | Portal to Tristram (Pandemonium Finale) |
 | Korlic's Pain Statue | Talic's Anguish Statue | Madawc's Ire Statue | Bul-Kathos' Nightmare Statue | Worusk's End Statue | \= | Portal to Colossal Summit (Colossal Ancients) |
 
+[Back to contents](#contents)
+
 <br>
 <br>
 
@@ -181,13 +225,22 @@ All weapons, armor and jewelry can be enchanted with various additional stats a 
 Helms, Gloves, Belts and Boots can be enchanted 3 times.  
 Jewelry can be enchanted 2 times.
 
-#### Important Note:
+**Sections:** [Amulets](#amulets) | [Rings](#rings) | [Belts](#belts) | [Boots](#boots) | [Gloves](#gloves) | [Helms](#helms) | [Shields](#shields) | [Body Armor](#body-armor) | [Weapons](#weapons)
+
+| Item type | Maximum enchants |
+| --- | ---: |
+| 2H Weapons | 10 |
+| 1H Weapons, Shields, and Chest Armor | 5 |
+| Helms, Gloves, Belts, and Boots | 3 |
+| Jewelry | 2 |
+
+### Important Note
 
 Items still respect their data size limits (e.g. +All Skills cannot go past 7). 
 
 -   [D2RR Stat Limits (WIP)](https://wiki.d2r-reimagined.com/en/recipes/ISCStatLimits)
 
-#### Set Items Bug:
+### Set Items Bug
 
 When enchanting set items you must remove all other items from that set from your character first. 
 
@@ -479,11 +532,7 @@ When enchanting set items you must remove all other items from that set from you
 
 ## Weapons
 
-> **Max Enchants:**
-> 
-> **1-handed Weapons: 5**
-> 
-> **2-handed Weapons: 10**
+> **Max Enchants:** 1H Weapons: 5; 2H Weapons: 10
 
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=** | **Added Stat(s)** |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | ---: |
@@ -515,6 +564,8 @@ When enchanting set items you must remove all other items from that set from you
 | **Weapon** | Orb of Infusion | Orb of Conversion | ZOD Rune | Unique Jewel | Emerald | \=  | +2% Poison Skill Damage  <br>\-2% Enemy Poison Res |
 | **Weapon** | Orb of Infusion | Orb of Conversion | ZOD Rune | Unique Jewel | Chaos Onyx | \=  | +2% Magic Skill Damage  <br>\-2% Enemy Magic Res |
 
+[Back to contents](#contents)
+
 # Item Crafting System
 
 Players can craft a variety of items to help define their builds, both as they level and during end-game progression. 
@@ -524,6 +575,16 @@ When an item returns as magic that means it gives you the guaranteed stats with 
 When it returns as rare, that means it gives the guaranteed stats with a chance at between 1-3 prefixes and 1-3 suffixes chosen at random. 
 
 When the item is returned as crafted, it will have a chance to have a set number of bonus affixes in addition to the guaranteed stats based on the level of the item returned, which is always the same as the character that created the craft unless specified otherwise. More information on level requirements and affix count for crafted items can be found [here](https://maxroll.gg/d2/items/crafted-items).
+
+**Sections:** [Amulets](#amulets-1) | [Rings](#rings-1) | [Belts](#belts-1) | [Boots](#boots-1) | [Gloves](#gloves-1) | [Helms](#helms-1) | [Shields](#shields-1) | [Body Armor](#body-armor-1) | [Weapons](#weapons-1) | [Jewels](#jewels) | [Charms](#charms) | [Sunder Charms](#sunder-charms)
+
+| Result type | What it includes |
+| --- | --- |
+| Magic | Guaranteed stats, plus a chance for one prefix and one suffix. |
+| Rare | Guaranteed stats, plus a chance for 1-3 prefixes and 1-3 suffixes. |
+| Crafted | Guaranteed stats, plus a chance for bonus affixes based on the result's level. |
+
+Unless stated otherwise, a crafted item's level matches the character who made it. See [Maxroll's crafted item guide](https://maxroll.gg/d2/items/crafted-items) for level requirements and affix counts.
 
 ## Amulets
 
@@ -578,9 +639,9 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Magic Gloves | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 4 Battle Command on Level-Up<br><br>Magic Gloves |
 | Magic Gloves | Magic Jewel | RAL Rune |     |     | \=  | +8% Faster Attack Speed<br><br>+8% Faster Cast Rate<br><br>Magic Gloves |
 | Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (Current Class)<br><br>+10-15% Increased Attack Speed<br><br>Rare Gloves |
-| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (Current Class -)<br><br>+10-15% Faster Cast Rate<br><br>Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (Current Class)<br><br>+10-15% Faster Cast Rate<br><br>Rare Gloves |
 | Rare Gloves | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +30% Chance Items Roll Magic or Better<br><br>+20-25% to All Resistances<br><br>Rare Gloves |
-| Rare Gloves | Unique Jewel | ZOD Rune | VEX Rune | Ruby | \=  | +1 to All skills<br><br>+20-40 Weapon Damage<br><br>+0.125% Change of Crushing Blow (Per Character Level)<br><br>Crafted Gloves |
+| Rare Gloves | Unique Jewel | ZOD Rune | VEX Rune | Ruby | \=  | +1 to All skills<br><br>+20-40 Weapon Damage<br><br>+0.125% Chance of Crushing Blow (Per Character Level)<br><br>Crafted Gloves |
 | Rare Gloves | Unique Jewel | ZOD Rune | VEX Rune | Sapphire | \=  | +1 to All skills<br><br>+5-10% to All Elemental Damage<br><br>+10-20% Faster Cast Rate<br><br>Crafted Gloves |
 
 ## Helms
@@ -590,8 +651,8 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Magic Helm | ITH Rune | EL Rune |     |     | \=  | 100% CTC Level 1 Shout on Level-Up<br><br>Magic Helm |
 | Magic Helm | Orb of Infusion | RAL Rune | Gem (Any) |     | \=  | +15% Faster Hit Recovery<br><br>Rare Helm |
 | Rare Helm | Rare Jewel | UM Rune | EL Rune | Gem (Any) | \=  | +20-30% Faster Hit Recovery<br><br>+20-25% to All Resistances<br><br>Rare Helm |
-| Rare Helm | Rare Jewel | Pul Rune | EL Rune | Ruby | \=  | +1 to All (Current Class  Skills<br><br>+10-15% Increased Attack Speed<br><br>Rare Helm |
-| Rare Helm | Rare Jewel | PUL Rune | EL Rune | Sapphire | \=  | +1 to All (Current Class ) Skills<br><br>+10-15% Faster Cast Rate<br><br>Rare Helm |
+| Rare Helm | Rare Jewel | Pul Rune | EL Rune | Ruby | \=  | +1 to All (Current Class) Skills<br><br>+10-15% Increased Attack Speed<br><br>Rare Helm |
+| Rare Helm | Rare Jewel | PUL Rune | EL Rune | Sapphire | \=  | +1 to All (Current Class) Skills<br><br>+10-15% Faster Cast Rate<br><br>Rare Helm |
 | Rare Helm | Unique Jewel | ZOD Rune | VEX Rune | Ruby | \=  | +1-2 to All skills<br><br>+20-30% Enhanced Weapon Damage<br><br>Crafted Helm |
 | Rare Helm | Unique Jewel | ZOD Rune | VEX Rune | Sapphire | \=  | +1-2 to All skills<br><br>+5-10% to All Elemental Damage<br><br>Crafted Helm |
 | Rare Helm | Unique Jewel | JAH Rune | BER Rune | Gem (Any) | \=  | +2 to All Skills<br><br>+5-10% Physical Damage Reduction<br><br>+5-10% Increased Maximum Health<br><br>Crafted Helm |
@@ -629,24 +690,15 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Any Magic Weapon | Magic Jewel | RAL Rune | Sapphire |     | \=  | +5% to All Elemental Damage<br><br>+15% Faster Cast Rate<br><br>Magic Weapon |
 | Any Magic Weapon | Orb of Infusion | SOL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Min/Max Weapon Damage (Per Character Level)<br><br>+20% Increased Attack Speed<br><br>Rare Weapon |
 | Any Rare Weapon | Rare Jewel | LEM Rune | EL Rune | Gem (Any) | \=  | +150% Enhanced Weapon Damage<br><br>+30% Increased Attack Speed<br><br>Rare Weapon |
-| Any Rare Weapon | Rare Jewel | PUL Rune | EL Rune | Gem (Any) | \=  | +1to All skills<br><br>\-10% to All Enemy Elemental Resistances<br><br>+20% Faster Caste Rate<br><br>Rare Weapon |
+| Any Rare Weapon | Rare Jewel | PUL Rune | EL Rune | Gem (Any) | \=  | +1 to All skills<br><br>\-10% to All Enemy Elemental Resistances<br><br>+20% Faster Cast Rate<br><br>Rare Weapon |
 | 1H Rare Weapon | Unique Jewel | BER Rune | OHM Rune | Gem (Any) | \=  | +2 to All skills<br><br>+150-200% Enhanced Weapon Damage<br><br>+30-60 Weapon Damage<br><br>1H Crafted Weapon |
 | 2H Rare Weapon | Unique Jewel | BER Rune | OHM Rune | Gem (Any) | \=  | +2 to All skills<br><br>+220-250% Enhanced Weapon Damage<br><br>+60-100 Weapon Damage<br><br>2H Crafted Weapon |
 | 1H Rare Weapon | Unique Jewel | CHAM Rune | BER Rune | Gem (Any) | \=  | +2 to All skills<br><br>+10-15% to All Elemental Damage<br><br>\-8-12% to All Enemy Elemental Resistances<br><br>1H Crafted Weapon |
 | 2H Rare Weapon | Unique Jewel | CHAM Rune | BER Rune | Gem (Any) | \=  | +2 to All skills<br><br>+15-20% to All Elemental Damage<br><br>\-12-16% to All Enemy Elemental Resistances<br><br>2H Crafted Weapon |
 
-## Arrows & Bolts
-
-| **Reagent** | **Reagent** | **Reagent** | **=** | **Result** |
-| :--- | :---: | :---: | :---: | ---: |
-| Arrows  <br>OR  <br>Bolts | TIR Rune | Gem (Any) | \=  | Replenishing Quiver   <br>OR  <br>Replenishing Bolt Case<br><br>Req lvl: 6  <br>Adds 2-8 Dmg  <br>+10% Increased Attack Speed  <br>Replenishes Quantity |
-| Arrows  <br>OR  <br>Bolts | THUL Rune | Gem (Any) | \=  | Quiver of Piercing   <br>OR  <br>Bolt Case of Piercing<br><br>Reqlvl: 35  <br>Adds 4-12 Dmg  <br>+15% Increased Attack Speed  <br>+15% Pierce  <br>Replenishes Quantity |
-| Arrows  <br>OR  <br>Bolts | FAL Rune | Gem (Any) | \=  | Quiver of Slaying   <br>OR  <br>Bolt Case of Slaying<br><br>Req lvl: 65  <br>Adds 5-20 Dmg  <br>+20% Increased Attack Speed  <br>+15% Pierce (Bolt) or +25% Pierce (Quiver)  <br>+1 Bow & Crossbow Skills  <br>Replenishes Quantity |
-| Quiver of Slaying  <br>OR  <br>Bolt Case of Slaying | Rare Jewel | VEX Rune | \=  | Quiver of Amplified Slaying   <br>OR  <br>Bolt Case of Amplified Slaying<br><br>Req lvl: 85  <br>Adds 10-25 Dmg  <br>+20% Increased Attack Speed  <br>25% Pierce  <br>+2 Bow & Crossbow Skills  <br>20% Chance to Cast lvl10 Amplify Damage on Hit |
-| Quiver of Slaying  <br>OR  <br>Bolt Case of Slaying | Rare Jewel | OHM Rune | \=  | Quiver of Resistance Slaying   <br>OR  <br>Bolt Case of Resistance Slaying<br><br>Req lvl: 85  <br>Adds 10-25 Dmg  <br>+20% Increased Attack Speed  <br>+25% Pierce  <br>+2 Bow & Crossbow Skills  <br>20% Chance to Cast lvl5 Lower Resist on Hit |
-| Quiver of Slaying  <br>OR  <br>Bolt Case of Slaying | Rare Jewel | GUL Rune | \=  | Quiver of Pestilence   <br>OR  <br>Bolt Case of Pestilence<br><br>Req lvl: 85  <br>\-10% to Enemy Poison Resistance  <br>+10% to Poison Damage  <br>+20% Increased Attack Speed  <br>+25% Piercing Attack  <br>5% CTC Level 10 Corpse Explosion on Hit |
-
 ## Jewels
+
+> These crafts result in various unique jewels based upon the element type Latent Sunder Charm used as a reagent.  <br>**Must be a non-crafted sunder charm.**
 
 | **Reagent** | **Reagent** | **Reagent** | **=** | **Guaranteed Stats** |
 | :--- | :---: | :---: | :---: | ---: |
@@ -659,7 +711,8 @@ When the item is returned as crafted, it will have a chance to have a set number
 
 ## Charms
 
-> All crafts produce guaranteed stats, and an additional 3--4 random stats from the Grand Charm Prefix/Suffix table 
+> All crafts produce guaranteed stats, and an additional 3-4 random stats from the Grand Charm Prefix/Suffix table
+> Crafts that produce a Magic item will only roll 1-2 random affixes
 
 | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=** | **Guaranteed Stats** |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | ---: |
@@ -670,24 +723,38 @@ When the item is returned as crafted, it will have a chance to have a set number
 | Magic Charm  <br>(Grand) | Magic Jewel | PUL Rune | EL Rune | | | \= | +50-70 Defense<br><br>+10-15 Weapon Damage |
 | Magic Charm  <br>(Grand) | Magic Jewel | UM Rune | EL Rune | | | \= | +8-10 All Resistances |
 | Magic Charm  <br>(Grand) | Magic Jewel | IST Rune | EL Rune | | | \= | +25-40% Magic Find<br><br>+50-80% Gold Find |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Topaz | | \= | +1 Random Assassin Skill Tab |
-| Magic Charm  <br>(Grand) | Rare Jewel | VEX Rune | THUL Rune | Ruby | | \= | +1 Random Barbarian Skill Tab |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Sapphire | | \= | +1 Random Sorceress Skill Tab |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Emerald | | \= | +1 Random Druid Skill Tab |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Skull | | \= | +1 Random Necromancer Skill Tab |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Amethyst | | \= | +1 Random Amazon Skill Tab |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Diamond | | \= | +1 Random Paladin Skill Tab |
-| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Chaos Onyx | | \= | +1 Random Warlock Skill Tab |
-| Unique Charm  <br>(Sunder: Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | | | \= | Sunder Enemy Fire Resistance<br><br>No Resistance Penalty |
-| Unique Charm  <br>(Sunder: Cold) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | | | \= | Sunder Enemy Cold Resistance<br><br>No Resistance Penalty |
-| Unique Charm  <br>(Sunder: Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | | | \= | Sunder Enemy Lightning Resistance<br><br>No Resistance Penalty |
-| Unique Charm  <br>(Sunder: Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | | | \= | Sunder Enemy Poison Resistance<br><br>No Resistance Penalty |
-| Unique Charm  <br>(Sunder: Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | | | \= | Sunder Enemy Physical Resistance<br><br>No Resistance Penalty |
-| Unique Charm  <br>(Sunder: Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | | | \= | Sunder Enemy Magic Resistance<br><br>No Resistance Penalty |
-| | | | | | | | **_Vanilla Sunder Charms are Below_** |
-| Unique Charm  <br>(Sunder: Fire) | Deep Worldstone Shard | IO Rune | Ruby | | | \= | Renewed Flame Rift<br><br>\-70% Fire Resistance Penalty<br><br>Either: +5-15% to Fire Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Fire Resistance<br><br>Unique Charm |
-| Unique Charm  <br>(Sunder: Cold) | Eastern Worldstone Shard | LUM Rune | Sapphire | | | \= | Renewed Cold Rupture<br><br>\-70% Cold Resistance Penalty<br><br>Either: +5-15% to Cold Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Cold Resistance<br><br>Unique Charm |
-| Unique Charm  <br>(Sunder: Lightning) | Southern Worldstone Shard | FAL Rune | Topaz | | | \= | Renewed Crack of the Heavens<br><br>\-70% Lightning Resistance Penalty<br><br>Either: +5-15% to Lightning Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Lightning Resistance<br><br>Unique Charm |
-| Unique Charm  <br>(Sunder: Poison) | Western Worldstone Shard | KO Rune | Emerald | | | \= | Renewed Rotting Fissure<br><br>\-70% Poison Resistance Penalty<br><br>Either: +5-15% to Poison Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Poison Resistance<br><br>Unique Charm |
-| Unique Charm  <br>(Sunder: Physical) | Northern Worldstone Shard | PUL Rune | Amethyst | | | \= | Renewed Bone Break<br><br>\-10% Physical Resistance Penalty<br><br>Either: +75-100% to Enhanced Weapon Damage<br><br>OR<br><br>\-5-10% to Enemy Physical Damage Resistance<br><br>Unique Charm |
-| Unique Charm  <br>(Sunder: Magic) | Southern Worldstone Shard | Deep Worldstone Shard | Northern Worldstone Shard | MAL Rune | Diamond | \= | Renewed Black Cleft<br><br>\-45% Magic Resistance Penalty<br><br>Either: +10-15% to Magic Skill Damage<br><br>OR<br><br>\-5-10% to Enemy Magic Resistance<br><br>Unique Charm |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Topaz | | \= | +1 Random Assassin Skill Tab<br>Crafted Charm |
+| Magic Charm  <br>(Grand) | Rare Jewel | VEX Rune | THUL Rune | Ruby | | \= | +1 Random Barbarian Skill Tab<br>Crafted Charm |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Sapphire | | \= | +1 Random Sorceress Skill Tab<br>Crafted Charm |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Emerald | | \= | +1 Random Druid Skill Tab<br>Crafted Charm |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Skull | | \= | +1 Random Necromancer Skill Tab<br>Crafted Charm |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Amethyst | | \= | +1 Random Amazon Skill Tab<br>Crafted Charm |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Diamond | | \= | +1 Random Paladin Skill Tab<br>Crafted Charm |
+| Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Chaos Onyx | | \= | +1 Random Warlock Skill Tab<br>Crafted Charm |
+
+## Sunder Charms
+
+> The renewed sunders now roll:
+> - Affix 1: extra 5-15% elemental skill damage or 5-15% elemental pierce (enhanced weapon damage 50-100%) or +1 to all skills.
+> - Affix 2: 20-30% magic find or 40-60% gold find.
+> - Affix 3: 20-50 HP or 20-50 mana or 50-100 defense.
+> - Affix 4: 10-20% faster run/walk or 15-20% faster hit recovery or 5-10 all stats.
+> - Affix 5: Remove negative resist penalty or half the resist penalty.
+> - Affix 6: 5-15% increased attack speed or 5-15% faster cast rate.
+
+> - **You can only hold one renewed sunder charm of a single element.**  
+> Be sure to put already crafted ones in shared stash when you try to craft them
+
+| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Guaranteed Stats** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **RENEWED SUNDER CHARMS** | | | | | | | | |
+| Unique Charm:<br>Latent Flame Rift (Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Deep Worldstone Shard | | | \= | Renewed Flame Rift |
+| Unique Charm:<br>Latent Cold Rupture (Cold) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Eastern Worldstone Shard | | | \= | Renewed Cold Rupture |
+| Unique Charm:<br>Latent Crack of the Heavens (Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Southern Worldstone Shard | | | \= | Renewed Crack of the Heavens |
+| Unique Charm:<br>Latent Rotting Fissure (Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Western Worldstone Shard | | | \= | Renewed Rotting Fissure |
+| Unique Charm:<br>Latent Bone Break (Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Northern Worldstone Shard | | | \= | Renewed Bone Break |
+| Unique Charm:<br>Latent Black Cleft (Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Northern Worldstone Shard | Southern Worldstone Shard | Deep Worldstone Shard | \= | Renewed Black Cleft |
+| **Reset renewed sunder back to its latent version** | | | | | | | | |
+| Charm:<br>Renewed Sunder<br>Any Type | HEL Rune | Gem Bag (200 Gems) | | | | | \= | Latent Charm of the same type |
+
+[Back to contents](#contents)

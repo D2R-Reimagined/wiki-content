@@ -14,9 +14,9 @@ const gemColors = {
   'Ruby': '#c62828',
   'Emerald': '#159447',
   'Topaz': '#c58a00',
-  'Diamond': '#159fc1',
+  'Diamond': '#d7e5ed',
   'Skull': '#7b8188',
-  'Chaos Onyx': '#41464d'
+  'Chaos Onyx': '#252a30'
 };
 
 const rarityColors = {

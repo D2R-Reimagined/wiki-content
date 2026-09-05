@@ -2,8 +2,8 @@
 title: Item Enchants
 description: How to upgrade items to add additional stats
 published: true
-date: 2026-04-05T02:56:49.075Z
-tags: enchant, crafting, upgrades, item upgrades, enchanting, stat increase, cube, cube recipes
+date: 2026-09-05T00:42:48.171Z
+tags: enchant, crafting, cube, cube recipes, upgrades, item upgrades, enchanting, stat increase
 editor: markdown
 dateCreated: 2025-02-07T13:46:35.085Z
 ---

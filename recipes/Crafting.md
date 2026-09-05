@@ -2,7 +2,7 @@
 title: Item Crafting
 description: 
 published: true
-date: 2026-09-02T23:48:19.324Z
+date: 2026-09-05T00:42:08.970Z
 tags: sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, cube, cube recipes, facet
 editor: markdown
 dateCreated: 2025-02-03T05:00:21.661Z

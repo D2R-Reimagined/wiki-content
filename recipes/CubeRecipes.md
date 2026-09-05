@@ -2,164 +2,655 @@
 title: Cube Recipes
 description: 
 published: true
-date: 2026-08-31T18:00:35.675Z
+date: 2026-09-05T00:41:44.886Z
 tags: gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster
 editor: markdown
 dateCreated: 2025-02-04T14:46:26.843Z
 ---
 
-# Cube Recipes
-
-Horadric Cube recipes that players may find useful on their journeys.
-
-Additional recipes can be found on the [Item Crafting](https://wiki.d2r-reimagined.com/en/recipes/Crafting) and [Item Enchants](https://wiki.d2r-reimagined.com/en/recipes/ItemEnchants)  pages.
-
-## Socket Recipes
-
-Applies to Weapons, Shields, Chest Armor and Helms only.
-
-Jewelry, Belts, Gloves and Boots cannot have sockets.
-
-The number of sockets is dependent on Item Level. Check [online sources](https://diablo2.diablowiki.net/Sockets) before attempting to punch sockets.  
- 
-
-| **Reagent** | **Reagent** | **=**| **Outcome** |
-| :--- | :---: | :---: | ---: |
-| Item (White)  <br>OR  <br>Item (Magic) | \# Magic Jewels | \=  | \# Sockets |
-| Item (Rare)  <br>OR  <br>Item (Set) | \# Rare Jewels | \=  | \# Sockets |
-| Item (Unique)  <br>OR  <br>Item (Crafted) | \# Unique Jewels | \=  | \# Sockets |
-| Item | Orb of Socketing | \=  | #-# Sockets (Random) **\*** |
-
-**\*Based on item's level and max number of sockets**
-**\*Orb of Socketing can always be used if sockets are already present, it will randomly reroll a new amount.**
-
-## Unsocket Recipes
-
-Pliers can be bought from Blacksmithing vendors in all acts.
-Socketed amount will remain, but you get the socketed items attached jewels or runes returned.
- 
-
-| **Reagent** | **Reagent** |     | **Outcome** |
-| --- | --- | --- | --- |
-| Runeword | Rune Pliers | \=  | Base Item<br><br>Runes |
-| Socketed Item | Jewel Pliers **\*** | \=  | Base Item<br><br>Socketed Items |
-
-**\*Does not work on runewords**
-
-## Conversion Recipes
-
-| **Reagent** | **Reagent** | **Reagent** |     | **Output** |
-| --- | --- | --- | --- | --- |
-| 9 Magic Jewels |     |     | \=  | Rare Jewel |
-| 6 Rare Jewels |     |     | \= | Unique Jewel |
-| Uber Spirits (1 of each) |     |     | \=  | Hellfire Torch |
-| Standard of Heroes <br>(100% drop from Ubers) | TP Tome \* |     | \=  | Standard of Terror <br><br><span style="color:red">Selling this to any vendor spawns DClone <br>inplace of next Super Unique monster</span> <br>(sells just like SOJ) |
-| 2 Unstacked Runes | TP Tome \* |     | \=  | 1 Rune Higher |
-| 9 Unstacked Runes |     |     |  \=  | 1 Rune 3 Levels Higher
-| Stacked Rune (Qty ≥ 2) | TP Tome \* |     | \=  | 1 Rune Higher<br><br>Stack Qty - 2 |
-| 1 Unstacked Rune | ID Tome \* |     | \=  | 1 Rune Lower |     |
-| Stacked Rune (Qty ≥ 1) | ID Tome \* |     | \=  | 1 Rune Lower<br><br>Stack Qty - 1 |
-| Healing Potion  <br>(Any) | Gem (Any) |     | \=  | Rejuvenation Potion |
-| 3 Rejuvenation Potions |     |     | \=  | Full Rejuvenation Potion |
-| Healing Potion  <br>(Any) | 3 Gems (Any) |     | \=  | Full Rejuvenation Potion |
-| Healing Potion  <br>(Any) | Gem Bag (3 Gems) |     | \=  | Full Rejuvenation Potion |
-| 5 Orb of Infusion | Uber Spirits (1 of each) |     | \=  | Orb of Conversion |
-| Armor / Weapon / Shield  <br><span style="color:red">_DOES NOT WORK ON:_ <br>Indestructible items<br>Bows or Crossbows<br>Items without Durability</span> | Unique Jewel | OHM Rune | \=  | Ethereal Item |
-| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \=  | Becomes White Base Item<br><br><span style="color:red">Item is regenerated as a new white item. <br>Enchants/Corruption wiped.</span> |
-| Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \=  | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield) <br><span style="color:red">Item is regenerated as a new white item. <br>Enchants/Corruption wiped.</span>|
-
- |     |     |     |     |** **Item is upgraded to or remains Elite,<br> and can gain superior modifiers in addition to the granted modifiers.  <br>**_This recipe no longer stacks on items._**|
-**\* Tome is returned full**
-
-## Recycle Recipes
-
-| **Reagent** | **Reagent** |     | **Output** |
-| --- | --- | --- | --- |
-| 3 Unique Rings  <br>OR  <br>3 Unique Amulets | ID Tome **\*** | \=  | Rare Jewel |
-| 3 Set Rings  <br>OR  <br>3 Set Amulets | ID Tome **\*** | \=  | Rare Jewel |
-| Any 5 <span style="color:green">Set Weapons/**Armors****</span>  | ID Tome **\*** | \=  | Gem Cluster |
-| Any 5 <span style="color:orange">Unique Weapons/**Armors****/**Ammo*****</span> | ID Tome **\*** | \=  | Gem Cluster |
-
-**\*Tome is returned full**  
-**\*\*5 gloves, 5 boots, 5 chests, etc.**
-**\*\*\*Arrows or Bolts**
-
-## Reroll Recipes
-
-| **Reagent** | **Reagent** |     |     | **Output** |
-| --- | --- | --- | --- | --- |
-| 3 Magic Jewelry  <br>(same type) |     |     | \=  | New Magic Jewelry (100% plvl) |
-| 3 Rare Jewelry  <br>(same type) |     |     | \=  | New Rare Jewelry(100% plvl) |
-| 3 Magic Charms  <br>(same size) |     |     | \=  | New Magic Charm (100% plvl) |
-| 3 Latent Sunder Charms |     |     | \=  | New Latent Sunder Charm (Random Element) |
-| Magic Charm | Gem Bag (3 Gems) |     | \=  | NewMagic Charm (100% plvl) |
-| Magic Jewelry | Gem Bag (3 Gems) |     | \=  | New Magic Jewelry(100% plvl) |
-| Rare Jewelry | Gem Bag (20 Gems) |     | \=  | New Rare Jewelry(100% plvl) |
-| Set Jewelry | Gem Bag (50 Gems) |     | \=  | New Set Jewelry(100% plvl) |
-| Unique Jewelry | Gem Bag (50 Gems) |     | \=  | New Unique Jewelry(100% plvl) |
-| Magic Jewel | Gem Bag (3 Gems) |     | \=  | New Magic Jewel (100% plvl) |
-| Rare Jewel | Gem Bag (10 Gems) |     | \=  | New Rare Jewel (100% plvl) |
-| Unique Jewel | Gem Bag (50 Gems) |     | \=  | New Unique Jewel (100% ilvl) |
-| Key of Terror | Orb of Corruption | TP Tome **\*** | \=  | Key of Hate |
-| Key of Terror | Orb of Corruption | ID Tome **\*** | \=  | Key of Destruction |
-| Key of Hate | Orb of Corruption | TP Tome **\*** | \=  | Key of Destruction |
-| Key of Hate | Orb of Corruption | ID Tome **\*** | \=  | Key of Terror |
-| Key of Destruction | Orb of Corruption | TP Tome **\*** | \=  | Key of Terror |
-| Key of Destruction | Orb of Corruption | ID Tome **\*** | \=  | Key of Hate |
-| Eastern Worldstone Shard | Any Statue |     | \=  | Korlic's Pain Statue |
-| Western Worldstone Shard | Any Statue |     | \=  | Talic's Anguish Statue |
-| Southern Worldstone Shard | Any Statue |     | \=  | Madawc's Ire Statue |
-| Deep Worldstone Shard | Any Statue |     | \=  | Bul-Kathos' Nightmare Statue |
-| Northern Worldstone Shard | Any Statue |     | \=  | Worusk's End Statue |
-| Any Set Armor or Ring/Amulet | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Set Item \*\*<br>Regenerates the same set item but with re-rolled stats.<br><span style="color:red">Upgrades/Corruption wiped.<br>If the set's base was previously up-tiered, then instead this <br>will change the set to a different one that can roll on that base type.</span> |
-| Any Unique Armor or Ring/Amulet | Orb of Corruption | Uber Spirits (1 of each) | \=  | Rerolled Unique Item \*\* <br>Regenerates the same unique item but with re-rolled stats.<br><span style="color:red">Upgrades/Corruption wiped.<br>If the unique's base was previously up-tiered, then instead this <br>will change the unique to a different one that can roll on that base type.</span>|
-
-100% plvl = item's level is based 100% on character's level  
-100% ilvl = item's level is based 100% on input item's level
-
-**\*Tome is returned full**  
-**\**_Example1:_** If you used this on the Unique boots "War Traveler" that are [X] (Battle Boots), they would get rerolled as a brand new Unique boots "War Traveler".  Beecause they naturally drop as [X].
-
-**\**_Example2:_** Instead say the Unique boots "War Traveler" are [E] (Mirrored Boots) because you previously used the cube recipe to upgrade them from Exceptional to Elite, this recipe would instead reroll the item into a completely different unique that matches only the Unique [E] Mirrored Boots base.
-
-## Armor & Weapon Base Upgrade Recipes
-
-| **ARMOR** ||||||
-| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=**| **Output** |
-| :--- | :---: | :---: | :---: | :---: | ---: |
-| Rare Armor  <br>(Normal) | RAL Rune | THUL Rune | Amethyst | \=  | Rare Armor  <br>(Exceptional) |
-| Rare Armor  <br>(Exceptional) | KO Rune | PUL Rune | Amethyst | \=  | Rare Armor  <br>(Elite) |
-| Set Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Set Armor  <br>(Exceptional) |
-| Set Armor  <br>(Exceptional) | KO Rune | LEM Rune | Diamond | \=  | Set Armor  <br>(Elite) |
-| Unique Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Unique Armor  <br>(Exceptional) |
-| Unique Armor  <br>(Exceptional) | KO Rune | LEM Rune | Diamond | \=  | Unique Armor  <br>(Elite) 
-
-
-| **WEAPONS** ||||||
-| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **=** | **Output** |
-| :--- | :---: | :---: | :---: | :---: | ---: |
-| Rare Weapon  <br>(Normal) | ORT Rune | AMN Rune | Sapphire | \=  | Rare Weapon  <br>(Exceptional) |
-| Rare Weapon  <br>(Exceptional) | FAL Rune | UM Rune | Sapphire | \=  | Rare Weapon  <br>(Elite) |
-| Set Weapon  <br>(Normal) | RAL Rune | SOL Rune | Emerald | \=  | Set Weapon  <br>(Exceptional) |
-| Set Weapon  <br>(Exceptional) | LUM Rune | PUL Rune | Emerald | \=  | Set Weapon  <br>(Elite) |
-| Unique Weapon  <br>(Normal) | RAL Rune | SOL Rune | Emerald | \=  | Unique Weapon  <br>(Exceptional) |
-| Unique Weapon  <br>(Exceptional) | LUM Rune | PUL Rune | Emerald | \=  | Unique Weapon  <br>(Elite) |
-
-## Repair Recipes
-
-| **Reagent** | **Reagent** | **Reagent** | **=** | **Output** |
-| :--- | :---: | :---: | :---: | ---: |
-| Quiver  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
-| Bolt Case  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
-| Item  <br>(Ethereal) | 2 Rare Jewels | PUL Rune | \=  | Repaired Ethereal Item |
-| Weapon  <br>(Any) | ORT Rune | Gem (Any) | \=  | Repaired & Recharged |
-| Armor  <br>(Any) | RAL Rune | Gem (Any) | \=  | Repaired & Recharged |
-
-## Portal Recipes
-
-| **Reagent** | **Reagent** | **Reagent** | **Reagent** | **Reagent** |     | **Output** |
-| --- | --- | --- | --- | --- | --- | --- |
-| Wirt's Leg |     |     |     |     | \=  | Cow Level |
-| Key of Terror | Key of Hate | Key of Destruction |     |     | \=  | Random Portal To:  <br>Matron's Den  <br>Forgotten Sands  <br>Furnace of Pain |
-| Diablo's Horn | Baal's Eye | Mephisto's Brain |     |     | \=  | Portal to Tristram (Pandemonium Finale) |
-|Korlic's Pain Statue|Talic's Anguish Statue|Madawc's Ire Statue|Bul-Kathos' Nightmare Statue|Worusk's End Statue| = | Portal to Colossal Summit (Colossal Ancients)|
+<h1>Cube Recipes</h1>
+<p>Horadric Cube recipes that players may find useful on their journeys.</p>
+<p>Additional recipes can be found on the <a href="https://wiki.d2r-reimagined.com/en/recipes/recipes">Item Crafting</a> and <a href="https://wiki.d2r-reimagined.com/en/recipes/recipes">Item Enchants&nbsp;</a> pages.</p>
+<h2>Socket Recipes</h2>
+<p>Applies to Weapons, Shields, Chest Armor and Helms only.</p>
+<p>Jewelry, Belts, Gloves and Boots cannot have sockets.</p>
+<p>The number of sockets is dependent on Item Level. Check <a href="https://diablo2.diablowiki.net/Sockets">online sources</a> before attempting to punch sockets.<br>&nbsp;</p>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Outcome</strong></mark>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center;">Item (White)<br>OR<br>Item (Magic)</td>
+        <td style="text-align:center;"># Magic Jewels</td>
+        <td>=</td>
+        <td style="text-align:center;"># Sockets</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Item (Rare)<br>OR<br>Item (Set)</td>
+        <td style="text-align:center;"># Rare Jewels</td>
+        <td>=</td>
+        <td style="text-align:center;"># Sockets</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Item (Unique)<br>OR<br>Item (Crafted)</td>
+        <td style="text-align:center;"># Unique Jewels</td>
+        <td>=</td>
+        <td style="text-align:center;"># Sockets</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Item</td>
+        <td style="text-align:center;">Orb of Socketing</td>
+        <td>=</td>
+        <td style="text-align:center;">#-# Sockets (Random)<strong> </strong><mark class="pen-red"><strong>*</strong></mark><strong>&nbsp;</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><mark class="pen-red"><strong>*Based on item's level and max number of sockets</strong></mark></p>
+<h2>Unsocket Recipes</h2>
+<p>Pliers can be bought from Blacksmithing vendors in all acts.<br>&nbsp;</p>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Outcome</strong></mark>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center;">Runeword</td>
+        <td style="text-align:center;">Rune Pliers</td>
+        <td>=</td>
+        <td style="text-align:center;">
+          <p>Base Item</p>
+          <p>Runes</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Socketed Item</td>
+        <td style="text-align:center;">Jewel Pliers<strong> </strong><mark class="pen-red"><strong>*</strong></mark><strong>&nbsp;</strong></td>
+        <td>=</td>
+        <td style="text-align:center;">
+          <p>Base Item</p>
+          <p>Socketed Items</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><mark class="pen-red"><strong>*Does not work on runewords</strong></mark></p>
+<h2>Conversion Recipes</h2>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;">&nbsp;</th>
+        <th style="text-align:center;" colspan="2"><mark class="pen-green"><strong>Output</strong></mark>&nbsp;&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center;">9 Magic Jewels</td>
+        <td style="text-align:center;" colspan="2" rowspan="3">&nbsp;</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Rare Jewel</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">6 Rare Jewels</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Unique Jewel</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Uber Spirits (1 of each)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Hellfire Torch</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">2 Unstacked Runes</td>
+        <td style="text-align:center;">TP Tome <mark class="pen-red">*</mark>&nbsp;</td>
+        <td style="text-align:center;" rowspan="9">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">1 Rune Higher</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Stacked Rune (Qty ≥ 2)</td>
+        <td style="text-align:center;">TP Tome <mark class="pen-red">*</mark>&nbsp;</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">
+          <p>1 Rune Higher</p>
+          <p>Stack Qty - 2&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">1 Unstacked Rune</td>
+        <td style="text-align:center;">ID Tome <mark class="pen-red">*</mark>&nbsp;</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">1 Rune Lower</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Stacked Rune (Qty ≥ 1)</td>
+        <td style="text-align:center;">ID Tome <mark class="pen-red">*</mark>&nbsp;</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">
+          <p>1 Rune Lower</p>
+          <p>Stack Qty - 1</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Healing Potion<br>(Any)</td>
+        <td style="text-align:center;">Gem (Any)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Rejuvenation Potion</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">3 Rejuvenation Potions</td>
+        <td style="text-align:center;">&nbsp;</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Full Rejuvenation Potion</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Healing Potion<br>(Any)</td>
+        <td style="text-align:center;">3 Gems (Any)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Full Rejuvenation Potion</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Healing Potion<br>(Any)</td>
+        <td style="text-align:center;">Gem Bag (3 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Full Rejuvenation Potion</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">5 Orb of Infusion</td>
+        <td style="text-align:center;">Uber Spirits (1 of each)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Orb of Conversion</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Armor / Weapon / Shield<br>(Any)</td>
+        <td style="text-align:center;">Unique Jewel</td>
+        <td style="text-align:center;">OHM Rune</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">Ethereal Item&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;" colspan="6"><mark class="pen-red"><strong>^</strong>Does not work on Indestructible Items, Bows or Crossbows, or items without durability.&nbsp;</mark></td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Armor / Weapon / Shield<br>(Any)</td>
+        <td style="text-align:center;">EL Rune</td>
+        <td style="text-align:center;">HEL Rune</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">White Base Item&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;" colspan="6"><mark class="pen-red"><strong>^</strong>Item is completely regenerated, as if a new white base dropped.&nbsp;</mark></td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Weapon / Torso / Shield<br>(Any)</td>
+        <td style="text-align:center;">Orb of Infusion</td>
+        <td style="text-align:center;">Uber Spirits (1 of each)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;" colspan="2">
+          <p>White, Superior, Max Socket, Elite Base</p>
+          <p>+15% Enhanced Weapon Damage (Weapons)</p>
+          <p>+15% Enhanced Defense (Torso, Shield)</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;" colspan="6"><mark class="pen-red"><strong>^</strong>This recipe accepts any rarity.</mark><br><mark class="pen-red">Item is completely regenerated as a </mark>white item( no previous stats are retained)<mark class="pen-red">, upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.</mark><br><mark class="pen-red"><strong><u>This recipe no longer stacks on items.</u></strong>&nbsp;</mark></td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><mark class="pen-red"><strong>* Tome is returned full</strong></mark></p>
+<h2>Recycle Recipes</h2>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Output</strong></mark>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center;">3 Unique Rings<br>OR<br>3 Unique Amulets</td>
+        <td style="text-align:center;">ID Tome <mark class="pen-red"><strong>*</strong></mark>&nbsp;</td>
+        <td>=</td>
+        <td style="text-align:center;">Rare Jewel</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">3 Set Rings<br>OR<br>3 Set Amulets</td>
+        <td style="text-align:center;">ID Tome <mark class="pen-red"><strong>*</strong></mark>&nbsp;</td>
+        <td>=</td>
+        <td style="text-align:center;">Rare Jewel</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">5 Set Weapons<br>OR<br>5 Set Armors (Same Type)<mark class="pen-red"><strong>**</strong></mark></td>
+        <td style="text-align:center;">ID Tome <mark class="pen-red"><strong>*</strong></mark>&nbsp;</td>
+        <td>=</td>
+        <td style="text-align:center;">Gem Cluster</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">5 Unique Weapons<br>OR<br>5 Unique Armors (Same Type)<mark class="pen-red"><strong>**</strong></mark></td>
+        <td style="text-align:center;">ID Tome <mark class="pen-red"><strong>*</strong></mark>&nbsp;</td>
+        <td>=</td>
+        <td style="text-align:center;">Gem Cluster</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><mark class="pen-red"><strong>*Tome is returned full</strong></mark><br><mark class="pen-red"><strong>**5 gloves, 5 boots, 5 chests, etc.</strong></mark></p>
+<h2>Reroll Recipes</h2>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Output</strong></mark>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center;">3 Magic Jewelry<br>(same type)</td>
+        <td style="text-align:center;" rowspan="4">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </td>
+        <td style="text-align:center;" rowspan="12">&nbsp;</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Magic Jewelry (100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">3 Rare Jewelry<br>(same type)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Rare Jewelry(100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">3 Magic Charms<br>(same size)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Magic Charm (100% plvl)</td>
+      </tr>
+      <tr>
+        <td>3 Latent Sunder Charms</td>
+        <td>=</td>
+        <td>New Latent Sunder Charm (Random Element)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Magic Charm</td>
+        <td style="text-align:center;">Gem Bag (3 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">NewMagic Charm (100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Magic Jewelry</td>
+        <td style="text-align:center;">Gem Bag (3 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Magic Jewelry(100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Rare Jewelry</td>
+        <td style="text-align:center;">Gem Bag (20 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Rare Jewelry(100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Set Jewelry</td>
+        <td style="text-align:center;">Gem Bag (50 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Set Jewelry(100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Unique Jewelry</td>
+        <td style="text-align:center;">Gem Bag (50 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Unique Jewelry(100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Magic Jewel</td>
+        <td style="text-align:center;">Gem Bag (3 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Magic Jewel (100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Rare Jewel</td>
+        <td style="text-align:center;">Gem Bag (10 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Rare Jewel (100% plvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Unique Jewel</td>
+        <td style="text-align:center;">Gem Bag (50 Gems)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">New Unique Jewel (100% ilvl)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Key of Terror</td>
+        <td style="text-align:center;">Orb of Corruption</td>
+        <td style="text-align:center;">TP Tome<strong> </strong><mark class="pen-red"><strong>*</strong></mark><strong>&nbsp;</strong></td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">Key of Hate</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Key of Terror</td>
+        <td style="text-align:center;">Orb of Corruption</td>
+        <td style="text-align:center;">ID Tome<strong> </strong><mark class="pen-red"><strong>*</strong></mark><strong>&nbsp;</strong></td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">Key of Destruction</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Key of Hate</td>
+        <td style="text-align:center;">Orb of Corruption</td>
+        <td style="text-align:center;">TP Tome<strong> </strong><mark class="pen-red"><strong>*</strong></mark><strong>&nbsp;</strong></td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">Key of Destruction</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Key of Hate</td>
+        <td style="text-align:center;">Orb of Corruption</td>
+        <td style="text-align:center;">ID Tome<strong> </strong><mark class="pen-red"><strong>*</strong></mark><strong>&nbsp;</strong></td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">Key of Terror</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Key of Destruction</td>
+        <td style="text-align:center;">Orb of Corruption</td>
+        <td style="text-align:center;">TP Tome<strong> </strong><mark class="pen-red"><strong>*</strong></mark><strong>&nbsp;</strong></td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">Key of Terror</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Key of Destruction</td>
+        <td style="text-align:center;">Orb of Corruption</td>
+        <td style="text-align:center;">ID Tome<strong> </strong><mark class="pen-red"><strong>*</strong></mark><strong>&nbsp;</strong></td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">Key of Hate</td>
+      </tr>
+      <tr>
+        <td>Eastern Worldstone Shard</td>
+        <td>Any Statue</td>
+        <td>&nbsp;</td>
+        <td>=</td>
+        <td>Talic's Anguish Statue</td>
+      </tr>
+      <tr>
+        <td>Western Worldstone Shard</td>
+        <td>Any Statue</td>
+        <td>&nbsp;</td>
+        <td>=</td>
+        <td>Korlic's Pain Statue</td>
+      </tr>
+      <tr>
+        <td>Southern Worldstone Shard</td>
+        <td>Any Statue</td>
+        <td>&nbsp;</td>
+        <td>=</td>
+        <td>Madawc's Ire Statue</td>
+      </tr>
+      <tr>
+        <td>Deep Worldstone Shard</td>
+        <td>Any Statue</td>
+        <td>&nbsp;</td>
+        <td>=</td>
+        <td>Bul-Kathos' Nightmare Statue</td>
+      </tr>
+      <tr>
+        <td>Northern Worldstone Shard</td>
+        <td>Any Statue</td>
+        <td>&nbsp;</td>
+        <td>=</td>
+        <td>Worusk's End Statue</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">&nbsp;</td>
+        <td style="text-align:center;">Orb of Corruption</td>
+        <td style="text-align:center;">Uber Spirits (1 of each)</td>
+        <td style="text-align:center;">=</td>
+        <td style="text-align:center;">Rerolled Unique Item <mark class="pen-red">**</mark>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>100% plvl = item's level is based 100% on character's level<br>100% ilvl = item's level is based 100% on input item's level</p>
+<p><mark class="pen-red"><strong>*Tome is returned full</strong></mark><br><mark class="pen-red"><strong>**</strong></mark><strong>Generates the same unique item but with re-rolled stats. Corruptions and Upgrades are scrubbed clean.</strong><br><mark class="pen-red"><strong>**</strong></mark><strong>Using this recipe on a unique that is up-tiered will change the unique to one that naturally roles on that base type.</strong></p>
+<h2>Armor &amp; Weapon Base Upgrade Recipes</h2>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td style="text-align:center;" colspan="6"><mark class="pen-green"><strong>ARMOR</strong></mark>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</td>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</td>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</td>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Output</strong></mark>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Rare Armor<br>(Normal)</td>
+        <td style="text-align:center;">RAL Rune</td>
+        <td style="text-align:center;">THUL Rune</td>
+        <td style="text-align:center;">Amethyst</td>
+        <td>=</td>
+        <td style="text-align:center;">Rare Armor<br>(Exceptional)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Rare Armor<br>(Exceptional)</td>
+        <td style="text-align:center;">KO Rune</td>
+        <td style="text-align:center;">PUL Rune</td>
+        <td style="text-align:center;">Amethyst</td>
+        <td>=</td>
+        <td style="text-align:center;">Rare Armor<br>(Elite)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Set Armor<br>(Normal)</td>
+        <td style="text-align:center;">TAL Rune</td>
+        <td style="text-align:center;">SHAEL Rune</td>
+        <td style="text-align:center;">Diamond</td>
+        <td>=</td>
+        <td style="text-align:center;">Set Armor<br>(Exceptional)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Set Armor<br>(Exceptional)</td>
+        <td style="text-align:center;">KO Rune</td>
+        <td style="text-align:center;">LEM Rune</td>
+        <td style="text-align:center;">Diamond</td>
+        <td>=</td>
+        <td style="text-align:center;">Set Armor<br>(Elite)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Unique Armor<br>(Normal)</td>
+        <td style="text-align:center;">TAL Rune</td>
+        <td style="text-align:center;">SHAEL Rune</td>
+        <td style="text-align:center;">Diamond</td>
+        <td>=</td>
+        <td style="text-align:center;">Unique Armor<br>(Exceptional)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Unique Armor<br>(Exceptional)</td>
+        <td style="text-align:center;">KO Rune</td>
+        <td style="text-align:center;">LEM Rune</td>
+        <td style="text-align:center;">Diamond</td>
+        <td>=</td>
+        <td style="text-align:center;">Unique Armor<br>(Elite)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;" colspan="6"><mark class="pen-green"><strong>WEAPONS</strong></mark>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</td>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</td>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</td>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td style="text-align:center;"><mark class="pen-green"><strong>Output</strong></mark>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Rare Weapon<br>(Normal)</td>
+        <td style="text-align:center;">ORT Rune</td>
+        <td style="text-align:center;">AMN Rune</td>
+        <td style="text-align:center;">Sapphire</td>
+        <td>=</td>
+        <td style="text-align:center;">Rare Weapon<br>(Exceptional)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Rare Weapon<br>(Exceptional)</td>
+        <td style="text-align:center;">FAL Rune</td>
+        <td style="text-align:center;">UM Rune</td>
+        <td style="text-align:center;">Sapphire</td>
+        <td>=</td>
+        <td style="text-align:center;">Rare Weapon<br>(Elite)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Set Weapon<br>(Normal)</td>
+        <td style="text-align:center;">RAL Rune</td>
+        <td style="text-align:center;">SOL Rune</td>
+        <td style="text-align:center;">Emerald</td>
+        <td>=</td>
+        <td style="text-align:center;">Set Weapon<br>(Exceptional)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Set Weapon<br>(Exceptional)</td>
+        <td style="text-align:center;">LUM Rune</td>
+        <td style="text-align:center;">PUL Rune</td>
+        <td style="text-align:center;">Emerald</td>
+        <td>=</td>
+        <td style="text-align:center;">Set Weapon<br>(Elite)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Unique Weapon<br>(Normal)</td>
+        <td style="text-align:center;">RAL Rune</td>
+        <td style="text-align:center;">SOL Rune</td>
+        <td style="text-align:center;">Emerald</td>
+        <td>=</td>
+        <td style="text-align:center;">Unique Weapon<br>(Exceptional)</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Unique Weapon<br>(Exceptional)</td>
+        <td style="text-align:center;">LUM Rune</td>
+        <td style="text-align:center;">PUL Rune</td>
+        <td style="text-align:center;">Emerald</td>
+        <td>=</td>
+        <td style="text-align:center;">Unique Weapon<br>(Elite)</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h2>Repair Recipes</h2>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Output</strong></mark>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center;">Quiver<br>(Any)</td>
+        <td style="text-align:center;">Healing Potion<br>(Any)</td>
+        <td style="text-align:center;" rowspan="2">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </td>
+        <td>=</td>
+        <td style="text-align:center;">Replenished Quantity</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Bolt Case<br>(Any)</td>
+        <td style="text-align:center;">Healing Potion<br>(Any)</td>
+        <td>=</td>
+        <td style="text-align:center;">Replenished Quantity</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Item<br>(Ethereal)</td>
+        <td style="text-align:center;">2 Rare Jewels</td>
+        <td style="text-align:center;">PUL Rune</td>
+        <td>=</td>
+        <td style="text-align:center;">Repaired Ethereal Item</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Weapon<br>(Any)</td>
+        <td style="text-align:center;">ORT Rune</td>
+        <td style="text-align:center;">Gem (Any)</td>
+        <td>=</td>
+        <td style="text-align:center;">Repaired &amp; Recharged</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Armor<br>(Any)</td>
+        <td style="text-align:center;">RAL Rune</td>
+        <td style="text-align:center;">Gem (Any)</td>
+        <td>=</td>
+        <td style="text-align:center;">Repaired &amp; Recharged</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h2>Portal Recipes</h2>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Reagent</strong></mark>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th style="text-align:center;"><mark class="pen-green"><strong>Output</strong></mark>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center;">Wirt's Leg</td>
+        <td style="text-align:center;" colspan="2">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </td>
+        <td>=</td>
+        <td style="text-align:center;">Cow Level</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Key of Terror</td>
+        <td style="text-align:center;">Key of Hate</td>
+        <td style="text-align:center;">Key of Destruction</td>
+        <td>=</td>
+        <td style="text-align:center;">Random Portal To:<br>Matron's Den<br>Forgotten Sands<br>Furnace of Pain&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Diablo's Horn</td>
+        <td style="text-align:center;">Baal's Eye</td>
+        <td style="text-align:center;">Mephisto's Brain</td>
+        <td>=</td>
+        <td style="text-align:center;">Portal to Tristram (Pandemonium Finale)</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>

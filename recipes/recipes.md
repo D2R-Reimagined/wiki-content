@@ -171,6 +171,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 **Example 2:** Instead say the Unique boots "War Traveler" are [E] (Mirrored Boots) because you previously used the cube recipe to upgrade them from Exceptional to Elite, this recipe would instead reroll the item into a completely different unique that matches only the Unique [E] Mirrored Boots base.
 
+<a id="armor--weapon-base-upgrade-recipes"></a>
 ## Armor & Weapon Base Upgrade Recipes
 
 ### Armor

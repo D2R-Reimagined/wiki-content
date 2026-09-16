@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-09-05T00:45:00.365Z
+date: 2026-09-16T00:39:47.242Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -744,8 +744,8 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 > - Affix 5: Remove negative resist penalty or half the resist penalty.
 > - Affix 6: 5-15% increased attack speed or 5-15% faster cast rate.
 
-> - **You can only hold one renewed sunder charm of a single element.**  
-> Be sure to put already crafted ones in shared stash when you try to craft them
+> - **<span style="color:red">You can only hold one renewed sunder charm of a single element.</span>**  
+> <span style="color:red">Be sure to put already crafted ones in shared stash when you try to craft them</span>
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **Reagent 6** | **Reagent 7** | **Reagent 8** | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |

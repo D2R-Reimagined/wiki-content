@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-09-16T00:39:47.242Z
+date: 2026-09-16T14:10:09.332Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -52,7 +52,7 @@ This page contains all current Reimagined recipes:
 
 
 
-# Cube Recipes
+# Cube Recipes    
 
 Horadric Cube recipes that players may find useful on their journeys.
 
@@ -64,7 +64,7 @@ Horadric Cube recipes that players may find useful on their journeys.
 - **Cannot use:** Jewelry, Belts, Gloves, and Boots.
 - **Socket limit:** Depends on item level and the base. Check the [maximum socket count for each base](https://www.d2r-reimagined.com/data/bases) before punching sockets.
 <br> 
-
+  
 | **Reagent 1** | **Reagent 2** | **=** | **Outcome** |
 | :--- | :--- | :--- | :--- |
 | Item (White)  <br>OR  <br>Item (Magic) | \# Magic Jewels | \=  | \# Sockets |
@@ -737,7 +737,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 ## Sunder Charms
 
 > The renewed sunders now roll:
-> - Affix 1: extra 5-15% elemental skill damage or 5-15% elemental pierce (enhanced weapon damage 50-100%) or +1 to all skills.
+> - Affix 1: extra 5-15% elemental skill damage or 5-15% elemental pierce (enhanced weapon damage 50-100%) or +1 to elemental skills.
 > - Affix 2: 20-30% magic find or 40-60% gold find.
 > - Affix 3: 20-50 HP or 20-50 mana or 50-100 defense.
 > - Affix 4: 10-20% faster run/walk or 15-20% faster hit recovery or 5-10 all stats.

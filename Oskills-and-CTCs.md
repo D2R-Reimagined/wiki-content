@@ -2,7 +2,7 @@
 title: Oskills & CTC Only Skills
 description: Page detailing the Oskill & CTC only skills you will see in ReImagined
 published: true
-date: 2026-04-05T03:16:12.014Z
+date: 2026-09-18T11:59:38.031Z
 tags: oskills, ctc, warp
 editor: markdown
 dateCreated: 2026-04-03T23:11:31.926Z
@@ -48,6 +48,7 @@ Note2: When struck means when you actually take a hit. Blocking does not proc wh
 For more detailed information see the amazon basin page: [Here](https://www.theamazonbasin.com/wiki/index.php/Chance_to_Cast)
 
 ### CTC Only Skill Table
+> Unique CTC skills do not have synergies unless specified on their skill description
 
 |----|----|
 |Skill Name|Description|

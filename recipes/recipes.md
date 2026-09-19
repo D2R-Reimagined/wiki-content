@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-09-16T14:10:09.332Z
+date: 2026-09-19T03:03:23.745Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -750,12 +750,12 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **Reagent 6** | **Reagent 7** | **Reagent 8** | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **RENEWED SUNDER CHARMS** | | | | | | | | |
-| Unique Charm:<br>Latent Flame Rift (Fire) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Deep Worldstone Shard | | | \= | Renewed Flame Rift |
-| Unique Charm:<br>Latent Cold Rupture (Cold) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Eastern Worldstone Shard | | | \= | Renewed Cold Rupture |
-| Unique Charm:<br>Latent Crack of the Heavens (Lightning) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Southern Worldstone Shard | | | \= | Renewed Crack of the Heavens |
-| Unique Charm:<br>Latent Rotting Fissure (Poison) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Western Worldstone Shard | | | \= | Renewed Rotting Fissure |
-| Unique Charm:<br>Latent Bone Break (Physical) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Northern Worldstone Shard | | | \= | Renewed Bone Break |
-| Unique Charm:<br>Latent Black Cleft (Magic) | Unique Jewel | SUR Rune | Gem Bag (50 Gems) | Northern Worldstone Shard | Southern Worldstone Shard | Deep Worldstone Shard | \= | Renewed Black Cleft |
+| Unique Charm:<br>Latent Flame Rift (Fire) | Unique Jewel | SUR Rune | Orb of Conversion | Deep Worldstone Shard | | | \= | Renewed Flame Rift |
+| Unique Charm:<br>Latent Cold Rupture (Cold) | Unique Jewel | SUR Rune | Orb of Conversion | Eastern Worldstone Shard | | | \= | Renewed Cold Rupture |
+| Unique Charm:<br>Latent Crack of the Heavens (Lightning) | Unique Jewel | SUR Rune | Orb of Conversion | Southern Worldstone Shard | | | \= | Renewed Crack of the Heavens |
+| Unique Charm:<br>Latent Rotting Fissure (Poison) | Unique Jewel | SUR Rune | Orb of Conversion | Western Worldstone Shard | | | \= | Renewed Rotting Fissure |
+| Unique Charm:<br>Latent Bone Break (Physical) | Unique Jewel | SUR Rune | Orb of Conversion | Northern Worldstone Shard | | | \= | Renewed Bone Break |
+| Unique Charm:<br>Latent Black Cleft (Magic) | Unique Jewel | SUR Rune | Orb of Conversion | Northern Worldstone Shard | Southern Worldstone Shard | Deep Worldstone Shard | \= | Renewed Black Cleft |
 | **Reset renewed sunder back to its latent version** | | | | | | | | |
 | Charm:<br>Renewed Sunder<br>Any Type | HEL Rune | Gem Bag (200 Gems) | | | | | \= | Latent Charm of the same type |
 

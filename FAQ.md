@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-08-31T13:08:43.268Z
+date: 2026-09-20T13:16:21.392Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -49,3 +49,15 @@ A: No, they were not intended to be bound.
 
 **Q: Does the mod support multiplayer?**
 A: Multiplayer support is now available through D2RLoader. Use our Reimagined Launcher to make downloading and using D2RLoader simple and easy
+
+**Q: What happens to my characters after a ladder event?**
+A: You can manually move your save files from the ladder to non ladder by copying the character **.d2s** files from the ladder directory to the non-ladder save directory. Shared stash saves are **.d2i ** files but would overwrite your existing non-ladder shared stash too.
+
+```
+Character Save File Location:
+Ladder:
+C:\Users\<your user>\Saved Games\Diablo II Resurrected\mods\ReimaginedThree-Ladder-Slam-<hash-value-here>
+
+Non-Ladder:
+C:\Users\<your user>\Saved Games\Diablo II Resurrected\mods\ReimaginedThree
+```

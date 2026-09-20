@@ -2,7 +2,7 @@
 title: Paladin
 description: Summary of changes to the Paladin in Reimagined
 published: true
-date: 2026-03-03T00:12:59.841Z
+date: 2026-09-20T22:20:28.660Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-04-14T02:00:41.000Z
@@ -12,31 +12,42 @@ dateCreated: 2025-04-14T02:00:41.000Z
 <p>A flat damage bonus has been added to all physical skills to aid in the leveling process and smooth out bad luck finding new weapons.</p>
 <h2>Skill Trees</h2>
 <h1>Defensive Aura Skills</h1>
-<p>&nbsp;</p>
-<h1>Offensive Aura Skills</h1>
-<p>Holy Fire</p>
+<h3>Prayer</h3>
 <ul>
+  <li>No longer costs mana to use</li>
+</ul>
+<h1>Offensive Aura Skills</h1>
+<h3>Holy Fire</h3>
+<ul>
+  <li>Reduced damage added to attacks from Aura Value x6 to x4</li>
   <li>Radius capped at 30 or about the size of the screen</li>
   <li>Synergies reduced from 10 to 8% and 21 to 16%</li>
   <li>No longer requires Might</li>
 </ul>
-<p>Holy Freeze</p>
+<p>&nbsp;</p>
+<h3>Holy Freeze</h3>
 <ul>
+  <li>Reduced damage added to attacks from Aura Value x5 to x4</li>
+  <li>Synergies adjusted from 15% and 7% to 14% and 6%</li>
   <li>Radius capped at 30 or about the size of the screen</li>
   <li>Adjusted Holy Freeze attack rate slow from diminishing returns 25-60 to 5 + 1/lvl with a max of 50.</li>
 </ul>
-<p>Holy Shock</p>
+<p>&nbsp;</p>
+<h3>Holy Shock</h3>
 <ul>
+  <li>Reduced damage added to attacks from Aura Value x6 to x4</li>
   <li>Radius capped at 30 or about the size of the screen</li>
 </ul>
-<p>Sanctuary</p>
+<p>&nbsp;</p>
+<h3>Sanctuary</h3>
 <ul>
   <li>No longer requires Holy Freeze</li>
   <li>Now damages all enemy types and no longer knocks them back</li>
   <li>Removed sparkling ground effect because it was causing crashes because enemies would produce it as well</li>
   <li>Now applies - enemy magic resistance while active base 10 + 1% per soft level</li>
 </ul>
-<p>Conviction</p>
+<p>&nbsp;</p>
+<h3>Conviction</h3>
 <ul>
   <li>Now requires Holy Shock</li>
   <li>Retuned so that its base is 30 + 1 per level until 25, then it gains 1 per 2 levels after.</li>
@@ -44,14 +55,34 @@ dateCreated: 2025-04-14T02:00:41.000Z
   <li>Defense reduction spread from 0-100 instead of 40-100.</li>
 </ul>
 <p>&nbsp;</p>
-<h4>Thorns Aura</h4>
+<h3>Thorns Aura</h3>
 <ul>
   <li>Flat thorns increased greatly at the 29+ curve.</li>
   <li>Increased flat amount by 1% per character level.</li>
 </ul>
 <p>&nbsp;</p>
 <h1>Combat Skills</h1>
-<p>Vengeance</p>
+<h3>Sacrifice</h3>
+<ul>
+  <li>Now provides 85% ED + 25% ED/lvl (was 185% ED + 15% ED/lvl)</li>
+  <li>Now deals 10% reflected damage, reducing by 1% every 5 levels until 0% at lvl30 (was 8% and 1% every 3 levels until 1% at lvl1)</li>
+  <li>Fanaticism Synergy replaced with Zeal</li>
+  <li>Added personalized melee splash effect called Sanctified Blood.</li>
+  <li>Sanctified Blood deals physical damage based on it's skill curve and has synergy with Zeal and Redemption as well as an additional 1% damage per 10 HP. It has no direct weapon scaling, but will scale with paladin auras (might, concentration, fanaticism)<br>Note: This is part of an ongoing effort to slowly remove the need for a splash charm from the game. The skill has not been balanced with splash charm in mind and is intended to be played without it</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Charge</h3>
+<ul>
+  <li>Now requires Sacrifice instead of Smite and is a prerequisite for Zeal</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Zeal</h3>
+<ul>
+  <li>Now requires Charge</li>
+  <li>Level requirement increased to 18 to make room for skill changes</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Vengeance</h3>
 <ul>
   <li>Does a physical hit and spawns 3 projectiles that circle with a few frames of delay between them, adding an additional 25% of weapon damage as fire, cold, and lightning.</li>
   <li>Initial hit carries all weapon effects.</li>
@@ -59,28 +90,49 @@ dateCreated: 2025-04-14T02:00:41.000Z
   <li>Scaling added to the base skill: 20 + 5 per level.</li>
   <li>Synergies changed from Resist Fire, Coldm Lightning, and Salvation to Holy Fire, Freeze, Shock, and Conviction.</li>
   <li>Synergies are 4% for the 3 elemental auras, and 8% for Conviction</li>
+  <li>Level requirement increased to 24 to make room for skill changes</li>
 </ul>
-<p>Holy Bolt</p>
+<p>&nbsp;</p>
+<h3>Holy Bolt</h3>
 <ul>
   <li>Now damages all enemy types</li>
   <li>Can now fire an additional projectile when wearing a magic/rare/crafted Scepter or Auric Shield with the +1 Holy Bolt Projectiles Property</li>
   <li>Damage curve adjusted at skill levels 24+ to scale into Hell difficulty</li>
   <li>Synergies reduced from 50 to 30% due to the skill being able to now damage all enemy types</li>
 </ul>
-<p>Fist of the Heavens</p>
+<p>&nbsp;</p>
+<h3>Blessed Hammer</h3>
+<ul>
+  <li>Synergies have been changed to Holy Bolt and Prayer (was Vigor and Blessed Aim)</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Fist of the Heavens</h3>
 <ul>
   <li>No longer requires Conversion</li>
   <li>Casting Delay is skill only and lasts 0.3 seconds</li>
-  <li>Synergy for Lightning increased to 15 from 7%</li>
-  <li>Synergy for Holy Bolts increased to 20 from 10%</li>
+  <li>Primary hit now deals magic damage (was lightning)</li>
+  <li>Holy Shock synergy has changed to Blessed Hammer and set to 15%</li>
+  <li>Synergy from Holy Bolt changes to 20%</li>
   <li>Holy bolts now correctly scale with magic mastery</li>
 </ul>
-<p>Holy Shield</p>
+<p>&nbsp;</p>
+<h3>Shield Throw</h3>
+<ul>
+  <li>Conversion has been reworked into a new skill, Shield Throw</li>
+  <li>Shield Throw is a physical damage skill that bounces between enemies. 5 bounces + 1/5 lvls</li>
+  <li>Synergies include Smite and Holy Shield</li>
+  <li>Requires Smite, level 12, and a shield to be equipped</li>
+  <li>Does not scale with weapon damage of any kind (equipped weapon, %ED, +elemental weapon damage, etc.) nor does it trigger weapon reliant effects (CB, DS, leech, CtC)</li>
+  <li>Scales with Attack Speed and physical Paladin auras (Might, Concentration, Fanaticism)</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Holy Shield</h3>
 <ul>
   <li>Added synergy to Zeal and Sacrifice for flat min/max magical damage to help with physical resistant enemies</li>
   <li>Magic Damage Synergy is 25 flat per point into each skill</li>
   <li>Damage curve increased by 1 for smite added damage.</li>
   <li>Defense% per level changed from 15% at all levels to 15% per base level and 3% per soft level.</li>
+  <li>New synergy added. The additional flat Smite damage granted by Holy Shield now receives a %bonus from Shield Throw</li>
+  <li>Now requires Shield Throw</li>
 </ul>
-<p>&nbsp;</p>
 <p>&nbsp;</p>

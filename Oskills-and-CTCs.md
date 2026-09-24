@@ -2,7 +2,7 @@
 title: Oskills & CTC Only Skills
 description: Page detailing the Oskill & CTC only skills you will see in ReImagined
 published: true
-date: 2026-09-18T12:00:35.472Z
+date: 2026-09-24T14:33:53.742Z
 tags: oskills, ctc, warp
 editor: markdown
 dateCreated: 2026-04-03T23:11:31.926Z
@@ -68,6 +68,8 @@ For more detailed information see the amazon basin page: [Here](https://www.thea
 |Arc |Cloned Chain Lightning with a damage curve of 200-500 lightning damage per level.  |
 |Dust Devils |Cloned Twister with a damage curve of 500-1000 physical damage per level.  |
 |King's Charisma |Triple ele enchant that provides a flat +1000-2000 cold/fire/lightning weapon damage|
+|Mark of the Wolf |20% Deadly Strike, 4% chance to avoid ranged and melee attacks while standing still (3 minute buff, triggered only by attacks in werewolf form)|
+|Mark of the Bear |25% Attack Speed, 20% Physical Damage Reduced (3 minute buff, triggered only by attacks in werebear and polar bear forms)|
 
 If you find one not in this list, feel free to update it :)
 

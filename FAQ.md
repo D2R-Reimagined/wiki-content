@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-09-22T00:16:09.154Z
+date: 2026-09-24T17:27:20.322Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -68,5 +68,5 @@ A: Extensions are located in your d2r install directory
 
 Best bet is to just copy the d2rloader folder from the ladder folder into mods/Reimagined or cherry pick the plugins/patches and even grab more from d2rloader.net/hub
 
-**Q: When will the next ladder start?
+**Q: When will the next ladder start?**
 A: When things are done and ready. 

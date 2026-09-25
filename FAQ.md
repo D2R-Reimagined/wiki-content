@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-09-25T03:05:24.210Z
+date: 2026-09-25T18:13:08.170Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -28,7 +28,7 @@ A: Look at the top right of your character list, if the text is 'red' click it, 
 **Q: Is there an endgame system?**
 A: No but it is being worked on, currently no ETA. Until then all we have is a [buffed NM, Hell, and TZs](https://wiki.d2r-reimagined.com/en/new_player_guide#gameplay-changes).
 
-**Q: Can you make Whirlwind ( WW ) work with CTC on attack/striking, add missiles or spells to it, or make it do additional things?**
+**Q: Can you make Whirlwind ( WW ) work with CTC on attack/striking, hit every frame, add missiles or spells to it, or make it do additional things?**
 A: No. The skill is very hard-coded. You can use D2RLoader with extensions to adjust it though. 
 
 **Q: Why is my mana 0, potions don't work, talking to Akara or other healing vendors don't work?**

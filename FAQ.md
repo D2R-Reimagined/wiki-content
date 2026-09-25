@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-09-25T03:03:35.021Z
+date: 2026-09-25T03:04:54.411Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -68,7 +68,7 @@ C:\Users\<your user>\Saved Games\Diablo II Resurrected\mods\ReimaginedThree
 A: Extensions are located in your d2r install directory 
 ```"Diablo II Resurrected/mods/ReimaginedLadder/d2rloader/plugins``` and /patches. Some extensions require files from /config too.
 
-Best bet is to just copy the d2rloader folder from the ladder folder into mods/Reimagined or cherry pick the plugins/patches and even grab more from d2rloader.net/hub
+Best bet is to just copy the only the d2rloader folder from the ladder folder into mods/Reimagined or cherry pick the plugins/patches and even grab more from d2rloader.net/hub
 
 **Q: When will the next ladder start?**
 A: When things are done and ready. 

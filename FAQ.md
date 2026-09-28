@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-09-25T18:13:08.170Z
+date: 2026-09-28T21:43:31.868Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -13,6 +13,9 @@ A: Yes, completely. We maintain the mod up to date with the latest SnowCo releas
 
 **Q: Can you increase the stack size in the DLC tabs higher than 99?**
 A: You can use D2RLoader to increase the stash stack size to 255. Otherwise, no it is engine limited.
+
+**Q: When will the next ladder start?**
+A: When things are done and ready
 
 **Q: Can you make the chronicle work with the unique and set items that the mod adds?**
 A: No. SnowCo limited the entries beyond vanilla to a 2-300 more before it starts causing constant crashing and we add almost 1,000. There is a script to just [100% it here](https://discord.com/channels/898562996715012096/910921404571070515/1502460774860197940), but read the directions. 
@@ -69,9 +72,6 @@ A: Extensions are located in your d2r install directory
 ```"Diablo II Resurrected/mods/ReimaginedLadder/d2rloader/plugins``` and /patches. Some extensions require files from /config too.
 
 Best bet is to just copy the only the d2rloader folder from the ladder folder into mods/Reimagined or cherry pick the plugins/patches and even grab more from d2rloader.net/hub
-
-**Q: When will the next ladder start?**
-A: When things are done and ready. 
 
 **Q: Where do i get D2RLoader Extension/Plugins/Patches?**
 A: https://d2rloader.net/hub or the d2rloader discord will have links to extensions or the extension authors github if they do not use the hub yet.

@@ -1,11 +1,11 @@
 ---
 title: Maps - Getting Started
 description: Where to find maps, how to open them, and what to expect from mapping in D2R Reimagined.
-published: false
-date: 2026-09-29T21:00:00.000Z
-tags: maps, endgame, d2rloader
+published: true
+date: 2026-09-30T13:09:20.612Z
+tags: endgame, maps, d2rloader
 editor: markdown
-dateCreated: 2026-09-29T21:00:00.000Z
+dateCreated: 2026-09-29T20:26:19.154Z
 ---
 
 > **D2RLoader and Maps plugin required:** This wiki page only applies to D2RLoader. You must have the Maps plugin installed and enabled to play this content.
@@ -62,12 +62,12 @@ Area level describes the area, **not a required character level**.
 
 | Map tier | Area level | Rolled modifiers | How to obtain it |
 | --- | --- | --- | --- |
-| Tier 1 | 100 | 1 | Late-Hell starter drops and map rewards |
-| Tier 2 | 101 | 1–2 | Upgrade Tier 1, or find it while mapping |
-| Tier 3 | 102 | 2 | Upgrade Tier 2, or find it while mapping |
-| Tier 4 | 103 | 2–3 | Upgrade Tier 3, or find it while mapping |
-| Tier 5 | 104 | 3 | Upgrade Tier 4, or find it while mapping |
-| Tier 6 | 105 | 4 | Corrupt Tier 5 with a Worldstone Shard |
+| Tier 1 | 100 | 2 | Late-Hell starter drops and map rewards |
+| Tier 2 | 101 | 2–3 | Upgrade Tier 1, or find it while mapping |
+| Tier 3 | 102 | 3-4 | Upgrade Tier 2, or find it while mapping |
+| Tier 4 | 103 | 4 | Upgrade Tier 3, or find it while mapping |
+| Tier 5 | 104 | 4-5 | Upgrade Tier 4, or find it while mapping |
+| Tier 6 | 105 | 6 | Corrupt Tier 5 with a Worldstone Shard |
 
 Tier 6 is a substantial difficulty jump. It cannot drop directly, and a Horadric Orb cannot make one. See [crafting and progression](/en/maps/crafting) before spending your first Worldstone Shard.
 

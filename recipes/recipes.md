@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-09-19T03:03:23.745Z
+date: 2026-10-01T21:33:17.749Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -722,9 +722,9 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Magic Charm  <br>(Grand) | Magic Jewel | DOL Rune | EL Rune | | | \= | +5-10% Faster Cast Rate  <br>Magic Charm |
 | Magic Charm  <br>(Grand) | Magic Jewel | HEL Rune | EL Rune | | | \= | +5-10% Experience Gained  <br>Magic Charm |
 | Magic Charm  <br>(Grand) | Magic Jewel | KO Rune | FAL Rune | | | \= | +5-8 Dexterity<br><br>+5-8 Strength<br><br>+5-8% Enhanced Weapon Damage  <br>Magic Charm |
-| Magic Charm  <br>(Grand) | Magic Jewel | PUL Rune | EL Rune | | | \= | +50-70 Defense<br><br>+10-15 Weapon Damage |
-| Magic Charm  <br>(Grand) | Magic Jewel | UM Rune | EL Rune | | | \= | +8-10 All Resistances |
-| Magic Charm  <br>(Grand) | Magic Jewel | IST Rune | EL Rune | | | \= | +25-40% Magic Find<br><br>+50-80% Gold Find |
+| Magic Charm  <br>(Grand) | Magic Jewel | PUL Rune | EL Rune | | | \= | +50-70 Defense<br><br>+10-15 Weapon Damage <br>Magic Charm   |
+| Magic Charm  <br>(Grand) | Magic Jewel | UM Rune | EL Rune | | | \= | +8-10 All Resistances <br>Magic Charm  |
+| Magic Charm  <br>(Grand) | Magic Jewel | IST Rune | EL Rune | | | \= | +25-40% Magic Find<br><br>+50-80% Gold Find <br>Magic Charm  |
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Topaz | | \= | +1 Random Assassin Skill Tab<br>Crafted Charm |
 | Magic Charm  <br>(Grand) | Rare Jewel | VEX Rune | THUL Rune | Ruby | | \= | +1 Random Barbarian Skill Tab<br>Crafted Charm |
 | Magic Charm  <br>(Grand) | Rare Jewel | Vex Rune | THUL Rune | Sapphire | | \= | +1 Random Sorceress Skill Tab<br>Crafted Charm |

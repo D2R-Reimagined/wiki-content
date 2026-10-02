@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-10-01T21:33:17.749Z
+date: 2026-10-02T02:32:28.453Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -243,12 +243,15 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).�
 -   [D2RR Stat Limits (WIP)](https://wiki.d2r-reimagined.com/en/recipes/ISCStatLimits)
 
 ### Set Items Bug
+> <span style="color:red">
+> When enchanting set items you must remove all other items from that set from your character first. 
+> 
+> 1.  Put related set items in shared stash. Save and Exit the game, join a new game, and then enchant your intended set item.
+> 2.  Rinse and repeat for any other set pieces.
+> 3.  Failing to do so will apply the enchant to the set bonus and will only be effective when set bonuses are active.
 
-When enchanting set items you must remove all other items from that set from your character first. 
+</span>
 
-1.  Put related set items in shared stash. Save and Exit the game, join a new game, and then enchant your intended set item.
-2.  Rinse and repeat for any other set pieces.
-3.  Failing to do so will apply the enchant to the set bonus and will only be effective when set bonuses are active.
 
 ## Amulets
 

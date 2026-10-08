@@ -2,7 +2,7 @@
 title: Drop Tables
 description: A description of monsters and what orbs and runes they can drop
 published: true
-date: 2026-10-08T03:28:53.989Z
+date: 2026-10-08T03:29:00.363Z
 tags: keys, sunder, drop, tables, sunders, sunder charms, loot, where to find what, loot tables, drop tables, countess, rune boss, orbs, uber keys
 editor: markdown
 dateCreated: 2025-06-09T02:54:27.554Z
@@ -12,7 +12,7 @@ dateCreated: 2025-06-09T02:54:27.554Z
 
 Information regarding various special items and where they have a chance to drop and information on what designation each type of monster is considered when looking for loot.  
   
-\> Worldstone shards drop from terrorized act bosses and can also drop randomly from terrorized monsters. This applies to RoTW and expansion characters.  
+> Worldstone shards drop from terrorized act bosses and can also drop randomly from terrorized monsters. This applies to RoTW and expansion characters.  
  
 
 ## Boss Definitions

@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-09-28T21:43:31.868Z
+date: 2026-10-09T03:57:16.540Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -75,3 +75,6 @@ Best bet is to just copy the only the d2rloader folder from the ladder folder in
 
 **Q: Where do i get D2RLoader Extension/Plugins/Patches?**
 A: https://d2rloader.net/hub or the d2rloader discord will have links to extensions or the extension authors github if they do not use the hub yet.
+
+**Q: When the game launches I get no red cog under plauy button, why is broke?**
+A: Because SnowCo SnowCo'ed. Use -forcedesktop in command line and see if that magics everything better.

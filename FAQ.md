@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-10-09T03:57:16.540Z
+date: 2026-10-10T02:55:46.267Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -15,7 +15,7 @@ A: Yes, completely. We maintain the mod up to date with the latest SnowCo releas
 A: You can use D2RLoader to increase the stash stack size to 255. Otherwise, no it is engine limited.
 
 **Q: When will the next ladder start?**
-A: When things are done and ready
+A: very soon™, reveal stream is listed in the discord
 
 **Q: Can you make the chronicle work with the unique and set items that the mod adds?**
 A: No. SnowCo limited the entries beyond vanilla to a 2-300 more before it starts causing constant crashing and we add almost 1,000. There is a script to just [100% it here](https://discord.com/channels/898562996715012096/910921404571070515/1502460774860197940), but read the directions. 
@@ -29,7 +29,7 @@ A: Yes, use the desktop launcher or manual installation [directions here](https:
 A: Look at the top right of your character list, if the text is 'red' click it, it should turn gold and you should have a play button.
 
 **Q: Is there an endgame system?**
-A: No but it is being worked on, currently no ETA. Until then all we have is a [buffed NM, Hell, and TZs](https://wiki.d2r-reimagined.com/en/new_player_guide#gameplay-changes).
+A: No but it is being worked on, it will be revealed at the announcment stream in mid october. Until then we have is a [buffed NM, Hell, and TZs](https://wiki.d2r-reimagined.com/en/new_player_guide#gameplay-changes).
 
 **Q: Can you make Whirlwind ( WW ) work with CTC on attack/striking, hit every frame, add missiles or spells to it, or make it do additional things?**
 A: No. The skill is very hard-coded. You can use D2RLoader with extensions to adjust it though. 

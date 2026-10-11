@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-10-02T02:32:28.453Z
+date: 2026-10-11T17:55:45.919Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -156,7 +156,11 @@ Horadric Cube recipes that players may find useful on their journeys.
 | Western Worldstone Shard | Any Statue | | \= | Talic's Anguish Statue |
 | Southern Worldstone Shard | Any Statue | | \= | Madawc's Ire Statue |
 | Deep Worldstone Shard | Any Statue | | \= | Bul-Kathos' Nightmare Statue |
-| Northern Worldstone Shard | Any Statue | | \= | Worusk's End Statue |
+| Western Worldstone Shard | Tome of Town Portal | | \= | Eastern Worldstone Shard |
+| Eastern Worldstone Shard | Tome of Town Portal | | \= | Southern Worldstone Shard |
+| Southern Worldstone Shar | Tome of Town Portal | | \= | Deep Worldstone Shard |
+| Deep Worldstone Shard| Tome of Town Portal | | \= | Northern Worldstone Shard|
+| Northern Worldstone Shard | Tome of Town Portal | | \= | Western Worldstone Shard |
 | Any Set Armor or Ring/Amulet | Orb of Corruption | Uber Spirits (1 of each) | \= | Rerolled Set Item \*\* |
 | Any Unique Armor or Ring/Amulet | Orb of Corruption | Uber Spirits (1 of each) | \= | Rerolled Unique Item \*\* |
 

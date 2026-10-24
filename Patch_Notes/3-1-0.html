@@ -2,13 +2,545 @@
 title: Patch 3.1.0
 description: 
 published: true
-date: 2026-10-24T15:01:38.590Z
+date: 2026-10-24T18:22:00.403Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-10-24T13:27:04.970Z
 -->
 
 <h3>Patch 3.1.0</h3>
+<p>&nbsp;</p>
+<h2>Class Changes</h2>
+<h3><strong>Amazon</strong></h3>
+<ul>
+  <li>Critical Strike, Dodge, and Evade<ul>
+      <li>Increased the base percentage from <strong>5% to 7%</strong></li>
+    </ul>
+  </li>
+  <li>Pierce<ul>
+      <li>Increased the base percentage from <strong>5% to 10%</strong></li>
+    </ul>
+  </li>
+  <li>Cold Arrow<ul>
+      <li>Increased the base Cold duration from <strong>25 to 50 frames</strong></li>
+      <li>Changed Cold duration gained per level: levels 9–16 <strong>25 → 10 frames</strong>, level 17 onward <strong>0 → 10 frames</strong></li>
+    </ul>
+  </li>
+  <li>Freezing Arrow<ul>
+      <li>Increased the base Cold duration from <strong>27 to 50 frames</strong></li>
+      <li>Changed Cold duration gained per level: levels 9–16 <strong>8 → 10 frames</strong>, level 17 onward <strong>0 → 10 frames</strong></li>
+    </ul>
+  </li>
+  <li>Glacial Orb Arrow<ul>
+      <li>Reduced minimum and maximum Cold damage gained per level by <strong>2</strong> across every scaling bracket</li>
+      <li>Added Cold duration scaling of <strong>5 frames per level</strong> starting at skill level 9</li>
+    </ul>
+  </li>
+  <li>Meteoric Arrow<ul>
+      <li>Burning ground now gains <strong>+12% average Fire damage per second per level</strong> of Fire Arrow and Exploding Arrow</li>
+      <li>Reduced the base burning ground damage while increasing damage gained per level across all scaling brackets</li>
+      <li>Updated the skill tooltip to display the burning ground synergies</li>
+    </ul>
+  </li>
+  <li>Lightning Bolt<ul>
+      <li>Reduced maximum Lightning damage gained per level at skill level 29 and above: <strong>88 → 68</strong></li>
+    </ul>
+  </li>
+  <li>Lightning Fury<ul>
+      <li>Reduced maximum Lightning damage gained per level by <strong>2</strong> at skill levels 2–22</li>
+      <li>Increased maximum Lightning damage gained per level at skill level 29 and above: <strong>50 → 62</strong></li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Assassin</strong></h3>
+<ul>
+  <li>Ice Barrage<ul>
+      <li>Reduced Cold damage gained per level at skill level 29 and above</li>
+      <li>Added Cold duration scaling of <strong>5 frames per level</strong> starting at skill level 9</li>
+    </ul>
+  </li>
+  <li>Charged Bolt Sentry<ul>
+      <li>Reduced base maximum Lightning damage from <strong>18 to 16</strong></li>
+      <li>Reduced maximum Lightning damage scaling from skill level 9 onward, with progressively larger reductions at higher levels</li>
+    </ul>
+  </li>
+  <li>Wake of Fire Sentry<ul>
+      <li>Reduced base Fire damage from <strong>10–20 to 9–18</strong></li>
+      <li>Reduced maximum Fire damage scaling starting at skill level 2</li>
+      <li>Reduced minimum and maximum Fire damage scaling from skill level 9 onward</li>
+    </ul>
+  </li>
+  <li>Snowlash Sentry<ul>
+      <li>Reduced base maximum Cold damage from <strong>10 to 9</strong></li>
+      <li>Reduced maximum Cold damage scaling starting at skill level 2</li>
+      <li>Reduced minimum and maximum Cold damage scaling from skill level 9 onward</li>
+    </ul>
+  </li>
+  <li>Blade Fury<ul>
+      <li>Reduced added Physical damage scaling at skill levels 9–28</li>
+      <li>Weapon damage and other damage modifiers remain unaffected</li>
+    </ul>
+  </li>
+  <li>Lightning Sentry<ul>
+      <li>Reduced base maximum Lightning damage from <strong>20 to 18</strong></li>
+      <li>Reduced maximum Lightning damage gained per level across every scaling bracket</li>
+    </ul>
+  </li>
+  <li>Flameburst Sentry<ul>
+      <li>Reduced base Fire damage from <strong>10–20 to 9–18</strong></li>
+      <li>Reduced maximum Fire damage scaling starting at skill level 2</li>
+      <li>Reduced minimum and maximum Fire damage scaling from skill level 9 onward</li>
+    </ul>
+  </li>
+  <li>Glacial Burst Sentry<ul>
+      <li>Reduced base Cold damage from <strong>10–20 to 9–18</strong></li>
+      <li>Reduced minimum and maximum Cold damage gained per level across every scaling bracket</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Barbarian</strong></h3>
+<ul>
+  <li>Winter's Gambit<ul>
+      <li>Increased the base Cold duration from <strong>5 to 25 frames</strong></li>
+    </ul>
+  </li>
+  <li>Korlic's Fury<ul>
+      <li>Increased the base Cold duration from <strong>50 to 75 frames</strong></li>
+      <li>Added <strong>5 frames of Cold duration per skill level</strong> starting at skill level 9</li>
+      <li>Cold damage scaling remains unchanged</li>
+    </ul>
+  </li>
+  <li>Unstoppable Force<ul>
+      <li>Increased projectile velocity from <strong>12 to 14</strong></li>
+    </ul>
+  </li>
+  <li>King's Trinity (Immortal King's Set oSkill)<ul>
+      <li>Reworked elemental projectiles to convert weapon damage into their respective Fire, Cold, and Lightning damage types</li>
+      <li>Reduced the weapon damage contribution of each elemental projectile from <strong>100% to 75%</strong></li>
+      <li>Elemental damage from equipment, charms, buffs, and auras is applied only to projectiles of the matching element</li>
+      <li>Now applies a short <strong>16-frame elemental state</strong> when cast, using the same state system as Vengeance</li>
+      <li>Restored Chance to Cast effects from elemental projectile hits</li>
+      <li>Replaced equipment-based Crushing Blow with a fixed <strong>10% Crushing Blow chance</strong></li>
+      <li>Doubled the mana cost gained per skill level</li>
+      <li>Reworked projectile spawning and damage handling to separate visual effects from damaging projectiles</li>
+      <li>Updated projectile visuals and the skill description</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Druid</strong></h3>
+<ul>
+  <li>Rabies<ul>
+      <li>Reduced the frequency and area of contagion spreading<ul>
+          <li>Spread delay: <strong>2 → 3 frames</strong></li>
+          <li>Spread radius: <strong>12 → 9</strong></li>
+          <li>Contagion projectile speed: <strong>25 → 14</strong></li>
+        </ul>
+      </li>
+      <li>Changed the plague duration formula from <strong>10 + 5 per level</strong> to <strong>25 + 4 per level</strong></li>
+      <li>Reduced Poison duration from <strong>100 frames (+10 per level)</strong> to <strong>25 frames (+4 per level)</strong></li>
+      <li>Halved the mana cost gained per skill level while preserving the base mana cost</li>
+    </ul>
+  </li>
+  <li>Fire Claws<ul>
+      <li>Reduced minimum and maximum Fire damage gained per level at skill level 23 and above by <strong>5</strong></li>
+    </ul>
+  </li>
+  <li>Arctic Blast, Tornado, and Hurricane<ul>
+      <li>Added Cold duration scaling of <strong>10 frames per level</strong> starting at skill level 9</li>
+    </ul>
+  </li>
+  <li>Twister<ul>
+      <li>Added Cold duration scaling of <strong>5 frames per level</strong> starting at skill level 9</li>
+    </ul>
+  </li>
+  <li>Cyclone Armor<ul>
+      <li>Elemental Absorption value doubles in Hell but otherwise unchanged</li>
+    </ul>
+  </li>
+  <li>Raven<ul>
+      <li>Added Physical Pierce scaling from Spirit of Barbs: <strong>5% base</strong>, plus <strong>1% per hard point</strong> in Spirit of Barbs</li>
+    </ul>
+  </li>
+  <li>Summon Spirit Wolf<ul>
+      <li>Reduced Cold damage gained per level at skill level 29 and above</li>
+      <li>Reduced the chance to cast Twister from <strong>35% to 25%</strong></li>
+      <li>Reworked Cold Pierce to scale with Spirit of Barbs instead of inheriting caster-based Pierce stats: <strong>5% base</strong>, plus <strong>1% per hard point</strong></li>
+    </ul>
+  </li>
+  <li>Summon Fenris<ul>
+      <li>Reduced Fire damage gained per level at skill level 29 and above</li>
+      <li>Reduced the chance to cast Firestorm from <strong>35% to 25%</strong></li>
+      <li>Reworked Fire Pierce to scale with Spirit of Barbs instead of inheriting caster-based Pierce stats: <strong>5% base</strong>, plus <strong>1% per hard point</strong></li>
+    </ul>
+  </li>
+  <li>Summon Grizzly<ul>
+      <li>Reduced Physical damage gained per level at skill level 29 and above</li>
+      <li>Reduced the chance to cast Shockwave from <strong>35% to 25%</strong></li>
+      <li>Added Physical Pierce scaling from Spirit of Barbs: <strong>5% base</strong>, plus <strong>1% per hard point</strong></li>
+    </ul>
+  </li>
+  <li>Oak Sage<ul>
+      <li>Reworked the Maximum Life bonus from diminishing returns to linear scaling</li>
+      <li>Increased the base Maximum Life bonus from <strong>5% to 15%</strong>, plus <strong>+1% per additional skill level</strong></li>
+      <li>Now grants <strong>34% Maximum Life at level 20</strong>, before additional skill levels</li>
+    </ul>
+  </li>
+  <li>Spirit of Barbs<ul>
+      <li>Reduced the base enemy resistance reduction parameter from <strong>6% to 5%</strong></li>
+      <li>Reworked the resistance reduction formula to combine half of the previous level-based calculation with an additional <strong>1% reduction per hard point</strong></li>
+      <li>Added summon-specific Pierce scaling (<strong>5% base</strong>, plus <strong>1% per hard point</strong>)<ul>
+          <li><strong>Physical Pierce:</strong> Raven, Vines, and Grizzly</li>
+          <li><strong>Cold Pierce:</strong> Spirit Wolves</li>
+          <li><strong>Fire Pierce:</strong> Fenris</li>
+        </ul>
+      </li>
+      <li>Updated the skill descriptions to display the new resistance reduction and summon Pierce synergies</li>
+    </ul>
+  </li>
+  <li>Cycle of Life<ul>
+      <li>Reduced Life and Mana recovery parameters from <strong>5–25% to 1–5%</strong></li>
+      <li>Reduced the underlying Corpse Cycler recovery parameters from <strong>3–12% to 1–5%</strong></li>
+    </ul>
+  </li>
+  <li>Carrion Vine<ul>
+      <li>Reduced the base Mana Recovery and Life Regeneration bonuses granted by its aura from <strong>5 to 2</strong></li>
+      <li>Reduced the bonuses gained per skill level from <strong>5 to 2</strong></li>
+    </ul>
+  </li>
+  <li>Vines<ul>
+      <li>Added Physical Pierce scaling from Spirit of Barbs: <strong>5% base</strong>, plus <strong>1% per hard point</strong></li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Necromancer</strong></h3>
+<ul>
+  <li>Skeleton Mastery<ul>
+      <li>Added Physical Pierce scaling for Skeleton Warriors: <strong>5% base</strong>, plus <strong>1% per hard point</strong> and <strong>1% per 2 bonus skill levels</strong></li>
+      <li>Updated the Skeleton Warrior tooltip to display Physical Pierce and its mastery synergy</li>
+    </ul>
+  </li>
+  <li>Raise Skeleton<ul>
+      <li>Added <strong>25% Physical Damage Reduction</strong> in Hell only</li>
+      <li>Reduced Physical damage scaling at skill level 23 and above</li>
+      <li>Reduced the damage synergy parameter from <strong>8% to 7%</strong></li>
+    </ul>
+  </li>
+  <li>Raise Skeletal Mage<ul>
+      <li>Added <strong>25% Physical Damage Reduction</strong> in Hell only</li>
+      <li>Reduced the Mastery synergy parameter from <strong>5 to 4</strong></li>
+      <li>Reduced the Warrior synergy parameter from <strong>10 to 9</strong></li>
+      <li>Updated the tooltip calculations to reference Summon Resist's configured synergy parameters</li>
+    </ul>
+  </li>
+  <li>Poison Dagger<ul>
+      <li>Increased minimum and maximum Poison damage scaling from skill level 17 onward</li>
+    </ul>
+  </li>
+  <li>Golem Mastery<ul>
+      <li>Added Pierce scaling for Golems: <strong>5% base</strong>, plus <strong>1% per hard point</strong> and <strong>1% per 2 bonus skill levels</strong>
+        <ul>
+          <li>Clay, Blood, and Iron Golems receive Physical Pierce</li>
+          <li>Fire Golems receive Fire Pierce</li>
+        </ul>
+      </li>
+      <li>Updated affected Golem tooltips to display their Pierce bonuses and mastery synergies</li>
+    </ul>
+  </li>
+  <li>Clay Golem<ul>
+      <li>Increased Physical damage scaling from skill level 9 onward</li>
+    </ul>
+  </li>
+  <li>Blood Golem<ul>
+      <li>Increased Physical damage scaling from skill level 2 onward</li>
+    </ul>
+  </li>
+  <li>Iron Golem<ul>
+      <li>Increased Physical damage scaling from skill level 2 onward</li>
+    </ul>
+  </li>
+  <li>Fire Golem<ul>
+      <li>Reduced the base damage bonus from <strong>100% to 50%</strong></li>
+      <li>Reduced the additional damage bonus per skill level from <strong>15% to 10%</strong></li>
+      <li>Reduced base maximum Fire damage from <strong>27 to 20</strong></li>
+      <li>Reduced Fire damage scaling at skill levels 9–28. Scaling at level 29 and above is unchanged</li>
+      <li>Reworked Fire Pierce to use Golem Mastery rather than the previous caster-based Pierce calculation</li>
+      <li>Sunder Inheritance adds fire sunder to the damage aura</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Paladin</strong></h3>
+<ul>
+  <li>Vengeance<ul>
+      <li>Reworked elemental projectiles to convert weapon damage into their respective Fire, Cold, and Lightning damage types</li>
+      <li>Reduced the weapon damage contribution of each elemental projectile from <strong>100% to 50%</strong></li>
+      <li>Fire, Cold, and Lightning projectiles now receive only elemental damage bonuses matching their respective elements</li>
+      <li>Holy Fire, Holy Freeze, and Holy Shock contribute damage only to projectiles of the matching element</li>
+      <li>Restored Chance to Cast effects from elemental projectile hits</li>
+      <li>Replaced equipment-based Crushing Blow with a fixed <strong>10% Crushing Blow chance</strong></li>
+      <li>Doubled the mana cost gained per skill level</li>
+      <li>Reworked projectile spawning and damage handling to separate visual effects from damaging projectiles</li>
+      <li>Updated the skill tooltip to reflect the elemental weapon damage conversion and Crushing Blow mechanics</li>
+    </ul>
+  </li>
+  <li>Holy Bolt<ul>
+      <li>Reduced Magic damage gained per level at skill level 29 and above: minimum <strong>40 → 34</strong>, maximum <strong>46 → 40</strong></li>
+    </ul>
+  </li>
+  <li>Fist of the Heavens<ul>
+      <li>Reduced minimum and maximum Magic damage gained per level by <strong>5</strong> in each bracket from skill level 17 onward</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Sorceress</strong></h3>
+<ul>
+  <li>Lightning and Chain Lightning<ul>
+      <li>Rebalanced Lightning damage to reduce extreme damage variance: increased minimum and reduced maximum damage at every skill level</li>
+      <li><strong>Level 1 Lightning damage: 1–40 → 9–32</strong></li>
+      <li>Increased projectile speed from <strong>35 to 50</strong></li>
+      <li>Reduced missile range from <strong>25 to 20</strong> to accommodate the increased speed</li>
+    </ul>
+  </li>
+  <li>Ice Bolt, Frost Nova, and Ice Blast<ul>
+      <li>Removed Cold duration scaling at skill levels 2–8. Scaling from level 9 onward is unchanged</li>
+    </ul>
+  </li>
+  <li>Shiver Armor and Chilling Armor<ul>
+      <li>Reduced Cold duration gained per level at skill level 17 and above from <strong>50 to 25 frames</strong></li>
+    </ul>
+  </li>
+  <li>Glacial Spike<ul>
+      <li>Increased Freeze duration gained per skill level from <strong>1 to 3 frames</strong> (base remains 50 frames)</li>
+      <li><strong>Level 30 base Freeze duration: 79 → 137 frames</strong>, before difficulty penalties and other modifiers</li>
+    </ul>
+  </li>
+  <li>Hydra<ul>
+      <li>Reduced Hydra duration from <strong>250 to 150 frames</strong></li>
+      <li>Reduced Fire damage gained per level at skill level 29 and above: minimum <strong>42 → 39</strong>, maximum <strong>44 → 41</strong></li>
+    </ul>
+  </li>
+  <li>Frozen Orb<ul>
+      <li>Reduced Cold damage gained per level at skill level 29 and above: minimum <strong>34 → 32</strong>, maximum <strong>35 → 33</strong></li>
+      <li>Removed Cold duration scaling at skill levels 2–8</li>
+    </ul>
+  </li>
+  <li>Fire Wall<ul>
+      <li>Fixed formula so the wall gains width as it levels like it should</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Warlock</strong></h3>
+<ul>
+  <li>Echoing Strike<ul>
+      <li>Now deals added Physical damage, starting at <strong>8–10 base damage</strong> and scaling with skill level</li>
+      <li>Gains <strong>+5% Physical damage per level</strong> of Mirrored Blades and Blade Warp</li>
+      <li>Updated the skill tooltip to display the added Physical damage information</li>
+    </ul>
+  </li>
+  <li>Flame Wave<ul>
+      <li>Reduced minimum and maximum Fire damage gained per level by <strong>3</strong> at skill levels 9–28</li>
+    </ul>
+  </li>
+  <li>Demonic Mastery<ul>
+      <li>Added Physical Pierce scaling for Goatmen and reworked Fire Pierce scaling for Tainted: <strong>5% base</strong>, plus <strong>1% per hard point</strong> and <strong>1% per 2 bonus skill levels</strong></li>
+      <li>Updated the associated summon tooltips to display the Pierce bonuses and mastery synergies</li>
+    </ul>
+  </li>
+  <li>Summon Goatman<ul>
+      <li>Now receives Physical Pierce from Demonic Mastery</li>
+    </ul>
+  </li>
+  <li>Summon Tainted<ul>
+      <li>Reworked Fire Pierce to use the new Demonic Mastery scaling formula</li>
+      <li>Tainted Fire Ball<ul>
+          <li>Reduced the Blood Boil damage synergy from <strong>10% to 8%</strong></li>
+          <li>Reduced Fire damage scaling from skill level 23 onward</li>
+          <li>At skill level 29 and above: minimum <strong>50 → 47</strong>, maximum <strong>55 → 52</strong> Fire damage gained per level</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Consume<ul>
+      <li>Most Consume bonuses now scale by difficulty: <strong>skill level ×1 / ×2 / ×3</strong> in Normal / Nightmare / Hell, replacing a fixed ×3 multiplier</li>
+      <li>Stronger demon bonuses also scale by difficulty, including <strong>×1 / ×3 / ×5</strong> instead of a fixed ×5</li>
+      <li>Corrected invalid +Skills modifiers on several demon types and converted them to properly scaling All Skills bonuses</li>
+      <li>Adjusted the difficulty scaling of bonuses granted by The Smith, Hephasto, and Baal Subject 5</li>
+      <li>Updated several demon types to grant different elemental resistance bonuses</li>
+      <li>Changed one demon's granted aura from Conviction to Salvation</li>
+    </ul>
+  </li>
+  <li>Bind Demon<ul>
+      <li>Reworked the bind chance calculation to incorporate the skill's target requirements, Death Mark contribution, and the target's missing Life</li>
+      <li>Target Life thresholds now vary by demon type<ul>
+          <li>Weaker demons may be bound below <strong>99% Life</strong></li>
+          <li>Regular and stronger demons have thresholds including <strong>85%, 80%, and 75%</strong></li>
+          <li>Unique and boss demons have more restrictive thresholds, generally ranging from <strong>65% to 40%</strong></li>
+        </ul>
+      </li>
+      <li>Removed an unintended inherited item-based immunity-piercing modifier</li>
+    </ul>
+  </li>
+</ul>
+<p>Note</p>
+<p>Vengeance, King's Trinity and the damage tweaks above come from <a href="https://github.com/D2R-Reimagined/d2r-reimagined-mod/pull/1341"><u>#1341</u></a>. The larger changes were tested, the small 2 and 3 damage tweaks were not. Please report anything that feels off.</p>
+<p>&nbsp;</p>
+<h2><strong>Recipes</strong></h2>
+<p>Note</p>
+<p>QoL change for all orbs. Removes the need to Hel+El or Renew Orb in most cases. Both are still useful for runewords and to re-use a set/unique base for the other, since you can't Conversion Orb a set item or Assemblage Orb a unique item. Infusion orbs (similar to Chaos Orbs from PoE) are now easier to use to reroll rares as they tend to pile up quicker than other orbs.</p>
+<ul>
+  <li>Conversion Orb<ul>
+      <li>Conversion Orb + any normal/magic/rare/unique arrows, bolts, armor or weapon = unique equivalent</li>
+      <li>Conversion Orb + magic/rare/unique amulet or ring = unique equivalent</li>
+    </ul>
+  </li>
+  <li>Assemblage Orb<ul>
+      <li>Assemblage Orb + any normal/magic/rare/unique armor or weapon = set equivalent</li>
+      <li>Assemblage Orb + magic/rare/unique amulet or ring = set equivalent</li>
+    </ul>
+  </li>
+  <li>Infusion Orb<ul>
+      <li>Infusion Orb + any normal/magic/rare armor or weapon = rare equivalent</li>
+      <li>Infusion Orb + magic/rare amulet or ring = rare equivalent</li>
+      <li><a href="https://github.com/D2R-Reimagined/d2r-reimagined-mod/pull/1334"><u>Pictures</u></a></li>
+    </ul>
+  </li>
+  <li>Unique Jewel recipes<ul>
+      <li>Corrected the Unique Jewel item code from <code>jew</code> to <code>jewl</code> across <strong>138 cube recipes</strong> (crafted equipment, Unique Jewel rerolling and rarity upgrades, enchanting and infusion, ethereal conversions, Sunder Charm and facet crafting, and Socket Punch recipes)</li>
+      <li>Corrected both input and output references and quantity-based requirements involving multiple Unique Jewels</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>Runewords</strong></h2>
+<ul>
+  <li>Added <strong>Spark</strong> (Item Level 21, Required Level 21)<ul>
+      <li>+3 to Lightning Skills (Sorceress Only)</li>
+      <li>+2-3 to Chain Lightning, Nova, and Teleport (Sorceress Only)</li>
+      <li>+25-30% Faster Cast Rate</li>
+      <li>Adds 1-50 Weapon Lightning Damage</li>
+      <li>+33% Lightning Resistance</li>
+      <li>+2 Mana after each Kill</li>
+      <li>Orb version: +1 to Lightning Skills, +1-2 to Chain Lightning/Nova/Teleport, +10-15% FCR, +15% Lightning Resistance</li>
+    </ul>
+  </li>
+  <li>Leaf<ul>
+      <li>Fire Bolt, Inferno, and Warmth changed from +3 to +2-3</li>
+      <li>Added +25-30% Faster Cast Rate and +33% Fire Resistance</li>
+      <li>Removed +2 Defense (Based on Character Level) and +33% Cold Resistance</li>
+      <li>Added Orb version: +1 to Fire Skills, +1-2 to Fire Bolt/Inferno/Warmth, +10-15% FCR, +15% Fire Resistance</li>
+    </ul>
+  </li>
+  <li>Snowdrop<ul>
+      <li>Frost Nova, Glacial Spike, and Shiver Armor changed from +3 to +2-3</li>
+      <li>Added +25-30% Faster Cast Rate and +33% Cold Resistance</li>
+      <li>Removed +2 to Mana (Based on Character Level), +3 to Warmth, and +33% Fire Resistance</li>
+      <li>Added Orb version: +1 to Cold Skills, +1-2 to Frost Nova/Glacial Spike/Shiver Armor, +10-15% FCR, +15% Cold Resistance</li>
+    </ul>
+  </li>
+  <li>Penitence<ul>
+      <li>Added +4 Mana after each Kill and Attacker Takes Damage of 15</li>
+      <li>Removed +15% Faster Block Rate and Repairs 0.1 durability per second</li>
+    </ul>
+  </li>
+  <li>Steel<ul>
+      <li>Now works with all melee weapons</li>
+      <li>Light Radius, Mana after each Kill, and Attack Rating are now weapon-only properties</li>
+    </ul>
+  </li>
+  <li>Temptation<ul>
+      <li>Now works with all melee weapons</li>
+      <li>Enhanced Weapon Damage changed from +176% to +125-180%</li>
+      <li>Experience Gained changed from +10% to -10%</li>
+      <li>Added +50 to Mana</li>
+      <li>Removed -10 to all Attributes</li>
+    </ul>
+  </li>
+  <li>Removed placeholder runewords that no longer exist and cannot be made: Fortitude (Dummy), Rain Reimagined</li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>Monsters</strong></h2>
+<ul>
+  <li>Summons now have <strong>25% Magic Resistance in Hell</strong>
+    <ul>
+      <li><strong>Necromancer:</strong> Skeleton, Skeletal Mage, Clay Golem, Iron Golem, Fire Golem</li>
+      <li><strong>Druid:</strong> Raven, Spirit Wolf, Fenris, Plague Poppy, Cycle of Life, Vine Creature, Grizzly</li>
+      <li><strong>Warlock:</strong> Goatman, Bighead, Putrid Defiler</li>
+      <li>Blood Golem is not included</li>
+    </ul>
+  </li>
+  <li>&nbsp;</li>
+</ul>
+<h2><strong>Menus</strong></h2>
+<ul>
+  <li>Added Mod Information to both controller pause menus</li>
+  <li>Fixed controller scrollbar focus, the bottom Close/Back action, and tab-indicator spacing in Mod Information</li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>Item Drops</strong></h2>
+<ul>
+  <li>Reduced ammunition selection weight from <strong>3 to 1</strong> across affected monster, chest, and missile-weapon drop tables</li>
+  <li>Reduced Cow ammunition selection weight from <strong>2 to 1</strong> in Normal and Nightmare and from <strong>3 to 1</strong> in Hell</li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>Items</strong></h2>
+<ul>
+  <li>Empowering Flames (CTC skill)<ul>
+      <li>Changed from 100% bonus Attack Rating at level 1 and 500-1000 Fire damage per level to <strong>15% Attack Rating per level</strong> and <strong>150-300 Fire damage per level</strong></li>
+      <li>Duration reduced by half to not favor proc and swapping (CTC chances increased to compensate)</li>
+    </ul>
+  </li>
+  <li>Hellrack<ul>
+      <li>Increased Empowering Flames proc chance from <strong>5% to 10%</strong>, still level 2</li>
+    </ul>
+  </li>
+  <li>Crimson Crusade<ul>
+      <li>Removed base Fire damage</li>
+      <li>Added <strong>10% chance to cast level 1 Empowering Flames on kill</strong></li>
+    </ul>
+  </li>
+  <li>Immortal King's Soul Cage<ul>
+      <li>Removed Empowering Flames, its Fire damage was reinjected as <strong>500 minimum damage on all 3 elements</strong> on King's Charisma</li>
+      <li>Added <strong>25% Attack Rating</strong></li>
+    </ul>
+  </li>
+  <li>Stone Hide (Dream Spirit)<ul>
+      <li>Fixed the Curse Duration reduction tooltip and removed an unused nonexistent stat from its property line</li>
+    </ul>
+  </li>
+  <li>Warlock's Touch gloves renamed to <strong>Gravewood Grasp</strong></li>
+  <li>Specialized Raven pelts now have Summon Grizzly capped to <strong>1</strong></li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>Misc</strong></h2>
+<ul>
+  <li>Added rare prefix/suffix files for export tool consumption</li>
+  <li>Added missing rare-item naming definitions: <strong>46 rare prefixes</strong> and <strong>155 rare suffixes</strong></li>
+  <li>Added a license to the repository</li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>Bugs</strong></h2>
+<ul>
+  <li>Fixed Sacrifice causing FPS lag/dips (lighting on its nova missiles)</li>
+  <li>Fixed Blightburst having a hitshift of 8 instead of 4 (it was doing more damage than intended)</li>
+  <li>Fixed Strafe projectiles dropping the skill's Magic damage</li>
+  <li>Magic Arrow, Glacial Orb Arrow, and Poison Explosion projectiles now correctly use their skill's damage</li>
+  <li>Removed an erroneous character-level term from the Molten Boulder fire trail synergy</li>
+  <li>Removed a redundant server missile reference from Freezing Arrow</li>
+  <li>Fixed the improperly configured <strong>+25 Attack Rating</strong> on Warlord's Lust (item is disabled, but it was causing exporter issues)</li>
+  <li>Corrected <code>extra-skill-dmg%-rand</code> to use <code>damagepercent</code> instead of <code>dmg%</code></li>
+  <li>Corrected the <code>scz</code> item asset reference to use the Soul asset</li>
+  <li>Removed invalid colon characters from Charm Weight row names to prevent loader warnings</li>
+  <li>Fixed invalid summon and pet stat references in <code>monpet.txt</code></li>
+  <li>Corrected malformed calculation expressions affecting demon bonuses and binding behavior</li>
+  <li>Corrected tooltip calculations for Oak Sage, Summon Goatman, Blade Warp, Miasma Chains, and Echoing Strike</li>
+  <li>Removed outdated Skeleton synergy lines from the Teeth, Bone Spear, and Bone Spirit tooltips</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h2>D2RLoader ONLY Patch Notes</h2>

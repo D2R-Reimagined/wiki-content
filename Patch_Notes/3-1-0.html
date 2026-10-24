@@ -1,9 +1,9 @@
 <!--
 title: Patch 3.1.0
-description:
+description: 
 published: true
-date: 2026-10-24T14:15:04.356Z
-tags:
+date: 2026-10-24T14:48:40.850Z
+tags: 
 editor: ckeditor
 dateCreated: 2026-10-24T13:27:04.970Z
 -->
@@ -11,304 +11,269 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <h3>Patch 3.1.0</h3>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>D2RLoader ONLY Patch Notes</h3>
+<h2>D2RLoader ONLY Patch Notes</h2>
 <p>These will all be included in the upcoming <code>Ladder</code></p>
 <p>These patch notes only apply when using D2RLoader AND THE needed plugins to make this functionality work. You may grab the plugins from the <code>ReimaginedLadder</code> folder once it goes live</p>
-<p>&nbsp;</p>
 <blockquote>
   <p>Unless a section says otherwise, a feature works on both Ladder launches and normal (non-ladder) D2RLoader launches. Settings marked <strong>Locked on Ladder</strong> are reset by the launcher on every ladder launch, so editing them has no effect there.</p>
 </blockquote>
-<p>&nbsp;</p>
-<h4><strong>Ladder</strong></h4>
-<h5><strong>Ladder Servers and Lobby</strong></h5>
+<h3><strong>Ladder Servers and Lobby</strong></h3>
 <ul>
-  <li>On a Ladder launch, the Multiplayer game browser lists games on the Reimagined ladder servers instead of player-hosted games
-  <ul>
-    <li><strong>Host</strong> creates your game on a ladder server and joins you to it automatically</li>
-    <li>Game name up to <strong>15</strong> characters, password up to <strong>15</strong>, description up to <strong>31</strong>, <strong>1-8</strong> players, level difference <strong>0-99</strong></li>
-    <li>Difficulty, Expansion/RotW, Hardcore and Terrorized come from your character and the Host dialog</li>
-    <li>Servers are picked from the regions you selected in the launcher, closest first. If none has room, you're told to add another region in the launcher or try again in a moment</li>
-    <li>Joining a game from the list takes you to that game on its server. If a server briefly refuses the join, the game retries on its own up to <strong>2</strong> times</li>
-  </ul>
+  <li>On a Ladder launch, the Multiplayer game browser lists games on the Reimagined ladder servers instead of player-hosted games<ul>
+      <li><strong>Host</strong> creates your game on a ladder server and joins you to it automatically</li>
+      <li>Game name up to <strong>15</strong> characters, password up to <strong>15</strong>, description up to <strong>31</strong>, <strong>1-8</strong> players, level difference <strong>0-99</strong></li>
+      <li>Difficulty, Expansion/RotW, Hardcore and Terrorized come from your character and the Host dialog</li>
+      <li>Servers are picked from the regions you selected in the launcher, closest first. If none has room, you're told to add another region in the launcher or try again in a moment</li>
+      <li>Joining a game from the list takes you to that game on its server. If a server briefly refuses the join, the game retries on its own up to <strong>2</strong> times</li>
+    </ul>
   </li>
-  <li>Ladder server ping readout
-  <ul>
-    <li>The status bar at the top of Multiplayer shows your best ladder region and its ping (e.g. <code>na-east 32ms</code>). The light is green under <strong>120 ms</strong>, yellow under <strong>200 ms</strong> and red above that</li>
-    <li>Hover the <strong>?</strong> to see every region's ping, plus regions that didn't reply or have no open server</li>
-    <li>Ping is re-checked every <strong>60 seconds</strong> while you're in the menus, never during a game</li>
-  </ul>
+  <li>Ladder server ping readout<ul>
+      <li>The status bar at the top of Multiplayer shows your best ladder region and its ping (e.g. <code>na-east 32ms</code>). The light is green under <strong>120 ms</strong>, yellow under <strong>200 ms</strong> and red above that</li>
+      <li>Hover the <strong>?</strong> to see every region's ping, plus regions that didn't reply or have no open server</li>
+      <li>Ping is re-checked every <strong>60 seconds</strong> while you're in the menus, never during a game</li>
+    </ul>
   </li>
-  <li>Changes on ladder launches
-  <ul>
-    <li>The main menu <strong>Play</strong> button is hidden. Ladder games start from <strong>Multiplayer</strong></li>
-    <li>Games on your own PC (offline play, or double-clicking a character) are refused, because only the ladder servers save ladder characters</li>
-    <li>A new ladder character is created and saved, then you're sent back to the lobby with it. Its first automatic launch shows "failed to join", which is expected. Host or join from there</li>
-    <li>The lobby's server, account and redirect settings always use the launcher's values (<strong>Locked on Ladder</strong>)</li>
-  </ul>
+  <li>Changes on ladder launches<ul>
+      <li>The main menu <strong>Play</strong> button is hidden. Ladder games start from <strong>Multiplayer</strong></li>
+      <li>Games on your own PC (offline play, or double-clicking a character) are refused, because only the ladder servers save ladder characters</li>
+      <li>A new ladder character is created and saved, then you're sent back to the lobby with it. Its first automatic launch shows "failed to join", which is expected. Host or join from there</li>
+      <li>The lobby's server, account and redirect settings always use the launcher's values (<strong>Locked on Ladder</strong>)</li>
+    </ul>
   </li>
-  <li>Crash and freeze reports
-  <ul>
-    <li>On ladder launches, crashes and freezes (no new frame for <strong>30 seconds</strong>) are sent to the Reimagined team with the lobby log. No account, IP address or save data is sent</li>
-    <li>To opt out, set <code>sentry = false</code> in <code>d2rloader/config/lobby-bridge.toml</code></li>
-  </ul>
+  <li>Crash and freeze reports<ul>
+      <li>On ladder launches, crashes and freezes (no new frame for <strong>30 seconds</strong>) are sent to the Reimagined team with the lobby log. No account, IP address or save data is sent</li>
+      <li>To opt out, set <code>sentry = false</code> in <code>d2rloader/config/lobby-bridge.toml</code></li>
+    </ul>
   </li>
 </ul>
 <blockquote>
   <p>Non-ladder launches keep D2RLoader's normal lobby and hosting. If every region shows <code>???ms</code>, a firewall may be blocking ping. Joining still works.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h5><strong>Server Saves</strong></h5>
+<h3><strong>Server Saves</strong></h3>
 <ul>
-  <li>Ladder characters and the ladder shared stash are stored on the Reimagined servers
-  <ul>
-    <li>Each ladder has its own save folder, fully separate from your normal Reimagined characters. Ladder and non-ladder characters can never mix, and your normal characters are never touched</li>
-    <li>At launch, your ladder characters are downloaded from the server. The server's copy always wins: a local file that differs is replaced, and one the server doesn't know about is set aside</li>
-    <li>While you play, finished saves are uploaded in the background (checked about every <strong>2 seconds</strong>). Half-written files are never sent</li>
-    <li>Minions saved by Bind And Summon travel with their character</li>
-    <li>A hardcore death removes the character from the server too</li>
-    <li>A new ladder save folder copies your graphics settings and loot filters from your normal profile</li>
-  </ul>
+  <li>Ladder characters and the ladder shared stash are stored on the Reimagined servers<ul>
+      <li>Each ladder has its own save folder, fully separate from your normal Reimagined characters. Ladder and non-ladder characters can never mix, and your normal characters are never touched</li>
+      <li>At launch, your ladder characters are downloaded from the server. The server's copy always wins: a local file that differs is replaced, and one the server doesn't know about is set aside</li>
+      <li>While you play, finished saves are uploaded in the background (checked about every <strong>2 seconds</strong>). Half-written files are never sent</li>
+      <li>Minions saved by Bind And Summon travel with their character</li>
+      <li>A hardcore death removes the character from the server too</li>
+      <li>A new ladder save folder copies your graphics settings and loot filters from your normal profile</li>
+    </ul>
   </li>
-  <li>Backups and recovery
-  <ul>
-    <li>Before anything in the ladder folder is replaced, it's copied to <code>.server-saves/backups/</code>. Up to <strong>10</strong> copies are kept per character. The game can't load these copies</li>
-    <li>Progress the server didn't confirm (a server outage, or closing the game too early) is kept in <code>.server-saves/pending-upload/</code> and offered again on the next launch, as long as the character hasn't moved on elsewhere since</li>
-  </ul>
+  <li>Backups and recovery<ul>
+      <li>Before anything in the ladder folder is replaced, it's copied to <code>.server-saves/backups/</code>. Up to <strong>10</strong> copies are kept per character. The game can't load these copies</li>
+      <li>Progress the server didn't confirm (a server outage, or closing the game too early) is kept in <code>.server-saves/pending-upload/</code> and offered again on the next launch, as long as the character hasn't moved on elsewhere since</li>
+    </ul>
   </li>
-  <li>Save status messages in chat (from <strong>Server Saves</strong>)
-  <ul>
-    <li>After <strong>2</strong> failed uploads in a row: "Server save uploads are failing. Retrying; progress is not confirmed saved." This repeats every minute and when you enter a game</li>
-    <li>When saves work again: "The server has accepted a save again." (green)</li>
-    <li>Saving stops, with a message telling you to exit and relaunch through Reimagined, if your ladder revision is out of date, your session expired, the ladder is unavailable, or the server already has a newer save (for example the same character open on another PC)</li>
-    <li>The <strong>Server Saves</strong> panel in the launcher shows your last confirmed save times</li>
-  </ul>
+  <li>Save status messages in chat (from <strong>Server Saves</strong>)<ul>
+      <li>After <strong>2</strong> failed uploads in a row: "Server save uploads are failing. Retrying; progress is not confirmed saved." This repeats every minute and when you enter a game</li>
+      <li>When saves work again: "The server has accepted a save again." (green)</li>
+      <li>Saving stops, with a message telling you to exit and relaunch through Reimagined, if your ladder revision is out of date, your session expired, the ladder is unavailable, or the server already has a newer save (for example the same character open on another PC)</li>
+      <li>The <strong>Server Saves</strong> panel in the launcher shows your last confirmed save times</li>
+    </ul>
   </li>
-  <li>New ladder characters
-  <ul>
-    <li>Characters must be created fresh at <strong>level 1</strong> inside the ladder. Existing characters can't be imported or copied in, and a new shared stash must start empty</li>
-    <li>Character names must be unique on the ladder</li>
-  </ul>
+  <li>New ladder characters<ul>
+      <li>Characters must be created fresh at <strong>level 1</strong> inside the ladder. Existing characters can't be imported or copied in, and a new shared stash must start empty</li>
+      <li>Character names must be unique on the ladder</li>
+    </ul>
   </li>
-  <li>Cheating protection
-  <ul>
-    <li>Debug mode and cheats are off on the ladder. If debug mode is detected, nothing from that session is saved to the server</li>
-    <li>The server checks every save. For example: skill and stat points must match your level and quests, level must match experience, quest and waypoint progress can't go backwards, and items must be ones the game could create (valid item types, stack sizes, sockets and affix ranges)</li>
-    <li>While you play, the game also records where items came from and where they went, as evidence for staff review (for example an item given away and then kept by closing the game)</li>
-    <li>A save that anti-cheat rejects is not stored: "Your save was rejected by anti-cheat and was not stored on the server. If you believe this is a false positive, please contact support." Your local copy stays in the backups</li>
-  </ul>
+  <li>Cheating protection<ul>
+      <li>Debug mode and cheats are off on the ladder. If debug mode is detected, nothing from that session is saved to the server</li>
+      <li>The server checks every save. For example: skill and stat points must match your level and quests, level must match experience, quest and waypoint progress can't go backwards, and items must be ones the game could create (valid item types, stack sizes, sockets and affix ranges)</li>
+      <li>While you play, the game also records where items came from and where they went, as evidence for staff review (for example an item given away and then kept by closing the game)</li>
+      <li>A save that anti-cheat rejects is not stored: "Your save was rejected by anti-cheat and was not stored on the server. If you believe this is a false positive, please contact support." Your local copy stays in the backups</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
   <p>Keybinds and automap history don't carry over into the ladder folder, so ladder characters start with default keybinds. The same character can't be played on two PCs at once: the second save is refused. Always use Save and Exit before closing the game, especially during an update countdown.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h5><strong>Ladder Drop Rates</strong></h5>
+<h3><strong>Ladder Drop Rates</strong></h3>
 <ul>
-  <li>Some drops are rarer on Ladder. Only the chance of the item dropping changes, nothing else
-  <ul>
-    <li>Runes El through Sol (<strong>1-12</strong>): <strong>unchanged</strong></li>
-    <li>Runes Shael through Ist (<strong>13-24</strong>): <strong>20% rarer</strong> (<strong>x0.8</strong> drop rate)</li>
-    <li>Runes Gul and above (<strong>25+</strong>, including Brak, Zeph, Myr, Grit, Dem and Hev): <strong>3x rarer</strong> (<strong>x1/3</strong> drop rate)</li>
-    <li>Rune stacks follow the same rate as their rune</li>
-    <li>Orb of Infusion, Orb of Conversion and Orb of Assemblage: <strong>3x rarer</strong> (<strong>x1/3</strong>) from every rolled drop, in <strong>all difficulties</strong></li>
-    <li>Orb of Shadows and Orb of Renewal: <strong>unchanged</strong></li>
-    <li>Jewels: <strong>2x rarer</strong> (<strong>x1/2</strong>) in <strong>Nightmare and Hell</strong> only. Normal jewel drops are unchanged
-    <ul>
-      <li>Rolled jewel drops in Maps (for example the Artificer's bonus roll) and in the Labyrinth count as Hell and are also halved</li>
+  <li>Some drops are rarer on Ladder. Only the chance of the item dropping changes, nothing else<ul>
+      <li>Runes El through Sol (<strong>1-12</strong>): <strong>unchanged</strong></li>
+      <li>Runes Shael through Ist (<strong>13-24</strong>): <strong>20% rarer</strong> (<strong>x0.8</strong> drop rate)</li>
+      <li>Runes Gul and above (<strong>25+</strong>, including Brak, Zeph, Myr, Grit, Dem and Hev): <strong>3x rarer</strong> (<strong>x1/3</strong> drop rate)</li>
+      <li>Rune stacks follow the same rate as their rune</li>
+      <li>Orb of Infusion, Orb of Conversion and Orb of Assemblage: <strong>3x rarer</strong> (<strong>x1/3</strong>) from every rolled drop, in <strong>all difficulties</strong></li>
+      <li>Orb of Shadows and Orb of Renewal: <strong>unchanged</strong></li>
+      <li>Jewels: <strong>2x rarer</strong> (<strong>x1/2</strong>) in <strong>Nightmare and Hell</strong> only. Normal jewel drops are unchanged<ul>
+          <li>Rolled jewel drops in Maps (for example the Artificer's bonus roll) and in the Labyrinth count as Hell and are also halved</li>
+        </ul>
+      </li>
+      <li>Terror Zone drop tables get the same changes</li>
+      <li>The reduction holds at any party size</li>
     </ul>
-    </li>
-    <li>Terror Zone drop tables get the same changes</li>
-    <li>The reduction holds at any party size</li>
-  </ul>
   </li>
-  <li>Normal-difficulty quest bosses no longer drop a guaranteed orb
-  <ul>
-    <li>Duriel (Normal): no guaranteed <strong>Orb of Infusion</strong></li>
-    <li>Mephisto (Normal): no guaranteed <strong>Orb of Assemblage</strong></li>
-    <li>Diablo (Normal): no guaranteed <strong>Orb of Conversion</strong></li>
-    <li>Their other drops are unchanged. The <strong>Nightmare and Hell</strong> kills still give their guaranteed orb at the full rate</li>
-  </ul>
+  <li>Normal-difficulty quest bosses no longer drop a guaranteed orb<ul>
+      <li>Duriel (Normal): no guaranteed <strong>Orb of Infusion</strong></li>
+      <li>Mephisto (Normal): no guaranteed <strong>Orb of Assemblage</strong></li>
+      <li>Diablo (Normal): no guaranteed <strong>Orb of Conversion</strong></li>
+      <li>Their other drops are unchanged. The <strong>Nightmare and Hell</strong> kills still give their guaranteed orb at the full rate</li>
+    </ul>
   </li>
-  <li>Guaranteed payouts keep their full rate
-  <ul>
-    <li>Labyrinth boss guaranteed jewels (Maghda, Belial, Nakrul, Skeleton King, Diablo) and Diablo's guaranteed Labyrinth high rune</li>
-    <li>Fixed-count Maps payouts: the Jewel Hoarder's <strong>6 jewels</strong> and the guaranteed jewels from the Treasure Raiders and Sealed Reliquary events</li>
-    <li>Rolled chances inside boss drop tables are still reduced. For example, Maghda's rolled Labyrinth rune now drops <strong>3x less</strong> often</li>
-  </ul>
+  <li>Guaranteed payouts keep their full rate<ul>
+      <li>Labyrinth boss guaranteed jewels (Maghda, Belial, Nakrul, Skeleton King, Diablo) and Diablo's guaranteed Labyrinth high rune</li>
+      <li>Fixed-count Maps payouts: the Jewel Hoarder's <strong>6 jewels</strong> and the guaranteed jewels from the Treasure Raiders and Sealed Reliquary events</li>
+      <li>Rolled chances inside boss drop tables are still reduced. For example, Maghda's rolled Labyrinth rune now drops <strong>3x less</strong> often</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
   <p>This applies on the ladder servers and can't be configured. One small exception to "exact at any party size": the dedicated rune slot of Countess, Battlemaiden, Bloodwitch, Frozenstein and Hephasto (Nightmare/Hell, and the Normal "high rune" slot). Solo, that slot now gives a rune <strong>90.5% to 98%</strong> as often as before (Hell Countess: <strong>91.8%</strong>). In bigger parties the reduction on that slot gets smaller. Normal Countess's low rune slot (El-Sol) is unchanged.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h5><strong>Ladder-Locked Settings</strong></h5>
+<h3><strong>Ladder-Locked Settings</strong></h3>
 <ul>
-  <li>On Ladder launches the launcher resets these to the ladder values, so every player plays by the same rules:
-  <ul>
-    <li><strong>Ladder Servers and Lobby</strong>: server, account and redirect settings</li>
-    <li><strong>Reimagined Maps</strong>: event chance <strong>30%</strong>, treasure monster chance <strong>8%</strong>, Wardens never get random bonus modifiers, map reopening on, in-map HUD always shown</li>
-    <li><strong>Auto Waypoint</strong>: always on, with a range of <strong>20</strong></li>
-    <li><strong>Identify On Click</strong>, <strong>Bind And Summon</strong>, <strong>Charm Inventory</strong> and <strong>Left Click Auras</strong>: the whole config file</li>
-    <li>Developer test and debug commands are disabled (Maps, Death Tracker, Kill Tracker, Hardcore Death Announcements)</li>
-  </ul>
+  <li>On Ladder launches the launcher resets these to the ladder values, so every player plays by the same rules:<ul>
+      <li><strong>Ladder Servers and Lobby</strong>: server, account and redirect settings</li>
+      <li><strong>Reimagined Maps</strong>: event chance <strong>30%</strong>, treasure monster chance <strong>8%</strong>, Wardens never get random bonus modifiers, map reopening on, in-map HUD always shown</li>
+      <li><strong>Auto Waypoint</strong>: always on, with a range of <strong>20</strong></li>
+      <li><strong>Identify On Click</strong>, <strong>Bind And Summon</strong>, <strong>Charm Inventory</strong> and <strong>Left Click Auras</strong>: the whole config file</li>
+      <li>Developer test and debug commands are disabled (Maps, Death Tracker, Kill Tracker, Hardcore Death Announcements)</li>
+    </ul>
   </li>
 </ul>
 <p>&nbsp;</p>
-<h4><strong>Maps</strong></h4>
-<h5><strong>Reimagined Maps</strong></h5>
+<h3><strong>Maps</strong></h3>
 <ul>
-  <li>Adds an endgame <strong>Maps</strong> system in <strong>Hell</strong>. A map is an item you transmute in the Horadric Cube to open a red portal to a randomly generated map area. A <strong>Warden</strong> boss waits in its own sanctum at the end
-  <ul>
-    <li><strong>10 map themes</strong>, each in <strong>Tiers 1 to 6</strong> (<strong>60</strong> maps in total)
-    <ul>
-      <li>Underground: <strong>Sandswept Tomb</strong>, <strong>Corrupted Durance</strong>, <strong>Forsaken Catacombs</strong>, <strong>Frozen Depths</strong>, <strong>Worldstone Keep</strong></li>
-      <li>Outdoor: <strong>Sunscar Dunes</strong>, <strong>Forsaken Highlands</strong>, <strong>Fallen Travincal</strong>, <strong>Ashen Steppes</strong>, <strong>Infernal Rift</strong></li>
+  <li>Adds an endgame <strong>Maps</strong> system in <strong>Hell</strong>. A map is an item you transmute in the Horadric Cube to open a red portal to a randomly generated map area. A <strong>Warden</strong> boss waits in its own sanctum at the end<ul>
+      <li><strong>10 map themes</strong>, each in <strong>Tiers 1 to 6</strong> (<strong>60</strong> maps in total)<ul>
+          <li>Underground: <strong>Sandswept Tomb</strong>, <strong>Corrupted Durance</strong>, <strong>Forsaken Catacombs</strong>, <strong>Frozen Depths</strong>, <strong>Worldstone Keep</strong></li>
+          <li>Outdoor: <strong>Sunscar Dunes</strong>, <strong>Forsaken Highlands</strong>, <strong>Fallen Travincal</strong>, <strong>Ashen Steppes</strong>, <strong>Infernal Rift</strong></li>
+        </ul>
+      </li>
+      <li>Items are named "&lt;Theme&gt; Map (Tier N)". Map item levels are <strong>70 / 76 / 81 / 84 / 87 / 90</strong> for Tiers 1 to 6. Maps have no level requirement</li>
+      <li>Map areas have area levels <strong>100 to 105</strong> (one per tier). Each map has its own Warden sanctum ("&lt;Theme&gt; Sanctum, Tier N")</li>
+      <li>Higher tiers have bigger map areas with more rooms</li>
     </ul>
-    </li>
-    <li>Items are named "&lt;Theme&gt; Map (Tier N)". Map item levels are <strong>70 / 76 / 81 / 84 / 87 / 90</strong> for Tiers 1 to 6. Maps have no level requirement</li>
-    <li>Map areas have area levels <strong>100 to 105</strong> (one per tier). Each map has its own Warden sanctum ("&lt;Theme&gt; Sanctum, Tier N")</li>
-    <li>Higher tiers have bigger map areas with more rooms</li>
-  </ul>
   </li>
-  <li>Opening a map
-  <ul>
-    <li>Put <strong>one map by itself</strong> in the Horadric Cube in <strong>Hell</strong> and transmute. The map is consumed and a red portal opens in <strong>Harrogath</strong></li>
-    <li>Each map rolls its own modifiers from that item. Other maps in your inventory or stash can't change the roll</li>
-    <li>If anything goes wrong (the cube can't be read, the server is busy, the data doesn't match), the map is <strong>not consumed</strong> and a message tells you why</li>
-    <li>Each theme and tier can be open once at a time per game. Town trips and going between the map and the sanctum keep the current map, so dead monsters stay dead</li>
-    <li><strong>Reopening</strong>: transmuting another map of a theme and tier you already used in this game resets that map, with fresh monsters, a fresh Warden and the new map's modifiers. The same red portal leads to the fresh map. The layout stays the same</li>
-  </ul>
+  <li>Opening a map<ul>
+      <li>Put <strong>one map by itself</strong> in the Horadric Cube in <strong>Hell</strong> and transmute. The map is consumed and a red portal opens in <strong>Harrogath</strong></li>
+      <li>Each map rolls its own modifiers from that item. Other maps in your inventory or stash can't change the roll</li>
+      <li>If anything goes wrong (the cube can't be read, the server is busy, the data doesn't match), the map is <strong>not consumed</strong> and a message tells you why</li>
+      <li>Each theme and tier can be open once at a time per game. Town trips and going between the map and the sanctum keep the current map, so dead monsters stay dead</li>
+      <li><strong>Reopening</strong>: transmuting another map of a theme and tier you already used in this game resets that map, with fresh monsters, a fresh Warden and the new map's modifiers. The same red portal leads to the fresh map. The layout stays the same</li>
+    </ul>
   </li>
-  <li>Map currency (cube recipes, Hell only)
-  <ul>
-    <li><strong>Horadric Sextant</strong> + a Tier 1-4 map: upgrades it to the <strong>next tier</strong></li>
-    <li><strong>Horadric Astrolabe</strong> + a Tier 5 map: corrupts it into <strong>Tier 6</strong>. This is the only way to get a Tier 6 map</li>
-    <li><strong>Vizjerei Prism</strong> + any map: same theme and tier with <strong>new modifiers</strong></li>
-  </ul>
+  <li>Map currency (cube recipes, Hell only)<ul>
+      <li><strong>Horadric Sextant</strong> + a Tier 1-4 map: upgrades it to the <strong>next tier</strong></li>
+      <li><strong>Horadric Astrolabe</strong> + a Tier 5 map: corrupts it into <strong>Tier 6</strong>. This is the only way to get a Tier 6 map</li>
+      <li><strong>Vizjerei Prism</strong> + any map: same theme and tier with <strong>new modifiers</strong></li>
+    </ul>
   </li>
-  <li>Map tooltip
-  <ul>
-    <li>Shows the tier and theme</li>
-    <li>Once identified, it also shows <strong>Monster Density</strong>, <strong>Combat Magic Find</strong> and every modifier</li>
-    <li>The last line tells you what transmuting it will do: open the map, reset a used theme/tier, or "Start a new game"</li>
-    <li>A map on the ground shows "Pick up this map to see its modifiers"</li>
-  </ul>
+  <li>Map tooltip<ul>
+      <li>Shows the tier and theme</li>
+      <li>Once identified, it also shows <strong>Monster Density</strong>, <strong>Combat Magic Find</strong> and every modifier</li>
+      <li>The last line tells you what transmuting it will do: open the map, reset a used theme/tier, or "Start a new game"</li>
+      <li>A map on the ground shows "Pick up this map to see its modifiers"</li>
+    </ul>
   </li>
   <li>In-map HUD (top right, beside the clock): <strong>Tier</strong>, <strong>Density %</strong>, <strong>Magic Find +%</strong> and every active modifier</li>
-  <li>Map modifiers
-  <ul>
-    <li>Modifiers per tier: <strong>T1: 2</strong>, <strong>T2: 2-3</strong>, <strong>T3: 3-4</strong>, <strong>T4: 4</strong>, <strong>T5: 4-5</strong>, <strong>T6: 6</strong></li>
-    <li>Every modifier also adds monster density (<strong>+4% per strength point</strong>), more elite packs and <strong>+5% Combat Magic Find per strength point</strong></li>
-    <li>Base Combat Magic Find is <strong>+25% per tier</strong>, capped at <strong>+250%</strong>. Map monsters give it to players fighting near them, and it works like normal Magic Find on their drops</li>
-    <li>Base density goes from <strong>110% at T1</strong> to <strong>170% at T5</strong> and <strong>200% at T6</strong>. Elite packs per map go from <strong>20-26 at T1</strong> to <strong>29-38 at T6</strong></li>
-  </ul>
-  </li>
-  <li>Modifier list (minimum tier in brackets)
-  <ul>
-    <li><strong>Teeming</strong> [T1]: more monsters (<strong>+25%</strong> density). <strong>Swarming</strong> [T3]: many more monsters (<strong>+50%</strong> density)</li>
-    <li><strong>Storied</strong> [T2]: more elite packs. <strong>Legendary</strong> [T4]: many more elite packs</li>
-    <li><strong>Sapping</strong> [T1]: <strong>-15%</strong> physical attack damage. <strong>Withering</strong> [T3]: <strong>-30%</strong> physical attack damage</li>
-    <li><strong>Unhallowed</strong> [T2]: <strong>-2 to All Skills</strong></li>
-    <li><strong>of Frailty</strong> [T1]: <strong>-30</strong> Fire, Cold, Lightning and Poison resistance. <strong>of Ruin</strong> [T4]: <strong>-60</strong> to all four</li>
-    <li><strong>of Agony</strong> [T3]: <strong>-25%</strong> Physical resistance</li>
-    <li><strong>of Might</strong> [T2], <strong>of Conviction</strong> [T3], <strong>of Fanaticism</strong> [T4]: monsters carry that aura at level <strong>12 / 10 / 10</strong>
-    <ul>
-      <li>These are monster-only versions of the auras, so your own Might, Conviction or Fanaticism (Infinity, Paladin or mercenary) doesn't cancel them</li>
+  <li>Map modifiers<ul>
+      <li>Modifiers per tier: <strong>T1: 2</strong>, <strong>T2: 2-3</strong>, <strong>T3: 3-4</strong>, <strong>T4: 4</strong>, <strong>T5: 4-5</strong>, <strong>T6: 6</strong></li>
+      <li>Every modifier also adds monster density (<strong>+4% per strength point</strong>), more elite packs and <strong>+5% Combat Magic Find per strength point</strong></li>
+      <li>Base Combat Magic Find is <strong>+25% per tier</strong>, capped at <strong>+250%</strong>. Map monsters give it to players fighting near them, and it works like normal Magic Find on their drops</li>
+      <li>Base density goes from <strong>110% at T1</strong> to <strong>170% at T5</strong> and <strong>200% at T6</strong>. Elite packs per map go from <strong>20-26 at T1</strong> to <strong>29-38 at T6</strong></li>
     </ul>
-    </li>
-    <li><strong>Bovine Incursion</strong> [T1], <strong>Witch Coven</strong> [T2], <strong>Restless Legion</strong> [T1]: some normal packs are replaced by Hell Bovines, Succubi or skeletal archers</li>
-    <li><strong>Blood Frenzy</strong> [T2]: monsters gain <strong>+15%</strong> movement and attack speed</li>
-    <li><strong>Flame Pact</strong> / <strong>Frost Pact</strong> / <strong>Storm Pact</strong> [T1]: monsters add <strong>20-40 Fire</strong>, <strong>15-30 Cold</strong> or <strong>5-60 Lightning</strong> attack damage per tier</li>
-    <li><strong>Gilded</strong> [T1]: each elite gets a bonus drop roll for gold, gems and map currency</li>
-    <li><strong>Artificer's</strong> [T1]: each elite gets a bonus drop roll for gems, jewels and equipment</li>
-    <li>Two modifiers of the same family never roll together. Pacts never roll with Conviction, Frailty or Ruin. Blood Frenzy never rolls with Fanaticism, or on Worldstone Keep and Fallen Travincal (their Wardens already bring Fanaticism)</li>
-    <li>Player penalties apply to the <strong>whole map</strong>, including the sanctum, even after the monsters are dead. They end when you leave. Your character sheet shows the reduced values while you're inside</li>
-  </ul>
   </li>
-  <li>Map monsters
-  <ul>
-    <li><strong>8-9 monster types</strong> per theme, taken from that theme's region</li>
-    <li>Monsters have <strong>1.5x</strong> Hell life. Life and damage scale <strong>x1.2 / 1.4 / 1.6 / 1.8 / 2.0 / 3.0</strong> for Tiers 1 to 6</li>
-    <li>No Labyrinth-style blanket immunities. Monsters keep their normal immunities</li>
-    <li>Experience doesn't increase with tier</li>
-    <li>Monsters use more aggressive, Labyrinth-style AI: they engage from further away, circle and run away less, and move faster</li>
-  </ul>
-  </li>
-  <li>Wardens (the map bosses, named "&lt;Theme&gt; Warden")
-  <ul>
-    <li>Each theme's Warden has its own skill set, and gains extra skills at Tiers 3 and 5:
-    <ul>
-      <li><strong>Sandswept Tomb</strong>: dust-devil Sandstorm and a burrowing charge</li>
-      <li><strong>Corrupted Durance</strong>: a kiting fire caster that blinks away and summons fire totems</li>
-      <li><strong>Forsaken Catacombs</strong>: poison bolts, a poison nova and plague clouds, plus Lower Resist at T5+</li>
-      <li><strong>Frozen Depths</strong>: Frozen Orb, Blink and Blizzard, plus healing its escort at T5+</li>
-      <li><strong>Worldstone Keep</strong>: a ground slam and a fan of shockwaves</li>
-      <li><strong>Sunscar Dunes</strong>: a charged-bolt lob, a bolt spray and a lightning nova</li>
-      <li><strong>Forsaken Highlands</strong>: fire arrow volleys, an exploding arrow and fire rain</li>
-      <li><strong>Fallen Travincal</strong>: Chain Lightning, a holy-bolt strike and a Zealot escort powered by Fanaticism</li>
-      <li><strong>Ashen Steppes</strong>: fire skulls, a homing fire spirit, a Decrepify curse and fire bursts on hit</li>
-      <li><strong>Infernal Rift</strong>: meteors, fireballs and a firewall</li>
+  <li>Modifier list (minimum tier in brackets)<ul>
+      <li><strong>Teeming</strong> [T1]: more monsters (<strong>+25%</strong> density). <strong>Swarming</strong> [T3]: many more monsters (<strong>+50%</strong> density)</li>
+      <li><strong>Storied</strong> [T2]: more elite packs. <strong>Legendary</strong> [T4]: many more elite packs</li>
+      <li><strong>Sapping</strong> [T1]: <strong>-15%</strong> physical attack damage. <strong>Withering</strong> [T3]: <strong>-30%</strong> physical attack damage</li>
+      <li><strong>Unhallowed</strong> [T2]: <strong>-2 to All Skills</strong></li>
+      <li><strong>of Frailty</strong> [T1]: <strong>-30</strong> Fire, Cold, Lightning and Poison resistance. <strong>of Ruin</strong> [T4]: <strong>-60</strong> to all four</li>
+      <li><strong>of Agony</strong> [T3]: <strong>-25%</strong> Physical resistance</li>
+      <li><strong>of Might</strong> [T2], <strong>of Conviction</strong> [T3], <strong>of Fanaticism</strong> [T4]: monsters carry that aura at level <strong>12 / 10 / 10</strong>
+        <ul>
+          <li>These are monster-only versions of the auras, so your own Might, Conviction or Fanaticism (Infinity, Paladin or mercenary) doesn't cancel them</li>
+        </ul>
+      </li>
+      <li><strong>Bovine Incursion</strong> [T1], <strong>Witch Coven</strong> [T2], <strong>Restless Legion</strong> [T1]: some normal packs are replaced by Hell Bovines, Succubi or skeletal archers</li>
+      <li><strong>Blood Frenzy</strong> [T2]: monsters gain <strong>+15%</strong> movement and attack speed</li>
+      <li><strong>Flame Pact</strong> / <strong>Frost Pact</strong> / <strong>Storm Pact</strong> [T1]: monsters add <strong>20-40 Fire</strong>, <strong>15-30 Cold</strong> or <strong>5-60 Lightning</strong> attack damage per tier</li>
+      <li><strong>Gilded</strong> [T1]: each elite gets a bonus drop roll for gold, gems and map currency</li>
+      <li><strong>Artificer's</strong> [T1]: each elite gets a bonus drop roll for gems, jewels and equipment</li>
+      <li>Two modifiers of the same family never roll together. Pacts never roll with Conviction, Frailty or Ruin. Blood Frenzy never rolls with Fanaticism, or on Worldstone Keep and Fallen Travincal (their Wardens already bring Fanaticism)</li>
+      <li>Player penalties apply to the <strong>whole map</strong>, including the sanctum, even after the monsters are dead. They end when you leave. Your character sheet shows the reduced values while you're inside</li>
     </ul>
-    </li>
-    <li>Every Warden has an escort that grows with tier. Wardens hit more often (<strong>x1.2</strong> Attack Rating at T1 up to <strong>x1.7</strong> at T6), and move, attack and cast faster</li>
-    <li>Warden resistances are capped at <strong>75%</strong>, so no build is locked out of a theme. Wardens have no life regeneration</li>
-    <li>Wardens <strong>never get random bonus modifiers</strong> (no random Extra Fast, Cursed and so on). Only their designed abilities apply</li>
-    <li>A town portal opens when a Warden dies</li>
-  </ul>
   </li>
-  <li>Drops
-  <ul>
-    <li><strong>Your first map</strong>: in <strong>Hell</strong>, monsters in <strong>The Ancients' Way, Icy Cellar, Worldstone Keep levels 1-3 and the Throne of Destruction</strong> have an extra <strong>1 in 250</strong> chance to drop a random <strong>Tier 1</strong> map</li>
-    <li><strong>Every map monster</strong> gets one map/currency roll: <strong>1%</strong> in total (<strong>0.4%</strong> same-tier map, <strong>0.1%</strong> next-tier map, <strong>0.5%</strong> map currency). On Tier 6, the next-tier map is a Tier 5 map instead</li>
-    <li>Normal map monsters also get <strong>1</strong> loot roll. Elites get <strong>3</strong> loot rolls</li>
-    <li>Each loot roll (equipment, good items, gold, potions) succeeds <strong>54%</strong> of the time at T1, rising to <strong>88%</strong> at T6 (single-player figures)</li>
-    <li><strong>Wardens</strong>: <strong>4</strong> loot rolls, plus a <strong>guaranteed map of the same tier</strong> (a Tier 5 map from Tier 6) and <strong>guaranteed map currency</strong></li>
-    <li>Map currency drops are <strong>50%</strong> Horadric Sextant, <strong>40%</strong> Vizjerei Prism and <strong>10%</strong> Horadric Astrolabe</li>
-    <li>Gilded and Artificer's bonus rolls succeed <strong>1 time in 3</strong> per elite</li>
-  </ul>
-  </li>
-  <li>Treasure monsters
-  <ul>
-    <li>Each opened map has an <strong>8%</strong> chance to contain one treasure monster, with an equal chance of each kind:
-    <ul>
-      <li><strong>Jewel Hoarder</strong>: drops <strong>6 jewels</strong></li>
-      <li><strong>Amulet Collector</strong>: drops <strong>6 amulets</strong>, each <strong>rare or better</strong></li>
-      <li><strong>Gem Smuggler</strong>: drops <strong>6 Reimagined gems</strong></li>
+  <li>Map monsters<ul>
+      <li><strong>8-9 monster types</strong> per theme, taken from that theme's region</li>
+      <li>Monsters have <strong>1.5x</strong> Hell life. Life and damage scale <strong>x1.2 / 1.4 / 1.6 / 1.8 / 2.0 / 3.0</strong> for Tiers 1 to 6</li>
+      <li>No Labyrinth-style blanket immunities. Monsters keep their normal immunities</li>
+      <li>Experience doesn't increase with tier</li>
+      <li>Monsters use more aggressive, Labyrinth-style AI: they engage from further away, circle and run away less, and move faster</li>
     </ul>
-    </li>
-    <li>It replaces one normal pack in the map. It has about <strong>3 normal map monsters'</strong> worth of life, resistances of at most <strong>75%</strong> and its own automap marker</li>
-    <li>Its corpse can't be revived or used by corpse skills</li>
-  </ul>
   </li>
-  <li>Map events: <strong>30%</strong> of opened maps hold one event, hidden in a random unexplored room away from where you arrive
-  <ul>
-    <li><strong>Treasure Raiders</strong>: a Treasure Raider with up to <strong>5</strong> guards. The Raider drops <strong>4</strong> loot rolls, <strong>1</strong> map/currency roll, <strong>1 guaranteed map currency</strong> and <strong>1 guaranteed jewel</strong></li>
-    <li><strong>The Dark Challenger</strong>: activate the glowing <strong>Dark Sigil</strong> to summon a "&lt;Theme&gt; Challenger" boss with up to <strong>4</strong> escorts. It drops <strong>4</strong> loot rolls, <strong>1</strong> map/currency roll and <strong>1 guaranteed map currency</strong>. It has no random bonus modifiers</li>
-    <li><strong>Sealed Reliquary</strong>: open the glowing cache to start <strong>3 waves</strong>: <strong>4</strong> guardians, then <strong>6</strong>, then the <strong>Reliquary Keeper</strong>. The Keeper drops one of three reward sets:
-    <ul>
-      <li><strong>Crafting</strong>: 4 gems, 1 jewel and 1 Horadric Sextant</li>
-      <li><strong>Equipment</strong>: 6 loot rolls</li>
-      <li><strong>Maps</strong>: 1 map of this tier and 2 map currency</li>
+  <li>Wardens (the map bosses, named "&lt;Theme&gt; Warden")<ul>
+      <li>Each theme's Warden has its own skill set, and gains extra skills at Tiers 3 and 5:<ul>
+          <li><strong>Sandswept Tomb</strong>: dust-devil Sandstorm and a burrowing charge</li>
+          <li><strong>Corrupted Durance</strong>: a kiting fire caster that blinks away and summons fire totems</li>
+          <li><strong>Forsaken Catacombs</strong>: poison bolts, a poison nova and plague clouds, plus Lower Resist at T5+</li>
+          <li><strong>Frozen Depths</strong>: Frozen Orb, Blink and Blizzard, plus healing its escort at T5+</li>
+          <li><strong>Worldstone Keep</strong>: a ground slam and a fan of shockwaves</li>
+          <li><strong>Sunscar Dunes</strong>: a charged-bolt lob, a bolt spray and a lightning nova</li>
+          <li><strong>Forsaken Highlands</strong>: fire arrow volleys, an exploding arrow and fire rain</li>
+          <li><strong>Fallen Travincal</strong>: Chain Lightning, a holy-bolt strike and a Zealot escort powered by Fanaticism</li>
+          <li><strong>Ashen Steppes</strong>: fire skulls, a homing fire spirit, a Decrepify curse and fire bursts on hit</li>
+          <li><strong>Infernal Rift</strong>: meteors, fireballs and a firewall</li>
+        </ul>
+      </li>
+      <li>Every Warden has an escort that grows with tier. Wardens hit more often (<strong>x1.2</strong> Attack Rating at T1 up to <strong>x1.7</strong> at T6), and move, attack and cast faster</li>
+      <li>Warden resistances are capped at <strong>75%</strong>, so no build is locked out of a theme. Wardens have no life regeneration</li>
+      <li>Wardens <strong>never get random bonus modifiers</strong> (no random Extra Fast, Cursed and so on). Only their designed abilities apply</li>
+      <li>A town portal opens when a Warden dies</li>
     </ul>
-    </li>
-    <li><strong>Varic the Wandering Gambler</strong> (very rare: <strong>5%</strong> of events, about <strong>1.5%</strong> of maps)
-    <ul>
-      <li>A gold chat line greets you when you get near him. Talk to him and choose <strong>Gamble</strong></li>
-      <li>He offers <strong>4</strong> bases suited to the map's tier (at most one ring or amulet) at <strong>Gheed's gamble prices</strong></li>
-      <li>Whatever you buy is <strong>always a Unique</strong> version of that base. Hover a base to see every unique it can become and its chance</li>
-      <li><strong>One purchase per player</strong>. Uniques already found in this game are excluded</li>
-      <li>The item comes identified, without sockets and never ethereal. His window has no Refresh button</li>
-    </ul>
-    </li>
-    <li><strong>Event compass</strong>: within about two screens of an event, a gold banner at the top center shows the event name, an arrow pointing to it, how close it is, and the current objective (for example "Wave 2 of 3: defeat the guardians")</li>
-  </ul>
   </li>
-  <li>Exploration and layouts
-  <ul>
-    <li>Every map and sanctum keeps its <strong>own automap</strong> for the whole game. Town trips, other tiers and sanctum trips no longer wipe or mix explored areas. Automaps aren't kept between games</li>
-    <li>The red portal always lands you <strong>far from the Warden's entrance</strong></li>
-    <li><strong>Fallen Travincal</strong>: click the Council stairs once to unfold them, then again to go down to the Warden</li>
-  </ul>
+  <li>Drops<ul>
+      <li><strong>Your first map</strong>: in <strong>Hell</strong>, monsters in <strong>The Ancients' Way, Icy Cellar, Worldstone Keep levels 1-3 and the Throne of Destruction</strong> have an extra <strong>1 in 250</strong> chance to drop a random <strong>Tier 1</strong> map</li>
+      <li><strong>Every map monster</strong> gets one map/currency roll: <strong>1%</strong> in total (<strong>0.4%</strong> same-tier map, <strong>0.1%</strong> next-tier map, <strong>0.5%</strong> map currency). On Tier 6, the next-tier map is a Tier 5 map instead</li>
+      <li>Normal map monsters also get <strong>1</strong> loot roll. Elites get <strong>3</strong> loot rolls</li>
+      <li>Each loot roll (equipment, good items, gold, potions) succeeds <strong>54%</strong> of the time at T1, rising to <strong>88%</strong> at T6 (single-player figures)</li>
+      <li><strong>Wardens</strong>: <strong>4</strong> loot rolls, plus a <strong>guaranteed map of the same tier</strong> (a Tier 5 map from Tier 6) and <strong>guaranteed map currency</strong></li>
+      <li>Map currency drops are <strong>50%</strong> Horadric Sextant, <strong>40%</strong> Vizjerei Prism and <strong>10%</strong> Horadric Astrolabe</li>
+      <li>Gilded and Artificer's bonus rolls succeed <strong>1 time in 3</strong> per elite</li>
+    </ul>
+  </li>
+  <li>Treasure monsters<ul>
+      <li>Each opened map has an <strong>8%</strong> chance to contain one treasure monster, with an equal chance of each kind:<ul>
+          <li><strong>Jewel Hoarder</strong>: drops <strong>6 jewels</strong></li>
+          <li><strong>Amulet Collector</strong>: drops <strong>6 amulets</strong>, each <strong>rare or better</strong></li>
+          <li><strong>Gem Smuggler</strong>: drops <strong>6 Reimagined gems</strong></li>
+        </ul>
+      </li>
+      <li>It replaces one normal pack in the map. It has about <strong>3 normal map monsters'</strong> worth of life, resistances of at most <strong>75%</strong> and its own automap marker</li>
+      <li>Its corpse can't be revived or used by corpse skills</li>
+    </ul>
+  </li>
+  <li>Map events: <strong>30%</strong> of opened maps hold one event, hidden in a random unexplored room away from where you arrive<ul>
+      <li><strong>Treasure Raiders</strong>: a Treasure Raider with up to <strong>5</strong> guards. The Raider drops <strong>4</strong> loot rolls, <strong>1</strong> map/currency roll, <strong>1 guaranteed map currency</strong> and <strong>1 guaranteed jewel</strong></li>
+      <li><strong>The Dark Challenger</strong>: activate the glowing <strong>Dark Sigil</strong> to summon a "&lt;Theme&gt; Challenger" boss with up to <strong>4</strong> escorts. It drops <strong>4</strong> loot rolls, <strong>1</strong> map/currency roll and <strong>1 guaranteed map currency</strong>. It has no random bonus modifiers</li>
+      <li><strong>Sealed Reliquary</strong>: open the glowing cache to start <strong>3 waves</strong>: <strong>4</strong> guardians, then <strong>6</strong>, then the <strong>Reliquary Keeper</strong>. The Keeper drops one of three reward sets:<ul>
+          <li><strong>Crafting</strong>: 4 gems, 1 jewel and 1 Horadric Sextant</li>
+          <li><strong>Equipment</strong>: 6 loot rolls</li>
+          <li><strong>Maps</strong>: 1 map of this tier and 2 map currency</li>
+        </ul>
+      </li>
+      <li><strong>Varic the Wandering Gambler</strong> (very rare: <strong>5%</strong> of events, about <strong>1.5%</strong> of maps)<ul>
+          <li>A gold chat line greets you when you get near him. Talk to him and choose <strong>Gamble</strong></li>
+          <li>He offers <strong>4</strong> bases suited to the map's tier (at most one ring or amulet) at <strong>Gheed's gamble prices</strong></li>
+          <li>Whatever you buy is <strong>always a Unique</strong> version of that base. Hover a base to see every unique it can become and its chance</li>
+          <li><strong>One purchase per player</strong>. Uniques already found in this game are excluded</li>
+          <li>The item comes identified, without sockets and never ethereal. His window has no Refresh button</li>
+        </ul>
+      </li>
+      <li><strong>Event compass</strong>: within about two screens of an event, a gold banner at the top center shows the event name, an arrow pointing to it, how close it is, and the current objective (for example "Wave 2 of 3: defeat the guardians")</li>
+    </ul>
+  </li>
+  <li>Exploration and layouts<ul>
+      <li>Every map and sanctum keeps its <strong>own automap</strong> for the whole game. Town trips, other tiers and sanctum trips no longer wipe or mix explored areas. Automaps aren't kept between games</li>
+      <li>The red portal always lands you <strong>far from the Warden's entrance</strong></li>
+      <li><strong>Fallen Travincal</strong>: click the Council stairs once to unfold them, then again to go down to the Warden</li>
+    </ul>
   </li>
   <li>Console commands: <code>maps</code> prints the current map's tier, modifiers and status. <code>maps seeds</code> lists the maps you carry and their rolls</li>
 </ul>
@@ -316,15 +281,14 @@ dateCreated: 2026-10-24T13:27:04.970Z
   <p>Maps need Hell difficulty, and the portal opens in Harrogath. Modifiers stay hidden until the map is identified. Reopening a used theme/tier only works when nobody is inside it and it has finished unloading: if you get "the previous map is still closing", wait a few seconds in town and transmute again. <strong>Reopening clears that map</strong>: items left on the ground there are removed. Outside Ladder, everyone in a multiplayer game must use the same <code>d2rloader/config/maps.toml</code> values, or the join is refused. In a game you joined, the event compass banner isn't shown, but the events still happen.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h5><strong>Auto Waypoint</strong></h5>
+<h3><strong>Auto Waypoint</strong></h3>
 <ul>
-  <li>Waypoints activate on their own when you come near them. You no longer need to click them
-  <ul>
-    <li>Range is <strong>20 subtiles</strong> (about 4 floor tiles), a little under half the screen in each direction. Checked <strong>4 times a second</strong></li>
-    <li>It works exactly like clicking: the waypoint is saved to your character for the current difficulty and plays its lighting animation. The waypoint menu doesn't open</li>
-    <li>You must be alive and inside the waypoint's own area. A waypoint just across an area border waits until you enter its area</li>
-    <li>In single player and as a game host, chat shows "Waypoint activated: &lt;area&gt;"</li>
-  </ul>
+  <li>Waypoints activate on their own when you come near them. You no longer need to click them<ul>
+      <li>Range is <strong>20 subtiles</strong> (about 4 floor tiles), a little under half the screen in each direction. Checked <strong>4 times a second</strong></li>
+      <li>It works exactly like clicking: the waypoint is saved to your character for the current difficulty and plays its lighting animation. The waypoint menu doesn't open</li>
+      <li>You must be alive and inside the waypoint's own area. A waypoint just across an area border waits until you enter its area</li>
+      <li>In single player and as a game host, chat shows "Waypoint activated: &lt;area&gt;"</li>
+    </ul>
   </li>
   <li>Works in single player, for every player in a TCP/IP host's game, and for every player on the ladder servers</li>
   <li>Console command: <code>auto-waypoint-status</code> shows the settings and counters</li>
@@ -333,39 +297,35 @@ dateCreated: 2026-10-24T13:27:04.970Z
   <p><strong>Locked on Ladder</strong>: always on, with a fixed range of <strong>20</strong>. In joined and server games there's no chat line, the waypoint just lights up. Outside Ladder you can change it in <code>d2rloader/config/auto-waypoint.toml</code> (<code>enabled</code>, <code>radius</code> <strong>3-60</strong>, <code>light_waypoint</code>, <code>announce</code>). In multiplayer, <code>enabled</code> and <code>radius</code> must match the host's or the join is refused.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h5><strong>Force Map Reset (by RuffnecKk)</strong></h5>
+<h3><strong>Force Map Reset (by RuffnecKk)</strong></h3>
 <ul>
-  <li>Every new game gets a <strong>fresh map layout</strong>. The game no longer reuses your character's saved map seed
-  <ul>
-    <li>No settings. Console command <code>force-map-reset</code> shows its status</li>
-  </ul>
+  <li>Every new game gets a <strong>fresh map layout</strong>. The game no longer reuses your character's saved map seed<ul>
+      <li>No settings. Console command <code>force-map-reset</code> shows its status</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
   <p>The layout is only regenerated when a new game is created, not during a game.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h4><strong>Online and Community</strong></h4>
+<h3><strong>Online and Community</strong></h3>
 <h5><strong>Announcements</strong></h5>
 <ul>
-  <li>Announcements from the Reimagined team now appear in your in-game chat
-  <ul>
-    <li>They show in <strong>red</strong>, from <strong>Reimagined</strong>. Staff can pick a different colour for a single announcement</li>
-    <li>Announcements that arrive while you're in a menu or on a loading screen are held (up to <strong>32</strong>) and shown when you enter a game</li>
-    <li>If the connection drops, it reconnects on its own</li>
-  </ul>
-  </li>
-  <li>Automatic warnings before ladder updates and server restarts
-  <ul>
-    <li>Each warning starts with the ladder's name in brackets, e.g. <code>[Ladder Name] ...</code></li>
-    <li><strong>Ladder update</strong> (new revision): a warning every minute from <strong>5 minutes</strong> out, then every <strong>5 seconds</strong> in the last <strong>30 seconds</strong> ("Save and exit NOW to avoid a rollback or save issues")
-    <ul>
-      <li>When it goes live: "Revision X is now live. Exit Diablo II and relaunch through the Reimagined launcher to update."</li>
-      <li>If it's called off: "...was cancelled. Play on."</li>
+  <li>Announcements from the Reimagined team now appear in your in-game chat<ul>
+      <li>They show in <strong>red</strong>, from <strong>Reimagined</strong>. Staff can pick a different colour for a single announcement</li>
+      <li>Announcements that arrive while you're in a menu or on a loading screen are held (up to <strong>32</strong>) and shown when you enter a game</li>
+      <li>If the connection drops, it reconnects on its own</li>
     </ul>
-    </li>
-    <li><strong>Server-only update</strong>: the same countdown, telling you the game servers will restart and you do <strong>not</strong> need to update or relaunch</li>
-  </ul>
+  </li>
+  <li>Automatic warnings before ladder updates and server restarts<ul>
+      <li>Each warning starts with the ladder's name in brackets, e.g. <code>[Ladder Name] ...</code></li>
+      <li><strong>Ladder update</strong> (new revision): a warning every minute from <strong>5 minutes</strong> out, then every <strong>5 seconds</strong> in the last <strong>30 seconds</strong> ("Save and exit NOW to avoid a rollback or save issues")<ul>
+          <li>When it goes live: "Revision X is now live. Exit Diablo II and relaunch through the Reimagined launcher to update."</li>
+          <li>If it's called off: "...was cancelled. Play on."</li>
+        </ul>
+      </li>
+      <li><strong>Server-only update</strong>: the same countdown, telling you the game servers will restart and you do <strong>not</strong> need to update or relaunch</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
@@ -374,53 +334,47 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Global Chat and Friends</strong></h5>
 <ul>
-  <li>One chat channel for every Reimagined player, inside the game's own chat box
-  <ul>
-    <li>Works when you host, when you join someone's game, on the ladder servers and on normal D2RLoader launches. You need to start the game from the Reimagined launcher while signed in</li>
-    <li>Messages show as <code>[Global] Name: message</code>. Your name is your Reimagined website display name. Admin names are <strong>red</strong> and moderator names are <strong>blue</strong></li>
-    <li>When you connect, you see the last <strong>10</strong> messages</li>
-    <li>Limits: <strong>500</strong> characters per message, <strong>5 messages per 10 seconds</strong>. A short burst is queued and sent when allowed, not dropped</li>
-    <li>Staff can temporarily mute players</li>
-  </ul>
-  </li>
-  <li>Chat commands
-  <ul>
-    <li><code>/g &lt;message&gt;</code>: send one line to Global chat</li>
-    <li><code>/global</code>: send everything you type to Global from now on. Whispers and lines starting with <code>/</code> or <code>!</code> still go to your game</li>
-    <li><code>/game</code>: send what you type to your current game again (the default)</li>
-    <li><code>/global off</code>: turn Global chat off completely. You don't send or receive anything, and friends see you as offline. <code>/global on</code> turns it back on. There's also an <strong>Enable Global Chat</strong> setting</li>
-    <li>Your choices are remembered between games and restarts</li>
-  </ul>
-  </li>
-  <li>Chat filter dropdown
-  <ul>
-    <li>The chat box dropdown now has <strong>All / Global Only / Game Only</strong>. Your choice is saved and restored in new games</li>
-  </ul>
-  </li>
-  <li>Friends (tied to your Reimagined account, not to a character)
-  <ul>
-    <li>The friends button next to the chat box now opens a Reimagined friends list instead of Battle.net's
-    <ul>
-      <li>Incoming requests (Accept / Decline), your friends with online friends first (green or grey gem), and requests you've sent (Cancel). <strong>10</strong> rows per page</li>
-      <li>Remove needs a second press within <strong>5 seconds</strong></li>
+  <li>One chat channel for every Reimagined player, inside the game's own chat box<ul>
+      <li>Works when you host, when you join someone's game, on the ladder servers and on normal D2RLoader launches. You need to start the game from the Reimagined launcher while signed in</li>
+      <li>Messages show as <code>[Global] Name: message</code>. Your name is your Reimagined website display name. Admin names are <strong>red</strong> and moderator names are <strong>blue</strong></li>
+      <li>When you connect, you see the last <strong>10</strong> messages</li>
+      <li>Limits: <strong>500</strong> characters per message, <strong>5 messages per 10 seconds</strong>. A short burst is queued and sent when allowed, not dropped</li>
+      <li>Staff can temporarily mute players</li>
     </ul>
-    </li>
-    <li>Add Friend asks for the player's <strong>website display name</strong>. Both players have to accept. If you both send each other a request, you become friends right away</li>
-    <li>Chat tells you when someone sends you a request, when someone accepts yours, and when a friend comes online</li>
-    <li><code>/friend</code> or <code>/friend list</code>: list your friends (online and offline) and requests waiting for your answer</li>
-    <li><code>/friend add &lt;name&gt;</code>: send a request, or accept theirs</li>
-    <li><code>/friend accept &lt;name&gt;</code>: accept a request</li>
-    <li><code>/friend decline &lt;name&gt;</code> / <code>/friend remove &lt;name&gt;</code>: decline a request, cancel your own, or unfriend</li>
-    <li>Limits: <strong>200</strong> friends and requests in total, <strong>50</strong> unanswered sent requests, <strong>20</strong> friend actions per minute</li>
-  </ul>
   </li>
-  <li>Direct messages to friends
-  <ul>
-    <li><code>/dm &lt;name&gt; &lt;message&gt;</code>: private message to an online friend. Names can contain spaces</li>
-    <li><code>/r &lt;message&gt;</code> or <code>/reply &lt;message&gt;</code>: answer the last friend who messaged you. Until a friend has messaged you, <code>/r</code> works like the normal game command</li>
-    <li>DMs are <strong>purple</strong> ("From Name:" / "To Name:") and show under All and Global Only</li>
-    <li>A DM is refused, with a red message, if the person isn't an accepted friend or is offline, if you're muted, or if you send more than <strong>5 messages per 10 seconds</strong>. Messages to offline friends aren't stored</li>
-  </ul>
+  <li>Chat commands<ul>
+      <li><code>/g &lt;message&gt;</code>: send one line to Global chat</li>
+      <li><code>/global</code>: send everything you type to Global from now on. Whispers and lines starting with <code>/</code> or <code>!</code> still go to your game</li>
+      <li><code>/game</code>: send what you type to your current game again (the default)</li>
+      <li><code>/global off</code>: turn Global chat off completely. You don't send or receive anything, and friends see you as offline. <code>/global on</code> turns it back on. There's also an <strong>Enable Global Chat</strong> setting</li>
+      <li>Your choices are remembered between games and restarts</li>
+    </ul>
+  </li>
+  <li>Chat filter dropdown<ul>
+      <li>The chat box dropdown now has <strong>All / Global Only / Game Only</strong>. Your choice is saved and restored in new games</li>
+    </ul>
+  </li>
+  <li>Friends (tied to your Reimagined account, not to a character)<ul>
+      <li>The friends button next to the chat box now opens a Reimagined friends list instead of Battle.net's<ul>
+          <li>Incoming requests (Accept / Decline), your friends with online friends first (green or grey gem), and requests you've sent (Cancel). <strong>10</strong> rows per page</li>
+          <li>Remove needs a second press within <strong>5 seconds</strong></li>
+        </ul>
+      </li>
+      <li>Add Friend asks for the player's <strong>website display name</strong>. Both players have to accept. If you both send each other a request, you become friends right away</li>
+      <li>Chat tells you when someone sends you a request, when someone accepts yours, and when a friend comes online</li>
+      <li><code>/friend</code> or <code>/friend list</code>: list your friends (online and offline) and requests waiting for your answer</li>
+      <li><code>/friend add &lt;name&gt;</code>: send a request, or accept theirs</li>
+      <li><code>/friend accept &lt;name&gt;</code>: accept a request</li>
+      <li><code>/friend decline &lt;name&gt;</code> / <code>/friend remove &lt;name&gt;</code>: decline a request, cancel your own, or unfriend</li>
+      <li>Limits: <strong>200</strong> friends and requests in total, <strong>50</strong> unanswered sent requests, <strong>20</strong> friend actions per minute</li>
+    </ul>
+  </li>
+  <li>Direct messages to friends<ul>
+      <li><code>/dm &lt;name&gt; &lt;message&gt;</code>: private message to an online friend. Names can contain spaces</li>
+      <li><code>/r &lt;message&gt;</code> or <code>/reply &lt;message&gt;</code>: answer the last friend who messaged you. Until a friend has messaged you, <code>/r</code> works like the normal game command</li>
+      <li>DMs are <strong>purple</strong> ("From Name:" / "To Name:") and show under All and Global Only</li>
+      <li>A DM is refused, with a red message, if the person isn't an accepted friend or is offline, if you're muted, or if you send more than <strong>5 messages per 10 seconds</strong>. Messages to offline friends aren't stored</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
@@ -429,10 +383,9 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Online Player Count</strong></h5>
 <ul>
-  <li><code>/playercount</code>: shows how many Reimagined players are online, e.g. "12 players online."
-  <ul>
-    <li>Typing it again within <strong>5 seconds</strong> repeats the last answer, marked "(a moment ago)"</li>
-  </ul>
+  <li><code>/playercount</code>: shows how many Reimagined players are online, e.g. "12 players online."<ul>
+      <li>Typing it again within <strong>5 seconds</strong> repeats the last answer, marked "(a moment ago)"</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
@@ -441,13 +394,12 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>In-Game Feedback</strong></h5>
 <ul>
-  <li><code>/bug</code> and <code>/suggest</code> open an in-game panel ("Report a Bug" / "Make a Suggestion") with a text box and Submit / Cancel. Escape also closes it
-  <ul>
-    <li><code>/bug &lt;text&gt;</code> and <code>/suggest &lt;text&gt;</code> send the line right away, without the panel</li>
-    <li>Enter starts a new line. While the panel is open, your keys type into it instead of firing hotkeys. Copy, paste and undo work</li>
-    <li>Up to <strong>1000</strong> characters per report, one report every <strong>10 seconds</strong>. Sending exactly the same text twice is refused ("That one was already sent.")</li>
-    <li>If sending fails, your text stays in the panel so you can try again</li>
-  </ul>
+  <li><code>/bug</code> and <code>/suggest</code> open an in-game panel ("Report a Bug" / "Make a Suggestion") with a text box and Submit / Cancel. Escape also closes it<ul>
+      <li><code>/bug &lt;text&gt;</code> and <code>/suggest &lt;text&gt;</code> send the line right away, without the panel</li>
+      <li>Enter starts a new line. While the panel is open, your keys type into it instead of firing hotkeys. Copy, paste and undo work</li>
+      <li>Up to <strong>1000</strong> characters per report, one report every <strong>10 seconds</strong>. Sending exactly the same text twice is refused ("That one was already sent.")</li>
+      <li>If sending fails, your text stays in the panel so you can try again</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
@@ -456,14 +408,13 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Hardcore Death Announcements</strong></h5>
 <ul>
-  <li>Every hardcore character death is announced in chat to everyone running the plugin
-  <ul>
-    <li>Example: <strong>[HC] LilGuy died at Chaos Sanctuary at Level 50 (#1)</strong>, where <strong>#1</strong> is the character's rank on its ladder's <strong>hardcore</strong> leaderboard</li>
-    <li>The line is <strong>red</strong>, from <strong>Hardcore</strong>, tagged <strong>[HC]</strong> so it doesn't look like player chat</li>
-    <li>Level and rank come from the server (the character's own save), so they can't be faked. Softcore deaths are never announced</li>
-    <li>The area is named in the dying player's language. If the area is unknown, it's left out</li>
-    <li>Each character's death is announced <strong>once</strong></li>
-  </ul>
+  <li>Every hardcore character death is announced in chat to everyone running the plugin<ul>
+      <li>Example: <strong>[HC] LilGuy died at Chaos Sanctuary at Level 50 (#1)</strong>, where <strong>#1</strong> is the character's rank on its ladder's <strong>hardcore</strong> leaderboard</li>
+      <li>The line is <strong>red</strong>, from <strong>Hardcore</strong>, tagged <strong>[HC]</strong> so it doesn't look like player chat</li>
+      <li>Level and rank come from the server (the character's own save), so they can't be faked. Softcore deaths are never announced</li>
+      <li>The area is named in the dying player's language. If the area is unknown, it's left out</li>
+      <li>Each character's death is announced <strong>once</strong></li>
+    </ul>
   </li>
   <li>You see your own death too, which confirms it was reported. To hide it, set <code>announce_own_death = false</code> in <code>d2rloader/config/hardcore-deaths.toml</code></li>
   <li>The rank matches the website leaderboard with <strong>Hardcore only</strong> ticked. Dead characters stay on that board, marked <strong>Fallen</strong></li>
@@ -473,45 +424,41 @@ dateCreated: 2026-10-24T13:27:04.970Z
   <p>The killer isn't named yet. Only characters the server knows can be announced (ladder characters, or characters uploaded on the website). You only see deaths that happen while you're connected, and only in game, not on the website or Discord.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h4><strong>Trade</strong></h4>
+<h3><strong>Trade</strong></h3>
 <h5><strong>Trade Sell</strong></h5>
 <ul>
-  <li>New <code>/sell</code> chat command: list an item on the Reimagined trade website from inside the game
-  <ul>
-    <li><code>/sell</code> opens a <strong>Sell Item</strong> panel next to your inventory</li>
-    <li><strong>Right-click</strong> the item to sell in your inventory, Horadric Cube, personal stash, shared stash or Charm Inventory. You can also pick it up and click the centre of the panel</li>
-    <li>Chat confirms the item ("Selected ... Press Sell to list it."). While the panel is open, the chosen item's tooltip reads <strong>Selected for sale</strong> and other items read <strong>Right-click to sell</strong></li>
-    <li>Press <strong>Sell</strong> and the trade site's listing page opens in your browser with the item filled in (base, quality, stats). The panel then closes</li>
-  </ul>
+  <li>New <code>/sell</code> chat command: list an item on the Reimagined trade website from inside the game<ul>
+      <li><code>/sell</code> opens a <strong>Sell Item</strong> panel next to your inventory</li>
+      <li><strong>Right-click</strong> the item to sell in your inventory, Horadric Cube, personal stash, shared stash or Charm Inventory. You can also pick it up and click the centre of the panel</li>
+      <li>Chat confirms the item ("Selected ... Press Sell to list it."). While the panel is open, the chosen item's tooltip reads <strong>Selected for sale</strong> and other items read <strong>Right-click to sell</strong></li>
+      <li>Press <strong>Sell</strong> and the trade site's listing page opens in your browser with the item filled in (base, quality, stats). The panel then closes</li>
+    </ul>
   </li>
-  <li>The item never moves
-  <ul>
-    <li>While the panel is open, right-click only selects: potions aren't drunk and the Cube doesn't open. Left-click works as usual</li>
-    <li>If the site finds the same item on one of your synced characters or shared stashes, it uses that copy, which also knows the runeword, socket contents and set bonuses. You can switch back to the game's copy</li>
-  </ul>
+  <li>The item never moves<ul>
+      <li>While the panel is open, right-click only selects: potions aren't drunk and the Cube doesn't open. Left-click works as usual</li>
+      <li>If the site finds the same item on one of your synced characters or shared stashes, it uses that copy, which also knows the runeword, socket contents and set bonuses. You can switch back to the game's copy</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
   <p>Keyboard and mouse only. Equipped and belt items can't be right-clicked: pick them up and click the panel centre instead. Socketed runes or jewels and runewords aren't read from the game, so the page asks you to fill those in unless a synced save has the item. In ladder server games the item's properties can't be read in game, so the page uses your synced save, or asks you to enter them.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h5><strong>Trade Price Check</strong></h5>
+<h3><strong>Trade Price Check</strong></h3>
 <ul>
-  <li>Check market prices for an item in game
-  <ul>
-    <li>Hover an identified item (inventory, stash, Cube, equipment or Charm Inventory) and press <strong>Ctrl+D</strong> to open the <strong>Market Price Check</strong> panel. Ctrl+D is a rebindable "Check Item Price" action</li>
-    <li>The panel lists the item's properties with their roll range ("Roll: min - max") and editable <strong>Search min / Search max</strong> fields. Tick properties, type values, drag left/right, or use the mouse wheel / right-click to change them</li>
-    <li>Buttons: <strong>Search Market</strong>, <strong>Clear stat filters</strong>, <strong>Default values</strong>. <strong>Advanced filters</strong> covers quality, item level, sockets and ethereal</li>
-    <li>Up to <strong>20</strong> active listings are shown, each with price, seller and a <strong>% Match</strong> score. Click a listing to open it on the trade website</li>
-  </ul>
+  <li>Check market prices for an item in game<ul>
+      <li>Hover an identified item (inventory, stash, Cube, equipment or Charm Inventory) and press <strong>Ctrl+D</strong> to open the <strong>Market Price Check</strong> panel. Ctrl+D is a rebindable "Check Item Price" action</li>
+      <li>The panel lists the item's properties with their roll range ("Roll: min - max") and editable <strong>Search min / Search max</strong> fields. Tick properties, type values, drag left/right, or use the mouse wheel / right-click to change them</li>
+      <li>Buttons: <strong>Search Market</strong>, <strong>Clear stat filters</strong>, <strong>Default values</strong>. <strong>Advanced filters</strong> covers quality, item level, sockets and ethereal</li>
+      <li>Up to <strong>20</strong> active listings are shown, each with price, seller and a <strong>% Match</strong> score. Click a listing to open it on the trade website</li>
+    </ul>
   </li>
-  <li>Search scope
-  <ul>
-    <li>On <strong>Ladder</strong> launches, only the current ladder's listings are searched. <strong>Online</strong> launches search every active listing</li>
-    <li>Uniques, sets and runewords are searched by name. Rare, magic and normal items are searched by base type. Corrupted items are only compared with corrupted listings</li>
-    <li>Socket contents count toward the item's stats. Set bonuses that need other set pieces are left out</li>
-    <li>Signing in is optional: searching works anonymously</li>
-  </ul>
+  <li>Search scope<ul>
+      <li>On <strong>Ladder</strong> launches, only the current ladder's listings are searched. <strong>Online</strong> launches search every active listing</li>
+      <li>Uniques, sets and runewords are searched by name. Rare, magic and normal items are searched by base type. Corrupted items are only compared with corrupted listings</li>
+      <li>Socket contents count toward the item's stats. Set bonuses that need other set pieces are left out</li>
+      <li>Signing in is optional: searching works anonymously</li>
+    </ul>
   </li>
   <li>Optional single-key open/close for Steam Deck or controller (<strong>F11</strong>). Off by default, turned on in <code>d2rloader/config/trade-price-check.toml</code></li>
 </ul>
@@ -519,14 +466,13 @@ dateCreated: 2026-10-24T13:27:04.970Z
   <p>Prices are sellers' <strong>asking</strong> prices, not completed sales. % Match shows how closely a listing matches your selected filters, not how reliable the price is. Requires internet access.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h5><strong>Trade Notifications</strong></h5>
+<h3><strong>Trade Notifications</strong></h3>
 <ul>
-  <li>Trade website activity now shows up in your game chat
-  <ul>
-    <li><strong>New offers</strong>, <strong>messages</strong> and <strong>offer updates or acceptances</strong> on your listings appear as private lines from <strong>[Trade]</strong>, e.g. "New offer from &lt;player&gt; - &lt;item&gt;: &lt;preview&gt;"</li>
-    <li>The website doesn't need to be open. Only you see your notifications</li>
-    <li>Up to <strong>32</strong> notifications are held while you're in menus and shown when you enter a game. Duplicates are dropped</li>
-  </ul>
+  <li>Trade website activity now shows up in your game chat<ul>
+      <li><strong>New offers</strong>, <strong>messages</strong> and <strong>offer updates or acceptances</strong> on your listings appear as private lines from <strong>[Trade]</strong>, e.g. "New offer from &lt;player&gt; - &lt;item&gt;: &lt;preview&gt;"</li>
+      <li>The website doesn't need to be open. Only you see your notifications</li>
+      <li>Up to <strong>32</strong> notifications are held while you're in menus and shown when you enter a game. Duplicates are dropped</li>
+    </ul>
   </li>
   <li>Turns on automatically when you're <strong>signed in</strong> and launch <strong>Online</strong> or <strong>Ladder</strong> from the Reimagined launcher</li>
 </ul>
@@ -534,32 +480,29 @@ dateCreated: 2026-10-24T13:27:04.970Z
   <p>These are live alerts only. Anything that arrives while you're disconnected isn't replayed in game, but it's still on the website. If your login expires, relaunch through the launcher.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h4><strong>Items and Crafting</strong></h4>
+<h3><strong>Items and Crafting</strong></h3>
 <h5><strong>Reimagined Quest Fixes</strong></h5>
 <ul>
-  <li>Hellforge gem rewards now give Reimagined gems
-  <ul>
-    <li>Reimagined removed the vanilla gems the Hellforge reward used to create</li>
-    <li>Each Hellforge gem reward is now one of the <strong>8</strong> Reimagined gems, <strong>1 in 8</strong> each: Amethyst, Topaz, Sapphire, Emerald, Ruby, Diamond, Skull, Chaos Onyx</li>
-    <li>Works in <strong>Normal, Nightmare and Hell</strong>. The number of gems, the rune reward, party behaviour and quest completion are unchanged</li>
-  </ul>
+  <li>Hellforge gem rewards now give Reimagined gems<ul>
+      <li>Reimagined removed the vanilla gems the Hellforge reward used to create</li>
+      <li>Each Hellforge gem reward is now one of the <strong>8</strong> Reimagined gems, <strong>1 in 8</strong> each: Amethyst, Topaz, Sapphire, Emerald, Ruby, Diamond, Skull, Chaos Onyx</li>
+      <li>Works in <strong>Normal, Nightmare and Hell</strong>. The number of gems, the rune reward, party behaviour and quest completion are unchanged</li>
+    </ul>
   </li>
 </ul>
 <p>&nbsp;</p>
 <h5><strong>Chronicle Items</strong></h5>
 <ul>
-  <li>The Chronicle now lists Reimagined's unique and set items
-  <ul>
-    <li><strong>1,053 unique</strong> and <strong>320 set</strong> item entries that were hidden from the Chronicle can now be collected</li>
-    <li>Runewords already used the normal Chronicle list and are unchanged</li>
-    <li>The list includes some cube-only, quest and utility items (about <strong>36</strong> uniques and <strong>5</strong> set pieces) that never drop randomly</li>
-  </ul>
+  <li>The Chronicle now lists Reimagined's unique and set items<ul>
+      <li><strong>1,053 unique</strong> and <strong>320 set</strong> item entries that were hidden from the Chronicle can now be collected</li>
+      <li>Runewords already used the normal Chronicle list and are unchanged</li>
+      <li>The list includes some cube-only, quest and utility items (about <strong>36</strong> uniques and <strong>5</strong> set pieces) that never drop randomly</li>
+    </ul>
   </li>
-  <li>Discovery follows the game's normal rules
-  <ul>
-    <li>Items already in your stash or inventory are <strong>not</strong> marked as found automatically. A newly found or newly identified item is recorded the normal way</li>
-    <li>Drop rates, item properties and saves aren't changed</li>
-  </ul>
+  <li>Discovery follows the game's normal rules<ul>
+      <li>Items already in your stash or inventory are <strong>not</strong> marked as found automatically. A newly found or newly identified item is recorded the normal way</li>
+      <li>Drop rates, item properties and saves aren't changed</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
@@ -568,20 +511,18 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>One Click Corrupt</strong></h5>
 <ul>
-  <li>Corrupting an item takes one Transmute instead of two
-  <ul>
-    <li>Put <strong>one</strong> eligible item and <strong>one unstacked Orb of Corruption</strong> in the Horadric Cube and press Transmute once. Both corruption steps run automatically</li>
-    <li>An item halfway through corruption only gets its remaining step</li>
-    <li>Works with the Cube panel and the stash-panel Transmute button</li>
-    <li>Odds, outcomes and cost are unchanged: exactly <strong>one</strong> Orb of Corruption per corruption</li>
-  </ul>
+  <li>Corrupting an item takes one Transmute instead of two<ul>
+      <li>Put <strong>one</strong> eligible item and <strong>one unstacked Orb of Corruption</strong> in the Horadric Cube and press Transmute once. Both corruption steps run automatically</li>
+      <li>An item halfway through corruption only gets its remaining step</li>
+      <li>Works with the Cube panel and the stash-panel Transmute button</li>
+      <li>Odds, outcomes and cost are unchanged: exactly <strong>one</strong> Orb of Corruption per corruption</li>
+    </ul>
   </li>
-  <li>Safety
-  <ul>
-    <li>Anything else in the Cube (extra items, a stacked orb, any other recipe) works as usual</li>
-    <li>Double-clicks during a corruption are ignored. Closing the Cube, moving items or leaving the game cancels the automatic step</li>
-    <li>If anything goes wrong, it stops and you can finish by hand. It never repeats a transmute blindly</li>
-  </ul>
+  <li>Safety<ul>
+      <li>Anything else in the Cube (extra items, a stacked orb, any other recipe) works as usual</li>
+      <li>Double-clicks during a corruption are ignored. Closing the Cube, moving items or leaving the game cancels the automatic step</li>
+      <li>If anything goes wrong, it stops and you can finish by hand. It never repeats a transmute blindly</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
@@ -590,12 +531,11 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Corruption Marker</strong></h5>
 <ul>
-  <li>Shows which properties an Orb of Corruption added
-  <ul>
-    <li>A red <strong>*</strong> appears in front of each tooltip line that came from the item's corruption</li>
-    <li>Covers all <strong>117</strong> corruption outcomes. Nothing to configure</li>
-    <li>Items with a pending corruption (only the first transmute done) show no marker yet</li>
-  </ul>
+  <li>Shows which properties an Orb of Corruption added<ul>
+      <li>A red <strong>*</strong> appears in front of each tooltip line that came from the item's corruption</li>
+      <li>Covers all <strong>117</strong> corruption outcomes. Nothing to configure</li>
+      <li>Items with a pending corruption (only the first transmute done) show no marker yet</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
@@ -604,13 +544,12 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Identify On Click</strong></h5>
 <ul>
-  <li><strong>Ctrl + Right Click</strong> an unidentified item to identify it <strong>for free</strong>: no Tome of Identify, scroll or Cain needed
-  <ul>
-    <li>Works in the <strong>inventory</strong>, <strong>Horadric Cube</strong>, <strong>personal stash</strong> and Reimagined's extra stash pages</li>
-    <li>Doesn't work on equipped items, the belt, the cursor, the ground, vendors, trade, your corpse or the shared stash</li>
-    <li>Unidentified items in those places show a yellow <strong>Control + Right Click To Identify</strong> line on their tooltip, translated into all <strong>13</strong> game languages</li>
-    <li>Items identified this way are recorded in the <strong>Chronicle</strong> like a normal identify</li>
-  </ul>
+  <li><strong>Ctrl + Right Click</strong> an unidentified item to identify it <strong>for free</strong>: no Tome of Identify, scroll or Cain needed<ul>
+      <li>Works in the <strong>inventory</strong>, <strong>Horadric Cube</strong>, <strong>personal stash</strong> and Reimagined's extra stash pages</li>
+      <li>Doesn't work on equipped items, the belt, the cursor, the ground, vendors, trade, your corpse or the shared stash</li>
+      <li>Unidentified items in those places show a yellow <strong>Control + Right Click To Identify</strong> line on their tooltip, translated into all <strong>13</strong> game languages</li>
+      <li>Items identified this way are recorded in the <strong>Chronicle</strong> like a normal identify</li>
+    </ul>
   </li>
   <li>Works in single player, TCP/IP games and on the ladder servers. In someone else's game, the host identifies the item</li>
   <li>Console command: <code>identify-on-click-status</code></li>
@@ -622,42 +561,39 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <h5><strong>Item Roll Ranges (by PyreFly)</strong></h5>
 <ul>
   <li>Hold <strong>Ctrl</strong> (keyboard) or <strong>RT/R2</strong> (controller) over an item to see each stat's <strong>actual roll</strong> next to its <strong>possible range</strong>
-  <ul>
-    <li>With Controller QOL Updates installed, the controller button is <strong>RB/R1</strong> instead</li>
-    <li>Works in the <strong>inventory, stash, Horadric Cube and vendor</strong> screens</li>
-    <li>Tooltips can also show named prefix and suffix tiers, the base item and <strong>item level</strong>, set bonuses, what each <strong>socketed rune or gem</strong> adds, corruption and runeword sources, <strong>[Combined]</strong> totals for stacked stats and damage, and the item's maximum sockets</li>
-    <li>Stats whose source can't be worked out show "(?) Range Unavailable - Please report item affixes"</li>
-  </ul>
+    <ul>
+      <li>With Controller QOL Updates installed, the controller button is <strong>RB/R1</strong> instead</li>
+      <li>Works in the <strong>inventory, stash, Horadric Cube and vendor</strong> screens</li>
+      <li>Tooltips can also show named prefix and suffix tiers, the base item and <strong>item level</strong>, set bonuses, what each <strong>socketed rune or gem</strong> adds, corruption and runeword sources, <strong>[Combined]</strong> totals for stacked stats and damage, and the item's maximum sockets</li>
+      <li>Stats whose source can't be worked out show "(?) Range Unavailable - Please report item affixes"</li>
+    </ul>
   </li>
   <li>Always show ranges without holding the button: <code>/alwaysshowrolls on | off | toggle | status</code> (saved), or <code>always_show_ranges = true</code> in <code>d2rloader/config/item-roll-ranges.toml</code></li>
 </ul>
 <p>&nbsp;</p>
 <h5><strong>Stash Search (by yin)</strong></h5>
 <ul>
-  <li>Adds a <strong>search box</strong> to the stash
-  <ul>
-    <li>Items that don't match are dimmed as you type</li>
-    <li>Results are labelled <strong>Personal</strong> or <strong>Shared</strong>, and you can hover them for the tooltip</li>
-    <li>Type a shared page number and press <strong>Enter</strong> to jump straight to that page</li>
-  </ul>
+  <li>Adds a <strong>search box</strong> to the stash<ul>
+      <li>Items that don't match are dimmed as you type</li>
+      <li>Results are labelled <strong>Personal</strong> or <strong>Shared</strong>, and you can hover them for the tooltip</li>
+      <li>Type a shared page number and press <strong>Enter</strong> to jump straight to that page</li>
+    </ul>
   </li>
 </ul>
 <p>&nbsp;</p>
 <h5><strong>Charm Inventory (by Dimentio)</strong></h5>
 <ul>
-  <li>Adds a separate <strong>Charm Inventory</strong>: a <strong>10 x 4</strong> grid (<strong>40</strong> cells) that holds charms only
-  <ul>
-    <li>Open it with the new <strong>Charm Inventory</strong> button in your inventory panel, or the <strong>Open Charm Inventory</strong> control action</li>
-    <li>Controller players get a Charm Inventory tab in the controller inventory screen</li>
-    <li>It saves with your character</li>
-  </ul>
+  <li>Adds a separate <strong>Charm Inventory</strong>: a <strong>10 x 4</strong> grid (<strong>40</strong> cells) that holds charms only<ul>
+      <li>Open it with the new <strong>Charm Inventory</strong> button in your inventory panel, or the <strong>Open Charm Inventory</strong> control action</li>
+      <li>Controller players get a Charm Inventory tab in the controller inventory screen</li>
+      <li>It saves with your character</li>
+    </ul>
   </li>
-  <li>Only charms in the Charm Inventory give their bonuses
-  <ul>
-    <li>Charms in the normal inventory are inactive and tinted <strong>yellow</strong></li>
-    <li>Charm descriptions now read "Keep in Charm Inventory to Gain Bonus"</li>
-    <li>Inactive charms in your normal inventory also show a red <strong>Move to Charm Inventory to activate</strong> line on their tooltip</li>
-  </ul>
+  <li>Only charms in the Charm Inventory give their bonuses<ul>
+      <li>Charms in the normal inventory are inactive and tinted <strong>yellow</strong></li>
+      <li>Charm descriptions now read "Keep in Charm Inventory to Gain Bonus"</li>
+      <li>Inactive charms in your normal inventory also show a red <strong>Move to Charm Inventory to activate</strong> line on their tooltip</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
@@ -666,12 +602,11 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Auto Belt Refill</strong></h5>
 <ul>
-  <li>Refills empty belt slots from your <strong>inventory</strong>, column by column
-  <ul>
-    <li>Each belt column remembers what it holds. Defaults: column 1 = Super/Greater Healing, column 2 = Super/Greater Mana, column 3 = Full Rejuvenation only, column 4 = learned from play</li>
-    <li>Larger potions are used first</li>
-    <li>To change a column in game, put a potion in its bottom slot or use <strong>Snapshot Belt Columns</strong></li>
-  </ul>
+  <li>Refills empty belt slots from your <strong>inventory</strong>, column by column<ul>
+      <li>Each belt column remembers what it holds. Defaults: column 1 = Super/Greater Healing, column 2 = Super/Greater Mana, column 3 = Full Rejuvenation only, column 4 = learned from play</li>
+      <li>Larger potions are used first</li>
+      <li>To change a column in game, put a potion in its bottom slot or use <strong>Snapshot Belt Columns</strong></li>
+    </ul>
   </li>
   <li>Hotkeys: <strong>none bound by default</strong>. Bind <strong>Refill Belt</strong> and <strong>Snapshot Belt Columns</strong> under <strong>Options &gt; Controls &gt; D2RLoader</strong></li>
   <li>Automatic refill is <strong>off</strong> by default. Set <code>auto_refill = true</code> in <code>d2rloader/config/auto-belt-refill.toml</code> to refill as soon as a potion is used</li>
@@ -684,51 +619,47 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <h5><strong>Loot Filter (UnHoarder by MindH1ve)</strong></h5>
 <ul>
   <li>A JSON loot filter, bundled at version <strong>1.2.9</strong>
-  <ul>
-    <li>Rules are ordered <strong>Show</strong> / <strong>Hide</strong> blocks. Matching stops at the first match unless a rule has <strong>Continue</strong> set</li>
-    <li>Rule actions: label text and background colour, custom item name, one of <strong>16</strong> drop sounds (Filter01-Filter16) and automap icons (circle, diamond, triangle or star, <strong>12-40 px</strong>)</li>
-    <li>Conditions: item code, base name, item type, rarity (inferior, normal, superior, magic, rare, set, unique, crafted, tempered), item level (<strong>1-99</strong>), sockets, ethereal, identified, stack quantity and vendor sell price. Numbers accept equal / greater / less comparisons</li>
-  </ul>
+    <ul>
+      <li>Rules are ordered <strong>Show</strong> / <strong>Hide</strong> blocks. Matching stops at the first match unless a rule has <strong>Continue</strong> set</li>
+      <li>Rule actions: label text and background colour, custom item name, one of <strong>16</strong> drop sounds (Filter01-Filter16) and automap icons (circle, diamond, triangle or star, <strong>12-40 px</strong>)</li>
+      <li>Conditions: item code, base name, item type, rarity (inferior, normal, superior, magic, rare, set, unique, crafted, tempered), item level (<strong>1-99</strong>), sockets, ethereal, identified, stack quantity and vendor sell price. Numbers accept equal / greater / less comparisons</li>
+    </ul>
   </li>
   <li>The filter file is <code>d2rloader/config/filter.json</code>
-  <ul>
-    <li>Saving the file reloads it automatically. <strong>Ctrl+Shift+F9</strong> reloads it by hand. An invalid file keeps the last working filter</li>
-  </ul>
+    <ul>
+      <li>Saving the file reloads it automatically. <strong>Ctrl+Shift+F9</strong> reloads it by hand. An invalid file keeps the last working filter</li>
+    </ul>
   </li>
-  <li>The shipped starter filter hides nothing
-  <ul>
-    <li>Uniques and sets: gold diamond automap icon and drop sound <strong>Filter01</strong></li>
-    <li>Maps and map currency: purple diamond automap icon</li>
-    <li>Runes, gems and Reimagined currencies: orange label text</li>
-  </ul>
+  <li>The shipped starter filter hides nothing<ul>
+      <li>Uniques and sets: gold diamond automap icon and drop sound <strong>Filter01</strong></li>
+      <li>Maps and map currency: purple diamond automap icon</li>
+      <li>Runes, gems and Reimagined currencies: orange label text</li>
+    </ul>
   </li>
-  <li>Build your own filter with the loot filter builder on the Reimagined website
-  <ul>
-    <li>Presets: <strong>Starter</strong> (hides nothing), <strong>Semi Strict</strong> (hides inferior/normal, unsocketed, non-ethereal ordinary weapons and armor), <strong>Strict</strong> (also hides superior and magic ordinary weapons and armor)</li>
-    <li>Sound previews and download as <code>filter.json</code>. Signed-in accounts can save up to <strong>50</strong> filters</li>
-  </ul>
+  <li>Build your own filter with the loot filter builder on the Reimagined website<ul>
+      <li>Presets: <strong>Starter</strong> (hides nothing), <strong>Semi Strict</strong> (hides inferior/normal, unsocketed, non-ethereal ordinary weapons and armor), <strong>Strict</strong> (also hides superior and magic ordinary weapons and armor)</li>
+      <li>Sound previews and download as <code>filter.json</code>. Signed-in accounts can save up to <strong>50</strong> filters</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
   <p>Hiding is visual only: hidden items aren't removed from the game. The filter can't see hidden information such as unidentified affixes or which unique an unidentified item is.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h4><strong>Skills and Combat</strong></h4>
+<h3><strong>Skills and Combat</strong></h3>
 <h5><strong>Left Click Auras (by CelestialRayOne)</strong></h5>
 <ul>
-  <li>Auras now work on the <strong>left mouse button</strong>, at the same time as the aura on your right button
-  <ul>
-    <li>Two different auras can be active together, each at its real skill level</li>
-    <li><strong>22</strong> class auras can go on the left button: all <strong>20</strong> Paladin auras plus the Amazon's <strong>Elemental Covenant</strong> and <strong>Titan's Covenant</strong></li>
-    <li>The left aura stops, and its bonuses are removed, when you put another skill on the left button or a weapon swap or item change takes the aura away</li>
-    <li>It starts again by itself after swapping back, after a resurrect and when you enter a game</li>
-  </ul>
+  <li>Auras now work on the <strong>left mouse button</strong>, at the same time as the aura on your right button<ul>
+      <li>Two different auras can be active together, each at its real skill level</li>
+      <li><strong>22</strong> class auras can go on the left button: all <strong>20</strong> Paladin auras plus the Amazon's <strong>Elemental Covenant</strong> and <strong>Titan's Covenant</strong></li>
+      <li>The left aura stops, and its bonuses are removed, when you put another skill on the left button or a weapon swap or item change takes the aura away</li>
+      <li>It starts again by itself after swapping back, after a resurrect and when you enter a game</li>
+    </ul>
   </li>
   <li>The same aura on both buttons isn't doubled: it pulses only <strong>once</strong></li>
-  <li>Left-clicking a monster with an aura on the left button now walks or runs you to it (before, the click did nothing)
-  <ul>
-    <li>Clicks on NPCs, players, items, objects and exits still work as normal. Shift + click and the right button are unchanged</li>
-  </ul>
+  <li>Left-clicking a monster with an aura on the left button now walks or runs you to it (before, the click did nothing)<ul>
+      <li>Clicks on NPCs, players, items, objects and exits still work as normal. Shift + click and the right button are unchanged</li>
+    </ul>
   </li>
   <li>Console command: <code>leftclickauras</code> shows its status</li>
 </ul>
@@ -738,14 +669,13 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Move Only</strong></h5>
 <ul>
-  <li>New <strong>Move Only</strong> skill (footprints icon, "move without attacking") in the left-click skill menu, for every class
-  <ul>
-    <li>With it selected, left-click and hold to walk or run to the cursor without attacking or locking onto monsters. Releasing the button stops you</li>
-    <li>NPCs, doors, waypoints, portals, items and other objects still work when clicked</li>
-    <li>Follows your walk/run toggle and stamina. Works in town and with any weapon</li>
-    <li>With an item on the cursor, clicks work as normal, so you can still place or drop items</li>
-    <li>The skill name is translated into all <strong>13</strong> game languages</li>
-  </ul>
+  <li>New <strong>Move Only</strong> skill (footprints icon, "move without attacking") in the left-click skill menu, for every class<ul>
+      <li>With it selected, left-click and hold to walk or run to the cursor without attacking or locking onto monsters. Releasing the button stops you</li>
+      <li>NPCs, doors, waypoints, portals, items and other objects still work when clicked</li>
+      <li>Follows your walk/run toggle and stamina. Works in town and with any weapon</li>
+      <li>With an item on the cursor, clicks work as normal, so you can still place or drop items</li>
+      <li>The skill name is translated into all <strong>13</strong> game languages</li>
+    </ul>
   </li>
   <li>Optional: set <code>right_click = true</code> in <code>d2rloader/config/move-only.toml</code> to also offer it on the right button (<strong>off</strong> by default)</li>
 </ul>
@@ -755,12 +685,11 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Bind And Summon</strong></h5>
 <ul>
-  <li>Your <strong>summons are saved and come back</strong> when you leave and rejoin a game
-  <ul>
-    <li>Covers summons of <strong>every class</strong>: Necromancer skeletons, mages, golems and revives, Druid spirits and animals, Assassin shadows, the Amazon's Valkyrie and so on. Summons from item-granted skills are included</li>
-    <li>Warlock <strong>Bind Demon</strong>: <strong>more than one</strong> bound demon is saved and restored</li>
-    <li>Bind Demon is saved for <strong>every class</strong>, not only the Warlock (for example from an item that grants the skill)</li>
-  </ul>
+  <li>Your <strong>summons are saved and come back</strong> when you leave and rejoin a game<ul>
+      <li>Covers summons of <strong>every class</strong>: Necromancer skeletons, mages, golems and revives, Druid spirits and animals, Assassin shadows, the Amazon's Valkyrie and so on. Summons from item-granted skills are included</li>
+      <li>Warlock <strong>Bind Demon</strong>: <strong>more than one</strong> bound demon is saved and restored</li>
+      <li>Bind Demon is saved for <strong>every class</strong>, not only the Warlock (for example from an item that grants the skill)</li>
+    </ul>
   </li>
   <li>Corpse-free Raise Skeleton and Raise Skeletal Mage are <strong>off</strong>: they still need corpses</li>
 </ul>
@@ -770,21 +699,19 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Buff Panel (by MindH1ve)</strong></h5>
 <ul>
-  <li>On-screen panel that tracks your timed buffs: <strong>21</strong> slots in a <strong>3 x 7</strong> grid, just above the bottom HUD near the center of the screen
-  <ul>
-    <li>Each buff shows its skill icon and a <strong>countdown</strong>. Hover it to see the skill name</li>
-    <li>Absorb shields show current/max amount instead of a timer: <strong>Bone Armor</strong>, <strong>Cyclone Armor</strong>, <strong>Psychic Ward</strong></li>
-    <li><strong>53</strong> buffs tracked, including:
-    <ul>
-      <li>Class buffs: Battle Orders, Battle Command, Shout, Frozen/Shiver/Chilling Armor, Energy Shield, Enchant, Thunder Storm, Holy Shield, Fade, Burst of Speed, Venom, Blade Shield, Cloak of Shadows, Werewolf/Werebear, Hurricane, Armageddon</li>
-      <li>Assassin martial arts charges</li>
-      <li>Warlock: Hex Bane/Siphon/Purge, Consume, Engorge</li>
-      <li>All shrine buffs</li>
-      <li>Antidote, Thawing and Stamina potions</li>
+  <li>On-screen panel that tracks your timed buffs: <strong>21</strong> slots in a <strong>3 x 7</strong> grid, just above the bottom HUD near the center of the screen<ul>
+      <li>Each buff shows its skill icon and a <strong>countdown</strong>. Hover it to see the skill name</li>
+      <li>Absorb shields show current/max amount instead of a timer: <strong>Bone Armor</strong>, <strong>Cyclone Armor</strong>, <strong>Psychic Ward</strong></li>
+      <li><strong>53</strong> buffs tracked, including:<ul>
+          <li>Class buffs: Battle Orders, Battle Command, Shout, Frozen/Shiver/Chilling Armor, Energy Shield, Enchant, Thunder Storm, Holy Shield, Fade, Burst of Speed, Venom, Blade Shield, Cloak of Shadows, Werewolf/Werebear, Hurricane, Armageddon</li>
+          <li>Assassin martial arts charges</li>
+          <li>Warlock: Hex Bane/Siphon/Purge, Consume, Engorge</li>
+          <li>All shrine buffs</li>
+          <li>Antidote, Thawing and Stamina potions</li>
+        </ul>
+      </li>
+      <li>Battle Orders, Battle Command and Shout are also tracked when cast from <strong>Call to Arms</strong></li>
     </ul>
-    </li>
-    <li>Battle Orders, Battle Command and Shout are also tracked when cast from <strong>Call to Arms</strong></li>
-  </ul>
   </li>
   <li>Display only, it never blocks gameplay clicks. Works with mouse/keyboard and controller</li>
 </ul>
@@ -800,74 +727,72 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>BNet Simulation (by RuffnecKk)</strong></h5>
 <ul>
-  <li>Battle.net-style player scaling: monster scaling uses the real number of players in the game
-  <ul>
-    <li>The <code>/players X</code> command is disabled</li>
-    <li>The Offline Difficulty slider is locked at <strong>players 1</strong></li>
-  </ul>
+  <li>Battle.net-style player scaling: monster scaling uses the real number of players in the game<ul>
+      <li>The <code>/players X</code> command is disabled</li>
+      <li>The Offline Difficulty slider is locked at <strong>players 1</strong></li>
+    </ul>
   </li>
   <li>No settings. Console command <code>bnet-simulation</code> shows its status</li>
 </ul>
 <p>&nbsp;</p>
-<h4><strong>Controller</strong></h4>
+<h3><strong>Controller</strong></h3>
 <h5><strong>Controller QOL Updates (by PyreFly)</strong></h5>
 <ul>
   <li><strong>Ground looting</strong>
-  <ul>
-    <li>Nearby items (within <strong>6</strong> tiles) show a controller button on their name label. Hold the modifier (<strong>LB/L1</strong>) and press that button to run over and pick the item up</li>
-    <li>Items hidden by your <strong>loot filter</strong> are never picked up by the controller. Mouse and keyboard pickup is unchanged</li>
-    <li>Controller mode keeps filtered item labels <strong>always on</strong></li>
-  </ul>
+    <ul>
+      <li>Nearby items (within <strong>6</strong> tiles) show a controller button on their name label. Hold the modifier (<strong>LB/L1</strong>) and press that button to run over and pick the item up</li>
+      <li>Items hidden by your <strong>loot filter</strong> are never picked up by the controller. Mouse and keyboard pickup is unchanged</li>
+      <li>Controller mode keeps filtered item labels <strong>always on</strong></li>
+    </ul>
   </li>
   <li><strong>Interaction priority</strong>: within <strong>10</strong> units, <strong>portals, stash, waypoints, shrines and chests</strong> are chosen ahead of nearby monsters and items when you press interact</li>
-  <li><strong>Inventory and stash shortcuts</strong> (modifier = <strong>LB</strong>)
-  <ul>
-    <li><strong>LB + X</strong>: quick-move the highlighted item between inventory and stash, the selected shared page or Reimagined's extra pages. Stackable materials go to the <strong>Materials</strong> stash first</li>
-    <li><strong>LB + Y</strong>: move the item into the <strong>Horadric Cube</strong></li>
-    <li><strong>Stash All</strong> deposits every eligible inventory item. The tooltip footer shows the button</li>
-    <li><strong>LB + LT / LB + RT</strong>: previous / next <strong>shared stash page</strong></li>
-    <li><strong>Drop (Hold: Move)</strong> prompt on inventory items</li>
-    <li>With a potion highlighted in the Materials stash, refill your belt from it</li>
-  </ul>
+  <li><strong>Inventory and stash shortcuts</strong> (modifier = <strong>LB</strong>)<ul>
+      <li><strong>LB + X</strong>: quick-move the highlighted item between inventory and stash, the selected shared page or Reimagined's extra pages. Stackable materials go to the <strong>Materials</strong> stash first</li>
+      <li><strong>LB + Y</strong>: move the item into the <strong>Horadric Cube</strong></li>
+      <li><strong>Stash All</strong> deposits every eligible inventory item. The tooltip footer shows the button</li>
+      <li><strong>LB + LT / LB + RT</strong>: previous / next <strong>shared stash page</strong></li>
+      <li><strong>Drop (Hold: Move)</strong> prompt on inventory items</li>
+      <li>With a potion highlighted in the Materials stash, refill your belt from it</li>
+    </ul>
   </li>
   <li><strong>Horadric Cube</strong>: <strong>tap A</strong> to open it, <strong>hold A</strong> to pick it up, <strong>LB + B</strong> to transmute while the Cube is highlighted or open</li>
   <li><strong>Identify</strong>
-  <ul>
-    <li>Quick identify on an unidentified item</li>
-    <li><strong>Identify All</strong> on a highlighted Tome of Identify identifies every unidentified item in your inventory</li>
-    <li>Both <strong>use a tome or scroll charge</strong> by default</li>
-  </ul>
+    <ul>
+      <li>Quick identify on an unidentified item</li>
+      <li><strong>Identify All</strong> on a highlighted Tome of Identify identifies every unidentified item in your inventory</li>
+      <li>Both <strong>use a tome or scroll charge</strong> by default</li>
+    </ul>
   </li>
   <li><strong>Vendors</strong>
-  <ul>
-    <li><strong>Refill / Buy</strong>: tops up your Tome of Identify or Tome of Town Portal</li>
-    <li><strong>Refill Belt / Buy Missing</strong>: buys the highlighted potion to fill empty belt slots</li>
-    <li>Quick-sell the highlighted item</li>
-  </ul>
+    <ul>
+      <li><strong>Refill / Buy</strong>: tops up your Tome of Identify or Tome of Town Portal</li>
+      <li><strong>Refill Belt / Buy Missing</strong>: buys the highlighted potion to fill empty belt slots</li>
+      <li>Quick-sell the highlighted item</li>
+    </ul>
   </li>
   <li><strong>Menus</strong>
-  <ul>
-    <li><strong>LT/RT</strong> switch the main menu pages</li>
-    <li><strong>LB/RB</strong> switch sub-tabs: skill trees, quest acts, options, Chronicle, loot filter tabs and Reimagined's info pages</li>
-    <li><strong>LB + Up/Down</strong> reorders loot filter rules</li>
-  </ul>
+    <ul>
+      <li><strong>LT/RT</strong> switch the main menu pages</li>
+      <li><strong>LB/RB</strong> switch sub-tabs: skill trees, quest acts, options, Chronicle, loot filter tabs and Reimagined's info pages</li>
+      <li><strong>LB + Up/Down</strong> reorders loot filter rules</li>
+    </ul>
   </li>
   <li><strong>Controller aim</strong>
-  <ul>
-    <li>A free-aim cursor you steer with the stick. It speeds up the longer you hold it (<strong>8 to 48</strong> tiles per second over <strong>0.35 s</strong>)</li>
-    <li>Aim <strong>snaps</strong> to an enemy within <strong>6</strong> tiles of the cursor</li>
-    <li>Ground and target-lock reticles are drawn on screen</li>
-    <li>On by default for <strong>Multiple Shot, Guided Arrow, Fire Wall, Teleport, Meteor, Blizzard, Hydra, Teeth, Leap and Whirlwind</strong>
     <ul>
-      <li>Teleport and Leap aim at the ground</li>
-      <li>Whirlwind snaps onto the enemy and carries <strong>1.5</strong> tiles past it</li>
-      <li>Guided Arrow fires toward a point <strong>20</strong> tiles away</li>
+      <li>A free-aim cursor you steer with the stick. It speeds up the longer you hold it (<strong>8 to 48</strong> tiles per second over <strong>0.35 s</strong>)</li>
+      <li>Aim <strong>snaps</strong> to an enemy within <strong>6</strong> tiles of the cursor</li>
+      <li>Ground and target-lock reticles are drawn on screen</li>
+      <li>On by default for <strong>Multiple Shot, Guided Arrow, Fire Wall, Teleport, Meteor, Blizzard, Hydra, Teeth, Leap and Whirlwind</strong>
+        <ul>
+          <li>Teleport and Leap aim at the ground</li>
+          <li>Whirlwind snaps onto the enemy and carries <strong>1.5</strong> tiles past it</li>
+          <li>Guided Arrow fires toward a point <strong>20</strong> tiles away</li>
+        </ul>
+      </li>
+      <li>Snap-aimed projectiles lead moving targets</li>
+      <li>Reimagined's <strong>Warp</strong> is recognized (ground aim, off until you turn it on)</li>
+      <li>Press <strong>R3</strong> on a skill in the skill tree to turn auto-aim on or off for that skill. The change is saved right away</li>
     </ul>
-    </li>
-    <li>Snap-aimed projectiles lead moving targets</li>
-    <li>Reimagined's <strong>Warp</strong> is recognized (ground aim, off until you turn it on)</li>
-    <li>Press <strong>R3</strong> on a skill in the skill tree to turn auto-aim on or off for that skill. The change is saved right away</li>
-  </ul>
   </li>
   <li>Speed, snap radius, reticle colours and every option above can be changed in <code>d2rloader/config/controller-qol-updates.toml</code> (restart to apply)</li>
 </ul>
@@ -875,16 +800,15 @@ dateCreated: 2026-10-24T13:27:04.970Z
   <p>Controller only, mouse and keyboard input is left alone. Unlike Ctrl + Right Click on mouse and keyboard, controller identify uses tome or scroll charges by default.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h4><strong>Character Trackers</strong></h4>
+<h3><strong>Character Trackers</strong></h3>
 <h5><strong>Death Tracker</strong></h5>
 <ul>
-  <li>Counts your deaths per character and shows them in chat
-  <ul>
-    <li><code>/deaths</code>: your total, e.g. "You have died 3 times. Last on 2026-10-24 14:05: Travincal (act 3).", plus deaths in the current game</li>
-    <li><code>/deaths log</code>: your last <strong>5</strong> deaths with date, time and area</li>
-    <li><code>/help deaths</code>: how to use the command</li>
-    <li><code>!deaths</code> and <code>!deaths log</code> are a backup if the <code>/</code> command doesn't work. <code>!commands</code> lists the <code>!</code> commands</li>
-  </ul>
+  <li>Counts your deaths per character and shows them in chat<ul>
+      <li><code>/deaths</code>: your total, e.g. "You have died 3 times. Last on 2026-10-24 14:05: Travincal (act 3).", plus deaths in the current game</li>
+      <li><code>/deaths log</code>: your last <strong>5</strong> deaths with date, time and area</li>
+      <li><code>/help deaths</code>: how to use the command</li>
+      <li><code>!deaths</code> and <code>!deaths log</code> are a backup if the <code>/</code> command doesn't work. <code>!commands</code> lists the <code>!</code> commands</li>
+    </ul>
   </li>
   <li>A chat line each time a death is counted, e.g. "Death 4 - Chaos Sanctuary (act 4)." Turn it off with <code>announce_deaths = false</code> in <code>d2rloader/config/death-tracker.toml</code></li>
   <li>The lifetime total is never trimmed. The history keeps up to <strong>200</strong> deaths</li>
@@ -895,13 +819,12 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Kill Tracker</strong></h5>
 <ul>
-  <li>Counts the monsters you kill per character, lifetime total
-  <ul>
-    <li><code>/kills</code>: e.g. "You have killed 12,480 monsters.", plus kills in the current game</li>
-    <li><code>/help kills</code>: how to use the command</li>
-    <li><code>!kills</code> is a backup if <code>/kills</code> doesn't work</li>
-    <li>Silent by default. To get a running total in chat every N kills, set <code>announce_every = N</code> in <code>d2rloader/config/kill-tracker.toml</code></li>
-  </ul>
+  <li>Counts the monsters you kill per character, lifetime total<ul>
+      <li><code>/kills</code>: e.g. "You have killed 12,480 monsters.", plus kills in the current game</li>
+      <li><code>/help kills</code>: how to use the command</li>
+      <li><code>!kills</code> is a backup if <code>/kills</code> doesn't work</li>
+      <li>Silent by default. To get a running total in chat every N kills, set <code>announce_every = N</code> in <code>d2rloader/config/kill-tracker.toml</code></li>
+    </ul>
   </li>
   <li>Saved every <strong>30 seconds</strong>, and when you leave a game, type <code>/kills</code> or close the game</li>
 </ul>
@@ -911,43 +834,39 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Time Played</strong></h5>
 <ul>
-  <li>Tracks play time per character
-  <ul>
-    <li><code>/played</code>: e.g. "Alice: 12h 34m 56s played. This game: 0h 8m 10s."</li>
-    <li>Time counts while your character is in a game, including town and AFK time. Menus and character select don't count</li>
-    <li>Saved every <strong>30 seconds</strong>, on <code>/played</code>, when you leave a game and when you close the game</li>
-  </ul>
+  <li>Tracks play time per character<ul>
+      <li><code>/played</code>: e.g. "Alice: 12h 34m 56s played. This game: 0h 8m 10s."</li>
+      <li>Time counts while your character is in a game, including town and AFK time. Menus and character select don't count</li>
+      <li>Saved every <strong>30 seconds</strong>, on <code>/played</code>, when you leave a game and when you close the game</li>
+    </ul>
   </li>
 </ul>
 <blockquote>
   <p>Tracking starts when the plugin is installed. Earlier play time can't be recovered. Stored on your PC, not on the website.</p>
 </blockquote>
 <p>&nbsp;</p>
-<h4><strong>Supporter Cosmetics</strong></h4>
+<h3><strong>Supporter Cosmetics</strong></h3>
 <h5><strong>Helmet Skins</strong></h5>
 <ul>
-  <li>Account-wide helmet skins, shown on your character to everyone in your game
-  <ul>
-    <li><strong>Pumpkin Head</strong>: carved jack-o'-lantern with a candle glow. Earned by completing <strong>Normal</strong> on the Halloween ladder</li>
-    <li><strong>Lit Pumpkin Head</strong>: the same pumpkin with a small flame on the stem. Earned by completing <strong>Nightmare</strong></li>
-    <li><strong>Flaming Pumpkin Head</strong>: a charred pumpkin with glowing ember cracks and an angry face, wrapped in fire. Earned by completing <strong>Hell</strong></li>
-    <li>Unlocks are <strong>per account</strong>: any character on that ladder earns them for the whole account, including hardcore characters that later die. A higher difficulty also unlocks every lower tier</li>
-    <li>Unlocks are granted automatically the next time the character's save syncs after it completes the difficulty (killing Baal and claiming the quest reward). Once granted, they're never taken away</li>
-  </ul>
+  <li>Account-wide helmet skins, shown on your character to everyone in your game<ul>
+      <li><strong>Pumpkin Head</strong>: carved jack-o'-lantern with a candle glow. Earned by completing <strong>Normal</strong> on the Halloween ladder</li>
+      <li><strong>Lit Pumpkin Head</strong>: the same pumpkin with a small flame on the stem. Earned by completing <strong>Nightmare</strong></li>
+      <li><strong>Flaming Pumpkin Head</strong>: a charred pumpkin with glowing ember cracks and an angry face, wrapped in fire. Earned by completing <strong>Hell</strong></li>
+      <li>Unlocks are <strong>per account</strong>: any character on that ladder earns them for the whole account, including hardcore characters that later die. A higher difficulty also unlocks every lower tier</li>
+      <li>Unlocks are granted automatically the next time the character's save syncs after it completes the difficulty (killing Baal and claiming the quest reward). Once granted, they're never taken away</li>
+    </ul>
   </li>
-  <li>The skin replaces how any worn head item looks (helms, barbarian helms, druid pelts, circlets) and hides your hair
-  <ul>
-    <li>Items on the ground, in shops or in your stash keep their normal look</li>
-  </ul>
+  <li>The skin replaces how any worn head item looks (helms, barbarian helms, druid pelts, circlets) and hides your hair<ul>
+      <li>Items on the ground, in shops or in your stash keep their normal look</li>
+    </ul>
   </li>
-  <li>Commands
-  <ul>
-    <li><code>/mtx</code>: cycles off, 1, 2, 3, off</li>
-    <li><code>/mtx 1</code> to <code>/mtx 3</code>, or <code>/mtx pumpkin</code>, <code>/mtx pumpkin-lit</code>, <code>/mtx pumpkin-inferno</code>: equip one skin</li>
-    <li><code>/mtx off</code> (or <code>/mtx none</code>): take the skin off</li>
-    <li><code>/mtx list</code>: lists every skin, how to earn it, and which ones your account owns</li>
-    <li><code>/mtx shop</code> (or <code>/mtx site</code>): opens the website's <strong>Cosmetics</strong> page in your browser</li>
-  </ul>
+  <li>Commands<ul>
+      <li><code>/mtx</code>: cycles off, 1, 2, 3, off</li>
+      <li><code>/mtx 1</code> to <code>/mtx 3</code>, or <code>/mtx pumpkin</code>, <code>/mtx pumpkin-lit</code>, <code>/mtx pumpkin-inferno</code>: equip one skin</li>
+      <li><code>/mtx off</code> (or <code>/mtx none</code>): take the skin off</li>
+      <li><code>/mtx list</code>: lists every skin, how to earn it, and which ones your account owns</li>
+      <li><code>/mtx shop</code> (or <code>/mtx site</code>): opens the website's <strong>Cosmetics</strong> page in your browser</li>
+    </ul>
   </li>
   <li>You can also equip skins on the website under Profile &gt; <strong>Choose cosmetics</strong>. The game and the website share one loadout</li>
 </ul>
@@ -957,23 +876,21 @@ dateCreated: 2026-10-24T13:27:04.970Z
 <p>&nbsp;</p>
 <h5><strong>Supporter Portals</strong></h5>
 <ul>
-  <li>Town portal colours for supporters
-  <ul>
-    <li><strong>Classic</strong>: free, the default</li>
-    <li><strong>Green</strong>: Supporter</li>
-    <li><strong>Violet</strong>: Pro Supporter</li>
-    <li><strong>Red</strong>: Elite Supporter</li>
-    <li><strong>Teal</strong>: Ultimate Supporter</li>
-    <li>Higher tiers include every lower tier's colour</li>
-    <li><strong>Ember</strong>: special reward only, never part of a supporter tier</li>
-    <li>Your tier comes from your Discord supporter role. Link Discord on your website profile and use <strong>Refresh Discord roles</strong></li>
-  </ul>
+  <li>Town portal colours for supporters<ul>
+      <li><strong>Classic</strong>: free, the default</li>
+      <li><strong>Green</strong>: Supporter</li>
+      <li><strong>Violet</strong>: Pro Supporter</li>
+      <li><strong>Red</strong>: Elite Supporter</li>
+      <li><strong>Teal</strong>: Ultimate Supporter</li>
+      <li>Higher tiers include every lower tier's colour</li>
+      <li><strong>Ember</strong>: special reward only, never part of a supporter tier</li>
+      <li>Your tier comes from your Discord supporter role. Link Discord on your website profile and use <strong>Refresh Discord roles</strong></li>
+    </ul>
   </li>
-  <li>Commands
-  <ul>
-    <li><code>/portals</code>: lists every colour as locked, unlocked or selected</li>
-    <li><code>/portal &lt;colour&gt;</code>: saves your choice to your account. Colours: <code>classic</code>, <code>green</code>, <code>violet</code>, <code>red</code>, <code>teal</code>, <code>ember</code></li>
-  </ul>
+  <li>Commands<ul>
+      <li><code>/portals</code>: lists every colour as locked, unlocked or selected</li>
+      <li><code>/portal &lt;colour&gt;</code>: saves your choice to your account. Colours: <code>classic</code>, <code>green</code>, <code>violet</code>, <code>red</code>, <code>teal</code>, <code>ember</code></li>
+    </ul>
   </li>
   <li>Your choice is restored automatically each time you enter a game</li>
   <li>After changing colour, cast a <strong>new</strong> portal. Portals that are already open keep their colour</li>

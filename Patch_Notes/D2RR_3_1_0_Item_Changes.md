@@ -1,8 +1,8 @@
 ---
 title: D2R Reimagined Patch 3.1.0 Item Changes
 description: A list of item changes additions and removals in patch 3.1.0
-published: false
-date: 2026-10-27T10:25:02.554Z
+published: true
+date: 2026-10-27T10:26:22.376Z
 tags: patch, item changes
 editor: markdown
 dateCreated: 2026-10-27T02:09:31.599Z

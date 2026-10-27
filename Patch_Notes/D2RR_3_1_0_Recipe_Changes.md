@@ -2,7 +2,7 @@
 title: D2R Reimagined Patch 3.1.0 Recipe Chages
 description: A list of recipe changes additions and removals in patch 3.1.0
 published: true
-date: 2026-10-27T10:26:09.863Z
+date: 2026-10-27T10:48:40.202Z
 tags: patch, recipe changes
 editor: markdown
 dateCreated: 2026-10-27T03:21:35.592Z
@@ -14,12 +14,16 @@ dateCreated: 2026-10-27T03:21:35.592Z
 
 | Crafting category | Modified | Added | Removed |
 |---|---:|---:|---:|
+| Force White Recipe | 0 | 0 | 2 |
 | Item Crafting Recipe | 2 | 133 | 101 |
 | Item Enchantment Recipe | 0 | 278 | 341 |
+| Orb of Assemblage Recipe | 0 | 12 | 0 |
+| Orb of Conversion Recipe | 0 | 18 | 0 |
 | Orb of Corruption Recipe | 7 | 0 | 0 |
+| Orb of Infusion Recipe | 0 | 8 | 0 |
 | Sunder Item Crafting Recipe | 0 | 1 | 0 |
 | Uber Charm Upgrade Recipe | 4 | 6 | 10 |
-| Other recipes | 1 | 38 | 0 |
+| Other recipes | 1 | 38 | 2 |
 
 Some guaranteed affixes cannot currently be identified by name.
 
@@ -30,6 +34,24 @@ Recipe ingredients and technical conditions contribute to recipe identity, so a 
 <!-- recipe-patch-notes: omitted 60 removed/added pairs whose only change is the unique-jewel ingredient jew,uni to jewl,uni; see changes.json -->
 
 ## Recipe changes
+
+<details>
+<summary>Force White Recipe — 0 modified, 0 added, 2 removed</summary>
+
+<details>
+<summary>Removed recipe definitions (2)</summary>
+
+#### Rare Arrows + Orb of Infusion + Orb of Renewal → New Rare Arrows (same base type)
+
+<!-- changes.json: cube-recipes / cr-9ac6b845a5b6a631 -->
+
+#### Rare Bolts + Orb of Infusion + Orb of Renewal → New Rare Bolts (same base type)
+
+<!-- changes.json: cube-recipes / cr-7f88c0f5c7c712cf -->
+
+</details>
+
+</details>
 
 <details>
 <summary>Item Crafting Recipe — 2 modified, 133 added, 101 removed</summary>
@@ -5765,6 +5787,146 @@ Recipe ingredients and technical conditions contribute to recipe identity, so a 
 </details>
 
 <details>
+<summary>Orb of Assemblage Recipe — 0 modified, 12 added, 0 removed</summary>
+
+<details>
+<summary>Added recipe definitions (12)</summary>
+
+#### Magic Amulet + Orb of Assemblage → Set Amulet
+
+<!-- changes.json: cube-recipes / cr-bfc3dd5d4aa256bc -->
+
+#### Magic Armor + Orb of Assemblage → New Set Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-b305196d6d482ae8 -->
+
+#### Magic Ring + Orb of Assemblage → Set Ring
+
+<!-- changes.json: cube-recipes / cr-07d6e3c39c24b478 -->
+
+#### Magic Weapon + Orb of Assemblage → New Set Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-25ff5dac4607b5a2 -->
+
+#### Normal Quality Armor + Orb of Assemblage → New Set Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-85113db9e9cac028 -->
+
+#### Normal Quality Weapon + Orb of Assemblage → New Set Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-2416dcb82cfc723a -->
+
+#### Set Amulet + Orb of Assemblage → Set Amulet
+
+<!-- changes.json: cube-recipes / cr-19e9c628e3b7825b -->
+
+#### Set Armor + Orb of Assemblage → New Set Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-afd55c5e0f700137 -->
+
+#### Set Ring + Orb of Assemblage → Set Ring
+
+<!-- changes.json: cube-recipes / cr-c3cfd04927367887 -->
+
+#### Set Weapon + Orb of Assemblage → New Set Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-cad08ae7f55f7771 -->
+
+#### Superior Armor + Orb of Assemblage → New Set Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-614fb606b00b0925 -->
+
+#### Superior Weapon + Orb of Assemblage → New Set Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-a793b6485666dfa3 -->
+
+</details>
+
+</details>
+
+<details>
+<summary>Orb of Conversion Recipe — 0 modified, 18 added, 0 removed</summary>
+
+<details>
+<summary>Added recipe definitions (18)</summary>
+
+#### Magic Amulet + Orb of Conversion → Unique Amulet
+
+<!-- changes.json: cube-recipes / cr-3a57217b8ef23d0a -->
+
+#### Magic Armor + Orb of Conversion → New Unique Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-03399d8a77986676 -->
+
+#### Magic Arrows + Orb of Conversion → Unique Arrows
+
+<!-- changes.json: cube-recipes / cr-c0cfa6e1e28f5617 -->
+
+#### Magic Bolts + Orb of Conversion → Unique Bolts
+
+<!-- changes.json: cube-recipes / cr-c8ae2808a3835dcd -->
+
+#### Magic Ring + Orb of Conversion → Unique Ring
+
+<!-- changes.json: cube-recipes / cr-555c5f581a092646 -->
+
+#### Magic Weapon + Orb of Conversion → New Unique Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-02d8a2190222ee94 -->
+
+#### Normal Quality Armor + Orb of Conversion → New Unique Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-d545c1d6f41afbb6 -->
+
+#### Normal Quality Arrows + Orb of Conversion → Unique Arrows
+
+<!-- changes.json: cube-recipes / cr-9da36437e3b954bb -->
+
+#### Normal Quality Bolts + Orb of Conversion → Unique Bolts
+
+<!-- changes.json: cube-recipes / cr-df26f2bab1c6b789 -->
+
+#### Normal Quality Weapon + Orb of Conversion → New Unique Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-d53c23393c86b7ec -->
+
+#### Superior Armor + Orb of Conversion → New Unique Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-da8dfc3a81ca13b3 -->
+
+#### Superior Weapon + Orb of Conversion → New Unique Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-8317fcca9ff13cd5 -->
+
+#### Unique Amulet + Orb of Conversion → Unique Amulet
+
+<!-- changes.json: cube-recipes / cr-97c349eebf0baf63 -->
+
+#### Unique Armor + Orb of Conversion → New Unique Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-696f4c6ecfc34d5f -->
+
+#### Unique Arrows + Orb of Conversion → Unique Arrows
+
+<!-- changes.json: cube-recipes / cr-c642f74962668a72 -->
+
+#### Unique Bolts + Orb of Conversion → Unique Bolts
+
+<!-- changes.json: cube-recipes / cr-7540911b5a4afa58 -->
+
+#### Unique Ring + Orb of Conversion → Unique Ring
+
+<!-- changes.json: cube-recipes / cr-e13d0fb138395b4f -->
+
+#### Unique Weapon + Orb of Conversion → New Unique Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-e1c7f5fbc634136d -->
+
+</details>
+
+</details>
+
+<details>
 <summary>Orb of Corruption Recipe — 7 modified, 0 added, 0 removed</summary>
 
 <details>
@@ -5806,6 +5968,48 @@ Recipe ingredients and technical conditions contribute to recipe identity, so a 
 
 <!-- changes.json: cube-recipes / cr-15f469aa298b03ed -->
 - Changed: +40% Mana Regeneration (was +20%)
+
+</details>
+
+</details>
+
+<details>
+<summary>Orb of Infusion Recipe — 0 modified, 8 added, 0 removed</summary>
+
+<details>
+<summary>Added recipe definitions (8)</summary>
+
+#### Magic Armor + Orb of Infusion → New Rare Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-a4a3af47ca93ea30 -->
+
+#### Magic Weapon + Orb of Infusion → New Rare Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-41fcb387dd531faa -->
+
+#### Rare Amulet + Orb of Infusion → New Rare Amulet (same base type)
+
+<!-- changes.json: cube-recipes / cr-95d1099912095c8a -->
+
+#### Rare Armor + Orb of Infusion → New Rare Armor (same base type)
+
+<!-- changes.json: cube-recipes / cr-74af11cafaa75b36 -->
+
+#### Rare Arrows + Orb of Infusion → Rare Arrows
+
+<!-- changes.json: cube-recipes / cr-598768b06f8b3913 -->
+
+#### Rare Bolts + Orb of Infusion → Rare Bolts
+
+<!-- changes.json: cube-recipes / cr-fb1a483aaa393231 -->
+
+#### Rare Ring + Orb of Infusion → New Rare Ring (same base type)
+
+<!-- changes.json: cube-recipes / cr-1731a38e18d25806 -->
+
+#### Rare Weapon + Orb of Infusion → New Rare Weapon (same base type)
+
+<!-- changes.json: cube-recipes / cr-34cb374ba2534054 -->
 
 </details>
 
@@ -6011,7 +6215,7 @@ Recipe ingredients and technical conditions contribute to recipe identity, so a 
 </details>
 
 <details>
-<summary>Other recipes — 1 modified, 38 added, 0 removed</summary>
+<summary>Other recipes — 1 modified, 38 added, 2 removed</summary>
 
 <details>
 <summary>Confirmed matched modifications (1)</summary>
@@ -6255,6 +6459,19 @@ Recipe ingredients and technical conditions contribute to recipe identity, so a 
 <!-- changes.json: cube-recipes / cr-ed3553c7ae130cfc -->
 - +1 to Warlock Skills
 - +5% to All Maximum Resistances
+
+</details>
+
+<details>
+<summary>Removed recipe definitions (2)</summary>
+
+#### Rare Arrows + El Rune + Hel Rune + Orb of Infusion → New Rare Arrows (same base type)
+
+<!-- changes.json: cube-recipes / cr-376e79b0713d1f5a -->
+
+#### Rare Bolts + El Rune + Hel Rune + Orb of Infusion → New Rare Bolts (same base type)
+
+<!-- changes.json: cube-recipes / cr-39346e68962d5bb0 -->
 
 </details>
 

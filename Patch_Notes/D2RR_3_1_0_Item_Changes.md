@@ -2,7 +2,7 @@
 title: D2R Reimagined Patch 3.1.0 Item Changes
 description: A list of item changes additions and removals in patch 3.1.0
 published: true
-date: 2026-10-27T15:41:24.845Z
+date: 2026-10-27T23:03:54.075Z
 tags: patch, item changes
 editor: markdown
 dateCreated: 2026-10-27T02:09:31.599Z
@@ -707,7 +707,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: +(1-2) to Summoning Skills ((Druid Only)) (was +(1-3))
+    - Changed: +(1-2) to Summoning Skills (Druid Only) (was +(1-3))
     - Changed: +(1-3) to Druid Skill Levels (was +(2-3))
     - Added: -(8-12)% to Enemy Physical Damage Resistance
     - Removed: +0.25% Chance of Crushing Blow (Based on Character Level)
@@ -2182,7 +2182,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Changed: +(100-150)% Enhanced Defense (was +(135-185)%)
     - Added: +3 to Max Skeleton Warriors
-    - Added: +(1-2) to Summoning Skills ((Necromancer Only))
+    - Added: +(1-2) to Summoning Skills (Necromancer Only)
     - Added: +(2-3) to Necromancer Skill Levels
     - Removed: Prevent Monster Heal
     - Removed: +15 to Dexterity
@@ -2220,7 +2220,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Added: +3 to Max Skeletal Mages
-    - Added: +(1-2) to Summoning Skills ((Necromancer Only))
+    - Added: +(1-2) to Summoning Skills (Necromancer Only)
     - Added: +(2-3) to Necromancer Skill Levels
     - Added: +(100-150)% Enhanced Defense
     - Added: +(10-15)% Physical Damage Reduction
@@ -2293,7 +2293,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +(25-40)% Faster Cast Rate (was +20%)
-    - Added: +(2-3) to Summoning Skills ((Necromancer Only))
+    - Added: +(2-3) to Summoning Skills (Necromancer Only)
     - Added: +(20-30)% to Magic Skill Damage
     - Removed: +(2-3) to Holy Bolt (Paladin Only)
     - Removed: +(3-5) to Fist of the Heavens (Paladin Only)
@@ -4204,7 +4204,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Class: Sorceress
 - Properties:
   - Lines:
-    - +1 to Cold Skills ((Sorceress Only))
+    - +1 to Cold Skills (Sorceress Only)
     - +(10-15)% Faster Cast Rate
     - Adds 3-14 Weapon Cold Damage
     - Cold Length: 3 seconds
@@ -4224,7 +4224,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Class: Sorceress
 - Properties:
   - Lines:
-    - +1 to Lightning Skills ((Sorceress Only))
+    - +1 to Lightning Skills (Sorceress Only)
     - +(10-15)% Faster Cast Rate
     - Adds 1-50 Weapon Lightning Damage
     - +(1-2) to Teleport (Sorceress Only)
@@ -4242,7 +4242,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Variant: Staff
 - Properties:
   - Lines:
-    - +3 to Lightning Skills ((Sorceress Only))
+    - +3 to Lightning Skills (Sorceress Only)
     - +(25-30)% Faster Cast Rate
     - Adds 1-50 Weapon Lightning Damage
     - +(2-3) to Teleport (Sorceress Only)
@@ -5480,8 +5480,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Preserved Head \[N\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5510,8 +5509,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Zombie Head \[N\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5540,8 +5538,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Unraveller Head \[N\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5570,8 +5567,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Gargoyle Head \[N\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5600,8 +5596,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Demon Head \[N\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5630,8 +5625,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Mummified Trophy \[X\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5660,8 +5654,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Fetish Trophy \[X\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5690,8 +5683,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Sexton Trophy \[X\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5720,8 +5712,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Cantor Trophy \[X\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5750,8 +5741,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Hierophant Trophy \[X\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5780,8 +5770,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Minion Skull \[E\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5810,8 +5799,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Overseer Skull \[E\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5840,8 +5828,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Succubus Skull \[E\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5870,8 +5857,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Bloodlord Skull \[E\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 
@@ -5900,8 +5886,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Hellspawn Skull \[E\]
 
-- Possible automagic group changes:
-  These are possible automagic associations; they do not imply a guaranteed affix roll.
+- Eligible automagic affix changes (can roll; not guaranteed on every item):
   - Modified:
 ##### of Anthrax
 

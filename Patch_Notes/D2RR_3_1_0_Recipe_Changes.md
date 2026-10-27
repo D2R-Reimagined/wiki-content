@@ -1,8 +1,8 @@
 ---
 title: D2R Reimagined 3.1.0 Recipe Chages
-description: Don't mark this one visible yet either K thx
+description: A list of recipe changes additions and removals in patch 3.1.0
 published: false
-date: 2026-10-27T10:21:52.884Z
+date: 2026-10-27T10:24:47.099Z
 tags: patch, recipe changes
 editor: markdown
 dateCreated: 2026-10-27T03:21:35.592Z

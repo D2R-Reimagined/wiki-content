@@ -1,8 +1,8 @@
 ---
-title: Patch 3.1.0 Item Changes
+title: D2R Reimagined Patch 3.1.0 Item Changes
 description: Don't make this visible yet K thanks Collin.
 published: false
-date: 2026-10-27T03:18:54.617Z
+date: 2026-10-27T10:23:56.091Z
 tags: patch, item changes
 editor: markdown
 dateCreated: 2026-10-27T02:09:31.599Z

@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-10-15T01:51:26.305Z
+date: 2026-10-29T21:27:44.797Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -12,7 +12,7 @@ dateCreated: 2026-05-13T11:21:23.617Z
 A: Yes, completely. We maintain the mod up to date with the latest SnowCo release, for better or worse.
 
 **Q: Does the mod work without the DLC?**
-A: Yes, the mod is 100% compatible without the DLC. Heralds spawn, Worldstone shards and statues drop, and Uber Ancients are accessible.
+A: Yes, the mod is 100% compatible without the DLC. Heralds spawn, Worldstone shards and statues drop, and Uber Ancients are accessible. You will not have access tot he warlock class, specialized rune/material shared stash tabs, chronicle, or built in loot filters though.
 
 **Q: Can you increase the stack size in the DLC tabs higher than 99?**
 A: You can use D2RLoader to increase the stash stack size to 255. Otherwise, no it is engine limited.

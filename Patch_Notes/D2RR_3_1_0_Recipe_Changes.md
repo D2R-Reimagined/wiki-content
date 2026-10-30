@@ -2,7 +2,7 @@
 title: D2R Reimagined Patch 3.1.0 Recipe Chages
 description: A list of recipe changes additions and removals in patch 3.1.0
 published: true
-date: 2026-10-27T23:04:18.882Z
+date: 2026-10-30T04:38:48.610Z
 tags: patch, recipe changes
 editor: markdown
 dateCreated: 2026-10-27T03:21:35.592Z
@@ -14,21 +14,83 @@ dateCreated: 2026-10-27T03:21:35.592Z
 
 | Crafting category | Modified | Added | Removed |
 |---|---:|---:|---:|
-| Force White Recipe | 0 | 0 | 2 |
-| Item Crafting Recipe | 2 | 133 | 101 |
+| Force White Recipe | 2 | 6 | 2 |
+| Item Crafting Recipe | 3 | 141 | 101 |
 | Item Enchantment Recipe | 0 | 278 | 341 |
 | Orb of Assemblage Recipe | 0 | 12 | 0 |
 | Orb of Conversion Recipe | 0 | 18 | 0 |
 | Orb of Corruption Recipe | 7 | 0 | 0 |
 | Orb of Infusion Recipe | 0 | 8 | 0 |
-| Sunder Item Crafting Recipe | 0 | 1 | 0 |
-| Uber Charm Upgrade Recipe | 4 | 6 | 10 |
-| Other recipes | 1 | 38 | 2 |
+| Reroll Item Recipe | 1 | 10 | 0 |
+| Sunder Item Crafting Recipe | 6 | 1 | 0 |
+| Tristram Uber Souls Recipe | 0 | 10 | 10 |
+| Uber Charm Upgrade Recipe | 4 | 9 | 10 |
+| Other recipes | 0 | 0 | 2 |
 
 ## Recipe changes
 
 <details>
-<summary>Force White Recipe — 0 modified, 0 added, 2 removed</summary>
+<summary>Force White Recipe — 2 modified, 6 added, 2 removed</summary>
+
+<details>
+<summary>Modified recipes (2)</summary>
+
+#### Arrows + El Rune + Hel Rune → Normal Quality Arrows
+
+- Crafting category or notes: Force White Recipe (was none).
+
+#### Bolts + El Rune + Hel Rune → Normal Quality Bolts
+
+- Crafting category or notes: Force White Recipe (was none).
+
+</details>
+
+<details>
+<summary>Added recipes (6)</summary>
+
+#### Armor + Orb of Infusion + Orb of Renewal + Gul Rune + Rare Jewel → Original Armor
+
+- Additional notes: Item Enchantment Recipe
+- Enchantments: 1 / 1
+- +30 to Dexterity
+- +30 to Vitality
+
+#### Armor + Orb of Infusion + Orb of Renewal + Ohm Rune + Rare Jewel → Original Armor
+
+- Additional notes: Item Enchantment Recipe
+- Enchantments: 1 / 1
+- +30 to Strength
+- +30 to Vitality
+
+#### Armor + Orb of Infusion + Orb of Renewal + Vex Rune + Rare Jewel → Original Armor
+
+- Additional notes: Item Enchantment Recipe
+- Enchantments: 1 / 1
+- +30 to Energy
+- +30 to Vitality
+
+#### Helm + Orb of Infusion + Orb of Renewal + Gul Rune + Rare Jewel → Original Helm
+
+- Additional notes: Item Enchantment Recipe
+- Enchantments: 1 / 1
+- +30 to Dexterity
+- +30 to Vitality
+
+#### Helm + Orb of Infusion + Orb of Renewal + Ohm Rune + Rare Jewel → Original Helm
+
+- Additional notes: Item Enchantment Recipe
+- Enchantments: 1 / 1
+- +30 to Strength
+- +30 to Vitality
+
+#### Helm + Orb of Infusion + Orb of Renewal + Vex Rune + Rare Jewel → Original Helm
+
+- Additional notes: Item Enchantment Recipe
+- Enchantments: 1 / 1
+- +30 to Energy
+- +30 to Vitality
+
+</details>
 
 <details>
 <summary>Removed recipes (2)</summary>
@@ -44,10 +106,15 @@ dateCreated: 2026-10-27T03:21:35.592Z
 </details>
 
 <details>
-<summary>Item Crafting Recipe — 2 modified, 133 added, 101 removed</summary>
+<summary>Item Crafting Recipe — 3 modified, 141 added, 101 removed</summary>
 
 <details>
-<summary>Modified recipes (2)</summary>
+<summary>Modified recipes (3)</summary>
+
+#### Magic Amulet + Amethyst + Topaz + Sapphire + Emerald + Ruby + Diamond → Magic Amulet (Forced prefix)
+
+- Crafting category or notes: Item Crafting Recipe (was none).
+- Result forced magic prefix changed.
 
 #### Magic Helm + Orb of Infusion + Ral Rune + Gem → New Rare Helm (same base type)
 
@@ -62,7 +129,7 @@ dateCreated: 2026-10-27T03:21:35.592Z
 </details>
 
 <details>
-<summary>Added recipes (133)</summary>
+<summary>Added recipes (141)</summary>
 
 #### Amazon-only recipe: Magic Shield + Orb of Infusion + Thul Rune + Gem → New Rare Shield (same base type)
 
@@ -116,6 +183,9 @@ dateCreated: 2026-10-27T03:21:35.592Z
 - +1 to Assassin Skill Levels
 - +(10-15)% Increased Attack Speed
 
+#### Axe \[N\] + Knife → Normal Quality Throwing Axe \[N\]
+
+
 #### Barbarian-only recipe: Magic Shield + Orb of Infusion + Thul Rune + Gem → New Rare Shield (same base type)
 
 - +1 to Barbarian Skill Levels
@@ -167,6 +237,9 @@ dateCreated: 2026-10-27T03:21:35.592Z
 
 - +1 to Druid Skill Levels
 - +(10-15)% Increased Attack Speed
+
+#### Knife + Diamond + Staff + Belt → Magic Polearm (Forced prefix)
+
 
 #### Magic Amulet + Eld Rune + El Rune → New Magic Amulet (same base type)
 
@@ -380,6 +453,9 @@ dateCreated: 2026-10-27T03:21:35.592Z
 
 - 100% Chance to cast level 1 Fade when you Level-Up
 
+#### Magic Ring + Emerald + Antidote Potion → Magic Ring (Forced prefix)
+
+
 #### Magic Ring + Magic Jewel + Amn Rune + Amethyst → New Crafted Ring (same base type)
 
 - +(4-10)% Mana Regeneration
@@ -407,6 +483,15 @@ dateCreated: 2026-10-27T03:21:35.592Z
 #### Magic Ring + Orb of Infusion + Topaz → New Rare Ring (same base type)
 
 - +20% Chance Items Roll Magic or Better
+
+#### Magic Ring + Ruby + Exploding Potion → Magic Ring (Forced prefix)
+
+
+#### Magic Ring + Sapphire + Thawing Potion → Magic Ring (Forced prefix)
+
+
+#### Magic Ring + Topaz + Rejuvenation Potion → Magic Ring (Forced prefix)
+
 
 #### Magic Shield + Eld Rune + El Rune → New Magic Shield (same base type)
 
@@ -461,6 +546,9 @@ dateCreated: 2026-10-27T03:21:35.592Z
 - 5% Chance to cast level 4 Frost Nova when struck
 - Attacker Takes Damage of (3-7)
 - +(35-60)% Enhanced Weapon Damage
+
+#### Magic Weapon + Ruby + 4 × Healing Potion → New Magic Weapon (Forced suffix) (same base type)
+
 
 #### Necromancer-only recipe: Magic Shield + Orb of Infusion + Thul Rune + Gem → New Rare Shield (same base type)
 
@@ -746,6 +834,9 @@ dateCreated: 2026-10-27T03:21:35.592Z
 
 - +1 to Sorceress Skill Levels
 - +(10-15)% Increased Attack Speed
+
+#### Spear + Arrows → Normal Quality Javelin \[N\]
+
 
 #### Warlock-only recipe: Magic Shield + Orb of Infusion + Thul Rune + Gem → New Rare Shield (same base type)
 
@@ -2422,8 +2513,9 @@ dateCreated: 2026-10-27T03:21:35.592Z
 ##### Armor + Orb of Conversion + Grit Rune (#37) + Zod Rune + Unique Jewel → Original Armor
 
 - Enchantments: 1 / 1
-- +1% to All Maximum Resistances
+- +1 to All Skills
 - +5% to All Attributes
+- Indestructible
 
 ##### Armor + Orb of Infusion + Amethyst + Fal Rune + Magic Jewel → Original Armor
 
@@ -5106,7 +5198,87 @@ dateCreated: 2026-10-27T03:21:35.592Z
 </details>
 
 <details>
-<summary>Sunder Item Crafting Recipe — 0 modified, 1 added, 0 removed</summary>
+<summary>Reroll Item Recipe — 1 modified, 10 added, 0 removed</summary>
+
+<details>
+<summary>Modified recipes (1)</summary>
+
+#### 3 × Unique Latent Sunder Charm → Unique Latent Sunder Charm
+
+- Added ingredient: 3 × Unique Latent Sunder Charm
+- Removed ingredient: 3 × Unique Grand Charm
+- Result: Unique Latent Sunder Charm (was Unique Grand Charm).
+
+</details>
+
+<details>
+<summary>Added recipes (10)</summary>
+
+#### Set Amulet + Orb of Assemblage + 5 × Orb of Renewal → New Amulet (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Armor + Orb of Assemblage + 5 × Orb of Renewal → New Armor (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Ring + Orb of Assemblage + 5 × Orb of Renewal → New Ring (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Weapon + Orb of Assemblage + 5 × Orb of Renewal → New Weapon (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Amulet + Orb of Conversion + 5 × Orb of Renewal → New Amulet (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Armor + Orb of Conversion + 5 × Orb of Renewal → New Armor (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Arrows + Orb of Conversion + 5 × Orb of Renewal → New Arrows (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Bolts + Orb of Conversion + 5 × Orb of Renewal → New Bolts (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Ring + Orb of Conversion + 5 × Orb of Renewal → New Ring (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Weapon + Orb of Conversion + 5 × Orb of Renewal → New Weapon (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+</details>
+
+</details>
+
+<details>
+<summary>Sunder Item Crafting Recipe — 6 modified, 1 added, 0 removed</summary>
+
+<details>
+<summary>Modified recipes (6)</summary>
+
+#### Gem Bag + Renewed Black Cleft + Hel Rune → Return Gem Bag, Update Gem Credits (Keep Modifiers) / Latent Black Cleft
+
+- Crafting category or notes: Sunder Item Crafting Recipe (was none).
+
+#### Gem Bag + Renewed Bone Break + Hel Rune → Return Gem Bag, Update Gem Credits (Keep Modifiers) / Latent Bone Break
+
+- Crafting category or notes: Sunder Item Crafting Recipe (was none).
+
+#### Gem Bag + Renewed Cold Rupture + Hel Rune → Return Gem Bag, Update Gem Credits (Keep Modifiers) / Latent Cold Rupture
+
+- Crafting category or notes: Sunder Item Crafting Recipe (was none).
+
+#### Gem Bag + Renewed Crack of the Heavens + Hel Rune → Return Gem Bag, Update Gem Credits (Keep Modifiers) / Latent Crack of the Heavens
+
+- Crafting category or notes: Sunder Item Crafting Recipe (was none).
+
+#### Gem Bag + Renewed Flame Rift + Hel Rune → Return Gem Bag, Update Gem Credits (Keep Modifiers) / Latent Flame Rift
+
+- Crafting category or notes: Sunder Item Crafting Recipe (was none).
+
+#### Gem Bag + Renewed Rotting Fissure + Hel Rune → Return Gem Bag, Update Gem Credits (Keep Modifiers) / Latent Rotting Fissure
+
+- Crafting category or notes: Sunder Item Crafting Recipe (was none).
+
+</details>
 
 <details>
 <summary>Added recipes (1)</summary>
@@ -5123,7 +5295,82 @@ dateCreated: 2026-10-27T03:21:35.592Z
 </details>
 
 <details>
-<summary>Uber Charm Upgrade Recipe — 4 modified, 6 added, 10 removed</summary>
+<summary>Tristram Uber Souls Recipe — 0 modified, 10 added, 10 removed</summary>
+
+<details>
+<summary>Added recipes (10)</summary>
+
+#### Set Amulet + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Amulet (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Armor + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Armor (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Ring + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Ring (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Weapon + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Weapon (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Amulet + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Amulet (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Armor + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Armor (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Arrows + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Arrows (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Bolts + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Bolts (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Ring + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Ring (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Weapon + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Weapon (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+</details>
+
+<details>
+<summary>Removed recipes (10)</summary>
+
+#### Set Amulet + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Amulet (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Armor + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Armor (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Ring + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Ring (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Set Weapon + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Weapon (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Amulet + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Amulet (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Armor + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Armor (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Arrows + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Arrows (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Bolts + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Bolts (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Ring + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Ring (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+#### Unique Weapon + Orb of Corruption + Mephisto's Animus + Baal's Calamity + Diablo's Ire → New Weapon (Regenerate Unique (Reroll if Base Upgraded)) (same base type)
+
+
+</details>
+
+</details>
+
+<details>
+<summary>Uber Charm Upgrade Recipe — 4 modified, 9 added, 10 removed</summary>
 
 <details>
 <summary>Modified recipes (4)</summary>
@@ -5151,7 +5398,7 @@ dateCreated: 2026-10-27T03:21:35.592Z
 </details>
 
 <details>
-<summary>Added recipes (6)</summary>
+<summary>Added recipes (9)</summary>
 
 #### Hellfire Torch + Orb of Corruption + Standard of Heroes → Obsidian Beacon
 
@@ -5191,6 +5438,39 @@ dateCreated: 2026-10-27T03:21:35.592Z
 - Upgrades: 1 / 6
 - +2 to all Attributes
 - +2% to All Resistances
+
+#### strCubeRelicUpgradeTitle
+
+- Ingredients:
+  - Relic of the Ancients
+  - Orb of Shadows
+  - Hev Rune (#39)
+- Results:
+  - Relic of the Ancients
+    - +1 to Your Class Skill Levels
+    - +5% to All Maximum Resistances
+
+#### strCubeRelicUpgradeTitle
+
+- Ingredients:
+  - Relic of the Ancients
+  - Orb of Shadows
+  - Dem Rune (#38)
+- Results:
+  - Relic of the Ancients
+    - +1 to Your Class Skill Levels
+    - +5% Magic Resistance
+
+#### strCubeRelicUpgradeTitle
+
+- Ingredients:
+  - Relic of the Ancients
+  - Orb of Shadows
+  - Grit Rune (#37)
+- Results:
+  - Relic of the Ancients
+    - +1 to Your Class Skill Levels
+    - +5% Increased Maximum Life
 
 </details>
 
@@ -5270,207 +5550,7 @@ dateCreated: 2026-10-27T03:21:35.592Z
 </details>
 
 <details>
-<summary>Other recipes — 1 modified, 38 added, 2 removed</summary>
-
-<details>
-<summary>Modified recipes (1)</summary>
-
-#### Magic Amulet + Amethyst + Topaz + Sapphire + Emerald + Ruby + Diamond → Magic Amulet (Forced prefix)
-
-- Result forced magic prefix changed.
-
-</details>
-
-<details>
-<summary>Added recipes (38)</summary>
-
-#### Amazon-only recipe: Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients
-
-- +1 to Amazon Skill Levels
-- +5% Magic Resistance
-
-#### Amazon-only recipe: Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients
-
-- +1 to Amazon Skill Levels
-- +5% Increased Maximum Life
-
-#### Amazon-only recipe: Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients
-
-- +1 to Amazon Skill Levels
-- +5% to All Maximum Resistances
-
-#### Assassin-only recipe: Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients
-
-- +1 to Assassin Skill Levels
-- +5% Magic Resistance
-
-#### Assassin-only recipe: Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients
-
-- +1 to Assassin Skill Levels
-- +5% Increased Maximum Life
-
-#### Assassin-only recipe: Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients
-
-- +1 to Assassin Skill Levels
-- +5% to All Maximum Resistances
-
-#### Axe \[N\] + Knife → Normal Quality Throwing Axe \[N\]
-
-
-#### Barbarian-only recipe: Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients
-
-- +1 to Barbarian Skill Levels
-- +5% Magic Resistance
-
-#### Barbarian-only recipe: Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients
-
-- +1 to Barbarian Skill Levels
-- +5% Increased Maximum Life
-
-#### Barbarian-only recipe: Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients
-
-- +1 to Barbarian Skill Levels
-- +5% to All Maximum Resistances
-
-#### Druid-only recipe: Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients
-
-- +1 to Druid Skill Levels
-- +5% Magic Resistance
-
-#### Druid-only recipe: Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients
-
-- +1 to Druid Skill Levels
-- +5% Increased Maximum Life
-
-#### Druid-only recipe: Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients
-
-- +1 to Druid Skill Levels
-- +5% to All Maximum Resistances
-
-#### Knife + Diamond + Staff + Belt → Magic Polearm (Forced prefix)
-
-
-#### Magic Ring + Emerald + Antidote Potion → Magic Ring (Forced prefix)
-
-
-#### Magic Ring + Ruby + Exploding Potion → Magic Ring (Forced prefix)
-
-
-#### Magic Ring + Sapphire + Thawing Potion → Magic Ring (Forced prefix)
-
-
-#### Magic Ring + Topaz + Rejuvenation Potion → Magic Ring (Forced prefix)
-
-
-#### Magic Weapon + Ruby + 4 × Healing Potion → New Magic Weapon (Forced suffix) (same base type)
-
-
-#### Necromancer-only recipe: Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients
-
-- +1 to Necromancer Skill Levels
-- +5% Magic Resistance
-
-#### Necromancer-only recipe: Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients
-
-- +1 to Necromancer Skill Levels
-- +5% Increased Maximum Life
-
-#### Necromancer-only recipe: Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients
-
-- +1 to Necromancer Skill Levels
-- +5% to All Maximum Resistances
-
-#### Paladin-only recipe: Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients
-
-- +1 to Paladin Skill Levels
-- +5% Magic Resistance
-
-#### Paladin-only recipe: Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients
-
-- +1 to Paladin Skill Levels
-- +5% Increased Maximum Life
-
-#### Paladin-only recipe: Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients
-
-- +1 to Paladin Skill Levels
-- +5% to All Maximum Resistances
-
-#### Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients / Orb of Shadows / Dem Rune (#38)
-
-- Results:
-  - Original Relic of the Ancients
-  - Orb of Shadows
-  - Dem Rune (#38)
-
-#### Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients / Orb of Shadows / Dem Rune (#38)
-
-- Results:
-  - Original Relic of the Ancients
-  - Orb of Shadows
-  - Dem Rune (#38)
-
-#### Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients / Orb of Shadows / Grit Rune (#37)
-
-- Results:
-  - Original Relic of the Ancients
-  - Orb of Shadows
-  - Grit Rune (#37)
-
-#### Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients / Orb of Shadows / Grit Rune (#37)
-
-- Results:
-  - Original Relic of the Ancients
-  - Orb of Shadows
-  - Grit Rune (#37)
-
-#### Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients / Orb of Shadows / Hev Rune (#39)
-
-- Results:
-  - Original Relic of the Ancients
-  - Orb of Shadows
-  - Hev Rune (#39)
-
-#### Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients / Orb of Shadows / Hev Rune (#39)
-
-- Results:
-  - Original Relic of the Ancients
-  - Orb of Shadows
-  - Hev Rune (#39)
-
-#### Sorceress-only recipe: Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients
-
-- +1 to Sorceress Skill Levels
-- +5% Magic Resistance
-
-#### Sorceress-only recipe: Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients
-
-- +1 to Sorceress Skill Levels
-- +5% Increased Maximum Life
-
-#### Sorceress-only recipe: Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients
-
-- +1 to Sorceress Skill Levels
-- +5% to All Maximum Resistances
-
-#### Spear + Arrows → Normal Quality Javelin \[N\]
-
-
-#### Warlock-only recipe: Relic of the Ancients + Orb of Shadows + Dem Rune (#38) → Original Relic of the Ancients
-
-- +1 to Warlock Skills
-- +5% Magic Resistance
-
-#### Warlock-only recipe: Relic of the Ancients + Orb of Shadows + Grit Rune (#37) → Original Relic of the Ancients
-
-- +1 to Warlock Skills
-- +5% Increased Maximum Life
-
-#### Warlock-only recipe: Relic of the Ancients + Orb of Shadows + Hev Rune (#39) → Original Relic of the Ancients
-
-- +1 to Warlock Skills
-- +5% to All Maximum Resistances
-
-</details>
+<summary>Other recipes — 0 modified, 0 added, 2 removed</summary>
 
 <details>
 <summary>Removed recipes (2)</summary>

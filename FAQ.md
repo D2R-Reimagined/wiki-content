@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-10-30T13:43:43.311Z
+date: 2026-10-30T14:40:29.878Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -17,8 +17,12 @@ A: Yes, the mod is 100% compatible without the DLC. Heralds spawn, Worldstone sh
 **Q: Can you increase the stack size in the DLC tabs higher than 99?**
 A: You can use D2RLoader to increase the stash stack size to 255. Otherwise, no it is engine limited.
 
+
+**Q: I already killed hell quest Baal how can i get a Forsaken token to enter the Forsaken Labyrinth?**
+A: Kill hell Corpsefire in the den of evil if you have already killed quest baal previously.
+
 **Q: When will the next ladder start?**
-A: very soon™, reveal stream is listed in the discord
+A: October 30th 2pm EST
 
 **Q: Can you make the chronicle work with the unique and set items that the mod adds?**
 A: No. SnowCo limited the entries beyond vanilla to a 2-300 more before it starts causing constant crashing and we add almost 1,000. There is a script to just [100% it here](https://discord.com/channels/898562996715012096/910921404571070515/1502460774860197940), but read the directions. 

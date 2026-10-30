@@ -2,7 +2,7 @@
 title: D2R Reimagined Patch 3.1.0 Item Changes
 description: A list of item changes additions and removals in patch 3.1.0
 published: true
-date: 2026-10-27T23:03:54.075Z
+date: 2026-10-30T04:39:17.207Z
 tags: patch, item changes
 editor: markdown
 dateCreated: 2026-10-27T02:09:31.599Z
@@ -14,18 +14,18 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 | Category | Added | Removed | Modified | Unchanged | Nested changes |
 |---|---:|---:|---:|---:|---|
-| Uniques | 4 | 2 | 337 | 1101 | — |
-| Sets | 0 | 0 | 57 | 50 | 0 added, 0 removed, 85 modified |
-| Runewords | 10 | 2 | 137 | 72 | — |
+| Uniques | 7 | 5 | 363 | 1072 | — |
+| Sets | 0 | 0 | 57 | 50 | 0 added, 0 removed, 89 modified |
+| Runewords | 11 | 2 | 130 | 79 | — |
 | Base armor | 0 | 0 | 45 | 172 | 0 added, 0 removed, 60 modified |
 | Base weapons | 0 | 0 | 0 | 297 | 0 added, 0 removed, 0 modified |
 | Magic prefixes | 8 | 4 | 15 | 1056 | — |
-| Magic suffixes | 2 | 0 | 21 | 745 | — |
+| Magic suffixes | 1 | 0 | 21 | 745 | — |
 
 ## Uniques
 
 <details>
-<summary>Uniques — 4 added, 2 removed, 337 modified</summary>
+<summary>Uniques — 7 added, 5 removed, 363 modified</summary>
 
 <details>
 <summary>Amazon Bow (2 changed: 2 modified)</summary>
@@ -34,9 +34,21 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 ##### Abyssal Torment
 
+- Changed details:
+  - Equipment Damage Types Average Damage: 421 (was 244.75)
+  - Item Level: 107 (was 90)
 - Property changes:
   - Lines:
-    - Changed: 5% Chance to cast level 10 Dim Vision on striking (was 10%)
+    - Changed: 5% Chance to cast level 5 Dim Vision on striking (was 10% Chance to cast level 10)
+    - Changed: +(380-420)% Enhanced Weapon Damage (was +(300-395)%)
+    - Changed: +3.5 to Maximum Weapon Damage (Based on Character Level) (was +2)
+    - Added: +2 to Amazon Skill Levels
+    - Added: +(150-200) to Minimum Weapon Damage
+    - Added: -15% to Enemy Physical Damage Resistance
+    - Removed: +1 to Amplify Damage (oskill)
+    - Removed: +(3-5) to Valkyrie (Amazon Only)
+  - Base damage type 1 properties:
+    - Changed: Two-Hand Damage: 246-304 to 540-594 (was 80-99 to 368-432)
 
 ##### Wintershock
 
@@ -49,7 +61,86 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Amazon Spear (2 changed: 2 modified)</summary>
+<summary>Amazon Javelin (2 changed: 1 added, 1 modified)</summary>
+
+#### Added
+
+##### Athulua's Venom
+
+- Rarity: 2
+- Item Level: 107
+- Required Level: 90
+- Base Item: Matriarchal Javelin \[E\]
+- Required Class: Amazon
+- Damage Types:
+  - Damage type 1
+    - Average Damage: 189
+  - Damage type 2
+    - Average Damage: 227.25
+- Properties:
+  - Lines:
+    - +5 to Melee Mastery (oskill)
+    - +(3-4) to Amazon Skill Levels
+    - +(300-400)% Enhanced Weapon Damage
+    - +(20-30)% to Poison Skill Damage
+    - -(15-20)% to Enemy Poison Resistance
+    - +(10-15)% Life stolen per hit
+    - +(2-3) to Toxic Whirl (Amazon Only)
+    - Replenishes quantity
+  - Base damage type 1 properties:
+    - Damage: 120-150 to 216-270
+  - Base damage type 2 properties:
+    - Throw Damage: 140-175 to 264-330
+  - Equipment Lines:
+    - Durability: 250 of 250
+    - Required Strength: 107
+    - Required Dexterity: 151
+    - (Amazon Only)
+
+#### Modified
+
+##### Thunderstroke
+
+- Property changes:
+  - Lines:
+    - Added: 10% Chance to cast level 20 Arc on attack
+    - Removed: 10% Chance to cast level 20 Arc on striking
+
+</details>
+
+<details>
+<summary>Amazon Spear (3 changed: 1 added, 2 modified)</summary>
+
+#### Added
+
+##### Kethryes' Fury
+
+- Rarity: 1
+- Item Level: 107
+- Required Level: 90
+- Base Item: Matriarchal Pike \[E\]
+- Required Class: Amazon
+- Damage Types:
+  - Damage type 1
+    - Average Damage: 451
+- Properties:
+  - Lines:
+    - 10% Chance to cast level 10 Static Field on attack
+    - 10% Chance to cast level 20 Arc on attack
+    - +(4-5) to Amazon Skill Levels
+    - +40% Increased Attack Speed
+    - +(350-400)% Enhanced Weapon Damage
+    - +(30-40)% to Lightning Skill Damage
+    - -20% to Enemy Lightning Resistance
+    - +10% Life stolen per hit
+    - +(3-5) to Lightning Strike (Amazon Only)
+  - Base damage type 1 properties:
+    - Two-Hand Damage: 166-185 to 688-765
+  - Equipment Lines:
+    - Durability: 250 of 250
+    - Required Strength: 132
+    - Required Dexterity: 149
+    - (Amazon Only)
 
 #### Modified
 
@@ -83,7 +174,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Armor (17 changed: 17 modified)</summary>
+<summary>Armor (19 changed: 19 modified)</summary>
 
 #### Modified
 
@@ -97,7 +188,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Changed details:
   - Base Item: Great Hauberk \[E\] (was Breast Plate \[N\])
-  - Item Level: 105 (was 10)
+  - Item Level: 107 (was 10)
   - Required Level: 90 (was 25)
 - Property changes:
   - Lines:
@@ -123,11 +214,23 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Changed: 10% Chance to cast level 8 Chilling Armor when struck (was 15%)
 
+##### Evening Sky
+
+- Property changes:
+  - Lines:
+    - Changed: +(20-30)% Faster Run/Walk Speed (was +30%)
+    - Changed: +(30-50) to Life (was +50)
+    - Changed: +(30-50) to Mana (was +50)
+    - Added: Adds 30-50 Weapon Magic Damage
+    - Added: +(5-10)% to Magic Skill Damage
+    - Removed: Adds 75-150 Weapon Fire Damage
+    - Removed: +75% Fire Resistance
+
 ##### Ghostly Chainmail
 
 - Changed details:
   - Base Item: Boneweave \[E\] (was Chain Mail \[N\])
-  - Item Level: 105 (was 8)
+  - Item Level: 107 (was 8)
   - Required Level: 90 (was 23)
 - Property changes:
   - Lines:
@@ -182,7 +285,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Lachdanan's Heart
 
 - Changed details:
-  - Item Level: 105 (was 85)
+  - Item Level: 107 (was 85)
 - Property changes:
   - Lines:
     - Changed: +(2-3) to All Skills (was +1)
@@ -201,7 +304,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Legacy of the Eternals
 
 - Changed details:
-  - Item Level: 105 (was 85)
+  - Item Level: 107 (was 85)
 - Property changes:
   - Lines:
     - Changed: +(2-3) to All Skills (was +(1-2))
@@ -236,7 +339,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Changed details:
   - Base Item: Balrog Skin \[E\] (was Scale Mail \[N\])
-  - Item Level: 105 (was 6)
+  - Item Level: 107 (was 6)
   - Required Level: 90 (was 21)
 - Property changes:
   - Lines:
@@ -272,12 +375,12 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Shadowtrick
 
 - Changed details:
-  - Item Level: 105 (was 84)
+  - Item Level: 107 (was 84)
 - Property changes:
   - Lines:
-    - Changed: Level (8-10) Conviction Aura When Equipped (was Level (4-8))
-    - Changed: +(2-3) to All Skills (was +(1-2))
-    - Changed: +(10-15)% to All Elemental Skill Damage (was +10%)
+    - Changed: Level (8-12) Conviction Aura When Equipped (was Level (4-8))
+    - Changed: +(3-4) to All Skills (was +(1-2))
+    - Changed: +(15-25)% to All Elemental Skill Damage (was +10%)
     - Changed: +(200-300)% Enhanced Defense (was +(150-200)%)
   - Equipment Lines:
     - Changed: Defense: 1674-2232 (was 1395-1674)
@@ -332,10 +435,17 @@ dateCreated: 2026-10-27T02:09:31.599Z
     - Changed: Durability: 60 of 60 (was 50 of 50)
     - Changed: Required Strength: 103 (was 65)
 
+##### Will-O'-Wisp
+
+- Property changes:
+  - Lines:
+    - Added: +10% to Magic Skill Damage
+    - Removed: +1 to Evade (oskill)
+
 </details>
 
 <details>
-<summary>Assassin Claw (12 changed: 12 modified)</summary>
+<summary>Assassin Claw (17 changed: 17 modified)</summary>
 
 #### Modified
 
@@ -367,6 +477,47 @@ dateCreated: 2026-10-27T02:09:31.599Z
     - Removed: +1 to Assassin Skill Levels
     - Removed: Slows Target by 20%
 
+##### Chromablade
+
+- Changed details:
+  - Equipment Damage Types Average Damage: 39.5 (was 17.25)
+  - Base Item: Wrist Sword \[E\] (was Sabre \[N\])
+  - Item Level: 62 (was 1)
+  - Required Level: 66 (was 15)
+  - Type: Assassin Claw (was Sword)
+- Property changes:
+  - Lines:
+    - Added: +(2-3) to Traps (Assassin Only)
+    - Added: +(10-15)% Increased Attack Speed
+    - Added: -(5-10)% to All Enemy Elemental Resistances
+    - Added: +(5-10)% to All Elemental Skill Damage
+    - Added: +(10-15)% to All Resistances
+    - Removed: 20% Chance to cast level 5 Ice Bolt when struck
+    - Removed: 20% Chance to cast level 5 Charged Bolt when struck
+    - Removed: 20% Chance to cast level 5 Fire Bolt when struck
+    - Removed: +(100-150)% Enhanced Weapon Damage
+    - Removed: Adds 5-5 Weapon Damage
+  - Base damage type 1 properties:
+    - Added: Damage: 34 to 45
+    - Removed: Damage: 11-12 to 21-25
+  - Equipment Lines:
+    - Changed: Required Strength: 105 (was 25)
+    - Changed: Required Dexterity: 105 (was 25)
+
+##### Cold of Winter
+
+- Changed details:
+  - Item Level: 107 (was 85)
+  - Required Level: 85 (was 83)
+- Property changes:
+  - Lines:
+    - Changed: +(2-3) to Traps (Assassin Only) (was +(1-3))
+    - Changed: +10 to Chilling Armor (oskill) (was +5)
+    - Changed: +(20-25)% to Cold Skill Damage (was +(10-15)%)
+    - Changed: -(30-35)% to Enemy Cold Resistance (was -(15-20)%)
+    - Changed: +(3-4) to Snowlash Sentry (Assassin Only) (was +(2-4))
+    - Changed: +(3-4) to Glacial Burst Sentry (Assassin Only) (was +(2-4))
+
 ##### Dark Demesne
 
 - Property changes:
@@ -380,12 +531,54 @@ dateCreated: 2026-10-27T02:09:31.599Z
     - Added: 10% Chance to cast level 5 Infernal Orb on attack
     - Removed: 10% Chance to cast level 5 Infernal Orb on striking
 
+##### Flaming Fist
+
+- Changed details:
+  - Item Level: 107 (was 83)
+  - Required Level: 85 (was 84)
+- Property changes:
+  - Lines:
+    - Changed: +(2-3) to Traps (Assassin Only) (was +(1-3))
+    - Changed: +10 to Warmth (oskill) (was +5)
+    - Changed: +(20-30)% Increased Attack Speed (was +(15-20)%)
+    - Changed: +(25-30)% to Fire Skill Damage (was +(15-20)%)
+    - Changed: -(25-30)% to Enemy Fire Resistance (was -(10-15)%)
+    - Changed: +(3-4) to Wake of Fire (Assassin Only) (was +(2-4))
+    - Changed: +(3-4) to Flameburst Sentry (Assassin Only) (was +(2-4))
+
 ##### Full Suffering
 
 - Property changes:
   - Lines:
     - Added: 10% Chance to cast level 5 Amplify Damage on attack
     - Removed: 20% Chance to cast level 5 Amplify Damage on striking
+
+##### Liege Reaver
+
+- Changed details:
+  - Equipment Damage Types Average Damage: 146.75 (was 26.5)
+  - Base Item: Battle Cestus \[E\] (was Cestus \[N\])
+  - Item Level: 73 (was 12)
+  - Required Level: 70 (was 15)
+  - Equipment Required Class: None (was Assassin)
+- Property changes:
+  - Lines:
+    - Changed: +(200-250)% Enhanced Weapon Damage (was +(65-90)%)
+    - Changed: +25% Chance of Open Wounds (was +15%)
+    - Added: 15% Chance to cast level 20 Storm Pulse on attack
+    - Added: +20% Increased Attack Speed
+    - Added: +(30-50) to Maximum Weapon Damage
+    - Added: +(5-10)% Life stolen per hit
+    - Removed: +(1-2) to Martial Arts (Assassin Only)
+    - Removed: Adds 5-10 Weapon Damage
+    - Removed: Repairs 1 durability in 25 seconds
+  - Base damage type 1 properties:
+    - Changed: Damage: 108-126 to 156-197 (was 16-18 to 34-38)
+  - Equipment Lines:
+    - Changed: Durability: 250 of 250 (was 325 of 325)
+    - Changed: Required Strength: 110 (was 42)
+    - Changed: Required Dexterity: 110 (was 42)
+    - Removed: (Assassin Only)
 
 ##### Martial Law
 
@@ -396,6 +589,8 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 ##### Shadow Killer
 
+- Changed details:
+  - Item Level: 73 (was 75)
 - Property changes:
   - Lines:
     - Added: 15% Chance to cast level 20 Winter's Pulse on attack
@@ -414,6 +609,20 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Added: 10% Chance to cast level 1 Storm Pulse on attack
     - Removed: 10% Chance to cast level 1 Storm Pulse on striking
+
+##### Storm Talons
+
+- Changed details:
+  - Item Level: 107 (was 85)
+- Property changes:
+  - Lines:
+    - Changed: +(2-3) to Traps (Assassin Only) (was +(1-3))
+    - Changed: +20 to Cyclone Armor (oskill) (was +5)
+    - Changed: +(20-30)% Increased Attack Speed (was +(15-20)%)
+    - Changed: +(30-35)% to Lightning Skill Damage (was +(15-20)%)
+    - Changed: -(20-25)% to Enemy Lightning Resistance (was -(10-15)%)
+    - Changed: +(3-4) to Charged Bolt Sentry (Assassin Only) (was +(2-4))
+    - Changed: +(3-4) to Lightning Sentry (Assassin Only) (was +(2-4))
 
 ##### Troll's Touch
 
@@ -484,7 +693,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Frost Wyrm
 
 - Changed details:
-  - Item Level: 105 (was 80)
+  - Item Level: 107 (was 80)
 - Property changes:
   - Lines:
     - Added: 15% Chance to cast level 30 Winter's Pulse on attack
@@ -743,7 +952,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Insight of the Ancients
 
 - Changed details:
-  - Item Level: 105 (was 86)
+  - Item Level: 107 (was 86)
 - Property changes:
   - Lines:
     - Changed: +(2-3) to All Skills (was +2)
@@ -983,7 +1192,31 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Boots (29 changed: 29 modified)</summary>
+<summary>Boots (29 changed: 1 removed, 28 modified)</summary>
+
+#### Removed
+
+##### Wild Horses
+
+- Rarity: 1
+- Item Level: 65
+- Required Level: 65
+- Base Item: Myrmidon Greaves \[E\]
+- Required Class: None
+- Properties:
+  - Lines:
+    - +40% Faster Run/Walk Speed
+    - +40% Faster Hit Recovery
+    - +(10-15) Kick Damage
+    - +(10-15)% Deadly Strike
+    - +(125-200)% Enhanced Defense
+    - +25 to Strength
+    - +25 to Dexterity
+  - Equipment Lines:
+    - Defense: 162-216
+    - Kick Damage: 83 to 149
+    - Durability: 24 of 24
+    - Required Strength: 208
 
 #### Modified
 
@@ -1152,15 +1385,11 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Equipment Lines:
     - Changed: Durability: 20 of 20 (was 16 of 16)
 
-##### Wild Horses
-
-- Property changes:
-  - Equipment Lines:
-    - Changed: Durability: 32 of 32 (was 24 of 24)
-
 ##### Wraithstep
 
 - Property changes:
+  - Lines:
+    - Removed: Random Grouped Affix
   - Equipment Lines:
     - Changed: Durability: 26 of 26 (was 18 of 18)
 
@@ -1175,14 +1404,19 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 ##### Zero Effect
 
+- Changed details:
+  - Base Item: Myrmidon Greaves \[E\] (was Mirrored Boots \[E\])
 - Property changes:
   - Equipment Lines:
-    - Changed: Durability: 26 of 26 (was 18 of 18)
+    - Changed: Defense: 165-194 (was 158-186)
+    - Changed: Kick Damage: 83 to 149 (was 50 to 145)
+    - Changed: Durability: 32 of 32 (was 18 of 18)
+    - Changed: Required Strength: 208 (was 163)
 
 </details>
 
 <details>
-<summary>Bow (8 changed: 8 modified)</summary>
+<summary>Bow (9 changed: 9 modified)</summary>
 
 #### Modified
 
@@ -1232,7 +1466,16 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: 10% Chance to cast level 20 Arc on striking (was 15%)
+    - Changed: 10% Chance to cast level 10 Arc on striking (was 15% Chance to cast level 20)
+
+##### Patron of Perversity
+
+- Property changes:
+  - Lines:
+    - Added: +5 to Sanctuary (oskill)
+    - Added: +(15-20)% to Magic Skill Damage
+    - Removed: +6 to Fanaticism (oskill)
+    - Removed: +25% Faster Hit Recovery
 
 ##### Razor Strike
 
@@ -1270,7 +1513,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Siege Beast Arrows
 
 - Changed details:
-  - Item Level: 105 (was 90)
+  - Item Level: 107 (was 90)
 - Property changes:
   - Lines:
     - Changed: +(2-3) to All Skills (was +(1-2))
@@ -1321,6 +1564,73 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Added: 15% Chance to cast level 2 Hailstorm on attack
     - Removed: 12% Chance to cast level 2 Hailstorm on striking
+
+</details>
+
+<details>
+<summary>Crafted Sunder Charm (6 changed: 6 modified)</summary>
+
+#### Modified
+
+##### Renewed Black Cleft
+
+- Property changes:
+  - Lines:
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+
+##### Renewed Bone Break
+
+- Property changes:
+  - Lines:
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+
+##### Renewed Cold Rupture
+
+- Property changes:
+  - Lines:
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+
+##### Renewed Crack of the Heavens
+
+- Property changes:
+  - Lines:
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+
+##### Renewed Flame Rift
+
+- Property changes:
+  - Lines:
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+
+##### Renewed Rotting Fissure
+
+- Property changes:
+  - Lines:
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
+    - Removed: Random Grouped Affix
 
 </details>
 
@@ -1387,7 +1697,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Echoes of Harrogath
 
 - Changed details:
-  - Item Level: 105 (was 90)
+  - Item Level: 107 (was 90)
 - Property changes:
   - Lines:
     - Changed: +(2-3) to All Skills (was +(1-2))
@@ -1401,9 +1711,46 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Druid Pelt (7 changed: 7 modified)</summary>
+<summary>Druid Pelt (13 changed: 1 added, 12 modified)</summary>
+
+#### Added
+
+##### Hemlir’s Demise
+
+- Rarity: 1
+- Item Level: 85
+- Required Level: 75
+- Base Item: Dream Spirit \[E\]
+- Required Class: Druid
+- Properties:
+  - Lines:
+    - +(3-5) to Shape Shifting Skills (Druid Only)
+    - +(30-40)% Enhanced Weapon Damage
+    - +(30-40)% Faster Hit Recovery
+    - +(200-300)% Enhanced Defense
+    - +5% to All Attributes
+    - +(20-30)% to All Resistances
+    - Physical Damage Reduced By (10-15)
+  - Equipment Lines:
+    - Defense: 480-640
+    - Durability: 20 of 20
+    - Required Strength: 118
+    - (Druid Only)
 
 #### Modified
+
+##### Call of the Kindred
+
+- Changed details:
+  - Item Level: 107 (was 85)
+- Property changes:
+  - Lines:
+    - Changed: +2 to Summoning Skills (Druid Only) (was +(1-2))
+
+##### Call of the Wild
+
+- Changed details:
+  - Item Level: 107 (was 85)
 
 ##### Centaur's Sight
 
@@ -1411,6 +1758,33 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Added: 10% Chance to cast level 5 Inner Sight on attack
     - Removed: 10% Chance to cast level 5 Inner Sight on striking
+
+##### Devourer of Dreams
+
+- Changed details:
+  - Base Item: Blood Spirit \[E\] (was Skull Cap \[N\])
+  - Item Level: 62 (was 1)
+  - Required Level: 60 (was 13)
+  - Type: Druid Pelt (was Helm)
+  - Equipment Required Class: Druid (was None)
+- Property changes:
+  - Lines:
+    - Added: 5% Chance to cast level 10 Hex: Bane on striking
+    - Added: 10% Chance to cast level 40 Eldritch Blast on attack
+    - Added: +2 to All Skills
+    - Added: +15% Increased Attack Speed
+    - Added: +30% Enhanced Weapon Damage
+    - Added: +(50-100)% Enhanced Defense
+    - Removed: +1 to Warmth (oskill)
+    - Removed: +15% Faster Cast Rate
+    - Removed: Knockback
+    - Removed: +(15-25) Defense
+    - Removed: Replenish +(3-5) Life per 10 Seconds
+  - Equipment Lines:
+    - Changed: Defense: 219-292 (was 23-36)
+    - Changed: Durability: 20 of 20 (was 18 of 18)
+    - Changed: Required Strength: 86 (was 15)
+    - Added: (Druid Only)
 
 ##### Dire Wolf Might
 
@@ -1425,6 +1799,31 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Added: Max Grizzly Bears capped to 1
 
+##### Nameweaver
+
+- Changed details:
+  - Base Item: Dream Spirit \[E\] (was Cap \[N\])
+  - Item Level: 85 (was 1)
+  - Required Level: 81 (was 8)
+  - Type: Druid Pelt (was Helm)
+  - Equipment Required Class: Druid (was None)
+- Property changes:
+  - Lines:
+    - Changed: +(200-300) Defense (was +(20-30))
+    - Added: Level (2-5) Cleansing Aura When Equipped
+    - Added: +(2-3) to Druid Skill Levels
+    - Added: -10% to All Enemy Elemental Resistances
+    - Added: +10% Magic Resistance
+    - Removed: +(5-10) to Maximum Weapon Damage
+    - Removed: +10 to Dexterity
+    - Removed: +45% Mana Regeneration
+    - Removed: +35% Lightning Resistance
+  - Equipment Lines:
+    - Changed: Defense: 309-459 (was 23-35)
+    - Changed: Durability: 20 of 20 (was 12 of 12)
+    - Added: Required Strength: 118
+    - Added: (Druid Only)
+
 ##### Phoenix Fall
 
 - Property changes:
@@ -1438,11 +1837,24 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Added: Max Grizzly Bears capped to 1
 
-##### Stone Hide
+##### Spirit Keeper
 
 - Property changes:
   - Lines:
+    - Changed: Level (3-5) Redemption Aura When Equipped (was Level 5)
+    - Changed: +(30-40)% Faster Hit Recovery (was +40%)
+    - Removed: +20% Magic Resistance
+
+##### Stone Hide
+
+- Changed details:
+  - Base Item: Earth Spirit \[E\] (was Dream Spirit \[E\])
+- Property changes:
+  - Lines:
     - Added: Reduces curse duration by 20%
+  - Equipment Lines:
+    - Changed: Defense: 612-688 (was 640-720)
+    - Changed: Required Strength: 260 (was 295)
 
 ##### Voltar's Feather
 
@@ -1884,9 +2296,16 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Helm (6 changed: 6 modified)</summary>
+<summary>Helm (7 changed: 7 modified)</summary>
 
 #### Modified
+
+##### Bane's Dark Wisdom
+
+- Property changes:
+  - Lines:
+    - Changed: +(10-20)% to Experience Gained (was +20%)
+    - Added: +(5-10)% to Magic Skill Damage
 
 ##### Blackhorn's Face
 
@@ -1937,7 +2356,39 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Javelin (3 changed: 3 modified)</summary>
+<summary>Javelin (4 changed: 1 removed, 3 modified)</summary>
+
+#### Removed
+
+##### Cadin'Sor
+
+- Rarity: 1
+- Item Level: 25
+- Required Level: 33
+- Base Item: Glaive \[N\]
+- Required Class: None
+- Damage Types:
+  - Damage type 1
+    - Average Damage: 63.25
+  - Damage type 2
+    - Average Damage: 78.25
+- Properties:
+  - Lines:
+    - +1 to Melee Mastery (oskill)
+    - +(80-100)% Enhanced Weapon Damage
+    - Adds 30-55 Weapon Damage
+    - +15 to Dexterity
+    - +(20-30)% Lightning Resistance
+    - +(15-25)% Poison Resistance
+    - Replenishes quantity
+  - Base damage type 1 properties:
+    - Damage: 39-40 to 85-89
+  - Base damage type 2 properties:
+    - Throw Damage: 58-62 to 94-99
+  - Equipment Lines:
+    - Durability: 250 of 250
+    - Required Strength: 52
+    - Required Dexterity: 35
 
 #### Modified
 
@@ -1976,6 +2427,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Required Level: 49 (was 58)
 - Property changes:
   - Lines:
+    - Added: Adds 20-40 Weapon Magic Damage
     - Added: -(3-5)% to Enemy Magic Resistance
     - Added: +(3-5)% to Magic Skill Damage
     - Removed: Adds 10-15 to 25-30 Damage
@@ -1987,15 +2439,16 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Rarity: 2 (was 1)
 - Property changes:
   - Lines:
-    - Changed: +(25-30)% Enhanced Weapon Damage (was +40%)
+    - Added: Adds 10-15 to 20-25 Damage
     - Added: +(3-5)% Deadly Strike
     - Added: +(3-5)% Chance of Open Wounds
+    - Removed: +40% Enhanced Weapon Damage
     - Removed: Adds 10-20 Weapon Damage
 
 </details>
 
 <details>
-<summary>Knife (7 changed: 7 modified)</summary>
+<summary>Knife (10 changed: 10 modified)</summary>
 
 #### Modified
 
@@ -2012,6 +2465,11 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: Slows Target by 10% (was (10-15)%)
+
+##### Bloodpact Shard
+
+- Changed details:
+  - Item Level: 70 (was 60)
 
 ##### Chimera's Claw
 
@@ -2030,6 +2488,32 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Added: +(3-5)% Life stolen per hit
     - Removed: +10% Chance of Crushing Blow
+
+##### Elven Mystral
+
+- Changed details:
+  - Item Level: 70 (was 55)
+
+##### Fall Of Myth Drannor
+
+- Changed details:
+  - Equipment Damage Types Average Damage: 45 (was 103.75)
+  - Item Level: 70 (was 55)
+  - Required Level: 70 (was 62)
+- Property changes:
+  - Lines:
+    - Changed: +(20-30)% Faster Cast Rate (was +35%)
+    - Changed: Drain -20 Life per 10 Seconds (was Drain -15)
+    - Changed: +(10-20)% Increased Maximum Mana (was +25%)
+    - Added: -(5-10)% to Enemy Magic Resistance
+    - Added: +(10-15)% to Magic Skill Damage
+    - Added: +(1-2) to Magic Skills
+    - Removed: +50% Faster Block Rate
+    - Removed: (50-75)% Increased Chance of Blocking
+    - Removed: Adds 20-40 to 75-100 Damage
+  - Base damage type 1 properties:
+    - Added: Damage: 37 to 53
+    - Removed: Damage: 57-77 to 128-153
 
 ##### Fleshripper
 
@@ -2200,13 +2684,13 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Jondar's Horde
 
 - Changed details:
-  - Item Level: 105 (was 70)
+  - Item Level: 107 (was 70)
   - Required Level: 85 (was 75)
 
 ##### Mehtan's Choice
 
 - Changed details:
-  - Item Level: 105 (was 70)
+  - Item Level: 107 (was 70)
   - Required Level: 85 (was 75)
 
 ##### Nightcrawler
@@ -2275,7 +2759,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Fortress of Morpheus
 
 - Changed details:
-  - Item Level: 105 (was 84)
+  - Item Level: 107 (was 84)
 - Property changes:
   - Lines:
     - Changed: +(150-200)% Enhanced Defense (was +175%)
@@ -2289,11 +2773,11 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### God's Word
 
 - Changed details:
-  - Item Level: 105 (was 75)
+  - Item Level: 107 (was 75)
 - Property changes:
   - Lines:
     - Changed: +(25-40)% Faster Cast Rate (was +20%)
-    - Added: +(2-3) to Summoning Skills (Necromancer Only)
+    - Added: +(2-3) to Combat Skills (Paladin Only)
     - Added: +(20-30)% to Magic Skill Damage
     - Removed: +(2-3) to Holy Bolt (Paladin Only)
     - Removed: +(3-5) to Fist of the Heavens (Paladin Only)
@@ -2440,7 +2924,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Ring (3 changed: 3 modified)</summary>
+<summary>Ring (4 changed: 4 modified)</summary>
 
 #### Modified
 
@@ -2450,6 +2934,18 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Added: 15% Chance to cast level 25 Twister on attack
     - Removed: 10% Chance to cast level 25 Twister on striking
+
+##### Opalvein
+
+- Property changes:
+  - Lines:
+    - Changed: +(10-20)% Faster Cast Rate (was +10%)
+    - Changed: +(10-15)% to All Resistances (was +(6-8)%)
+    - Changed: +(3-5) Life after each Kill (was +(1-3))
+    - Changed: +(3-5) Mana after each Kill (was +(1-3))
+    - Added: 5% Chance to cast level 20 Flame Wave when you Kill an Enemy
+    - Removed: 2% Chance to cast level 15 Flame Wave on attack
+    - Removed: Random Grouped Affix
 
 ##### Plantar Enlightenment
 
@@ -2632,19 +3128,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Small Charm (1 changed: 1 modified)</summary>
-
-#### Modified
-
-##### Black Soulstone
-
-- Property changes:
-  - Lines:
-    - Changed: +5% to Experience Gained (was +10%)
-
-</details>
-
-<details>
 <summary>Sorceress Orb (6 changed: 6 modified)</summary>
 
 #### Modified
@@ -2659,7 +3142,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Haven of Light
 
 - Changed details:
-  - Item Level: 105 (was 85)
+  - Item Level: 107 (was 85)
 - Property changes:
   - Lines:
     - Changed: +(3-4) to Sorceress Skill Levels (was +3)
@@ -2705,7 +3188,34 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Spear (11 changed: 11 modified)</summary>
+<summary>Spear (12 changed: 1 removed, 11 modified)</summary>
+
+#### Removed
+
+##### Dragon Turtle
+
+- Rarity: 1
+- Item Level: 25
+- Required Level: 32
+- Base Item: Spetum \[N\]
+- Required Class: None
+- Damage Types:
+  - Damage type 1
+    - Average Damage: 94
+- Properties:
+  - Lines:
+    - +1 to Barbarian Skill Levels
+    - +30% Increased Attack Speed
+    - Adds 50-100 Weapon Damage
+    - +(20-30)% to All Resistances
+    - +15% Physical Damage Reduction
+    - +(30-50)% Chance Items Roll Magic or Better
+  - Base damage type 1 properties:
+    - Two-Hand Damage: 65 to 123
+  - Equipment Lines:
+    - Durability: 310 of 310
+    - Required Strength: 54
+    - Required Dexterity: 35
 
 #### Modified
 
@@ -2790,7 +3300,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Staff (5 changed: 1 added, 4 modified)</summary>
+<summary>Staff (8 changed: 1 added, 7 modified)</summary>
 
 #### Added
 
@@ -2815,6 +3325,14 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 #### Modified
 
+##### Arctic Frost
+
+- Property changes:
+  - Lines:
+    - Changed: +(3-4) to Cold Skills (Sorceress Only) (was +4)
+    - Changed: -(20-30)% to Enemy Cold Resistance (was -(30-40)%)
+    - Changed: +15% Cold Damage Absorbed (was +25%)
+
 ##### Everkeeper
 
 - Property changes:
@@ -2827,12 +3345,43 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Removed: +10% Chance of Crushing Blow
 
+##### Jadrik's Torment
+
+- Changed details:
+  - Item Level: 58 (was 40)
+  - Rarity: 2 (was 1)
+
 ##### Ribcracker
 
 - Property changes:
   - Lines:
     - Added: +50% Damage to Undead
     - Removed: +(10-15)% Chance of Crushing Blow
+
+##### Staff of Valere
+
+- Changed details:
+  - Equipment Damage Types Average Damage: 77 (was 104)
+  - Base Item: Walking Stick \[E\] (was Cedar Staff \[X\])
+  - Item Level: 85 (was 50)
+  - Required Level: 79 (was 56)
+- Property changes:
+  - Lines:
+    - Changed: +(30-50)% Faster Cast Rate (was +15%)
+    - Added: +(1-3) to All Skills
+    - Added: +(20-40)% to Magic Skill Damage
+    - Added: -(15-30)% to Enemy Magic Resistance
+    - Added: +10% to Energy
+    - Added: +(2-4) to Magic Skills
+    - Removed: +1 to Druid Skill Levels
+    - Removed: +45% Increased Attack Speed
+    - Removed: Adds 30-50 to 100-150 Damage
+    - Removed: +15 to Strength
+    - Removed: +25 to Dexterity
+    - Removed: +(15-20)% Physical Damage Reduction
+  - Base damage type 1 properties:
+    - Added: Two-Hand Damage: 69 to 85
+    - Removed: Two-Hand Damage: 41-61 to 132-182
 
 ##### Touch of Evil
 
@@ -2948,7 +3497,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Equipment Damage Types Average Damage: 396.25 (was 373.25)
   - Equipment Damage Types Average Damage: 583 (was 539.5)
   - Equipment Damage Types Average Damage: 300 (was 281.5)
-  - Item Level: 105 (was 80)
+  - Item Level: 107 (was 80)
 - Property changes:
   - Lines:
     - Changed: +(3-4) to All Skills (was +(1-3))
@@ -2997,7 +3546,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### Harrogath's Last Stand
 
 - Changed details:
-  - Item Level: 105 (was 85)
+  - Item Level: 107 (was 85)
 
 ##### Lightsabre
 
@@ -3070,7 +3619,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ##### The Grandfather
 
 - Changed details:
-  - Item Level: 105 (was 85)
+  - Item Level: 107 (was 85)
 
 ##### The Mangler
 
@@ -3266,14 +3815,96 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Brother Laz' Calling — modified set (1 changed piece)</summary>
+<summary>Brother Laz' Calling — modified set (5 changed pieces)</summary>
 
-#### Changed Set Pieces (1)
+#### Partial Set Bonuses
+- Added: +30% Increased Attack Speed (2 Items)
+- Added: -10% to Enemy Physical Damage Resistance (3 Items)
+- Removed: +15 to all Attributes (2 Items)
+- Removed: +33% Chance of Crushing Blow (3 Items)
+#### Full Set Bonuses
+- Changed: +10% to Experience Gained (Full set bonus) (was +4%)
+- Changed: +100% Chance Items Roll Magic or Better (Full set bonus) (was +75%)
+#### Changed Set Pieces (5)
+##### Angel's Touch — modified
+
+- Changed details:
+  - Equipment Damage Types Average Damage: 178 (was 258)
+- Property changes:
+  - Lines:
+    - Added: -10% to Enemy Physical Damage Resistance
+    - Added: +30% Chance of Open Wounds
+    - Removed: +30% Increased Attack Speed
+    - Removed: Adds 40-120 Weapon Damage
+    - Removed: +300% Damage to Demons
+  - Set bonuses:
+    - Added: +10% to Dexterity (2 Items)
+    - Added: 10% Chance to cast level 20 Winter's Pulse on attack (3 Items)
+    - Added: +300% Damage to Demons (4 Items)
+    - Removed: +25 to Dexterity (2 Items)
+    - Removed: 20% Chance to cast level 8 Frost Nova on striking (3 Items)
+    - Removed: Cold Length: 10.24 seconds (4 Items)
+  - Base damage type 1 properties:
+    - Changed: Damage: 144-180 to 172-216 (was 184-220 to 292-336)
+
 ##### Glory of Salvation — modified
 
 - Property changes:
+  - Lines:
+    - Changed: +(100-150)% Enhanced Defense (was +(75-125)%)
+    - Added: +20% Increased Attack Speed
+    - Added: Replenish +20 Life per 10 Seconds
+    - Removed: +3 to Salvation (oskill)
+    - Removed: +20% Faster Cast Rate
+    - Removed: +60 to Mana
+  - Set bonuses:
+    - Added: 10% Chance to cast level 10 Amplify Damage when struck (2 Items)
+    - Added: Physical Damage Reduced By 15 (3 Items)
+    - Removed: 10% Chance to cast level 3 Amplify Damage when struck (2 Items)
+    - Removed: +15% to All Resistances (3 Items)
   - Equipment Lines:
+    - Changed: Defense: 138-172 (was 120-155)
     - Changed: Durability: 26 of 26 (was 18 of 18)
+
+##### Holy Aura — modified
+
+- Property changes:
+  - Lines:
+    - Changed: Level (2-5) Salvation Aura When Equipped (was Level (3-5))
+    - Removed: Poison Length Reduced by (60-80)%
+  - Set bonuses:
+    - Added: Poison Length Reduced by 50% (2 Items)
+    - Removed: +1 to All Skills (2 Items)
+
+##### Retribution — modified
+
+- Property changes:
+  - Lines:
+    - Changed: 20% Increased Chance of Blocking (was 33%)
+    - Added: +(1-3) to Combat Skills (Paladin Only)
+    - Added: +(150-200)% Enhanced Defense
+    - Removed: +40% Faster Block Rate
+    - Removed: +4 Defense (Based on Character Level)
+    - Removed: +(10-20) to Strength
+    - Removed: +(20-30)% to All Resistances
+  - Set bonuses:
+    - Added: +30% Faster Block Rate (2 Items)
+    - Added: -10% to Enemy Physical Damage Resistance (3 Items)
+    - Removed: +33 to Maximum Weapon Damage (2 Items)
+    - Removed: +15 to Minimum Weapon Damage (3 Items)
+  - Equipment Lines:
+    - Added: Defense: 485-582
+    - Removed: Defense: 445-569 to 469-593
+
+##### Teachings of Brother Laz — modified
+
+- Property changes:
+  - Lines:
+    - Added: +2 to Paladin Skill Levels
+    - Removed: Socketed (2)
+  - Set bonuses:
+    - Added: +5% to Experience Gained (4 Items)
+    - Removed: +3% to Experience Gained (4 Items)
 
 
 </details>
@@ -4170,10 +4801,10 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ## Runewords
 
 <details>
-<summary>Runewords — 10 added, 2 removed, 137 modified</summary>
+<summary>Runewords — 11 added, 2 removed, 130 modified</summary>
 
 <details>
-<summary>Added (10)</summary>
+<summary>Added (11)</summary>
 
 #### Leaf
 
@@ -4261,11 +4892,12 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Indestructible
     - Level (5-10) Conviction Aura When Equipped
-    - +(2-3) to All Skills
+    - +(3-4) to All Skills
     - Adds 50-100 Weapon Fire Damage
     - Adds 50-100 Weapon Lightning Damage
     - Adds 50-100 Weapon Cold Damage
     - -10% to All Enemy Elemental Resistances
+    - +200% Enhanced Defense
     - +5% to Dexterity
     - +10% Increased Maximum Life
     - +(20-30)% to All Resistances
@@ -4281,13 +4913,33 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Indestructible
     - Level (5-10) Fanaticism Aura When Equipped
-    - +(2-3) to All Skills
+    - +(3-4) to All Skills
     - Adds 50-100 Weapon Damage
     - -10% to Enemy Physical Damage Resistance
+    - +200% Enhanced Defense
     - +5% to Strength
     - +10% Increased Maximum Life
     - +(20-30)% to All Resistances
     - +20% Physical Damage Reduction
+
+#### Offering
+
+- Item Level: 85
+- Required Level: 85
+- Rune sequence: Grit Rune (#37) → Grit Rune (#37) → Dem Rune (#38)
+- Variant: Necromancer Item
+  - Class: Necromancer
+- Properties:
+  - Lines:
+    - +(1-2) to Max Skeleton Warriors
+    - +(1-2) to Max Skeletal Mages
+    - +(1-2) to Max Fire Golems
+    - +(3-4) to All Skills
+    - +5 to Sigil: Death (oskill)
+    - 30% Increased Chance of Blocking
+    - +10% to Vitality
+    - -5% Increased Maximum Life
+    - +5% Physical Damage Reduction
 
 #### Ravage
 
@@ -4298,9 +4950,9 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Properties:
   - Lines:
     - 15% Chance to cast level 10 Dust Devils on attack
-    - 15% Chance to cast level 20 Arc on attack
+    - 15% Chance to cast level 10 Spine Piercer on attack
     - Indestructible
-    - +(2-3) to All Skills
+    - +(3-4) to All Skills
     - +(30-60)% Increased Attack Speed
     - +(300-400)% Enhanced Weapon Damage
     - +30% Enhanced Weapon Damage
@@ -4333,7 +4985,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Properties:
   - Lines:
     - Level (5-10) Cleansing Aura When Equipped
-    - +(2-4) to All Skills
+    - +(3-4) to All Skills
     - +(300-350)% Enhanced Weapon Damage
     - +(200-300)% Enhanced Defense
     - +10% to Vitality
@@ -4351,9 +5003,11 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Variant: Any Shield
 - Properties:
   - Lines:
-    - +(2-3) to All Skills
+    - +(3-4) to All Skills
     - +300% Enhanced Defense
     - +30 to all Attributes
+    - +10% Magic Resistance
+    - +10% Physical Damage Reduction
     - +(150-200)% Chance Items Roll Magic or Better
     - +5% to Strength (Armor)
     - +5% to Dexterity (Armor)
@@ -4398,7 +5052,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 </details>
 
 <details>
-<summary>Modified (137)</summary>
+<summary>Modified (130)</summary>
 
 #### Doom
 
@@ -4406,7 +5060,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +20% Chance of Open Wounds (was +25%)
-    - Changed: Requirements Reduced By 10% (was 20%)
 
 #### Doom
 
@@ -4414,7 +5067,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +20% Chance of Open Wounds (was +25%)
-    - Changed: Requirements Reduced By 10% (was 20%)
 
 #### Leaf
 
@@ -4447,15 +5099,8 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 10% (was 20%)
     - Added: +50% Damage to Demons
     - Removed: +10% Chance of Crushing Blow
-
-#### Authority
-
-- Property changes:
-  - Lines:
-    - Changed: Requirements Reduced By 10% (was 15%)
 
 #### Beast
 
@@ -4504,7 +5149,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +125% Damage to Undead (was +200%)
-    - Changed: Requirements Reduced By 10% (was 20%)
     - Added: +2 Life after each Kill
     - Removed: +50 to Attack Rating against Undead
     - Removed: +1 to Light Radius
@@ -4514,7 +5158,8 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +15% Increased Attack Speed (was +20%)
-    - Changed: +5% Chance of Crushing Blow (was +20%)
+    - Added: -10% to Enemy Physical Damage Resistance
+    - Removed: +20% Chance of Crushing Blow
 
 #### Chains of Honor
 
@@ -4554,7 +5199,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 10% (was 20%)
     - Removed: +(10-15)% Chance of Crushing Blow
     - Removed: +1 to Light Radius
 
@@ -4704,7 +5348,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +(125-150)% Enhanced Weapon Damage (was +133%)
-    - Changed: Requirements Reduced By 10% (was 20%)
     - Removed: +10% Chance of Crushing Blow
     - Removed: +5 to Required Level
 
@@ -4778,7 +5421,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: Drain -13 Life per 10 Seconds (was Drain -20)
-    - Changed: Requirements Reduced By 10% (was 15%)
     - Removed: Attacker Takes Damage of 14
 
 #### Hysteria
@@ -4821,7 +5463,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +40% to All Resistances (was +30%)
-    - Changed: Requirements Reduced By 10% (was 15%)
 
 #### Kingslayer
 
@@ -4842,6 +5483,9 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
+    - Changed: +(80-100)% Enhanced Weapon Damage (was +100%)
+    - Changed: +0.75 to Maximum Weapon Damage (Based on Character Level) (was +1.5)
+    - Changed: +(5-10)% to Experience Gained (was +10%)
     - Removed: +3 to Light Radius
 
 #### Last Wish
@@ -4856,7 +5500,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: 10% Chance to cast level 20 Storm Shard on striking (was 15%)
-    - Changed: +5% Chance of Crushing Blow (was +10%)
     - Added: Adds 50-100 Weapon Damage
     - Added: +50% Damage to Demons
     - Removed: Adds 40-50 to 80-100 Damage
@@ -4865,21 +5508,13 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 20% (was 40%)
     - Added: +15 to all Attributes
     - Removed: Slows Target by 30%
-
-#### Lionheart
-
-- Property changes:
-  - Lines:
-    - Changed: Requirements Reduced By 10% (was 15%)
 
 #### Love
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 10% (was 20%)
     - Added: Adds 5-15 Weapon Fire Damage
     - Added: Adds 5-15 Weapon Lightning Damage
     - Added: Adds 5-15 Weapon Cold Damage
@@ -4957,7 +5592,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Required Level: 69 (was 79)
 - Property changes:
   - Lines:
-    - Changed: +5% Chance of Crushing Blow (was +10%)
     - Added: +50% Damage to Demons
     - Removed: +10 to Required Level
 
@@ -4966,7 +5600,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: Replenish +17 Life per 10 Seconds (was Replenish +10)
-    - Changed: Requirements Reduced By 10% (was 15%)
     - Removed: Attacker Takes Damage of 14
 
 #### Natalya's Shroud
@@ -4984,12 +5617,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
     - Added: Replenish +7 Life per 10 Seconds
     - Removed: Attacker Takes Damage of 14
 
-#### Night
-
-- Property changes:
-  - Lines:
-    - Changed: Requirements Reduced By 10% (was 15%)
-
 #### Oath
 
 - Property changes:
@@ -5005,7 +5632,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 10% (was 20%)
     - Added: +20% Deadly Strike
     - Removed: +10% Chance of Crushing Blow
 
@@ -5096,11 +5722,8 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 10% (weapon only) (was Requirements Reduced By 20%)
     - Changed: +10% Mana Regeneration (Armor) (was +15%)
-    - Changed: Requirements Reduced By 10% (Armor) (was Requirements Reduced By 15%)
     - Changed: +10% Mana Regeneration (Shield) (was +15%)
-    - Changed: Requirements Reduced By 10% (Shield) (was Requirements Reduced By 15%)
 
 #### Principle
 
@@ -5121,23 +5744,11 @@ dateCreated: 2026-10-27T02:09:31.599Z
   - Lines:
     - Changed: 5% Chance to cast level 10 Dim Vision on striking (was 35% Chance to cast level 8)
 
-#### Qual-Kehk's Oath
-
-- Property changes:
-  - Lines:
-    - Changed: Requirements Reduced By 10% (was 15%)
-
 #### Rathma's Husk
 
 - Property changes:
   - Lines:
     - Changed: +35% to All Resistances (was +30%)
-
-#### Red
-
-- Property changes:
-  - Lines:
-    - Changed: Requirements Reduced By 10% (was 20%)
 
 #### Revenge
 
@@ -5152,12 +5763,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +10% Mana Regeneration (was +15%)
-
-#### Rift
-
-- Property changes:
-  - Lines:
-    - Changed: Requirements Reduced By 10% (was 20%)
 
 #### Ruin
 
@@ -5214,7 +5819,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 10% (was 20%)
     - Added: +15% Faster Cast Rate
     - Added: +2 Life after each Kill
     - Removed: +75% Damage to Undead
@@ -5226,7 +5830,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +35% Increased Attack Speed (was +40%)
-    - Changed: Requirements Reduced By 10% (was 20%)
 
 #### Spirit
 
@@ -5246,9 +5849,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 10% (weapon only) (was Requirements Reduced By 20%)
-    - Changed: Requirements Reduced By 10% (Armor) (was Requirements Reduced By 15%)
-    - Changed: Requirements Reduced By 10% (Shield) (was Requirements Reduced By 15%)
     - Removed: +1 to Light Radius (weapon only)
     - Removed: +1 to Light Radius (Armor)
     - Removed: +1 to Light Radius (Shield)
@@ -5347,7 +5947,6 @@ dateCreated: 2026-10-27T02:09:31.599Z
 
 - Property changes:
   - Lines:
-    - Changed: Requirements Reduced By 10% (was 20%)
     - Added: +2 Life after each Kill
     - Removed: +75% Damage to Undead
     - Removed: +50 to Attack Rating against Undead
@@ -5381,9 +5980,7 @@ dateCreated: 2026-10-27T02:09:31.599Z
 - Property changes:
   - Lines:
     - Changed: +20% to All Resistances (Armor) (was +15%)
-    - Changed: Requirements Reduced By 10% (Armor) (was Requirements Reduced By 15%)
     - Changed: +20% to All Resistances (Shield) (was +22%)
-    - Changed: Requirements Reduced By 10% (Shield) (was Requirements Reduced By 15%)
     - Added: Replenish +7 Life per 10 Seconds (Armor)
     - Added: Replenish +7 Life per 10 Seconds (Shield)
     - Removed: Attacker Takes Damage of 14 (Armor)
@@ -5398,18 +5995,11 @@ dateCreated: 2026-10-27T02:09:31.599Z
     - Removed: +50 to Attack Rating against Undead
     - Removed: +1 to Light Radius
 
-#### War
-
-- Property changes:
-  - Lines:
-    - Changed: Requirements Reduced By 10% (was 15%)
-
 #### Water
 
 - Property changes:
   - Lines:
     - Changed: +15% Increased Attack Speed (was +20%)
-    - Changed: Requirements Reduced By 10% (was 20%)
 
 #### Whisper
 
@@ -6357,20 +6947,10 @@ dateCreated: 2026-10-27T02:09:31.599Z
 ## Magic suffixes
 
 <details>
-<summary>Magic suffixes — 2 added, 0 removed, 21 modified</summary>
+<summary>Magic suffixes — 1 added, 0 removed, 21 modified</summary>
 
 <details>
-<summary>Added (2)</summary>
-
-#### of Thunderstep
-
-- Level: 30
-- Required Level: 30
-- Eligible types: Sorceress Orb, Staff, Amulet
-- Properties:
-  - Lines:
-    - Teleport releases a Nova, adds 1 second Casting Delay
-    - +1 to Nova (oskill)
+<summary>Added (1)</summary>
 
 #### of Exploration
 

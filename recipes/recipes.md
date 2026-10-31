@@ -302,10 +302,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Conversion Orb | Unique Jewel | Grit Rune |  | \=  | +1 all skills &  -5% enemy elemental resistance |
 | Amulet | Conversion Orb | Unique Jewel | Hev Rune |  | \=  | +50% Enhanced Damage &  -5% enemy elemental resistance |
 | 1 Amethyst <br>1 Topaz <br>1 Sapphire <br>1 Emerald <br>1 Ruby <br>1 Diamond <br>1 Magic Amulet |  |  |  |  | \=  | Prismatic Amulet |
-| Magic Amulet | Magic Jewel | THUL Rune | Sapphire |  | \=  | Hit Power Amulet |
-| Magic Amulet | Magic Jewel | AMN Rune | Ruby |  | \=  | Blood Amulet |
-| Magic Amulet | Magic Jewel | RAL Rune | Amethyst |  | \=  | Caster Amulet |
-| Magic Amulet | Magic Jewel | THUL Rune | Emerald |  | \=  | Safety Amulet |
 
 ## Rings
 > **Max Enchants: 1**
@@ -338,10 +334,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Magic Ring | Sapphire | Thawing Potion |  |  | \=  | Cobalt Ring |
 | Magic Ring | Topaz | Rejuvenation Potion |  |  | \=  | Coral Ring |
 | Magic Ring | Emerald | Antidote Potion |  |  | \=  | Jade Ring |
-| Magic Ring | Magic Jewel | AMN Rune | Sapphire |  | \=  | Hit Power Ring |
-| Magic Ring | Magic Jewel | SOL Rune | Ruby |  | \=  | Blood Ring |
-| Magic Ring | Magic Jewel | AMN Rune | Amethyst |  | \=  | Caster Ring |
-| Magic Ring | Magic Jewel | AMN Rune | Emerald |  | \=  | Safety Ring |
 
 ## Belts
 
@@ -379,10 +371,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Belt | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
 | Belt | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
 | Belt | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
-| Magic Belt | Magic Jewel | TAL Rune | Sapphire |  | \=  | Hit Power Belt |
-| Magic Belt | Magic Jewel | TAL Rune | Ruby |  | \=  | Blood Belt |
-| Magic Belt | Magic Jewel | ITH Rune | Amethyst |  | \=  | Caster Belt |
-| Magic Belt | Magic Jewel | TAL Rune | Emerald |  | \=  | Safety Belt |
 
 ## Boots
 
@@ -421,10 +409,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Boots | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
 | Boots | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
 | Boots | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
-| Magic Boots | Magic Jewel | RAL Rune | Sapphire |  | \=  | Hit Power Boots |
-| Magic Boots | Magic Jewel | ETH Rune | Ruby |  | \=  | Blood Boots |
-| Magic Boots | Magic Jewel | THUL Rune | Amethyst |  | \=  | Caster Boots |
-| Magic Boots | Magic Jewel | ORT Rune | Emerald |  | \=  | Safety Boots |
 
 ## Gloves
 > **Max Enchants: 1**
@@ -460,10 +444,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Gloves | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & Indestructible |
 | Gloves | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & Indestructible |
 | Gloves | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & Indestructible |
-| Magic Gloves | Magic Jewel | ORT Rune | Sapphire |  | \=  | Hit Power Gloves |
-| Magic Gloves | Magic Jewel | NEF Rune | Ruby |  | \=  | Blood Gloves |
-| Magic Gloves | Magic Jewel | ORT Rune | Amethyst |  | \=  | Caster Gloves |
-| Magic Gloves | Magic Jewel | RAL Rune | Emerald |  | \=  | Safety Gloves |
 
 ## Helms
 > **Max Enchants: 1**
@@ -506,10 +486,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Helm | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +2 Current Class & Indestructible |
 | Helm | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +2 Current Class & Indestructible |
 | Helm | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +2 Current Class & Indestructible |
-| Magic Helm | Magic Jewel | ITH Rune | Sapphire |  | \=  | Hit Power Helm |
-| Magic Helm | Magic Jewel | RAL Rune | Ruby |  | \=  | Blood Helm |
-| Magic Helm | Magic Jewel | NEF Rune | Amethyst |  | \=  | Caster Helm |
-| Magic Helm | Magic Jewel | ITH Rune | Emerald |  | \=  | Safety Helm |
 
 ## Shields
 > **Max Enchants: 1**
@@ -542,10 +518,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Shield | Infusion Orb | Topaz | IST Rune | Rare Jewel | \=  | +30% Magic Find  & +50% Gold Find |
 | Shield | Infusion Orb | Diamond | ZOD Rune | Unique Jewel | \=  | 10% Block Chance & 15% Resist All |
 | Shield | Conversion Orb | Grit Rune | ZOD Rune | Unique Jewel | \=  | +15% block & 15% block rate & indestructible |
-| Magic Shield | Magic Jewel | ETH Rune | Sapphire |  | \=  | Hit Power Shield |
-| Magic Shield | Magic Jewel | ITH Rune | Ruby |  | \=  | Blood Shield |
-| Magic Shield | Magic Jewel | ETH Rune | Amethyst |  | \=  | Caster Shield |
-| Magic Shield | Magic Jewel | NEF Rune | Emerald |  | \=  | Safety Shield |
 
 ## Weapons
 > **Max Enchants: 1**
@@ -583,14 +555,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Spear (Any) | Arrows |  |  |  | \=  | Javelins |
 | Diamond | Dagger (Any) | Staff (Any) | Belt (Any) |  | \=  | Savage Polearm |
 | Any Magic Weapon | Ruby | 4 Healing Potions (Any) |  |  | \=  | Sword of the Leech |
-| Magic Weapon | Magic Jewel | TIR Rune | Sapphire |  | \=  | Hit Power Weapon |
-| Magic Weapon | Magic Jewel | ORT Rune | Ruby |  | \=  | Blood Weapon |
-| Magic Weapon | Magic Jewel | TIR Rune | Amethyst |  | \=  | Caster Weapon |
-| Magic Weapon | Magic Jewel | SOL Rune | Emerald |  | \=  | Safety Weapon |
-
-
 # Item Crafting System
-
 Players can craft a variety of items to help define their builds, both as they level and during end-game progression.
 
 When an item returns as magic that means it gives you the guaranteed stats with a chance of a prefix and a suffix on a magical item.
@@ -613,6 +578,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Amulet | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 4 Battle Orders on level up Magic Amulet |
+| Magic Amulet | Magic Jewel | THUL Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-10 Thorns; +5-15% chance to cast Howl |
+| Magic Amulet | Magic Jewel | AMN Rune | Ruby |  | \=  | 1-4% Life Steal; +10-20 Life; +5-10% Faster Run/Walk |
+| Magic Amulet | Magic Jewel | RAL Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +5-10% Faster Cast Rate |
+| Magic Amulet | Magic Jewel | THUL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +1-10% Block |
 | Magic Amulet | Orb of Infusion | RAL Rune | Gem(Any) |  | \=  | +1 Random Class All Skills Rare Amulet |
 | Rare Amulet | Rare Jewel | PUL rune | EL Rune | Ruby | \=  | +1 All Skills & +10-12% Faster Attack Speed Rare Amulet |
 | Rare Amulet | Rare Jewel | PUL rune | EL Rune | Sapphire | \=  | +1 All Skills & +10-12% Faster Cast Rate Rare Amulet |
@@ -627,6 +596,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Ring | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 1 Fade on level up Magic Ring |
+| Magic Ring | Magic Jewel | AMN Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-6 Thorns; +1-5 Dexterity |
+| Magic Ring | Magic Jewel | SOL Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +1-5 Strength |
+| Magic Ring | Magic Jewel | AMN Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-5 Energy |
+| Magic Ring | Magic Jewel | AMN Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +1-5 Vitality |
 | Magic Ring | Rare Jewel | Tal Rune | Ral Rune | Ort Rune | \=  | Barilzar's Mazed Band Unique Ring |
 | Magic Ring | Orb of Infusion | Topaz |  |  | \=  | +20% Magic Find Rare Ring |
 | Rare Ring | Rare Jewel | UM Rune | HEL Rune | Gem(Any) | \=  | +8-10% All Res +8-10 all attributes Rare Ring |
@@ -642,6 +615,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Belt | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 1 Frozen Armor on level up Magic Belt |
+| Magic Belt | Magic Jewel | TAL Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-7 Thorns; +5-10 Damage to Mana |
+| Magic Belt | Magic Jewel | TAL Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +5-10% Open Wounds |
+| Magic Belt | Magic Jewel | ITH Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +5-10% Faster Cast Rate |
+| Magic Belt | Magic Jewel | TAL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Poison Resistance; +10-30% AC |
 | Magic Belt | Magic Jewel | RAL Rune |  |  | \=  | +1 Random Class All Skills Magic Belt |
 | Rare Belt | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% All Res & +30-40% Magic Find Rare Belt |
 | Rare Belt | Rare Jewel | LEM Rune | MAL Rune | Gem (Any) | \=  | +10-15% Piercing Attack & +10-15% Open wounds Rare Belt |
@@ -653,6 +630,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Boots | EL Rune |  |  |  | \=  | +10% FRW Magic Boots |
+| Magic Boots | Magic Jewel | RAL Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-7 Thorns; +25-60 AC vs Melee |
+| Magic Boots | Magic Jewel | ETH Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +5-10% Regeneration |
+| Magic Boots | Magic Jewel | THUL Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +2-5% Mana |
+| Magic Boots | Magic Jewel | ORT Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Fire Resistance; +10-30% AC |
 | Magic Boots | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 1 Burst of speed on level up Magic Boots |
 | Magic Boots | Orb of Infusion | HEL Rune | Gem (Any) |  | \=  | +15% Faster Run/Walk & +10 All Attributes Rare Boots |
 | Rare Boots | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% All Resists & +30-40% Magic Find Rare Boots |
@@ -663,6 +644,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Gloves | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 4 Battle Commands on level up Magic Gloves |
+| Magic Gloves | Magic Jewel | ORT Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-7 Thorns; +1 Knockback |
+| Magic Gloves | Magic Jewel | NEF Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life |
+| Magic Gloves | Magic Jewel | ORT Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-3 Mana per Kill |
+| Magic Gloves | Magic Jewel | RAL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Cold Resistance; +10-30% AC |
 | Magic Gloves | Magic Jewel | RAL Rune |  |  | \=  | +8% Faster Attack Speed & +8% Faster Cast Rate Magic Gloves |
 | Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
 | Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
@@ -688,6 +673,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Helm | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 1 Shout on level up Magic Helm |
+| Magic Helm | Magic Jewel | ITH Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-7 Thorns; +25-50 AC vs Missiles |
+| Magic Helm | Magic Jewel | RAL Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +5-10% Deadly Strike |
+| Magic Helm | Magic Jewel | NEF Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-4 Mana Steal |
+| Magic Helm | Magic Jewel | ITH Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Lightning Resistance; +10-30% AC |
 | Magic Helm | Orb of Infusion | RAL Rune | Gem (Any) |  | \=  | +15% Faster Hit Recovery Rare Helm & 50% Defense |
 | Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
 | Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
@@ -715,6 +704,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Shield | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 4 Holy Shield on Level Up & +5 All Attributes Magic Shield |
+| Magic Shield | Magic Jewel | ETH Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-10 Thorns; +5-10% Block |
+| Magic Shield | Magic Jewel | ITH Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +4-7 Thorns |
+| Magic Shield | Magic Jewel | ETH Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +5-10% Block |
+| Magic Shield | Magic Jewel | NEF Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Magic Resistance; +10-30% AC |
 | Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
 | Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
 | Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
@@ -734,6 +727,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Body Armor | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 5 Oak Sage on level up Magic Body Armor |
+| Magic Body Armor | Magic Jewel | NEF Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-10 Thorns; +10-20% Balance |
+| Magic Body Armor | Magic Jewel | THUL Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +1-3 Demon Heal |
+| Magic Body Armor | Magic Jewel | TAL Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-3 Mana per Kill |
+| Magic Body Armor | Magic Jewel | ETH Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; Half Freeze Duration; +10-30% AC |
 | Magic Body Armor | Orb of Infusion | RAL Rune | Gem (Any) |  | \=  | +20% Faster Run/Walk & +100 Defense Rare Body Armor |
 | Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
 | Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
@@ -753,10 +750,6 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
 | Rare Body Armor | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25 All Res & +20-40% Magic Find Rare Body Armor |
 | Rare Body Armor | Unique Jewel | ZOD Rune | BER Rune | UM RUNE | \=  | +2 All Skills & +150-175% Enhanced Defense & +20-30% All Resists +5-10% Physical Damage Reduction Crafted Body Armor |
-| Magic Body Armor | Magic Jewel | NEF Rune | Sapphire |  | \=  | Hit Power Body |
-| Magic Body Armor | Magic Jewel | THUL Rune | Ruby |  | \=  | Blood Body |
-| Magic Body Armor | Magic Jewel | TAL Rune | Amethyst |  | \=  | Caster Body |
-| Magic Body Armor | Magic Jewel | ETH Rune | Emerald |  | \=  | Safety Body |
 | Unique Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
 | Set Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 | Unique Armor | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
@@ -767,6 +760,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Weapon | Orb of Infusion | SOL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Min Damage/lvl & +1 Max Damage/lvl & +20% Increased Attack Speed Rare Weapon |
+| Magic Weapon | Magic Jewel | TIR Rune | Sapphire |  | \=  | 5% chance to cast level 44 Hit Power when struck; +3-7 Thorns; +35-60% Damage |
+| Magic Weapon | Magic Jewel | ORT Rune | Ruby |  | \=  | 1-4% Life Steal; +10-20 Life; +35-60% Damage |
+| Magic Weapon | Magic Jewel | TIR Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-5% Mana |
+| Magic Weapon | Magic Jewel | SOL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10% Enhanced Defense |
 | Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & +30-40 Increased Attack Speed Crafted Weapon |
 | Any 1 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2 All Skills & 150-200% Enhanced Weapon Damage & +20-30 Increased Attack Speed Crafted Weapon |
 | Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | CHAM Rune | Gem (Any) | \=  | +2-3 All Skills & +20-30% All Elemental damage Crafted Weapon |

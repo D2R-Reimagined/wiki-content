@@ -235,10 +235,7 @@ ___
 
 | Item type | Maximum enchants |
 | --- | :--- |
-| 2H Weapons | 10 |
-| 1H Weapons, Shields, and Chest Armor | 5 |
-| Helms, Gloves, Belts, and Boots | 3 |
-| Jewelry | 2 |
+| All item types | 1 |
 
 ### Important Note
 
@@ -258,7 +255,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 ## Amulets
 
-> **Max Enchants: 2**
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -308,7 +305,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 ## Rings
 
-> **Max Enchants: 2**
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -338,7 +335,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 ## Belts
 
-> **Max Enchants: 3**
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -376,7 +373,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 ## Boots
 
-> **Max Enchants: 3**
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -415,7 +412,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 ## Gloves
 
-> **Max Enchants: 3**
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -452,7 +449,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 ## Helms
 
-> **Max Enchants: 3**
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -496,7 +493,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 ## Shields
 
-> **Max Enchants: 5**
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -530,7 +527,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 ## Weapons
 
-> **Max Enchants: 10**
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -633,7 +630,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Boots
 
-
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -647,7 +644,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Gloves
 
-
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -676,7 +673,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Helms
 
-
+> **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

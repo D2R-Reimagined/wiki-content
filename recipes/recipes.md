@@ -301,10 +301,13 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Conversion Orb | Unique Jewel | Myr Rune |  | \=  | +1 all skills &  -5% enemy magic resistance |
 | Amulet | Conversion Orb | Unique Jewel | Grit Rune |  | \=  | +1 all skills &  -5% enemy elemental resistance |
 | Amulet | Conversion Orb | Unique Jewel | Hev Rune |  | \=  | +50% Enhanced Damage &  -5% enemy elemental resistance |
-
+| 1 Amethyst <br>1 Topaz <br>1 Sapphire <br>1 Emerald <br>1 Ruby <br>1 Diamond <br>1 Magic Amulet |  |  |  |  | \=  | Prismatic Amulet |
+| Magic Amulet | Magic Jewel | THUL Rune | Sapphire |  | \=  | Hit Power Amulet |
+| Magic Amulet | Magic Jewel | AMN Rune | Ruby |  | \=  | Blood Amulet |
+| Magic Amulet | Magic Jewel | RAL Rune | Amethyst |  | \=  | Caster Amulet |
+| Magic Amulet | Magic Jewel | THUL Rune | Emerald |  | \=  | Safety Amulet |
 
 ## Rings
-
 > **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
@@ -331,7 +334,14 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Ring | Conversion Orb | Unique Jewel | Myr Rune |  | \=  | -3% enemy magic resistance |
 | Ring | Conversion Orb | Unique Jewel | Grit Rune |  | \=  | -3% enemy elemental resistance |
 | Ring | Conversion Orb | Unique Jewel | Hev Rune |  | \=  | +15% Enhanced Damage &  -3% physical elemental resistance |
-
+| Magic Ring | Ruby | Exploding Potion |  |  | \=  | Garnet Ring |
+| Magic Ring | Sapphire | Thawing Potion |  |  | \=  | Cobalt Ring |
+| Magic Ring | Topaz | Rejuvenation Potion |  |  | \=  | Coral Ring |
+| Magic Ring | Emerald | Antidote Potion |  |  | \=  | Jade Ring |
+| Magic Ring | Magic Jewel | AMN Rune | Sapphire |  | \=  | Hit Power Ring |
+| Magic Ring | Magic Jewel | SOL Rune | Ruby |  | \=  | Blood Ring |
+| Magic Ring | Magic Jewel | AMN Rune | Amethyst |  | \=  | Caster Ring |
+| Magic Ring | Magic Jewel | AMN Rune | Emerald |  | \=  | Safety Ring |
 
 ## Belts
 
@@ -369,7 +379,10 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Belt | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
 | Belt | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
 | Belt | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
-
+| Magic Belt | Magic Jewel | TAL Rune | Sapphire |  | \=  | Hit Power Belt |
+| Magic Belt | Magic Jewel | TAL Rune | Ruby |  | \=  | Blood Belt |
+| Magic Belt | Magic Jewel | ITH Rune | Amethyst |  | \=  | Caster Belt |
+| Magic Belt | Magic Jewel | TAL Rune | Emerald |  | \=  | Safety Belt |
 
 ## Boots
 
@@ -408,10 +421,12 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Boots | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
 | Boots | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
 | Boots | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & 5% Damage Reduction |
-
+| Magic Boots | Magic Jewel | RAL Rune | Sapphire |  | \=  | Hit Power Boots |
+| Magic Boots | Magic Jewel | ETH Rune | Ruby |  | \=  | Blood Boots |
+| Magic Boots | Magic Jewel | THUL Rune | Amethyst |  | \=  | Caster Boots |
+| Magic Boots | Magic Jewel | ORT Rune | Emerald |  | \=  | Safety Boots |
 
 ## Gloves
-
 > **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
@@ -445,10 +460,12 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Gloves | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & Indestructible |
 | Gloves | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & Indestructible |
 | Gloves | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +1 Current Class & Indestructible |
-
+| Magic Gloves | Magic Jewel | ORT Rune | Sapphire |  | \=  | Hit Power Gloves |
+| Magic Gloves | Magic Jewel | NEF Rune | Ruby |  | \=  | Blood Gloves |
+| Magic Gloves | Magic Jewel | ORT Rune | Amethyst |  | \=  | Caster Gloves |
+| Magic Gloves | Magic Jewel | RAL Rune | Emerald |  | \=  | Safety Gloves |
 
 ## Helms
-
 > **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
@@ -489,10 +506,12 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Helm | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +2 Current Class & Indestructible |
 | Helm | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +2 Current Class & Indestructible |
 | Helm | Conversion Orb | Zod Rune | Dem Rune | Unique Jewel | \=  | +2 Current Class & Indestructible |
-
+| Magic Helm | Magic Jewel | ITH Rune | Sapphire |  | \=  | Hit Power Helm |
+| Magic Helm | Magic Jewel | RAL Rune | Ruby |  | \=  | Blood Helm |
+| Magic Helm | Magic Jewel | NEF Rune | Amethyst |  | \=  | Caster Helm |
+| Magic Helm | Magic Jewel | ITH Rune | Emerald |  | \=  | Safety Helm |
 
 ## Shields
-
 > **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
@@ -523,10 +542,12 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Shield | Infusion Orb | Topaz | IST Rune | Rare Jewel | \=  | +30% Magic Find  & +50% Gold Find |
 | Shield | Infusion Orb | Diamond | ZOD Rune | Unique Jewel | \=  | 10% Block Chance & 15% Resist All |
 | Shield | Conversion Orb | Grit Rune | ZOD Rune | Unique Jewel | \=  | +15% block & 15% block rate & indestructible |
-
+| Magic Shield | Magic Jewel | ETH Rune | Sapphire |  | \=  | Hit Power Shield |
+| Magic Shield | Magic Jewel | ITH Rune | Ruby |  | \=  | Blood Shield |
+| Magic Shield | Magic Jewel | ETH Rune | Amethyst |  | \=  | Caster Shield |
+| Magic Shield | Magic Jewel | NEF Rune | Emerald |  | \=  | Safety Shield |
 
 ## Weapons
-
 > **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
@@ -558,6 +579,14 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Weapon | Shadow Orb | Conversion Orb | Brak Rune | Dem Rune | \=  | +100% Enhanced Damage & -10% Enemy Physical Res & 300 Attack Rating |
 | Weapon | Shadow Orb | Conversion Orb | Zeph Rune | Grit Rune | \=  | +10% all elemental damage & -10% all elemental damage |
 | Weapon | Shadow Orb | Conversion Orb | Myr Rune | Hev Rune | \=  | +10% magic damage & -10% enemy magic resist |
+| Axe (Any) | Dagger (Any) |  |  |  | \=  | Throwing Axe |
+| Spear (Any) | Arrows |  |  |  | \=  | Javelins |
+| Diamond | Dagger (Any) | Staff (Any) | Belt (Any) |  | \=  | Savage Polearm |
+| Any Magic Weapon | Ruby | 4 Healing Potions (Any) |  |  | \=  | Sword of the Leech |
+| Magic Weapon | Magic Jewel | TIR Rune | Sapphire |  | \=  | Hit Power Weapon |
+| Magic Weapon | Magic Jewel | ORT Rune | Ruby |  | \=  | Blood Weapon |
+| Magic Weapon | Magic Jewel | TIR Rune | Amethyst |  | \=  | Caster Weapon |
+| Magic Weapon | Magic Jewel | SOL Rune | Emerald |  | \=  | Safety Weapon |
 
 
 # Item Crafting System
@@ -724,6 +753,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
 | Rare Body Armor | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25 All Res & +20-40% Magic Find Rare Body Armor |
 | Rare Body Armor | Unique Jewel | ZOD Rune | BER Rune | UM RUNE | \=  | +2 All Skills & +150-175% Enhanced Defense & +20-30% All Resists +5-10% Physical Damage Reduction Crafted Body Armor |
+| Magic Body Armor | Magic Jewel | NEF Rune | Sapphire |  | \=  | Hit Power Body |
+| Magic Body Armor | Magic Jewel | THUL Rune | Ruby |  | \=  | Blood Body |
+| Magic Body Armor | Magic Jewel | TAL Rune | Amethyst |  | \=  | Caster Body |
+| Magic Body Armor | Magic Jewel | ETH Rune | Emerald |  | \=  | Safety Body |
 | Unique Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
 | Set Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 | Unique Armor | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |

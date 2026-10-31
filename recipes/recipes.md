@@ -807,8 +807,30 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 ## Sunder Charms
 
+> The renewed sunders now roll:
+> - Affix 1: extra 5-15% elemental skill damage or 5-15% elemental pierce (enhanced weapon damage 50-100%) or +1 to elemental skills.
+> - Affix 2: 20-30% magic find or 40-60% gold find.
+> - Affix 3: 20-50 HP or 20-50 mana or 50-100 defense.
+> - Affix 4: 10-20% faster run/walk or 15-20% faster hit recovery or 5-10 all stats.
+> - Affix 5: Remove negative resist penalty or half the resist penalty.
+> - Affix 6: 5-15% increased attack speed or 5-15% faster cast rate.
 
+> - **<span style="color:red">You can only hold one renewed sunder charm of a single element.</span>**  
+> <span style="color:red">Be sure to put already crafted ones in shared stash when you try to craft them</span>
 
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **Reagent 6** | **Reagent 7** | **Reagent 8** | **Guaranteed Stats** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **RENEWED SUNDER CHARMS** | | | | | | | | |
+| Unique Charm:<br>Latent Flame Rift (Fire) | Unique Jewel | SUR Rune | Orb of Conversion | Deep Worldstone Shard | | | \= | Renewed Flame Rift |
+| Unique Charm:<br>Latent Cold Rupture (Cold) | Unique Jewel | SUR Rune | Orb of Conversion | Eastern Worldstone Shard | | | \= | Renewed Cold Rupture |
+| Unique Charm:<br>Latent Crack of the Heavens (Lightning) | Unique Jewel | SUR Rune | Orb of Conversion | Southern Worldstone Shard | | | \= | Renewed Crack of the Heavens |
+| Unique Charm:<br>Latent Rotting Fissure (Poison) | Unique Jewel | SUR Rune | Orb of Conversion | Western Worldstone Shard | | | \= | Renewed Rotting Fissure |
+| Unique Charm:<br>Latent Bone Break (Physical) | Unique Jewel | SUR Rune | Orb of Conversion | Northern Worldstone Shard | | | \= | Renewed Bone Break |
+| Unique Charm:<br>Latent Black Cleft (Magic) | Unique Jewel | SUR Rune | Orb of Conversion | Northern Worldstone Shard | Southern Worldstone Shard | Deep Worldstone Shard | \= | Renewed Black Cleft |
+| **Reset renewed sunder back to its latent version** | | | | | | | | |
+| Charm:<br>Renewed Sunder<br>Any Type | HEL Rune | Gem Bag (200 Gems) | | | | | \= | Latent Charm of the same type |
+
+## Jewel Crafts
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Sunder Charms | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Winter Facet |
@@ -820,3 +842,4 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Sunder Charms | 2 Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Heaven Facet |
 
 
+[Back to contents](#contents)

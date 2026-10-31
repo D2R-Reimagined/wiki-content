@@ -581,191 +581,176 @@ When the item is returned as crafted, it will have a chance to have a set number
 Unless stated otherwise, a crafted item's level matches the character who made it.
 
 ## Amulets
-
-
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Amulet | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 4 Battle Orders on level up Magic Amulet |
-| Amulet | Orb of Infusion | RAL Rune | Gem (Any) |  | \=  | +1 Random Class All Skills Rare Amulet |
-| Amulet | Rare Jewel | PUL rune | EL Rune | Ruby | \=  | +1 All Skills & +10-12% Faster Attack Speed Rare Amulet |
-| Amulet | Rare Jewel | PUL rune | EL Rune | Sapphire | \=  | +1 All Skills & +10-12% Faster Cast Rate Rare Amulet |
-| Amulet | Unique Jewel | VEX Rune | BRAK Rune | Skull | \=  | +2 All Skills & +25-35 Weapon Damage Crafted Amulet |
-| Amulet | Unique Jewel | VEX Rune | ZEPH Rune | Sapphire | \=  | +2 All Skills & +10% All Elemental Damage Crafted Amulet |
-| Amulet | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
-| Amulet | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
-
+| Magic Amulet | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 4 Battle Orders on level up Magic Amulet |
+| Magic Amulet | Orb of Infusion | RAL Rune | Gem(Any) |  | \=  | +1 Random Class All Skills Rare Amulet |
+| Rare Amulet | Rare Jewel | PUL rune | EL Rune | Ruby | \=  | +1 All Skills & +10-12% Faster Attack Speed Rare Amulet |
+| Rare Amulet | Rare Jewel | PUL rune | EL Rune | Sapphire | \=  | +1 All Skills & +10-12% Faster Cast Rate Rare Amulet |
+| Rare Amulet | Unique Jewel | VEX Rune | BRAK Rune | Skull | \=  | +2 All Skills & +25-35 Weapon Damage Crafted Amulet |
+| Rare Amulet | Unique Jewel | VEX Rune | ZEPH Rune | Sapphire | \=  | +2 All Skills & +10% All Elemental Damage Crafted Amulet |
+| Unique Amulet | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
+| Set Amulet | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
+| Unique Amulet | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
+| Set Amulet | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
 
 ## Rings
-
-
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ring | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 1 Fade on level up Magic Ring |
-| Ring | Rare Jewel | Tal Rune | Ral Rune | Ort Rune | \=  | Barilzar's Mazed Band Unique Ring |
-| Ring | Orb of Infusion | Topaz |  |  | \=  | +20% Magic Find Rare Ring |
-| Ring | Rare Jewel | UM Rune | HEL Rune | Gem (Any) | \=  | +8-10% All Res +8-10 all attributes Rare Ring |
-| Ring | Unique Jewel | SUR Rune | JAH Rune | Gem (Any) | \=  | +5-8% Max HP & +5-8% Max Mana Crafted Ring |
-| Ring | Unique Jewel | ZOD rune | BRAK Rune | Ruby | \=  | +1 All Skills & +15-25 Weapon Damage Crafted Ring |
-| Ring | Unique Jewel | ZOD rune | ZEPH Rune | Sapphire | \=  | +1 All Skills & +5% All Elemental Damage Crafted Ring |
-| Ring | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
-| Ring | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
-
+| Magic Ring | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 1 Fade on level up Magic Ring |
+| Magic Ring | Rare Jewel | Tal Rune | Ral Rune | Ort Rune | \=  | Barilzar's Mazed Band Unique Ring |
+| Magic Ring | Orb of Infusion | Topaz |  |  | \=  | +20% Magic Find Rare Ring |
+| Rare Ring | Rare Jewel | UM Rune | HEL Rune | Gem(Any) | \=  | +8-10% All Res +8-10 all attributes Rare Ring |
+| Rare Ring | Unique Jewel | SUR Rune | JAH Rune | Gem(Any) | \=  | +5-8% Max HP & +5-8% Max Mana Crafted Ring |
+| Rare Ring | Unique Jewel | ZOD rune | BRAK Rune | Ruby | \=  | +1 All Skills & +15-25 Weapon Damage Crafted Ring |
+| Rare Ring | Unique Jewel | ZOD rune | ZEPH Rune | Sapphire | \=  | +1 All Skills & +5% All Elemental Damage Crafted Ring |
+| Unique Ring | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
+| Set Ring | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
+| Unique Ring | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
+| Set Ring | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
 
 ## Belts
-
-
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Belt | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 1 Frozen Armor on level up Magic Belt |
-| Belt | Magic Jewel | RAL Rune |  |  | \=  | +1 Random Class All Skills Magic Belt |
-| Belt | Rare Jewel | UM Rune | IST Rune | Gem | \=  | +20-25% All Res & +30-40% Magic Find Rare Belt |
-| Belt | Rare Jewel | LEM Rune | MAL Rune | Gem | \=  | +10-15% Piercing Attack & +10-15% Open wounds Rare Belt |
-| Belt | Unique Jewel | CHAM rune | JAH Rune | Gem | \=  | +Cannot Be Frozen + 10-15% Max HP Crafted Belt |
-| Belt | Unique Jewel | BRAK rune | ZOD Rune | Ruby | \=  | +1 All Skills & +20-30 Weapon Damage Crafted Belt |
-| Belt | Unique Jewel | ZEPH rune | ZOD Rune | Sapphire | \=  | +1 All Skills & +10% All Elemental Damage Crafted Belt |
-
+| Magic Belt | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 1 Frozen Armor on level up Magic Belt |
+| Magic Belt | Magic Jewel | RAL Rune |  |  | \=  | +1 Random Class All Skills Magic Belt |
+| Rare Belt | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% All Res & +30-40% Magic Find Rare Belt |
+| Rare Belt | Rare Jewel | LEM Rune | MAL Rune | Gem (Any) | \=  | +10-15% Piercing Attack & +10-15% Open wounds Rare Belt |
+| Rare Belt | Unique Jewel | CHAM rune | JAH Rune | Gem (Any) | \=  | +Cannot Be Frozen + 10-15% Max HP Crafted Belt |
+| Rare Belt | Unique Jewel | BRAK rune | ZOD Rune | Ruby | \=  | +1 All Skills & +20-30 Weapon Damage Crafted Belt |
+| Rare Belt | Unique Jewel | ZEPH rune | ZOD Rune | Sapphire | \=  | +1 All Skills & +10% All Elemental Damage Crafted Belt |
 
 ## Boots
-
-> **Max Enchants: 1**
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Boots | EL Rune |  |  |  | \=  | +10% FRW Magic Boots |
-| Boots | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 1 Burst of speed on level up Magic Boots |
-| Boots | Orb of Infusion | HEL Rune | Gem |  | \=  | +15% Faster Run/Walk & +10 All Attributes Rare Boots |
-| Boots | Rare Jewel | UM Rune | IST Rune | Gem | \=  | +20-25% All Resists & +30-40% Magic Find Rare Boots |
-| Boots | Unique Jewel | ZOD Rune | BRAK Rune | Gem | \=  | +1 AllSkills & +20-30% Faster Run/Walk & +20-30 Weapon Damage Crafted Boots |
-| Boots | Unique Jewel | ZOD Rune | ZEPH Rune | Gem | \=  | +1 AllSkills & +20-30% Faster Run/Walk & +10% All Elemental Damage Crafted Boots |
-
+| Magic Boots | EL Rune |  |  |  | \=  | +10% FRW Magic Boots |
+| Magic Boots | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 1 Burst of speed on level up Magic Boots |
+| Magic Boots | Orb of Infusion | HEL Rune | Gem (Any) |  | \=  | +15% Faster Run/Walk & +10 All Attributes Rare Boots |
+| Rare Boots | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% All Resists & +30-40% Magic Find Rare Boots |
+| Rare Boots | Unique Jewel | ZOD Rune | BRAK Rune | Gem (Any) | \=  | +1 AllSkills & +20-30% Faster Run/Walk & +20-30 Weapon Damage Crafted Boots |
+| Rare Boots | Unique Jewel | ZOD Rune | ZEPH Rune | Gem (Any) | \=  | +1 AllSkills & +20-30% Faster Run/Walk & +10% All Elemental Damage Crafted Boots |
 
 ## Gloves
-
-> **Max Enchants: 1**
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Gloves | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 4 Battle Commands on level up Magic Gloves |
-| Gloves | Magic Jewel | RAL Rune |  |  | \=  | +8% Faster Attack Speed & +8% Faster Cast Rate Magic Gloves |
-| Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
-| Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
-| Gloves | Rare Jewel | UM Rune | IST Rune | Gem | \=  | +20-25 All Res & +30% Magic Find Rare Gloves |
-| Gloves | Unique Jewel | ZOD rune | BRAK Rune | Ruby | \=  | +1 All Skills & +20-40 Weapon Damage  Crafted Gloves |
-| Gloves | Unique Jewel | ZOD rune | ZEPH Rune | Sapphire | \=  | +1 All Skills & +10% All Elemental Damage & +10-20% Faster Cast Rate Crafted Gloves |
-
+| Magic Gloves | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 4 Battle Commands on level up Magic Gloves |
+| Magic Gloves | Magic Jewel | RAL Rune |  |  | \=  | +8% Faster Attack Speed & +8% Faster Cast Rate Magic Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem(Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem(Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem(Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem(Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem(Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem(Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem(Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
+| Rare Gloves | Rare Jewel | MAL Rune | DOL Rune | Gem(Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Faster Cast Rate Rare Gloves |
+| Rare Gloves | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25 All Res & +30% Magic Find Rare Gloves |
+| Rare Gloves | Unique Jewel | ZOD rune | BRAK Rune | Ruby | \=  | +1 All Skills & +20-40 Weapon Damage  Crafted Gloves |
+| Rare Gloves | Unique Jewel | ZOD rune | ZEPH Rune | Sapphire | \=  | +1 All Skills & +10% All Elemental Damage & +10-20% Faster Cast Rate Crafted Gloves |
 
 ## Helms
-
-> **Max Enchants: 1**
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Helm | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 1 Shout on level up Magic Helm |
-| Helm | Orb of Infusion | RAL Rune | Gem |  | \=  | +15% Faster Hit Recovery Rare Helm & 50% Defense |
-| Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
-| Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
-| Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
-| Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
-| Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
-| Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
-| Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
-| Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
-| Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
-| Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
-| Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
-| Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
-| Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
-| Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
-| Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
-| Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
-| Helm | Rare Jewel | UM Rune | EL Rune | Gem | \=  | +20-25% All Resists & +20-30% Faster Hit Recovery Rare Helm |
-| Helm | Unique Jewel | BER rune | JAH Rune | Gem (Any) | \=  | +2 All Skills & +5-10% Physical Damage Reduction & +5-10% Max HP Crafted Helm |
-| Helm | Unique Jewel | ZOD rune | BRAK Rune | Ruby | \=  | +2 All Skills & +50% Enhanced Weapon Damage Crafted Helm |
-| Helm | Unique Jewel | ZOD rune | ZEPH Rune | Sapphire | \=  | +2 All Skills & +10% All Elemental Damage Crafted Helm |
+| Magic Helm | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 1 Shout on level up Magic Helm |
+| Magic Helm | Orb of Infusion | RAL Rune | Gem (Any) |  | \=  | +15% Faster Hit Recovery Rare Helm & 50% Defense |
+| Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
+| Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
+| Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
+| Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
+| Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
+| Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
+| Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
+| Rare Helm | Rare Jewel | SHAEL Rune | EL Rune | Ruby | \=  | +1 Current Class Skills & +10-15% Increased Attack Speed Rare Helm |
+| Rare Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
+| Rare Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
+| Rare Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
+| Rare Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
+| Rare Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
+| Rare Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
+| Rare Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
+| Rare Helm | Rare Jewel | DOL Rune | EL Rune | Sapphire | \=  | +1 Current Class Skills & +10-15% Faster Cast Rate Rare Helm |
+| Rare Helm | Rare Jewel | UM Rune | EL Rune | Gem (Any) | \=  | +20-25% All Resists & +20-30% Faster Hit Recovery Rare Helm |
+| Rare Helm | Unique Jewel | BER rune | JAH Rune | Gem(Any) | \=  | +2 All Skills & +5-10% Physical Damage Reduction & +5-10% Max HP Crafted Helm |
+| Rare Helm | Unique Jewel | ZOD rune | BRAK Rune | Ruby | \=  | +2 All Skills & +50% Enhanced Weapon Damage Crafted Helm |
+| Rare Helm | Unique Jewel | ZOD rune | ZEPH Rune | Sapphire | \=  | +2 All Skills & +10% All Elemental Damage Crafted Helm |
 | Helm | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Helm Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
 
-
 ## Shields
-
-
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Shield | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 4 Holy Shield on Level Up & +5 All Attributes Magic Shield |
-| Shield | Orb of Infusion | THUL Rune | Gem |  | \=  | +1 Current Class Skills |
-| Shield | Orb of Infusion | THUL Rune | Gem |  | \=  | +1 Current Class Skills |
-| Shield | Orb of Infusion | THUL Rune | Gem |  | \=  | +1 Current Class Skills |
-| Shield | Orb of Infusion | THUL Rune | Gem |  | \=  | +1 Current Class Skills |
-| Shield | Orb of Infusion | THUL Rune | Gem |  | \=  | +1 Current Class Skills |
-| Shield | Orb of Infusion | THUL Rune | Gem |  | \=  | +1 Current Class Skills |
-| Shield | Orb of Infusion | THUL Rune | Gem |  | \=  | +1 Current Class Skills |
-| Shield | Orb of Infusion | THUL Rune | Gem |  | \=  | +1 Current Class Skills |
-| Shield | Rare Jewel | UM Rune | IST Rune | Gem | \=  | +20-25% All Res & +30-40% Magic Find Rare Shield |
-| Shield | Rare Jewel | UM Rune | SHAEL Rune | Gem | \=  | +20% All Res & +20% Increase Block Chance & +20% Faster Hit Recovery Rare Shield |
-| Shield | Unique Jewel | BER Rune | UM Rune | Gem | \=  | +2 All Skills & +30-40% All Res & +10% Physical Damage Reduction Crafted Shield |
-| Shield | Unique Jewel | ZOD Rune | OHM Rune | Gem | \=  | +2 All Skills & +50-100% Enhanced Weapon Damage Crafted Shield |
-| Shield | Unique Jewel | ZOD Rune | ZEPH Rune | Gem | \=  | +2 All SKills & +15-20% All Elemental Damage Crafted Shield |
+| Magic Shield | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 4 Holy Shield on Level Up & +5 All Attributes Magic Shield |
+| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
+| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
+| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
+| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
+| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
+| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
+| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
+| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
+| Rare Shield | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% All Res & +30-40% Magic Find Rare Shield |
+| Rare Shield | Rare Jewel | UM Rune | SHAEL Rune | Gem (Any) | \=  | +20% All Res & +20% Increase Block Chance & +20% Faster Hit Recovery Rare Shield |
+| Rare Shield | Unique Jewel | BER Rune | UM Rune | Gem (Any) | \=  | +2 All Skills & +30-40% All Res & +10% Physical Damage Reduction Crafted Shield |
+| Rare Shield | Unique Jewel | ZOD Rune | OHM Rune | Gem (Any) | \=  | +2 All Skills & +50-100% Enhanced Weapon Damage Crafted Shield |
+| Rare Shield | Unique Jewel | ZOD Rune | ZEPH Rune | Gem (Any) | \=  | +2 All SKills & +15-20% All Elemental Damage Crafted Shield |
 | Shield | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Shield Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
 
-
 ## Body Armor
-
-
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Body Armor | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 5 Oak Sage on level up Magic Body Armor |
-| Body Armor | Orb of Infusion | RAL Rune | Gem |  | \=  | +20% Faster Run/Walk & +100 Defense Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
-| Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
-| Body Armor | Rare Jewel | UM Rune | IST Rune | Gem | \=  | +20-25 All Res & +20-40% Magic Find Rare Body Armor |
-| Body Armor | Unique Jewel | ZOD Rune | BER Rune | UM RUNE | \=  | +2 All Skills & +150-175% Enhanced Defense & +20-30% All Resists +5-10% Physical Damage Reduction Crafted Body Armor |
-| Body Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
-| Body Armor | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
-| Body Armor | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Torso Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
-
+| Magic Body Armor | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 5 Oak Sage on level up Magic Body Armor |
+| Magic Body Armor | Orb of Infusion | RAL Rune | Gem (Any) |  | \=  | +20% Faster Run/Walk & +100 Defense Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
+| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
+| Rare Body Armor | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25 All Res & +20-40% Magic Find Rare Body Armor |
+| Rare Body Armor | Unique Jewel | ZOD Rune | BER Rune | UM RUNE | \=  | +2 All Skills & +150-175% Enhanced Defense & +20-30% All Resists +5-10% Physical Damage Reduction Crafted Body Armor |
+| Unique Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
+| Set Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
+| Unique Armor | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
+| Set Armor | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
+| Torso | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Torso Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
 
 ## Weapons
-
-
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Weapon | Orb of Infusion | SOL Rune | SHAEL Rune | Gem | \=  | +1 Min Damage/lvl & +1 Max Damage/lvl & +20% Increased Attack Speed Rare Weapon |
-| Weapon | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
-| Weapon | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
-
+| Magic Weapon | Orb of Infusion | SOL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Min Damage/lvl & +1 Max Damage/lvl & +20% Increased Attack Speed Rare Weapon |
+| Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & +30-40 Increased Attack Speed Crafted Weapon |
+| Any 1 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2 All Skills & 150-200% Enhanced Weapon Damage & +20-30 Increased Attack Speed Crafted Weapon |
+| Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | CHAM Rune | Gem (Any) | \=  | +2-3 All Skills & +20-30% All Elemental damage Crafted Weapon |
+| Any 1 Hand Rare Weapon | Unique Jewel | ZEPH Rune | CHAM Rune | Gem (Any) | \=  | +2 All Skills & +10-15% All Elemental damage Crafted Weapon |
+| Any 2 Hand Rare Weapon | Unique Jewel | MYR Rune | ZOD Rune | Gem (Any) | \=  | +2-3 All Skills & +20-25% Magic Skill Damage Crafted Weapon |
+| Any 1 Hand Rare Weapon | Unique Jewel | MYR Rune | ZOD Rune | Gem (Any) | \=  | +2 All Skills & +15-20% Magic Skill Damage Crafted Weapon |
+| Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | DEM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & -15 To enemy physical resist Crafted Weapon |
+| Any 1 Hand Rare Weapon | Unique Jewel | BRAK Rune | DEM Rune | Gem (Any) | \=  | +2 All Skills & 150-200% Enhanced Weapon Damage & -10 To enemy physical resist Crafted Weapon |
+| Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | GRIT Rune | Gem (Any) | \=  | +2-3 All Skills & -20-30% To All Enemy Elemental Resist Crafted Weapon |
+| Any 1 Hand Rare Weapon | Unique Jewel | ZEPH Rune | GRIT Rune | Gem (Any) | \=  | +2 All Skills & -10-15% To All Enemy Elemental Resist Crafted Weapon |
+| Any 2 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2-3 All Skills & -15-20% To enemy Magic Resist Crafted Weapon |
+| Any 1 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2 All Skills & -10-15% To enemy Magic Resist  Crafted Weapon |
+| Unique Weapon | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
+| Set Weapon | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
+| Unique Weapon | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
+| Set Weapon | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
+| Non-Throwing Weapon | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Weapon Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Damage |
 
 ## Charms
 

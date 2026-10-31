@@ -15,8 +15,6 @@ This page contains all current Reimagined recipes:
 - **Item Enchants:** Add stats to existing equipment.
 - **Item Crafting:** Create new magic, rare, unique, and crafted items.
 
-> **Recipe audit:** This page incorporates the current comparison export, with added recipes merged into existing crafting/enchantment tables, repeated identical rows consolidated, and regeneration recipes separated from ordinary rerolls. The old comparison snapshot is incomplete, so entries not safely matched are preserved rather than silently deleted.
-
 > **Important:** Many vanilla recipes were removed. If a recipe is not on this page or the website's list of recipes [here](https://www.d2r-reimagined.com/data/cube-recipes), it does not exist in the mod.
 
 ## Contents

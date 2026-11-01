@@ -1081,44 +1081,26 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & +30-40 Increased Attack Speed Crafted Weapon |
 | Any 1 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2 All Skills & 150-200% Enhanced Weapon Damage & +20-30 Increased Attack Speed Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Brak Rune (#34) | Ohm Rune | Gem | \= | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>+(20-30)% Increased Attack Speed<br>New Crafted 1H Weapons |
-| Rare Missile Weapon | Unique Jewel | Brak Rune (#34) | Ohm Rune | Gem | \= | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>+(30-40)% Increased Attack Speed<br>New Crafted Missile Weapon |
-| Rare Slam Weapons | Unique Jewel | Brak Rune (#34) | Ohm Rune | Gem | \= | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>+(30-40)% Increased Attack Speed<br>New Crafted Slam Weapons |
-| Rare Spears and Polearms | Unique Jewel | Brak Rune (#34) | Ohm Rune | Gem | \= | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>+(30-40)% Increased Attack Speed<br>New Crafted Spears and Polearms |
 | Set Weapon | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
 | Unique Weapon | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
 | Non-Throwing Weapon | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Weapon Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Damage |
 | Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | CHAM Rune | Gem (Any) | \=  | +2-3 All Skills & +20-30% All Elemental damage Crafted Weapon |
 | Any 1 Hand Rare Weapon | Unique Jewel | ZEPH Rune | CHAM Rune | Gem (Any) | \=  | +2 All Skills & +10-15% All Elemental damage Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Zeph Rune (#35) | Cham Rune | Gem | \= | +2 to All Skills<br>+(10-15)% to All Elemental Skill Damage<br>New Crafted 1H Weapons |
-| Rare Missile Weapon | Unique Jewel | Zeph Rune (#35) | Cham Rune | Gem | \= | +(2-3) to All Skills<br>+(20-30)% to All Elemental Skill Damage<br>New Crafted Missile Weapon |
-| Rare Slam Weapons | Unique Jewel | Zeph Rune (#35) | Cham Rune | Gem | \= | +(2-3) to All Skills<br>+(20-30)% to All Elemental Skill Damage<br>New Crafted Slam Weapons |
-| Rare Spears and Polearms | Unique Jewel | Zeph Rune (#35) | Cham Rune | Gem | \= | +(2-3) to All Skills<br>+(20-30)% to All Elemental Skill Damage<br>New Crafted Spears and Polearms |
 | Unique Weapon | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
 | Set Weapon | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 | Any 2 Hand Rare Weapon | Unique Jewel | MYR Rune | ZOD Rune | Gem (Any) | \=  | +2-3 All Skills & +20-25% Magic Skill Damage Crafted Weapon |
 | Any 1 Hand Rare Weapon | Unique Jewel | MYR Rune | ZOD Rune | Gem (Any) | \=  | +2 All Skills & +15-20% Magic Skill Damage Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Myr Rune (#36) | Zod Rune | Gem | \= | +2 to All Skills<br>+(15-20)% to Magic Skill Damage<br>New Crafted 1H Weapons |
-| Rare Missile Weapon | Unique Jewel | Myr Rune (#36) | Zod Rune | Gem | \= | +(2-3) to All Skills<br>+(20-25)% to Magic Skill Damage<br>New Crafted Missile Weapon |
-| Rare Slam Weapons | Unique Jewel | Myr Rune (#36) | Zod Rune | Gem | \= | +(2-3) to All Skills<br>+(20-25)% to Magic Skill Damage<br>New Crafted Slam Weapons |
-| Rare Spears and Polearms | Unique Jewel | Myr Rune (#36) | Zod Rune | Gem | \= | +(2-3) to All Skills<br>+(20-25)% to Magic Skill Damage<br>New Crafted Spears and Polearms |
 | Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | DEM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & -15 To enemy physical resist Crafted Weapon |
 | Any 1 Hand Rare Weapon | Unique Jewel | BRAK Rune | DEM Rune | Gem (Any) | \=  | +2 All Skills & 150-200% Enhanced Weapon Damage & -10 To enemy physical resist Crafted Weapon |
 | Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | GRIT Rune | Gem (Any) | \=  | +2-3 All Skills & -20-30% To All Enemy Elemental Resist Crafted Weapon |
 | Any 1 Hand Rare Weapon | Unique Jewel | ZEPH Rune | GRIT Rune | Gem (Any) | \=  | +2 All Skills & -10-15% To All Enemy Elemental Resist Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Brak Rune (#34) | Dem Rune (#38) | Gem | \= | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>-10% to Enemy Physical Damage Resistance<br>New Crafted 1H Weapons |
 | Rare 1H Weapons | Unique Jewel | Zeph Rune (#35) | Grit Rune (#37) | Gem | \= | +2 to All Skills<br>-(10-15)% to All Enemy Elemental Resistances<br>New Crafted 1H Weapons |
-| Rare Missile Weapon | Unique Jewel | Brak Rune (#34) | Dem Rune (#38) | Gem | \= | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>-15% to Enemy Physical Damage Resistance<br>New Crafted Missile Weapon |
-| Rare Missile Weapon | Unique Jewel | Zeph Rune (#35) | Grit Rune (#37) | Gem | \= | +(2-3) to All Skills<br>-(20-30)% to All Enemy Elemental Resistances<br>New Crafted Missile Weapon |
-| Rare Slam Weapons | Unique Jewel | Brak Rune (#34) | Dem Rune (#38) | Gem | \= | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>-15% to Enemy Physical Damage Resistance<br>New Crafted Slam Weapons |
-| Rare Slam Weapons | Unique Jewel | Zeph Rune (#35) | Grit Rune (#37) | Gem | \= | +(2-3) to All Skills<br>-(20-30)% to All Enemy Elemental Resistances<br>New Crafted Slam Weapons |
-| Rare Spears and Polearms | Unique Jewel | Brak Rune (#34) | Dem Rune (#38) | Gem | \= | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>-15% to Enemy Physical Damage Resistance<br>New Crafted Spears and Polearms |
-| Rare Spears and Polearms | Unique Jewel | Zeph Rune (#35) | Grit Rune (#37) | Gem | \= | +(2-3) to All Skills<br>-(20-30)% to All Enemy Elemental Resistances<br>New Crafted Spears and Polearms |
 | Any 2 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2-3 All Skills & -15-20% To enemy Magic Resist Crafted Weapon |
 | Any 1 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2 All Skills & -10-15% To enemy Magic Resist  Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +2 to All Skills<br>-(10-15)% to Enemy Magic Resistance<br>New Crafted 1H Weapons |
-| Rare Missile Weapon | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Missile Weapon |
-| Rare Slam Weapons | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Slam Weapons |
-| Rare Spears and Polearms | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Spears and Polearms |
 
 ## Charms
 

@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-10-30T14:40:29.878Z
+date: 2026-11-01T03:39:22.699Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -75,13 +75,23 @@ C:\Users\<your user>\Saved Games\Diablo II Resurrected\mods\ReimaginedThree
 ```
 
 **Q: How do i get the ladder extensions in the non-ladder D2RLoader option?**
-A: Extensions are located in your d2r install directory 
-```"Diablo II Resurrected/mods/ReimaginedLadder/d2rloader/plugins``` and /patches. Some extensions require files from /config too.
+- A: Go to `https://github.com/D2R-Reimagined/d2r-reimagined-mod/releases/` and check for the latest version of D2R Reimagined Loader - #.#.#.zip and download it.
+  1. Once downloaded, click the install/update tab inside the launcher then click the select zip manually button.
+  2. Choose the .zip you just downloaded and it will complete the installation.
+  3. Offline and TCP/IP using ladder plugins is now installed to mod + loader launch option.
+  
+> This is incompatible with mod-only launch and the game may crash, use mod + loader when using this file.
+{.is-warning}
+
 
 Best bet is to just copy the only the d2rloader folder from the ladder folder into mods/Reimagined or cherry pick the plugins/patches and even grab more from d2rloader.net/hub
 
 **Q: Where do i get D2RLoader Extension/Plugins/Patches?**
-A: https://d2rloader.net/hub or the d2rloader discord will have links to extensions or the extension authors github if they do not use the hub yet.
+- A: https://d2rloader.net/hub or the d2rloader discord will have links to extensions or the extension authors github if they do not use the hub yet.
 
 **Q: When the game launches I get no red cog under plauy button, why is broke?**
-A: Because SnowCo SnowCo'ed. Use -forcedesktop in command line and see if that magics everything better.
+- A: Because SnowCo SnowCo'ed. Use -forcedesktop in command line and see if that magics everything better.
+
+**Q: How do I fix "Your D2RLoader enviroment does not match the host." error?**
+- A1: Close your game and open task manager and look for extra copies of D2RLoader.exe that may still be running and end task them. Can also restart your PC to ensure none are left open.
+- A2: Go find and delete `C:\Program Files (x86)\Diablo II Resurrected\d2rloader\config\d2rloader.toml` after performing A1 if the error persists.

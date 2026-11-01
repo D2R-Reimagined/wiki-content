@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-01T04:24:00.553Z
+date: 2026-11-01T22:58:51.936Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -325,26 +325,16 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Amulet | Topaz |  |  |  | \=  | +10% Magic Find & +20% Gold Find |
-| Amulet | Ruby |  |  |  | \=  | +20 Life & +2 Life / Kill |
-| Amulet | Sapphire |  |  |  | \=  | +20 Mana & +2 Mana / Kill |
-| Amulet | Emerald |  |  |  | \=  | +5 Dexterity & +5 Vitality |
-| Amulet | Skull |  |  |  | \=  | +5 Energy & +5 Vitality |
-| Amulet | Amethyst |  |  |  | \=  | +5 Strength & +5 Vitality |
+| Amulet | Topaz |  |  |  | \=  | +10% Magic Find<br>+20% Gold Find |
 | Amulet | Amethyst |  |  |  | \= | +5 to Strength<br>+5 to Vitality |
 | Amulet | Emerald |  |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
 | Amulet | Ruby |  |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Amulet | Sapphire |  |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
 | Amulet | Skull |  |  |  | \= | +5 to Energy<br>+5 to Vitality |
-| Amulet | Topaz |  |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
 | Amulet | Ruby | TIR Rune |  |  | \=  | +15 Fire Resistance |
 | Amulet | Sapphire | TIR Rune |  |  | \=  | +15 Cold Resistance |
 | Amulet | Topaz | TIR Rune |  |  | \=  | +15 Lightning Resistance |
-| Amulet | Emerald | TIR Rune |  |  | \=  | +15 Poison Resistance |
 | Amulet | Emerald | Tir Rune |  |  | \= | +15% Poison Resistance |
-| Amulet | Ruby | Tir Rune |  |  | \= | +15% Fire Resistance |
-| Amulet | Sapphire | Tir Rune |  |  | \= | +15% Cold Resistance |
-| Amulet | Topaz | Tir Rune |  |  | \= | +15% Lightning Resistance |
 | Amulet | Topaz | Magic Jewel |  |  | \=  | +2 Random Assassin Skills |
 | Amulet | Ruby | Magic Jewel |  |  | \=  | +2 Random Barbarian Skills |
 | Amulet | Sapphire | Magic Jewel |  |  | \=  | +2 Random Sorceress Skills |
@@ -353,24 +343,10 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Amethyst | Magic Jewel |  |  | \=  | +2 Random Amazon Skills |
 | Amulet | Diamond | Magic Jewel |  |  | \=  | +2 Random Paladin Skills |
 | Amulet | Chaos Onyx | Magic Jewel |  |  | \=  | +2 Random Warlock Skills |
-| Amulet | Amethyst | Magic Jewel |  |  | \= | +2 Random Amazon Skill |
-| Amulet | Chaos Onyx | Magic Jewel |  |  | \= | +2 Random Warlock Skill |
-| Amulet | Diamond | Magic Jewel |  |  | \= | +2 Random Paladin Skill |
-| Amulet | Emerald | Magic Jewel |  |  | \= | +2 Random Druid Skill |
-| Amulet | Ruby | Magic Jewel |  |  | \= | +2 Random Barbarian Skill |
-| Amulet | Sapphire | Magic Jewel |  |  | \= | +2 Random Sorceress Skill |
-| Amulet | Skull | Magic Jewel |  |  | \= | +2 Random Necromancer Skill |
-| Amulet | Topaz | Magic Jewel |  |  | \= | +2 Random Assassin Skill |
-| Amulet | Diamond | Magic Jewel | TIR Rune |  | \=  | +5 All Resistances |
 | Amulet | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
 | 1 Amethyst <br>1 Topaz <br>1 Sapphire <br>1 Emerald <br>1 Ruby <br>1 Diamond <br>1 Magic Amulet |  |  |  |  | \=  | Prismatic Amulet |
-| Amulet | Emerald | Magic Jewel | Shael Rune |  | \=  | +10% attack speed |
 | Amulet | Emerald | Magic Jewel | Shael Rune |  | \= | +10% Increased Attack Speed |
-| Amulet | Sapphire | Magic Jewel | Dol Rune |  | \=  | +10% faster cast rate |
 | Amulet | Sapphire | Magic Jewel | Dol Rune |  | \= | +10% Faster Cast Rate |
-| Amulet | Infusion Orb | Topaz | Rare Jewel |  | \=  | +25% Magic Find & +50% Gold Find |
-| Amulet | Infusion Orb | Ruby | Rare Jewel |  | \=  | +40 Life & +4 Life / Kill |
-| Amulet | Infusion Orb | Sapphire | Rare Jewel |  | \=  | +40 Mana & +4 Mana / Kill |
 | Amulet | Orb of Infusion | Rare Jewel | Ruby |  | \= | +40 to Life<br>+4 Life after each Kill |
 | Amulet | Orb of Infusion | Rare Jewel | Sapphire |  | \= | +40 to Mana<br>+4 Mana after each Kill |
 | Amulet | Orb of Infusion | Rare Jewel | Topaz |  | \= | +25% Chance Items Roll Magic or Better<br>+50% Extra Gold from Monsters |
@@ -378,14 +354,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Orb of Infusion | Magic Jewel | Fal Rune | Emerald | \= | +15 to Dexterity<br>+15 to Vitality |
 | Amulet | Orb of Infusion | Magic Jewel | Fal Rune | Sapphire | \= | +15 to Energy<br>+15 to Vitality |
 | Amulet | Orb of Infusion | Rare Jewel | Diamond | Um Rune | \= | +15% to All Resistances |
-| Amulet | Infusion Orb | Unique Jewel |  |  | \=  | +1 Assassin Skills |
-| Amulet | Infusion Orb | Unique Jewel |  |  | \=  | +1 Barbarian Skills |
-| Amulet | Infusion Orb | Unique Jewel |  |  | \=  | +1 Sorceress Skills |
-| Amulet | Infusion Orb | Unique Jewel |  |  | \=  | +1 Druid Skills |
-| Amulet | Infusion Orb | Unique Jewel |  |  | \=  | +1 Necromancer Skills |
-| Amulet | Infusion Orb | Unique Jewel |  |  | \=  | +1 Amazon Skills |
-| Amulet | Infusion Orb | Unique Jewel |  |  | \=  | +1 Paladin Skills |
-| Amulet | Infusion Orb | Unique Jewel |  |  | \=  | +1 Warlock Skills |
 | Amulet (Amazon only) | Orb of Infusion | Unique Jewel |  |  | \= | +1 to Amazon Skill Levels |
 | Amulet (Assassin only) | Orb of Infusion | Unique Jewel |  |  | \= | +1 to Assassin Skill Levels |
 | Amulet (Barbarian only) | Orb of Infusion | Unique Jewel |  |  | \= | +1 to Barbarian Skill Levels |
@@ -394,17 +362,11 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet (Paladin only) | Orb of Infusion | Unique Jewel |  |  | \= | +1 to Paladin Skill Levels |
 | Amulet (Sorceress only) | Orb of Infusion | Unique Jewel |  |  | \= | +1 to Sorceress Skill Levels |
 | Amulet (Warlock only) | Orb of Infusion | Unique Jewel |  |  | \= | +1 to Warlock Skills |
-| Amulet | Conversion Orb | Unique Jewel | Zod Rune |  | \=  | +1 all skills |
 | Amulet | Orb of Conversion | Unique Jewel | Zod Rune |  | \= | +1 to All Skills |
-| Amulet | Conversion Orb | Unique Jewel | Brak Rune |  | \=  | +1 all skills & -5% enemy physical resistance |
 | Amulet | Orb of Conversion | Unique Jewel | Brak Rune (#34) |  | \= | +1 to All Skills<br>-5% to Enemy Physical Damage Resistance |
-| Amulet | Conversion Orb | Unique Jewel | Zeph Rune |  | \=  | +1 all skills & +5% all elemental damage |
 | Amulet | Orb of Conversion | Unique Jewel | Zeph Rune (#35) |  | \= | +1 to All Skills<br>+5% to All Elemental Skill Damage |
-| Amulet | Conversion Orb | Unique Jewel | Myr Rune |  | \=  | +1 all skills &  -5% enemy magic resistance |
 | Amulet | Orb of Conversion | Unique Jewel | Myr Rune (#36) |  | \= | +1 to All Skills<br>-5% to Enemy Magic Resistance |
-| Amulet | Conversion Orb | Unique Jewel | Grit Rune |  | \=  | +1 all skills &  -5% enemy elemental resistance |
 | Amulet | Orb of Conversion | Unique Jewel | Grit Rune (#37) |  | \= | +1 to All Skills<br>-5% to All Enemy Elemental Resistances |
-| Amulet | Conversion Orb | Unique Jewel | Hev Rune |  | \=  | +50% Enhanced Damage &  -5% enemy physical resistance |
 | Amulet | Orb of Conversion | Unique Jewel | Hev Rune (#39) |  | \= | +50% Enhanced Weapon Damage<br>-5% to Enemy Physical Damage Resistance |
 
 ## Rings

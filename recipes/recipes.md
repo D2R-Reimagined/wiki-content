@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-01T23:07:22.052Z
+date: 2026-11-01T23:30:37.096Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -546,12 +546,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Helm | Infusion Orb | Conversion Orb | Emerald | CHAM Rune<br>Unique Jewel | \=  | +2 Poison Skills |
 | Helm | Infusion Orb | Conversion Orb | Diamond | CHAM Rune<br>Unique Jewel | \=  | +2 Magic Skills |
 | Helm | Infusion Orb | Conversion Orb | Skull | ZOD Rune<br>Unique Jewel | \=  | +1 All Skills |
-| Helm | Orb of Infusion | Diamond | Cham Rune | Unique Jewel + Orb of Conversion | \= | +2 to Magic Skills |
-| Helm | Orb of Infusion | Emerald | Cham Rune | Unique Jewel + Orb of Conversion | \= | +2 to Poison Skills |
-| Helm | Orb of Infusion | Ruby | Cham Rune | Unique Jewel + Orb of Conversion | \= | +2 to Fire Skills |
-| Helm | Orb of Infusion | Sapphire | Cham Rune | Unique Jewel + Orb of Conversion | \= | +2 to Cold Skills |
-| Helm | Orb of Infusion | Topaz | Cham Rune | Unique Jewel + Orb of Conversion | \= | +2 to Lightning Skills |
-| Helm | Orb of Infusion | Skull | Zod Rune | Unique Jewel + Orb of Conversion | \= | +1 to All Skills |
 | Helm (Amazon only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +2 to Amazon Skill Levels<br>Indestructible |
 | Helm (Assassin only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +2 to Assassin Skill Levels<br>Indestructible |
 | Helm (Barbarian only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +2 to Barbarian Skill Levels<br>Indestructible |
@@ -566,27 +560,16 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Shield | Ruby | TIR Rune |  |  | \=  | +15 Fire Resistance |
-| Shield | Sapphire | TIR Rune |  |  | \=  | +15 Cold Resistance |
-| Shield | Topaz | TIR Rune |  |  | \=  | +15 Lightning Resistance |
-| Shield | Emerald | TIR Rune |  |  | \=  | +15 Poison Resistance |
 | Any Shield | Emerald | Tir Rune |  |  | \= | +15% Poison Resistance |
 | Any Shield | Ruby | Tir Rune |  |  | \= | +15% Fire Resistance |
 | Any Shield | Sapphire | Tir Rune |  |  | \= | +15% Cold Resistance |
 | Any Shield | Topaz | Tir Rune |  |  | \= | +15% Lightning Resistance |
-| Shield | Topaz | Magic Jewel |  |  | \=  | +10% Magic Find  & +20% Gold Find |
-| Shield | Emerald | Magic Jewel |  |  | \=  | +5 Dexterity & +5 Vitality |
-| Shield | Amethyst | Magic Jewel |  |  | \=  | +5 Strength & +5 Vitality |
-| Shield | Skull | Magic Jewel |  |  | \=  | +5 Energy & +5 Vitality |
 | Any Shield | Amethyst | Magic Jewel |  |  | \= | +5 to Strength<br>+5 to Vitality |
 | Any Shield | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
 | Any Shield | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Any Shield | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
-| Shield | ETH Rune | Magic Jewel |  |  | \=  | +20% Mana Regen |
 | Any Shield | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
-| Shield | Diamond | Magic Jewel | TIR Rune |  | \=  | +5 All Resistances |
 | Any Shield | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
-| Shield | ITH Rune | Magic Jewel |  |  | \=  | +10% Damage Goes To Mana |
 | Any Shield | Ith Rune | Magic Jewel |  |  | \= | +10% Damage Taken Added To Mana |
 | Shield | SOL Rune | Amethyst | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
 | Shield | SOL Rune | Chaos Onyx | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
@@ -615,23 +598,12 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Body Armor | Sapphire | TIR Rune |  |  | \=  | +15 Cold Resistance |
 | Body Armor | Topaz | TIR Rune |  |  | \=  | +15 Lightning Resistance |
 | Body Armor | Emerald | TIR Rune |  |  | \=  | +15 Poison Resistance |
-| Armor | Emerald | Tir Rune |  |  | \= | +15% Poison Resistance |
-| Armor | Ruby | Tir Rune |  |  | \= | +15% Fire Resistance |
-| Armor | Sapphire | Tir Rune |  |  | \= | +15% Cold Resistance |
-| Armor | Topaz | Tir Rune |  |  | \= | +15% Lightning Resistance |
 | Body Armor | Topaz | Magic Jewel |  |  | \=  | +10% Magic Find  & +20% Gold Find |
 | Body Armor | Emerald | Magic Jewel |  |  | \=  | +5 Dexterity & +5 Vitality |
 | Body Armor | Amethyst | Magic Jewel |  |  | \=  | +5 Strength & +5 Vitality |
 | Body Armor | Skull | Magic Jewel |  |  | \=  | +5 Energy & +5 Vitality |
-| Armor | Amethyst | Magic Jewel |  |  | \= | +5 to Strength<br>+5 to Vitality |
-| Armor | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
-| Armor | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
-| Armor | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
 | Body Armor | ETH Rune | Magic Jewel |  |  | \=  | +20% Mana Regen |
-| Armor | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
 | Body Armor | Diamond | Magic Jewel | TIR Rune |  | \=  | +5 All Resistances |
-| Armor | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
-| Body Armor | ITH Rune | Magic Jewel |  |  | \=  | +10% Damage Goes To Mana |
 | Armor | Ith Rune | Magic Jewel |  |  | \= | +10% Damage Taken Added To Mana |
 | Body Armor | SOL Rune | Amethyst | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
 | Body Armor | SOL Rune | Chaos Onyx | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |

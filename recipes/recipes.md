@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-01T23:04:30.208Z
+date: 2026-11-01T23:07:22.052Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -517,21 +517,14 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Helm | Topaz | Magic Jewel |  |  | \=  | +10% Magic Find  & +20% Gold Find |
-| Helm | Ruby | Magic Jewel |  |  | \=  | +20 HP & +2 Life / Kill |
-| Helm | Sapphire | Magic Jewel |  |  | \=  | +20 Mana & +2 Mana / Kill |
-| Helm | Emerald | Magic Jewel |  |  | \=  | +5 Dexterity & +5 Vitality |
-| Helm | Amethyst | Magic Jewel |  |  | \=  | +5 Strength & +5 Vitality |
-| Helm | Skull | Magic Jewel |  |  | \=  | +5 Energy & +5 Vitality |
+| Helm | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Helm | Amethyst | Magic Jewel |  |  | \= | +5 to Strength<br>+5 to Vitality |
 | Helm | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
 | Helm | Ruby | Magic Jewel |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Helm | Sapphire | Magic Jewel |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
 | Helm | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Helm | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
-| Helm | ETH Rune | Magic Jewel |  |  | \=  | +20% Mana Regen |
 | Helm | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
-| Helm | Diamond | Magic Jewel | TIR Rune |  | \=  | +5 All Resistances |
 | Helm | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
 | Helm | Orb of Infusion | Amethyst | Shael Rune | Magic Jewel | \= | +20% Faster Hit Recovery |
 | Helm | Orb of Infusion | Skull | Lum Rune | Magic Jewel | \= | +40% Mana Regeneration<br>+10 to Energy |

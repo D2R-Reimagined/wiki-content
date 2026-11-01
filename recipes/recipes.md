@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-10-22T22:47:00.394Z
+date: 2026-11-01T04:20:54.602Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -1126,21 +1126,13 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Charms | Jewel Magic | Shael Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +5-10% Faster Attack Speed |
-| Charms | Jewel Magic | Dol Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +5-10% Faster Cast Rate |
-| Charms | Jewel Magic | Hel Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +5-10% Exp |
-| Charms | Jewel Magic | PUL Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +50-70Def & 10-15 Weapon Dmg |
-| Charms | Jewel Magic | UM Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +8-10 All-res |
-| Charms | Jewel Magic | KO Rune | FAL Rune |  | \=  | Crafted Magic Grand Charm +5-8Dexterity & +5-8Strength & +5-8% Enhanced Dmg |
-| Charms | Jewel Magic | IST Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +25-40% Magic Find & 50-80% Gold Find |
-| Charms | Jewel Rare | Vex Rune | HEL Rune | Topaz | \=  | Crafted Grand Charm & +1 Random Assassin Skill Tab |
-| Charms | Jewel Rare | Vex Rune | HEL Rune | Ruby | \=  | Crafted Grand Charm & +1 Random Barbarian Skill Tab |
-| Charms | Jewel Rare | Vex Rune | HEL Rune | Sapphire | \=  | CraftedGrand Charm & +1 Random Sorceress Skill Tab |
-| Charms | Jewel Rare | Vex Rune | HEL Rune | Emerald | \=  | Crafted Grand Charm & +1 Random Druid Skill Tab |
-| Charms | Jewel Rare | Vex Rune | HEL Rune | Skull | \=  | Crafted Grand Charm & +1 Random Necromancer Skill Tab |
-| Charms | Jewel Rare | Vex Rune | HEL Rune | Amethyst | \=  | Crafted Grand Charm & +1 Random Amazon Skill Tab |
-| Charms | Jewel Rare | Vex Rune | HEL Rune | Diamond | \=  | Crafted Grand Charm & +1 Random Paladin Skill Tab |
-| Charms | Jewel Rare | Vex Rune | HEL Rune | Chaos Onyx | \=  | Crafted Grand Charm & +1 Random Warlock Skill Tab |
+| Magic Grand Charm | Jewel Magic | Shael Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +5-10% Faster Attack Speed |
+| Magic Grand Charm | Jewel Magic | Dol Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +5-10% Faster Cast Rate |
+| Magic Grand Charm | Jewel Magic | Hel Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +5-10% Exp |
+| Magic Grand Charm | Jewel Magic | PUL Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +50-70Def & 10-15 Weapon Dmg |
+| Magic Grand Charm | Jewel Magic | UM Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +8-10 All-res |
+| Magic Grand Charm | Jewel Magic | KO Rune | FAL Rune |  | \=  | Crafted Magic Grand Charm +5-8Dexterity & +5-8Strength & +5-8% Enhanced Dmg |
+| Magic Grand Charm | Jewel Magic | IST Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +25-40% Magic Find & 50-80% Gold Find |
 | Magic Grand Charm | Rare Jewel | Hel Rune | Vex Rune | Amethyst | \= | +1 Random Skill Tab (Amazon Only)<br>New Crafted Grand Charm |
 | Magic Grand Charm | Rare Jewel | Hel Rune | Vex Rune | Chaos Onyx | \= | +1 Random Skill Tab (Warlock Only)<br>New Crafted Grand Charm |
 | Magic Grand Charm | Rare Jewel | Hel Rune | Vex Rune | Diamond | \= | +1 Random Skill Tab (Paladin Only)<br>New Crafted Grand Charm |

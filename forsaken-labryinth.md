@@ -2,15 +2,15 @@
 title: The Forsaken Labyrinth
 description: General information about the endgame dungeon The Forsaken Labyrinth
 published: true
-date: 2026-11-01T14:03:09.543Z
-tags: dungeon, forsaken, lab, labyrinth, forsaken labyrinth, token
+date: 2026-11-01T14:54:58.998Z
+tags: dungeon, forsaken, lab, token, labyrinth, forsaken labyrinth
 editor: markdown
 dateCreated: 2026-11-01T14:03:09.543Z
 ---
 
 # The Forsaken Labyrinth
 
-The Forsaken Labyrinth is a Hell-difficulty endgame dungeon beyond Harrogath. It is a connected descent through five boss domains, with each area increasing in difficulty from level 104 to 110. Expect a heavy mix of undead enemies, dangerous spellcasters, summoned reinforcements, and boss fights that punish careless play.
+The Forsaken Labyrinth is a Hell-only difficulty endgame dungeon beyond Harrogath. It is a connected descent through five boss domains, with each area increasing in difficulty from level 104 to 110. Expect a heavy mix of undead enemies, dangerous spellcasters, summoned reinforcements, and boss fights that punish careless play.
 
 To enter, you need a Forsaken Token. This can be obtained from Hell Baal's quest reward or from Hell Corpsefire after defeating Hell Baal. You then transmute the token in Harrogath to open the gate to the dungeon, and the token is returned so it can be used again.
 

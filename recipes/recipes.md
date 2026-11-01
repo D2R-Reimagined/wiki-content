@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-01T22:58:51.936Z
+date: 2026-11-01T23:04:30.208Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -374,9 +374,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ring | Topaz |  |  |  | \=  | +10% Magic Find  & +20% Gold Find |
-| Ring | Ruby |  |  |  | \=  | +20 HP & +2 Life / Kill |
-| Ring | Sapphire |  |  |  | \=  | +20 Mana & +2 Mana / Kill |
 | Ring | Ruby |  |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Ring | Sapphire |  |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
 | Ring | Topaz |  |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
@@ -384,37 +381,24 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Magic Ring | Sapphire | Thawing Potion |  |  | \=  | Cobalt Ring |
 | Magic Ring | Emerald | Antidote Potion |  |  | \=  | Jade Ring |
 | Magic Ring | Topaz | Rejuvenation Potion |  |  | \=  | Coral Ring |
-| Ring | Ruby | TIR Rune |  |  | \=  | +15 Fire Resistance |
-| Ring | Sapphire | TIR Rune |  |  | \=  | +15 Cold Resistance |
-| Ring | Topaz | TIR Rune |  |  | \=  | +15 Lightning Resistance |
-| Ring | Emerald | TIR Rune |  |  | \=  | +15 Poison Resistance |
 | Ring | Emerald | Tir Rune |  |  | \= | +15% Poison Resistance |
 | Ring | Ruby | Tir Rune |  |  | \= | +15% Fire Resistance |
 | Ring | Sapphire | Tir Rune |  |  | \= | +15% Cold Resistance |
 | Ring | Topaz | Tir Rune |  |  | \= | +15% Lightning Resistance |
-| Ring | Emerald | Magic Jewel | Shael Rune |  | \=  | +10% attack speed |
 | Ring | Emerald | Magic Jewel | Shael Rune |  | \= | +10% Increased Attack Speed |
-| Ring | Sapphire | Magic Jewel | Dol Rune |  | \=  | +10% faster cast rate |
 | Ring | Sapphire | Magic Jewel | Dol Rune |  | \= | +10% Faster Cast Rate |
 | Ring | Orb of Infusion | Sapphire | Amn Rune | Magic Jewel | \= | +5% Mana stolen per hit |
 | Ring | Orb of Infusion | Skull | Amn Rune | Magic Jewel | \= | +5% Life stolen per hit |
-| Ring | Infusion Orb | Ruby | Rare Jewel |  | \=  | +40 Life & +4 Life / Kill |
-| Ring | Infusion Orb | Sapphire | Rare Jewel |  | \=  | +40 Mana & +4 Mana / Kill |
 | Ring | Orb of Infusion | Ruby | Rare Jewel |  | \= | +40 to Life<br>+4 Life after each Kill |
 | Ring | Orb of Infusion | Sapphire | Rare Jewel |  | \= | +40 to Mana<br>+4 Mana after each Kill |
 | Ring | Orb of Infusion | Diamond | Um Rune | Rare Jewel | \= | +15% to All Resistances |
 | Ring | Orb of Infusion | Topaz | Ist Rune | Rare Jewel | \= | +20% Chance Items Roll Magic or Better<br>+30% Extra Gold from Monsters |
 | Ring | Orb of Infusion | Sapphire | Sur Rune | Rare Jewel | \= | +5% Increased Maximum Mana<br>+80% Mana Regeneration |
 | Ring | Orb of Infusion | Ruby | Jah Rune | Rare Jewel | \= | +5% Increased Maximum Life |
-| Ring | Conversion Orb | Unique Jewel | Brak Rune |  | \=  | -3% enemy physical resistance |
 | Ring | Orb of Conversion | Unique Jewel | Brak Rune (#34) |  | \= | -3% to Enemy Physical Damage Resistance |
-| Ring | Conversion Orb | Unique Jewel | Zeph Rune |  | \=  | +3% all elemental damage |
 | Ring | Orb of Conversion | Unique Jewel | Zeph Rune (#35) |  | \= | +3% to All Elemental Skill Damage |
-| Ring | Conversion Orb | Unique Jewel | Myr Rune |  | \=  | -3% enemy magic resistance |
 | Ring | Orb of Conversion | Unique Jewel | Myr Rune (#36) |  | \= | -3% to Enemy Magic Resistance |
-| Ring | Conversion Orb | Unique Jewel | Grit Rune |  | \=  | -3% enemy elemental resistance |
 | Ring | Orb of Conversion | Unique Jewel | Grit Rune (#37) |  | \= | -3% to All Enemy Elemental Resistances |
-| Ring | Conversion Orb | Unique Jewel | Hev Rune |  | \=  | +15% Enhanced Damage &  -3% enemy physical resistance |
 | Ring | Orb of Conversion | Unique Jewel | Hev Rune (#39) |  | \= | +15% Enhanced Weapon Damage<br>-3% to Enemy Physical Damage Resistance |
 
 ## Belts
@@ -423,24 +407,14 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Belt | Topaz | Magic Jewel |  |  | \=  | +10% Magic Find  & +20% Gold Find |
-| Belt | Ruby | Magic Jewel |  |  | \=  | +20 HP & +2 Life / Kill |
-| Belt | Sapphire | Magic Jewel |  |  | \=  | +20 Mana & +2 Mana / Kill |
-| Belt | Emerald | Magic Jewel |  |  | \=  | +5 Dexterity & +5 Vitality |
-| Belt | Amethyst | Magic Jewel |  |  | \=  | +5 Strength & +5 Vitality |
-| Belt | Skull | Magic Jewel |  |  | \=  | +5 Energy & +5 Vitality |
 | Belt | Amethyst | Magic Jewel |  |  | \= | +5 to Strength<br>+5 to Vitality |
 | Belt | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
 | Belt | Ruby | Magic Jewel |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Belt | Sapphire | Magic Jewel |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
 | Belt | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Belt | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
-| Belt | ETH Rune | Magic Jewel |  |  | \=  | +20% Mana Regen |
 | Belt | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
-| Belt | Diamond | Magic Jewel | TIR Rune |  | \=  | +5 All Resistances |
 | Belt | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
-| Belt | Infusion Orb | Ruby | Rare Jewel |  | \=  | +40 Life & +4 Life / Kill |
-| Belt | Infusion Orb | Sapphire | Rare Jewel |  | \=  | +40 Mana & +4 Mana / Kill |
 | Belt | Orb of Infusion | Emerald | Shael Rune | Magic Jewel | \= | +15% Faster Hit Recovery |
 | Belt | Orb of Infusion | Ruby | Rare Jewel |  | \= | +40 to Life<br>+4 Life after each Kill |
 | Belt | Orb of Infusion | Sapphire | Rare Jewel |  | \= | +40 to Mana<br>+4 Mana after each Kill |
@@ -470,26 +444,15 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Boots | NEF Rune |  |  |  | \=  | +10% Faster Run/Walk |
 | Boots | Nef Rune |  |  |  | \= | +10% Faster Run/Walk Speed |
-| Boots | Topaz | Magic Jewel |  |  | \=  | +10% Magic Find  & +20% Gold Find |
-| Boots | Ruby | Magic Jewel |  |  | \=  | +20 HP & +2 Life / Kill |
-| Boots | Sapphire | Magic Jewel |  |  | \=  | +20 Mana & +2 Mana / Kill |
-| Boots | Emerald | Magic Jewel |  |  | \=  | +5 Dexterity & +5 Vitality |
-| Boots | Amethyst | Magic Jewel |  |  | \=  | +5 Strength & +5 Vitality |
-| Boots | Skull | Magic Jewel |  |  | \=  | +5 Energy & +5 Vitality |
 | Boots | Amethyst | Magic Jewel |  |  | \= | +5 to Strength<br>+5 to Vitality |
 | Boots | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
+| Boots | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Boots | Ruby | Magic Jewel |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Boots | Sapphire | Magic Jewel |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
-| Boots | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Boots | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
-| Boots | ETH Rune | Magic Jewel |  |  | \=  | +20% Mana Regen |
 | Boots | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
-| Boots | Diamond | Magic Jewel | TIR Rune |  | \=  | +5 All Resistances |
 | Boots | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
-| Boots | Infusion Orb | Ruby | Rare Jewel |  | \=  | +40 Life & +4 Life / Kill |
-| Boots | Infusion Orb | Sapphire | Rare Jewel |  | \=  | +40 Mana & +4 Mana / Kill |
 | Boots | Orb of Infusion | Amethyst | Shael Rune | Magic Jewel | \= | +20% Faster Hit Recovery |
 | Boots | Orb of Infusion | Emerald | Shael Rune | Magic Jewel | \= | +20% Faster Run/Walk Speed |
 | Boots | Orb of Infusion | Ruby | Rare Jewel |  | \= | +40 to Life<br>+4 Life after each Kill |
@@ -518,25 +481,16 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Gloves | Topaz | Magic Jewel |  |  | \=  | +10% Magic Find  & +20% Gold Find |
-| Gloves | Ruby | Magic Jewel |  |  | \=  | +20 HP & +2 Life / Kill |
-| Gloves | Sapphire | Magic Jewel |  |  | \=  | +20 Mana & +2 Mana / Kill |
-| Gloves | Emerald | Magic Jewel |  |  | \=  | +5 Dexterity & +5 Vitality |
-| Gloves | Amethyst | Magic Jewel |  |  | \=  | +5 Strength & +5 Vitality |
-| Gloves | Skull | Magic Jewel |  |  | \=  | +5 Energy & +5 Vitality |
+| Gloves | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Gloves | Amethyst | Magic Jewel |  |  | \= | +5 to Strength<br>+5 to Vitality |
 | Gloves | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
 | Gloves | Ruby | Magic Jewel |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Gloves | Sapphire | Magic Jewel |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
 | Gloves | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Gloves | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
-| Gloves | ETH Rune | Magic Jewel |  |  | \=  | +20% Mana Regen |
 | Gloves | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
-| Gloves | Diamond | Magic Jewel | TIR Rune |  | \=  | +5 All Resistances |
 | Gloves | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
-| Gloves | Emerald | Magic Jewel | Shael Rune |  | \=  | +10% attack speed |
 | Gloves | Emerald | Magic Jewel | Shael Rune |  | \= | +10% Increased Attack Speed |
-| Gloves | Sapphire | Magic Jewel | Dol Rune |  | \=  | +10% faster cast rate |
 | Gloves | Sapphire | Magic Jewel | Dol Rune |  | \= | +10% Faster Cast Rate |
 | Gloves | Orb of Infusion | Skull | Lum Rune | Magic Jewel | \= | +40% Mana Regeneration<br>+10 to Energy |
 | Gloves | Orb of Infusion | Amethyst | Fal Rune | Magic Jewel | \= | +15 to Strength<br>+15 to Vitality |

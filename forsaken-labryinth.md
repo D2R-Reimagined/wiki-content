@@ -2,7 +2,7 @@
 title: The Forsaken Labyrinth
 description: General information about the endgame dungeon The Forsaken Labyrinth
 published: true
-date: 2026-11-01T14:54:58.998Z
+date: 2026-11-01T14:55:58.342Z
 tags: dungeon, forsaken, lab, token, labyrinth, forsaken labyrinth
 editor: markdown
 dateCreated: 2026-11-01T14:03:09.543Z

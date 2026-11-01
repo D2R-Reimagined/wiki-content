@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-01T04:20:54.602Z
+date: 2026-11-01T04:24:00.553Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -1116,9 +1116,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Any 2 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2-3 All Skills & -15-20% To enemy Magic Resist Crafted Weapon |
 | Any 1 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2 All Skills & -10-15% To enemy Magic Resist  Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +2 to All Skills<br>-(10-15)% to Enemy Magic Resistance<br>New Crafted 1H Weapons |
-| Rare Missile Weapon | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Missile Weapon |
-| Rare Slam Weapons | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Slam Weapons |
-| Rare Spears and Polearms | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Spears and Polearms |
+| Any 2 Hand Rare Weapon | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Spears and Polearms |
 
 ## Charms
 

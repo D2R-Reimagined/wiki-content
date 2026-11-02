@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-11-01T05:06:46.771Z
+date: 2026-11-02T23:01:10.129Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -15,8 +15,7 @@ A: Yes, completely. We maintain the mod up to date with the latest SnowCo releas
 A: Yes, the mod is 100% compatible without the DLC. Heralds spawn, Worldstone shards and statues drop, and Uber Ancients are accessible. You will not have access tot he warlock class, specialized rune/material shared stash tabs, chronicle, or built in loot filters though. This also means you cannot join non DLC games whether its ladder or tcp.
 
 **Q: Can you increase the stack size in the DLC tabs higher than 99?**
-A: You can use D2RLoader to increase the stash stack size to 255. Otherwise, no it is engine limited.
-
+A: You can use D2RLoader to increase the stash stack size to 255(non ladder). Otherwise, no it is engine limited.
 
 **Q: I already killed hell quest Baal how can i get a Forsaken token to enter the Forsaken Labyrinth?**
 A: Kill hell Corpsefire in the den of evil if you have already killed quest baal previously.
@@ -36,7 +35,7 @@ A: Yes, use the desktop launcher or manual installation [directions here](https:
 A: Look at the top right of your character list, if the text is 'red' click it, it should turn gold and you should have a play button.
 
 **Q: Is there an endgame system?**
-A: No but it is being worked on, it will be revealed at the announcment stream in mid october. Until then we have is a [buffed NM, Hell, and TZs](https://wiki.d2r-reimagined.com/en/new_player_guide#gameplay-changes).
+A: [maps](https://wiki.d2r-reimagined.com/en/maps/overview) and [lab](/forsaken-labryinth)
 
 **Q: Can you make Whirlwind ( WW ) work with CTC on attack/striking, hit every frame, add missiles or spells to it, or make it do additional things?**
 A: No. The skill is very hard-coded. You can use D2RLoader with extensions to adjust it though. 

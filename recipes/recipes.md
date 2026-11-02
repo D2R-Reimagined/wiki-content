@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-01T23:30:37.096Z
+date: 2026-11-02T16:21:28.252Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -345,9 +345,9 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Topaz |  |  |  | \=  | +10% Magic Find<br>+20% Gold Find |
 | Amulet | Amethyst |  |  |  | \= | +5 to Strength<br>+5 to Vitality |
 | Amulet | Emerald |  |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
+| Amulet | Skull |  |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Amulet | Ruby |  |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Amulet | Sapphire |  |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
-| Amulet | Skull |  |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Amulet | Ruby | TIR Rune |  |  | \=  | +15 Fire Resistance |
 | Amulet | Sapphire | TIR Rune |  |  | \=  | +15 Cold Resistance |
 | Amulet | Topaz | TIR Rune |  |  | \=  | +15 Lightning Resistance |
@@ -429,9 +429,9 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Belt | Amethyst | Magic Jewel |  |  | \= | +5 to Strength<br>+5 to Vitality |
 | Belt | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
+| Belt | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Belt | Ruby | Magic Jewel |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Belt | Sapphire | Magic Jewel |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
-| Belt | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Belt | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
 | Belt | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
 | Belt | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
@@ -595,8 +595,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Any Shield | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
 | Any Shield | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
 | Any Shield | Ith Rune | Magic Jewel |  |  | \= | +10% Damage Taken Added To Mana |
-| Shield | SOL Rune | Amethyst | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
-| Shield | SOL Rune | Chaos Onyx | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
 | Any Shield | Sol Rune | Magic Jewel | Amethyst |  | \= | Physical Damage Reduced By 5 |
 | Any Shield | Sol Rune | Magic Jewel | Chaos Onyx |  | \= | Physical Damage Reduced By 5 |
 | Any Shield | Orb of Infusion | Skull | Amn Rune | Magic Jewel | \= | Attacker Takes Damage of 100 |
@@ -632,30 +630,19 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Armor | Ith Rune | Magic Jewel |  |  | \= | +10% Damage Taken Added To Mana |
 | Body Armor | SOL Rune | Amethyst | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
 | Body Armor | SOL Rune | Chaos Onyx | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
-| Armor | Sol Rune | Magic Jewel | Amethyst |  | \= | Physical Damage Reduced By 5 |
-| Armor | Sol Rune | Magic Jewel | Chaos Onyx |  | \= | Physical Damage Reduced By 5 |
 | Body Armor | Infusion Orb | Emerald | SHAEL Rune | Magic Jewel | \=  | +20% Faster Hit Recovery |
-| Armor | Orb of Infusion | Emerald | Shael Rune | Magic Jewel | \= | +20% Faster Hit Recovery |
-| Body Armor | Infusion Orb | Skull | LUM Rune | Magic Jewel | \=  | +40% Mana Regen & 10 Energy |
 | Armor | Orb of Infusion | Skull | Lum Rune | Magic Jewel | \= | +40% Mana Regeneration<br>+10 to Energy |
-| Body Armor | Infusion Orb | Emerald | FAL Rune | Magic Jewel | \=  | +15 Dexterity & +15 Vitality |
-| Body Armor | Infusion Orb | Amethyst | FAL Rune | Magic Jewel | \=  | +15 Strength & +15 Vitality |
-| Body Armor | Infusion Orb | Sapphire | FAL Rune | Magic Jewel | \=  | +15 Energy & +15 Vitality |
 | Armor | Orb of Infusion | Amethyst | Fal Rune | Magic Jewel | \= | +15 to Strength<br>+15 to Vitality |
 | Armor | Orb of Infusion | Emerald | Fal Rune | Magic Jewel | \= | +15 to Dexterity<br>+15 to Vitality |
 | Armor | Orb of Infusion | Sapphire | Fal Rune | Magic Jewel | \= | +15 to Energy<br>+15 to Vitality |
-| Body Armor | Infusion Orb | Diamond | UM Rune | Rare Jewel | \=  | +15 All Resistances |
 | Armor | Orb of Infusion | Rare Jewel | Diamond | Um Rune | \= | +15% to All Resistances |
 | Body Armor | Infusion Orb | Chaos Onyx | MAL Rune | Rare Jewel | \=  | Magic Damage Reduced By 10 |
 | Body Armor | Infusion Orb | Amethyst | MAL Rune | Rare Jewel | \=  | Physical Damage Reduced By 10 |
-| Armor | Orb of Infusion | Amethyst | Mal Rune | Rare Jewel | \= | Physical Damage Reduced By 10 |
-| Armor | Orb of Infusion | Chaos Onyx | Mal Rune | Rare Jewel | \= | Magic Damage Reduced By 10 |
 | Body Armor | Infusion Orb | Topaz | IST Rune | Rare Jewel | \=  | +30% Magic Find  & +50% Gold Find |
 | Armor | Orb of Infusion | Topaz | Ist Rune | Rare Jewel | \= | +30% Chance Items Roll Magic or Better<br>+50% Extra Gold from Monsters |
 | Body Armor | Infusion Orb | Orb of Renewal | GUL Rune | Rare Jewel | \=  | +30 Dexterity & +30 Vitality |
 | Body Armor | Infusion Orb | Orb of Renewal | VEX Rune | Rare Jewel | \=  | +30 Energy & +30 Vitality |
 | Body Armor | Infusion Orb | Orb of Renewal | OHM Rune | Rare Jewel | \=  | +30 Strength & +30 Vitality |
-| Body Armor | Infusion Orb | Amethyst | ZOD Rune | Unique Jewel | \=  | +100% Enhanced Defense & Indestructible |
 | Armor | Orb of Infusion | Amethyst | Zod Rune | Unique Jewel | \= | +100% Enhanced Defense<br>Indestructible |
 | Body Armor | Infusion Orb | Conversion Orb | Sapphire | SUR Rune<br>Rare Jewel | \=  | +10% Max Mana & +80% Mana Regen |
 | Body Armor | Infusion Orb | Conversion Orb | Diamond | BER Rune<br>Rare Jewel | \=  | +10% Damage Reduction |
@@ -663,7 +650,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Body Armor | Infusion Orb | Conversion Orb | Ruby | JAH Rune<br>Rare Jewel | \=  | +10% Max HP |
 | Armor | Orb of Infusion | Diamond | Ber Rune | Rare Jewel + Orb of Conversion | \= | +10% Physical Damage Reduction |
 | Armor | Orb of Infusion | Ruby | Jah Rune | Rare Jewel + Orb of Conversion | \= | +10% Increased Maximum Life |
-| Body Armor | Conversion Orb | Grit Rune | ZOD Rune | Unique Jewel | \=  | +1 All Skills & +5% All Attributes & Indestructible |
 | Armor | Orb of Conversion | Grit Rune (#37) | Zod Rune | Unique Jewel | \= | +1 to All Skills<br>+5% to All Attributes<br>Indestructible |
 
 <a id="item-enchant-weapons"></a>

@@ -31,12 +31,28 @@ This page contains all current Reimagined recipes:
 	- [Repair Recipes](#repair-recipes)
 	- [Portal Recipes](#portal-recipes)
 - [Item Enchant System](#item-enchant-system)
-	- [Enchant Recipes](#amulets)
+	- [Amulets](#item-enchant-amulets)
+	- [Rings](#item-enchant-rings)
+	- [Belts](#item-enchant-belts)
+	- [Boots](#item-enchant-boots)
+	- [Gloves](#item-enchant-gloves)
+	- [Helms](#item-enchant-helms)
+	- [Shields](#item-enchant-shields)
+	- [Body Armor](#item-enchant-body-armor)
+	- [Weapons](#item-enchant-weapons)
 - [Item Crafting System](#item-crafting-system)
-	- [Crafting Recipes](#amulets-1)
-	- [Jewels](#jewels)
-	- [Charms](#charms)
-	- [Sunder Charms](#sunder-charms)
+	- [Amulets](#item-craft-amulets)
+	- [Rings](#item-craft-rings)
+	- [Belts](#item-craft-belts)
+	- [Boots](#item-craft-boots)
+	- [Gloves](#item-craft-gloves)
+	- [Helms](#item-craft-helms)
+	- [Shields](#item-craft-shields)
+	- [Body Armor](#item-craft-body-armor)
+	- [Weapons](#item-craft-weapons)
+	- [Charms](#item-craft-charms)
+	- [Sunder Charms](#item-craft-sunder-charms)
+	- [Jewel Crafts](#item-craft-jewel-crafts)
 
 ## How to Read the Tables
 
@@ -297,7 +313,7 @@ ___
 
 > All weapons, armor and jewelry can be enchanted with various additional stats a certain number of times.
 
-**Sections:** [Amulets](#amulets) | [Rings](#rings) | [Belts](#belts) | [Boots](#boots) | [Gloves](#gloves) | [Helms](#helms) | [Shields](#shields) | [Body Armor](#body-armor) | [Weapons](#weapons)
+**Sections:** [Amulets](#item-enchant-amulets) | [Rings](#item-enchant-rings) | [Belts](#item-enchant-belts) | [Boots](#item-enchant-boots) | [Gloves](#item-enchant-gloves) | [Helms](#item-enchant-helms) | [Shields](#item-enchant-shields) | [Body Armor](#item-enchant-body-armor) | [Weapons](#item-enchant-weapons)
 
 | Item type | Maximum enchants |
 | --- | :--- |
@@ -319,6 +335,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 > </span>
 
+<a id="item-enchant-amulets"></a>
 ## Amulets
 
 > **Max Enchants: 1**
@@ -369,7 +386,9 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Orb of Conversion | Unique Jewel | Grit Rune (#37) |  | \= | +1 to All Skills<br>-5% to All Enemy Elemental Resistances |
 | Amulet | Orb of Conversion | Unique Jewel | Hev Rune (#39) |  | \= | +50% Enhanced Weapon Damage<br>-5% to Enemy Physical Damage Resistance |
 
+<a id="item-enchant-rings"></a>
 ## Rings
+
 > **Max Enchants: 1**
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
@@ -401,6 +420,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Ring | Orb of Conversion | Unique Jewel | Grit Rune (#37) |  | \= | -3% to All Enemy Elemental Resistances |
 | Ring | Orb of Conversion | Unique Jewel | Hev Rune (#39) |  | \= | +15% Enhanced Weapon Damage<br>-3% to Enemy Physical Damage Resistance |
 
+<a id="item-enchant-belts"></a>
 ## Belts
 
 > **Max Enchants: 1**
@@ -438,6 +458,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Belt (Sorceress only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +1 to Sorceress Skill Levels<br>+5% Physical Damage Reduction |
 | Belt (Warlock only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +1 to Warlock Skills<br>+5% Physical Damage Reduction |
 
+<a id="item-enchant-boots"></a>
 ## Boots
 
 > **Max Enchants: 1**
@@ -476,6 +497,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Boots (Sorceress only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +1 to Sorceress Skill Levels<br>+5% Physical Damage Reduction |
 | Boots (Warlock only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +1 to Warlock Skills<br>+5% Physical Damage Reduction |
 
+<a id="item-enchant-gloves"></a>
 ## Gloves
 > **Max Enchants: 1**
 
@@ -512,6 +534,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Gloves (Sorceress only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +1 to Sorceress Skill Levels<br>Indestructible |
 | Gloves (Warlock only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +1 to Warlock Skills<br>Indestructible |
 
+<a id="item-enchant-helms"></a>
 ## Helms
 > **Max Enchants: 1**
 
@@ -555,6 +578,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Helm (Sorceress only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +2 to Sorceress Skill Levels<br>Indestructible |
 | Helm (Warlock only) | Orb of Conversion | Zod Rune | Dem Rune (#38) | Unique Jewel | \= | +2 to Warlock Skills<br>Indestructible |
 
+<a id="item-enchant-shields"></a>
 ## Shields
 > **Max Enchants: 1**
 
@@ -589,6 +613,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Any Shield | Orb of Infusion | Diamond | Zod Rune | Unique Jewel | \= | 10% Increased Chance of Blocking<br>+15% to All Resistances |
 | Any Shield | Orb of Conversion | Grit Rune (#37) | Zod Rune | Unique Jewel | \= | 15% Increased Chance of Blocking<br>+15% Faster Block Rate<br>Indestructible |
 
+<a id="item-enchant-body-armor"></a>
 ## Body Armor
 > **Max Enchants: 1**
 
@@ -641,6 +666,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Body Armor | Conversion Orb | Grit Rune | ZOD Rune | Unique Jewel | \=  | +1 All Skills & +5% All Attributes & Indestructible |
 | Armor | Orb of Conversion | Grit Rune (#37) | Zod Rune | Unique Jewel | \= | +1 to All Skills<br>+5% to All Attributes<br>Indestructible |
 
+<a id="item-enchant-weapons"></a>
 ## Weapons
 > **Max Enchants: 1**
 
@@ -717,7 +743,7 @@ When it returns as rare, that means it gives the guaranteed stats with a chance 
 
 When the item is returned as crafted, it will have a chance to have a set number of bonus affixes in addition to the guaranteed stats based on the level of the item returned, which is always the same as the character that created the craft unless specified otherwise.
 
-**Sections:** [Amulets](#amulets-1) | [Rings](#rings-1) | [Belts](#belts-1) | [Boots](#boots-1) | [Gloves](#gloves-1) | [Helms](#helms-1) | [Shields](#shields-1) | [Body Armor](#body-armor-1) | [Weapons](#weapons-1) | [Jewel Crafts](#jewel-crafts) | [Charms](#charms) | [Sunder Charms](#sunder-charms)
+**Sections:** [Amulets](#item-craft-amulets) | [Rings](#item-craft-rings) | [Belts](#item-craft-belts) | [Boots](#item-craft-boots) | [Gloves](#item-craft-gloves) | [Helms](#item-craft-helms) | [Shields](#item-craft-shields) | [Body Armor](#item-craft-body-armor) | [Weapons](#item-craft-weapons) | [Charms](#item-craft-charms) | [Sunder Charms](#item-craft-sunder-charms) | [Jewel Crafts](#item-craft-jewel-crafts)
 
 | Result type | What it includes |
 | --- | --- |
@@ -727,6 +753,7 @@ When the item is returned as crafted, it will have a chance to have a set number
 
 Unless stated otherwise, a crafted item's level matches the character who made it.
 
+<a id="item-craft-amulets"></a>
 ## Amulets
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -750,6 +777,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Unique Amulet | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
 | Set Amulet | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 
+<a id="item-craft-rings"></a>
 ## Rings
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -779,6 +807,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Unique Ring | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
 | Set Ring | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 
+<a id="item-craft-belts"></a>
 ## Belts
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -799,6 +828,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Belt | Unique Jewel | Brak Rune (#34) | Zod Rune | Ruby | \= | +1 to All Skills<br>Adds 20-30 Weapon Damage<br>New Crafted Belt |
 | Rare Belt | Unique Jewel | Zeph Rune (#35) | Zod Rune | Sapphire | \= | +1 to All Skills<br>+10% to All Elemental Skill Damage<br>New Crafted Belt |
 
+<a id="item-craft-boots"></a>
 ## Boots
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -819,6 +849,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Boots | Unique Jewel | Zod Rune | Brak Rune (#34) | Gem | \= | +1 to All Skills<br>Adds 20-30 Weapon Damage<br>+(20-30)% Faster Run/Walk Speed<br>New Crafted Boots |
 | Rare Boots | Unique Jewel | Zod Rune | Zeph Rune (#35) | Gem | \= | +1 to All Skills<br>+10% to All Elemental Skill Damage<br>+(20-30)% Faster Run/Walk Speed<br>New Crafted Boots |
 
+<a id="item-craft-gloves"></a>
 ## Gloves
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -839,6 +870,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Gloves | Unique Jewel | Zod Rune | Brak Rune (#34) | Ruby | \= | +1 to All Skills<br>Adds 20-40 Weapon Damage<br>New Crafted Gloves |
 | Rare Gloves | Unique Jewel | Zod Rune | Zeph Rune (#35) | Sapphire | \= | +1 to All Skills<br>+10% to All Elemental Skill Damage<br>+(10-20)% Faster Cast Rate<br>New Crafted Gloves |
 
+<a id="item-craft-helms"></a>
 ## Helms
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -875,6 +907,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Helm | Unique Jewel | BER rune | JAH Rune | Gem(Any) | \=  | +2 All Skills & +5-10% Physical Damage Reduction & +5-10% Max HP Crafted Helm |
 | Helm | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Helm Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
 
+<a id="item-craft-shields"></a>
 ## Shields
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -904,6 +937,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Shield | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Shield Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
 | Rare Shield | Unique Jewel | Zod Rune | Zeph Rune (#35) | Gem | \= | +2 to All Skills<br>+(15-20)% to All Elemental Skill Damage<br>New Crafted Shield |
 
+<a id="item-craft-body-armor"></a>
 ## Body Armor
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -944,6 +978,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Unique Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
 | Set Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 
+<a id="item-craft-weapons"></a>
 ## Weapons
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -983,10 +1018,8 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Any 1 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2 All Skills & -10-15% To enemy Magic Resist  Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +2 to All Skills<br>-(10-15)% to Enemy Magic Resistance<br>New Crafted 1H Weapons |
 
+<a id="item-craft-charms"></a>
 ## Charms
-
-
-
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Magic Grand Charm | Jewel Magic | Shael Rune | EL Rune |  | \=  | Crafted Magic Grand Charm +5-10% Faster Attack Speed |
@@ -1006,6 +1039,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Magic Grand Charm | Rare Jewel | Hel Rune | Vex Rune | Topaz | \= | +1 Random Skill Tab (Assassin Only)<br>New Crafted Grand Charm |
 
 
+<a id="item-craft-sunder-charms"></a>
 ## Sunder Charms
 
 > The renewed sunders now roll:
@@ -1031,6 +1065,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | **Reset renewed sunder back to its latent version** | | | | | | | | |
 | Charm:<br>Renewed Sunder<br>Any Type | HEL Rune | Gem Bag (200 Gems) | | | | | \= | Latent Charm of the same type |
 
+<a id="item-craft-jewel-crafts"></a>
 ## Jewel Crafts
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

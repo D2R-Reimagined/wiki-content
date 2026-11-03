@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-03T22:28:48.708Z
+date: 2026-11-03T22:30:00.828Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -28,7 +28,7 @@ If you have not installed Diablo II Resurrected yet, depending on how you bought
 > 
 > ***Saved Game Files:*** `*C:\Users\*%USERPROFILE%*\Saved Games\Diablo II Resurrected\mods\ReimaginedThree*`
 
-# Reimagined Launcher
+## Reimagined Launcher
 
 [**highly recommend watching Ben's video**](https://www.youtube.com/watch?v=GBQaLthlkAI). The installation process is very simple.
 
@@ -149,7 +149,7 @@ Players connected to the same virtual network.
   
 **_If you have issues with the D2RLoader or other install, go to the Reimagined discord and post in the d2rr-installation-help or d2rr-online channels. Comments on the wiki are ignored._**
 
-# Alternate Install Methods
+## Alternate Install Methods
 
 ## Manual Reimagined Mod Installation
 

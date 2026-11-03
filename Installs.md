@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-03T21:51:44.904Z
+date: 2026-11-03T22:12:19.314Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -66,11 +66,11 @@ Once installed you should see something like this where you have an option for o
 
 ![](/loader3.png)
 
-### 2.5\. Installing Ladder plugins for offline use
+### 3\. Installing Ladder plugins for offline use
 
 -   See [this subpage](/Installation/Nonladder) for instructions on installing ladder plugins
 
-### 3\. Enable the Multiplayer widget
+### 4\. Enable the Multiplayer widget
 
 -   As of writing this, the multiplayer button widget is not automatically added to the UI of the mod (future launcher versions will handle this step)
 -   So hit the “Start Online” button to launch the game with D2RLoader enabled
@@ -86,7 +86,7 @@ Once installed you should see something like this where you have an option for o
 
 ![](/loader6.png)
 
-### 4\. Hosting and Browsing games
+### 5\. Hosting and Browsing games
 
 -   To host simply create a game with whatever the desired details and rules are
 
@@ -104,7 +104,7 @@ Once installed you should see something like this where you have an option for o
 
 ![](/loader9.png)
 
-### 4.5 Adjusting Shared Stash Tab Pages
+### 6\. Adjusting Shared Stash Tab Pages
 
 -   The most frequent change you will want to make is to have more stash tabs. To do so, while at the main menu, hit the red cog at the botton of the character select screen to open up the D2RLoader settings
 -   Then go to gameplay tab and adjust the shared stash tab pages and materials limit (ROTW tabs for runes/gems/materials)
@@ -115,7 +115,7 @@ Once installed you should see something like this where you have an option for o
 
 ![](/laoder12.png)
 
-### 5\. (optional legacy VPN setup) Set up Radmin VPN for LAN play
+### 7\. (optional legacy VPN setup) Set up Radmin VPN for LAN play
 
 If you have issues with windows firewall or other network issues consider using radmin to setup a vpn
 

@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-02T16:53:02.702Z
+date: 2026-11-03T10:58:12.583Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -1055,13 +1055,13 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 ## Jewel Crafts
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Sunder Charms | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Winter Facet |
-| Sunder Charms | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Summer Facet |
-| Sunder Charms | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Spring Facet |
-| Sunder Charms | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Autumn Facet |
-| Sunder Charms | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Star Facet |
-| Sunder Charms | 1 Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Jade Facet |
-| Sunder Charms | 2 Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Heaven Facet |
+| Latent Cold Rupture | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Winter Facet |
+| Latent Flame Rift | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Summer Facet |
+| Latent Crack of the Heavens | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Spring Facet |
+| Latent Rotting Fissure | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Autumn Facet |
+| Latent Bone Break | Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Star Facet |
+| Latent Black Cleft | 1 Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Jade Facet |
+| Latent Black Cleft | 2 Unique Jewel | Gem Bag (100 Gems) |  |  | \=  | Heaven Facet |
 
 
 [Back to contents](#contents)

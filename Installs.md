@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-03T16:07:29.744Z
+date: 2026-11-03T18:13:36.049Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -65,6 +65,10 @@ Once installed you should see something like this where you have an option for o
 -   Once D2RLoader is installed it will say it has completed
 
 ![](/loader3.png)
+
+### 2.5\. Installing Ladder plugins for offline use
+
+-   See [this subpage](/Installation/Nonladder) for instructions on installing ladder plugins
 
 ### 3\. Enable the Multiplayer widget
 

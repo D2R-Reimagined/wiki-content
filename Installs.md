@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-03T22:12:19.314Z
+date: 2026-11-03T22:27:07.488Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -66,11 +66,11 @@ Once installed you should see something like this where you have an option for o
 
 ![](/loader3.png)
 
-### 3\. Installing Ladder plugins for offline use
+### 3\. Installing Ladder plugins for offline use (Optional)
 
 -   See [this subpage](/Installation/Nonladder) for instructions on installing ladder plugins
 
-### 4\. Enable the Multiplayer widget
+### 4\. Enable the Multiplayer widget (Optional)
 
 -   As of writing this, the multiplayer button widget is not automatically added to the UI of the mod (future launcher versions will handle this step)
 -   So hit the “Start Online” button to launch the game with D2RLoader enabled
@@ -86,7 +86,7 @@ Once installed you should see something like this where you have an option for o
 
 ![](/loader6.png)
 
-### 5\. Hosting and Browsing games
+### 4\.5\. Hosting and Browsing games  (Optional)
 
 -   To host simply create a game with whatever the desired details and rules are
 
@@ -104,7 +104,7 @@ Once installed you should see something like this where you have an option for o
 
 ![](/loader9.png)
 
-### 6\. Adjusting Shared Stash Tab Pages
+### 5\. Adjusting Shared Stash Tab Pages
 
 -   The most frequent change you will want to make is to have more stash tabs. To do so, while at the main menu, hit the red cog at the botton of the character select screen to open up the D2RLoader settings
 -   Then go to gameplay tab and adjust the shared stash tab pages and materials limit (ROTW tabs for runes/gems/materials)
@@ -115,7 +115,7 @@ Once installed you should see something like this where you have an option for o
 
 ![](/laoder12.png)
 
-### 7\. (optional legacy VPN setup) Set up Radmin VPN for LAN play
+### 6\. Legacy VPN set up - Radmin VPN for LAN play (Optional)
 
 If you have issues with windows firewall or other network issues consider using radmin to setup a vpn
 
@@ -148,6 +148,8 @@ Enter the details and click **Join**. Radmin VPN should display the shared netwo
 Players connected to the same virtual network.
   
 **_If you have issues with the D2RLoader or other install, go to the Reimagined discord and post in the d2rr-installation-help or d2rr-online channels. Comments on the wiki are ignored._**
+
+# Alternate Install Methods
 
 ## Manual Reimagined Mod Installation
 

@@ -2,7 +2,7 @@
 title: Mod + D2RLoader Nonladder Package Installation
 description: Guide to installing the ladder plugin package for offline use
 published: true
-date: 2026-11-03T18:22:11.837Z
+date: 2026-11-03T18:23:18.319Z
 tags: install, install guide
 editor: markdown
 dateCreated: 2026-11-03T17:09:15.039Z

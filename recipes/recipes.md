@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-03T10:58:12.583Z
+date: 2026-11-04T00:53:34.440Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -291,7 +291,15 @@ These recipes **regenerate** the item (similar to a Divine Orb), rather than per
 | Relic of the Ancients + Orb of Shadows + Dem Rune (#38) | Relic gains +1 to your Class Skill Levels and +5% Magic Resistance. |
 | Relic of the Ancients + Orb of Shadows + Hev Rune (#39) | Relic gains +1 to your Class Skill Levels and +5% to All Maximum Resistances. |
 
-**Annihilus:** The three-orb enchantment recipes (Assemblage, Conversion, Corruption, and Infusion) no longer grant +1% experience each in the comparison export.
+**Annihilus:** These upgrades must be done in order.
+| Inputs | Outcome |
+| --- | --- |
+| Annihilus + Jah Rune (#31) + Ith Rune (#6) + Ber Rune (#30) | Annihilus gains +1 to Warp (OSkill) |
+| Annihilus + 3x Orb of Infusion | Upgrade the Annihilus: +2 to All Attributes and +2% to All Resistances |
+| Annihilus + 3x Orb of Assemblage | Upgrade the Annihilus: +2 to All Attributes and +2% to All Resistances |
+| Annihilus + 3x Orb of Corruption | Upgrade the Annihilus: +2 to All Attributes and +2% to All Resistances |
+| Annihilus + 3x Orb of Conversion | Upgrade the Annihilus: +2 to All Attributes and +2% to All Resistances |
+| Annihilus + 3x Orb of Shadows | Black Soulstone |
 
 ## Portal Recipes
 

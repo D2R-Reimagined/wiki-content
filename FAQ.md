@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-11-02T23:01:10.129Z
+date: 2026-11-04T00:23:44.648Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -94,3 +94,6 @@ Best bet is to just copy the only the d2rloader folder from the ladder folder in
 **Q: How do I fix "Your D2RLoader enviroment does not match the host." error?**
 - A1: Close your game and open task manager and look for extra copies of D2RLoader.exe that may still be running and end task them. Can also restart your PC to ensure none are left open.
 - A2: Go find and delete `C:\Program Files (x86)\Diablo II Resurrected\d2rloader\config\d2rloader.toml` after performing A1 if the error persists.
+
+**Q: How do I leave global chat?**
+- A:Use /global off in the chat window in game.

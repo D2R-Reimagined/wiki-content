@@ -2,7 +2,7 @@
 title: Reimagined Ladder
 description: Play on dedicated servers with trade
 published: true
-date: 2026-11-04T18:29:22.308Z
+date: 2026-11-04T18:32:14.402Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T18:29:22.308Z
@@ -84,9 +84,9 @@ A DM is refused, with a red message, if the person isn't an accepted friend or i
 
 `/alwaysshowrolls <option>` - Configure showing rolls at all times, options are `on`, `off`, `toggle`, and `status`
 
-`belt-snapshot` - Snapshots current belt settings (based on the item in each active belt column) for autofilling from inventory
-`belt-reset` - Resets belt settings to default (fill based on current column contents)
-`belt-fill` - Trigger belt refill from inventory based on current settings 
+`/belt-snapshot` - Snapshots current belt settings (based on the item in each active belt column) for autofilling from inventory
+`/belt-reset` - Resets belt settings to default (fill based on current column contents)
+`/belt-fill` - Trigger belt refill from inventory based on current settings 
 > Automatic refill is off by default. Set auto_refill = true in d2rloader/config/auto-belt-refill.toml to refill as soon as a potion is used
 {.is-info}
 

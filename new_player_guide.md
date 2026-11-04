@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-09-01T01:24:30.424Z
+date: 2026-11-04T14:12:19.189Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -141,7 +141,7 @@ Purchase from Blacksmith vendors to retrieve socketed items:
 ### Item Enhancement Resources
 
 - **[Cube Recipes](https://wiki.d2r-reimagined.com/en/recipes/recipes#cube-recipes)** — Useful recipes while leveling
-- **[Item Enchants](https://wiki.d2r-reimagined.com/en/recipes/recipes#item-enchant-system)** — Add various properties via enchanting (multiple times possible)
+- **[Item Enchants](https://wiki.d2r-reimagined.com/en/recipes/recipes#item-enchant-system)** — Add various properties via enchanting
 - **[Item Crafting](https://wiki.d2r-reimagined.com/en/recipes/recipes#item-crafting-system)** — Create powerful items to level and maximize potential
 
 ### Special Items

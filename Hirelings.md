@@ -2,8 +2,8 @@
 title: Hirelings 
 description: A short description of changes to hirelings
 published: true
-date: 2026-11-04T23:28:04.627Z
-tags: rogue, desert, dock, iron wolf, a1 merc, a2 merc, a3 merc, a5 merc, merc, hireling
+date: 2026-11-04T23:29:20.710Z
+tags: rogue, desert, dock, iron wolf, a1 merc, a2 merc, a3 merc, a5 merc, merc, hireling, mercenary
 editor: markdown
 dateCreated: 2025-08-10T06:58:43.147Z
 ---

@@ -2,7 +2,7 @@
 title: D2R Reimagined F.A.Q.s
 description: Frequently asked questions and their answers
 published: true
-date: 2026-11-04T00:23:44.648Z
+date: 2026-11-04T00:24:47.985Z
 tags: faq, f.a.q., faqs, f.a.q.s, frequently asked questions
 editor: markdown
 dateCreated: 2026-05-13T11:21:23.617Z
@@ -15,54 +15,54 @@ A: Yes, completely. We maintain the mod up to date with the latest SnowCo releas
 A: Yes, the mod is 100% compatible without the DLC. Heralds spawn, Worldstone shards and statues drop, and Uber Ancients are accessible. You will not have access tot he warlock class, specialized rune/material shared stash tabs, chronicle, or built in loot filters though. This also means you cannot join non DLC games whether its ladder or tcp.
 
 **Q: Can you increase the stack size in the DLC tabs higher than 99?**
-A: You can use D2RLoader to increase the stash stack size to 255(non ladder). Otherwise, no it is engine limited.
+- A: You can use D2RLoader to increase the stash stack size to 255(non ladder). Otherwise, no it is engine limited.
 
 **Q: I already killed hell quest Baal how can i get a Forsaken token to enter the Forsaken Labyrinth?**
-A: Kill hell Corpsefire in the den of evil if you have already killed quest baal previously.
+- A: Kill hell Corpsefire in the den of evil if you have already killed quest baal previously.
 
 **Q: When will the next ladder start?**
-A: October 30th 2pm EST
+- A: October 30th 2pm EST
 
 **Q: Can you make the chronicle work with the unique and set items that the mod adds?**
-A: No. SnowCo limited the entries beyond vanilla to a 2-300 more before it starts causing constant crashing and we add almost 1,000. There is a script to just [100% it here](https://discord.com/channels/898562996715012096/910921404571070515/1502460774860197940), but read the directions. 
+- A: No. SnowCo limited the entries beyond vanilla to a 2-300 more before it starts causing constant crashing and we add almost 1,000. There is a script to just [100% it here](https://discord.com/channels/898562996715012096/910921404571070515/1502460774860197940), but read the directions. 
 
-A2: You can use D2RLoader which fixes the Blzizard Chronicle issue, you will need to re-flag items to be chronicle enabled though.
+- A2: You can use D2RLoader which fixes the Blzizard Chronicle issue, you will need to re-flag items to be chronicle enabled though.
 
 **Q: Is the mod compatible with Steam?**
-A: Yes, use the desktop launcher or manual installation [directions here](https://wiki.d2r-reimagined.com/en/Installs).
+- A: Yes, use the desktop launcher or manual installation [directions here](https://wiki.d2r-reimagined.com/en/Installs).
 
 **Q: Why don't I have a 'Play' button?**
-A: Look at the top right of your character list, if the text is 'red' click it, it should turn gold and you should have a play button.
+- A: Look at the top right of your character list, if the text is 'red' click it, it should turn gold and you should have a play button.
 
 **Q: Is there an endgame system?**
-A: [maps](https://wiki.d2r-reimagined.com/en/maps/overview) and [lab](/forsaken-labryinth)
+- A: [maps](https://wiki.d2r-reimagined.com/en/maps/overview) and [lab](/forsaken-labryinth)
 
 **Q: Can you make Whirlwind ( WW ) work with CTC on attack/striking, hit every frame, add missiles or spells to it, or make it do additional things?**
-A: No. The skill is very hard-coded. You can use D2RLoader with extensions to adjust it though. 
+- A: No. The skill is very hard-coded. You can use D2RLoader with extensions to adjust it though. 
 
 **Q: Why is my mana 0, potions don't work, talking to Akara or other healing vendors don't work?**
-A: The [charm weight system](https://wiki.d2r-reimagined.com/en/Items/Charms#charm-weight-system) allows for half an inventory of charms before your mana is set to 0.
+- A: The [charm weight system](https://wiki.d2r-reimagined.com/en/Items/Charms#charm-weight-system) allows for half an inventory of charms before your mana is set to 0.
 
 **Q: Why can't I pick up this unique charm?**
-A: You have already have the charm that dropped in your personal stash, in the Horadric Cube, or in your inventory, you will need to put your matching size unique charms into a shared stash tab or throw them on the ground to pick up and ID the new charm.
+- A: You have already have the charm that dropped in your personal stash, in the Horadric Cube, or in your inventory, you will need to put your matching size unique charms into a shared stash tab or throw them on the ground to pick up and ID the new charm.
 
 **Q: Does Hephasto spawn with an aura?**
-A: No that was removed in 2.0 of the mod over a year ago, he cannot spawn aura enchanted because it was making him and his minions too obnoxious.
+- A: No that was removed in 2.0 of the mod over a year ago, he cannot spawn aura enchanted because it was making him and his minions too obnoxious.
 
 **Q: Can you add more shared stash pages or shared stash tabs?**
-A: You can use D2RLoader to add additional shared stash pages. Otherwise no, this is an account bound feature and can no longer be soft code modded.
+- A: You can use D2RLoader to add additional shared stash pages. Otherwise no, this is an account bound feature and can no longer be soft code modded.
 
 **Q: Can you make auras useable on left-click?**
-A: With D2RLoader extensions you can. Otherwise no, they will not activate, this is an engine limitation.
+- A: With D2RLoader extensions you can. Otherwise no, they will not activate, this is an engine limitation.
 
 **Q: Can the custom demons added by the mod be bound by the Warlock?**
-A: No, they were not intended to be bound.
+- A: No, they were not intended to be bound.
 
 **Q: Does the mod support multiplayer?**
-A: Multiplayer support is now available through D2RLoader. Use our Reimagined Launcher to make downloading and using D2RLoader simple and easy
+- A: Multiplayer support is now available through D2RLoader. Use our Reimagined Launcher to make downloading and using D2RLoader simple and easy
 
 **Q: What happens to my characters after a ladder event?**
-A: You can manually move your save files from the ladder to non ladder by copying the character **.d2s** files from the ladder directory to the non-ladder save directory. Shared stash saves are **.d2i ** files but would overwrite your existing non-ladder shared stash too.
+- A: You can manually move your save files from the ladder to non ladder by copying the character **.d2s** files from the ladder directory to the non-ladder save directory. Shared stash saves are **.d2i ** files but would overwrite your existing non-ladder shared stash too.
 
 ```
 Character Save File Location:

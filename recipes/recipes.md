@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-04T03:47:50.260Z
+date: 2026-11-04T13:03:16.811Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -318,9 +318,6 @@ These recipes **regenerate** the item (similar to a Divine Orb), rather than per
 ___
 
 # Item Enchant System
-
-> All weapons, armor and jewelry can be enchanted with various additional stats a certain number of times.
-
 **Sections:** [Amulets](#item-enchant-amulets) | [Rings](#item-enchant-rings) | [Belts](#item-enchant-belts) | [Boots](#item-enchant-boots) | [Gloves](#item-enchant-gloves) | [Helms](#item-enchant-helms) | [Shields](#item-enchant-shields) | [Body Armor](#item-enchant-body-armor) | [Weapons](#item-enchant-weapons)
 
 | Item type | Maximum enchants |
@@ -333,7 +330,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 - [D2RR Stat Limits (WIP)](https://wiki.d2r-reimagined.com/en/recipes/ISCStatLimits)
 
-### Set Items Bug
+### Set Items Bug (on non-ladder, mod-only games):
 > <span style="color:red">
 > When enchanting set items you must remove all other items from that set from your character first.
 >

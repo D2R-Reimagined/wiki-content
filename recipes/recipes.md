@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-04T00:53:34.440Z
+date: 2026-11-04T03:47:50.260Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -356,9 +356,9 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Skull |  |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Amulet | Ruby |  |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Amulet | Sapphire |  |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
-| Amulet | Ruby | TIR Rune |  |  | \=  | +15 Fire Resistance |
-| Amulet | Sapphire | TIR Rune |  |  | \=  | +15 Cold Resistance |
-| Amulet | Topaz | TIR Rune |  |  | \=  | +15 Lightning Resistance |
+| Amulet | Ruby | TIR Rune |  |  | \=  | +15% Fire Resistance |
+| Amulet | Sapphire | TIR Rune |  |  | \=  | +15% Cold Resistance |
+| Amulet | Topaz | TIR Rune |  |  | \=  | +15% Lightning Resistance |
 | Amulet | Emerald | Tir Rune |  |  | \= | +15% Poison Resistance |
 | Amulet | Topaz | Magic Jewel |  |  | \=  | +2 Random Assassin Skills |
 | Amulet | Ruby | Magic Jewel |  |  | \=  | +2 Random Barbarian Skills |
@@ -625,16 +625,16 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Body Armor | Ruby | TIR Rune |  |  | \=  | +15 Fire Resistance |
-| Body Armor | Sapphire | TIR Rune |  |  | \=  | +15 Cold Resistance |
-| Body Armor | Topaz | TIR Rune |  |  | \=  | +15 Lightning Resistance |
-| Body Armor | Emerald | TIR Rune |  |  | \=  | +15 Poison Resistance |
+| Body Armor | Ruby | TIR Rune |  |  | \=  | +15% Fire Resistance |
+| Body Armor | Sapphire | TIR Rune |  |  | \=  | +15% Cold Resistance |
+| Body Armor | Topaz | TIR Rune |  |  | \=  | +15% Lightning Resistance |
+| Body Armor | Emerald | TIR Rune |  |  | \=  | +15% Poison Resistance |
 | Body Armor | Topaz | Magic Jewel |  |  | \=  | +10% Magic Find  & +20% Gold Find |
 | Body Armor | Emerald | Magic Jewel |  |  | \=  | +5 Dexterity & +5 Vitality |
 | Body Armor | Amethyst | Magic Jewel |  |  | \=  | +5 Strength & +5 Vitality |
 | Body Armor | Skull | Magic Jewel |  |  | \=  | +5 Energy & +5 Vitality |
 | Body Armor | ETH Rune | Magic Jewel |  |  | \=  | +20% Mana Regen |
-| Body Armor | Diamond | Magic Jewel | TIR Rune |  | \=  | +5 All Resistances |
+| Body Armor | Diamond | Magic Jewel | TIR Rune |  | \=  | +5% All Resistances |
 | Armor | Ith Rune | Magic Jewel |  |  | \= | +10% Damage Taken Added To Mana |
 | Body Armor | SOL Rune | Amethyst | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
 | Body Armor | SOL Rune | Chaos Onyx | Magic Jewel |  | \=  | Physical Damage Reduced By 5 |
@@ -910,7 +910,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Magic Shield | Magic Jewel | NEF Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Magic Resistance; +10-30% AC |
 | Magic Shield | Magic Jewel | Nef Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Magic Resistance<br>+(10-30)% Enhanced Defense<br>New Crafted Shield |
 | Magic Shield | Magic Jewel | ETH Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-10 Thorns; +5-10% Block |
-| Magic Shield | Magic Jewel | ETH Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +5-10% Block |
+| Magic Shield | Magic Jewel | ETH Rune | Amethyst |  | \=  | +(4-10)% Mana Regeneration; +10-20 Mana; +5-10% Block |
 | Magic Shield | Magic Jewel | Eth Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>(5-10)% Increased Chance of Blocking<br>New Crafted Shield |
 | Magic Shield | Magic Jewel | Eth Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-10)<br>(5-10)% Increased Chance of Blocking<br>New Crafted Shield |
 | Magic Shield | Magic Jewel | ITH Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +4-7 Thorns |
@@ -980,10 +980,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Knife | Diamond | Staff | Belt |  | \= | Magic Polearm (Forced prefix) |
 | Magic Weapon | Ruby | 4 × Healing Potion |  |  | \= | New Magic Weapon (Forced suffix) |
 | Magic Weapon | Magic Jewel | TIR Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-7 Thorns; +35-60% Damage |
-| Magic Weapon | Magic Jewel | TIR Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-5% Mana |
+| Magic Weapon | Magic Jewel | TIR Rune | Amethyst |  | \=  | +(4-10)% Mana Regeneration; +10-20 Mana; +1-5% Mana |
 | Magic Weapon | Magic Jewel | Tir Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(1-5)% Increased Maximum Mana<br>New Crafted Weapon |
 | Magic Weapon | Magic Jewel | Tir Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-7)<br>+(35-60)% Enhanced Weapon Damage<br>New Crafted Weapon |
-| Magic Weapon | Magic Jewel | ORT Rune | Ruby |  | \=  | 1-4% Life Steal; +10-20 Life; +35-60% Damage |
+| Magic Weapon | Magic Jewel | ORT Rune | Ruby |  | \=  | +(1-4)% Life Steal; +10-20 Life; +35-60% Damage |
 | Magic Weapon | Magic Jewel | Ort Rune | Ruby |  | \= | +(1-4)% Life stolen per hit<br>+(10-20) to Life<br>+(35-60)% Enhanced Weapon Damage<br>New Crafted Weapon |
 | Magic Weapon | Magic Jewel | SOL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10% Enhanced Defense |
 | Magic Weapon | Magic Jewel | Sol Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Enhanced Defense<br>New Crafted Weapon |

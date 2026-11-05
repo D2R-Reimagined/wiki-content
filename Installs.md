@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T17:06:19.881Z
+date: 2026-11-05T17:09:04.562Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -88,10 +88,10 @@ Once installed you should see something like this where you have an option for o
 ### 4\.5\. Hosting and Browsing games  (Optional)
 
 -   To host simply create a game with whatever the desired details and rules are
-![](/loader7.png)
+<img src="/loader7.png" style="max-height: 700px; width: auto;" />
 
 -   To join a game go to browse and then join any open games or join your friends games with their game ID and password
-![](/loader8.png)
+<img src="/loader8.png" style="max-height: 700px; width: auto;" />
 
 -   if hosting an unlisted/private game, then the host needs to provide the game ID from the party menu.
 ![](/laoder10.png)
@@ -103,7 +103,6 @@ Once installed you should see something like this where you have an option for o
 
 -   The most frequent change you will want to make is to have more stash tabs. To do so, while at the main menu, hit the red cog at the botton of the character select screen to open up the D2RLoader settings
 -   Then go to gameplay tab and adjust the shared stash tab pages and materials limit (ROTW tabs for runes/gems/materials)
-<!-- ![](/laoder11.png) -->
 <img src="/laoder11.png" style="max-height: 700px; width: auto;" />
 
 

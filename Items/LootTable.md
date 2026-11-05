@@ -2,7 +2,7 @@
 title: Drop Tables
 description: A description of monsters and what orbs and runes they can drop
 published: true
-date: 2026-10-08T03:34:11.901Z
+date: 2026-11-05T03:51:27.987Z
 tags: keys, sunder, drop, tables, sunders, sunder charms, loot, where to find what, loot tables, drop tables, countess, rune boss, orbs, uber keys
 editor: markdown
 dateCreated: 2025-06-09T02:54:27.554Z
@@ -161,3 +161,13 @@ This table is for the rune bosses listed above and the counts are expected rune 
 | H Norm | Dol | 2   | 2   |
 | H NM | Um  | 2   | 3   |
 | H Hell | Lo  | 2   | 3   |
+
+## Sunder Jewels
+
+Colossal jewels can be acquired by killing the Uber Ancients. These jewels grant sunder for their element. The final Ancient killed determines which elements can drop
+
+| **Boss** | Option 1 | Option 2 |
+| --- | --- | --- |
+| Talic (Left) | Fire | Poison |
+| Madawc (Middle) | Lightning | Magic |
+| Korlic (Right) | Cold | Physical |

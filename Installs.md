@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T16:19:48.306Z
+date: 2026-11-05T16:22:39.438Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -43,7 +43,7 @@ If you have not installed Diablo II Resurrected yet, depending on how you bought
 **Video instructions** [**HERE:**](https://youtu.be/FDJS0Sukpus)  
   
 **D2RLoader** provides **LAN TCP/IP support** for Reimagined, including **Reign of the Warlock (ROTW)**, without the former class and mechanic restrictions.  
-D2RLoader also allows for things like 100s of shared stash tabs, among other settings that can be found [here.](https://d2rloader.net/docs.html#settings)
+D2RLoader also allows for things like hundreds of shared stash tabs, among other settings that can be found [here.](https://d2rloader.net/docs.html#settings)
 
 > D2RLoader is still in active development, so installation steps and configuration options may change in future updates.
 {.is-warning}

@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T17:13:44.480Z
+date: 2026-11-05T17:14:52.395Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -59,7 +59,7 @@ Once installed you should see something like this where you have an option for o
 
 ### 2\. Click Online and let the launcher install D2RLoader for you
 
--   Simply click the Online box which will check if D2RLoader is installed.
+-   Simply click the Mod + D2RLoader (or Ladder) box which will check if D2RLoader is installed.
 -   If D2RLoader is not installed the launcher will download and install it for you
 ![](/loader2.png)
 

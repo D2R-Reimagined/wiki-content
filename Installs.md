@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T05:37:43.583Z
+date: 2026-11-05T05:54:10.326Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -30,11 +30,13 @@ If you have not installed Diablo II Resurrected yet, depending on how you bought
 
 ## Reimagined Launcher
 
-[**highly recommend watching Ben's video**](https://www.youtube.com/watch?v=GBQaLthlkAI). The installation process is very simple.
+[**Highly recommend watching Ben's video**](https://www.youtube.com/watch?v=GBQaLthlkAI). The installation process is very simple.
 
--   Download the launcher from the website [HERE](https://www.d2r-reimagined.com/download) or [Nexus Mods](https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files)
+-   Download the launcher from the [Reimagined website](https://www.d2r-reimagined.com/download) or [Nexus Mods](https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files)
+
+<a href="https://www.d2r-reimagined.com/download" class="wiki-button">Reimagined Website</a> <a href="https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files" class="wiki-button" style="background-color:green">Nexus Mods</a>
 -   Run the downloaded application (exe)
--   you now have installed the launcher
+-   You now have installed the launcher
 
 ## Reimagined and D2RLoader
 
@@ -43,7 +45,9 @@ If you have not installed Diablo II Resurrected yet, depending on how you bought
 **D2RLoader** provides **LAN TCP/IP support** for Reimagined, including **Reign of the Warlock (ROTW)**, without the former class and mechanic restrictions.  
 D2RLoader also allows for things like 100s of shared stash tabs, among other settings that can be found [here.](https://d2rloader.net/docs.html#settings)
 
-> **notice:** D2RLoader is still in active development, so installation steps and configuration options may change in future updates.
+> D2RLoader is still in active development, so installation steps and configuration options may change in future updates.
+{.is-warning}
+
 
 > **Before you begin:** Everyone joining the same TCP/IP game must use **matching D2R, D2RLoader, D2RLoader Plugins/Patches, and Reimagined compatibility-build versions, as well as any Reimagined Launcher Tweaks or Plugins/alterations to files.**
 

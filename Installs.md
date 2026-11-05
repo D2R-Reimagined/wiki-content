@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T05:54:10.326Z
+date: 2026-11-05T05:55:45.544Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -74,9 +74,7 @@ Once installed you should see something like this where you have an option for o
 
 -   See this subpage for instructions on installing ladder plugins
 
-<a href="/Installation/Nonladder" class="wiki-button">
-  Ladder Bundle Installation
-</a>
+<a href="/Installation/Nonladder" class="wiki-button">Ladder Bundle Installation</a>
 
 ### 4\. Enable the Multiplayer widget (Optional)
 
@@ -163,17 +161,13 @@ Players connected to the same virtual network.
 
 - See this subpage for instructions on installing Reimagined without a launcher or mod manager
 
-<a href="/Installation/Manual" class="wiki-button">
-  Manual Installation
-</a>
+<a href="/Installation/Manual" class="wiki-button">Manual Installation</a>
 
 ## D2RMM
 
 - See this subpage for instructions on installing with D2RMM
 
-<a href="/Installation/D2RMM" class="wiki-button">
-  D2RMM Installation
-</a>
+<a href="/Installation/D2RMM" class="wiki-button">D2RMM Installation</a>
 
 ## Crashing Frequently? Tips to Troubleshoot
 

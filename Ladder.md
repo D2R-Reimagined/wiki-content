@@ -2,7 +2,7 @@
 title: Reimagined Ladder
 description: Play on dedicated servers with trade
 published: true
-date: 2026-11-04T18:32:14.402Z
+date: 2026-11-05T21:19:20.822Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T18:29:22.308Z
@@ -106,4 +106,6 @@ A DM is refused, with a red message, if the person isn't an accepted friend or i
 `/portals` - List every color and its unlock status
 `/portals <option>` - Choose your active portal color, options are `classic`, `green`, `violet`, `red`, `teal`, `ember`
 
+`/filter sound3d <option>` - Allows you to choose between full-volume 2D drop alerts that always play at full volume or positional 3D alerts that fade with distance. Options are `on`, `off`, and `toggle`
 
+`/autodeposit rejuv <option>` - Allows you to change the behavior of the deposit button to ignore rejuvination portions. Options are `on`, `off`, `toggle`, and `status`

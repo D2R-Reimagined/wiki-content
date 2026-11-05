@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T17:09:04.562Z
+date: 2026-11-05T17:10:49.364Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -97,7 +97,7 @@ Once installed you should see something like this where you have an option for o
 ![](/laoder10.png)
 
 -   And viola you are now playing reimagined on the latest mod version with rotw content with friends
-![](/loader9.png)
+<img src="/loader9.png" style="max-width: 900px; height: auto;" />
 
 ### 5\. Adjusting Shared Stash Tab Pages
 

@@ -2,7 +2,7 @@
 title: Mod + D2RLoader Nonladder Package Installation
 description: Guide to installing the ladder plugin package for offline use
 published: true
-date: 2026-11-05T05:58:36.870Z
+date: 2026-11-05T16:25:56.242Z
 tags: install, install guide
 editor: markdown
 dateCreated: 2026-11-03T17:09:15.039Z
@@ -28,7 +28,7 @@ dateCreated: 2026-11-03T17:09:15.039Z
 
 ## Installing the Ladder plugin package
 
-- Get the D2R.Reimagined.Loader zip file from the most recent release from [github](https://github.com/D2R-Reimagined/d2r-reimagined-mod/releases). There is a direct link to the current 3.1 release. If the aforementioned zip is not present for some reason, there is also usually a Onedrive mirror link on the release.
+- Get the D2R.Reimagined.Loader zip file from the most recent release from [github](https://github.com/D2R-Reimagined/d2r-reimagined-mod/releases). Below to the current 3.1 release. If the aforementioned zip is not present for some reason, there is also a OneDrive mirror link on the release.
 
 <br>
 <a href="https://github.com/D2R-Reimagined/d2r-reimagined-mod/releases/tag/3.1.0" class="wiki-button">Ladder Package Release 3.1</a>

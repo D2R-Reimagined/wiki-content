@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T05:55:45.544Z
+date: 2026-11-05T16:15:13.485Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -123,37 +123,13 @@ Once installed you should see something like this where you have an option for o
 
 ### 6\. Legacy VPN set up - Radmin VPN for LAN play (Optional)
 
-If you have issues with windows firewall or other network issues consider using radmin to setup a vpn
+-   See this subpage for instructions on installing ladder plugins
 
-Download and install [**Radmin VPN**](https://www.radmin-vpn.com/), then turn it on.
+<a href="/Installation/VPN" class="wiki-button">VPN Setup</a>
 
-![Radmin VPN start screen](https://i.imgur.com/BOILHmA.png)
-
-Turn on Radmin VPN.
-
-Open the **Network** menu. Create a private network for your group, or select **Join Network** to connect to an existing one.
-
-![Radmin VPN Network menu](https://i.imgur.com/y8rOE3I.png)
-
-Open the Network menu and select Create Network or Join Network.
-
-![Radmin VPN Join Network dialog](https://i.imgur.com/kRCg0PY.png)
-
-Enter the network name and password.
-
-**Example public network**
-
-```plaintext
-Network name: D2RR TCP/IPPassword:     DeckardLikesWine@69
-```
-
-Enter the details and click **Join**. Radmin VPN should display the shared network and its connected players.
-
-![Players connected through Radmin VPN](https://i.imgur.com/XWZocSN.png)
-
-Players connected to the same virtual network.
-  
-**_If you have issues with the D2RLoader or other install, go to the Reimagined discord and post in the d2rr-installation-help or d2rr-online channels. Comments on the wiki are ignored._**
+---
+>If you have issues with the D2RLoader or other installation instructions, visit the [Reimagined discord](https://discord.com/channels/898562996715012096/904512913136570419) for assistance. Comments on the wiki are ignored.
+{.is-warning}
 
 ## Alternate Install Methods
 

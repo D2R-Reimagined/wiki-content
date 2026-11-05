@@ -2,7 +2,7 @@
 title: New Player Guide
 description: Learn more about getting started in D2R Reimagined
 published: true
-date: 2026-11-05T18:35:36.875Z
+date: 2026-11-05T19:39:39.835Z
 tags: drop, charm weight, mana zero, mana, farming, terror zones, save file size, crash, error, new player, new, info, information, qol, stack, rune, gem
 editor: markdown
 dateCreated: 2025-02-02T15:10:31.872Z
@@ -23,8 +23,7 @@ For a quick list of features Reimagined contains, [click here.](https://wiki.d2r
 - [Sleepy Cat's Tips & Tricks for Fresh start](https://youtu.be/YwTheeGqt4U)
 - [D2RR 3.0 Starting Tips](https://www.youtube.com/watch?v=P5YpLsjt9Z0)
 - [How To Get Any Base Type For Runewords](https://www.youtube.com/watch?v=dOFn7dSsqHw)
----
-- [Birbs Starter Loot Filter N/Nm/Hell ](https://www.d2r-reimagined.com/loot-filter/29c226ae-9814-4753-8e3b-d6103b9102c5)
+- [Birbs Loot Filter Guide](hhttps://www.youtube.com/watch?v=buHY4PCgiyk)
 
 ## Quick Starter Crafts
 

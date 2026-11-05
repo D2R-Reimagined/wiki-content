@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T16:15:13.485Z
+date: 2026-11-05T16:15:28.509Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -12,7 +12,7 @@ If you have not installed Diablo II Resurrected yet, depending on how you bought
 
 [Click here](https://wiki.d2r-reimagined.com/BattlenetSteam) to learn the differences between the Battle.net & Steam versions of the game Diablo II Resurrected.
 
-## Use a Launcher or Manually Install Reimagined
+# Use a Launcher or Manually Install Reimagined
 
 **_Reimagined Launcher_** (Very Easy) Installs in Windows & automatically updates itself, available on [Nexus Mods](https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files) OR the [Main Website HERE.](https://www.d2r-reimagined.com/download) With one-click it can find the latest version of Reimagined online too. Auto backup for your saved games.
 

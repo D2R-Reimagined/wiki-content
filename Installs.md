@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T17:10:49.364Z
+date: 2026-11-05T17:13:44.480Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -80,10 +80,10 @@ Once installed you should see something like this where you have an option for o
 ![](/loader4.png)
 
 -   Then enable the multiplayer button
-![](/loader5.png)
+<img src="/loader5.png" style="max-width: 900px; height: auto;" />
 
 -   At which point you will now see a multiplayer button which will allow you to host and browse games
-![](/loader6.png)
+<img src="/loader6.png" style="max-width: 900px; height: auto;" />
 
 ### 4\.5\. Hosting and Browsing games  (Optional)
 

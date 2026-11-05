@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T17:14:52.395Z
+date: 2026-11-05T17:22:40.192Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -54,7 +54,7 @@ D2RLoader also allows for things like hundreds of shared stash tabs, among other
 ### 1\. Have the Reimagined Launcher installed
 
 -   Install the Reimagined Launcher, see the top of this page
-Once installed you should see something like this where you have an option for offline or online
+Once installed you should see something like this where you have an option for Mod Only, Mod + D2RLoader, or Ladder
 ![](/loader1.png)
 
 ### 2\. Click Online and let the launcher install D2RLoader for you
@@ -75,7 +75,7 @@ Once installed you should see something like this where you have an option for o
 ### 4\. Enable the Multiplayer widget (Optional)
 
 -   As of writing this, the multiplayer button widget is not automatically added to the UI of the mod (future launcher versions will handle this step)
--   So hit the “Start Online” button to launch the game with D2RLoader enabled
+-   So hit the “Start Game” button to launch the game with D2RLoader enabled
 -   Once the game has started click the red cog at the bottom
 ![](/loader4.png)
 
@@ -104,7 +104,6 @@ Once installed you should see something like this where you have an option for o
 -   The most frequent change you will want to make is to have more stash tabs. To do so, while at the main menu, hit the red cog at the botton of the character select screen to open up the D2RLoader settings
 -   Then go to gameplay tab and adjust the shared stash tab pages and materials limit (ROTW tabs for runes/gems/materials)
 <img src="/laoder11.png" style="max-height: 700px; width: auto;" />
-
 
 -   Once done check in game and see your max shared stash tabs have been increased
 ![](/laoder12.png)

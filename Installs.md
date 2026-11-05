@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T16:39:40.387Z
+date: 2026-11-05T16:51:53.029Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -54,7 +54,6 @@ D2RLoader also allows for things like hundreds of shared stash tabs, among other
 ### 1\. Have the Reimagined Launcher installed
 
 -   Install the Reimagined Launcher, see the top of this page
-
 Once installed you should see something like this where you have an option for offline or online
 ![](/loader1.png)
 

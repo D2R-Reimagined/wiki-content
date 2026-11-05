@@ -2,14 +2,15 @@
 title: Mod + D2RLoader Nonladder Package Installation
 description: Guide to installing the ladder plugin package for offline use
 published: true
-date: 2026-11-05T16:25:56.242Z
+date: 2026-11-05T16:35:00.181Z
 tags: install, install guide
 editor: markdown
 dateCreated: 2026-11-03T17:09:15.039Z
 ---
 
 # Installing The Ladder Plugin Package
->  This guide assumes you have installed the D2R Reimagined Launcher already
+>This guide assumes you have installed the D2R Reimagined Launcher already
+{.is-info}
 
 ## Prep
 
@@ -30,9 +31,7 @@ dateCreated: 2026-11-03T17:09:15.039Z
 
 - Get the D2R.Reimagined.Loader zip file from the most recent release from [github](https://github.com/D2R-Reimagined/d2r-reimagined-mod/releases). Below to the current 3.1 release. If the aforementioned zip is not present for some reason, there is also a OneDrive mirror link on the release.
 
-<br>
 <a href="https://github.com/D2R-Reimagined/d2r-reimagined-mod/releases/tag/3.1.0" class="wiki-button">Ladder Package Release 3.1</a>
-
 
 - In the launcher, navigate to the Install/Update panel, and click the Select Zip Manually button
 ![installupdatehighlight.png](/installupdatehighlight.png)
@@ -40,7 +39,6 @@ dateCreated: 2026-11-03T17:09:15.039Z
 
 - Select the zip you downloaded from Github. This should install the mod files as well as any plugins included in the zip.
 - Your plugins section of the launcher should look as below, specifically as mod installs rather than global. See notes below about global installs if you think they are relevant to you.
-
 ![pluginsinstalledinmodcontext.png](/pluginsinstalledinmodcontext.png)
 
 ## Troubleshooting and Notes
@@ -48,7 +46,7 @@ dateCreated: 2026-11-03T17:09:15.039Z
 ### If your plugins list is empty, or is missing key Reimagined specific plugins like Maps
 
 - Open the zip file and copy the mods folder over top of your existing one in your D2R Install directory.
--- If you're more familiar with filesystems, you can just copy the d2rloader folder into the mods\Reimagined\D2RLoader folder directly for only plugins/patches. You may need to delete/replace configs in certain niche cases.
+    - If you're more familiar with filesystems, you can just copy the d2rloader folder into the mods\Reimagined\D2RLoader folder directly for only plugins/patches. You may need to delete/replace configs in certain niche cases.
 
 ### Global Plugins
 

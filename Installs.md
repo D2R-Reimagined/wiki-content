@@ -2,7 +2,7 @@
 title: Installation Guides
 description: How to install additional content alongside Reimagined
 published: true
-date: 2026-11-05T16:15:28.509Z
+date: 2026-11-05T16:19:48.306Z
 tags: d2rmm, install, online, d2rlan, tcp, tcp/ip, multiplayer, install guide, d2rlaunch, reimagined d2rlaunch, reimagined, remodded, beta launcher, desktop launcher, launcher
 editor: markdown
 dateCreated: 2025-03-03T02:26:58.618Z
@@ -12,7 +12,7 @@ If you have not installed Diablo II Resurrected yet, depending on how you bought
 
 [Click here](https://wiki.d2r-reimagined.com/BattlenetSteam) to learn the differences between the Battle.net & Steam versions of the game Diablo II Resurrected.
 
-# Use a Launcher or Manually Install Reimagined
+## Use a Launcher or Manually Install Reimagined
 
 **_Reimagined Launcher_** (Very Easy) Installs in Windows & automatically updates itself, available on [Nexus Mods](https://www.nexusmods.com/diablo2resurrected/mods/503?tab=files) OR the [Main Website HERE.](https://www.d2r-reimagined.com/download) With one-click it can find the latest version of Reimagined online too. Auto backup for your saved games.
 
@@ -123,7 +123,7 @@ Once installed you should see something like this where you have an option for o
 
 ### 6\. Legacy VPN set up - Radmin VPN for LAN play (Optional)
 
--   See this subpage for instructions on installing ladder plugins
+-   See this subpage for instructions on setup of a VPN if you have issues with windows firewall or other network issues that prevent D2RLoader TCP/IP from working by default
 
 <a href="/Installation/VPN" class="wiki-button">VPN Setup</a>
 
@@ -133,13 +133,13 @@ Once installed you should see something like this where you have an option for o
 
 ## Alternate Install Methods
 
-## Manual Reimagined Mod Installation
+### Manual Reimagined Mod Installation
 
 - See this subpage for instructions on installing Reimagined without a launcher or mod manager
 
 <a href="/Installation/Manual" class="wiki-button">Manual Installation</a>
 
-## D2RMM
+### D2RMM
 
 - See this subpage for instructions on installing with D2RMM
 

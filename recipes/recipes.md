@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-06T09:38:49.459Z
+date: 2026-11-06T09:51:20.073Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -89,8 +89,8 @@ Horadric Cube recipes that players may find useful on their journeys.
 | :--- | :--- | :--- | :--- |
 | Item (White)<br>OR<br>Item (Magic) | \# Magic Jewels | = | \# Sockets |
 | Item (Rare)<br>OR<br>Item (Set) | \# Rare Jewels | = | \# Sockets |
-| Item | Orb of Socketing | = | #-# Sockets (Random) **\*** |
 | Item (Unique)<br>OR<br>Item (Crafted) | \# Unique Jewels | = | \# Sockets |
+| Item | Orb of Socketing | = | #-# Sockets (Random) **\*** |
 
 **\*Based on item's level and max number of sockets**
 **\*Orb of Socketing can always be used if sockets are already present, it will randomly reroll a new amount.**
@@ -266,7 +266,7 @@ These recipes change item quality. **A single orb is not a Divine Orb regenerati
 | :--- | :--- | :--- | :--- | :--- |
 | Magic Charm | Gem Bag (3 Gems) |  | = | New Magic Charm (100% plvl) |
 | 3 Magic Charms<br>(same size) |  |  | = | New Magic Charm (100% plvl) |
-| 3 Unique Latent Sunder Charms |  |  | = | New Latent Sunder Charm (Random Element) |
+| 3 Latent Sunder Charms |  |  | = | New Latent Sunder Charm (Random Element) |
 
 ### Jewel Rerolls
 
@@ -301,8 +301,6 @@ These recipes **regenerate** the item (similar to a Divine Orb), rather than per
 | Set Armor, Weapon, Ring, or Amulet | **1× Orb of Corruption** | **Mephisto's Animus + Baal's Calamity + Diablo's Ire** | Regenerated Set item |
 | Unique Armor, Weapon, Ring, Amulet, Arrows, or Bolts | **1× Orb of Corruption** | **Mephisto's Animus + Baal's Calamity + Diablo's Ire** | Regenerated Unique item |
 
-> The comparison export calls this output `Regenerate Unique (Reroll if Base Upgraded)`, including for some Set inputs. The table uses **Set** or **Unique** according to the actual input recipe; the base-upgraded caveat still applies.
-
 <a id="armor--weapon-base-upgrade-recipes"></a>
 ## Armor & Weapon Base Upgrade Recipes
 
@@ -332,7 +330,7 @@ These recipes **regenerate** the item (similar to a Divine Orb), rather than per
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- |
-| Item<br>(Ethereal) | 2 Rare Jewels | PUL Rune | = | Repaired Ethereal Item |
+| Item<br>(Ethereal) | 1 Magic Jewel | PUL Rune | = | Repaired Ethereal Item |
 | Quiver<br>(Any) | Healing Potion<br>(Any) |  | = | Replenished Quantity |
 | Bolt Case<br>(Any) | Healing Potion<br>(Any) |  | = | Replenished Quantity |
 | Weapon<br>(Any) | ORT Rune | Gem (Any) | = | Repaired & Recharged |
@@ -342,7 +340,7 @@ These recipes **regenerate** the item (similar to a Divine Orb), rather than per
 
 | Inputs | Outcome |
 | --- | --- |
-| Hellfire Torch + Orb of Corruption + Standard of Heroes | Upgrade the Torch: +2 to all Attributes and +2% to All Resistances (up to 6 upgrades, as reported by the new recipe export). A separate Obsidian Beacon outcome is also listed in the export. |
+| Hellfire Torch + Orb of Corruption + Standard of Heroes | Upgrade the Torch: +2 to all Attributes and +2% to All Resistances (up to 6 upgrades)|
 | Relic of the Ancients + Orb of Shadows + GRIT Rune (#37) | Relic gains +1 to your Class Skill Levels and +5% Increased Maximum Life. |
 | Relic of the Ancients + Orb of Shadows + DEM Rune (#38) | Relic gains +1 to your Class Skill Levels and +5% Magic Resistance. |
 | Relic of the Ancients + Orb of Shadows + HEV Rune (#39) | Relic gains +1 to your Class Skill Levels and +5% to All Maximum Resistances. |
@@ -421,7 +419,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Diamond | Magic Jewel |  |  | = | +2 Random Paladin Skills |
 | Amulet | Chaos Onyx | Magic Jewel |  |  | = | +2 Random Warlock Skills |
 | Amulet | Diamond | Magic Jewel | TIR Rune |  | = | +5% to All Resistances |
-| 1 Amethyst<br>1 Topaz<br>1 Sapphire<br>1 Emerald<br>1 Ruby<br>1 Diamond<br>1 Magic Amulet |  |  |  |  | = | Prismatic Amulet |
+| Magic Amulet <br> 1 Amethyst<br>1 Topaz<br>1 Sapphire<br>1 Emerald<br>1 Ruby<br>1 Diamond |  |  |  |  | = | Prismatic Amulet |
 | Amulet | Emerald | Magic Jewel | SHAEL Rune |  | = | +10% Increased Attack Speed |
 | Amulet | Sapphire | Magic Jewel | DOL Rune |  | = | +10% Faster Cast Rate |
 | Amulet | Orb of Infusion | Rare Jewel | Ruby |  | = | +40 to Life<br>+4 Life after each Kill |

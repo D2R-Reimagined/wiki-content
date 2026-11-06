@@ -2,7 +2,7 @@
 title: Drop Tables
 description: A description of monsters and what orbs and runes they can drop
 published: true
-date: 2026-11-05T03:51:27.987Z
+date: 2026-11-06T16:44:16.580Z
 tags: keys, sunder, drop, tables, sunders, sunder charms, loot, where to find what, loot tables, drop tables, countess, rune boss, orbs, uber keys
 editor: markdown
 dateCreated: 2025-06-09T02:54:27.554Z
@@ -12,14 +12,11 @@ dateCreated: 2025-06-09T02:54:27.554Z
 
 Information regarding various special items and where they have a chance to drop and information on what designation each type of monster is considered when looking for loot.  
   
-> Worldstone shards drop in non RoTW (expansion games as well) 
- 
-
 ## Boss Definitions
 
 ### Act Bosses
 
-Item in parentheses is the orb the boss drops on the quest completion kill or the first kill in every difficulty.
+Item in parentheses is the orb the boss drops on the quest completion kill or the first kill in every difficulty. The [Ancient Statues table](#ancient-statues) lists the possible statue drops for each Hell Terror Zone act boss.
 
 -   Andariel
 -   Duriel (Infusion)
@@ -86,7 +83,13 @@ Uniques are randomly generated leaders of a pack of minions that spawn in an are
 
 A group of three monsters that spawn in an area as you explore it that have blue names.
 
+### Heralds
+
+Heralds in Hell Terror Zones can drop Worldstone Shards and roll for Ancient Statues from the same statue pool as the act boss.
+
 ## Drop % of Terror zone specific things
+
+The statue and shard percentages below estimate the chance of at least one drop per kill from the mod's loot tables. The shard estimates assume the Hell completion requirement is met and use standard player-count scaling for the chance of an empty roll.
 
 ###   
 Hell TZ Act Bosses
@@ -98,6 +101,7 @@ Socket Orb = .91%
 Corruption Orb = .91%  
 Shadow orb =   .13%  
 Sunder Charms = .42% (then it picks a random one from the 6)  
+Ancient Statues = 33.47% (Andariel through Diablo) or 31.46% (Baal)
   
 p7:  
 Gem cluster = 3.48%  
@@ -105,6 +109,7 @@ Socket Orb = 3.48%
 Corruption Orb = 3.48%  
 Shadow orb =   .50%  
 Sunder Charms = 1.68% (then it picks a random one from the 6)  
+Ancient Statues = 34.97% (Andariel through Diablo) or 32.50% (Baal)
  
 
 ###   
@@ -118,6 +123,7 @@ Corruption Orb = .91%
 Pandemonium key = .52%  
 Shadow orb =   .13%  
 Sunder Charms = .42% (then it picks a random one from the 6)  
+Worldstone Shards = 0.75–0.82% (generic uniques, super uniques, lieutenants and champions)
   
 p7:  
 Gem cluster = 3.48%  
@@ -125,7 +131,17 @@ Socket Orb = 3.48%
 Corruption Orb = 3.48%  
 Pandemonium key = 1.99%  
 Shadow orb =   .50%  
-Sunder Charms = 1.68% (then it picks a random one from the 6)
+Sunder Charms = 1.68% (then it picks a random one from the 6)\
+Worldstone Shards = 2.98–3.22% (generic uniques, super uniques, lieutenants and champions)
+
+### Hell TZ Heralds
+
+| **Drop** | **p1** | **p7** |
+| --- | --- | --- |
+| Worldstone Shards (all tiers) | 0.38–0.41% | 1.50–1.63% |
+| Ancient Statues (tier 1) | 2.01% | 2.01% |
+| Ancient Statues (tiers 2–3) | 3.00% | 3.00% |
+| Ancient Statues (tiers 4–5) | 3.98% | 3.98% |
 
 ## Who Can Drop What, Where?
 
@@ -137,17 +153,59 @@ This is a legend for the table below:
 -   "R" - Gem Cluster
 -   "K" - Random Pandemonium Key
 -   “I” - Sunder Charms
+-   "W" - [Worldstone Shards](#worldstone-shards)
+-   "A" - [Ancient Statues](#ancient-statues)
 
 | **Category** | **Norm** | **NM** | **Hell** | **Norm TZ** | **NM TZ** | **Hell TZ** |
 | --- | --- | --- | --- | --- | --- | --- |
-| Act Boss | \-  | S   | S   | C   | S C I | S C E R I |
-| Key Boss, Rune Boss  & Lieutenant | \-  | \-  | \-  | C   | S C I | S C E R I |
+| Act Boss | \-  | S   | S   | C   | S C I | S C E R I A |
+| Key Boss & Rune Boss | \-  | \-  | \-  | C   | S C I | S C E R I |
+| Lieutenant | \-  | \-  | W   | C   | S C I | S C E R I W |
 | Special Unique | \-  | \-  | \-  | C   | S C I | S C E R K I |
-| Super Unique & Unique | \-  | \-  | \-  | \-  | S C I | S C E R K I |
-| Champion | \-  | \-  | \-  | \-  | S C I | S C I |
+| Super Unique & Unique | \-  | \-  | W   | \-  | S C I | S C E R K I W |
+| Champion | \-  | \-  | W   | \-  | S C I | S C I W |
+| Herald | \-  | \-  | \-  | \-  | \-  | S C E R K I W A |
 
   
 \> For a recommended list of high density terror zones see [here](https://wiki.d2r-reimagined.com/en/new_player_guide#suggested-farming-areas)
+
+### Worldstone Shards
+
+In Hell, champions, uniques, super uniques and lieutenants that use the generic loot tables can drop Worldstone Shards inside and outside Terror Zones. Hell Terror Zone Heralds also have a shard roll. Shards can drop in both Expansion and Reign of the Warlock games. Outside Terror Zones, the same eligible monster types have a 0.38–0.41% chance at p1 and a 1.50–1.63% chance at p7.
+
+Each shard pool can drop all five types. The weights below show how often each type is selected **when a shard drops**. Use the act of the monster's loot table to read the row.
+
+| **Monster loot table** | **Western** | **Eastern** | **Southern** | **Deep** | **Northern** |
+| --- | --- | --- | --- | --- | --- |
+| Act 1 | 1 | 2 | 5 | 3 | 2 |
+| Act 2 | 2 | 1 | 2 | 5 | 3 |
+| Act 3 | 2 | 2 | 1 | 2 | 5 |
+| Act 4 | 3 | 5 | 2 | 1 | 2 |
+| Act 5 | 5 | 3 | 2 | 2 | 1 |
+
+### Ancient Statues
+
+Hell Terror Zone act bosses and Heralds can drop Ancient Statues. When a statue drops, there is a 90% chance it is the preferred statue and a 5% chance for each alternative.
+
+| **Act** | **Act boss** | **Preferred statue** | **Other possible statues** |
+| --- | --- | --- | --- |
+| 1 | Andariel | Talic's Anguish | Korlic's Pain, Madawc's Ire |
+| 2 | Duriel | Korlic's Pain | Talic's Anguish, Madawc's Ire |
+| 3 | Mephisto | Madawc's Ire | Korlic's Pain, Bul-Kathos' Nightmare |
+| 4 | Diablo | Bul-Kathos' Nightmare | Madawc's Ire, Worusk's End |
+| 5 | Baal | Worusk's End | Bul-Kathos' Nightmare, Madawc's Ire |
+
+### Forsaken Labyrinth
+
+Monsters and bosses in the [Forsaken Labyrinth](/en/forsaken-labryinth) can also drop both materials from their tier's loot pool.
+
+| **Tier** | **Worldstone Shard** | **Ancient Statue** |
+| --- | --- | --- |
+| 1 | Western | Talic's Anguish |
+| 2 | Eastern | Korlic's Pain |
+| 3 | Southern | Madawc's Ire |
+| 4 | Deep | Bul-Kathos' Nightmare |
+| 5 | Northern | Worusk's End |
 
 ## Runes
 

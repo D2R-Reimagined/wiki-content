@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-06T01:51:42.184Z
+date: 2026-11-06T09:19:32.647Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -25,6 +25,7 @@ This page contains all current Reimagined recipes:
 	- [Conversion Recipes](#conversion-recipes)
 	- [Recycle Recipes](#recycle-recipes)
 	- [Reroll Recipes](#reroll-recipes)
+	- [Jewel Rarity Upgrades](#jewel-rarity-upgrades)
 	- [Regenerate (Divine Orb) Recipes](#regenerate-divine-orb-recipes)
 	- [Orb Quality Conversion Recipes](#orb-quality-conversion-recipes)
 	- [Base Upgrade Recipes](#armor--weapon-base-upgrade-recipes)
@@ -75,7 +76,7 @@ This page contains all current Reimagined recipes:
 
 Horadric Cube recipes that players may find useful on their journeys.
 
-**Sections:** [Sockets](#socket-recipes) | [Unsocket](#unsocket-recipes) | [Conversion](#conversion-recipes) | [Recycle](#recycle-recipes) | [Reroll](#reroll-recipes) | [Regenerate](#regenerate-divine-orb-recipes) | [Orb Quality Conversion](#orb-quality-conversion-recipes) | [Base Upgrades](#armor--weapon-base-upgrade-recipes) | [Repair](#repair-recipes) | [Uber Charm Upgrades](#uber-charm-and-relic-upgrades) | [Portals](#portal-recipes)
+**Sections:** [Sockets](#socket-recipes) | [Unsocket](#unsocket-recipes) | [Conversion](#conversion-recipes) | [Recycle](#recycle-recipes) | [Reroll](#reroll-recipes) | [Jewel Upgrades](#jewel-rarity-upgrades) | [Regenerate](#regenerate-divine-orb-recipes) | [Orb Quality Conversion](#orb-quality-conversion-recipes) | [Base Upgrades](#armor--weapon-base-upgrade-recipes) | [Repair](#repair-recipes) | [Uber Charm Upgrades](#uber-charm-and-relic-upgrades) | [Portals](#portal-recipes)
 
 ## Socket Recipes
 
@@ -111,27 +112,77 @@ Horadric Cube recipes that players may find useful on their journeys.
 
 ## Conversion Recipes
 
+### Uber Key Conversions
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| Key of Terror | Orb of Corruption | TP Tome **\*** | \= | Key of Hate |
+| Key of Terror | Orb of Corruption | ID Tome **\*** | \= | Key of Destruction |
+| Key of Hate | Orb of Corruption | TP Tome **\*** | \= | Key of Destruction |
+| Key of Hate | Orb of Corruption | ID Tome **\*** | \= | Key of Terror |
+| Key of Destruction | Orb of Corruption | TP Tome **\*** | \= | Key of Terror |
+| Key of Destruction | Orb of Corruption | ID Tome **\*** | \= | Key of Hate |
+
+### Worldstone Shard Conversions
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| Western Worldstone Shard | Tome of Town Portal | | \= | Eastern Worldstone Shard |
+| Eastern Worldstone Shard | Tome of Town Portal | | \= | Southern Worldstone Shard |
+| Southern Worldstone Shard | Tome of Town Portal | | \= | Deep Worldstone Shard |
+| Deep Worldstone Shard| Tome of Town Portal | | \= | Northern Worldstone Shard|
+| Northern Worldstone Shard | Tome of Town Portal | | \= | Western Worldstone Shard |
+
+### Uber Ancient Statue Conversions
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| Western Worldstone Shard | Any Statue | | \= | Talic's Anguish Statue |
+| Eastern Worldstone Shard | Any Statue | | \= | Korlic's Pain Statue |
+| Southern Worldstone Shard | Any Statue | | \= | Madawc's Ire Statue |
+| Deep Worldstone Shard | Any Statue | | \= | Bul-Kathos' Nightmare Statue |
+| Northern Worldstone Shard | Any Statue | | \= | Worusk's End Statue |
+
+### Potion Conversions
+
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- |
 | Healing Potion  <br>(Any) | Gem (Any) | | \= | Rejuvenation Potion |
-| 3 Rejuvenation Potions | | | \= | Full Rejuvenation Potion |
 | Healing Potion  <br>(Any) | 3 Gems (Any) | | \= | Full Rejuvenation Potion |
 | Healing Potion  <br>(Any) | Gem Bag (3 Gems) | | \= | Full Rejuvenation Potion |
+| 3 Rejuvenation Potions | | | \= | Full Rejuvenation Potion |
+
+### Ethereal and White Base Conversions
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| Armor / Weapon / Shield  <br>**_DOES NOT WORK ON:_** <br>Indestructible items<br>Bows or Crossbows<br>Items without Durability | Unique Jewel | OHM Rune | \= | Ethereal Item |
+| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \= | Becomes White Base Item<br><br>**Item is regenerated as a new white item. <br>Enchants/Corruption wiped.** |
+| Non-Throwing Weapon / Torso / Helm / Shield | Orb of Infusion | Uber Spirits (1 of each) | \= | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Helm, Shield)<br>**Item is regenerated as a new white item. <br>Enchants/Corruption wiped.**<br>Item is upgraded to or remains Elite and can gain superior modifiers in addition to the granted modifiers. This recipe no longer stacks. |
+
+### Rune Conversions
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 Unstacked Runes | TP Tome \* | | \= | 1 Rune Higher |
 | Stacked Rune (Qty ≥ 2) | TP Tome \* | | \= | 1 Rune Higher<br><br>Stack Qty - 2 |
+| 9 Unstacked Runes | | | \= | 1 Rune 3 Levels Higher |
 | 1 Unstacked Rune | ID Tome \* | | \= | 1 Rune Lower |
 | Stacked Rune (Qty ≥ 1) | ID Tome \* | | \= | 1 Rune Lower<br><br>Stack Qty - 1 |
-| Armor / Weapon / Shield  <br>(Any) | EL Rune | HEL Rune | \= | Becomes White Base Item<br><br>**Item is regenerated as a new white item. <br>Enchants/Corruption wiped.** |
-| 2 Unstacked Runes | TP Tome \* | | \= | 1 Rune Higher |
-| 9 Magic Jewels | | | \= | Rare Jewel |
-| Standard of Heroes <br>(100% drop from Ubers) | TP Tome \* | | \= | Standard of Terror <br><br>**Selling this to any vendor spawns DClone <br>in place of next Super Unique monster** <br>(sells just like SOJ) |
-| 6 Rare Jewels | | | \= | Unique Jewel |
-| 9 Unstacked Runes | | | \= | 1 Rune 3 Levels Higher |
-| Armor / Weapon / Shield  <br>**_DOES NOT WORK ON:_** <br>Indestructible items<br>Bows or Crossbows<br>Items without Durability | Unique Jewel | OHM Rune | \= | Ethereal Item |
+
+### Uber Spirit Conversions
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
 | Uber Spirits (1 of each) | | | \= | Hellfire Torch |
-| Weapon / Torso / Shield  <br>(Any) | Orb of Infusion | Uber Spirits (1 of each) | \= | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Shield)<br>**Item is regenerated as a new white item. <br>Enchants/Corruption wiped.** |
 | 5 Orb of Infusion | Uber Spirits (1 of each) | | \= | Orb of Conversion |
 
-| | | | | **Item is upgraded to or remains Elite, and can gain superior modifiers in addition to the granted modifiers.** <br>**_This recipe no longer stacks on items._** |
+### Standard of Heroes
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| Standard of Heroes <br>(100% drop from Ubers) | TP Tome \* | | \= | Standard of Terror <br><br>**Selling this to any vendor spawns DClone <br>in place of next Super Unique monster** <br>(sells just like SOJ) |
+
 
 
 **\* Tome is returned full**
@@ -187,10 +238,10 @@ These recipes change item quality. **A single orb is not a Divine Orb regenerati
 
 | **Reagent 1** | **Reagent 2** | **=** | **Output** |
 | :--- | :--- | :--- | :--- |
-| Any 5 Set Weapons/**Armors**** | ID Tome **\*** | \=  | Gem Cluster |
-| Any 5 Unique Weapons/**Armors****/**Ammo***** | ID Tome **\*** | \=  | Gem Cluster |
 | 3 Set Rings  <br>OR  <br>3 Set Amulets | ID Tome **\*** | \=  | Rare Jewel |
 | 3 Unique Rings  <br>OR  <br>3 Unique Amulets | ID Tome **\*** | \=  | Rare Jewel |
+| Any 5 Set Weapons/**Armors**** | ID Tome **\*** | \=  | Gem Cluster |
+| Any 5 Unique Weapons/**Armors****/**Ammo***** | ID Tome **\*** | \=  | Gem Cluster |
 
 **\*Tome is returned full**  
 **\*\*5 gloves, 5 boots, 5 chests, etc.**  
@@ -198,42 +249,44 @@ These recipes change item quality. **A single orb is not a Divine Orb regenerati
 
 ## Reroll Recipes
 
+### Jewelry Rerolls
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| Magic Jewelry | Gem Bag (3 Gems) | | \= | New Magic Jewelry(100% plvl) |
+| 3 Magic Jewelry  <br>(same type) | | | \= | New Magic Jewelry (100% plvl) |
+| 3 Rare Jewelry  <br>(same type) | | | \= | New Rare Jewelry(100% plvl) |
+| Rare Jewelry | Gem Bag (20 Gems) | | \= | New Rare Jewelry(100% plvl) |
+| Set Jewelry | Gem Bag (50 Gems) | | \= | New Set Jewelry(100% plvl) |
+| Unique Jewelry | Gem Bag (50 Gems) | | \= | New Unique Jewelry(100% plvl) |
+
+### Charm Rerolls
+
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- |
 | Magic Charm | Gem Bag (3 Gems) | | \= | New Magic Charm (100% plvl) |
-| Magic Jewelry | Gem Bag (3 Gems) | | \= | New Magic Jewelry(100% plvl) |
-| 3 Magic Jewelry  <br>(same type) | | | \= | New Magic Jewelry (100% plvl) |
 | 3 Magic Charms  <br>(same size) | | | \= | New Magic Charm (100% plvl) |
+| 3 Unique Latent Sunder Charms | | | \= | New Latent Sunder Charm (Random Element) |
+
+### Jewel Rerolls
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
 | Magic Jewel | Gem Bag (3 Gems) | | \= | New Magic Jewel (100% plvl) |
 | Rare Jewel | Gem Bag (10 Gems) | | \= | New Rare Jewel (100% plvl) |
-| 3 Rare Jewelry  <br>(same type) | | | \= | New Rare Jewelry(100% plvl) |
-| Rare Jewelry | Gem Bag (20 Gems) | | \= | New Rare Jewelry(100% plvl) |
-| Western Worldstone Shard | Tome of Town Portal | | \= | Eastern Worldstone Shard |
-| Eastern Worldstone Shard | Tome of Town Portal | | \= | Southern Worldstone Shard |
-| Southern Worldstone Shard | Tome of Town Portal | | \= | Deep Worldstone Shard |
-| Deep Worldstone Shard| Tome of Town Portal | | \= | Northern Worldstone Shard|
-| Northern Worldstone Shard | Tome of Town Portal | | \= | Western Worldstone Shard |
-| Set Jewelry | Gem Bag (50 Gems) | | \= | New Set Jewelry(100% plvl) |
-| Key of Terror | Orb of Corruption | TP Tome **\*** | \= | Key of Hate |
-| Key of Terror | Orb of Corruption | ID Tome **\*** | \= | Key of Destruction |
-| Key of Hate | Orb of Corruption | TP Tome **\*** | \= | Key of Destruction |
-| Key of Hate | Orb of Corruption | ID Tome **\*** | \= | Key of Terror |
-| Key of Destruction | Orb of Corruption | TP Tome **\*** | \= | Key of Terror |
-| Key of Destruction | Orb of Corruption | ID Tome **\*** | \= | Key of Hate |
-| Unique Jewelry | Gem Bag (50 Gems) | | \= | New Unique Jewelry(100% plvl) |
-| Eastern Worldstone Shard | Any Statue | | \= | Korlic's Pain Statue |
-| Western Worldstone Shard | Any Statue | | \= | Talic's Anguish Statue |
-| Southern Worldstone Shard | Any Statue | | \= | Madawc's Ire Statue |
-| Deep Worldstone Shard | Any Statue | | \= | Bul-Kathos' Nightmare Statue |
-| Northern Worldstone Shard | Any Statue | | \= | Worusk's End Statue |
-| 3 Unique Latent Sunder Charms | | | \= | New Latent Sunder Charm (Random Element) |
 | Unique Jewel | Gem Bag (50 Gems) | | \= | New Unique Jewel (100% ilvl) |
 
 100% plvl = item's level is based 100% on character's level  
 100% ilvl = item's level is based 100% on input item's level
 
-**\*Tome is returned full**  
+## Jewel Rarity Upgrades
 
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| 9 Magic Jewels | | | \= | Rare Jewel |
+| 6 Rare Jewels | | | \= | Unique Jewel |
+
+<a id="regenerate-divine-orb-recipes"></a>
 ## Regenerate Recipes (Divine Orb)
 
 These recipes **regenerate** the item (similar to a Divine Orb), rather than performing an ordinary reroll. Regeneration resets existing modifiers and removes corruption and upgrades. If an item has been base-upgraded, the new result may instead roll as a different item eligible for that base.
@@ -258,32 +311,32 @@ These recipes **regenerate** the item (similar to a Divine Orb), rather than per
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Rare Armor  <br>(Normal) | RAL Rune | THUL Rune | Amethyst | \=  | Rare Armor  <br>(Exceptional) |
-| Set Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Set Armor  <br>(Exceptional) |
-| Unique Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Unique Armor  <br>(Exceptional) |
-| Set Armor  <br>(Exceptional) | KO Rune | LEM Rune | Diamond | \=  | Set Armor  <br>(Elite) |
-| Unique Armor  <br>(Exceptional) | KO Rune | LEM Rune | Diamond | \=  | Unique Armor  <br>(Elite) |
 | Rare Armor  <br>(Exceptional) | KO Rune | PUL Rune | Amethyst | \=  | Rare Armor  <br>(Elite) |
+| Set Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Set Armor  <br>(Exceptional) |
+| Set Armor  <br>(Exceptional) | KO Rune | LEM Rune | Diamond | \=  | Set Armor  <br>(Elite) |
+| Unique Armor  <br>(Normal) | TAL Rune | SHAEL Rune | Diamond | \=  | Unique Armor  <br>(Exceptional) |
+| Unique Armor  <br>(Exceptional) | KO Rune | LEM Rune | Diamond | \=  | Unique Armor  <br>(Elite) |
 
 ### Weapons
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Rare Weapon  <br>(Normal) | ORT Rune | AMN Rune | Sapphire | \=  | Rare Weapon  <br>(Exceptional) |
-| Set Weapon  <br>(Normal) | RAL Rune | SOL Rune | Emerald | \=  | Set Weapon  <br>(Exceptional) |
-| Unique Weapon  <br>(Normal) | RAL Rune | SOL Rune | Emerald | \=  | Unique Weapon  <br>(Exceptional) |
-| Set Weapon  <br>(Exceptional) | LUM Rune | PUL Rune | Emerald | \=  | Set Weapon  <br>(Elite) |
-| Unique Weapon  <br>(Exceptional) | LUM Rune | PUL Rune | Emerald | \=  | Unique Weapon  <br>(Elite) |
 | Rare Weapon  <br>(Exceptional) | FAL Rune | UM Rune | Sapphire | \=  | Rare Weapon  <br>(Elite) |
+| Set Weapon  <br>(Normal) | RAL Rune | SOL Rune | Emerald | \=  | Set Weapon  <br>(Exceptional) |
+| Set Weapon  <br>(Exceptional) | LUM Rune | PUL Rune | Emerald | \=  | Set Weapon  <br>(Elite) |
+| Unique Weapon  <br>(Normal) | RAL Rune | SOL Rune | Emerald | \=  | Unique Weapon  <br>(Exceptional) |
+| Unique Weapon  <br>(Exceptional) | LUM Rune | PUL Rune | Emerald | \=  | Unique Weapon  <br>(Elite) |
 
 ## Repair Recipes
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
 | :--- | :--- | :--- | :--- | :--- |
+| Item  <br>(Ethereal) | 2 Rare Jewels | PUL Rune | \=  | Repaired Ethereal Item |
 | Quiver  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
 | Bolt Case  <br>(Any) | Healing Potion  <br>(Any) |     | \=  | Replenished Quantity |
-| Armor  <br>(Any) | RAL Rune | Gem (Any) | \=  | Repaired & Recharged |
 | Weapon  <br>(Any) | ORT Rune | Gem (Any) | \=  | Repaired & Recharged |
-| Item  <br>(Ethereal) | 2 Rare Jewels | PUL Rune | \=  | Repaired Ethereal Item |
+| Armor  <br>(Any) | RAL Rune | Gem (Any) | \=  | Repaired & Recharged |
 
 ## Uber Charm and Relic Upgrades
 
@@ -403,10 +456,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Ring | Ruby |  |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Ring | Sapphire |  |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
 | Ring | Topaz |  |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
-| Magic Ring | Ruby | Exploding Potion |  |  | \=  | Garnet Ring |
-| Magic Ring | Sapphire | Thawing Potion |  |  | \=  | Cobalt Ring |
-| Magic Ring | Emerald | Antidote Potion |  |  | \=  | Jade Ring |
-| Magic Ring | Topaz | Rejuvenation Potion |  |  | \=  | Coral Ring |
 | Ring | Emerald | Tir Rune |  |  | \= | +15% Poison Resistance |
 | Ring | Ruby | Tir Rune |  |  | \= | +15% Fire Resistance |
 | Ring | Sapphire | Tir Rune |  |  | \= | +15% Cold Resistance |
@@ -515,7 +564,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Gloves | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
 | Gloves | Ruby | Magic Jewel |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Gloves | Sapphire | Magic Jewel |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
-| Gloves | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Gloves | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
 | Gloves | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
 | Gloves | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
@@ -552,7 +600,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Helm | Emerald | Magic Jewel |  |  | \= | +5 to Dexterity<br>+5 to Vitality |
 | Helm | Ruby | Magic Jewel |  |  | \= | +20 to Life<br>+2 Life after each Kill |
 | Helm | Sapphire | Magic Jewel |  |  | \= | +20 to Mana<br>+2 Mana after each Kill |
-| Helm | Skull | Magic Jewel |  |  | \= | +5 to Energy<br>+5 to Vitality |
 | Helm | Topaz | Magic Jewel |  |  | \= | +10% Chance Items Roll Magic or Better<br>+20% Extra Gold from Monsters |
 | Helm | Eth Rune | Magic Jewel |  |  | \= | +20% Mana Regeneration |
 | Helm | Diamond | Magic Jewel | Tir Rune |  | \= | +5% to All Resistances |
@@ -750,68 +797,44 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 ## Amulets
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Magic Amulet | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 4 Battle Orders on level up Magic Amulet |
 | Magic Amulet | Eld Rune | El Rune |  |  | \= | 100% Chance to cast level 4 Battle Orders when you Level-Up<br>New Magic Amulet |
-| Magic Amulet | Magic Jewel | RAL Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +5-10% Faster Cast Rate |
 | Magic Amulet | Magic Jewel | Ral Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(5-10)% Faster Cast Rate<br>New Crafted Amulet |
-| Magic Amulet | Magic Jewel | THUL Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-10 Thorns; +3-11% Hits Cause Monsters to Flee |
-| Magic Amulet | Magic Jewel | THUL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +1-10% Block |
 | Magic Amulet | Magic Jewel | Thul Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>(1-10)% Increased Chance of Blocking<br>New Crafted Amulet |
 | Magic Amulet | Magic Jewel | Thul Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-10)<br>+(3-11)% Hits Cause Monsters to Flee<br>New Crafted Amulet |
-| Magic Amulet | Magic Jewel | AMN Rune | Ruby |  | \=  | 1-4% Life Steal; +10-20 Life; +5-10% Faster Run/Walk |
 | Magic Amulet | Magic Jewel | Amn Rune | Ruby |  | \= | +(1-4)% Life stolen per hit<br>+(10-20) to Life<br>+(5-10)% Faster Run/Walk Speed<br>New Crafted Amulet |
 | Rare Amulet | Rare Jewel | PUL rune | EL Rune | Ruby | \=  | +1 All Skills & +10-12% Faster Attack Speed Rare Amulet |
 | Rare Amulet | Rare Jewel | PUL rune | EL Rune | Sapphire | \=  | +1 All Skills & +10-12% Faster Cast Rate Rare Amulet |
 | Magic Amulet | Orb of Infusion | RAL Rune | Gem(Any) |  | \=  | +1 Random Class All Skills Rare Amulet |
 | Rare Amulet | Unique Jewel | Brak Rune (#34) | Vex Rune | Skull | \= | +2 to All Skills<br>Adds 25-35 Weapon Damage<br>New Crafted Amulet |
 | Rare Amulet | Unique Jewel | Zeph Rune (#35) | Vex Rune | Sapphire | \= | +2 to All Skills<br>+10% to All Elemental Skill Damage<br>New Crafted Amulet |
-| Set Amulet | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
-| Unique Amulet | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
-| Unique Amulet | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
-| Set Amulet | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 
 <a id="item-craft-rings"></a>
 ## Rings
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Magic Ring | Emerald | Antidote Potion |  |  | \= | Magic Ring (Forced prefix) |
-| Magic Ring | Ruby | Exploding Potion |  |  | \= | Magic Ring (Forced prefix) |
-| Magic Ring | Sapphire | Thawing Potion |  |  | \= | Magic Ring (Forced prefix) |
-| Magic Ring | Topaz | Rejuvenation Potion |  |  | \= | Magic Ring (Forced prefix) |
-| Magic Ring | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 1 Fade on level up Magic Ring |
+| Magic Ring | Emerald | Antidote Potion |  |  | \= | Jade Ring (Magic Ring with a forced prefix) |
+| Magic Ring | Ruby | Exploding Potion |  |  | \= | Garnet Ring (Magic Ring with a forced prefix) |
+| Magic Ring | Sapphire | Thawing Potion |  |  | \= | Cobalt Ring (Magic Ring with a forced prefix) |
+| Magic Ring | Topaz | Rejuvenation Potion |  |  | \= | Coral Ring (Magic Ring with a forced prefix) |
 | Magic Ring | Eld Rune | El Rune |  |  | \= | 100% Chance to cast level 1 Fade when you Level-Up<br>New Magic Ring |
-| Magic Ring | Magic Jewel | AMN Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-6 Thorns; +1-5 Dexterity |
-| Magic Ring | Magic Jewel | AMN Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-5 Energy |
-| Magic Ring | Magic Jewel | AMN Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +1-5 Vitality |
 | Magic Ring | Magic Jewel | Amn Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(1-5) to Energy<br>New Crafted Ring |
 | Magic Ring | Magic Jewel | Amn Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(1-5) to Vitality<br>New Crafted Ring |
 | Magic Ring | Magic Jewel | Amn Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-6)<br>+(1-5) to Dexterity<br>New Crafted Ring |
-| Magic Ring | Magic Jewel | SOL Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +1-5 Strength |
 | Magic Ring | Magic Jewel | Sol Rune | Ruby |  | \= | +(1-3)% Life stolen per hit<br>+(10-20) to Life<br>+(1-5) to Strength<br>New Crafted Ring |
 | Magic Ring | Rare Jewel | Tal Rune | Ral Rune | Ort Rune | \=  | Barilzar's Mazed Band Unique Ring |
-| Magic Ring | Orb of Infusion | Topaz |  |  | \=  | +20% Magic Find Rare Ring |
 | Magic Ring | Orb of Infusion | Topaz |  |  | \= | +20% Chance Items Roll Magic or Better<br>New Rare Ring |
 | Rare Ring | Rare Jewel | UM Rune | HEL Rune | Gem(Any) | \=  | +8-10% All Res +8-10 all attributes Rare Ring |
 | Rare Ring | Unique Jewel | SUR Rune | JAH Rune | Gem(Any) | \=  | +5-8% Max HP & +5-8% Max Mana Crafted Ring |
-| Set Ring | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
-| Unique Ring | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
 | Rare Ring | Unique Jewel | Zod Rune | Brak Rune (#34) | Ruby | \= | +1 to All Skills<br>Adds 15-25 Weapon Damage<br>New Crafted Ring |
 | Rare Ring | Unique Jewel | Zod Rune | Zeph Rune (#35) | Sapphire | \= | +1 to All Skills<br>+5% to All Elemental Skill Damage<br>New Crafted Ring |
-| Unique Ring | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
-| Set Ring | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 
 <a id="item-craft-belts"></a>
 ## Belts
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Magic Belt | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 1 Frozen Armor on level up Magic Belt |
 | Magic Belt | Eld Rune | El Rune |  |  | \= | 100% Chance to cast level 1 Frozen Armor when you Level-Up<br>New Magic Belt |
 | Magic Belt | Magic Jewel | RAL Rune |  |  | \=  | +1 Random Class All Skills Magic Belt |
-| Magic Belt | Magic Jewel | ITH Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +5-10% Faster Cast Rate |
 | Magic Belt | Magic Jewel | Ith Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(5-10)% Faster Cast Rate<br>New Crafted Belt |
-| Magic Belt | Magic Jewel | TAL Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-7 Thorns; +5-10 Damage to Mana |
-| Magic Belt | Magic Jewel | TAL Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +5-10% Open Wounds |
-| Magic Belt | Magic Jewel | TAL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Poison Resistance; +10-30% AC |
 | Magic Belt | Magic Jewel | Tal Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Poison Resistance<br>+(10-30)% Enhanced Defense<br>New Crafted Belt |
 | Magic Belt | Magic Jewel | Tal Rune | Ruby |  | \= | +(1-3)% Life stolen per hit<br>+(10-20) to Life<br>+(5-10)% Chance of Open Wounds<br>New Crafted Belt |
 | Magic Belt | Magic Jewel | Tal Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-7)<br>+(5-10)% Damage Taken Added To Mana<br>New Crafted Belt |
@@ -825,17 +848,11 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 ## Boots
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Magic Boots | EL Rune |  |  |  | \=  | +10% FRW Magic Boots |
 | Magic Boots | El Rune |  |  |  | \= | +10% Faster Run/Walk Speed<br>New Magic Boots |
-| Magic Boots | ELD Rune | EL Rune |  |  | \=  | +100% CTC level 1 Burst of speed on level up Magic Boots |
 | Magic Boots | Eld Rune | El Rune |  |  | \= | 100% Chance to cast level 1 Burst of Speed when you Level-Up<br>New Magic Boots |
-| Magic Boots | Magic Jewel | ETH Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +5-10% Regeneration |
 | Magic Boots | Magic Jewel | Eth Rune | Ruby |  | \= | +(1-3)% Life stolen per hit<br>+(10-20) to Life<br>Replenish +(5-10) Life per 10 Seconds<br>New Crafted Boots |
-| Magic Boots | Magic Jewel | RAL Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-7 Thorns; +25-60 AC vs Melee |
 | Magic Boots | Magic Jewel | Ral Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-7)<br>+(25-60) Defense vs. Melee<br>New Crafted Boots |
-| Magic Boots | Magic Jewel | ORT Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Fire Resistance; +10-30% AC |
 | Magic Boots | Magic Jewel | Ort Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Fire Resistance<br>+(10-30)% Enhanced Defense<br>New Crafted Boots |
-| Magic Boots | Magic Jewel | THUL Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +2-5% Mana |
 | Magic Boots | Magic Jewel | Thul Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(2-5)% Increased Maximum Mana<br>New Crafted Boots |
 | Magic Boots | Orb of Infusion | HEL Rune | Gem (Any) |  | \=  | +15% Faster Run/Walk & +10 All Attributes Rare Boots |
 | Rare Boots | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% All Resists & +30-40% Magic Find Rare Boots |
@@ -846,15 +863,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 ## Gloves
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Magic Gloves | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 4 Battle Commands on level up Magic Gloves |
 | Magic Gloves | Eld Rune | El Rune |  |  | \= | 100% Chance to cast level 4 Battle Command when you Level-Up<br>New Magic Gloves |
-| Magic Gloves | Magic Jewel | NEF Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life |
 | Magic Gloves | Magic Jewel | Nef Rune | Ruby |  | \= | +(1-3)% Life stolen per hit<br>+(10-20) to Life<br>New Crafted Gloves |
 | Magic Gloves | Magic Jewel | RAL Rune |  |  | \=  | +8% Faster Attack Speed & +8% Faster Cast Rate Magic Gloves |
-| Magic Gloves | Magic Jewel | RAL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Cold Resistance; +10-30% AC |
 | Magic Gloves | Magic Jewel | Ral Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Cold Resistance<br>+(10-30)% Enhanced Defense<br>New Crafted Gloves |
-| Magic Gloves | Magic Jewel | ORT Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-7 Thorns; +1 Knockback |
-| Magic Gloves | Magic Jewel | ORT Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-3 Mana per Kill |
 | Magic Gloves | Magic Jewel | Ort Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(1-3) Mana after each Kill<br>New Crafted Gloves |
 | Magic Gloves | Magic Jewel | Ort Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-7)<br>Knockback<br>New Crafted Gloves |
 | Rare Gloves | Rare Jewel | MAL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Random Skill Tab (current class) & +10-15% Increased Attack Speed Rare Gloves |
@@ -867,15 +879,10 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 ## Helms
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Magic Helm | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 1 Shout on level up Magic Helm |
 | Magic Helm | Eld Rune | El Rune |  |  | \= | 100% Chance to cast level 1 Shout when you Level-Up<br>New Magic Helm |
-| Magic Helm | Magic Jewel | NEF Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-4 Mana Steal |
 | Magic Helm | Magic Jewel | Nef Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(1-4)% Mana stolen per hit<br>New Crafted Helm |
-| Magic Helm | Magic Jewel | ITH Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-7 Thorns; +25-50 AC vs Missiles |
-| Magic Helm | Magic Jewel | ITH Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Lightning Resistance; +10-30% AC |
 | Magic Helm | Magic Jewel | Ith Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Lightning Resistance<br>+(10-30)% Enhanced Defense<br>New Crafted Helm |
 | Magic Helm | Magic Jewel | Ith Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-7)<br>+(25-50) Defense vs. Missile<br>New Crafted Helm |
-| Magic Helm | Magic Jewel | RAL Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +5-10% Deadly Strike |
 | Magic Helm | Magic Jewel | Ral Rune | Ruby |  | \= | +(1-3)% Life stolen per hit<br>+(10-20) to Life<br>+(5-10)% Deadly Strike<br>New Crafted Helm |
 | Rare Helm (Amazon only) | Rare Jewel | Shael Rune | El Rune | Ruby | \= | +1 to Amazon Skill Levels<br>+(10-15)% Increased Attack Speed<br>New Rare Helm |
 | Rare Helm (Assassin only) | Rare Jewel | Shael Rune | El Rune | Ruby | \= | +1 to Assassin Skill Levels<br>+(10-15)% Increased Attack Speed<br>New Rare Helm |
@@ -898,24 +905,17 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Helm | Unique Jewel | Zod Rune | Vex Rune | Ruby | \= | +(1-2) to All Skills<br>+50% Enhanced Weapon Damage<br>New Crafted Helm |
 | Rare Helm | Unique Jewel | Zod Rune | Vex Rune | Sapphire | \= | +(1-2) to All Skills<br>+10% to All Elemental Skill Damage<br>New Crafted Helm |
 | Rare Helm | Unique Jewel | BER rune | JAH Rune | Gem(Any) | \=  | +2 All Skills & +5-10% Physical Damage Reduction & +5-10% Max HP Crafted Helm |
-| Helm | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Helm Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
 
 <a id="item-craft-shields"></a>
 ## Shields
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Magic Shield | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 4 Holy Shield on Level Up & +5 All Attributes Magic Shield |
 | Magic Shield | Eld Rune | El Rune |  |  | \= | 100% Chance to cast level 4 Holy Shield when you Level-Up<br>+5 to all Attributes<br>New Magic Shield |
-| Magic Shield | Magic Jewel | NEF Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10 Magic Resistance; +10-30% AC |
 | Magic Shield | Magic Jewel | Nef Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Magic Resistance<br>+(10-30)% Enhanced Defense<br>New Crafted Shield |
-| Magic Shield | Magic Jewel | ETH Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-10 Thorns; +5-10% Block |
-| Magic Shield | Magic Jewel | ETH Rune | Amethyst |  | \=  | +(4-10)% Mana Regeneration; +10-20 Mana; +5-10% Block |
 | Magic Shield | Magic Jewel | Eth Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>(5-10)% Increased Chance of Blocking<br>New Crafted Shield |
 | Magic Shield | Magic Jewel | Eth Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-10)<br>(5-10)% Increased Chance of Blocking<br>New Crafted Shield |
-| Magic Shield | Magic Jewel | ITH Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +4-7 Thorns |
 | Magic Shield | Magic Jewel | Ith Rune | Ruby |  | \= | +(1-3)% Life stolen per hit<br>+(10-20) to Life<br>Attacker Takes Damage of (4-7)<br>New Crafted Shield |
 | Rare Shield | Rare Jewel | UM Rune | SHAEL Rune | Gem (Any) | \=  | +20% All Res & +20% Increase Block Chance & +20-30% Faster Hit Recovery Rare Shield |
-| Magic Shield | Orb of Infusion | THUL Rune | Gem (Any) |  | \=  | +1 Current Class Skills |
 | Magic Shield (Amazon only) | Orb of Infusion | Thul Rune | Gem |  | \= | +1 to Amazon Skill Levels<br>New Rare Shield |
 | Magic Shield (Assassin only) | Orb of Infusion | Thul Rune | Gem |  | \= | +1 to Assassin Skill Levels<br>New Rare Shield |
 | Magic Shield (Barbarian only) | Orb of Infusion | Thul Rune | Gem |  | \= | +1 to Barbarian Skill Levels<br>New Rare Shield |
@@ -927,24 +927,17 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Shield | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25% All Res & +30-40% Magic Find Rare Shield |
 | Rare Shield | Unique Jewel | Ber Rune | Um Rune | Gem | \= | +2 to All Skills<br>+(30-40)% to All Resistances<br>+10% Physical Damage Reduction<br>New Crafted Shield |
 | Rare Shield | Unique Jewel | Zod Rune | Ohm Rune | Gem | \= | +2 to All Skills<br>+(50-100)% Enhanced Weapon Damage<br>New Crafted Shield |
-| Shield | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Shield Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
 | Rare Shield | Unique Jewel | Zod Rune | Zeph Rune (#35) | Gem | \= | +2 to All Skills<br>+(15-20)% to All Elemental Skill Damage<br>New Crafted Shield |
 
 <a id="item-craft-body-armor"></a>
 ## Body Armor
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Magic Body Armor | ELD Rune | EL Rune |  |  | \=  | +100% CTC level Level 5 Oak Sage on level up Magic Body Armor |
 | Magic Armor | Eld Rune | El Rune |  |  | \= | 100% Chance to cast level 5 Oak Sage when you Level-Up<br>New Magic Armor |
-| Magic Body Armor | Magic Jewel | NEF Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-10 Thorns; +10-20% Faster Hit Recovery |
 | Magic Armor | Magic Jewel | Nef Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-10)<br>+(10-20)% Faster Hit Recovery<br>New Crafted Armor |
-| Magic Body Armor | Magic Jewel | ETH Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; Half Freeze Duration; +10-30% AC |
 | Magic Armor | Magic Jewel | Eth Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>Half Freeze Duration<br>+(10-30)% Enhanced Defense<br>New Crafted Armor |
-| Magic Body Armor | Magic Jewel | TAL Rune | Amethyst |  | \=  | 4-10 Mana Regeneration; +10-20 Mana; +1-3 Mana per Kill |
 | Magic Armor | Magic Jewel | Tal Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(1-3) Mana after each Kill<br>New Crafted Armor |
-| Magic Body Armor | Magic Jewel | THUL Rune | Ruby |  | \=  | 1-3% Life Steal; +10-20 Life; +1-3 Demon Heal |
 | Magic Armor | Magic Jewel | Thul Rune | Ruby |  | \= | +(1-3)% Life stolen per hit<br>+(10-20) to Life<br>+(1-3) Life after each Demon Kill<br>New Crafted Armor |
-| Rare Body Armor | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 HP & +10-15% Increased Attack Speed Rare Body Armor |
 | Rare Armor (Amazon only) | Rare Jewel | Hel Rune | Shael Rune | Gem | \= | +1 to Amazon Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Armor |
 | Rare Armor (Assassin only) | Rare Jewel | Hel Rune | Shael Rune | Gem | \= | +1 to Assassin Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Armor |
 | Rare Armor (Barbarian only) | Rare Jewel | Hel Rune | Shael Rune | Gem | \= | +1 to Barbarian Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Armor |
@@ -953,7 +946,6 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Armor (Paladin only) | Rare Jewel | Hel Rune | Shael Rune | Gem | \= | +1 to Paladin Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Armor |
 | Rare Armor (Sorceress only) | Rare Jewel | Hel Rune | Shael Rune | Gem | \= | +1 to Sorceress Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Armor |
 | Rare Armor (Warlock only) | Rare Jewel | Hel Rune | Shael Rune | Gem | \= | +1 to Warlock Skills<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Armor |
-| Rare Body Armor | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | \=  | +1 Current Class Skills & +30-50 Mana & +10-15% Faster Cast Rate Rare Body Armor |
 | Rare Armor (Amazon only) | Rare Jewel | Hel Rune | Dol Rune | Gem | \= | +1 to Amazon Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Armor |
 | Rare Armor (Assassin only) | Rare Jewel | Hel Rune | Dol Rune | Gem | \= | +1 to Assassin Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Armor |
 | Rare Armor (Barbarian only) | Rare Jewel | Hel Rune | Dol Rune | Gem | \= | +1 to Barbarian Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Armor |
@@ -964,12 +956,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Armor (Warlock only) | Rare Jewel | Hel Rune | Dol Rune | Gem | \= | +1 to Warlock Skills<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Armor |
 | Magic Body Armor | Orb of Infusion | RAL Rune | Gem (Any) |  | \=  | +20% Faster Run/Walk & +100 Defense Rare Body Armor |
 | Rare Body Armor | Rare Jewel | UM Rune | IST Rune | Gem (Any) | \=  | +20-25 All Res & +20-40% Magic Find Rare Body Armor |
-| Set Armor | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
-| Unique Armor | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
 | Rare Body Armor | Unique Jewel | ZOD Rune | BER Rune | UM RUNE | \=  | +2 All Skills & +150-175% Enhanced Defense & +20-30% All Resists +5-10% Physical Damage Reduction Crafted Body Armor |
-| Torso | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Torso Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Defense |
-| Unique Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
-| Set Armor | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 
 <a id="item-craft-weapons"></a>
 ## Weapons
@@ -978,37 +965,22 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Axe \[N\] | Knife |  |  |  | \= | Normal Quality Throwing Axe \[N\] |
 | Knife | Diamond | Staff | Belt |  | \= | Magic Polearm (Forced prefix) |
 | Magic Weapon | Ruby | 4 × Healing Potion |  |  | \= | New Magic Weapon (Forced suffix) |
-| Magic Weapon | Magic Jewel | TIR Rune | Sapphire |  | \=  | 5% chance to cast level 4 Frost Nova when struck; +3-7 Thorns; +35-60% Damage |
-| Magic Weapon | Magic Jewel | TIR Rune | Amethyst |  | \=  | +(4-10)% Mana Regeneration; +10-20 Mana; +1-5% Mana |
 | Magic Weapon | Magic Jewel | Tir Rune | Amethyst |  | \= | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(1-5)% Increased Maximum Mana<br>New Crafted Weapon |
 | Magic Weapon | Magic Jewel | Tir Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-7)<br>+(35-60)% Enhanced Weapon Damage<br>New Crafted Weapon |
-| Magic Weapon | Magic Jewel | ORT Rune | Ruby |  | \=  | +(1-4)% Life Steal; +10-20 Life; +35-60% Damage |
 | Magic Weapon | Magic Jewel | Ort Rune | Ruby |  | \= | +(1-4)% Life stolen per hit<br>+(10-20) to Life<br>+(35-60)% Enhanced Weapon Damage<br>New Crafted Weapon |
-| Magic Weapon | Magic Jewel | SOL Rune | Emerald |  | \=  | 1-4% Damage Reduced; 1-2% Magic Damage Reduced; +5-10% Enhanced Defense |
 | Magic Weapon | Magic Jewel | Sol Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Enhanced Defense<br>New Crafted Weapon |
 | Magic Weapon | Orb of Infusion | SOL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Min Damage/lvl & +1 Max Damage/lvl & +20% Increased Attack Speed Rare Weapon |
 | Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & +30-40 Increased Attack Speed Crafted Weapon |
-| Any 1 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2 All Skills & 150-200% Enhanced Weapon Damage & +20-30 Increased Attack Speed Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Brak Rune (#34) | Ohm Rune | Gem | \= | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>+(20-30)% Increased Attack Speed<br>New Crafted 1H Weapons |
-| Set Weapon | Orb of Assemblage | 5 Orb of Renewal |  |  | \=  | Rerolled Set Item |
-| Unique Weapon | Orb of Conversion | 5 Orb of Renewal |  |  | \=  | Rerolled Unique Item |
-| Non-Throwing Weapon | Infusion Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Return Weapon Base as White, Elite, Maximum Sockets, Superior Rolls and +15% Enhanced Damage |
 | Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | CHAM Rune | Gem (Any) | \=  | +2-3 All Skills & +20-30% All Elemental damage Crafted Weapon |
-| Any 1 Hand Rare Weapon | Unique Jewel | ZEPH Rune | CHAM Rune | Gem (Any) | \=  | +2 All Skills & +10-15% All Elemental damage Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Zeph Rune (#35) | Cham Rune | Gem | \= | +2 to All Skills<br>+(10-15)% to All Elemental Skill Damage<br>New Crafted 1H Weapons |
-| Unique Weapon | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Unique Item |
-| Set Weapon | Corruption Orb | Mephisto's Animus | Baal's Calamity | Diablo's Ire | \=  | Rerolled Set Item |
 | Any 2 Hand Rare Weapon | Unique Jewel | MYR Rune | ZOD Rune | Gem (Any) | \=  | +2-3 All Skills & +20-25% Magic Skill Damage Crafted Weapon |
-| Any 1 Hand Rare Weapon | Unique Jewel | MYR Rune | ZOD Rune | Gem (Any) | \=  | +2 All Skills & +15-20% Magic Skill Damage Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Myr Rune (#36) | Zod Rune | Gem | \= | +2 to All Skills<br>+(15-20)% to Magic Skill Damage<br>New Crafted 1H Weapons |
 | Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | DEM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & -15 To enemy physical resist Crafted Weapon |
-| Any 1 Hand Rare Weapon | Unique Jewel | BRAK Rune | DEM Rune | Gem (Any) | \=  | +2 All Skills & 150-200% Enhanced Weapon Damage & -10 To enemy physical resist Crafted Weapon |
 | Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | GRIT Rune | Gem (Any) | \=  | +2-3 All Skills & -20-30% To All Enemy Elemental Resist Crafted Weapon |
-| Any 1 Hand Rare Weapon | Unique Jewel | ZEPH Rune | GRIT Rune | Gem (Any) | \=  | +2 All Skills & -10-15% To All Enemy Elemental Resist Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Brak Rune (#34) | Dem Rune (#38) | Gem | \= | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>-10% to Enemy Physical Damage Resistance<br>New Crafted 1H Weapons |
 | Rare 1H Weapons | Unique Jewel | Zeph Rune (#35) | Grit Rune (#37) | Gem | \= | +2 to All Skills<br>-(10-15)% to All Enemy Elemental Resistances<br>New Crafted 1H Weapons |
 | Any 2 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2-3 All Skills & -15-20% To enemy Magic Resist Crafted Weapon |
-| Any 1 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2 All Skills & -10-15% To enemy Magic Resist  Crafted Weapon |
 | Rare 1H Weapons | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +2 to All Skills<br>-(10-15)% to Enemy Magic Resistance<br>New Crafted 1H Weapons |
 
 <a id="item-craft-charms"></a>

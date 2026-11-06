@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-06T09:19:32.647Z
+date: 2026-11-06T09:25:41.741Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -1007,6 +1007,8 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 <a id="item-craft-sunder-charms"></a>
 ## Sunder Charms
 
+### Renew Sunder Charms
+
 > The renewed sunders now roll:
 > - Affix 1: extra 5-15% elemental skill damage or 5-15% elemental pierce (enhanced weapon damage 50-100%) or +1 to elemental skills.
 > - Affix 2: 20-30% magic find or 40-60% gold find.
@@ -1020,15 +1022,18 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **Reagent 6** | **Reagent 7** | **Reagent 8** | **Guaranteed Stats** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **RENEWED SUNDER CHARMS** | | | | | | | | |
 | Unique Charm:<br>Latent Flame Rift (Fire) | Unique Jewel | SUR Rune | Orb of Conversion | Deep Worldstone Shard | | | \= | Renewed Flame Rift |
 | Unique Charm:<br>Latent Cold Rupture (Cold) | Unique Jewel | SUR Rune | Orb of Conversion | Eastern Worldstone Shard | | | \= | Renewed Cold Rupture |
 | Unique Charm:<br>Latent Crack of the Heavens (Lightning) | Unique Jewel | SUR Rune | Orb of Conversion | Southern Worldstone Shard | | | \= | Renewed Crack of the Heavens |
 | Unique Charm:<br>Latent Rotting Fissure (Poison) | Unique Jewel | SUR Rune | Orb of Conversion | Western Worldstone Shard | | | \= | Renewed Rotting Fissure |
 | Unique Charm:<br>Latent Bone Break (Physical) | Unique Jewel | SUR Rune | Orb of Conversion | Northern Worldstone Shard | | | \= | Renewed Bone Break |
 | Unique Charm:<br>Latent Black Cleft (Magic) | Unique Jewel | SUR Rune | Orb of Conversion | Northern Worldstone Shard | Southern Worldstone Shard | Deep Worldstone Shard | \= | Renewed Black Cleft |
-| **Reset renewed sunder back to its latent version** | | | | | | | | |
-| Charm:<br>Renewed Sunder<br>Any Type | HEL Rune | Gem Bag (200 Gems) | | | | | \= | Latent Charm of the same type |
+
+### Reset Renewed Sunder Charms
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **Output** |
+| --- | --- | --- | --- |
+| Renewed Sunder Charm (any type) | HEL Rune | Gem Bag (200 Gems) | Latent Charm of the same type |
 
 <a id="item-craft-jewel-crafts"></a>
 ## Jewel Crafts

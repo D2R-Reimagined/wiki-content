@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-06T09:25:41.741Z
+date: 2026-11-06T09:30:47.562Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -969,19 +969,19 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Magic Weapon | Magic Jewel | Tir Rune | Sapphire |  | \= | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-7)<br>+(35-60)% Enhanced Weapon Damage<br>New Crafted Weapon |
 | Magic Weapon | Magic Jewel | Ort Rune | Ruby |  | \= | +(1-4)% Life stolen per hit<br>+(10-20) to Life<br>+(35-60)% Enhanced Weapon Damage<br>New Crafted Weapon |
 | Magic Weapon | Magic Jewel | Sol Rune | Emerald |  | \= | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Enhanced Defense<br>New Crafted Weapon |
-| Magic Weapon | Orb of Infusion | SOL Rune | SHAEL Rune | Gem (Any) | \=  | +1 Min Damage/lvl & +1 Max Damage/lvl & +20% Increased Attack Speed Rare Weapon |
-| Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | OHM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & +30-40 Increased Attack Speed Crafted Weapon |
-| Rare 1H Weapons | Unique Jewel | Brak Rune (#34) | Ohm Rune | Gem | \= | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>+(20-30)% Increased Attack Speed<br>New Crafted 1H Weapons |
-| Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | CHAM Rune | Gem (Any) | \=  | +2-3 All Skills & +20-30% All Elemental damage Crafted Weapon |
-| Rare 1H Weapons | Unique Jewel | Zeph Rune (#35) | Cham Rune | Gem | \= | +2 to All Skills<br>+(10-15)% to All Elemental Skill Damage<br>New Crafted 1H Weapons |
-| Any 2 Hand Rare Weapon | Unique Jewel | MYR Rune | ZOD Rune | Gem (Any) | \=  | +2-3 All Skills & +20-25% Magic Skill Damage Crafted Weapon |
-| Rare 1H Weapons | Unique Jewel | Myr Rune (#36) | Zod Rune | Gem | \= | +2 to All Skills<br>+(15-20)% to Magic Skill Damage<br>New Crafted 1H Weapons |
-| Any 2 Hand Rare Weapon | Unique Jewel | BRAK Rune | DEM Rune | Gem (Any) | \=  | +2-3 All Skills & 200-250% Enhanced Weapon Damage & -15 To enemy physical resist Crafted Weapon |
-| Any 2 Hand Rare Weapon | Unique Jewel | ZEPH Rune | GRIT Rune | Gem (Any) | \=  | +2-3 All Skills & -20-30% To All Enemy Elemental Resist Crafted Weapon |
-| Rare 1H Weapons | Unique Jewel | Brak Rune (#34) | Dem Rune (#38) | Gem | \= | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>-10% to Enemy Physical Damage Resistance<br>New Crafted 1H Weapons |
-| Rare 1H Weapons | Unique Jewel | Zeph Rune (#35) | Grit Rune (#37) | Gem | \= | +2 to All Skills<br>-(10-15)% to All Enemy Elemental Resistances<br>New Crafted 1H Weapons |
-| Any 2 Hand Rare Weapon | Unique Jewel | HEV Rune | MYR Rune | Gem (Any) | \=  | +2-3 All Skills & -15-20% To enemy Magic Resist Crafted Weapon |
-| Rare 1H Weapons | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem | \= | +2 to All Skills<br>-(10-15)% to Enemy Magic Resistance<br>New Crafted 1H Weapons |
+| Magic Weapon | Orb of Infusion | Sol Rune | Shael Rune | Gem (Any) | \=  | +1 to Minimum Damage per Level<br>+1 to Maximum Damage per Level<br>+20% Increased Attack Speed<br>New Rare Weapon |
+| Rare Weapon (1H) | Unique Jewel | Brak Rune (#34) | Ohm Rune | Gem (Any) | \= | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>+(20-30)% Increased Attack Speed<br>New Crafted Weapon (1H) |
+| Rare Weapon (2H) | Unique Jewel | Brak Rune (#34) | Ohm Rune | Gem (Any) | \= | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>+(30-40)% Increased Attack Speed<br>New Crafted Weapon (2H) |
+| Rare Weapon (1H) | Unique Jewel | Zeph Rune (#35) | Cham Rune | Gem (Any) | \= | +2 to All Skills<br>+(10-15)% to All Elemental Skill Damage<br>New Crafted Weapon (1H) |
+| Rare Weapon (2H) | Unique Jewel | Zeph Rune (#35) | Cham Rune | Gem (Any) | \= | +(2-3) to All Skills<br>+(20-30)% to All Elemental Skill Damage<br>New Crafted Weapon (2H) |
+| Rare Weapon (1H) | Unique Jewel | Myr Rune (#36) | Zod Rune | Gem (Any) | \= | +2 to All Skills<br>+(15-20)% to Magic Skill Damage<br>New Crafted Weapon (1H) |
+| Rare Weapon (2H) | Unique Jewel | Myr Rune (#36) | Zod Rune | Gem (Any) | \= | +(2-3) to All Skills<br>+(20-25)% to Magic Skill Damage<br>New Crafted Weapon (2H) |
+| Rare Weapon (1H) | Unique Jewel | Brak Rune (#34) | Dem Rune (#38) | Gem (Any) | \= | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>-10% to Enemy Physical Damage Resistance<br>New Crafted Weapon (1H) |
+| Rare Weapon (2H) | Unique Jewel | Brak Rune (#34) | Dem Rune (#38) | Gem (Any) | \= | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>-15% to Enemy Physical Damage Resistance<br>New Crafted Weapon (2H) |
+| Rare Weapon (1H) | Unique Jewel | Zeph Rune (#35) | Grit Rune (#37) | Gem (Any) | \= | +2 to All Skills<br>-(10-15)% to All Enemy Elemental Resistances<br>New Crafted Weapon (1H) |
+| Rare Weapon (2H) | Unique Jewel | Zeph Rune (#35) | Grit Rune (#37) | Gem (Any) | \= | +(2-3) to All Skills<br>-(20-30)% to All Enemy Elemental Resistances<br>New Crafted Weapon (2H) |
+| Rare Weapon (1H) | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem (Any) | \= | +2 to All Skills<br>-(10-15)% to Enemy Magic Resistance<br>New Crafted Weapon (1H) |
+| Rare Weapon (2H) | Unique Jewel | Hev Rune (#39) | Myr Rune (#36) | Gem (Any) | \= | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Weapon (2H) |
 
 <a id="item-craft-charms"></a>
 ## Charms

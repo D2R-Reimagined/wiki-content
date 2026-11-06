@@ -2,7 +2,17 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-06T09:51:20.073Z
+date: 2026-11-06T09:58:08.954Z
+tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
+editor: markdown
+dateCreated: 2026-04-05T02:57:13.104Z
+---
+
+---
+title: Recipes
+description: Cube Recipes, Enchants, and Crafting recipes
+published: true
+date: 2026-11-06T01:51:42.184Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -159,6 +169,15 @@ Horadric Cube recipes that players may find useful on their journeys.
 | Armor / Weapon / Shield<br>**_DOES NOT WORK ON:_**<br>Indestructible items<br>Bows or Crossbows<br>Items without Durability | Unique Jewel | OHM Rune | = | Ethereal Item |
 | Armor / Weapon / Shield<br>(Any) | EL Rune | HEL Rune | = | Becomes White Base Item<br><br>**Item is regenerated as a new white item.<br>Enchants/Corruption wiped.** |
 | Non-Throwing Weapon / Torso / Helm / Shield | Orb of Infusion | Uber Spirits (1 of each) | = | Becomes White, Superior, Max Socket, Elite Base<br><br>+15% Enhanced Weapon Damage (Weapons)<br><br>+15% Enhanced Defense (Torso, Helm, Shield)<br>**Item is regenerated as a new white item.<br>Enchants/Corruption wiped.**<br>Item is upgraded to or remains Elite and can gain superior modifiers in addition to the granted modifiers. This recipe no longer stacks. |
+
+### Ammo Quality Reset
+
+| **Reagent 1** | **Reagent 2** | **Reagent 3** | **=** | **Output** |
+| :--- | :--- | :--- | :--- | :--- |
+| Arrows (Any) | EL Rune | HEL Rune | = | Normal Arrows |
+| Arrows (Any) | Orb of Renewal |  | = | Normal Arrows |
+| Bolts (Any) | EL Rune | HEL Rune | = | Normal Bolts |
+| Bolts (Any) | Orb of Renewal |  | = | Normal Bolts |
 
 ### Rune Conversions
 
@@ -419,7 +438,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Diamond | Magic Jewel |  |  | = | +2 Random Paladin Skills |
 | Amulet | Chaos Onyx | Magic Jewel |  |  | = | +2 Random Warlock Skills |
 | Amulet | Diamond | Magic Jewel | TIR Rune |  | = | +5% to All Resistances |
-| Magic Amulet <br> 1 Amethyst<br>1 Topaz<br>1 Sapphire<br>1 Emerald<br>1 Ruby<br>1 Diamond |  |  |  |  | = | Prismatic Amulet |
 | Amulet | Emerald | Magic Jewel | SHAEL Rune |  | = | +10% Increased Attack Speed |
 | Amulet | Sapphire | Magic Jewel | DOL Rune |  | = | +10% Faster Cast Rate |
 | Amulet | Orb of Infusion | Rare Jewel | Ruby |  | = | +40 to Life<br>+4 Life after each Kill |
@@ -436,7 +454,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet (Necromancer only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Necromancer Skill Levels |
 | Amulet (Paladin only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Paladin Skill Levels |
 | Amulet (Sorceress only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Sorceress Skill Levels |
-| Amulet (Warlock only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Warlock Skills Levels |
+| Amulet (Warlock only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Warlock Skill Levels |
 | Amulet | Orb of Conversion | Unique Jewel | ZOD Rune |  | = | +1 to All Skills |
 | Amulet | Orb of Conversion | Unique Jewel | BRAK Rune (#34) |  | = | +1 to All Skills<br>-5% to Enemy Physical Damage Resistance |
 | Amulet | Orb of Conversion | Unique Jewel | ZEPH Rune (#35) |  | = | +1 to All Skills<br>+5% to All Elemental Skill Damage |
@@ -510,7 +528,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Belt (Necromancer only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Necromancer Skill Levels<br>+5% Physical Damage Reduction |
 | Belt (Paladin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Paladin Skill Levels<br>+5% Physical Damage Reduction |
 | Belt (Sorceress only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Sorceress Skill Levels<br>+5% Physical Damage Reduction |
-| Belt (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skills Levels<br>+5% Physical Damage Reduction |
+| Belt (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skill Levels<br>+5% Physical Damage Reduction |
 
 <a id="item-enchant-boots"></a>
 ## Boots
@@ -549,7 +567,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Boots (Necromancer only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Necromancer Skill Levels<br>+5% Physical Damage Reduction |
 | Boots (Paladin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Paladin Skill Levels<br>+5% Physical Damage Reduction |
 | Boots (Sorceress only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Sorceress Skill Levels<br>+5% Physical Damage Reduction |
-| Boots (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skills Levels<br>+5% Physical Damage Reduction |
+| Boots (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skill Levels<br>+5% Physical Damage Reduction |
 
 <a id="item-enchant-gloves"></a>
 ## Gloves
@@ -585,7 +603,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Gloves (Necromancer only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Necromancer Skill Levels<br>Indestructible |
 | Gloves (Paladin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Paladin Skill Levels<br>Indestructible |
 | Gloves (Sorceress only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Sorceress Skill Levels<br>Indestructible |
-| Gloves (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skills Levels<br>Indestructible |
+| Gloves (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skill Levels<br>Indestructible |
 
 <a id="item-enchant-helms"></a>
 ## Helms
@@ -628,7 +646,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Helm (Necromancer only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Necromancer Skill Levels<br>Indestructible |
 | Helm (Paladin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Paladin Skill Levels<br>Indestructible |
 | Helm (Sorceress only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Sorceress Skill Levels<br>Indestructible |
-| Helm (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Warlock Skills Levels<br>Indestructible |
+| Helm (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Warlock Skill Levels<br>Indestructible |
 
 <a id="item-enchant-shields"></a>
 ## Shields
@@ -690,16 +708,12 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Armor | Orb of Infusion | Rare Jewel | Diamond | UM Rune | = | +15% to All Resistances |
 | Body Armor | Orb of Infusion | Chaos Onyx | MAL Rune | Rare Jewel | = | Magic Damage Reduced By 10 |
 | Body Armor | Orb of Infusion | Amethyst | MAL Rune | Rare Jewel | = | Physical Damage Reduced By 10 |
-| Body Armor | Orb of Infusion | Topaz | IST Rune | Rare Jewel | = | +30% Magic Find<br>+50% Gold Find |
 | Armor | Orb of Infusion | Topaz | IST Rune | Rare Jewel | = | +30% Chance Items Roll Magic or Better<br>+50% Extra Gold from Monsters |
 | Body Armor | Orb of Infusion | Orb of Renewal | GUL Rune | Rare Jewel | = | +30 to Dexterity<br>+30 to Vitality |
 | Body Armor | Orb of Infusion | Orb of Renewal | VEX Rune | Rare Jewel | = | +30 to Energy<br>+30 to Vitality |
 | Body Armor | Orb of Infusion | Orb of Renewal | OHM Rune | Rare Jewel | = | +30 to Strength<br>+30 to Vitality |
 | Armor | Orb of Infusion | Amethyst | ZOD Rune | Unique Jewel | = | +100% Enhanced Defense<br>Indestructible |
-| Body Armor | Orb of Infusion | Orb of Conversion | Sapphire | SUR Rune<br>Rare Jewel | = | +10% Increased Maximum Mana<br>+80% Mana Regeneration |
-| Body Armor | Orb of Infusion | Orb of Conversion | Diamond | BER Rune<br>Rare Jewel | = | +10% Damage Reduction |
 | Armor | Orb of Infusion | Sapphire | SUR Rune | Rare Jewel + Orb of Conversion | = | +10% Increased Maximum Mana<br>+80% Mana Regeneration |
-| Body Armor | Orb of Infusion | Orb of Conversion | Ruby | JAH Rune<br>Rare Jewel | = | +10% Increased Maximum Life |
 | Armor | Orb of Infusion | Diamond | BER Rune | Rare Jewel + Orb of Conversion | = | +10% Physical Damage Reduction |
 | Armor | Orb of Infusion | Ruby | JAH Rune | Rare Jewel + Orb of Conversion | = | +10% Increased Maximum Life |
 | Armor | Orb of Conversion | GRIT Rune (#37) | ZOD Rune | Unique Jewel | = | +1 to All Skills<br>+5% to All Attributes<br>Indestructible |
@@ -710,17 +724,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Added Stat(s)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Axe (Any) | Dagger (Any) |  |  |  | = | Throwing Axe |
-| Spear (Any) | Arrows |  |  |  | = | Javelins |
-| Diamond | Dagger (Any) | Staff (Any) | Belt (Any) |  | = | Savage Polearm |
-| Any Magic Weapon | Ruby | 4 Healing Potions (Any) |  |  | = | Sword of the Leech |
-| Weapon | Topaz | Magic Jewel |  |  | = | +15% Magic Find<br>+30% Gold Find |
-| Weapon | Amethyst | Magic Jewel |  |  | = | +100 to Attack Rating |
-| Weapon | Sapphire | Magic Jewel |  |  | = | +15% Increased Cast Rate |
-| Weapon | Emerald | Magic Jewel |  |  | = | +15% Increased Attack Speed |
-| Weapon | Skull | Magic Jewel |  |  | = | +4% Mana stolen per hit<br>+4% Life stolen per hit |
-| Weapon | Ruby | Magic Jewel |  |  | = | +4 Life / Kill |
-| Weapon | Diamond | Magic Jewel |  |  | = | +4 Mana / Kill |
 | Quiver / Bolt Case | Skull | Magic Jewel |  |  | = | +4% Mana stolen per hit<br>+4% Life stolen per hit |
 | Quiver / Bolt Case | Amethyst | Magic Jewel |  |  | = | +50 to Attack Rating |
 | Quiver / Bolt Case | Emerald | Magic Jewel |  |  | = | +10% Increased Attack Speed |
@@ -733,12 +736,10 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Any Weapon | Sapphire | Magic Jewel |  |  | = | +15% Faster Cast Rate |
 | Any Weapon | Skull | Magic Jewel |  |  | = | +4% Mana stolen per hit<br>+4% Life stolen per hit |
 | Any Weapon | Topaz | Magic Jewel |  |  | = | +15% Chance Items Roll Magic or Better<br>+30% Extra Gold from Monsters |
-| Weapon | SOL Rune | Magic Jewel |  |  | = | +15 Min Damage<br>+25 Max Damage |
 | Any Weapon | SOL Rune | Magic Jewel |  |  | = | +15 to Minimum Weapon Damage<br>+25 to Maximum Weapon Damage |
 | Any Weapon | Orb of Infusion | Amethyst | FAL Rune | Magic Jewel | = | +25% Enhanced Weapon Damage<br>+100 to Attack Rating |
 | Any Weapon | Orb of Infusion | Amethyst | LEM Rune | Magic Jewel | = | +200 to Attack Rating |
 | Quiver / Bolt Case | Orb of Infusion | Diamond | UM Rune | Rare Jewel | = | +20% Chance of Open Wounds<br>+100 to Attack Rating |
-| Weapon | Orb of Infusion | Amethyst | MAL Rune | Rare Jewel | = | +25% Increased Attack Speed |
 | Any Weapon | Orb of Infusion | Amethyst | MAL Rune | Rare Jewel | = | +25% Increased Attack Speed |
 | Any Weapon | Orb of Infusion | Sapphire | MAL Rune | Rare Jewel | = | +25% Faster Cast Rate |
 | Quiver / Bolt Case | Orb of Infusion | Topaz | IST Rune | Rare Jewel | = | +30% Magic Find<br>+50% Gold Find |
@@ -749,16 +750,8 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Any Weapon | Orb of Infusion | Emerald | OHM Rune | Rare Jewel | = | +30 to Minimum Weapon Damage<br>+50 to Maximum Weapon Damage |
 | Quiver / Bolt Case | Orb of Infusion | Amethyst | LO Rune | Rare Jewel | = | +150 to Attack Rating<br>+15% Deadly Strike |
 | Any Weapon | Orb of Infusion | Diamond | LO Rune | Rare Jewel | = | Adds 20-200 Weapon Fire Damage<br>Adds 20-200 Weapon Cold Damage<br>Adds 20-200 Weapon Lightning Damage |
-| Weapon | Orb of Infusion | Amethyst | CHAM Rune | Rare Jewel<br>NEF Rune | = | +50% Enhanced Damage<br>+200 to Attack Rating<br>Knockback |
 | Any Weapon | Orb of Infusion | Amethyst | CHAM Rune | Rare Jewel | = | +50% Enhanced Weapon Damage<br>+200 to Attack Rating |
 | Any Weapon | Orb of Infusion | Amethyst | CHAM Rune | Rare Jewel + NEF Rune | = | +50% Enhanced Weapon Damage<br>+200 to Attack Rating<br>Knockback |
-| Weapon | Orb of Infusion | Orb of Conversion | Amethyst | ZOD Rune<br>Unique Jewel | = | +1 to All Skills |
-| Weapon | Orb of Infusion | Orb of Conversion | Ruby | ZOD Rune<br>Unique Jewel | = | +5% Fire Skill Damage<br>-5% to Enemy Fire Resistance |
-| Weapon | Orb of Infusion | Orb of Conversion | Sapphire | ZOD Rune<br>Unique Jewel | = | +5% Cold Skill Damage<br>-5% to Enemy Cold Resistance |
-| Weapon | Orb of Infusion | Orb of Conversion | Topaz | ZOD Rune<br>Unique Jewel | = | +5% Light Skill Damage<br>-5% to Enemy Lightning Resistance |
-| Weapon | Orb of Infusion | Orb of Conversion | Emerald | ZOD Rune<br>Unique Jewel | = | +5% Poison Skill Damage<br>-5% to Enemy Poison Resistance |
-| Weapon | Orb of Infusion | Orb of Conversion | Chaos Onyx | ZOD Rune<br>Unique Jewel | = | +5% Magic Skill Damage<br>-5% to Enemy Magic Resistance |
-| Weapon | Orb of Infusion | Orb of Conversion | Skull | ZOD Rune<br>Unique Jewel | = | +50% Enhanced Damage<br>-5% to Enemy Physical Damage Resistance<br>+200 to Attack Rating |
 | Any Weapon | Orb of Infusion | Orb of Conversion | Amethyst | ZOD Rune + Unique Jewel | = | +1 to All Skills |
 | Any Weapon | Orb of Infusion | Orb of Conversion | Chaos Onyx | ZOD Rune + Unique Jewel | = | +5% to Magic Skill Damage<br>-5% to Enemy Magic Resistance |
 | Any Weapon | Orb of Infusion | Orb of Conversion | Emerald | ZOD Rune + Unique Jewel | = | +5% to Poison Skill Damage<br>-5% to Enemy Poison Resistance |
@@ -766,9 +759,6 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Any Weapon | Orb of Infusion | Orb of Conversion | Sapphire | ZOD Rune + Unique Jewel | = | +5% to Cold Skill Damage<br>-5% to Enemy Cold Resistance |
 | Any Weapon | Orb of Infusion | Orb of Conversion | Skull | ZOD Rune + Unique Jewel | = | +50% Enhanced Weapon Damage<br>-5% to Enemy Physical Damage Resistance<br>+200 to Attack Rating |
 | Any Weapon | Orb of Infusion | Orb of Conversion | Topaz | ZOD Rune + Unique Jewel | = | +5% to Lightning Skill Damage<br>-5% to Enemy Lightning Resistance |
-| Weapon | Orb of Shadows | Orb of Conversion | BRAK Rune (#34) | DEM Rune (#38)<br>Unique Jewel | = | +100% Enhanced Damage<br>-10% to Enemy Physical Damage Resistance<br>+300 to Attack Rating |
-| Weapon | Orb of Shadows | Orb of Conversion | ZEPH Rune (#35) | GRIT Rune (#37)<br>Unique Jewel | = | +10% all elemental damage<br>-10% to All Enemy Elemental Resistances |
-| Weapon | Orb of Shadows | Orb of Conversion | MYR Rune (#36) | HEV Rune (#39)<br>Unique Jewel | = | +10% magic damage<br>-10% to Enemy Magic Resistance |
 | Any Weapon | Orb of Shadows | Orb of Conversion | BRAK Rune (#34) | DEM Rune (#38) + Unique Jewel | = | +100% Enhanced Weapon Damage<br>-10% to Enemy Physical Damage Resistance<br>+300 to Attack Rating |
 | Any Weapon | Orb of Shadows | Orb of Conversion | ZEPH Rune (#35) | GRIT Rune (#37) + Unique Jewel | = | +10% to All Elemental Skill Damage<br>-10% to All Enemy Elemental Resistances |
 | Any Weapon | Orb of Shadows | Orb of Conversion | MYR Rune (#36) | HEV Rune (#39) + Unique Jewel | = | +10% to Magic Skill Damage<br>-10% to Enemy Magic Resistance |
@@ -795,6 +785,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 ## Amulets
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Magic Amulet | Amethyst + Topaz + Sapphire | Emerald + Ruby + Diamond |  |  | = | Prismatic Amulet<br>New Magic Amulet (item level 50, forced prefix) |
 | Magic Amulet | ELD Rune | EL Rune |  |  | = | 100% Chance to cast level 4 Battle Orders when you Level-Up<br>New Magic Amulet |
 | Magic Amulet | Magic Jewel | RAL Rune | Amethyst |  | = | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(5-10)% Faster Cast Rate<br>New Crafted Amulet |
 | Magic Amulet | Magic Jewel | THUL Rune | Emerald |  | = | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>(1-10)% Increased Chance of Blocking<br>New Crafted Amulet |
@@ -819,7 +810,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Magic Ring | Magic Jewel | AMN Rune | Emerald |  | = | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(1-5) to Vitality<br>New Crafted Ring |
 | Magic Ring | Magic Jewel | AMN Rune | Sapphire |  | = | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-6)<br>+(1-5) to Dexterity<br>New Crafted Ring |
 | Magic Ring | Magic Jewel | SOL Rune | Ruby |  | = | +(1-3)% Life stolen per hit<br>+(10-20) to Life<br>+(1-5) to Strength<br>New Crafted Ring |
-| Magic Ring | Rare Jewel | TAL Rune | RAL Rune | ORT Rune | = | Barilzar's Mazed Band Unique Ring |
+| Magic Ring | Rare Jewel | TAL Rune | RAL Rune | ORT Rune | = | Barilzar's Mazed Band<br>New Unique Ring |
 | Magic Ring | Orb of Infusion | Topaz |  |  | = | +20% Chance Items Roll Magic or Better<br>New Rare Ring |
 | Rare Ring | Rare Jewel | UM Rune | HEL Rune | Gem (Any) | = | +(8-10)% to All Resistances<br>+(8-10) to All Attributes<br>New Rare Ring |
 | Rare Ring | Unique Jewel | SUR Rune | JAH Rune | Gem (Any) | = | +(5-8)% Increased Maximum Life<br>+(5-8)% Increased Maximum Mana<br>New Crafted Ring |
@@ -889,7 +880,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Helm (Necromancer only) | Rare Jewel | SHAEL Rune | EL Rune | Ruby | = | +1 to Necromancer Skill Levels<br>+(10-15)% Increased Attack Speed<br>New Rare Helm |
 | Rare Helm (Paladin only) | Rare Jewel | SHAEL Rune | EL Rune | Ruby | = | +1 to Paladin Skill Levels<br>+(10-15)% Increased Attack Speed<br>New Rare Helm |
 | Rare Helm (Sorceress only) | Rare Jewel | SHAEL Rune | EL Rune | Ruby | = | +1 to Sorceress Skill Levels<br>+(10-15)% Increased Attack Speed<br>New Rare Helm |
-| Rare Helm (Warlock only) | Rare Jewel | SHAEL Rune | EL Rune | Ruby | = | +1 to Warlock Skills Levels<br>+(10-15)% Increased Attack Speed<br>New Rare Helm |
+| Rare Helm (Warlock only) | Rare Jewel | SHAEL Rune | EL Rune | Ruby | = | +1 to Warlock Skill Levels<br>+(10-15)% Increased Attack Speed<br>New Rare Helm |
 | Rare Helm (Amazon only) | Rare Jewel | DOL Rune | EL Rune | Sapphire | = | +1 to Amazon Skill Levels<br>+(10-15)% Faster Cast Rate<br>New Rare Helm |
 | Rare Helm (Assassin only) | Rare Jewel | DOL Rune | EL Rune | Sapphire | = | +1 to Assassin Skill Levels<br>+(10-15)% Faster Cast Rate<br>New Rare Helm |
 | Rare Helm (Barbarian only) | Rare Jewel | DOL Rune | EL Rune | Sapphire | = | +1 to Barbarian Skill Levels<br>+(10-15)% Faster Cast Rate<br>New Rare Helm |
@@ -897,7 +888,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Helm (Necromancer only) | Rare Jewel | DOL Rune | EL Rune | Sapphire | = | +1 to Necromancer Skill Levels<br>+(10-15)% Faster Cast Rate<br>New Rare Helm |
 | Rare Helm (Paladin only) | Rare Jewel | DOL Rune | EL Rune | Sapphire | = | +1 to Paladin Skill Levels<br>+(10-15)% Faster Cast Rate<br>New Rare Helm |
 | Rare Helm (Sorceress only) | Rare Jewel | DOL Rune | EL Rune | Sapphire | = | +1 to Sorceress Skill Levels<br>+(10-15)% Faster Cast Rate<br>New Rare Helm |
-| Rare Helm (Warlock only) | Rare Jewel | DOL Rune | EL Rune | Sapphire | = | +1 to Warlock Skills Levels<br>+(10-15)% Faster Cast Rate<br>New Rare Helm |
+| Rare Helm (Warlock only) | Rare Jewel | DOL Rune | EL Rune | Sapphire | = | +1 to Warlock Skill Levels<br>+(10-15)% Faster Cast Rate<br>New Rare Helm |
 | Rare Helm | Rare Jewel | UM Rune | EL Rune | Gem (Any) | = | +(20-25)% to All Resistances<br>+(20-30)% Faster Hit Recovery<br>New Rare Helm |
 | Magic Helm | Orb of Infusion | RAL Rune | Gem (Any) |  | = | +15% Faster Hit Recovery<br>+50% Enhanced Defense<br>New Rare Helm |
 | Rare Helm | Unique Jewel | ZOD Rune | VEX Rune | Ruby | = | +(1-2) to All Skills<br>+50% Enhanced Weapon Damage<br>New Crafted Helm |
@@ -921,7 +912,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Magic Shield (Necromancer only) | Orb of Infusion | THUL Rune | Gem (Any) |  | = | +1 to Necromancer Skill Levels<br>New Rare Shield |
 | Magic Shield (Paladin only) | Orb of Infusion | THUL Rune | Gem (Any) |  | = | +1 to Paladin Skill Levels<br>New Rare Shield |
 | Magic Shield (Sorceress only) | Orb of Infusion | THUL Rune | Gem (Any) |  | = | +1 to Sorceress Skill Levels<br>New Rare Shield |
-| Magic Shield (Warlock only) | Orb of Infusion | THUL Rune | Gem (Any) |  | = | +1 to Warlock Skills Levels<br>New Rare Shield |
+| Magic Shield (Warlock only) | Orb of Infusion | THUL Rune | Gem (Any) |  | = | +1 to Warlock Skill Levels<br>New Rare Shield |
 | Rare Shield | Rare Jewel | UM Rune | IST Rune | Gem (Any) | = | +(20-25)% to All Resistances<br>+(30-40)% Magic Find<br>New Rare Shield |
 | Rare Shield | Unique Jewel | BER Rune | UM Rune | Gem (Any) | = | +2 to All Skills<br>+(30-40)% to All Resistances<br>+10% Physical Damage Reduction<br>New Crafted Shield |
 | Rare Shield | Unique Jewel | ZOD Rune | OHM Rune | Gem (Any) | = | +2 to All Skills<br>+(50-100)% Enhanced Weapon Damage<br>New Crafted Shield |
@@ -943,7 +934,7 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Body Armor (Necromancer only) | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | = | +1 to Necromancer Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Body Armor |
 | Rare Body Armor (Paladin only) | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | = | +1 to Paladin Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Body Armor |
 | Rare Body Armor (Sorceress only) | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | = | +1 to Sorceress Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Body Armor |
-| Rare Body Armor (Warlock only) | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | = | +1 to Warlock Skills Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Body Armor |
+| Rare Body Armor (Warlock only) | Rare Jewel | HEL Rune | SHAEL Rune | Gem (Any) | = | +1 to Warlock Skill Levels<br>+(30-50) to Life<br>+(10-15)% Increased Attack Speed<br>New Rare Body Armor |
 | Rare Body Armor (Amazon only) | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | = | +1 to Amazon Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Body Armor |
 | Rare Body Armor (Assassin only) | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | = | +1 to Assassin Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Body Armor |
 | Rare Body Armor (Barbarian only) | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | = | +1 to Barbarian Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Body Armor |
@@ -951,35 +942,36 @@ Unless stated otherwise, a crafted item's level matches the character who made i
 | Rare Body Armor (Necromancer only) | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | = | +1 to Necromancer Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Body Armor |
 | Rare Body Armor (Paladin only) | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | = | +1 to Paladin Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Body Armor |
 | Rare Body Armor (Sorceress only) | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | = | +1 to Sorceress Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Body Armor |
-| Rare Body Armor (Warlock only) | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | = | +1 to Warlock Skills Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Body Armor |
+| Rare Body Armor (Warlock only) | Rare Jewel | HEL Rune | DOL Rune | Gem (Any) | = | +1 to Warlock Skill Levels<br>+(30-50) to Mana<br>+(10-15)% Faster Cast Rate<br>New Rare Body Armor |
 | Magic Body Armor | Orb of Infusion | RAL Rune | Gem (Any) |  | = | +20% Faster Run/Walk<br>+100 to Defense<br>New Rare Body Armor |
 | Rare Body Armor | Rare Jewel | UM Rune | IST Rune | Gem (Any) | = | +(20-25)% to All Resistances<br>+(20-40)% Magic Find<br>New Rare Body Armor |
-| Rare Body Armor | Unique Jewel | ZOD Rune | BER Rune | UM Rune | = | +2 to All Skills<br>+(150-175)% Enhanced Defense<br>+(20-30)% to All Resistances<br>+(5-10)% Physical Damage Reduction<br>New Crafted Body Armor |
+| Rare Body Armor | Unique Jewel | ZOD Rune | BER Rune | UM Rune | = | +2 to All Skills<br>+(150-175)% Enhanced Defense<br>+(20-30)% to All Resistances<br>+(7-10)% Physical Damage Reduction<br>New Crafted Body Armor |
 
 <a id="item-craft-weapons"></a>
 ## Weapons
 | **Reagent 1** | **Reagent 2** | **Reagent 3** | **Reagent 4** | **Reagent 5** | **=** | **Guaranteed Stats** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Axe \[N\] | Knife |  |  |  | = | Normal Quality Throwing Axe \[N\] |
-| Knife | Diamond | Staff | Belt |  | = | Magic Polearm (Forced prefix) |
-| Magic Weapon | Ruby | 4× Healing Potion |  |  | = | New Magic Weapon (Forced suffix) |
+| Axe (Any) | Dagger (Any) |  |  |  | = | Normal Throwing Axe |
+| Spear (Any) | Arrows |  |  |  | = | Normal Javelins |
+| Diamond | Dagger (Any) | Staff (Any) | Belt (Any) |  | = | Savage Polearm<br>New Magic Polearm (forced prefix) |
+| Magic Weapon | Ruby | 4× Healing Potions (Any) |  |  | = | Sword of the Leech<br>New Magic Weapon (forced suffix) |
 | Magic Weapon | Magic Jewel | TIR Rune | Amethyst |  | = | +(4-10)% Mana Regeneration<br>+(10-20) to Mana<br>+(1-5)% Increased Maximum Mana<br>New Crafted Weapon |
 | Magic Weapon | Magic Jewel | TIR Rune | Sapphire |  | = | 5% Chance to cast level 4 Frost Nova when struck<br>Attacker Takes Damage of (3-7)<br>+(35-60)% Enhanced Weapon Damage<br>New Crafted Weapon |
 | Magic Weapon | Magic Jewel | ORT Rune | Ruby |  | = | +(1-4)% Life stolen per hit<br>+(10-20) to Life<br>+(35-60)% Enhanced Weapon Damage<br>New Crafted Weapon |
 | Magic Weapon | Magic Jewel | SOL Rune | Emerald |  | = | Physical Damage Reduced By (1-4)<br>Magic Damage Reduced By (1-2)<br>+(5-10)% Enhanced Defense<br>New Crafted Weapon |
 | Magic Weapon | Orb of Infusion | SOL Rune | SHAEL Rune | Gem (Any) | = | +1 to Minimum Damage per Level<br>+1 to Maximum Damage per Level<br>+20% Increased Attack Speed<br>New Rare Weapon |
 | Rare Weapon (1H) | Unique Jewel | BRAK Rune (#34) | OHM Rune | Gem (Any) | = | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>+(20-30)% Increased Attack Speed<br>New Crafted Weapon (1H) |
-| Rare Weapon (2H) | Unique Jewel | BRAK Rune (#34) | OHM Rune | Gem (Any) | = | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>+(30-40)% Increased Attack Speed<br>New Crafted Weapon (2H) |
+| Rare Weapon (2H)<br>Slam, Spear/Polearm, or Bow/Crossbow | Unique Jewel | BRAK Rune (#34) | OHM Rune | Gem (Any) | = | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>+(30-40)% Increased Attack Speed<br>New Crafted Weapon (2H) |
 | Rare Weapon (1H) | Unique Jewel | ZEPH Rune (#35) | CHAM Rune | Gem (Any) | = | +2 to All Skills<br>+(10-15)% to All Elemental Skill Damage<br>New Crafted Weapon (1H) |
-| Rare Weapon (2H) | Unique Jewel | ZEPH Rune (#35) | CHAM Rune | Gem (Any) | = | +(2-3) to All Skills<br>+(20-30)% to All Elemental Skill Damage<br>New Crafted Weapon (2H) |
+| Rare Weapon (2H)<br>Slam, Spear/Polearm, or Bow/Crossbow | Unique Jewel | ZEPH Rune (#35) | CHAM Rune | Gem (Any) | = | +(2-3) to All Skills<br>+(20-30)% to All Elemental Skill Damage<br>New Crafted Weapon (2H) |
 | Rare Weapon (1H) | Unique Jewel | MYR Rune (#36) | ZOD Rune | Gem (Any) | = | +2 to All Skills<br>+(15-20)% to Magic Skill Damage<br>New Crafted Weapon (1H) |
-| Rare Weapon (2H) | Unique Jewel | MYR Rune (#36) | ZOD Rune | Gem (Any) | = | +(2-3) to All Skills<br>+(20-25)% to Magic Skill Damage<br>New Crafted Weapon (2H) |
+| Rare Weapon (2H)<br>Slam, Spear/Polearm, or Bow/Crossbow | Unique Jewel | MYR Rune (#36) | ZOD Rune | Gem (Any) | = | +(2-3) to All Skills<br>+(20-25)% to Magic Skill Damage<br>New Crafted Weapon (2H) |
 | Rare Weapon (1H) | Unique Jewel | BRAK Rune (#34) | DEM Rune (#38) | Gem (Any) | = | +2 to All Skills<br>+(150-200)% Enhanced Weapon Damage<br>-10% to Enemy Physical Damage Resistance<br>New Crafted Weapon (1H) |
-| Rare Weapon (2H) | Unique Jewel | BRAK Rune (#34) | DEM Rune (#38) | Gem (Any) | = | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>-15% to Enemy Physical Damage Resistance<br>New Crafted Weapon (2H) |
+| Rare Weapon (2H)<br>Slam, Spear/Polearm, or Bow/Crossbow | Unique Jewel | BRAK Rune (#34) | DEM Rune (#38) | Gem (Any) | = | +(2-3) to All Skills<br>+(200-250)% Enhanced Weapon Damage<br>-15% to Enemy Physical Damage Resistance<br>New Crafted Weapon (2H) |
 | Rare Weapon (1H) | Unique Jewel | ZEPH Rune (#35) | GRIT Rune (#37) | Gem (Any) | = | +2 to All Skills<br>-(10-15)% to All Enemy Elemental Resistances<br>New Crafted Weapon (1H) |
-| Rare Weapon (2H) | Unique Jewel | ZEPH Rune (#35) | GRIT Rune (#37) | Gem (Any) | = | +(2-3) to All Skills<br>-(20-30)% to All Enemy Elemental Resistances<br>New Crafted Weapon (2H) |
+| Rare Weapon (2H)<br>Slam, Spear/Polearm, or Bow/Crossbow | Unique Jewel | ZEPH Rune (#35) | GRIT Rune (#37) | Gem (Any) | = | +(2-3) to All Skills<br>-(20-30)% to All Enemy Elemental Resistances<br>New Crafted Weapon (2H) |
 | Rare Weapon (1H) | Unique Jewel | HEV Rune (#39) | MYR Rune (#36) | Gem (Any) | = | +2 to All Skills<br>-(10-15)% to Enemy Magic Resistance<br>New Crafted Weapon (1H) |
-| Rare Weapon (2H) | Unique Jewel | HEV Rune (#39) | MYR Rune (#36) | Gem (Any) | = | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Weapon (2H) |
+| Rare Weapon (2H)<br>Slam, Spear/Polearm, or Bow/Crossbow | Unique Jewel | HEV Rune (#39) | MYR Rune (#36) | Gem (Any) | = | +(2-3) to All Skills<br>-(15-20)% to Enemy Magic Resistance<br>New Crafted Weapon (2H) |
 
 <a id="item-craft-charms"></a>
 ## Charms

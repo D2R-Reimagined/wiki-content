@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-06T10:14:15.933Z
+date: 2026-11-07T02:26:36.145Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -350,9 +350,9 @@ These recipes **regenerate** the item (similar to a Divine Orb), rather than per
 | Inputs | Outcome |
 | --- | --- |
 | Hellfire Torch + Orb of Corruption + Standard of Heroes | Upgrade the Torch: +2 to all Attributes and +2% to All Resistances (up to 6 upgrades)|
-| Relic of the Ancients + Orb of Shadows + GRIT Rune (#37) | Relic gains +1 to your Class Skill Levels and +5% Increased Maximum Life. |
-| Relic of the Ancients + Orb of Shadows + DEM Rune (#38) | Relic gains +1 to your Class Skill Levels and +5% Magic Resistance. |
-| Relic of the Ancients + Orb of Shadows + HEV Rune (#39) | Relic gains +1 to your Class Skill Levels and +5% to All Maximum Resistances. |
+| Relic of the Ancients + Orb of Shadows + GRIT Rune (#37) + 500 Souls| Relic gains +1 to your Class Skill Levels and +5% Increased Maximum Life. |
+| Relic of the Ancients + Orb of Shadows + DEM Rune (#38) + 1000 Souls| Relic gains +1 to your Class Skill Levels and +5% Magic Resistance. |
+| Relic of the Ancients + Orb of Shadows + HEV Rune (#39) + 3000 Souls | Relic gains +1 to your Class Skill Levels and +5% to All Maximum Resistances. |
 
 **Annihilus:** These upgrades must be done in order.
 | Inputs | Outcome |

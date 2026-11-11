@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-11T17:44:34.412Z
+date: 2026-11-11T23:31:19.783Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -621,7 +621,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Any Shield | Diamond | Magic Jewel | TIR Rune |  | = | +5% to All Resistances |
 | Any Shield | ITH Rune | Magic Jewel |  |  | = | +10% Damage Taken Added To Mana |
 | Any Shield | SOL Rune | Magic Jewel | Amethyst |  | = | Physical Damage Reduced By 5 |
-| Any Shield | SOL Rune | Magic Jewel | Chaos Onyx |  | = | Physical Damage Reduced By 5 |
+| Any Shield | SOL Rune | Magic Jewel | Chaos Onyx |  | = | Magic Damage Reduced By 5 |
 | Any Shield | Orb of Infusion | Skull | AMN Rune | Magic Jewel | = | Attacker Takes Damage of 100 |
 | Any Shield | Orb of Infusion | Emerald | SHAEL Rune | Magic Jewel | = | +20% Faster Hit Recovery |
 | Any Shield | Orb of Infusion | Ruby | SHAEL Rune | Magic Jewel | = | +15% Faster Block Rate |
@@ -654,7 +654,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Body Armor | Diamond | Magic Jewel | TIR Rune |  | = | +5% All Resistances |
 | Armor | ITH Rune | Magic Jewel |  |  | = | +10% Damage Taken Added To Mana |
 | Body Armor | SOL Rune | Amethyst | Magic Jewel |  | = | Physical Damage Reduced By 5 |
-| Body Armor | SOL Rune | Chaos Onyx | Magic Jewel |  | = | Physical Damage Reduced By 5 |
+| Body Armor | SOL Rune | Chaos Onyx | Magic Jewel |  | = | Magic Damage Reduced By 5 |
 | Body Armor | Orb of Infusion | Emerald | SHAEL Rune | Magic Jewel | = | +20% Faster Hit Recovery |
 | Armor | Orb of Infusion | Skull | LUM Rune | Magic Jewel | = | +40% Mana Regeneration<br>+10 to Energy |
 | Armor | Orb of Infusion | Amethyst | FAL Rune | Magic Jewel | = | +15 to Strength<br>+15 to Vitality |

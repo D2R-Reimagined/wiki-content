@@ -2,7 +2,7 @@
 title: Recipes
 description: Cube Recipes, Enchants, and Crafting recipes
 published: true
-date: 2026-11-07T02:26:36.145Z
+date: 2026-11-11T17:44:04.990Z
 tags: enchant, sunder, sunder charms, craft, crafting, heaven facet, rainbow facet, crafted charms, fire facet, cold facet, lightning facet, poison facet, gem, reroll, recycle, uptier, base upgrade, repair, recharge, spirits, souls, cube, cube recipes, horadric, portal, cow portal, jewel, gem cluster, upgrades, item upgrades, enchanting, stat increase, facet, recipes, enchants, wirt, wirts leg, wirt's leg
 editor: markdown
 dateCreated: 2026-04-05T02:57:13.104Z
@@ -437,14 +437,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Amulet | Orb of Infusion | Magic Jewel | FAL Rune | Emerald | = | +15 to Dexterity<br>+15 to Vitality |
 | Amulet | Orb of Infusion | Magic Jewel | FAL Rune | Sapphire | = | +15 to Energy<br>+15 to Vitality |
 | Amulet | Orb of Infusion | Rare Jewel | Diamond | UM Rune | = | +15% to All Resistances |
-| Amulet (Amazon only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Amazon Skill Levels |
-| Amulet (Assassin only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Assassin Skill Levels |
-| Amulet (Barbarian only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Barbarian Skill Levels |
-| Amulet (Druid only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Druid Skill Levels |
-| Amulet (Necromancer only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Necromancer Skill Levels |
-| Amulet (Paladin only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Paladin Skill Levels |
-| Amulet (Sorceress only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Sorceress Skill Levels |
-| Amulet (Warlock only) | Orb of Infusion | Unique Jewel |  |  | = | +1 to Warlock Skill Levels |
+| Amulet | Orb of Infusion | Unique Jewel |  |  | = | +1 to Current Class |
 | Amulet | Orb of Conversion | Unique Jewel | ZOD Rune |  | = | +1 to All Skills |
 | Amulet | Orb of Conversion | Unique Jewel | BRAK Rune (#34) |  | = | +1 to All Skills<br>-5% to Enemy Physical Damage Resistance |
 | Amulet | Orb of Conversion | Unique Jewel | ZEPH Rune (#35) |  | = | +1 to All Skills<br>+5% to All Elemental Skill Damage |
@@ -511,14 +504,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Belt | Orb of Infusion | Ruby | JAH Rune | Rare Jewel | = | +5% Increased Maximum Life |
 | Belt | Orb of Infusion | Amethyst | CHAM Rune | Unique Jewel | = | +50 to Life<br>+50 to Mana<br>+50% Enhanced Defense |
 | Belt | Orb of Infusion | Topaz | CHAM Rune | Unique Jewel | = | +20% Chance Items Roll Magic or Better<br>+40% Extra Gold from Monsters |
-| Belt (Amazon only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Amazon Skill Levels<br>+5% Physical Damage Reduction |
-| Belt (Assassin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Assassin Skill Levels<br>+5% Physical Damage Reduction |
-| Belt (Barbarian only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Barbarian Skill Levels<br>+5% Physical Damage Reduction |
-| Belt (Druid only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Druid Skill Levels<br>+5% Physical Damage Reduction |
-| Belt (Necromancer only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Necromancer Skill Levels<br>+5% Physical Damage Reduction |
-| Belt (Paladin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Paladin Skill Levels<br>+5% Physical Damage Reduction |
-| Belt (Sorceress only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Sorceress Skill Levels<br>+5% Physical Damage Reduction |
-| Belt (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skill Levels<br>+5% Physical Damage Reduction |
+| Belt | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Current Class <br>+5% Physical Damage Reduction |
 
 <a id="item-enchant-boots"></a>
 ## Boots
@@ -550,14 +536,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Boots | Orb of Infusion | Ruby | JAH Rune | Rare Jewel | = | +5% Increased Maximum Life |
 | Boots | Orb of Infusion | Topaz | CHAM Rune | Unique Jewel | = | +25% Faster Run/Walk Speed<br>+25% Chance Items Roll Magic or Better<br>+50% Extra Gold from Monsters |
 | Boots | Orb of Infusion | Amethyst | ZOD Rune | Unique Jewel | = | +10% Increased Maximum Life<br>+10% Increased Maximum Mana |
-| Boots (Amazon only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Amazon Skill Levels<br>+5% Physical Damage Reduction |
-| Boots (Assassin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Assassin Skill Levels<br>+5% Physical Damage Reduction |
-| Boots (Barbarian only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Barbarian Skill Levels<br>+5% Physical Damage Reduction |
-| Boots (Druid only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Druid Skill Levels<br>+5% Physical Damage Reduction |
-| Boots (Necromancer only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Necromancer Skill Levels<br>+5% Physical Damage Reduction |
-| Boots (Paladin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Paladin Skill Levels<br>+5% Physical Damage Reduction |
-| Boots (Sorceress only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Sorceress Skill Levels<br>+5% Physical Damage Reduction |
-| Boots (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skill Levels<br>+5% Physical Damage Reduction |
+| Boots  | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Current Class <br>+5% Physical Damage Reduction |
 
 <a id="item-enchant-gloves"></a>
 ## Gloves
@@ -586,14 +565,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Gloves | Orb of Infusion | Diamond | CHAM Rune | Unique Jewel | = | +15% Piercing Attack |
 | Gloves | Orb of Infusion | Emerald | CHAM Rune | Unique Jewel | = | +15% Chance of Open Wounds |
 | Gloves | Orb of Infusion | Sapphire | CHAM Rune | Unique Jewel | = | +15% Deadly Strike |
-| Gloves (Amazon only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Amazon Skill Levels<br>Indestructible |
-| Gloves (Assassin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Assassin Skill Levels<br>Indestructible |
-| Gloves (Barbarian only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Barbarian Skill Levels<br>Indestructible |
-| Gloves (Druid only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Druid Skill Levels<br>Indestructible |
-| Gloves (Necromancer only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Necromancer Skill Levels<br>Indestructible |
-| Gloves (Paladin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Paladin Skill Levels<br>Indestructible |
-| Gloves (Sorceress only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Sorceress Skill Levels<br>Indestructible |
-| Gloves (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Warlock Skill Levels<br>Indestructible |
+| Gloves | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +1 to Current Class <br>Indestructible |
 
 <a id="item-enchant-helms"></a>
 ## Helms
@@ -629,14 +601,7 @@ Items still respect their data size limits (e.g. +All Skills cannot go past 7).
 | Helm | Orb of Infusion | Orb of Conversion | Emerald | CHAM Rune<br>Unique Jewel | = | +2 Poison Skills |
 | Helm | Orb of Infusion | Orb of Conversion | Diamond | CHAM Rune<br>Unique Jewel | = | +2 Magic Skills |
 | Helm | Orb of Infusion | Orb of Conversion | Skull | ZOD Rune<br>Unique Jewel | = | +1 to All Skills |
-| Helm (Amazon only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Amazon Skill Levels<br>Indestructible |
-| Helm (Assassin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Assassin Skill Levels<br>Indestructible |
-| Helm (Barbarian only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Barbarian Skill Levels<br>Indestructible |
-| Helm (Druid only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Druid Skill Levels<br>Indestructible |
-| Helm (Necromancer only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Necromancer Skill Levels<br>Indestructible |
-| Helm (Paladin only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Paladin Skill Levels<br>Indestructible |
-| Helm (Sorceress only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Sorceress Skill Levels<br>Indestructible |
-| Helm (Warlock only) | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Warlock Skill Levels<br>Indestructible |
+| Helm | Orb of Conversion | ZOD Rune | DEM Rune (#38) | Unique Jewel | = | +2 to Current Class <br>Indestructible |
 
 <a id="item-enchant-shields"></a>
 ## Shields

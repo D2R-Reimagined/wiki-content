@@ -2,7 +2,7 @@
 title: Mod + D2RLoader Nonladder Package Installation
 description: Guide to installing the ladder plugin package for offline use
 published: true
-date: 2026-11-05T21:46:09.652Z
+date: 2026-11-13T19:12:44.208Z
 tags: install, install guide
 editor: markdown
 dateCreated: 2026-11-03T17:09:15.039Z
@@ -18,8 +18,7 @@ dateCreated: 2026-11-03T17:09:15.039Z
 
 - Find and kill D2RLoader.exe in task manager if it is currently open
 ![loadertaskmanager.png](/loadertaskmanager.png)
-
-- Manually delete the {D2InstallFolder}/mods/Reimagined folder, this should help ensure that plugins install with the package without extra steps. 
+- **<span style="color:red">Manually delete the {D2InstallFolder}/mods/Reimagined folder, this should help ensure that plugins install with the package without extra steps..</span>**  
 - You can find this more easily by clicking the Reimagined Folder button in the launcher and clicking the mods button in the folder path.
 ![reimaginedfolderbutton.png](/reimaginedfolderbutton.png)
 ![modsfolderhighlight.png](/modsfolderhighlight.png)

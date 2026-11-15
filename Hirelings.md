@@ -2,7 +2,7 @@
 title: Hirelings 
 description: A short description of changes to hirelings
 published: true
-date: 2026-11-04T23:29:20.710Z
+date: 2026-11-15T22:33:30.236Z
 tags: rogue, desert, dock, iron wolf, a1 merc, a2 merc, a3 merc, a5 merc, merc, hireling, mercenary
 editor: markdown
 dateCreated: 2025-08-10T06:58:43.147Z
@@ -19,7 +19,7 @@ Hirelings can be rerolled by making a new game.
 
 ###### Act 2 Desert Mercenary
 
--   Unchanged
+-   Has Impale as an additional skill.
 
 ###### Act 3 Iron Wolf
 

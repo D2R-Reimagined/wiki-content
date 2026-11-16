@@ -2,7 +2,7 @@
 title: Maps - Crafting and Progression
 description: Map drops, mapping currencies, and Horadric Cube recipes for upgrading, rerolling, and corrupting maps.
 published: true
-date: 2026-11-16T01:43:17.743Z
+date: 2026-11-16T01:43:59.272Z
 tags: endgame, crafting, cube recipes, maps, d2rloader
 editor: markdown
 dateCreated: 2026-09-29T20:26:12.064Z
@@ -24,7 +24,7 @@ Use the **Horadric Cube on Hell difficulty** to prepare your maps. Upgrade to ra
 | **Vizjerei Prism** | Rerolls a map's modifiers while keeping its theme and tier. | Map monsters, Wardens, and certain event rewards. |
 | **Horadric Astrolabe** | Converts a Tier 5 map into Tier 6. | Mapping-currency drops from map monsters, Wardens, and certain event rewards. It is the rarest of these three currencies. |
 
-You can find Worldstone Shards before reaching Tier 5. Save them until you have a Tier 5 map and are ready for the harder run.
+You can find Horadric Astrolabes before reaching Tier 5. Save them until you have a Tier 5 map and are ready for the harder run.
 
 ## Cube recipes
 

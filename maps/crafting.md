@@ -1,11 +1,11 @@
 ---
 title: Maps - Crafting and Progression
 description: Map drops, mapping currencies, and Horadric Cube recipes for upgrading, rerolling, and corrupting maps.
-published: false
-date: 2026-09-29T21:00:00.000Z
-tags: maps, crafting, cube recipes, endgame, d2rloader
+published: true
+date: 2026-11-16T01:42:40.822Z
+tags: endgame, crafting, cube recipes, maps, d2rloader
 editor: markdown
-dateCreated: 2026-09-29T21:00:00.000Z
+dateCreated: 2026-09-29T20:26:12.064Z
 ---
 
 > **D2RLoader and Maps plugin required:** This wiki page only applies to D2RLoader. You must have the Maps plugin installed and enabled to play this content.
@@ -20,9 +20,9 @@ Use the **Horadric Cube on Hell difficulty** to prepare your maps. Upgrade to ra
 
 | Item | What it does | Where to find it |
 | --- | --- | --- |
-| **Horadric Orb** | Raises a map by one tier, up to Tier 5. | Map monsters, Wardens, and certain event rewards. |
-| **Arcane Relic** | Rerolls a map's modifiers while keeping its theme and tier. | Map monsters, Wardens, and certain event rewards. |
-| **Worldstone Shard** | Converts a Tier 5 map into Tier 6. | Mapping-currency drops from map monsters, Wardens, and certain event rewards. It is the rarest of these three currencies. |
+| **Horadric Sextant** | Raises a map by one tier, up to Tier 5. | Map monsters, Wardens, and certain event rewards. |
+| **Vizjerei Prism** | Rerolls a map's modifiers while keeping its theme and tier. | Map monsters, Wardens, and certain event rewards. |
+| **Horadric Astrolabe** | Converts a Tier 5 map into Tier 6. | Mapping-currency drops from map monsters, Wardens, and certain event rewards. It is the rarest of these three currencies. |
 
 You can find Worldstone Shards before reaching Tier 5. Save them until you have a Tier 5 map and are ready for the harder run.
 
@@ -33,16 +33,16 @@ Use one of each listed item. The map and currency are consumed to create the res
 | Ingredients | Result |
 | --- | --- |
 | **1 map by itself** | Opens a portal to that map. Use this in Harrogath on Hell. |
-| **1 Tier 1 map + 1 Horadric Orb** | Tier 2 map of the same theme. |
-| **1 Tier 2 map + 1 Horadric Orb** | Tier 3 map of the same theme. |
-| **1 Tier 3 map + 1 Horadric Orb** | Tier 4 map of the same theme. |
-| **1 Tier 4 map + 1 Horadric Orb** | Tier 5 map of the same theme. |
+| **1 Tier 1 map + 1 Horadric Sextant** | Tier 2 map of the same theme. |
+| **1 Tier 2 map + 1 Horadric Sextant** | Tier 3 map of the same theme. |
+| **1 Tier 3 map + 1 Horadric Sextant** | Tier 4 map of the same theme. |
+| **1 Tier 4 map + 1 Horadric Sextant** | Tier 5 map of the same theme. |
 | **1 Tier 5 map + 1 Worldstone Shard** | Tier 6 map of the same theme. |
-| **1 map of any tier + 1 Arcane Relic** | A new modifier roll on the same theme and tier, including Tier 6. |
+| **1 map of any tier + 1 Horadric Astrolabe** | A new modifier roll on the same theme and tier, including Tier 6. |
 
 **Read the result after every craft.** Upgrading and corrupting create a new map with a new modifier roll; they do not preserve the old roll. Rerolling is random and does not guarantee easier modifiers or a different combination.
 
-There is no Horadric Orb upgrade from Tier 5 to Tier 6, and there is no tier above Tier 6. Corruption here is the listed Tier 5-to-Tier 6 recipe; it is not a chance to destroy the map.
+There is no Horadric Sextant upgrade from Tier 5 to Tier 6, and there is no tier above Tier 6. Corruption here is the listed Tier 5-to-Tier 6 recipe; it is not a chance to destroy the map.
 
 ## Building a supply of maps
 

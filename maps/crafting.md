@@ -2,7 +2,7 @@
 title: Maps - Crafting and Progression
 description: Map drops, mapping currencies, and Horadric Cube recipes for upgrading, rerolling, and corrupting maps.
 published: true
-date: 2026-11-16T01:42:40.822Z
+date: 2026-11-16T01:43:17.743Z
 tags: endgame, crafting, cube recipes, maps, d2rloader
 editor: markdown
 dateCreated: 2026-09-29T20:26:12.064Z
@@ -37,8 +37,8 @@ Use one of each listed item. The map and currency are consumed to create the res
 | **1 Tier 2 map + 1 Horadric Sextant** | Tier 3 map of the same theme. |
 | **1 Tier 3 map + 1 Horadric Sextant** | Tier 4 map of the same theme. |
 | **1 Tier 4 map + 1 Horadric Sextant** | Tier 5 map of the same theme. |
-| **1 Tier 5 map + 1 Worldstone Shard** | Tier 6 map of the same theme. |
-| **1 map of any tier + 1 Horadric Astrolabe** | A new modifier roll on the same theme and tier, including Tier 6. |
+| **1 Tier 5 map + 1 Horadric Astrolabe** | Tier 6 map of the same theme. |
+| **1 map of any tier + 1 Vizjerei Prism** | A new modifier roll on the same theme and tier, including Tier 6. |
 
 **Read the result after every craft.** Upgrading and corrupting create a new map with a new modifier roll; they do not preserve the old roll. Rerolling is random and does not guarantee easier modifiers or a different combination.
 

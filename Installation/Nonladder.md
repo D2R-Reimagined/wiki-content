@@ -2,7 +2,7 @@
 title: Mod + D2RLoader Nonladder Package Installation
 description: Guide to installing the ladder plugin package for offline use
 published: true
-date: 2026-11-13T19:12:44.208Z
+date: 2026-11-21T15:10:17.126Z
 tags: install, install guide
 editor: markdown
 dateCreated: 2026-11-03T17:09:15.039Z
@@ -19,6 +19,7 @@ dateCreated: 2026-11-03T17:09:15.039Z
 - Find and kill D2RLoader.exe in task manager if it is currently open
 ![loadertaskmanager.png](/loadertaskmanager.png)
 - **<span style="color:red">Manually delete the {D2InstallFolder}/mods/Reimagined folder, this should help ensure that plugins install with the package without extra steps..</span>**  
+- **<span style="color:red">Disable any launcher mod Add-ons as well. Several cause issues with maps dropping/activating.</span>**  
 - You can find this more easily by clicking the Reimagined Folder button in the launcher and clicking the mods button in the folder path.
 ![reimaginedfolderbutton.png](/reimaginedfolderbutton.png)
 ![modsfolderhighlight.png](/modsfolderhighlight.png)
